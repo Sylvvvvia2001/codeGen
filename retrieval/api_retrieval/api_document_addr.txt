@@ -1,0 +1,14 @@
+https://docs.api.xiaomi.com/en/cloud-ml/api/docs.html
+https://dev.mi.com/docs/passport/en/open-api/
+https://docs.api.xiaomi.com/en/emq/
+https://github.com/victorwads/mi-home-api
+https://github.com/0x100/mi-home-api
+https://python-miio.readthedocs.io/
+https://docs.unity3d.com/2020.3/Documentation/Manual/com.unity.xiaomi.html
+https://www.scribd.com/presentation/356138281/Xiaomi-TV-API-Doc
+https://www.home-assistant.io/integrations/xiaomi_miio/
+https://docs.unity.cn/2018.1/Documentation/Manual/UnityIAPXiaomi.html
+https://developer.clevertap.com/docs/xiaomi-push-notifications
+https://www.tencentcloud.com/document/api
+https://infor-cloud.github.io/xtendm3/docs/documentation/api-specification/mi-api/
+https://pkg.go.dev/github.com/art-sitedesign/xiaomi-router-api
