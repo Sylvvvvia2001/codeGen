@@ -1,0 +1,5 @@
+prefs.py:
+- CameraPreferences
+- CloudPreferences
+- CloudPreferencesStore
+- DynamicStreamSettings

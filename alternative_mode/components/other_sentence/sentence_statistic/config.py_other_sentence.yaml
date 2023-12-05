@@ -1,0 +1,24 @@
+config.py:
+  schemas: []
+  sets:
+  - '{''script'', ''scene''}'
+  - '{SERVICE_RELOAD, SERVICE_TURN_OFF, SERVICE_TURN_ON, SERVICE_TOGGLE}'
+  - "{climate.DOMAIN, cover.DOMAIN, fan.DOMAIN, humidifier.DOMAIN, light.DOMAIN,\n\
+    \    media_player.DOMAIN, scene.DOMAIN, script.DOMAIN}"
+  tuples:
+  - "((CONF_SENSORS, SENSOR_DOMAIN, sensor_platform.\n    rewrite_legacy_to_modern_conf),\
+    \ (CONF_BINARY_SENSORS,\n    BINARY_SENSOR_DOMAIN, binary_sensor_platform.rewrite_legacy_to_modern_conf)\n\
+    \    )"
+  - "(CONF_BINARY_SENSORS, BINARY_SENSOR_DOMAIN, binary_sensor_platform.\n    rewrite_legacy_to_modern_conf)"
+  - (CONF_SENSORS, SENSOR_DOMAIN, sensor_platform.rewrite_legacy_to_modern_conf)
+  - (_, p_config)
+  - (number, ent_id)
+  - (object_id, cfg)
+  - (old_key, new_key, transform)
+  - (str, Any)
+  - (str, bool)
+  - (str, dict[str, str])
+  - (str, list)
+  - (str, str)
+  - (vol.Invalid, HomeAssistantError)
+  - str, str

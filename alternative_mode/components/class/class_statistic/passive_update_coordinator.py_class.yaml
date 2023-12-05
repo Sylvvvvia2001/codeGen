@@ -1,0 +1,3 @@
+passive_update_coordinator.py:
+- PassiveBluetoothCoordinatorEntity
+- PassiveBluetoothDataUpdateCoordinator

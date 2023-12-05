@@ -1,0 +1,40 @@
+api.py:
+  schemas: []
+  sets:
+  - '{get_device_id(driver, node)}'
+  tuples:
+  - ('alive', 'dead', 'sleep', 'wake up', 'ready')
+  - ('lwr', 'nlwr')
+  - ('repeaters', 'route_failed_between')
+  - (ConfigEntry | None, Client | None, Driver | None)
+  - (DSK, SECURITY_CLASSES, STATUS, REQUESTED_SECURITY_CLASSES)
+  - (HomeConnectError, ValueError)
+  - (InvalidNewValue, NotFoundError, NotImplementedError, SetValueFailed)
+  - (InvalidNewValue, NotImplementedError)
+  - (None, None, None)
+  - (None, None, SensorDeviceClass.TIMESTAMP, 1)
+  - (PERCENTAGE, 'mdi:progress-clock', None, 1)
+  - (RefreshError, ClientResponseError, ClientError)
+  - (UnitOfTime.SECONDS, 'mdi:update', None, 1)
+  - (ValueError, LifetimeTimeout)
+  - ([BluetoothServiceInfoBleak], None)
+  - ([], None)
+  - ([], _T)
+  - (_, client, driver)
+  - (calendar, supported_components)
+  - (entry, client, client.driver)
+  - (entry, client, driver)
+  - "(int, Literal[InclusionStrategy.DEFAULT, InclusionStrategy.SECURITY_S0,\n   \
+    \ InclusionStrategy.SECURITY_S2, InclusionStrategy.INSECURE])"
+  - (k, (unit, icon, device_class, sign))
+  - (k, v)
+  - (node, status)
+  - (str, Any)
+  - (str, int | float)
+  - (str, int)
+  - (str, str)
+  - (unit, icon, device_class, sign)
+  - (value_id, zwave_value)
+  - (zwave_value, cmd_status)
+  - InclusionStrategy.DEFAULT, InclusionStrategy.SECURITY_S0, InclusionStrategy.SECURITY_S2,
+    InclusionStrategy.INSECURE

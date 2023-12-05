@@ -1,0 +1,520 @@
+number.py:
+  schemas: []
+  sets:
+  - '{''TexasInstruments''}'
+  - '{''_TZE200_htnnfasr''}'
+  - '{''_attr_native_value''}'
+  - '{''aqara.feeder.acn001''}'
+  - '{''lumi.airrtc.agl001''}'
+  - '{''lumi.motion.ac02'', ''lumi.motion.agl04''}'
+  - '{''ti.router''}'
+  - '{(DOMAIN, relay_id)}'
+  - '{(DOMAIN, self._serial_number)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{Valve.remaining_open_time.uuid}'
+  - '{number.ATTR_MAX, number.ATTR_MIN, number.ATTR_STEP}'
+  - '{self.char.uuid}'
+  tuples:
+  - ('device', 'valvePos')
+  - "((DEVICE.SCG, GROUP.CONFIGURATION, VALUE.POOL_SETPOINT), (DEVICE.SCG, GROUP\n\
+    \    .CONFIGURATION, VALUE.SPA_SETPOINT))"
+  - ((coordinator, description), result)
+  - (*scg_number_description.data_root, scg_number_description.key)
+  - (-10, 10)
+  - (-100, 100)
+  - (-15, 15)
+  - (-pow(2, int(size[1:]) - 1), pow(2, int(size[1:]) - 1) - 1)
+  - (..., Awaitable[None])
+  - (..., Awaitable[bool])
+  - (0, 127)
+  - (0, 5)
+  - (0, pow(2, int(size[1:])) - 1)
+  - (1, 255)
+  - (Any, Any, None)
+  - "(BAFNumberDescription(key='comfort_min_speed', translation_key=\n    'comfort_min_speed',\
+    \ native_step=1, native_min_value=0,\n    native_max_value=SPEED_RANGE[1] - 1,\
+    \ entity_category=EntityCategory.\n    CONFIG, value_fn=lambda device: cast(int\
+    \ | None, device.\n    comfort_min_speed), mode=NumberMode.BOX), BAFNumberDescription(key=\n\
+    \    'comfort_max_speed', translation_key='comfort_max_speed', native_step=1,\n\
+    \    native_min_value=1, native_max_value=SPEED_RANGE[1], entity_category=\n \
+    \   EntityCategory.CONFIG, value_fn=lambda device: cast(int | None, device.\n\
+    \    comfort_max_speed), mode=NumberMode.BOX), BAFNumberDescription(key=\n   \
+    \ 'comfort_heat_assist_speed', translation_key=\n    'comfort_heat_assist_speed',\
+    \ native_step=1, native_min_value=\n    SPEED_RANGE[0], native_max_value=SPEED_RANGE[1],\
+    \ entity_category=\n    EntityCategory.CONFIG, value_fn=lambda device: cast(int\
+    \ | None, device.\n    comfort_heat_assist_speed), mode=NumberMode.BOX))"
+  - "(BAFNumberDescription(key='light_return_to_auto_timeout', translation_key=\n\
+    \    'light_return_to_auto_timeout', native_step=1, native_min_value=\n    ONE_MIN_SECS,\
+    \ native_max_value=HALF_DAY_SECS, entity_category=\n    EntityCategory.CONFIG,\
+    \ native_unit_of_measurement=UnitOfTime.SECONDS,\n    value_fn=lambda device:\
+    \ cast(int | None, device.\n    light_return_to_auto_timeout), mode=NumberMode.SLIDER),\n\
+    \    BAFNumberDescription(key='light_auto_motion_timeout', translation_key=\n\
+    \    'light_auto_motion_timeout', native_step=1, native_min_value=\n    ONE_MIN_SECS,\
+    \ native_max_value=ONE_DAY_SECS, entity_category=\n    EntityCategory.CONFIG,\
+    \ native_unit_of_measurement=UnitOfTime.SECONDS,\n    value_fn=lambda device:\
+    \ cast(int | None, device.\n    light_auto_motion_timeout), mode=NumberMode.SLIDER))"
+  - "(BAFNumberDescription(key='return_to_auto_timeout', translation_key=\n    'return_to_auto_timeout',\
+    \ native_step=1, native_min_value=ONE_MIN_SECS,\n    native_max_value=HALF_DAY_SECS,\
+    \ entity_category=EntityCategory.CONFIG,\n    native_unit_of_measurement=UnitOfTime.SECONDS,\
+    \ value_fn=lambda device:\n    cast(int | None, device.return_to_auto_timeout),\
+    \ mode=NumberMode.SLIDER\n    ), BAFNumberDescription(key='motion_sense_timeout',\
+    \ translation_key=\n    'motion_sense_timeout', native_step=1, native_min_value=ONE_MIN_SECS,\n\
+    \    native_max_value=ONE_DAY_SECS, entity_category=EntityCategory.CONFIG,\n \
+    \   native_unit_of_measurement=UnitOfTime.SECONDS, value_fn=lambda device:\n \
+    \   cast(int | None, device.motion_sense_timeout), mode=NumberMode.SLIDER))"
+  - (CONF_STATE, ATTR_STEP, ATTR_MIN, ATTR_MAX)
+  - (DEVICE.SCG, GROUP.CONFIGURATION)
+  - (DEVICE.SCG, GROUP.CONFIGURATION, VALUE.POOL_SETPOINT)
+  - (DEVICE.SCG, GROUP.CONFIGURATION, VALUE.SPA_SETPOINT)
+  - (DOMAIN, relay_id)
+  - (DOMAIN, self._serial_number)
+  - (DOMAIN, self.envoy_serial_num)
+  - (DOMAIN, serial_number)
+  - (DOMAIN, unique_id)
+  - (DeconzNumberDescription, ...)
+  - "(DeconzNumberDescription[Presence](key='delay', instance_check=Presence,\n  \
+    \  name_suffix='Delay', set_fn=lambda api, id, v: api.sensors.presence.\n    set_config(id=id,\
+    \ delay=v), update_key='delay', value_fn=lambda device:\n    device.delay, native_max_value=65535,\
+    \ native_min_value=0, native_step=1,\n    entity_category=EntityCategory.CONFIG),\
+    \ DeconzNumberDescription[\n    Presence](key='duration', instance_check=Presence,\
+    \ name_suffix=\n    'Duration', set_fn=lambda api, id, v: api.sensors.presence.set_config(\n\
+    \    id=id, duration=v), update_key='duration', value_fn=lambda device:\n    device.duration,\
+    \ native_max_value=65535, native_min_value=0,\n    native_step=1, entity_category=EntityCategory.CONFIG))"
+  - "(EcobeeNumberEntityDescription(key='home', translation_key=\n    'ventilator_min_type_home',\
+    \ ecobee_setting_key=\n    'ventilatorMinOnTimeHome', set_fn=lambda data, id,\
+    \ min_time: data.\n    ecobee.set_ventilator_min_on_time_home(id, min_time)),\n\
+    \    EcobeeNumberEntityDescription(key='away', translation_key=\n    'ventilator_min_type_away',\
+    \ ecobee_setting_key=\n    'ventilatorMinOnTimeAway', set_fn=lambda data, id,\
+    \ min_time: data.\n    ecobee.set_ventilator_min_on_time_away(id, min_time)))"
+  - "(EcoforestNumberEntityDescription(key='power_level', translation_key=\n    'power_level',\
+    \ native_min_value=1, native_max_value=9, native_step=1,\n    value_fn=lambda\
+    \ data: data.power),)"
+  - "(EnvoyRelayNumberEntityDescription(key='soc_low', translation_key=\n    'cutoff_battery_level',\
+    \ device_class=NumberDeviceClass.BATTERY,\n    entity_category=EntityCategory.CONFIG,\
+    \ value_fn=lambda relay: relay.\n    soc_low), EnvoyRelayNumberEntityDescription(key='soc_high',\n\
+    \    translation_key='restore_battery_level', device_class=NumberDeviceClass\n\
+    \    .BATTERY, entity_category=EntityCategory.CONFIG, value_fn=lambda relay:\n\
+    \    relay.soc_high))"
+  - (EsphomeNumberMode, NumberMode)
+  - (EzvizAuthTokenExpired, EzvizAuthVerificationCode)
+  - "(GardenaBluetoothNumberEntityDescription(key=Valve.manual_watering_time.\n  \
+    \  uuid, translation_key='manual_watering_time',\n    native_unit_of_measurement=UnitOfTime.SECONDS,\
+    \ mode=NumberMode.BOX,\n    native_min_value=0.0, native_max_value=24 * 60 * 60,\
+    \ native_step=60,\n    entity_category=EntityCategory.CONFIG, char=Valve.manual_watering_time),\n\
+    \    GardenaBluetoothNumberEntityDescription(key=Valve.remaining_open_time.\n\
+    \    uuid, translation_key='remaining_open_time', native_unit_of_measurement\n\
+    \    =UnitOfTime.SECONDS, native_min_value=0.0, native_max_value=24 * 60 * \n\
+    \    60, native_step=60.0, entity_category=EntityCategory.DIAGNOSTIC, char=\n\
+    \    Valve.remaining_open_time), GardenaBluetoothNumberEntityDescription(key\n\
+    \    =DeviceConfiguration.rain_pause.uuid, translation_key='rain_pause',\n   \
+    \ native_unit_of_measurement=UnitOfTime.MINUTES, mode=NumberMode.BOX,\n    native_min_value=0.0,\
+    \ native_max_value=7 * 24 * 60, native_step=6 * \n    60.0, entity_category=EntityCategory.CONFIG,\
+    \ char=DeviceConfiguration.\n    rain_pause), GardenaBluetoothNumberEntityDescription(key=\n\
+    \    DeviceConfiguration.seasonal_adjust.uuid, translation_key=\n    'seasonal_adjust',\
+    \ native_unit_of_measurement=UnitOfTime.DAYS, mode=\n    NumberMode.BOX, native_min_value=-128.0,\
+    \ native_max_value=127.0,\n    native_step=1.0, entity_category=EntityCategory.CONFIG,\
+    \ char=\n    DeviceConfiguration.seasonal_adjust),\n    GardenaBluetoothNumberEntityDescription(key=Sensor.threshold.uuid,\n\
+    \    translation_key='sensor_threshold', native_unit_of_measurement=\n    PERCENTAGE,\
+    \ mode=NumberMode.BOX, native_min_value=0.0, native_max_value\n    =100.0, native_step=1.0,\
+    \ entity_category=EntityCategory.CONFIG, char=\n    Sensor.threshold, connected_state=Sensor.connected_state))"
+  - "(GoodweNumberEntityDescription(key='grid_export_limit', translation_key=\n  \
+    \  'grid_export_limit', icon='mdi:transmission-tower', entity_category=\n    EntityCategory.CONFIG,\
+    \ device_class=NumberDeviceClass.POWER,\n    native_unit_of_measurement=UnitOfPower.WATT,\
+    \ native_step=100,\n    native_min_value=0, native_max_value=10000, getter=lambda\
+    \ inv: inv.\n    get_grid_export_limit(), setter=lambda inv, val: inv.\n    set_grid_export_limit(val),\
+    \ filter=lambda inv: _get_setting_unit(inv,\n    'grid_export_limit') != '%'),\
+    \ GoodweNumberEntityDescription(key=\n    'grid_export_limit', translation_key='grid_export_limit',\
+    \ icon=\n    'mdi:transmission-tower', entity_category=EntityCategory.CONFIG,\n\
+    \    native_unit_of_measurement=PERCENTAGE, native_step=1, native_min_value=\n\
+    \    0, native_max_value=100, getter=lambda inv: inv.get_grid_export_limit(),\n\
+    \    setter=lambda inv, val: inv.set_grid_export_limit(val), filter=lambda\n \
+    \   inv: _get_setting_unit(inv, 'grid_export_limit') == '%'),\n    GoodweNumberEntityDescription(key='battery_discharge_depth',\n\
+    \    translation_key='battery_discharge_depth', icon=\n    'mdi:battery-arrow-down',\
+    \ entity_category=EntityCategory.CONFIG,\n    native_unit_of_measurement=PERCENTAGE,\
+    \ native_step=1, native_min_value=\n    0, native_max_value=99, getter=lambda\
+    \ inv: inv.get_ongrid_battery_dod(),\n    setter=lambda inv, val: inv.set_ongrid_battery_dod(val),\
+    \ filter=lambda\n    inv: True))"
+  - (HTTPError, PyEzvizError)
+  - (InvalidURL, HTTPError, PyEzvizError)
+  - (InverterError, ValueError)
+  - "(JuiceNetNumberEntityDescription(translation_key='amperage_limit', key=\n   \
+    \ 'current_charging_amperage_limit', native_min_value=6,\n    native_max_value_key='max_charging_amperage',\
+    \ native_step=1, setter_key\n    ='set_charging_amperage_limit'),)"
+  - (JuiceNetNumberEntityDescription, ...)
+  - "(NumberEntityDescription(key='timeToScreensaverV2', translation_key=\n    'screensaver_time',\
+    \ native_max_value=9999, native_step=1,\n    native_min_value=0, native_unit_of_measurement=UnitOfTime.SECONDS,\n\
+    \    entity_category=EntityCategory.CONFIG), NumberEntityDescription(key=\n  \
+    \  'screensaverBrightness', translation_key='screensaver_brightness',\n    native_max_value=255,\
+    \ native_step=1, native_min_value=0,\n    entity_category=EntityCategory.CONFIG),\
+    \ NumberEntityDescription(key=\n    'timeToScreenOffV2', translation_key='screen_off_time',\n\
+    \    native_max_value=9999, native_step=1, native_min_value=0,\n    native_unit_of_measurement=UnitOfTime.SECONDS,\
+    \ entity_category=\n    EntityCategory.CONFIG), NumberEntityDescription(key='screenBrightness',\n\
+    \    translation_key='screen_brightness', native_max_value=255, native_step=\n\
+    \    1, native_min_value=0))"
+  - "(NumberEntityDescription(key=DPCode.ALARM_TIME, translation_key='time',\n   \
+    \ entity_category=EntityCategory.CONFIG),)"
+  - "(NumberEntityDescription(key=DPCode.ARM_DOWN_PERCENT, translation_key=\n    'move_down',\
+    \ icon='mdi:arrow-down-bold', native_unit_of_measurement=\n    PERCENTAGE, entity_category=EntityCategory.CONFIG),\n\
+    \    NumberEntityDescription(key=DPCode.ARM_UP_PERCENT, translation_key=\n   \
+    \ 'move_up', icon='mdi:arrow-up-bold', native_unit_of_measurement=\n    PERCENTAGE,\
+    \ entity_category=EntityCategory.CONFIG),\n    NumberEntityDescription(key=DPCode.CLICK_SUSTAIN_TIME,\
+    \ translation_key=\n    'down_delay', icon='mdi:timer', entity_category=EntityCategory.CONFIG))"
+  - "(NumberEntityDescription(key=DPCode.BASIC_DEVICE_VOLUME, translation_key=\n \
+    \   'volume', icon='mdi:volume-high', entity_category=EntityCategory.CONFIG),)"
+  - "(NumberEntityDescription(key=DPCode.BRIGHTNESS_MIN_1, translation_key=\n    'minimum_brightness',\
+    \ icon='mdi:lightbulb-outline', entity_category=\n    EntityCategory.CONFIG),\
+    \ NumberEntityDescription(key=DPCode.\n    BRIGHTNESS_MAX_1, translation_key='maximum_brightness',\
+    \ icon=\n    'mdi:lightbulb-on-outline', entity_category=EntityCategory.CONFIG),\n\
+    \    NumberEntityDescription(key=DPCode.BRIGHTNESS_MIN_2, translation_key=\n \
+    \   'minimum_brightness_2', icon='mdi:lightbulb-outline', entity_category=\n \
+    \   EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.\n    BRIGHTNESS_MAX_2,\
+    \ translation_key='maximum_brightness_2', icon=\n    'mdi:lightbulb-on-outline',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - "(NumberEntityDescription(key=DPCode.BRIGHTNESS_MIN_1, translation_key=\n    'minimum_brightness',\
+    \ icon='mdi:lightbulb-outline', entity_category=\n    EntityCategory.CONFIG),\
+    \ NumberEntityDescription(key=DPCode.\n    BRIGHTNESS_MAX_1, translation_key='maximum_brightness',\
+    \ icon=\n    'mdi:lightbulb-on-outline', entity_category=EntityCategory.CONFIG),\n\
+    \    NumberEntityDescription(key=DPCode.BRIGHTNESS_MIN_2, translation_key=\n \
+    \   'minimum_brightness_2', icon='mdi:lightbulb-outline', entity_category=\n \
+    \   EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.\n    BRIGHTNESS_MAX_2,\
+    \ translation_key='maximum_brightness_2', icon=\n    'mdi:lightbulb-on-outline',\
+    \ entity_category=EntityCategory.CONFIG),\n    NumberEntityDescription(key=DPCode.BRIGHTNESS_MIN_3,\
+    \ translation_key=\n    'minimum_brightness_3', icon='mdi:lightbulb-outline',\
+    \ entity_category=\n    EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.\n\
+    \    BRIGHTNESS_MAX_3, translation_key='maximum_brightness_3', icon=\n    'mdi:lightbulb-on-outline',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - "(NumberEntityDescription(key=DPCode.COOK_TEMPERATURE, translation_key=\n    'cook_temperature',\
+    \ icon='mdi:thermometer', entity_category=\n    EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.COOK_TIME,\n\
+    \    translation_key='cook_time', icon='mdi:timer',\n    native_unit_of_measurement=UnitOfTime.MINUTES,\
+    \ entity_category=\n    EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.\n\
+    \    CLOUD_RECIPE_NUMBER, translation_key='cloud_recipe', entity_category=\n \
+    \   EntityCategory.CONFIG))"
+  - "(NumberEntityDescription(key=DPCode.MANUAL_FEED, translation_key='feed',\n  \
+    \  icon='mdi:bowl'), NumberEntityDescription(key=DPCode.VOICE_TIMES,\n    translation_key='voice_times',\
+    \ icon='mdi:microphone'))"
+  - "(NumberEntityDescription(key=DPCode.SENSITIVITY, translation_key=\n    'sensitivity',\
+    \ entity_category=EntityCategory.CONFIG),\n    NumberEntityDescription(key=DPCode.NEAR_DETECTION,\
+    \ translation_key=\n    'near_detection', icon='mdi:signal-distance-variant',\
+    \ entity_category=\n    EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.\n\
+    \    FAR_DETECTION, translation_key='far_detection', icon=\n    'mdi:signal-distance-variant',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - "(NumberEntityDescription(key=DPCode.SENSITIVITY, translation_key=\n    'sensitivity',\
+    \ entity_category=EntityCategory.CONFIG),)"
+  - "(NumberEntityDescription(key=DPCode.TEMP, translation_key='temperature',\n  \
+    \  device_class=NumberDeviceClass.TEMPERATURE, icon='mdi:thermometer-lines'),)"
+  - "(NumberEntityDescription(key=DPCode.TEMP_SET, translation_key='temperature',\n\
+    \    device_class=NumberDeviceClass.TEMPERATURE, icon=\n    'mdi:thermometer-lines'),\
+    \ NumberEntityDescription(key=DPCode.TEMP_SET_F,\n    translation_key='temperature',\
+    \ device_class=NumberDeviceClass.\n    TEMPERATURE, icon='mdi:thermometer-lines'))"
+  - "(NumberEntityDescription(key=DPCode.TEMP_SET, translation_key='temperature',\n\
+    \    device_class=NumberDeviceClass.TEMPERATURE, icon='mdi:thermometer',\n   \
+    \ entity_category=EntityCategory.CONFIG), NumberEntityDescription(key=\n    DPCode.TEMP_SET_F,\
+    \ translation_key='temperature', device_class=\n    NumberDeviceClass.TEMPERATURE,\
+    \ icon='mdi:thermometer', entity_category=\n    EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.\n\
+    \    TEMP_BOILING_C, translation_key='temperature_after_boiling',\n    device_class=NumberDeviceClass.TEMPERATURE,\
+    \ icon='mdi:thermometer',\n    entity_category=EntityCategory.CONFIG), NumberEntityDescription(key=\n\
+    \    DPCode.TEMP_BOILING_F, translation_key='temperature_after_boiling',\n   \
+    \ device_class=NumberDeviceClass.TEMPERATURE, icon='mdi:thermometer',\n    entity_category=EntityCategory.CONFIG),\
+    \ NumberEntityDescription(key=\n    DPCode.WARM_TIME, translation_key='heat_preservation_time',\
+    \ icon=\n    'mdi:timer', entity_category=EntityCategory.CONFIG))"
+  - "(NumberEntityDescription(key=DPCode.VOLUME_SET, translation_key='volume',\n \
+    \   icon='mdi:volume-high', entity_category=EntityCategory.CONFIG),)"
+  - "(NumberEntityDescription(key=DPCode.WATER_SET, translation_key=\n    'water_level',\
+    \ icon='mdi:cup-water', entity_category=EntityCategory.\n    CONFIG), NumberEntityDescription(key=DPCode.TEMP_SET,\
+    \ translation_key=\n    'temperature', device_class=NumberDeviceClass.TEMPERATURE,\
+    \ icon=\n    'mdi:thermometer', entity_category=EntityCategory.CONFIG),\n    NumberEntityDescription(key=DPCode.WARM_TIME,\
+    \ translation_key=\n    'heat_preservation_time', icon='mdi:timer', entity_category=\n\
+    \    EntityCategory.CONFIG), NumberEntityDescription(key=DPCode.POWDER_SET,\n\
+    \    translation_key='powder', entity_category=EntityCategory.CONFIG))"
+  - (NumberEntityDescription, ...)
+  - (NumberInfo, NumberState)
+  - "(PlugwiseNumberEntityDescription(key='maximum_boiler_temperature',\n    translation_key='maximum_boiler_temperature',\
+    \ command=lambda api,\n    number, dev_id, value: api.set_number_setpoint(number,\
+    \ dev_id, value),\n    device_class=NumberDeviceClass.TEMPERATURE, entity_category=\n\
+    \    EntityCategory.CONFIG, native_unit_of_measurement=UnitOfTemperature.\n  \
+    \  CELSIUS), PlugwiseNumberEntityDescription(key='max_dhw_temperature',\n    translation_key='max_dhw_temperature',\
+    \ command=lambda api, number,\n    dev_id, value: api.set_number_setpoint(number,\
+    \ dev_id, value),\n    device_class=NumberDeviceClass.TEMPERATURE, entity_category=\n\
+    \    EntityCategory.CONFIG, native_unit_of_measurement=UnitOfTemperature.\n  \
+    \  CELSIUS), PlugwiseNumberEntityDescription(key='temperature_offset',\n    translation_key='temperature_offset',\
+    \ command=lambda api, number,\n    dev_id, value: api.set_temperature_offset(number,\
+    \ dev_id, value),\n    device_class=NumberDeviceClass.TEMPERATURE, entity_category=\n\
+    \    EntityCategory.CONFIG, native_unit_of_measurement=UnitOfTemperature.\n  \
+    \  CELSIUS))"
+  - "(ProtectNumberEntityDescription(key='sensitivity', name=\n    'Motion Sensitivity',\
+    \ icon='mdi:walk', entity_category=EntityCategory.\n    CONFIG, native_unit_of_measurement=PERCENTAGE,\
+    \ ufp_min=0, ufp_max=100,\n    ufp_step=1, ufp_required_field=None, ufp_value=\n\
+    \    'light_device_settings.pir_sensitivity', ufp_set_method=\n    'set_sensitivity',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectNumberEntityDescription[Light](key='duration',\
+    \ name=\n    'Auto-shutoff Duration', icon='mdi:camera-timer', entity_category=\n\
+    \    EntityCategory.CONFIG, native_unit_of_measurement=UnitOfTime.SECONDS,\n \
+    \   ufp_min=15, ufp_max=900, ufp_step=15, ufp_required_field=None,\n    ufp_value_fn=_get_pir_duration,\
+    \ ufp_set_method_fn=_set_pir_duration,\n    ufp_perm=PermRequired.WRITE))"
+  - "(ProtectNumberEntityDescription(key='sensitivity', name=\n    'Motion Sensitivity',\
+    \ icon='mdi:walk', entity_category=EntityCategory.\n    CONFIG, native_unit_of_measurement=PERCENTAGE,\
+    \ ufp_min=0, ufp_max=100,\n    ufp_step=1, ufp_required_field=None, ufp_value=\n\
+    \    'motion_settings.sensitivity', ufp_set_method='set_motion_sensitivity',\n\
+    \    ufp_perm=PermRequired.WRITE),)"
+  - "(ProtectNumberEntityDescription(key='volume', name='Volume', icon=\n    'mdi:speaker',\
+    \ entity_category=EntityCategory.CONFIG,\n    native_unit_of_measurement=PERCENTAGE,\
+    \ ufp_min=0, ufp_max=100, ufp_step\n    =1, ufp_value='volume', ufp_set_method='set_volume',\
+    \ ufp_perm=\n    PermRequired.WRITE),)"
+  - "(ProtectNumberEntityDescription(key='wdr_value', name='Wide Dynamic Range',\n\
+    \    icon='mdi:state-machine', entity_category=EntityCategory.CONFIG,\n    ufp_min=0,\
+    \ ufp_max=3, ufp_step=1, ufp_required_field=\n    'feature_flags.has_wdr', ufp_value='isp_settings.wdr',\
+    \ ufp_set_method=\n    'set_wdr_level', ufp_perm=PermRequired.WRITE),\n    ProtectNumberEntityDescription(key='mic_level',\
+    \ name='Microphone Level',\n    icon='mdi:microphone', entity_category=EntityCategory.CONFIG,\n\
+    \    native_unit_of_measurement=PERCENTAGE, ufp_min=0, ufp_max=100, ufp_step\n\
+    \    =1, ufp_required_field='has_mic', ufp_value='mic_volume', ufp_enabled=\n\
+    \    'feature_flags.has_mic', ufp_set_method='set_mic_volume', ufp_perm=\n   \
+    \ PermRequired.WRITE), ProtectNumberEntityDescription(key='zoom_position',\n \
+    \   name='Zoom Level', icon='mdi:magnify-plus-outline', entity_category=\n   \
+    \ EntityCategory.CONFIG, native_unit_of_measurement=PERCENTAGE, ufp_min=0,\n \
+    \   ufp_max=100, ufp_step=1, ufp_required_field=\n    'feature_flags.can_optical_zoom',\
+    \ ufp_value=\n    'isp_settings.zoom_position', ufp_set_method='set_camera_zoom',\n\
+    \    ufp_perm=PermRequired.WRITE), ProtectNumberEntityDescription(key=\n    'chime_duration',\
+    \ name='Chime Duration', icon='mdi:bell',\n    entity_category=EntityCategory.CONFIG,\
+    \ native_unit_of_measurement=\n    UnitOfTime.SECONDS, ufp_min=1, ufp_max=10,\
+    \ ufp_step=0.1,\n    ufp_required_field='feature_flags.has_chime', ufp_enabled=\n\
+    \    'is_digital_chime', ufp_value_fn=_get_chime_duration, ufp_set_method=\n \
+    \   'set_chime_duration', ufp_perm=PermRequired.WRITE))"
+  - (ProtectNumberEntityDescription, ...)
+  - "(ProtectNumberEntityDescription[Doorlock](key='auto_lock_time', name=\n    'Auto-lock\
+    \ Timeout', icon='mdi:walk', entity_category=EntityCategory.\n    CONFIG, native_unit_of_measurement=UnitOfTime.SECONDS,\
+    \ ufp_min=0,\n    ufp_max=3600, ufp_step=15, ufp_required_field=None, ufp_value_fn=\n\
+    \    _get_auto_close, ufp_set_method_fn=_set_auto_close, ufp_perm=\n    PermRequired.WRITE),)"
+  - "(ReolinkNumberEntityDescription(key='zoom', translation_key='zoom', icon=\n \
+    \   'mdi:magnify', mode=NumberMode.SLIDER, native_step=1, get_min_value=lambda\n\
+    \    api, ch: api.zoom_range(ch)['zoom']['pos']['min'], get_max_value=lambda\n\
+    \    api, ch: api.zoom_range(ch)['zoom']['pos']['max'], supported=lambda api,\n\
+    \    ch: api.supported(ch, 'zoom'), value=lambda api, ch: api.get_zoom(ch),\n\
+    \    method=lambda api, ch, value: api.set_zoom(ch, int(value))),\n    ReolinkNumberEntityDescription(key='focus',\
+    \ translation_key='focus',\n    icon='mdi:focus-field', mode=NumberMode.SLIDER,\
+    \ native_step=1,\n    get_min_value=lambda api, ch: api.zoom_range(ch)['focus']['pos']['min'],\n\
+    \    get_max_value=lambda api, ch: api.zoom_range(ch)['focus']['pos']['max'],\n\
+    \    supported=lambda api, ch: api.supported(ch, 'focus'), value=lambda api,\n\
+    \    ch: api.get_focus(ch), method=lambda api, ch, value: api.set_focus(ch,\n\
+    \    int(value))), ReolinkNumberEntityDescription(key=\n    'floodlight_brightness',\
+    \ translation_key='floodlight_brightness', icon=\n    'mdi:spotlight-beam', entity_category=EntityCategory.CONFIG,\n\
+    \    native_step=1, native_min_value=1, native_max_value=100, supported=lambda\n\
+    \    api, ch: api.supported(ch, 'floodLight'), value=lambda api, ch: api.\n  \
+    \  whiteled_brightness(ch), method=lambda api, ch, value: api.set_whiteled\n \
+    \   (ch, brightness=int(value))), ReolinkNumberEntityDescription(key=\n    'volume',\
+    \ translation_key='volume', icon='mdi:volume-high',\n    entity_category=EntityCategory.CONFIG,\
+    \ native_step=1, native_min_value=\n    0, native_max_value=100, supported=lambda\
+    \ api, ch: api.supported(ch,\n    'volume'), value=lambda api, ch: api.volume(ch),\
+    \ method=lambda api, ch,\n    value: api.set_volume(ch, volume=int(value))),\n\
+    \    ReolinkNumberEntityDescription(key='guard_return_time', translation_key\n\
+    \    ='guard_return_time', icon='mdi:crosshairs-gps', entity_category=\n    EntityCategory.CONFIG,\
+    \ native_step=1, native_unit_of_measurement=\n    UnitOfTime.SECONDS, native_min_value=10,\
+    \ native_max_value=300,\n    supported=lambda api, ch: api.supported(ch, 'ptz_guard'),\
+    \ value=lambda\n    api, ch: api.ptz_guard_time(ch), method=lambda api, ch, value:\
+    \ api.\n    set_ptz_guard(ch, time=int(value))), ReolinkNumberEntityDescription(key\n\
+    \    ='motion_sensitivity', translation_key='motion_sensitivity', icon=\n    'mdi:motion-sensor',\
+    \ entity_category=EntityCategory.CONFIG, native_step\n    =1, native_min_value=1,\
+    \ native_max_value=50, supported=lambda api, ch:\n    api.supported(ch, 'md_sensitivity'),\
+    \ value=lambda api, ch: api.\n    md_sensitivity(ch), method=lambda api, ch, value:\
+    \ api.\n    set_md_sensitivity(ch, int(value))), ReolinkNumberEntityDescription(key\n\
+    \    ='ai_face_sensititvity', translation_key='ai_face_sensititvity', icon=\n\
+    \    'mdi:face-recognition', entity_category=EntityCategory.CONFIG,\n    native_step=1,\
+    \ native_min_value=0, native_max_value=100, supported=lambda\n    api, ch: api.supported(ch,\
+    \ 'ai_sensitivity') and api.ai_supported(ch,\n    'face'), value=lambda api, ch:\
+    \ api.ai_sensitivity(ch, 'face'), method=\n    lambda api, ch, value: api.set_ai_sensitivity(ch,\
+    \ int(value), 'face')),\n    ReolinkNumberEntityDescription(key='ai_person_sensititvity',\n\
+    \    translation_key='ai_person_sensititvity', icon='mdi:account',\n    entity_category=EntityCategory.CONFIG,\
+    \ native_step=1, native_min_value=\n    0, native_max_value=100, supported=lambda\
+    \ api, ch: api.supported(ch,\n    'ai_sensitivity') and api.ai_supported(ch, 'people'),\
+    \ value=lambda api,\n    ch: api.ai_sensitivity(ch, 'people'), method=lambda api,\
+    \ ch, value: api\n    .set_ai_sensitivity(ch, int(value), 'people')),\n    ReolinkNumberEntityDescription(key='ai_vehicle_sensititvity',\n\
+    \    translation_key='ai_vehicle_sensititvity', icon='mdi:car',\n    entity_category=EntityCategory.CONFIG,\
+    \ native_step=1, native_min_value=\n    0, native_max_value=100, supported=lambda\
+    \ api, ch: api.supported(ch,\n    'ai_sensitivity') and api.ai_supported(ch, 'vehicle'),\
+    \ value=lambda api,\n    ch: api.ai_sensitivity(ch, 'vehicle'), method=lambda\
+    \ api, ch, value:\n    api.set_ai_sensitivity(ch, int(value), 'vehicle')),\n \
+    \   ReolinkNumberEntityDescription(key='ai_pet_sensititvity',\n    translation_key='ai_pet_sensititvity',\
+    \ icon='mdi:dog-side',\n    entity_category=EntityCategory.CONFIG, native_step=1,\
+    \ native_min_value=\n    0, native_max_value=100, supported=lambda api, ch: api.supported(ch,\n\
+    \    'ai_sensitivity') and api.ai_supported(ch, 'dog_cat'), value=lambda api,\n\
+    \    ch: api.ai_sensitivity(ch, 'dog_cat'), method=lambda api, ch, value:\n  \
+    \  api.set_ai_sensitivity(ch, int(value), 'dog_cat')),\n    ReolinkNumberEntityDescription(key='ai_face_delay',\
+    \ translation_key=\n    'ai_face_delay', icon='mdi:face-recognition', entity_category=\n\
+    \    EntityCategory.CONFIG, entity_registry_enabled_default=False,\n    native_step=1,\
+    \ native_unit_of_measurement=UnitOfTime.SECONDS,\n    native_min_value=0, native_max_value=8,\
+    \ supported=lambda api, ch: api.\n    supported(ch, 'ai_delay') and api.ai_supported(ch,\
+    \ 'face'), value=lambda\n    api, ch: api.ai_delay(ch, 'face'), method=lambda\
+    \ api, ch, value: api.\n    set_ai_delay(ch, int(value), 'face')), ReolinkNumberEntityDescription(\n\
+    \    key='ai_person_delay', translation_key='ai_person_delay', icon=\n    'mdi:account',\
+    \ entity_category=EntityCategory.CONFIG,\n    entity_registry_enabled_default=False,\
+    \ native_step=1,\n    native_unit_of_measurement=UnitOfTime.SECONDS, native_min_value=0,\n\
+    \    native_max_value=8, supported=lambda api, ch: api.supported(ch,\n    'ai_delay')\
+    \ and api.ai_supported(ch, 'people'), value=lambda api, ch:\n    api.ai_delay(ch,\
+    \ 'people'), method=lambda api, ch, value: api.\n    set_ai_delay(ch, int(value),\
+    \ 'people')), ReolinkNumberEntityDescription\n    (key='ai_vehicle_delay', translation_key='ai_vehicle_delay',\
+    \ icon=\n    'mdi:car', entity_category=EntityCategory.CONFIG,\n    entity_registry_enabled_default=False,\
+    \ native_step=1,\n    native_unit_of_measurement=UnitOfTime.SECONDS, native_min_value=0,\n\
+    \    native_max_value=8, supported=lambda api, ch: api.supported(ch,\n    'ai_delay')\
+    \ and api.ai_supported(ch, 'vehicle'), value=lambda api, ch:\n    api.ai_delay(ch,\
+    \ 'vehicle'), method=lambda api, ch, value: api.\n    set_ai_delay(ch, int(value),\
+    \ 'vehicle')),\n    ReolinkNumberEntityDescription(key='ai_pet_delay', translation_key=\n\
+    \    'ai_pet_delay', icon='mdi:dog-side', entity_category=EntityCategory.\n  \
+    \  CONFIG, entity_registry_enabled_default=False, native_step=1,\n    native_unit_of_measurement=UnitOfTime.SECONDS,\
+    \ native_min_value=0,\n    native_max_value=8, supported=lambda api, ch: api.supported(ch,\n\
+    \    'ai_delay') and api.ai_supported(ch, 'dog_cat'), value=lambda api, ch:\n\
+    \    api.ai_delay(ch, 'dog_cat'), method=lambda api, ch, value: api.\n    set_ai_delay(ch,\
+    \ int(value), 'dog_cat')),\n    ReolinkNumberEntityDescription(key='auto_quick_reply_time',\n\
+    \    translation_key='auto_quick_reply_time', icon=\n    'mdi:message-reply-text-outline',\
+    \ entity_category=EntityCategory.CONFIG,\n    native_step=1, native_unit_of_measurement=UnitOfTime.SECONDS,\n\
+    \    native_min_value=1, native_max_value=60, supported=lambda api, ch: api.\n\
+    \    supported(ch, 'quick_reply'), value=lambda api, ch: api.\n    quick_reply_time(ch),\
+    \ method=lambda api, ch, value: api.set_quick_reply\n    (ch, time=int(value))),\
+    \ ReolinkNumberEntityDescription(key=\n    'auto_track_limit_left', translation_key='auto_track_limit_left',\
+    \ icon=\n    'mdi:angle-acute', mode=NumberMode.SLIDER, entity_category=\n   \
+    \ EntityCategory.CONFIG, native_step=1, native_min_value=-1,\n    native_max_value=2700,\
+    \ supported=lambda api, ch: api.supported(ch,\n    'auto_track_limit'), value=lambda\
+    \ api, ch: api.auto_track_limit_left(ch\n    ), method=lambda api, ch, value:\
+    \ api.set_auto_track_limit(ch, left=int(\n    value))), ReolinkNumberEntityDescription(key='auto_track_limit_right',\n\
+    \    translation_key='auto_track_limit_right', icon='mdi:angle-acute', mode=\n\
+    \    NumberMode.SLIDER, entity_category=EntityCategory.CONFIG, native_step=1,\n\
+    \    native_min_value=-1, native_max_value=2700, supported=lambda api, ch:\n \
+    \   api.supported(ch, 'auto_track_limit'), value=lambda api, ch: api.\n    auto_track_limit_right(ch),\
+    \ method=lambda api, ch, value: api.\n    set_auto_track_limit(ch, right=int(value))),\n\
+    \    ReolinkNumberEntityDescription(key='auto_track_disappear_time',\n    translation_key='auto_track_disappear_time',\
+    \ icon='mdi:target-account',\n    entity_category=EntityCategory.CONFIG, native_step=1,\n\
+    \    native_unit_of_measurement=UnitOfTime.SECONDS, native_min_value=1,\n    native_max_value=60,\
+    \ supported=lambda api, ch: api.supported(ch,\n    'auto_track_disappear_time'),\
+    \ value=lambda api, ch: api.\n    auto_track_disappear_time(ch), method=lambda\
+    \ api, ch, value: api.\n    set_auto_tracking(ch, disappear_time=int(value))),\n\
+    \    ReolinkNumberEntityDescription(key='auto_track_stop_time',\n    translation_key='auto_track_stop_time',\
+    \ icon='mdi:target-account',\n    entity_category=EntityCategory.CONFIG, native_step=1,\n\
+    \    native_unit_of_measurement=UnitOfTime.SECONDS, native_min_value=1,\n    native_max_value=60,\
+    \ supported=lambda api, ch: api.supported(ch,\n    'auto_track_stop_time'), value=lambda\
+    \ api, ch: api.auto_track_stop_time\n    (ch), method=lambda api, ch, value: api.set_auto_tracking(ch,\
+    \ stop_time\n    =int(value))))"
+  - "(RitualsNumberEntityDescription(key='perfume_amount', translation_key=\n    'perfume_amount',\
+    \ icon='mdi:gauge', native_min_value=1,\n    native_max_value=3, value_fn=lambda\
+    \ diffuser: diffuser.perfume_amount,\n    set_value_fn=lambda diffuser, value:\
+    \ diffuser.set_perfume_amount(value)),)"
+  - (RoborockDataUpdateCoordinator, RoborockNumberDescription)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - "(SensiboNumberEntityDescription(key='calibration_temp', translation_key=\n  \
+    \  'calibration_temperature', device_class=NumberDeviceClass.TEMPERATURE,\n  \
+    \  native_unit_of_measurement=UnitOfTemperature.CELSIUS, remote_key=\n    'temperature',\
+    \ entity_category=EntityCategory.CONFIG,\n    entity_registry_enabled_default=False,\
+    \ native_min_value=-10,\n    native_max_value=10, native_step=0.1, value_fn=lambda\
+    \ data: data.\n    calibration_temp), SensiboNumberEntityDescription(key='calibration_hum',\n\
+    \    translation_key='calibration_humidity', device_class=NumberDeviceClass.\n\
+    \    HUMIDITY, native_unit_of_measurement=PERCENTAGE, remote_key='humidity',\n\
+    \    entity_category=EntityCategory.CONFIG, entity_registry_enabled_default=\n\
+    \    False, native_min_value=-10, native_max_value=10, native_step=0.1,\n    value_fn=lambda\
+    \ data: data.calibration_hum))"
+  - "(ToloNumberEntityDescription(key='power_timer', translation_key=\n    'power_timer',\
+    \ icon='mdi:power-settings', native_unit_of_measurement=\n    UnitOfTime.MINUTES,\
+    \ native_max_value=POWER_TIMER_MAX, getter=lambda\n    settings: settings.power_timer,\
+    \ setter=lambda client, value: client.\n    set_power_timer(value)), ToloNumberEntityDescription(key=\n\
+    \    'salt_bath_timer', translation_key='salt_bath_timer', icon=\n    'mdi:shaker-outline',\
+    \ native_unit_of_measurement=UnitOfTime.MINUTES,\n    native_max_value=SALT_BATH_TIMER_MAX,\
+    \ getter=lambda settings: settings.\n    salt_bath_timer, setter=lambda client,\
+    \ value: client.\n    set_salt_bath_timer(value)), ToloNumberEntityDescription(key=\n\
+    \    'fan_timer', translation_key='fan_timer', icon='mdi:fan-auto',\n    native_unit_of_measurement=UnitOfTime.MINUTES,\
+    \ native_max_value=\n    FAN_TIMER_MAX, getter=lambda settings: settings.fan_timer,\
+    \ setter=lambda\n    client, value: client.set_fan_timer(value)))"
+  - "(ValloxNumberEntityDescription(key='supply_air_target_home',\n    translation_key='supply_air_target_home',\
+    \ metric_key=\n    'A_CYC_HOME_AIR_TEMP_TARGET', device_class=NumberDeviceClass.\n\
+    \    TEMPERATURE, native_unit_of_measurement=UnitOfTemperature.CELSIUS, icon\n\
+    \    ='mdi:thermometer', native_min_value=5.0, native_max_value=25.0,\n    native_step=1.0),\
+    \ ValloxNumberEntityDescription(key=\n    'supply_air_target_away', translation_key='supply_air_target_away',\n\
+    \    metric_key='A_CYC_AWAY_AIR_TEMP_TARGET', device_class=NumberDeviceClass\n\
+    \    .TEMPERATURE, native_unit_of_measurement=UnitOfTemperature.CELSIUS,\n   \
+    \ icon='mdi:thermometer', native_min_value=5.0, native_max_value=25.0,\n    native_step=1.0),\
+    \ ValloxNumberEntityDescription(key=\n    'supply_air_target_boost', translation_key='supply_air_target_boost',\n\
+    \    metric_key='A_CYC_BOOST_AIR_TEMP_TARGET', device_class=\n    NumberDeviceClass.TEMPERATURE,\
+    \ native_unit_of_measurement=\n    UnitOfTemperature.CELSIUS, icon='mdi:thermometer',\
+    \ native_min_value=5.0,\n    native_max_value=25.0, native_step=1.0))"
+  - (ValloxNumberEntityDescription, ...)
+  - "(WizNumberEntityDescription(key='effect_speed', translation_key=\n    'effect_speed',\
+    \ native_min_value=10, native_max_value=200, native_step=\n    1, icon='mdi:speedometer',\
+    \ value_fn=lambda device: cast(int | None,\n    device.state.get_speed()), set_value_fn=_async_set_speed,\n\
+    \    required_feature='effect', entity_category=EntityCategory.CONFIG),\n    WizNumberEntityDescription(key='dual_head_ratio',\
+    \ translation_key=\n    'dual_head_ratio', native_min_value=0, native_max_value=100,\n\
+    \    native_step=1, icon='mdi:floor-lamp-dual', value_fn=lambda device: cast\n\
+    \    (int | None, device.state.get_ratio()), set_value_fn=_async_set_ratio,\n\
+    \    required_feature='dual_head', entity_category=EntityCategory.CONFIG))"
+  - (WizNumberEntityDescription, ...)
+  - ([Any, int], Coroutine[None, None, None])
+  - ([Any], float)
+  - ([AttributeCache, float], Coroutine[Any, Any, dict])
+  - ([DeconzSession, str, int], Coroutine[Any, Any, dict[str, Any]])
+  - ([Device], float | None)
+  - ([Device], int | None)
+  - ([Diffuser, int], Awaitable[Any])
+  - ([Diffuser], int)
+  - ([EcobeeData, int, int], Awaitable)
+  - ([Envoy, float], Awaitable[dict[str, Any]])
+  - ([EnvoyDryContactSettings], float)
+  - ([EnvoyStorageSettings], float)
+  - ([Host, int, float], Any)
+  - ([Host, int], bool)
+  - ([Host, int], float | None)
+  - ([Host, int], float)
+  - ([Inverter, int], Awaitable[None])
+  - ([Inverter], Awaitable[int])
+  - ([Inverter], bool)
+  - ([LaMetricDevice, float], Awaitable[Any])
+  - ([MyBMWVehicle, float | int], Coroutine[Any, Any, Any])
+  - ([MyBMWVehicle], bool)
+  - ([MyBMWVehicle], float | int | None)
+  - ([MyBMWVehicle], list[str])
+  - ([PublishPayloadType], PublishPayloadType)
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - ([Segment], float | None)
+  - ([SensiboDevice], float | None)
+  - ([SettingsInfo], int | None)
+  - ([SleepIQBed, Any], str)
+  - ([Smile, str, str, float], Awaitable[None])
+  - ([T], float | None)
+  - ([ToloClient, int | None], Any)
+  - ([Valve, int], Coroutine[Any, Any, None])
+  - ([Valve], Any)
+  - ([WallboxCoordinator], Callable[[float], Awaitable[None]])
+  - ([WallboxCoordinator], float)
+  - ([float, Callable[..., Awaitable[None]]], Awaitable[None])
+  - ([wizlight, int], Coroutine[None, None, None])
+  - ([wizlight], int | None)
+  - (capibility, value)
+  - (coordinator, description)
+  - (device_id, device)
+  - (device_id, device_data)
+  - (feature, description)
+  - (float, float)
+  - (index, thermostat)
+  - (int, int)
+  - (k, v)
+  - (left, right)
+  - (level_type, valid_range)
+  - (list_models, favorite_level_value)
+  - (min_value, max_value)
+  - (node, control)
+  - (self._attr_native_min_value, self._attr_native_max_value)
+  - (str, Any)
+  - (str, NumberEntityDescription)
+  - (str, RitualsDataUpdateCoordinator)
+  - (str, RoborockDataUpdateCoordinator)
+  - (str, SleepIQNumberEntityDescription)
+  - (str, WallboxNumberEntityDescription)
+  - (str, tuple[NumberEntityDescription, ...])
+  - (str, tuple[int, int])
+  - (tuple[str | int, ...], ...)
+  - (tuple[str, str], BlockNumberDescription)
+  - (zone, data)
+  - '..., Awaitable[None]'
+  - Any, Any, Any
+  - Any, Any, None
+  - Any, Any, dict
+  - Any, Any, dict[str, Any]
+  - None, None, None
+  - NumberEntityDescription, ...
+  - '[float], Awaitable[None]'
+  - int, int
+  - str | int, ...
+  - str, Any
+  - str, str

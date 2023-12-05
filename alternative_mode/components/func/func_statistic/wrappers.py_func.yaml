@@ -1,0 +1,16 @@
+wrappers.py:
+- __del__
+- __init__
+- _async_get_backend_for_ble_device
+- _async_get_best_available_backend_and_device
+- _cancel_callback
+- _make_disconnected_callback
+- _map_filters
+- _rssi_sorter_with_connection_failure_penalty
+- _setup_detection_callback
+- detection_callback
+- discovered_devices
+- is_connected
+- register_detection_callback
+- set_disconnected_callback
+- set_scanning_filter

@@ -1,0 +1,12 @@
+air_quality.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (ATTR_AQI_LEVEL, self.air_quality_index_level)
+  - (ATTR_AQI_POLLUTANT, self.air_quality_index_pollutant)
+  - (ATTR_VOC, self.volatile_organic_compounds)
+  - (attr, value)
+  - (latitude, longitude)
+  - (prop, attr)
+  - (str, dict[str, Callable])
+  - str, Callable

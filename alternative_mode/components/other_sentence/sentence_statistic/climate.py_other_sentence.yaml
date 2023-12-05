@@ -1,0 +1,312 @@
+climate.py:
+  schemas: []
+  sets:
+  - '{''3157100'', ''3157100-E''}'
+  - '{''SORB''}'
+  - '{''Zen Within'', ''LUX''}'
+  - "{'_TZE200_7yoranx2', '_TZE200_e9ba97vf', '_TZE200_hue3yfsn',\n    '_TZE200_husqqvux',\
+    \ '_TZE200_kds0pmmv', '_TZE200_kly8gjlz',\n    '_TZE200_lnbfnyxd', '_TZE200_mudxchsu'}"
+  - '{''_TZE200_b6wax7g0''}'
+  - "{'_TZE200_ckud7u2l', '_TZE200_ywdxldoj', '_TZE200_cwnjrr72',\n    '_TZE200_2atgpdho',\
+    \ '_TZE200_pvvbommb', '_TZE200_4eeyebrt',\n    '_TZE200_cpmgn2cf', '_TZE200_9sfg7gm0',\
+    \ '_TZE200_8whxpsiw',\n    '_TYST11_ckud7u2l', '_TYST11_ywdxldoj', '_TYST11_cwnjrr72',\n\
+    \    '_TYST11_2atgpdho'}"
+  - '{''_attr_current_humidity''}'
+  - '{''_attr_current_temperature''}'
+  - '{''_attr_fan_mode''}'
+  - '{''_attr_hvac_action''}'
+  - '{''_attr_hvac_mode''}'
+  - '{''_attr_is_aux_heat''}'
+  - '{''_attr_preset_mode''}'
+  - '{''_attr_swing_mode''}'
+  - '{''_attr_target_humidity''}'
+  - '{''_attr_target_temperature''}'
+  - '{''_attr_target_temperature_high''}'
+  - '{''_attr_target_temperature_low''}'
+  - '{''cool'', ''auto''}'
+  - '{''heat'', ''emheat'', ''auto''}'
+  - "{'quiet', 'low', 'medium_low', 'medium', 'medium_high', 'high', 'strong',\n \
+    \   'auto'}"
+  - "{'stopped', 'fixedtop', 'fixedmiddletop', 'fixedmiddle',\n    'fixedmiddlebottom',\
+    \ 'fixedbottom', 'rangetop', 'rangemiddle',\n    'rangebottom', 'rangefull', 'horizontal',\
+    \ 'both'}"
+  - '{(CONNECTION_NETWORK_MAC, coordinator.mac)}'
+  - '{(CONNECTION_NETWORK_MAC, mac)}'
+  - '{(DOMAIN, device.deviceid)}'
+  - '{(DOMAIN, device[''uid''])}'
+  - '{(DOMAIN, f''ac_{ac_number}'')}'
+  - '{(DOMAIN, f''{hub.hub_serial}:{zone_id}'')}'
+  - '{(DOMAIN, group_number)}'
+  - '{(DOMAIN, gw_dev.gw_id)}'
+  - '{(DOMAIN, heater.device_id)}'
+  - '{(DOMAIN, heater_data[''id''])}'
+  - '{(DOMAIN, mac)}'
+  - '{(DOMAIN, said)}'
+  - '{(DOMAIN, self._electra_ac_device.mac)}'
+  - '{(DOMAIN, self._thermostat.serial_number)}'
+  - '{(DOMAIN, self.thermostat.id)}'
+  - '{(DOMAIN, self.thermostat[''identifier''])}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, thermostat.serial_number)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(HMIPC_DOMAIN, self._device.id)}'
+  - '{(IZONE, controller.device_uid)}'
+  - '{(IZONE, controller.unique_id, zone.index)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)}'
+  - '{CLUSTER_HANDLER_THERMOSTAT, ''sinope_manufacturer_specific''}'
+  - "{CONF_FAN_MODE_COMMAND_TEMPLATE, CONF_HUMIDITY_COMMAND_TEMPLATE,\n    CONF_MODE_COMMAND_TEMPLATE,\
+    \ CONF_POWER_COMMAND_TEMPLATE,\n    CONF_PRESET_MODE_COMMAND_TEMPLATE, CONF_SWING_MODE_COMMAND_TEMPLATE,\n\
+    \    CONF_TEMP_COMMAND_TEMPLATE, CONF_TEMP_HIGH_COMMAND_TEMPLATE,\n    CONF_TEMP_LOW_COMMAND_TEMPLATE}"
+  - '{HVACMode.COOL, HVACMode.HEAT}'
+  - '{HVACMode.HEAT, HVACMode.COOL, HVACMode.HEAT_COOL}'
+  - '{HVACMode.HEAT, HVACMode.COOL}'
+  - '{HVACMode.HEAT_COOL}'
+  - '{HVACMode.OFF}'
+  - "{climate.ATTR_AUX_HEAT, climate.ATTR_CURRENT_HUMIDITY, climate.\n    ATTR_CURRENT_TEMPERATURE,\
+    \ climate.ATTR_FAN_MODE, climate.ATTR_FAN_MODES,\n    climate.ATTR_HUMIDITY, climate.ATTR_HVAC_ACTION,\
+    \ climate.\n    ATTR_HVAC_MODES, climate.ATTR_MAX_HUMIDITY, climate.ATTR_MAX_TEMP,\n\
+    \    climate.ATTR_MIN_HUMIDITY, climate.ATTR_MIN_TEMP, climate.\n    ATTR_PRESET_MODE,\
+    \ climate.ATTR_PRESET_MODES, climate.ATTR_SWING_MODE,\n    climate.ATTR_SWING_MODES,\
+    \ climate.ATTR_TARGET_TEMP_HIGH, climate.\n    ATTR_TARGET_TEMP_LOW, climate.ATTR_TARGET_TEMP_STEP,\
+    \ climate.\n    ATTR_TEMPERATURE}"
+  - "{unit.prio, unit.cooling_with_room_sensor, climate.current, climate.\n    setpoint_heat,\
+    \ climate.setpoint_cool, climate.mixing_valve_state,\n    climate.active_accessory,\
+    \ climate.use_room_sensor}"
+  tuples:
+  - "('&deg;C', '\xB0C')"
+  - ('C', 'F')
+  - ('auto', HVACMode.HEAT_COOL)
+  - ('auxHeatOnly', HVACMode.HEAT)
+  - ('cool', HVACMode.COOL)
+  - "('devolo.model.Thermostat:Valve', 'devolo.model.Room:Thermostat',\n    'devolo.model.Eurotronic:Spirit:Device',\
+    \ 'unk.model.Danfoss:Thermostat')"
+  - ('heat', HVACMode.HEAT)
+  - ('off', HVACMode.OFF)
+  - ('setMode', 'setOperatingMode', 'setThermostatMode')
+  - ('setTargetLevel', 'setThermostatSetpoint', 'setHeatingThermostatSetpoint')
+  - "((CONF_HVAC_MODE_OFF, HVACMode.OFF), (CONF_HVAC_MODE_HEAT, HVACMode.HEAT),\n\
+    \    (CONF_HVAC_MODE_COOL, HVACMode.COOL), (CONF_HVAC_MODE_HEAT_COOL,\n    HVACMode.HEAT_COOL),\
+    \ (CONF_HVAC_MODE_AUTO, HVACMode.AUTO), (\n    CONF_HVAC_MODE_DRY, HVACMode.DRY),\
+    \ (CONF_HVAC_MODE_FAN_ONLY, HVACMode.\n    FAN_ONLY))"
+  - ()
+  - (3, 4, 5)
+  - (6, 7)
+  - (ATTR_OCCP_COOL_SETPT, ATTR_OCCP_HEAT_SETPT)
+  - (ATTR_TEMPERATURE, ATTR_FAN_MODE, ATTR_SWING_MODE, ATTR_HVAC_MODE)
+  - "(AsyncHeatingThermostat, AsyncHeatingThermostatCompact,\n    AsyncHeatingThermostatEvo)"
+  - "(CONF_ACTION_TOPIC, CONF_AUX_COMMAND_TOPIC, CONF_AUX_STATE_TOPIC,\n    CONF_CURRENT_HUMIDITY_TOPIC,\
+    \ CONF_CURRENT_TEMP_TOPIC,\n    CONF_FAN_MODE_COMMAND_TOPIC, CONF_FAN_MODE_STATE_TOPIC,\n\
+    \    CONF_HUMIDITY_COMMAND_TOPIC, CONF_HUMIDITY_STATE_TOPIC,\n    CONF_MODE_COMMAND_TOPIC,\
+    \ CONF_MODE_STATE_TOPIC,\n    CONF_POWER_COMMAND_TOPIC, CONF_POWER_STATE_TOPIC,\n\
+    \    CONF_PRESET_MODE_COMMAND_TOPIC, CONF_PRESET_MODE_STATE_TOPIC,\n    CONF_SWING_MODE_COMMAND_TOPIC,\
+    \ CONF_SWING_MODE_STATE_TOPIC,\n    CONF_TEMP_COMMAND_TOPIC, CONF_TEMP_HIGH_COMMAND_TOPIC,\n\
+    \    CONF_TEMP_HIGH_STATE_TOPIC, CONF_TEMP_LOW_COMMAND_TOPIC,\n    CONF_TEMP_LOW_STATE_TOPIC,\
+    \ CONF_TEMP_STATE_TOPIC)"
+  - "(CONF_AUX_STATE_TEMPLATE, CONF_CURRENT_HUMIDITY_TEMPLATE,\n    CONF_CURRENT_TEMP_TEMPLATE,\
+    \ CONF_FAN_MODE_STATE_TEMPLATE,\n    CONF_HUMIDITY_STATE_TEMPLATE, CONF_MODE_STATE_TEMPLATE,\n\
+    \    CONF_POWER_STATE_TEMPLATE, CONF_ACTION_TEMPLATE,\n    CONF_PRESET_MODE_VALUE_TEMPLATE,\
+    \ CONF_SWING_MODE_STATE_TEMPLATE,\n    CONF_TEMP_HIGH_STATE_TEMPLATE, CONF_TEMP_LOW_STATE_TEMPLATE,\n\
+    \    CONF_TEMP_STATE_TEMPLATE)"
+  - (CONF_HVAC_MODE_AUTO, HVACMode.AUTO)
+  - (CONF_HVAC_MODE_COOL, HVACMode.COOL)
+  - (CONF_HVAC_MODE_DRY, HVACMode.DRY)
+  - (CONF_HVAC_MODE_FAN_ONLY, HVACMode.FAN_ONLY)
+  - (CONF_HVAC_MODE_HEAT, HVACMode.HEAT)
+  - (CONF_HVAC_MODE_HEAT_COOL, HVACMode.HEAT_COOL)
+  - (CONF_HVAC_MODE_OFF, HVACMode.OFF)
+  - (CONNECTION_NETWORK_MAC, coordinator.mac)
+  - (CONNECTION_NETWORK_MAC, mac)
+  - (CONST_MODE_OFF, CONST_MODE_AUTO, CONST_MODE_SMART_SCHEDULE)
+  - "(COOLING, HEATING, DEHUMIDIFYING, HUMIDIFYING, HEAT_SET_POINT, FAN_MODE,\n  \
+    \  SYSTEM_MODE, TEMPERATURE, HUMIDITY, HUMIDITY_HIGH, HUMIDITY_LOW)"
+  - (ClientConnectionError, asyncio.TimeoutError)
+  - (ClimateAction, HVACAction)
+  - (ClimateEntityDescription(key='climate', name='Thermostat'),)
+  - (ClimateEntityDescription, ...)
+  - (ClimateFanMode, str)
+  - (ClimateInfo, ClimateState)
+  - (ClimateMode, HVACMode)
+  - (ClimatePreset, str)
+  - (ClimateSwingMode, str)
+  - (DEVICE.BODY,)
+  - (DOMAIN, device.deviceid)
+  - (DOMAIN, device['uid'])
+  - (DOMAIN, f'ac_{ac_number}')
+  - (DOMAIN, f'{hub.hub_serial}:{zone_id}')
+  - (DOMAIN, group_number)
+  - (DOMAIN, gw_dev.gw_id)
+  - (DOMAIN, heater.device_id)
+  - (DOMAIN, heater_data['id'])
+  - (DOMAIN, hub.hub_info[ATTR_SERIAL])
+  - (DOMAIN, mac)
+  - (DOMAIN, said)
+  - (DOMAIN, self._electra_ac_device.mac)
+  - (DOMAIN, self._thermostat.serial_number)
+  - (DOMAIN, self.thermostat.id)
+  - (DOMAIN, self.thermostat['identifier'])
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, thermostat.serial_number)
+  - (DOMAIN, unique_id)
+  - (DPCode.C_F, DPCode.TEMP_UNIT_CONVERT)
+  - (DPCode.FAN_SPEED_ENUM, DPCode.WINDSPEED)
+  - (DPCode.SHAKE, DPCode.SWING)
+  - (DPCode.SHAKE, DPCode.SWING, DPCode.SWITCH_HORIZONTAL, DPCode.SWITCH_VERTICAL)
+  - (DPCode.TEMP_CURRENT, DPCode.TEMP_CURRENT_F)
+  - (DPCode.TEMP_CURRENT, DPCode.UPPER_TEMP)
+  - (DPCode.TEMP_CURRENT_F, DPCode.UPPER_TEMP_F)
+  - (DPCode.TEMP_SET, DPCode.TEMP_SET_F)
+  - "(DataType.INT16, DataType.INT32, DataType.INT64, DataType.UINT16, DataType.\n\
+    \    UINT32, DataType.UINT64)"
+  - (DataType.INT16, DataType.UINT16)
+  - "(EVENT_TYPE_SET_POINT, EVENT_TYPE_THERM_MODE, EVENT_TYPE_CANCEL_SET_POINT,\n\
+    \    EVENT_TYPE_SCHEDULE)"
+  - (EVO_AWAY, EVO_HEATOFF)
+  - (FAN_ON, FAN_AUTO)
+  - (HMIPC_DOMAIN, self._device.homeId)
+  - (HMIPC_DOMAIN, self._device.id)
+  - (HVACAction.COOLING, HVACAction.HEATING)
+  - (HVACAction.HEATING, HVACAction.COOLING, HVACAction.DRYING, HVACAction.FAN)
+  - (HVACMode | str | None, str)
+  - (HVACMode, OperationMode)
+  - (HVACMode, int | None)
+  - (HVACMode, int)
+  - (HVACMode.AUTO, HVACMode.HEAT)
+  - (HVACMode.COOL, HVACMode.FAN_ONLY)
+  - (HVACMode.COOL, HVACMode.HEAT)
+  - (HVACMode.COOL, HVACMode.HEAT, HVACMode.OFF)
+  - (HVACMode.COOL, HVACMode.HEAT_COOL)
+  - (HVACMode.HEAT, HVACMode.COOL)
+  - (HVACMode.HEAT_COOL, HVACMode.HEAT, HVACMode.COOL)
+  - (HVACMode.OFF, HVACMode.AUTO)
+  - (IZONE, controller.device_uid)
+  - (IZONE, controller.unique_id)
+  - (IZONE, controller.unique_id, zone.index)
+  - (IndexError, ValueError)
+  - (IndexError, ValueError, TypeError)
+  - (IntEnum, HVACMode)
+  - (MAX_DEVICE_MODE_AUTOMATIC, MAX_DEVICE_MODE_BOOST)
+  - (None, ThermostatFan.AUTO)
+  - (None, ThermostatFan.ON)
+  - (OFF_REPORT_SET_TEMPERATURE, OFF_API_TEMPERATURE)
+  - (OPERATION_MODE_COOL, OPERATION_MODE_HEAT)
+  - (OperationAction, HVACAction)
+  - (OperationMode, HVACMode)
+  - (PRESET_AWAY, PRESET_COMFORT, PRESET_HOME, PRESET_SLEEP, PRESET_ACTIVITY)
+  - (PRESET_BOOST, STATE_NETATMO_MAX)
+  - (PRESET_HOLD_NEXT_TRANSITION, PRESET_HOLD_INDEFINITE)
+  - (PRESET_SCHEDULE, PRESET_FROST_GUARD, PRESET_AWAY)
+  - (SCHEDULE_TEMPORARY_HOLD, SCHEDULE_HOLD)
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN)
+  - (SWING_BOTH, SWING_HORIZONTAL)
+  - (SWING_BOTH, SWING_VERTICAL)
+  - (SWING_HORIZONTAL, SWING_BOTH)
+  - (SWING_OFF, SWING_HORIZONTAL)
+  - (SWING_OFF, SWING_VERTICAL)
+  - (SWING_VERTICAL, SWING_BOTH)
+  - (SomeComfortError, ClientConnectionError, asyncio.TimeoutError)
+  - (SwitchBeeError, SwitchBeeDeviceOfflineError)
+  - (ThermostatDevice(therm, name),)
+  - (ThermostatMode.AUTO, None)
+  - (ThermostatMode.COOL, None)
+  - (ThermostatMode.DRY, ThermostatMode.FAN)
+  - (ThermostatMode.HEAT, None)
+  - (ThermostatMode.HEAT, ThermostatMode.EMERGENCY_HEAT)
+  - (ThermostatMode.OFF, ThermostatFan.AUTO)
+  - (ThermostatMode.OFF, ThermostatFan.ON)
+  - (ThermostatSetpointType, ZwaveValue | None)
+  - (UOM_ISYV4_NONE, '')
+  - (ValueError, AssertionError, requests.RequestException)
+  - ([ReceiveMessage], None)
+  - (ac_key, ac_device)
+  - (addr_out, addr_in)
+  - (aidoo_id, aidoo_data)
+  - (ain, device)
+  - (asyncio.TimeoutError, OSError, RuntimeError)
+  - "(clusters.Thermostat.Attributes.FeatureMap, clusters.Thermostat.Attributes.\n\
+    \    ControlSequenceOfOperation, clusters.Thermostat.Attributes.Occupancy,\n \
+    \   clusters.Thermostat.Attributes.OccupiedCoolingSetpoint, clusters.\n    Thermostat.Attributes.OccupiedHeatingSetpoint,\
+    \ clusters.Thermostat.\n    Attributes.SystemMode, clusters.Thermostat.Attributes.\n\
+    \    ThermostatRunningMode, clusters.Thermostat.Attributes.\n    ThermostatRunningState,\
+    \ clusters.Thermostat.Attributes.\n    TemperatureSetpointHold, clusters.Thermostat.Attributes.\n\
+    \    UnoccupiedCoolingSetpoint, clusters.Thermostat.Attributes.\n    UnoccupiedHeatingSetpoint)"
+  - (clusters.Thermostat.Attributes.LocalTemperature,)
+  - (device, coordinator)
+  - (device_id, device)
+  - (device_id, device_config)
+  - (device_id, device_data)
+  - (device_types.Thermostat,)
+  - (dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)
+  - (float, float)
+  - (group_id, group_data)
+  - (hour_cool, minute_cool)
+  - (hour_heat, minute_heat)
+  - (hvac_mode_kw, hvac_mode)
+  - (i, k)
+  - (idx, mode)
+  - (ih_device_id, device)
+  - (inst_id, inst_data)
+  - (int, HVACAction)
+  - (int, HVACMode)
+  - (int, dict[int, str])
+  - (int, float)
+  - (int, str)
+  - (k, v)
+  - (key, group)
+  - (key, template)
+  - (key, val)
+  - (key, value)
+  - (key1, value1)
+  - (key2, value2)
+  - (low, high, heat, cool)
+  - (min_humidity, max_humidity)
+  - (min_setpoint, max_setpoint)
+  - (min_temp, max_temp)
+  - (mode_id, mode_name)
+  - (name, device_cfg)
+  - (offset_key, attr)
+  - (preset, settings)
+  - (preset_mode, PRESET_NONE)
+  - "(round(rotation_speed.minValue or 0) + 1, round(rotation_speed.maxValue or 100)\n\
+    \    )"
+  - (self._api.STATE_ON, self._api.STATE_IDLE)
+  - (self._cur_temp, self._target_temp)
+  - (self.unit.get_operation_mode(), self.unit.get_week_program())
+  - (serial_number, thermostat)
+  - (set_req.V_HVAC_SETPOINT_COOL, high)
+  - (set_req.V_HVAC_SETPOINT_HEAT, low)
+  - (settings.mode, settings.program)
+  - (sid, schedule)
+  - (socket.timeout, OSError)
+  - (state, label)
+  - (str | None, str)
+  - (str, Any)
+  - (str, Callable[[PublishPayloadType], PublishPayloadType])
+  - (str, Callable[[ReceivePayloadType], ReceivePayloadType])
+  - (str, DeviceInfo)
+  - (str, HVACMode)
+  - (str, SomeComfortDevice)
+  - (str, Template | None)
+  - (str, TuyaClimateEntityDescription)
+  - (str, bool | int)
+  - (str, dict[str, Any])
+  - (str, int | None)
+  - (str, int | str)
+  - (str, int)
+  - (str, str | bool | float | dict)
+  - (str, str | bool)
+  - (str, str)
+  - (system_zone_id, zone_data)
+  - (temp, targ, _, trv_output)
+  - (thermostat, coordinator)
+  - (thermostat_mode, elk_fan_mode)
+  - (thermostat_mode, fan_mode)
+  - (value, hvac_mode)
+  - (value, mode)
+  - (value_type, temp)
+  - (value_type, value)
+  - (zone_id, zone_data)
+  - (zone_key, zone)
+  - '[PublishPayloadType], PublishPayloadType'
+  - '[ReceivePayloadType], ReceivePayloadType'
+  - int, str
+  - str, Any

@@ -1,0 +1,6 @@
+fmp4utils.py:
+- find_box
+- find_moov
+- get_codec_string
+- read_init
+- transform_init

@@ -1,0 +1,11 @@
+state.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (CONF_FROM, CONF_NOT_FROM, CONF_NOT_TO, CONF_TO)
+  - (exceptions.TemplateError, vol.Invalid)
+  - (str, Any)
+  - (str, dict[str, Any])
+  - (str, int | None)
+  - (str, timedelta)
+  - str, Any

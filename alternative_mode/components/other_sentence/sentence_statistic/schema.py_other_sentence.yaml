@@ -1,0 +1,21 @@
+schema.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (ConversionError, CouldNotParseTelegram)
+  - (EventData.shared_data,)
+  - (Events, EventData)
+  - (InstrumentedAttribute, ...)
+  - (StateAttributes.shared_attrs,)
+  - (States, StateAttributes)
+  - (States.state,)
+  - (Statistics, StatisticsShortTerm)
+  - (StatisticsMeta.statistic_id,)
+  - (SupportedDialect.MYSQL, SupportedDialect.POSTGRESQL)
+  - (VacuumEntityFeature, str)
+  - ([Any], str | int)
+  - (str, Any)
+  - (str, VacuumEntityFeature)
+  - (str, int)
+  - (table, columns)
+  - (vol.Optional, vol.All)

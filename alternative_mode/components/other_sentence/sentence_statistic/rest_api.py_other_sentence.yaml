@@ -1,0 +1,6 @@
+rest_api.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([str], bool)
+  - (str, Any)

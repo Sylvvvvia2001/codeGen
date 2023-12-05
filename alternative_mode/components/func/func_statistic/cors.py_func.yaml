@@ -1,0 +1,3 @@
+cors.py:
+- _allow_cors
+- setup_cors

@@ -1,0 +1,22 @@
+scene.py:
+  schemas: []
+  sets:
+  - '{(CASETA_DOMAIN, data.bridge_device[''serial''])}'
+  - '{(DOMAIN, controller.hub_serial)}'
+  - '{(DOMAIN, f''{entry_id}_mcp'')}'
+  - '{(DOMAIN, f''{self.unique_id}'')}'
+  - '{(DOMAIN, self.group.id)}'
+  tuples:
+  - ('name', 'entities')
+  - (CASETA_DOMAIN, data.bridge_device['serial'])
+  - (DOMAIN, controller.hub_serial)
+  - (DOMAIN, f'{entry_id}_mcp')
+  - (DOMAIN, f'{self.unique_id}')
+  - (DOMAIN, self.group.id)
+  - (area_name, keypad_name, device, led)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (entity_id, info)
+  - (index, cur_value)
+  - (p_type, p_config)
+  - (str, Any)
+  - (str, State)

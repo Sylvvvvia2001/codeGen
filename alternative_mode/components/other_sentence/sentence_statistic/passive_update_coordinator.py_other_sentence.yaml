@@ -1,0 +1,11 @@
+passive_update_coordinator.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Any, None, None)
+  - (CALLBACK_TYPE, tuple[CALLBACK_TYPE, object | None])
+  - ([], None)
+  - (_, context)
+  - (update_callback, _)
+  - (update_callback, context)
+  - CALLBACK_TYPE, object | None

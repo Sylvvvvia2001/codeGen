@@ -1,0 +1,5 @@
+stt.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (OSError, WyomingError)

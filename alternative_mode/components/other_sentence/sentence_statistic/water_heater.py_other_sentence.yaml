@@ -1,0 +1,30 @@
+water_heater.py:
+  schemas: []
+  sets:
+  - '{''_attr_current_operation''}'
+  - "{CONF_MODE_COMMAND_TEMPLATE, CONF_TEMP_COMMAND_TEMPLATE,\n    CONF_POWER_COMMAND_TEMPLATE}"
+  - "{desc.hot_water_load, desc.hot_water_comfort_mode, *set(desc.\n    start_temperature.values()),\
+    \ *set(desc.stop_temperature.values()), desc\n    .active_accessory, desc.temporary_lux}"
+  - "{water_heater.ATTR_CURRENT_TEMPERATURE, water_heater.ATTR_MAX_TEMP,\n    water_heater.ATTR_MIN_TEMP,\
+    \ water_heater.ATTR_TEMPERATURE, water_heater\n    .ATTR_OPERATION_LIST, water_heater.ATTR_OPERATION_MODE}"
+  tuples:
+  - ()
+  - "(CONF_CURRENT_TEMP_TEMPLATE, CONF_MODE_STATE_TEMPLATE, CONF_TEMP_STATE_TEMPLATE\n\
+    \    )"
+  - "(CONF_CURRENT_TEMP_TOPIC, CONF_MODE_COMMAND_TOPIC, CONF_MODE_STATE_TOPIC,\n \
+    \   CONF_POWER_COMMAND_TOPIC, CONF_TEMP_COMMAND_TOPIC, CONF_TEMP_STATE_TOPIC)"
+  - (CONST_MODE_OFF, CONST_MODE_AUTO, CONST_MODE_SMART_SCHEDULE)
+  - (ClientResponseError, asyncio.TimeoutError)
+  - (HotWaterOperation, str)
+  - (k, v)
+  - (key, address)
+  - (key, group)
+  - (key, template)
+  - (key, value)
+  - (str, Any)
+  - (str, Coil)
+  - (str, Template | None)
+  - (str, dict[str, Any])
+  - (str, int)
+  - (str, str)
+  - str, Any

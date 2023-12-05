@@ -1,0 +1,9 @@
+executor.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([], None)
+  - (exec_id, execution)
+  - "(self._shutdown_hook, weakref.ref(self, weakref_cb), self._work_queue, self\n\
+    \    ._initializer, self._initargs)"
+  - (self._thread_name_prefix or self, num_threads)

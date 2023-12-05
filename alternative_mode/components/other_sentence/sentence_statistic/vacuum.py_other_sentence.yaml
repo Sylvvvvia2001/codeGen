@@ -1,0 +1,13 @@
+vacuum.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, sharkiq.serial_number)}'
+  tuples:
+  - (DOMAIN, sharkiq.serial_number)
+  - (OSError, DeviceException)
+  - (device_id, coordinator)
+  - (k, val)
+  - (key, val)
+  - (object_id, entity_config)
+  - (str, Any)
+  - (str, RoborockDataUpdateCoordinator)

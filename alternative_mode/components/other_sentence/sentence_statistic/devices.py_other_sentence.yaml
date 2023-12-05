@@ -1,0 +1,13 @@
+devices.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, self.cloud_id)}'
+  - '{(DOMAIN, voip_id)}'
+  tuples:
+  - (DOMAIN, self.cloud_id)
+  - (DOMAIN, voip_id)
+  - ([VoIPDevice], None)
+  - ([], None)
+  - (int, ...)
+  - (str, VoIPDevice)
+  - (voip_id, voip_device)

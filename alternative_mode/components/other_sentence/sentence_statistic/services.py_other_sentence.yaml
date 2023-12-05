@@ -1,0 +1,69 @@
+services.py:
+  schemas: []
+  sets:
+  - '{(CONNECTION_NETWORK_MAC, gateway.api.config.mac)}'
+  - '{(DOMAIN, gateway.api.config.bridge_id)}'
+  - '{client.fixed_ip, client.hostname, client.name}'
+  tuples:
+  - ('dyn_text', DynText)
+  - ('led', Led)
+  - ('lock_keys', LockKeys)
+  - ('lock_regulator', LockRegulator)
+  - ('output_abs', OutputAbs)
+  - ('output_rel', OutputRel)
+  - ('output_toggle', OutputToggle)
+  - ('pck', Pck)
+  - ('relays', Relays)
+  - ('resume', 'offset')
+  - ('send_keys', SendKeys)
+  - ('true', 'false')
+  - ('var_abs', VarAbs)
+  - ('var_rel', VarRel)
+  - ('var_reset', VarReset)
+  - "(('output_abs', OutputAbs), ('output_rel', OutputRel), ('output_toggle',\n  \
+    \  OutputToggle), ('relays', Relays), ('var_abs', VarAbs), ('var_reset',\n   \
+    \ VarReset), ('var_rel', VarRel), ('lock_regulator', LockRegulator), (\n    'led',\
+    \ Led), ('send_keys', SendKeys), ('lock_keys', LockKeys), (\n    'dyn_text', DynText),\
+    \ ('pck', Pck))"
+  - (*nodes_list, *set_value_failed_nodes_list)
+  - (*results, *set_value_failed_error_list)
+  - (CONNECTION_NETWORK_MAC, gateway.api.config.mac)
+  - (ClientError, ValidationError)
+  - (DOMAIN, gateway.api.config.bridge_id)
+  - (DOMAIN, vin)
+  - "(SERVICE_ADD_DOORBELL_TEXT, functools.partial(add_doorbell_text, hass),\n   \
+    \ DOORBELL_TEXT_SCHEMA)"
+  - (SERVICE_CLEANUP, None)
+  - "(SERVICE_CONFIGURE_DEVICE, SERVICE_DEVICE_REFRESH,\n    SERVICE_REMOVE_ORPHANED_ENTRIES)"
+  - (SERVICE_REBOOT, None)
+  - (SERVICE_RECONNECT, None)
+  - (SERVICE_RECONNECT_CLIENT, SERVICE_REMOVE_CLIENTS)
+  - "(SERVICE_REMOVE_DOORBELL_TEXT, functools.partial(remove_doorbell_text, hass\n\
+    \    ), DOORBELL_TEXT_SCHEMA)"
+  - "(SERVICE_SET_CHIME_PAIRED, functools.partial(set_chime_paired_doorbells,\n  \
+    \  hass), CHIME_PAIRED_SCHEMA)"
+  - "(SERVICE_SET_DEFAULT_DOORBELL_TEXT, functools.partial(\n    set_default_doorbell_text,\
+    \ hass), DOORBELL_TEXT_SCHEMA)"
+  - (SERVICE_SET_GUEST_WIFI_PW, SERVICE_SCHEMA_SET_GUEST_WIFI_PW)
+  - (T, Any)
+  - (address, host_name)
+  - (async_load_url, SERVICE_LOAD_URL, ATTR_URL)
+  - (async_start_app, SERVICE_START_APPLICATION, ATTR_APPLICATION)
+  - (name, method, schema)
+  - (node, cmd_status)
+  - (node_, result)
+  - (node_or_endpoint, result)
+  - (service, _)
+  - (service, schema)
+  - (service_handler, service_name, attrib)
+  - (str, Any)
+  - (str, PlexServer)
+  - (str, int | str | list[str])
+  - (str, int)
+  - (str, vol.Schema | None)
+  - (table, key)
+  - (tuple[T, Any], None, None)
+  - (vin, vehicle)
+  - (zwave_object, error)
+  - (zwave_object, result)
+  - T, Any

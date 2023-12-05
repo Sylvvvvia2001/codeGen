@@ -1,0 +1,25 @@
+commands.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (',', ':')
+  - ('action', cv.SCRIPT_SCHEMA, script.async_validate_actions_config)
+  - ('condition', cv.CONDITIONS_SCHEMA, condition.async_validate_conditions_config)
+  - ('trigger', cv.TRIGGER_SCHEMA, trigger.async_validate_trigger_config)
+  - "(('trigger', cv.TRIGGER_SCHEMA, trigger.async_validate_trigger_config), (\n \
+    \   'condition', cv.CONDITIONS_SCHEMA, condition.\n    async_validate_conditions_config),\
+    \ ('action', cv.SCRIPT_SCHEMA, script.\n    async_validate_actions_config))"
+  - (ValueError, TypeError)
+  - ([HomeAssistant, const.WebSocketCommandHandler], None)
+  - ([str | dict[str, Any] | Callable[[], str]], None)
+  - (cached_descriptions, cached_json_payload)
+  - (descriptions, json_payload)
+  - (entity_id, entity_info)
+  - (entity_id, source)
+  - (integration, timedelta)
+  - (key, schema, validator)
+  - (str, Any)
+  - (str, dt.timedelta)
+  - (str, entity.EntityInfo)
+  - '[], str'
+  - str, Any

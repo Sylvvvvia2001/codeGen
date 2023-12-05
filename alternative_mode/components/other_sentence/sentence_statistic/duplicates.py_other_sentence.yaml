@@ -1,0 +1,14 @@
+duplicates.py:
+  schemas: []
+  sets:
+  - '{''id'', ''created''}'
+  tuples:
+  - "('id', 'metadata_id', 'start', 'created', 'mean', 'min', 'max',\n    'last_reset',\
+    \ 'state', 'sum')"
+  - (deleted_short_term_statistics_rows, _)
+  - (deleted_statistics_rows, non_identical_duplicates)
+  - (duplicate_ids, non_identical_duplicates)
+  - (duplicate_ids, non_identical_duplicates_as_dict)
+  - (int, list[dict])
+  - (list[int], list[dict])
+  - (total_deleted_rows, all_non_identical_duplicates)

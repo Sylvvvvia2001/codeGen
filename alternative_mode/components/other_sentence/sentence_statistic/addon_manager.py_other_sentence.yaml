@@ -1,0 +1,13 @@
+addon_manager.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Concatenate[_AddonManagerT, _P], Awaitable[_R])
+  - (Concatenate[_AddonManagerT, _P], Coroutine[Any, Any, _R])
+  - ([_FuncType[_AddonManagerT, _P, _R]], _ReturnFuncType[_AddonManagerT, _P, _R])
+  - (_AddonManagerT, _P, _R)
+  - (self._restart_task, self._install_task, self._start_task, self._update_task)
+  - (str, Any)
+  - Any, Any, _R
+  - _AddonManagerT, _P
+  - _AddonManagerT, _P, _R

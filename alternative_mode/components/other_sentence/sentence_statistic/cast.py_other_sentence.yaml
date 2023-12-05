@@ -1,0 +1,6 @@
+cast.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (idx, view)
+  - (url_path, view_path)

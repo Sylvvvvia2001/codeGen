@@ -1,0 +1,7 @@
+resources.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, Any)
+  - (str, list[dict[str, Any]])
+  - str, Any

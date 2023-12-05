@@ -1,0 +1,6 @@
+auth.py:
+- Auth
+- AuthPhase
+- HassIOAuth
+- HassIOBaseAuth
+- HassIOPasswordReset

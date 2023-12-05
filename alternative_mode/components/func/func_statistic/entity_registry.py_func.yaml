@@ -1,0 +1,12 @@
+entity_registry.py:
+- _async_entity_id_changed
+- _setup_entity_registry_event_handler
+- async_setup
+- entity_registry_changed_filter
+- update_states_metadata
+- websocket_get_entities
+- websocket_get_entity
+- websocket_list_entities
+- websocket_list_entities_for_display
+- websocket_remove_entity
+- websocket_update_entity

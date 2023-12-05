@@ -1,0 +1,8 @@
+text.py:
+- DemoText
+- EsphomeText
+- KNXText
+- MqttTextEntity
+- MySensorsText
+- ProtectDeviceText
+- ProtectTextEntityDescription

@@ -1,0 +1,8 @@
+login_flow.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('invalid_auth', 'invalid_code')
+  - ([str, Credentials], str)
+  - (str, ...)
+  - (str, Any)

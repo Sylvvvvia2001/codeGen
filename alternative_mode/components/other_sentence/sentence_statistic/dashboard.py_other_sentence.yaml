@@ -1,0 +1,10 @@
+dashboard.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (False, config)
+  - (config, last_update)
+  - (config, time.time())
+  - (is_updated, config)
+  - (str, Any)
+  - (str, ConfiguredDevice)

@@ -1,0 +1,6 @@
+config_entries.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (domain_key, integration_or_exc)
+  - (str, Any)

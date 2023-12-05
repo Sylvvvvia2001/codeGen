@@ -1,0 +1,231 @@
+coordinator.py:
+  schemas: []
+  sets:
+  - '{''sum''}'
+  - '{(''IntelliFire'', f''{self.read_api.data.serial}]'')}'
+  - '{(CONNECTION_NETWORK_MAC, self.mac)}'
+  - '{(DOMAIN, base_device_url)}'
+  - '{(DOMAIN, f''{self.config_entry.entry_id}-{device.type}-{device.index}'')}'
+  - '{(DOMAIN, monitor_id)}'
+  - '{(DOMAIN, self._unique_id)}'
+  - '{(DOMAIN, self.config_entry.entry_id)}'
+  - '{(DOMAIN, self.device_id)}'
+  - '{(DOMAIN, self.device_unique_id)}'
+  - '{(DOMAIN, self.roborock_device_info.device.duid)}'
+  - '{(DOMAIN, self.serial_number)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, self.yid)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, mac)}'
+  - '{AUTH, SELECTED}'
+  - '{None}'
+  - '{NotificationCategory.ACTIVITY}'
+  - '{NotificationCategory.IN_BED, NotificationCategory.OUT_BED}'
+  - '{NotificationCategory.SLEEP}'
+  - '{NotificationCategory.WEIGHT, NotificationCategory.PRESSURE}'
+  - '{coil.address}'
+  - '{cost_statistic_id, consumption_statistic_id}'
+  tuples:
+  - ('IntelliFire', f'{self.read_api.data.serial}]')
+  - "('Opower', self.api.utility.subdomain(), account.meter_type.name.lower(),\n \
+    \   account.utility_account_id)"
+  - ('api-key', 'apikey')
+  - ('extInput:', 'tv:', 'com.sony.dtv.')
+  - (0, 0, 0, 0)
+  - (AioImapException, UpdateFailed, asyncio.TimeoutError)
+  - (AioImapException, asyncio.TimeoutError)
+  - (AirNowError, ClientConnectorError)
+  - (AirlyError, ClientConnectorError)
+  - (Any, Any, None)
+  - (AttributeError, vol.ExactSequenceInvalid)
+  - (BraviaConnectionError, BraviaConnectionTimeout, BraviaTurnedOff)
+  - (CONNECTION_NETWORK_MAC, self.mac)
+  - (CannotConnectError, OperationError)
+  - (Concatenate[_BraviaTVCoordinatorT, _P], Awaitable[None])
+  - (Concatenate[_BraviaTVCoordinatorT, _P], Coroutine[Any, Any, None])
+  - (Concatenate[_WallboxCoordinatorT, _P], Any)
+  - (ConfigEntryAuthFailed, UpdateFailed)
+  - (ConnectTimeout, HTTPError)
+  - (ConnectionClosedException, ConnectionResetError)
+  - (ConnectionError, ClientConnectionError)
+  - (ConnectionError, SchemaError)
+  - (ConnectionRefusedError, socket.timeout, SSLError, FailedToReconnectException)
+  - (DOMAIN, base_device_url)
+  - (DOMAIN, f'{self.config_entry.entry_id}-{device.type}-{device.index}')
+  - (DOMAIN, monitor_id)
+  - (DOMAIN, self._unique_id)
+  - (DOMAIN, self.config_entry.entry_id)
+  - (DOMAIN, self.device_id)
+  - (DOMAIN, self.device_unique_id)
+  - (DOMAIN, self.roborock_device_info.device.duid)
+  - (DOMAIN, self.serial_number)
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, self.yid)
+  - (DOMAIN, unique_id)
+  - (DeviceConnectionError, RpcCallError)
+  - (EzvizAuthTokenExpired, EzvizAuthVerificationCode)
+  - (FileNotFoundError, serial.serialutil.SerialException)
+  - (GardenaBluetoothException, DeviceUnavailable)
+  - (GitHubConnectionException, GitHubRatelimitException)
+  - (HERETransitConnectionError, HERETransitNoRouteFoundError)
+  - (HTTPError, DiscovergyClientError)
+  - (InvalidURL, HTTPError, PyEzvizError)
+  - (InvalidXMLError, ResponseError)
+  - (KeyError, TypeError)
+  - (MeasurementType, float)
+  - (MediaType.APP, MediaType.CHANNEL)
+  - (MyBMWAPIError, RequestError)
+  - (NextBusHTTPError, NextBusFormatError)
+  - (NoCameraFound, MultipleCamerasFound, UnknownError)
+  - (NoTrainAnnouncementFound, MultipleTrainAnnouncementFound, UnknownError)
+  - (NoWeatherStationFound, MultipleWeatherStationsFound)
+  - (None, False)
+  - (OSError, Timeout, HTTPError)
+  - (OSError, URLError)
+  - (OTA_BEGIN, OTA_ERROR, OTA_PROGRESS, OTA_SUCCESS)
+  - (Platform, dict[str, Any])
+  - (Protocol.RTS, Protocol.INTERNAL)
+  - (RouteStop, dict[str, Any])
+  - (ServerDisconnectedError, NotAuthenticatedException)
+  - (SolarNetId, Any)
+  - (SolarNetId, dict[str, Any])
+  - (SolarNetId, set[str])
+  - (TemplateError, TypeError, ValueError)
+  - (UpdateFailed, AioImapException, asyncio.TimeoutError)
+  - (ValueError, TypeError)
+  - (WithingsUnauthorizedError, WithingsAuthenticationFailedError)
+  - ([BluetoothServiceInfoBleak, float | None], bool)
+  - ([BluetoothServiceInfoBleak], Any)
+  - ([BluetoothServiceInfoBleak], Coroutine[Any, Any, Any])
+  - ([Command | list[Command]], Any)
+  - ([Message, dict[str, Any] | None], None)
+  - ([SFRBox], Coroutine[Any, Any, _T])
+  - ([], Awaitable[T])
+  - ([], Awaitable[_DataT])
+  - ([], Awaitable[dict[str, Any]])
+  - ([], None)
+  - ([bluetooth.BluetoothServiceInfoBleak], None)
+  - ([dict[str, Any]], None)
+  - (_, _, _, kwh, _)
+  - (_ContextTypeT, list[CALLBACK_TYPE])
+  - (_DataTypeT, _ContextTypeT)
+  - (bytes, Cancellable)
+  - (bytes, Cipher)
+  - (bytes, list[UnavailableCallback])
+  - (bytes, list[bluetooth.BluetoothCallback])
+  - (bytes, str)
+  - (cam_id, cam_data_new)
+  - (datetime | None, bool)
+  - (dict, dict)
+  - (dict[int, CoilData], int)
+  - (dr.CONNECTION_NETWORK_MAC, mac)
+  - "(exceptions.CannotConnect, exceptions.AlreadyLogged, exceptions.\n    GenericLoginError)"
+  - (exceptions.InvalidResponseError, ConnError)
+  - (header, value)
+  - (index, key)
+  - (index, zone_color)
+  - (int | float, int | float, int | float, int | float)
+  - (int, ChargerStatus)
+  - (int, CoilData)
+  - (int, SwitchBeeBaseDevice)
+  - (int, dict)
+  - (int, int, int, int)
+  - (int, str)
+  - (irk, cipher)
+  - (k, v)
+  - (key, value)
+  - (list[str], list[str], str | None, str | None)
+  - (major, minor)
+  - (module_key, module_value)
+  - (next_delivery, last_order)
+  - (origin, destination, arrival, departure)
+  - (owner, repository)
+  - (prayer, time)
+  - (raw_warn.headline, raw_warn.expires)
+  - (region_id, raw_warnings)
+  - (result, lines)
+  - (self._version, self._version_data)
+  - "(self.api.utility.subdomain(), account.meter_type.name.lower(), account.\n  \
+    \  utility_account_id)"
+  - (self.task,)
+  - (server['country'], server['name'], server['sponsor'])
+  - (service_info.name, service_info.name.replace('-', ':'))
+  - (solar_net_id, device_data)
+  - (steam.api.HTTPError, steam.api.HTTPTimeoutError)
+  - (str(value),)
+  - (str, Any)
+  - (str, AwairResult)
+  - (str, CALLBACK_TYPE)
+  - "(str, Callable[[OverkizDataUpdateCoordinator, Event], Coroutine[Any, Any,\n \
+    \   None]])"
+  - (str, Cancellable)
+  - (str, Device)
+  - (str, FitbitDevice)
+  - (str, Forecast)
+  - (str, FritzhomeDevice)
+  - (str, FritzhomeTemplate)
+  - (str, LastFMUserData)
+  - (str, LaundrifyDevice)
+  - (str, Life360Circle)
+  - (str, Life360Member)
+  - (str, Life360Place)
+  - (str, Location)
+  - (str, LockData)
+  - (str, RidwellAccount)
+  - (str, ShellyEntryData)
+  - (str, StateType)
+  - (str, StateVector)
+  - (str, SynoCamera)
+  - (str, T)
+  - (str, TagData)
+  - (str, ValuesView[Reading])
+  - (str, Variable)
+  - (str, VodafoneStationDeviceInfo)
+  - (str, bluetooth.BluetoothServiceInfoBleak)
+  - (str, bool)
+  - (str, bytes)
+  - (str, datetime)
+  - (str, dict)
+  - (str, dict[str, Any])
+  - (str, dict[str, SynoCamera])
+  - (str, dict[str, str | int])
+  - (str, dict[str, str])
+  - (str, float | int | datetime)
+  - (str, iBeaconAdvertisement)
+  - (str, int | float | datetime)
+  - (str, int)
+  - (str, list[Any])
+  - (str, list[NinaWarningData])
+  - (str, list[RidwellPickupEvent])
+  - (str, set[str])
+  - (str, set[tuple[int, int]])
+  - (str, str | datetime | int | float | None)
+  - (str, str | float | int)
+  - (str, str | int)
+  - (str, str)
+  - (str, tuple[str,])
+  - (str,)
+  - (summary, offset)
+  - (timeout, ParseException)
+  - (unique_id, ibeacon_advertisement)
+  - (update_callback, context)
+  - "(update_time, (utc_point_in_time - update_time).total_seconds() <\n    CONSIDER_HOME_SECONDS)"
+  - (uri, item)
+  - (utc_point_in_time, True)
+  - (uuid, major, minor)
+  - (uuid, major, minor, address)
+  - (x['Name'], x['Category'], x['Status'])
+  - ({}, {})
+  - Any, Any, Any
+  - Any, Any, None
+  - Any, Any, _T
+  - '[OverkizDataUpdateCoordinator, Event], Coroutine[Any, Any, None]'
+  - _BraviaTVCoordinatorT, _P
+  - _WallboxCoordinatorT, _P
+  - int, CoilData
+  - int, int
+  - str,
+  - str, Any
+  - str, SynoCamera
+  - str, str
+  - str, str | int

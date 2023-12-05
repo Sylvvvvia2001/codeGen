@@ -1,0 +1,66 @@
+geo_location.py:
+  schemas: []
+  sets: []
+  tuples:
+  - "((ATTR_EXTERNAL_ID, self._external_id), (ATTR_CATEGORY, self._category), (\n\
+    \    ATTR_LOCATION, self._location), (ATTR_PUBLICATION_DATE, self.\n    _publication_date),\
+    \ (ATTR_COUNCIL_AREA, self._council_area), (\n    ATTR_STATUS, self._status),\
+    \ (ATTR_TYPE, self._type), (ATTR_FIRE, self.\n    _fire), (ATTR_SIZE, self._size),\
+    \ (ATTR_RESPONSIBLE_AGENCY, self.\n    _responsible_agency))"
+  - "((ATTR_EXTERNAL_ID, self._external_id), (ATTR_CATEGORY, self._category), (\n\
+    \    ATTR_PUBLICATION_DATE, self._publication_date), (ATTR_UPDATED_DATE,\n   \
+    \ self._updated_date), (ATTR_STATUS, self._status))"
+  - "((ATTR_EXTERNAL_ID, self._external_id), (ATTR_DEPTH, self._depth), (\n    ATTR_LOCALITY,\
+    \ self._locality), (ATTR_MAGNITUDE, self._magnitude), (\n    ATTR_MMI, self._mmi),\
+    \ (ATTR_QUALITY, self._quality), (ATTR_TIME, self.\n    _time))"
+  - "((ATTR_EXTERNAL_ID, self._external_id), (ATTR_DESCRIPTION, self.\n    _description),\
+    \ (ATTR_EVENT_TYPE, self._event_type), (ATTR_ALERT_LEVEL,\n    self._alert_level),\
+    \ (ATTR_COUNTRY, self._country), (\n    ATTR_DURATION_IN_WEEK, self._duration_in_week),\
+    \ (ATTR_FROM_DATE, self.\n    _from_date), (ATTR_TO_DATE, self._to_date), (ATTR_POPULATION,\
+    \ self.\n    _population), (ATTR_SEVERITY, self._severity), (ATTR_VULNERABILITY,\n\
+    \    self._vulnerability))"
+  - "((ATTR_EXTERNAL_ID, self._external_id), (ATTR_PLACE, self._place), (\n    ATTR_MAGNITUDE,\
+    \ self._magnitude), (ATTR_TIME, self._time), (\n    ATTR_UPDATED, self._updated),\
+    \ (ATTR_STATUS, self._status), (ATTR_TYPE,\n    self._type), (ATTR_ALERT, self._alert))"
+  - "((ATTR_EXTERNAL_ID, self._external_id), (ATTR_TITLE, self._title), (\n    ATTR_REGION,\
+    \ self._region), (ATTR_MAGNITUDE, self._magnitude), (\n    ATTR_PUBLICATION_DATE,\
+    \ self._publication_date), (ATTR_IMAGE_URL, self.\n    _image_url))"
+  - (ATTR_ALERT, self._alert)
+  - (ATTR_ALERT_LEVEL, self._alert_level)
+  - (ATTR_CATEGORY, self._category)
+  - (ATTR_COUNCIL_AREA, self._council_area)
+  - (ATTR_COUNTRY, self._country)
+  - (ATTR_DEPTH, self._depth)
+  - (ATTR_DESCRIPTION, self._description)
+  - (ATTR_DURATION_IN_WEEK, self._duration_in_week)
+  - (ATTR_EVENT_TYPE, self._event_type)
+  - (ATTR_EXTERNAL_ID, self._external_id)
+  - (ATTR_FIRE, self._fire)
+  - (ATTR_FROM_DATE, self._from_date)
+  - (ATTR_IMAGE_URL, self._image_url)
+  - (ATTR_LOCALITY, self._locality)
+  - (ATTR_LOCATION, self._location)
+  - (ATTR_MAGNITUDE, self._magnitude)
+  - (ATTR_MMI, self._mmi)
+  - (ATTR_PLACE, self._place)
+  - (ATTR_POPULATION, self._population)
+  - (ATTR_PUBLICATION_DATE, self._publication_date)
+  - (ATTR_QUALITY, self._quality)
+  - (ATTR_REGION, self._region)
+  - (ATTR_RESPONSIBLE_AGENCY, self._responsible_agency)
+  - (ATTR_SEVERITY, self._severity)
+  - (ATTR_SIZE, self._size)
+  - (ATTR_STATUS, self._status)
+  - (ATTR_TIME, self._time)
+  - (ATTR_TITLE, self._title)
+  - (ATTR_TO_DATE, self._to_date)
+  - (ATTR_TYPE, self._type)
+  - (ATTR_UPDATED, self._updated)
+  - (ATTR_UPDATED_DATE, self._updated_date)
+  - (ATTR_VULNERABILITY, self._vulnerability)
+  - ([], None)
+  - "(config.get(CONF_LATITUDE, hass.config.latitude), config.get(CONF_LONGITUDE,\n\
+    \    hass.config.longitude))"
+  - (float, float)
+  - (key, value)
+  - (str, Any)

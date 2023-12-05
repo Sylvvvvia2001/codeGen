@@ -1,0 +1,7 @@
+forwarded.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (1, len(forwarded_for))
+  - ([Request], Awaitable[StreamResponse])
+  - (str, str)

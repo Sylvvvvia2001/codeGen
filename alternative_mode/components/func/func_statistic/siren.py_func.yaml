@@ -1,0 +1,26 @@
+siren.py:
+- __init__
+- _apply_event
+- _cancel_timeout
+- _constructor
+- _done
+- _generic_message
+- _handle_event
+- _prepare_subscribe_topics
+- _setup_from_config
+- _setup_timeout
+- _update
+- add_new_device
+- async_add_siren
+- async_discover_device
+- async_set_off
+- config_schema
+- extra_state_attributes
+- get_first_key
+- is_on
+- off_delay_listener
+- state_message_received
+- supported
+- turn_off
+- turn_on
+- update_entity_state

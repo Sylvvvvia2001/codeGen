@@ -1,0 +1,4 @@
+devices.py:
+- CrownstoneBaseEntity
+- VoIPDevice
+- VoIPDevices

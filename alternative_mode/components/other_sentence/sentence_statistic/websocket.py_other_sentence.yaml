@@ -1,0 +1,8 @@
+websocket.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('config_not_found', 'No config found.')
+  - ('error', str(err))
+  - (ValueError, XknxProjectException)
+  - (str, Any)

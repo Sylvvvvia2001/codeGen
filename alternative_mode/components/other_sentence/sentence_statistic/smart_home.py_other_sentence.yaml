@@ -1,0 +1,18 @@
+smart_home.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (device, execution)
+  - (directive.namespace, directive.name)
+  - (entity_id, execution)
+  - (entity_id, result)
+  - (str, Any)
+  - "(str, Callable[[HomeAssistant, RequestData, dict[str, Any]], Coroutine[Any,\n\
+    \    Any, dict[str, Any] | None]])"
+  - (str, GoogleEntity)
+  - (str, dict[str, Any])
+  - (str, list[Any])
+  - Any, Any, dict[str, Any] | None
+  - "[HomeAssistant, RequestData, dict[str, Any]], Coroutine[Any, Any, dict[str,\n\
+    \    Any] | None]"
+  - str, Any

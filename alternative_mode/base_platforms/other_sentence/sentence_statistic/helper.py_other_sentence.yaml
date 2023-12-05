@@ -1,0 +1,17 @@
+helper.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, device_local[''Properties:SerialNo''])}'
+  tuples:
+  - ('Network:Hostname', 'Hostname')
+  - (ClientError, asyncio.TimeoutError)
+  - (DOMAIN, device_local['Properties:SerialNo'])
+  - (TypeError, ValueError)
+  - ([Any], Any)
+  - (host, port)
+  - (mid, pids)
+  - (str, dict[str, str])
+  - (str, list[str | list[str]])
+  - (str, list[str])
+  - (str, str)
+  - str, str

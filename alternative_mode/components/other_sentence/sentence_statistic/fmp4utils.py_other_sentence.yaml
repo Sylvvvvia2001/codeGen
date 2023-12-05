@@ -1,0 +1,9 @@
+fmp4utils.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('avc1', 'avc2', 'avc3', 'avc4')
+  - ('hev1', 'hvc1')
+  - "(b'', b'', MIRROR, ROTATE_180, FLIP, ROTATE_LEFT_FLIP, ROTATE_LEFT,\n    ROTATE_RIGHT_FLIP,\
+    \ ROTATE_RIGHT)"
+  - (int, None, None)

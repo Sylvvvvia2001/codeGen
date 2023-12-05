@@ -1,0 +1,42 @@
+utils.py:
+  schemas: []
+  sets:
+  - '{(CONNECTION_NETWORK_MAC, format_mac(entry.unique_id))}'
+  - '{(DOMAIN, entry.entry_id)}'
+  - '{(DOMAIN, str(address))}'
+  - '{Action.CLOSE}'
+  - '{Action.HOLD}'
+  - '{Action.OPEN}'
+  - '{Action.SET_BRIGHTNESS}'
+  - '{Action.SET_DIRECTION}'
+  - '{Action.SET_POSITION}'
+  - '{Action.SET_SPEED}'
+  - '{Action.TILT_CLOSE}'
+  - '{Action.TILT_OPEN}'
+  - '{Action.TURN_DOWN_LIGHT_ON, Action.TURN_DOWN_LIGHT_OFF}'
+  - '{Action.TURN_LIGHT_ON, Action.TURN_LIGHT_OFF}'
+  - '{Action.TURN_UP_LIGHT_ON, Action.TURN_UP_LIGHT_OFF}'
+  tuples:
+  - ('MacAddress1', 'MacAddress2', 'WifiMacAddrWl0', 'WifiMacAddrWl1')
+  - ('input:', 'light:', 'switch:')
+  - (3, 12)
+  - (AqualinkServiceException, httpx.HTTPError)
+  - (CONNECTION_NETWORK_MAC, format_mac(entry.unique_id))
+  - (DOMAIN, entry.entry_id)
+  - (DOMAIN, str(address))
+  - (ProtectAdoptableDeviceModel, None, None)
+  - ([SwitcherBase], Any)
+  - (_, event)
+  - "(f'{entry_id}_{account}_{zone}' if entity_key == KEY_ALARM else\n    f'{entry_id}_{account}_{zone}_{entity_key}',\
+    \ \n    f'{port} - {account} - {entity_key}' if zone == SIA_HUB_ZONE else\n  \
+    \  f'{port} - {account} - zone {zone} - {entity_key}')"
+  - (family, _, _, _, raw)
+  - (idx, device_id)
+  - (name_or_group, event)
+  - (str, ...)
+  - (str, Any)
+  - (str, ProtectAdoptableDeviceModel)
+  - (str, SwitcherBase)
+  - (str, str)
+  - (trigger_type, 'button')
+  - (trigger_type, subtype)

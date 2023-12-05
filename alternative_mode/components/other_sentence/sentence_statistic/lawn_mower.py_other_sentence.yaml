@@ -1,0 +1,9 @@
+lawn_mower.py:
+  schemas: []
+  sets:
+  - '{''_attr_activity''}'
+  tuples:
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - (str, Callable[[PublishPayloadType], PublishPayloadType])
+  - (str, str)
+  - '[PublishPayloadType], PublishPayloadType'

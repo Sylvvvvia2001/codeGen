@@ -1,0 +1,21 @@
+messages.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('c', 'u')
+  - (SecretBox.KEY_SIZE, decrypt)
+  - (ValueError, TypeError)
+  - (dev_id, kwargs)
+  - (key, value)
+  - (keylen, decrypt)
+  - (message['lat'], message['lon'])
+  - (str, Any)
+  - (str, dict[str, Any])
+  - (str, dict[str, dict[str, dict[str, str | list[str]]]])
+  - (topic_list[user_index], topic_list[user_index + 1])
+  - (user, device)
+  - (zone.attributes[ATTR_LATITUDE], zone.attributes[ATTR_LONGITUDE])
+  - str, Any
+  - str, dict[str, dict[str, str | list[str]]]
+  - str, dict[str, str | list[str]]
+  - str, str | list[str]

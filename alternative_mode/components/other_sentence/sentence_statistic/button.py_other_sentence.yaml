@@ -1,0 +1,383 @@
+button.py:
+  schemas: []
+  sets:
+  - '{''_TZE200_htnnfasr''}'
+  - '{''aqara.feeder.acn001''}'
+  - '{''lumi.motion.ac01''}'
+  - '{''lumi.sensor_smoke.acn03''}'
+  - '{(CONNECTION_NETWORK_MAC, avm_wrapper.mac)}'
+  - '{(CONNECTION_NETWORK_MAC, coordinator.mac)}'
+  - '{(DOMAIN, api.information.serial)}'
+  - '{(DOMAIN, isy.uuid)}'
+  - '{(DOMAIN, member_id)}'
+  - '{(DOMAIN, project_id)}'
+  - '{(DOMAIN, server_id)}'
+  - '{(DOMAIN, server_unique_id)}'
+  - '{(DOMAIN, system_info.mac_addr)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(FRITZBOX_DOMAIN, self.ain)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)}'
+  - '{self._alarm_coil.address}'
+  - '{self.char.uuid}'
+  tuples:
+  - ('printing', 'pausing', 'paused')
+  - ('reboot', 'self_test', 'mute', 'unmute')
+  - (ATTR_RESET_DUST_FILTER, ATTR_RESET_UPPER_FILTER)
+  - (ATTR_RESET_DUST_FILTER,)
+  - "(ATTR_RESET_VACUUM_MAIN_BRUSH, ATTR_RESET_VACUUM_SIDE_BRUSH,\n    ATTR_RESET_VACUUM_FILTER,\
+    \ ATTR_RESET_VACUUM_SENSOR_DIRTY)"
+  - "(BMWButtonEntityDescription(key='light_flash', translation_key=\n    'light_flash',\
+    \ icon='mdi:car-light-alert', remote_function=lambda\n    vehicle: vehicle.remote_services.trigger_remote_light_flash()),\n\
+    \    BMWButtonEntityDescription(key='sound_horn', translation_key=\n    'sound_horn',\
+    \ icon='mdi:bullhorn', remote_function=lambda vehicle:\n    vehicle.remote_services.trigger_remote_horn()),\n\
+    \    BMWButtonEntityDescription(key='activate_air_conditioning',\n    translation_key='activate_air_conditioning',\
+    \ icon='mdi:hvac',\n    remote_function=lambda vehicle: vehicle.remote_services.\n\
+    \    trigger_remote_air_conditioning()), BMWButtonEntityDescription(key=\n   \
+    \ 'deactivate_air_conditioning', icon='mdi:hvac-off', name=\n    'Deactivate air\
+    \ conditioning', remote_function=lambda vehicle: vehicle.\n    remote_services.trigger_remote_air_conditioning_stop(),\
+    \ is_available=lambda\n    vehicle: vehicle.is_remote_climate_stop_enabled),\n\
+    \    BMWButtonEntityDescription(key='find_vehicle', translation_key=\n    'find_vehicle',\
+    \ icon='mdi:crosshairs-question', remote_function=lambda\n    vehicle: vehicle.remote_services.trigger_remote_vehicle_finder()))"
+  - (BMWButtonEntityDescription, ...)
+  - "(BondButtonEntityDescription(key=Action.TOGGLE_POWER, name='Toggle Power',\n\
+    \    icon='mdi:power-cycle', mutually_exclusive=Action.TURN_ON, argument=\n  \
+    \  None), BondButtonEntityDescription(key=Action.TOGGLE_LIGHT, name=\n    'Toggle\
+    \ Light', icon='mdi:lightbulb', mutually_exclusive=Action.\n    TURN_LIGHT_ON,\
+    \ argument=None), BondButtonEntityDescription(key=Action.\n    INCREASE_BRIGHTNESS,\
+    \ name='Increase Brightness', icon=\n    'mdi:brightness-7', mutually_exclusive=Action.SET_BRIGHTNESS,\
+    \ argument=\n    STEP_SIZE), BondButtonEntityDescription(key=Action.DECREASE_BRIGHTNESS,\n\
+    \    name='Decrease Brightness', icon='mdi:brightness-1', mutually_exclusive\n\
+    \    =Action.SET_BRIGHTNESS, argument=STEP_SIZE),\n    BondButtonEntityDescription(key=Action.TOGGLE_UP_LIGHT,\
+    \ name=\n    'Toggle Up Light', icon='mdi:lightbulb', mutually_exclusive=Action.\n\
+    \    TURN_UP_LIGHT_ON, argument=None), BondButtonEntityDescription(key=\n    Action.TOGGLE_DOWN_LIGHT,\
+    \ name='Toggle Down Light', icon=\n    'mdi:lightbulb', mutually_exclusive=Action.TURN_DOWN_LIGHT_ON,\
+    \ argument\n    =None), BondButtonEntityDescription(key=Action.START_DIMMER, name=\n\
+    \    'Start Dimmer', icon='mdi:brightness-percent', mutually_exclusive=\n    Action.SET_BRIGHTNESS,\
+    \ argument=None), BondButtonEntityDescription(key=\n    Action.START_UP_LIGHT_DIMMER,\
+    \ name='Start Up Light Dimmer', icon=\n    'mdi:brightness-percent', mutually_exclusive=Action.\n\
+    \    SET_UP_LIGHT_BRIGHTNESS, argument=None), BondButtonEntityDescription(\n \
+    \   key=Action.START_DOWN_LIGHT_DIMMER, name='Start Down Light Dimmer',\n    icon='mdi:brightness-percent',\
+    \ mutually_exclusive=Action.\n    SET_DOWN_LIGHT_BRIGHTNESS, argument=None), BondButtonEntityDescription(\n\
+    \    key=Action.START_INCREASING_BRIGHTNESS, name=\n    'Start Increasing Brightness',\
+    \ icon='mdi:brightness-percent',\n    mutually_exclusive=Action.SET_BRIGHTNESS,\
+    \ argument=None),\n    BondButtonEntityDescription(key=Action.START_DECREASING_BRIGHTNESS,\n\
+    \    name='Start Decreasing Brightness', icon='mdi:brightness-percent',\n    mutually_exclusive=Action.SET_BRIGHTNESS,\
+    \ argument=None),\n    BondButtonEntityDescription(key=Action.INCREASE_UP_LIGHT_BRIGHTNESS,\n\
+    \    name='Increase Up Light Brightness', icon='mdi:brightness-percent',\n   \
+    \ mutually_exclusive=Action.SET_UP_LIGHT_BRIGHTNESS, argument=STEP_SIZE),\n  \
+    \  BondButtonEntityDescription(key=Action.DECREASE_UP_LIGHT_BRIGHTNESS,\n    name='Decrease\
+    \ Up Light Brightness', icon='mdi:brightness-percent',\n    mutually_exclusive=Action.SET_UP_LIGHT_BRIGHTNESS,\
+    \ argument=STEP_SIZE),\n    BondButtonEntityDescription(key=Action.INCREASE_DOWN_LIGHT_BRIGHTNESS,\n\
+    \    name='Increase Down Light Brightness', icon='mdi:brightness-percent',\n \
+    \   mutually_exclusive=Action.SET_DOWN_LIGHT_BRIGHTNESS, argument=STEP_SIZE\n\
+    \    ), BondButtonEntityDescription(key=Action.\n    DECREASE_DOWN_LIGHT_BRIGHTNESS,\
+    \ name='Decrease Down Light Brightness',\n    icon='mdi:brightness-percent', mutually_exclusive=Action.\n\
+    \    SET_DOWN_LIGHT_BRIGHTNESS, argument=STEP_SIZE),\n    BondButtonEntityDescription(key=Action.CYCLE_UP_LIGHT_BRIGHTNESS,\
+    \ name=\n    'Cycle Up Light Brightness', icon='mdi:brightness-percent',\n   \
+    \ mutually_exclusive=Action.SET_UP_LIGHT_BRIGHTNESS, argument=STEP_SIZE),\n  \
+    \  BondButtonEntityDescription(key=Action.CYCLE_DOWN_LIGHT_BRIGHTNESS,\n    name='Cycle\
+    \ Down Light Brightness', icon='mdi:brightness-percent',\n    mutually_exclusive=Action.SET_DOWN_LIGHT_BRIGHTNESS,\
+    \ argument=STEP_SIZE\n    ), BondButtonEntityDescription(key=Action.CYCLE_BRIGHTNESS,\
+    \ name=\n    'Cycle Brightness', icon='mdi:brightness-percent', mutually_exclusive=\n\
+    \    Action.SET_BRIGHTNESS, argument=STEP_SIZE), BondButtonEntityDescription\n\
+    \    (key=Action.INCREASE_SPEED, name='Increase Speed', icon='mdi:skew-more',\n\
+    \    mutually_exclusive=Action.SET_SPEED, argument=1),\n    BondButtonEntityDescription(key=Action.DECREASE_SPEED,\
+    \ name=\n    'Decrease Speed', icon='mdi:skew-less', mutually_exclusive=Action.\n\
+    \    SET_SPEED, argument=1), BondButtonEntityDescription(key=Action.\n    TOGGLE_DIRECTION,\
+    \ name='Toggle Direction', icon='mdi:directions-fork',\n    mutually_exclusive=Action.SET_DIRECTION,\
+    \ argument=None),\n    BondButtonEntityDescription(key=Action.INCREASE_TEMPERATURE,\
+    \ name=\n    'Increase Temperature', icon='mdi:thermometer-plus', mutually_exclusive\n\
+    \    =None, argument=1), BondButtonEntityDescription(key=Action.\n    DECREASE_TEMPERATURE,\
+    \ name='Decrease Temperature', icon=\n    'mdi:thermometer-minus', mutually_exclusive=None,\
+    \ argument=1),\n    BondButtonEntityDescription(key=Action.INCREASE_FLAME, name=\n\
+    \    'Increase Flame', icon='mdi:fire', mutually_exclusive=None, argument=\n \
+    \   STEP_SIZE), BondButtonEntityDescription(key=Action.DECREASE_FLAME, name\n\
+    \    ='Decrease Flame', icon='mdi:fire-off', mutually_exclusive=None,\n    argument=STEP_SIZE),\
+    \ BondButtonEntityDescription(key=Action.TOGGLE_OPEN,\n    name='Toggle Open',\
+    \ mutually_exclusive=Action.OPEN, argument=None),\n    BondButtonEntityDescription(key=Action.INCREASE_POSITION,\
+    \ name=\n    'Increase Position', icon='mdi:plus-box', mutually_exclusive=Action.\n\
+    \    SET_POSITION, argument=STEP_SIZE), BondButtonEntityDescription(key=\n   \
+    \ Action.DECREASE_POSITION, name='Decrease Position', icon=\n    'mdi:minus-box',\
+    \ mutually_exclusive=Action.SET_POSITION, argument=\n    STEP_SIZE))"
+  - (BondButtonEntityDescription, ...)
+  - "(BraviaTVButtonDescription(key='reboot', device_class=ButtonDeviceClass.\n  \
+    \  RESTART, entity_category=EntityCategory.CONFIG, press_action=lambda\n    coordinator:\
+    \ coordinator.async_reboot_device()),\n    BraviaTVButtonDescription(key='terminate_apps',\
+    \ translation_key=\n    'terminate_apps', entity_category=EntityCategory.CONFIG,\
+    \ press_action=\n    lambda coordinator: coordinator.async_terminate_apps()))"
+  - (BraviaTVButtonDescription, ...)
+  - "(ButtonEntityDescription(key='panic', translation_key='panic', icon=\n    'mdi:alarm-light'),)"
+  - "(ButtonEntityDescription(key=DPCode.RESET_DUSTER_CLOTH, translation_key=\n  \
+    \  'reset_duster_cloth', icon='mdi:restart', entity_category=\n    EntityCategory.CONFIG),\
+    \ ButtonEntityDescription(key=DPCode.\n    RESET_EDGE_BRUSH, translation_key='reset_edge_brush',\
+    \ icon=\n    'mdi:restart', entity_category=EntityCategory.CONFIG),\n    ButtonEntityDescription(key=DPCode.RESET_FILTER,\
+    \ translation_key=\n    'reset_filter', icon='mdi:air-filter', entity_category=EntityCategory.\n\
+    \    CONFIG), ButtonEntityDescription(key=DPCode.RESET_MAP, translation_key=\n\
+    \    'reset_map', icon='mdi:map-marker-remove', entity_category=\n    EntityCategory.CONFIG),\
+    \ ButtonEntityDescription(key=DPCode.\n    RESET_ROLL_BRUSH, translation_key='reset_roll_brush',\
+    \ icon=\n    'mdi:restart', entity_category=EntityCategory.CONFIG))"
+  - "(ButtonEntityDescription(key=DPCode.SWITCH_USB6, translation_key='snooze',\n\
+    \    icon='mdi:sleep'),)"
+  - (ButtonInfo, EntityState)
+  - (CONNECTION_NETWORK_MAC, avm_wrapper.mac)
+  - (CONNECTION_NETWORK_MAC, coordinator.mac)
+  - (Concatenate[SFRBoxButton, _P], Awaitable[_T])
+  - (Concatenate[SFRBoxButton, _P], Coroutine[Any, Any, _T])
+  - (DOMAIN, api.information.serial)
+  - (DOMAIN, isy.uuid)
+  - (DOMAIN, member_id)
+  - (DOMAIN, project_id)
+  - (DOMAIN, server_id)
+  - (DOMAIN, server_unique_id)
+  - (DOMAIN, system_info.mac_addr)
+  - (DOMAIN, unique_id)
+  - "(Dremel3DPrinterButtonEntityDescription(key='cancel_job', translation_key=\n\
+    \    'cancel_job', press_fn=lambda api: api.stop_print()),\n    Dremel3DPrinterButtonEntityDescription(key='pause_job',\
+    \ translation_key\n    ='pause_job', press_fn=lambda api: api.pause_print()),\n\
+    \    Dremel3DPrinterButtonEntityDescription(key='resume_job',\n    translation_key='resume_job',\
+    \ press_fn=lambda api: api.resume_print()))"
+  - (Dremel3DPrinterButtonEntityDescription, ...)
+  - "(EzvizButtonEntityDescription(key='ptz_up', translation_key='ptz_up', icon=\n\
+    \    'mdi:pan', method=lambda pyezviz_client, serial, run: pyezviz_client.\n \
+    \   ptz_control('UP', serial, run), supported_ext=str(SupportExt.SupportPtz\n\
+    \    .value)), EzvizButtonEntityDescription(key='ptz_down', translation_key=\n\
+    \    'ptz_down', icon='mdi:pan', method=lambda pyezviz_client, serial, run:\n\
+    \    pyezviz_client.ptz_control('DOWN', serial, run), supported_ext=str(\n   \
+    \ SupportExt.SupportPtz.value)), EzvizButtonEntityDescription(key=\n    'ptz_left',\
+    \ translation_key='ptz_left', icon='mdi:pan', method=lambda\n    pyezviz_client,\
+    \ serial, run: pyezviz_client.ptz_control('LEFT', serial,\n    run), supported_ext=str(SupportExt.SupportPtz.value)),\n\
+    \    EzvizButtonEntityDescription(key='ptz_right', translation_key=\n    'ptz_right',\
+    \ icon='mdi:pan', method=lambda pyezviz_client, serial, run:\n    pyezviz_client.ptz_control('RIGHT',\
+    \ serial, run), supported_ext=str(\n    SupportExt.SupportPtz.value)))"
+  - (FRITZBOX_DOMAIN, self.ain)
+  - (False, True)
+  - "(FreeboxButtonEntityDescription(key='reboot', name='Reboot Freebox',\n    device_class=ButtonDeviceClass.RESTART,\
+    \ entity_category=EntityCategory.\n    CONFIG, async_press=lambda router: router.reboot()),\n\
+    \    FreeboxButtonEntityDescription(key='mark_calls_as_read', name=\n    'Mark\
+    \ calls as read', entity_category=EntityCategory.DIAGNOSTIC,\n    async_press=lambda\
+    \ router: router.call.mark_calls_log_as_read()))"
+  - (FreeboxButtonEntityDescription, ...)
+  - "(FullyButtonEntityDescription(key='restartApp', translation_key=\n    'restart_browser',\
+    \ device_class=ButtonDeviceClass.RESTART,\n    entity_category=EntityCategory.CONFIG,\
+    \ press_action=lambda fully: fully\n    .restartApp()), FullyButtonEntityDescription(key='rebootDevice',\n\
+    \    translation_key='restart_device', device_class=ButtonDeviceClass.\n    RESTART,\
+    \ entity_category=EntityCategory.CONFIG, press_action=lambda\n    fully: fully.rebootDevice()),\
+    \ FullyButtonEntityDescription(key=\n    'toForeground', translation_key='to_foreground',\
+    \ press_action=lambda\n    fully: fully.toForeground()), FullyButtonEntityDescription(key=\n\
+    \    'toBackground', translation_key='to_background', press_action=lambda\n  \
+    \  fully: fully.toBackground()), FullyButtonEntityDescription(key=\n    'loadStartUrl',\
+    \ translation_key='load_start_url', press_action=lambda\n    fully: fully.loadStartUrl()))"
+  - (FullyButtonEntityDescription, ...)
+  - "(GardenaBluetoothButtonEntityDescription(key=Reset.factory_reset.uuid,\n    translation_key='factory_reset',\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, entity_registry_enabled_default=False,\
+    \ char=Reset.\n    factory_reset),)"
+  - (HTTPError, PyEzvizError)
+  - (HandlerT, ApiItemT)
+  - (InverterError, ValueError)
+  - "(ProtectButtonEntityDescription(key='clear_tamper', name='Clear Tamper',\n  \
+    \  icon='mdi:notification-clear-all', ufp_press='clear_tamper', ufp_perm=\n  \
+    \  PermRequired.WRITE),)"
+  - "(ProtectButtonEntityDescription(key='play', name='Play Chime', device_class\n\
+    \    =DEVICE_CLASS_CHIME_BUTTON, icon='mdi:play', ufp_press='play'),\n    ProtectButtonEntityDescription(key='play_buzzer',\
+    \ name='Play Buzzer',\n    icon='mdi:play', ufp_press='play_buzzer'))"
+  - "(ProtectButtonEntityDescription(key='reboot',\n    entity_registry_enabled_default=False,\
+    \ device_class=ButtonDeviceClass.\n    RESTART, name='Reboot Device', ufp_press='reboot',\
+    \ ufp_perm=\n    PermRequired.WRITE), ProtectButtonEntityDescription(key='unadopt',\n\
+    \    entity_registry_enabled_default=False, name='Unadopt Device', icon=\n   \
+    \ 'mdi:delete', ufp_press='unadopt', ufp_perm=PermRequired.DELETE))"
+  - (ProtectButtonEntityDescription, ...)
+  - "(PrusaLinkButtonEntityDescription[PrinterInfo](key='printer.cancel_job',\n  \
+    \  translation_key='cancel_job', icon='mdi:cancel', press_fn=lambda api:\n   \
+    \ cast(Coroutine, api.cancel_job()), available_fn=lambda data: any(data[\n   \
+    \ 'state']['flags'][flag] for flag in ('printing', 'pausing', 'paused'))),\n \
+    \   PrusaLinkButtonEntityDescription[PrinterInfo](key='job.pause_job',\n    translation_key='pause_job',\
+    \ icon='mdi:pause', press_fn=lambda api:\n    cast(Coroutine, api.pause_job()),\
+    \ available_fn=lambda data: data[\n    'state']['flags']['printing'] and not data['state']['flags']['paused']),\n\
+    \    PrusaLinkButtonEntityDescription[PrinterInfo](key='job.resume_job',\n   \
+    \ translation_key='resume_job', icon='mdi:play', press_fn=lambda api:\n    cast(Coroutine,\
+    \ api.resume_job()), available_fn=lambda data: cast(bool,\n    data['state']['flags']['paused'])))"
+  - "(QswButtonDescription(device_class=ButtonDeviceClass.RESTART,\n    entity_category=EntityCategory.CONFIG,\
+    \ key=QSW_REBOOT, press_action=lambda\n    qsw: qsw.reboot()),)"
+  - (QswButtonDescription, ...)
+  - "(RainMachineButtonDescription(key=BUTTON_KIND_REBOOT, api_category=\n    DATA_PROVISION_SETTINGS,\
+    \ push_action=_async_reboot),)"
+  - "(RenaultButtonEntityDescription(async_press=lambda x: x.vehicle.\n    set_ac_start(21,\
+    \ None), key='start_air_conditioner', icon=\n    'mdi:air-conditioner', translation_key='start_air_conditioner'),\n\
+    \    RenaultButtonEntityDescription(async_press=lambda x: x.vehicle.\n    set_charge_start(),\
+    \ key='start_charge', icon='mdi:ev-station',\n    requires_electricity=True, translation_key='start_charge'),\n\
+    \    RenaultButtonEntityDescription(async_press=lambda x: x.vehicle.\n    set_charge_stop(),\
+    \ key='stop_charge', icon='mdi:ev-station',\n    requires_electricity=True, translation_key='stop_charge'))"
+  - (RenaultButtonEntityDescription, ...)
+  - "(RensonButtonEntityDescription(key='sync_time', entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='sync_time', action_fn=lambda\n    api: api.sync_time()), RensonButtonEntityDescription(key='restart',\n\
+    \    device_class=ButtonDeviceClass.RESTART, entity_category=EntityCategory.\n\
+    \    CONFIG, action_fn=lambda api: api.restart_device()),\n    RensonButtonEntityDescription(key='reset_filter',\
+    \ translation_key=\n    'reset_filter', entity_category=EntityCategory.CONFIG,\
+    \ action_fn=lambda\n    api: api.reset_filter()))"
+  - (RensonButtonEntityDescription, ...)
+  - "(ReolinkButtonEntityDescription(key='ptz_stop', translation_key='ptz_stop',\n\
+    \    icon='mdi:pan', enabled_default=lambda api, ch: api.supported(ch,\n    'pan_tilt'),\
+    \ supported=lambda api, ch: api.supported(ch, 'pan_tilt') or\n    api.supported(ch,\
+    \ 'zoom_basic'), method=lambda api, ch: api.\n    set_ptz_command(ch, command=PtzEnum.stop.value)),\n\
+    \    ReolinkButtonEntityDescription(key='ptz_left', translation_key=\n    'ptz_left',\
+    \ icon='mdi:pan', supported=lambda api, ch: api.supported(ch,\n    'pan'), method=lambda\
+    \ api, ch: api.set_ptz_command(ch, command=PtzEnum.\n    left.value)), ReolinkButtonEntityDescription(key='ptz_right',\n\
+    \    translation_key='ptz_right', icon='mdi:pan', supported=lambda api, ch:\n\
+    \    api.supported(ch, 'pan'), method=lambda api, ch: api.set_ptz_command(ch,\n\
+    \    command=PtzEnum.right.value)), ReolinkButtonEntityDescription(key=\n    'ptz_up',\
+    \ translation_key='ptz_up', icon='mdi:pan', supported=lambda\n    api, ch: api.supported(ch,\
+    \ 'tilt'), method=lambda api, ch: api.\n    set_ptz_command(ch, command=PtzEnum.up.value)),\n\
+    \    ReolinkButtonEntityDescription(key='ptz_down', translation_key=\n    'ptz_down',\
+    \ icon='mdi:pan', supported=lambda api, ch: api.supported(ch,\n    'tilt'), method=lambda\
+    \ api, ch: api.set_ptz_command(ch, command=PtzEnum\n    .down.value)), ReolinkButtonEntityDescription(key='ptz_zoom_in',\n\
+    \    translation_key='ptz_zoom_in', icon='mdi:magnify',\n    entity_registry_enabled_default=False,\
+    \ supported=lambda api, ch: api.\n    supported(ch, 'zoom_basic'), method=lambda\
+    \ api, ch: api.set_ptz_command\n    (ch, command=PtzEnum.zoomin.value)), ReolinkButtonEntityDescription(key\n\
+    \    ='ptz_zoom_out', translation_key='ptz_zoom_out', icon='mdi:magnify',\n  \
+    \  entity_registry_enabled_default=False, supported=lambda api, ch: api.\n   \
+    \ supported(ch, 'zoom_basic'), method=lambda api, ch: api.set_ptz_command\n  \
+    \  (ch, command=PtzEnum.zoomout.value)), ReolinkButtonEntityDescription(\n   \
+    \ key='ptz_calibrate', translation_key='ptz_calibrate', icon='mdi:pan',\n    entity_category=EntityCategory.CONFIG,\
+    \ supported=lambda api, ch: api.\n    supported(ch, 'ptz_callibrate'), method=lambda\
+    \ api, ch: api.\n    ptz_callibrate(ch)), ReolinkButtonEntityDescription(key='guard_go_to',\n\
+    \    translation_key='guard_go_to', icon='mdi:crosshairs-gps', supported=lambda\n\
+    \    api, ch: api.supported(ch, 'ptz_guard'), method=lambda api, ch: api.\n  \
+    \  set_ptz_guard(ch, command=GuardEnum.goto.value)),\n    ReolinkButtonEntityDescription(key='guard_set',\
+    \ translation_key=\n    'guard_set', icon='mdi:crosshairs-gps', entity_category=EntityCategory.\n\
+    \    CONFIG, supported=lambda api, ch: api.supported(ch, 'ptz_guard'),\n    method=lambda\
+    \ api, ch: api.set_ptz_guard(ch, command=GuardEnum.set.value)))"
+  - "(ReolinkHostButtonEntityDescription(key='reboot', device_class=\n    ButtonDeviceClass.RESTART,\
+    \ entity_category=EntityCategory.CONFIG,\n    entity_registry_enabled_default=False,\
+    \ supported=lambda api: api.\n    supported(None, 'reboot'), method=lambda api:\
+    \ api.reboot()),)"
+  - "(SFRBoxButtonEntityDescription(async_press=lambda x: x.system_reboot(),\n   \
+    \ device_class=ButtonDeviceClass.RESTART, entity_category=EntityCategory.\n  \
+    \  CONFIG, key='system_reboot'),)"
+  - (SFRBoxButtonEntityDescription, ...)
+  - "(SimpliSafeButtonDescription(key=BUTTON_KIND_CLEAR_NOTIFICATIONS,\n    translation_key=BUTTON_KIND_CLEAR_NOTIFICATIONS,\
+    \ push_action=\n    _async_clear_notifications),)"
+  - (UnifiButtonEntityDescription, ...)
+  - "(UnifiButtonEntityDescription[Devices, Device](key='Device restart',\n    entity_category=EntityCategory.CONFIG,\
+    \ has_entity_name=True,\n    device_class=ButtonDeviceClass.RESTART, allowed_fn=lambda\
+    \ controller,\n    obj_id: True, api_handler_fn=lambda api: api.devices, available_fn=\n\
+    \    async_device_available_fn, control_fn=async_restart_device_control_fn,\n\
+    \    device_info_fn=async_device_device_info_fn, event_is_on=None,\n    event_to_subscribe=None,\
+    \ name_fn=lambda _: 'Restart', object_fn=lambda\n    api, obj_id: api.devices[obj_id],\
+    \ should_poll=False, supported_fn=lambda\n    controller, obj_id: True, unique_id_fn=lambda\
+    \ controller, obj_id:\n    f'device_restart-{obj_id}'),)"
+  - "(ValveControllerButtonDescription(key=BUTTON_KIND_REBOOT, push_action=\n    _async_reboot,\
+    \ device_class=ButtonDeviceClass.RESTART, api_category=\n    API_SYSTEM_DIAGNOSTICS),\
+    \ ValveControllerButtonDescription(key=\n    BUTTON_KIND_RESET_VALVE_DIAGNOSTICS,\
+    \ translation_key=\n    'reset_diagnostics', push_action=_async_valve_reset, api_category=\n\
+    \    API_SYSTEM_DIAGNOSTICS))"
+  - "(ViCareButtonEntityDescription(key=BUTTON_DHW_ACTIVATE_ONETIME_CHARGE, name\n\
+    \    ='Activate one-time charge', icon='mdi:shower-head', entity_category=\n \
+    \   EntityCategory.CONFIG, value_getter=lambda api: api.getOneTimeCharge(),\n\
+    \    value_setter=lambda api: api.activateOneTimeCharge()),)"
+  - (ViCareButtonEntityDescription, ...)
+  - "(VodafoneStationEntityDescription(key='reboot', device_class=\n    ButtonDeviceClass.RESTART,\
+    \ entity_category=EntityCategory.CONFIG,\n    press_action=lambda coordinator:\
+    \ coordinator.api.restart_router(),\n    is_suitable=lambda _: True), VodafoneStationEntityDescription(key=\n\
+    \    'dsl_ready', translation_key='dsl_reconnect', device_class=\n    ButtonDeviceClass.RESTART,\
+    \ entity_category=EntityCategory.DIAGNOSTIC,\n    press_action=lambda coordinator:\
+    \ coordinator.api.restart_connection(\n    'dsl'), is_suitable=lambda info: info.get('dsl_ready')\
+    \ == '1'),\n    VodafoneStationEntityDescription(key='fiber_ready', translation_key=\n\
+    \    'fiber_reconnect', device_class=ButtonDeviceClass.RESTART,\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ press_action=lambda\n    coordinator: coordinator.api.restart_connection('fiber'),\
+    \ is_suitable=\n    lambda info: info.get('fiber_ready') == '1'),\n    VodafoneStationEntityDescription(key='vf_internet_key_online_since',\n\
+    \    translation_key='internet_key_reconnect', device_class=\n    ButtonDeviceClass.RESTART,\
+    \ entity_category=EntityCategory.DIAGNOSTIC,\n    press_action=lambda coordinator:\
+    \ coordinator.api.restart_connection(\n    'internet_key'), is_suitable=lambda\
+    \ info: info.get(\n    'vf_internet_key_online_since') != ''))"
+  - "(XiaomiMiioButtonDescription(key=ATTR_RESET_DUST_FILTER, name=\n    'Reset dust\
+    \ filter', icon='mdi:air-filter', method_press=\n    'reset_dust_filter', method_press_error_message=\n\
+    \    'Resetting the dust filter lifetime failed', entity_category=\n    EntityCategory.CONFIG),\
+    \ XiaomiMiioButtonDescription(key=\n    ATTR_RESET_UPPER_FILTER, name='Reset upper\
+    \ filter', icon=\n    'mdi:air-filter', method_press='reset_upper_filter',\n \
+    \   method_press_error_message=\n    'Resetting the upper filter lifetime failed.',\
+    \ entity_category=\n    EntityCategory.CONFIG), XiaomiMiioButtonDescription(key=\n\
+    \    ATTR_RESET_VACUUM_MAIN_BRUSH, name='Reset main brush', icon='mdi:brush',\n\
+    \    method_press=METHOD_VACUUM_RESET_CONSUMABLE, method_press_params=\n    Consumable.MainBrush,\
+    \ method_press_error_message=\n    'Resetting the main brush lifetime failed.',\
+    \ entity_category=\n    EntityCategory.CONFIG), XiaomiMiioButtonDescription(key=\n\
+    \    ATTR_RESET_VACUUM_SIDE_BRUSH, name='Reset side brush', icon='mdi:brush',\n\
+    \    method_press=METHOD_VACUUM_RESET_CONSUMABLE, method_press_params=\n    Consumable.SideBrush,\
+    \ method_press_error_message=\n    'Resetting the side brush lifetime failed.',\
+    \ entity_category=\n    EntityCategory.CONFIG), XiaomiMiioButtonDescription(key=\n\
+    \    ATTR_RESET_VACUUM_FILTER, name='Reset filter', icon='mdi:air-filter',\n \
+    \   method_press=METHOD_VACUUM_RESET_CONSUMABLE, method_press_params=\n    Consumable.Filter,\
+    \ method_press_error_message=\n    'Resetting the filter lifetime failed.', entity_category=EntityCategory\n\
+    \    .CONFIG), XiaomiMiioButtonDescription(key=\n    ATTR_RESET_VACUUM_SENSOR_DIRTY,\
+    \ name='Reset sensor dirty', icon=\n    'mdi:eye-outline', method_press=METHOD_VACUUM_RESET_CONSUMABLE,\n\
+    \    method_press_params=Consumable.SensorDirty, method_press_error_message=\n\
+    \    'Resetting the sensor lifetime failed.', entity_category=EntityCategory\n\
+    \    .CONFIG))"
+  - ([BaseShade], Any)
+  - ([BraviaTVCoordinator], Coroutine)
+  - ([Client], Awaitable)
+  - ([Controller], Awaitable)
+  - ([Device], Awaitable[bool])
+  - ([DoorBird, str], None)
+  - ([Dremel3DPrinter], None)
+  - ([Elgato], Awaitable[Any])
+  - ([EzvizClient, str, str], Any)
+  - ([FreeboxRouter], Awaitable)
+  - ([FullyKiosk], Any)
+  - ([Host, int], Any)
+  - ([Host, int], bool)
+  - ([Host], Any)
+  - ([Host], bool)
+  - ([IdasenDeskCoordinator], Callable[[], Coroutine[Any, Any, Any]])
+  - ([Inverter], Awaitable[None])
+  - ([LaMetricDevice], Awaitable[Any])
+  - ([MyBMWVehicle], Coroutine[Any, Any, RemoteServiceStatus])
+  - ([MyBMWVehicle], bool)
+  - ([NetgearRouter], Callable[[], Coroutine[Any, Any, None]])
+  - ([PrusaLink], Coroutine[Any, Any, None])
+  - ([QnapQswApi], Awaitable[bool])
+  - ([RenaultButtonEntity], Coroutine[Any, Any, Any])
+  - ([RensonVentilation], None)
+  - ([SFRBox], Coroutine[None, None, None])
+  - ([SleepIQBed], Any)
+  - ([StarlinkUpdateCoordinator], Awaitable[None])
+  - ([SwitcherBreezeRemote], bool)
+  - ([SwitcherType2Api, SwitcherBreezeRemote], SwitcherBaseResponse)
+  - ([SynoApi], Callable[[], Coroutine[Any, Any, None]])
+  - ([System], Awaitable)
+  - ([T], bool)
+  - ([VodafoneStationRouter], Any)
+  - ([_RobotT], Coroutine[Any, Any, bool])
+  - ([_ShellyCoordinatorT], Coroutine[Any, Any, None])
+  - ([_ShellyCoordinatorT], bool)
+  - ([aiounifi.Controller, str], Coroutine[Any, Any, None])
+  - ([dict], bool)
+  - (asyncio.TimeoutError, OSError, RuntimeError)
+  - (capibility, value)
+  - (coordinator_type, sensors)
+  - (device_id, coordinator)
+  - (device_id, device_data)
+  - (dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)
+  - (member_id, member)
+  - (str, Any)
+  - (str, DevoloButtonEntityDescription)
+  - (str, HomeKitButtonEntityDescription)
+  - (str, PrusaLinkUpdateCoordinator)
+  - (str, RoborockDataUpdateCoordinator)
+  - (str, tuple[ButtonEntityDescription, ...])
+  - (str, tuple[PrusaLinkButtonEntityDescription, ...])
+  - (str, tuple[str, ...])
+  - (str, type)
+  - (vin, datastore)
+  - Any, Any, Any
+  - Any, Any, None
+  - Any, Any, RemoteServiceStatus
+  - Any, Any, _T
+  - Any, Any, bool
+  - ButtonEntityDescription, ...
+  - Devices, Device
+  - None, None, None
+  - PrusaLinkButtonEntityDescription, ...
+  - SFRBoxButton, _P
+  - '[], Coroutine[Any, Any, Any]'
+  - '[], Coroutine[Any, Any, None]'
+  - str, ...

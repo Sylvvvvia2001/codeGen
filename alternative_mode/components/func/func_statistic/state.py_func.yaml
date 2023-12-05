@@ -1,0 +1,13 @@
+state.py:
+- __init__
+- _check_same_state
+- as_dict
+- async_remove
+- attributes
+- call_action
+- context
+- extract_metadata_ids
+- last_changed
+- last_updated
+- row_to_compressed_state
+- state_automation_listener

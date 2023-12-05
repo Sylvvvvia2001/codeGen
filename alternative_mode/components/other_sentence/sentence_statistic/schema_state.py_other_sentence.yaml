@@ -1,0 +1,12 @@
+schema_state.py:
+  schemas: []
+  sets:
+  - '{''_attr_battery_level'', ''_attr_fan_speed'', ''_attr_state''}'
+  tuples:
+  - "(CONF_PAYLOAD_START, CONF_PAYLOAD_PAUSE, CONF_PAYLOAD_STOP,\n    CONF_PAYLOAD_RETURN_TO_BASE,\
+    \ CONF_PAYLOAD_CLEAN_SPOT, CONF_PAYLOAD_LOCATE)"
+  - (VacuumEntityFeature, str)
+  - (k, v)
+  - (str, Any)
+  - (str, str | None)
+  - (str, str)

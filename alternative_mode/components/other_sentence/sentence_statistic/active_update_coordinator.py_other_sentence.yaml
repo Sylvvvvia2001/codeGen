@@ -1,0 +1,8 @@
+active_update_coordinator.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Any, Any, None)
+  - ([BluetoothServiceInfoBleak, float | None], bool)
+  - ([BluetoothServiceInfoBleak], Coroutine[Any, Any, _T])
+  - Any, Any, _T

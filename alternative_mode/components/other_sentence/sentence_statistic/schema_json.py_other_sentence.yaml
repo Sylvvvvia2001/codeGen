@@ -1,0 +1,26 @@
+schema_json.py:
+  schemas: []
+  sets:
+  - "{'_attr_brightness', '_attr_color_temp', '_attr_effect', '_attr_hs_color',\n\
+    \    '_attr_is_on', '_attr_rgb_color', '_attr_rgbw_color',\n    '_attr_rgbww_color',\
+    \ '_attr_xy_color', 'color_mode'}"
+  - '{CONF_COLOR_TEMP, CONF_HS, CONF_RGB, CONF_XY}'
+  - '{ColorMode.ONOFF}'
+  tuples:
+  - (CONF_FLASH_TIME_SHORT, CONF_FLASH_TIME_LONG)
+  - (CONF_STATE_TOPIC, CONF_COMMAND_TOPIC)
+  - (KeyError, ValueError)
+  - (TypeError, ValueError)
+  - (float, float)
+  - (hue, saturation)
+  - (int, ...)
+  - (int, int, int)
+  - (int, int, int, int)
+  - (int, int, int, int, int)
+  - (r, g, b)
+  - (r, g, b, c, w)
+  - (r, g, b, w)
+  - (str, Any)
+  - (str, int | None)
+  - (str, str | None)
+  - (x, y)

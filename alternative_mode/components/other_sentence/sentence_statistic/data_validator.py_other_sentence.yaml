@@ -1,0 +1,12 @@
+data_validator.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Concatenate[_HassViewT, web.Request, _P], Coroutine[Any, Any, web.Response])
+  - "(Concatenate[_HassViewT, web.Request, dict[str, Any], _P], Awaitable[web.\n \
+    \   Response])"
+  - (str, Any)
+  - Any, Any, web.Response
+  - _HassViewT, web.Request, _P
+  - _HassViewT, web.Request, dict[str, Any], _P
+  - str, Any

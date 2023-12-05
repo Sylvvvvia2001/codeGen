@@ -1,0 +1,5 @@
+request_context.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([Request], Awaitable[StreamResponse])

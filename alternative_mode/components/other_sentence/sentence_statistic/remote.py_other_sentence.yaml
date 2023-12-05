@@ -1,0 +1,25 @@
+remote.py:
+  schemas: []
+  sets:
+  - "{'select', 'up', 'down', 'left', 'right', 'cancel', 'replay',\n    'scan_forward',\
+    \ 'scan_reverse', 'go_movie_covers', 'menu_toggle'}"
+  - '{(DOMAIN, self._console.id)}'
+  - '{(DOMAIN, self._device_info[ATTR_UDN])}'
+  - '{178, 215}'
+  tuples:
+  - ('active', 'standby')
+  - ('audio', 'volume_down')
+  - ('audio', 'volume_up')
+  - ('power', 'turn_off')
+  - ('power', 'turn_on')
+  - ('remote_control', 'home')
+  - (AuthorizationError, NetworkTimeoutError, OSError)
+  - (BroadlinkException, OSError)
+  - (DOMAIN, self._console.id)
+  - (DOMAIN, self._device_info[ATTR_UDN])
+  - (ReadError, StorageError)
+  - (_, codes)
+  - (activity_id, activity_name)
+  - (idx, code)
+  - (single_command, kwargs.get(remote.ATTR_DEVICE))
+  - (str, Any)

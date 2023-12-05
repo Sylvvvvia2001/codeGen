@@ -1,0 +1,8 @@
+types.py:
+- CalData
+- CustomProject
+- DueDate
+- EnergyPlatform
+- ProjectData
+- SolarForecastType
+- TodoistEvent

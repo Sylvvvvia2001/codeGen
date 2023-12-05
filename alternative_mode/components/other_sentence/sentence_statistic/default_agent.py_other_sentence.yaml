@@ -1,0 +1,19 @@
+default_agent.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([str, RecognizeResult], Awaitable[str | None])
+  - (alias, alias, context)
+  - (alias, area.id)
+  - (area.name, area.id)
+  - (entity_name, entity_value)
+  - (int, RecognizeResult)
+  - (intent_name, sentences)
+  - (lang, sep, region)
+  - (state.name, state.name, context)
+  - (str, Any)
+  - (str, LanguageIntents)
+  - (str, SlotList)
+  - (str, asyncio.Lock)
+  - (trigger_id, result)
+  - (trigger_id, trigger_data)

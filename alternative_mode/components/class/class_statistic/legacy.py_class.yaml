@@ -1,0 +1,12 @@
+legacy.py:
+- AsyncSeeCallback
+- BaseNotificationService
+- Device
+- DeviceScanner
+- DeviceTracker
+- DeviceTrackerPlatform
+- LegacyLazyState
+- LegacyLazyStatePreSchema31
+- LegacyNotifyPlatform
+- Provider
+- SeeCallback

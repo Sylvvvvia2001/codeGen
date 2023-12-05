@@ -1,0 +1,7 @@
+mailbox.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, Any)
+  - (str, dict[str, Any])
+  - str, Any

@@ -1,0 +1,22 @@
+time.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, unique_id)}'
+  tuples:
+  - ((coordinator, description), result)
+  - (DOMAIN, unique_id)
+  - (RoborockDataUpdateCoordinator, RoborockTimeDescription)
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - ([AttributeCache, datetime.time], Coroutine[Any, Any, dict])
+  - ([AttributeCache], datetime.time)
+  - ([Valve, time], Coroutine[Any, Any, None])
+  - ([Valve], Any)
+  - ([_RobotT, time], Coroutine[Any, Any, bool])
+  - ([_RobotT], time | None)
+  - (coordinator, description)
+  - (str, CALLBACK_TYPE)
+  - (str, RoborockDataUpdateCoordinator)
+  - Any, Any, None
+  - Any, Any, bool
+  - Any, Any, dict

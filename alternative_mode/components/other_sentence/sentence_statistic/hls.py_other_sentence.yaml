@@ -1,0 +1,5 @@
+hls.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (i, segment)

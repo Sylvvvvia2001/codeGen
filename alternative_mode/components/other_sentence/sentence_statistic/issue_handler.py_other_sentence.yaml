@@ -1,0 +1,7 @@
+issue_handler.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, Any)
+  - (str, RepairsProtocol)
+  - (str, str)

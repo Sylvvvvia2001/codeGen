@@ -1,0 +1,15 @@
+modbus.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ((SERVICE_STOP, async_stop_hub), (SERVICE_RESTART, async_restart_hub))
+  - "((SERVICE_WRITE_REGISTER, async_write_register, ATTR_VALUE, cv.positive_int\n\
+    \    ), (SERVICE_WRITE_COIL, async_write_coil, ATTR_STATE, cv.boolean))"
+  - (SERVICE_RESTART, async_restart_hub)
+  - (SERVICE_STOP, async_stop_hub)
+  - (SERVICE_WRITE_COIL, async_write_coil, ATTR_STATE, cv.boolean)
+  - (SERVICE_WRITE_REGISTER, async_write_register, ATTR_VALUE, cv.positive_int)
+  - ([], None)
+  - (component, conf_key)
+  - (str, Any)
+  - (str, RunEntry)

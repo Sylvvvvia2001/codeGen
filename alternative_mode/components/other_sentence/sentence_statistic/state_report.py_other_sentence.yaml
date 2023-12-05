@@ -1,0 +1,10 @@
+state_report.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Any, Any)
+  - (RequireRelink, NoTokenAvailable)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (p['namespace'], p['name'])
+  - (prop['namespace'], prop['name'])
+  - (str, Any)

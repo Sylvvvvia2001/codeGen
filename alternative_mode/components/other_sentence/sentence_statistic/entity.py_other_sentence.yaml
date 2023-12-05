@@ -1,0 +1,467 @@
+entity.py:
+  schemas: []
+  sets:
+  - '{(ATTR_ID, station[''id''])}'
+  - '{(AXIS_DOMAIN, device.unique_id)}'
+  - '{(CONNECTION_NETWORK_MAC, config_entry.data[CONF_MAC])}'
+  - '{(CONNECTION_NETWORK_MAC, coordinator.data[''Mac''])}'
+  - '{(CONNECTION_NETWORK_MAC, coordinator.mac)}'
+  - '{(CONNECTION_NETWORK_MAC, device.mac)}'
+  - '{(CONNECTION_NETWORK_MAC, format_mac(coordinator.data.wifi.mac))}'
+  - '{(CONNECTION_NETWORK_MAC, format_mac(device.MAC))}'
+  - '{(CONNECTION_NETWORK_MAC, format_mac(mac))}'
+  - '{(CONNECTION_NETWORK_MAC, lock_id)}'
+  - '{(CONNECTION_NETWORK_MAC, mac)}'
+  - '{(CONNECTION_NETWORK_MAC, obj_id)}'
+  - '{(CONNECTION_NETWORK_MAC, panel_info[''mac''])}'
+  - '{(CONNECTION_NETWORK_MAC, self._device.mac)}'
+  - '{(CONNECTION_NETWORK_MAC, self._device.mac_address)}'
+  - '{(CONNECTION_NETWORK_MAC, self._host.api.mac_address)}'
+  - '{(CONNECTION_NETWORK_MAC, self.coordinator.data[''mac''])}'
+  - '{(CONNECTION_NETWORK_MAC, self.data[''mac_address''])}'
+  - '{(CONNECTION_NETWORK_MAC, self.device_data.mac)}'
+  - '{(CONNECTION_NETWORK_MAC, self.get_device_value(QSD_SYSTEM_BOARD, QSD_MAC))}'
+  - '{(CONNECTION_NETWORK_MAC, serial_number)}'
+  - '{(CONNECTION_ZIGBEE, ieee)}'
+  - '{(DOMAIN, ''OS'')}'
+  - '{(DOMAIN, ''core'')}'
+  - '{(DOMAIN, ''host'')}'
+  - '{(DOMAIN, ''supervisor'')}'
+  - '{(DOMAIN, addon[ATTR_SLUG])}'
+  - '{(DOMAIN, aidoo_id)}'
+  - '{(DOMAIN, api.get_field_value(coordinator.data, MAC_ADDRESS.name))}'
+  - '{(DOMAIN, auth.oauth_session.config_entry.entry_id)}'
+  - '{(DOMAIN, blind.mac)}'
+  - '{(DOMAIN, bridge.api.config.bridge.bridge_id)}'
+  - '{(DOMAIN, config_entry.entry_id)}'
+  - '{(DOMAIN, config_entry.unique_id)}'
+  - '{(DOMAIN, config_entry_unique_id)}'
+  - '{(DOMAIN, coordinator.config_entry.entry_id)}'
+  - '{(DOMAIN, coordinator.data.info.serial_number)}'
+  - '{(DOMAIN, coordinator.data.serial_number)}'
+  - '{(DOMAIN, coordinator.data[''deviceID''])}'
+  - '{(DOMAIN, coordinator.device_id)}'
+  - '{(DOMAIN, coordinator.diffuser.hublot)}'
+  - '{(DOMAIN, coordinator.entry.data[CONF_USERNAME])}'
+  - '{(DOMAIN, coordinator.evse.host)}'
+  - '{(DOMAIN, coordinator.serial_number)}'
+  - '{(DOMAIN, coordinator.unique_id)}'
+  - '{(DOMAIN, coordinator.user_id)}'
+  - '{(DOMAIN, data[''address''])}'
+  - '{(DOMAIN, device.appliance.haId)}'
+  - '{(DOMAIN, device.device_id)}'
+  - '{(DOMAIN, device.id)}'
+  - '{(DOMAIN, device.mac)}'
+  - '{(DOMAIN, device.unique_id)}'
+  - '{(DOMAIN, device.voip_id)}'
+  - '{(DOMAIN, device_config.getConfig().serial)}'
+  - '{(DOMAIN, device_id)}'
+  - '{(DOMAIN, device_unique_id)}'
+  - '{(DOMAIN, domain.id)}'
+  - '{(DOMAIN, entity.device_id)}'
+  - '{(DOMAIN, entry.entry_id)}'
+  - '{(DOMAIN, entry_id)}'
+  - '{(DOMAIN, f''{ID_TYPE_DEVICE_ID}_{node_device_id}'')}'
+  - '{(DOMAIN, f''{coordinator.config_entry.entry_id}_{channel_id}'')}'
+  - '{(DOMAIN, f''{entry.entry_id}_dhw'')}'
+  - '{(DOMAIN, f''{entry.entry_id}_ws'')}'
+  - '{(DOMAIN, f''{entry.entry_id}_{self.system_id}'')}'
+  - '{(DOMAIN, f''{entry.entry_id}_{system_zone_id}'')}'
+  - '{(DOMAIN, f''{home_id}_{zone_id}'')}'
+  - '{(DOMAIN, f''{identifier}-{coordinator.unique_id}'')}'
+  - '{(DOMAIN, f''{location.station_latitude}, {location.station_longitude}'')}'
+  - '{(DOMAIN, f''{self._api.information.serial}_{self._device_id}'')}'
+  - '{(DOMAIN, f''{self._host.unique_id}_ch{dev_ch}'')}'
+  - '{(DOMAIN, flipr_id)}'
+  - '{(DOMAIN, format_mac(device.MAC))}'
+  - '{(DOMAIN, garage_name)}'
+  - '{(DOMAIN, group_id)}'
+  - '{(DOMAIN, ieee)}'
+  - '{(DOMAIN, inst_id)}'
+  - '{(DOMAIN, irk)}'
+  - '{(DOMAIN, lock_id)}'
+  - '{(DOMAIN, lock_info.serial)}'
+  - '{(DOMAIN, lookin_device.id)}'
+  - '{(DOMAIN, mac)}'
+  - '{(DOMAIN, mac_address)}'
+  - '{(DOMAIN, nanoleaf.serial_no)}'
+  - '{(DOMAIN, node.isy.uuid)}'
+  - '{(DOMAIN, router.unique_id)}'
+  - '{(DOMAIN, self._api.board.name)}'
+  - '{(DOMAIN, self._api.get_serial_number())}'
+  - '{(DOMAIN, self._api.information.serial)}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._controller.serial_number)}'
+  - '{(DOMAIN, self._device.device_id)}'
+  - '{(DOMAIN, self._device_id)}'
+  - '{(DOMAIN, self._device_info.serial_number)}'
+  - '{(DOMAIN, self._host.unique_id)}'
+  - '{(DOMAIN, self._hub.bond_id, self._device.device_id)}'
+  - '{(DOMAIN, self._identifier)}'
+  - '{(DOMAIN, self._shade.id)}'
+  - '{(DOMAIN, self._thermostat.thermostat_id)}'
+  - '{(DOMAIN, self._unique_id)}'
+  - '{(DOMAIN, self._uuid)}'
+  - '{(DOMAIN, self._zone.zone_id)}'
+  - '{(DOMAIN, self.adguard.host, self.adguard.port, self.adguard.base_path)}'
+  - '{(DOMAIN, self.base_unique_id)}'
+  - '{(DOMAIN, self.coordinator.config_entry.entry_id)}'
+  - '{(DOMAIN, self.coordinator.data.status[''id''])}'
+  - '{(DOMAIN, self.coordinator.data[CHARGER_DATA_KEY][CHARGER_SERIAL_NUMBER_KEY])}'
+  - '{(DOMAIN, self.coordinator.device.device_id)}'
+  - '{(DOMAIN, self.coordinator.server_id)}'
+  - '{(DOMAIN, self.coordinator.unique_id)}'
+  - '{(DOMAIN, self.device.id)}'
+  - '{(DOMAIN, self.device.mac)}'
+  - '{(DOMAIN, self.device_data.id)}'
+  - '{(DOMAIN, self.device_id)}'
+  - '{(DOMAIN, self.executor.base_device_url)}'
+  - '{(DOMAIN, self.robot.serial)}'
+  - '{(DOMAIN, self.soco.uid)}'
+  - '{(DOMAIN, self.station.uuid)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, sensor.station.key)}'
+  - '{(DOMAIN, sensor_id)}'
+  - '{(DOMAIN, serial)}'
+  - '{(DOMAIN, serial_number)}'
+  - '{(DOMAIN, spa.id)}'
+  - '{(DOMAIN, str(channel.get_module_address()))}'
+  - '{(DOMAIN, str(coordinator.config_entry.unique_id))}'
+  - '{(DOMAIN, str(device.device_id))}'
+  - '{(DOMAIN, str(device.serial_number))}'
+  - '{(DOMAIN, str(entry.data[CONF_ID]))}'
+  - '{(DOMAIN, str(self._unit.serial_number))}'
+  - '{(DOMAIN, str(self.monitor.id))}'
+  - '{(DOMAIN, str(unit.get_node_address()))}'
+  - '{(DOMAIN, system_id)}'
+  - '{(DOMAIN, tado.home_id)}'
+  - '{(DOMAIN, thermostat[''identifier''])}'
+  - '{(DOMAIN, tracker_details[''_id''])}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(DOMAIN, unit_id)}'
+  - '{(DOMAIN, uuid)}'
+  - '{(DOMAIN, wlan.id)}'
+  - '{(DOMAIN, ws_id)}'
+  - '{(DOMAIN, zone_id)}'
+  - '{(FLO_DOMAIN, self._device.id)}'
+  - '{(HOME_ASSISTANT, DOMAIN)}'
+  - '{(KALEIDESCAPE_DOMAIN, self._device.serial_number)}'
+  - '{(NEATO_DOMAIN, self.robot.serial)}'
+  - '{(dr.CONNECTION_BLUETOOTH, device.address)}'
+  - '{(dr.CONNECTION_BLUETOOTH, lock.address)}'
+  - '{(dr.CONNECTION_BLUETOOTH, mac)}'
+  - '{(dr.CONNECTION_BLUETOOTH, self._address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, bed.mac_addr)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, blind.mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, config_entry.unique_id)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, device.mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, device.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, device_info.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, entry.unique_id)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, mac_address_hex)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._api.sysdata[''macAddress''])}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._controller.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._device.mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._device.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._device_info.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._mac_addr)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self._mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self.device.mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self.init_data.mac)}'
+  - "{(dr.CONNECTION_NETWORK_MAC, self.speaker.mac_address), (dr.CONNECTION_UPNP,\n\
+    \    f'uuid:{self.speaker.uid}')}"
+  - '{(dr.CONNECTION_NETWORK_MAC, ws_id)}'
+  - '{ATTR_EVENT_ID, ATTR_EVENT_SCORE}'
+  - '{get_device_id(driver, self.info.node)}'
+  - '{model_type}'
+  - '{self._obj_id}'
+  - '{self.info.primary_value.value_id}'
+  tuples:
+  - "((self._hmdevice.ATTRIBUTENODE, self._hmdevice.getAttributeData), (self.\n  \
+    \  _hmdevice.WRITENODE, self._hmdevice.getWriteData), (self._hmdevice.\n    SENSORNODE,\
+    \ self._hmdevice.getSensorData), (self._hmdevice.BINARYNODE,\n    self._hmdevice.getBinaryData))"
+  - (*self.entity_description.data_root, self._data_key)
+  - (-1, None)
+  - (..., Any)
+  - (..., bool)
+  - (ATTR_ID, station['id'])
+  - (AXIS_DOMAIN, device.unique_id)
+  - (Any, Any)
+  - (CONNECTION_NETWORK_MAC, config_entry.data[CONF_MAC])
+  - (CONNECTION_NETWORK_MAC, coordinator.data['Mac'])
+  - (CONNECTION_NETWORK_MAC, coordinator.mac)
+  - (CONNECTION_NETWORK_MAC, device.mac)
+  - (CONNECTION_NETWORK_MAC, format_mac(coordinator.data.wifi.mac))
+  - (CONNECTION_NETWORK_MAC, format_mac(device.MAC))
+  - (CONNECTION_NETWORK_MAC, format_mac(mac))
+  - (CONNECTION_NETWORK_MAC, lock_id)
+  - (CONNECTION_NETWORK_MAC, mac)
+  - (CONNECTION_NETWORK_MAC, mac_address)
+  - (CONNECTION_NETWORK_MAC, obj_id)
+  - (CONNECTION_NETWORK_MAC, panel_info['mac'])
+  - (CONNECTION_NETWORK_MAC, self._device.mac)
+  - (CONNECTION_NETWORK_MAC, self._device.mac_address)
+  - (CONNECTION_NETWORK_MAC, self._host.api.mac_address)
+  - (CONNECTION_NETWORK_MAC, self.coordinator.data['mac'])
+  - (CONNECTION_NETWORK_MAC, self.data['mac_address'])
+  - (CONNECTION_NETWORK_MAC, self.device_data.mac)
+  - (CONNECTION_NETWORK_MAC, self.get_device_value(QSD_SYSTEM_BOARD, QSD_MAC))
+  - (CONNECTION_NETWORK_MAC, serial_number)
+  - (CONNECTION_ZIGBEE, ieee)
+  - (CONNECTION_ZIGBEE, mac)
+  - (Camera, Light, Sensor, Viewer, Doorlock, Chime)
+  - (ClientError, AsyncIOTimeoutError, OSError)
+  - (Concatenate[_T, _P], Awaitable[None])
+  - (Concatenate[_T, _P], Coroutine[Any, Any, Any])
+  - (Concatenate[_T, _P], Coroutine[Any, Any, None])
+  - (DOMAIN, 'OS')
+  - (DOMAIN, 'core')
+  - (DOMAIN, 'host')
+  - (DOMAIN, 'supervisor')
+  - (DOMAIN, addon[ATTR_SLUG])
+  - (DOMAIN, aidoo_data[AZD_WEBSERVER])
+  - (DOMAIN, aidoo_id)
+  - (DOMAIN, api.get_field_value(coordinator.data, MAC_ADDRESS.name))
+  - (DOMAIN, auth.oauth_session.config_entry.entry_id)
+  - (DOMAIN, blind._gateway.mac)
+  - (DOMAIN, blind.mac)
+  - (DOMAIN, bridge.api.config.bridge.bridge_id)
+  - (DOMAIN, config_entry.entry_id)
+  - (DOMAIN, config_entry.unique_id)
+  - (DOMAIN, config_entry_unique_id)
+  - (DOMAIN, coordinator.config_entry.entry_id)
+  - (DOMAIN, coordinator.data.info.serial_number)
+  - (DOMAIN, coordinator.data.serial_number)
+  - (DOMAIN, coordinator.data['deviceID'])
+  - (DOMAIN, coordinator.device_id)
+  - (DOMAIN, coordinator.diffuser.hublot)
+  - (DOMAIN, coordinator.entry.data[CONF_USERNAME])
+  - (DOMAIN, coordinator.evse.host)
+  - (DOMAIN, coordinator.serial_number)
+  - (DOMAIN, coordinator.unique_id)
+  - (DOMAIN, coordinator.user_id)
+  - (DOMAIN, data['address'])
+  - (DOMAIN, device.appliance.haId)
+  - (DOMAIN, device.device_id)
+  - (DOMAIN, device.id)
+  - (DOMAIN, device.mac)
+  - "(DOMAIN, device.parent_device_id if device.parent_device_id is not None else\n\
+    \    parent_id)"
+  - (DOMAIN, device.unique_id)
+  - (DOMAIN, device.voip_id)
+  - (DOMAIN, device_config.getConfig().serial)
+  - (DOMAIN, device_id)
+  - (DOMAIN, device_info['serialNo'])
+  - (DOMAIN, device_unique_id)
+  - (DOMAIN, domain.id)
+  - (DOMAIN, entity.device_id)
+  - (DOMAIN, entry.entry_id)
+  - (DOMAIN, entry_id)
+  - (DOMAIN, f'{ID_TYPE_DEVICE_ID}_{node_device_id}')
+  - (DOMAIN, f'{coordinator.api.name} ({coordinator.api.unique_id})')
+  - (DOMAIN, f'{coordinator.config_entry.entry_id}_{channel_id}')
+  - (DOMAIN, f'{entry.entry_id}_dhw')
+  - (DOMAIN, f'{entry.entry_id}_ws')
+  - (DOMAIN, f'{entry.entry_id}_{self.system_id}')
+  - (DOMAIN, f'{entry.entry_id}_{system_zone_id}')
+  - (DOMAIN, f'{home_id}_{zone_id}')
+  - (DOMAIN, f'{identifier}-{coordinator.unique_id}')
+  - (DOMAIN, f'{location.station_latitude}, {location.station_longitude}')
+  - (DOMAIN, f'{self._api.information.serial}_{self._device_id}')
+  - (DOMAIN, f'{self._host.unique_id}_ch{dev_ch}')
+  - (DOMAIN, flipr_id)
+  - (DOMAIN, format_mac(device.MAC))
+  - (DOMAIN, garage_name)
+  - (DOMAIN, group_id)
+  - (DOMAIN, ieee)
+  - (DOMAIN, inst_id)
+  - (DOMAIN, irk)
+  - (DOMAIN, lock_id)
+  - (DOMAIN, lock_info.serial)
+  - (DOMAIN, lookin_device.id)
+  - (DOMAIN, mac)
+  - (DOMAIN, mac_address)
+  - (DOMAIN, nanoleaf.serial_no)
+  - (DOMAIN, node.isy.uuid)
+  - (DOMAIN, parent_id)
+  - (DOMAIN, router.unique_id)
+  - (DOMAIN, self._api.board.name)
+  - (DOMAIN, self._api.get_serial_number())
+  - (DOMAIN, self._api.information.serial)
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._controller.serial_number)
+  - (DOMAIN, self._device.device_id)
+  - (DOMAIN, self._device_id)
+  - (DOMAIN, self._device_info.serial_number)
+  - (DOMAIN, self._host.unique_id)
+  - (DOMAIN, self._hub.bond_id)
+  - (DOMAIN, self._hub.bond_id, self._device.device_id)
+  - (DOMAIN, self._identifier)
+  - (DOMAIN, self._shade.id)
+  - (DOMAIN, self._thermostat.thermostat_id)
+  - (DOMAIN, self._unique_id)
+  - (DOMAIN, self._uuid)
+  - (DOMAIN, self._zone.thermostat.thermostat_id)
+  - (DOMAIN, self._zone.zone_id)
+  - (DOMAIN, self.adguard.host, self.adguard.port, self.adguard.base_path)
+  - (DOMAIN, self.base_unique_id)
+  - (DOMAIN, self.coordinator.config_entry.entry_id)
+  - (DOMAIN, self.coordinator.data.status['id'])
+  - (DOMAIN, self.coordinator.data['system']['rid'])
+  - (DOMAIN, self.coordinator.data[CHARGER_DATA_KEY][CHARGER_SERIAL_NUMBER_KEY])
+  - (DOMAIN, self.coordinator.device.device_id)
+  - (DOMAIN, self.coordinator.entry.data[CONF_USERNAME])
+  - (DOMAIN, self.coordinator.server_id)
+  - (DOMAIN, self.coordinator.unique_id)
+  - (DOMAIN, self.data.api.bootstrap.nvr.mac)
+  - (DOMAIN, self.device.id)
+  - (DOMAIN, self.device.mac)
+  - (DOMAIN, self.device_data.id)
+  - (DOMAIN, self.device_id)
+  - (DOMAIN, self.dtv.device.info.receiver_id)
+  - (DOMAIN, self.executor.base_device_url)
+  - (DOMAIN, self.executor.get_gateway_id())
+  - (DOMAIN, self.robot.serial)
+  - (DOMAIN, self.soco.uid)
+  - (DOMAIN, self.station.uuid)
+  - (DOMAIN, self.system_id)
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, sensor.station.key)
+  - (DOMAIN, sensor_id)
+  - (DOMAIN, serial)
+  - (DOMAIN, serial_number)
+  - (DOMAIN, spa.id)
+  - (DOMAIN, str(channel.get_module_address()))
+  - (DOMAIN, str(coordinator.config_entry.unique_id))
+  - (DOMAIN, str(device.device_id))
+  - (DOMAIN, str(device.serial_number))
+  - (DOMAIN, str(entry.data[CONF_ID]))
+  - (DOMAIN, str(self._unit.serial_number))
+  - (DOMAIN, str(self.coordinator.data.gateway['gateway_id']))
+  - (DOMAIN, str(self.monitor.id))
+  - (DOMAIN, str(unit.get_node_address()))
+  - (DOMAIN, system_data[AZD_WEBSERVER])
+  - (DOMAIN, system_id)
+  - (DOMAIN, tado.home_id)
+  - (DOMAIN, thermostat['identifier'])
+  - (DOMAIN, tracker_details['_id'])
+  - (DOMAIN, unique_id)
+  - (DOMAIN, unit_id)
+  - (DOMAIN, uuid)
+  - (DOMAIN, wlan.id)
+  - (DOMAIN, ws_id)
+  - (DOMAIN, zha_gateway.coordinator_ieee)
+  - (DOMAIN, zone_id)
+  - (EVENT_ALIVE, EVENT_DEAD)
+  - (EsphomeEntityCategory, EntityCategory | None)
+  - (EventKey, ...)
+  - (EventType.RESOURCE_UPDATED, EventType.RESOURCE_DELETED)
+  - (FLO_DOMAIN, self._device.id)
+  - (HOME_ASSISTANT, DOMAIN)
+  - (HandlerT, ApiItemT)
+  - (KALEIDESCAPE_DOMAIN, self._device.serial_number)
+  - (NEATO_DOMAIN, self.robot.serial)
+  - (None, None, None)
+  - (WasteType, list[date])
+  - ([Any, Any], Any)
+  - ([Any], Any)
+  - ([ApiItemT], str | None)
+  - ([Block], bool)
+  - ([Block], dict | None)
+  - ([CallbackType, ItemEvent], UnsubscribeType)
+  - ([ProtectAdoptableDeviceModel], bool)
+  - ([RegistryEntry], BlockEntityDescription)
+  - ([UniFiController, str], DeviceInfo | None)
+  - ([UniFiController, str], bool | None)
+  - ([UniFiController, str], bool)
+  - ([UniFiController, str], str)
+  - ([], None)
+  - ([_EntityT], _R | None)
+  - ([_EntityT], _R)
+  - ([aiounifi.Controller, str], ApiItemT)
+  - ([aiounifi.Controller], HandlerT)
+  - ([dict, Any], Any)
+  - ([dict, Block], bool)
+  - ([dict, dict, str], bool)
+  - ([dict, dict], dict | None)
+  - ([dict], bool)
+  - ([dict], dict | None)
+  - ([dict], str)
+  - (_, entity_block, entity_sensor)
+  - (_InfoT, _StateT)
+  - (assistant, settings)
+  - (attr_key, plaato_key)
+  - (block, sensor_id, description)
+  - (block.type, sensor_id)
+  - (config_entry.entry_id, 'pin', pin)
+  - (description.key, obj_id)
+  - (description.key, self._obj_id)
+  - (dr.CONNECTION_BLUETOOTH, device.address)
+  - (dr.CONNECTION_BLUETOOTH, lock.address)
+  - (dr.CONNECTION_BLUETOOTH, mac)
+  - (dr.CONNECTION_BLUETOOTH, self._address)
+  - (dr.CONNECTION_NETWORK_MAC, bed.mac_addr)
+  - (dr.CONNECTION_NETWORK_MAC, blind.mac)
+  - (dr.CONNECTION_NETWORK_MAC, config_entry.unique_id)
+  - (dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, device.mac)
+  - (dr.CONNECTION_NETWORK_MAC, device.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, device_info.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, entry.unique_id)
+  - (dr.CONNECTION_NETWORK_MAC, mac)
+  - (dr.CONNECTION_NETWORK_MAC, mac_address_hex)
+  - (dr.CONNECTION_NETWORK_MAC, self._address)
+  - (dr.CONNECTION_NETWORK_MAC, self._api.sysdata['macAddress'])
+  - (dr.CONNECTION_NETWORK_MAC, self._controller.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, self._device.mac)
+  - (dr.CONNECTION_NETWORK_MAC, self._device.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, self._device_info.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, self._mac)
+  - (dr.CONNECTION_NETWORK_MAC, self._mac_addr)
+  - (dr.CONNECTION_NETWORK_MAC, self._mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, self.device.mac)
+  - (dr.CONNECTION_NETWORK_MAC, self.init_data.mac)
+  - (dr.CONNECTION_NETWORK_MAC, self.speaker.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, ws_id)
+  - (dr.CONNECTION_UPNP, f'uuid:{self.speaker.uid}')
+  - (int, EntityInfo)
+  - (int, int | None, int | None)
+  - (int, int)
+  - (k, v)
+  - (key, val)
+  - (key, value)
+  - (metadata, funct)
+  - (name, value)
+  - (node, channels)
+  - (node, data)
+  - (self._aid, None, self._iid)
+  - (self._aid, c.iid)
+  - (self._aid, char.iid)
+  - (self._aid, self._iid, char.iid)
+  - (self._device_id, self._sensor_type)
+  - "(self._hmdevice.ACTIONNODE, self._hmdevice.EVENTNODE, self._hmdevice.\n    WRITENODE,\
+    \ self._hmdevice.ATTRIBUTENODE, self._hmdevice.BINARYNODE,\n    self._hmdevice.SENSORNODE)"
+  - (self._hmdevice.ATTRIBUTENODE, self._hmdevice.getAttributeData)
+  - (self._hmdevice.BINARYNODE, self._hmdevice.getBinaryData)
+  - (self._hmdevice.SENSORNODE, self._hmdevice.getSensorData)
+  - (self._hmdevice.WRITENODE, self._hmdevice.getWriteData)
+  - (self.coordinator.data.info.wifi_mac, self.coordinator.data.info.ethernet_mac)
+  - (self.entity_id,)
+  - (str, Any)
+  - (str, ClusterHandler)
+  - (str, OncueDevice)
+  - (str, RestEntityDescription)
+  - (str, RpcEntityDescription)
+  - (str, list[str])
+  - (str, str | int)
+  - (str, str)
+  - (str, vol.Schema)
+  - (tuple[str, str], BlockEntityDescription)
+  - (type, str)
+  - Any, Any, Any
+  - Any, Any, None
+  - _T, _P
+  - str, str

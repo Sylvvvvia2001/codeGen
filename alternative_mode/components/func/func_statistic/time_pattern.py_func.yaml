@@ -1,0 +1,4 @@
+time_pattern.py:
+- __call__
+- __init__
+- time_automation_listener

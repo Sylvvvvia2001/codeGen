@@ -1,0 +1,9 @@
+duplicates.py:
+- _delete_duplicates_from_table
+- _delete_statistics_meta_duplicates
+- _find_duplicates
+- _find_statistics_meta_duplicates
+- columns_to_dict
+- compare_statistic_rows
+- delete_statistics_duplicates
+- delete_statistics_meta_duplicates

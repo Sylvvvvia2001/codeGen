@@ -1,0 +1,97 @@
+legacy.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('async_get_scanner', 'get_scanner', 'async_setup_scanner', 'setup_scanner')
+  - "((ATTR_MAC, mac), (ATTR_DEV_ID, dev_id), (ATTR_HOST_NAME, host_name), (\n   \
+    \ ATTR_LOCATION_NAME, location_name), (ATTR_GPS, gps), (ATTR_GPS_ACCURACY,\n \
+    \   gps_accuracy), (ATTR_BATTERY, battery))"
+  - "((ATTR_SOURCE_TYPE, 'source_type'), (ATTR_GPS_ACCURACY, 'gps_accuracy'), (\n\
+    \    ATTR_BATTERY, 'battery'))"
+  - ((entity_ids[0], iter(states)),)
+  - (*_BASE_STATES, States.attributes, StateAttributes.shared_attrs)
+  - "(*_BASE_STATES, literal(value=None, type_=Text).label('attributes'),\n    literal(value=None,\
+    \ type_=Text).label('shared_attrs'))"
+  - "(*_BASE_STATES_NO_LAST_CHANGED, States.attributes, StateAttributes.shared_attrs\n\
+    \    )"
+  - "(*_BASE_STATES_NO_LAST_CHANGED, literal(value=None, type_=Text).label(\n    'attributes'),\
+    \ literal(value=None, type_=Text).label('shared_attrs'))"
+  - "(*_BASE_STATES_NO_LAST_CHANGED_PRE_SCHEMA_31, States.attributes,\n    StateAttributes.shared_attrs)"
+  - "(*_BASE_STATES_NO_LAST_CHANGED_PRE_SCHEMA_31, States.attributes, literal(\n \
+    \   value=None, type_=Text).label('shared_attrs'))"
+  - "(*_BASE_STATES_NO_LAST_CHANGED_PRE_SCHEMA_31, literal(value=None, type_=\n  \
+    \  Text).label('attributes'), literal(value=None, type_=Text).label(\n    'shared_attrs'))"
+  - (*_BASE_STATES_PRE_SCHEMA_31, States.attributes, StateAttributes.shared_attrs)
+  - "(*_BASE_STATES_PRE_SCHEMA_31, States.attributes, literal(value=None, type_=\n\
+    \    Text).label('shared_attrs'))"
+  - "(*_BASE_STATES_PRE_SCHEMA_31, literal(value=None, type_=Text).label(\n    'attributes'),\
+    \ literal(value=None, type_=Text).label('shared_attrs'))"
+  - (..., Coroutine[None, None, None])
+  - (ATTR_BATTERY, 'battery')
+  - (ATTR_BATTERY, battery)
+  - (ATTR_DEV_ID, dev_id)
+  - (ATTR_GPS, gps)
+  - (ATTR_GPS_ACCURACY, 'gps_accuracy')
+  - (ATTR_GPS_ACCURACY, gps_accuracy)
+  - (ATTR_HOST_NAME, host_name)
+  - (ATTR_LOCATION_NAME, location_name)
+  - (ATTR_MAC, mac)
+  - (ATTR_SOURCE_TYPE, 'source_type')
+  - (Any, Any, None)
+  - (StatementLambdaElement, bool)
+  - (States.entity_id, States.state, States.last_changed, States.last_updated)
+  - "(States.entity_id, States.state, States.last_changed_ts, States.last_updated_ts\n\
+    \    )"
+  - "(States.entity_id, States.state, literal(value=None).label(\n    'last_changed_ts'),\
+    \ States.last_updated_ts)"
+  - "(States.entity_id, States.state, literal(value=None, type_=Text).label(\n   \
+    \ 'last_changed'), States.last_updated)"
+  - (ValueError, TypeError, IndexError)
+  - ([Row, dict[str, dict[str, Any]], datetime | None], State | dict[str, Any])
+  - ([], None)
+  - ([datetime], float | str)
+  - (attribute, var)
+  - (dev_id, device)
+  - (dict[str, str | None], dict[str, dict[str, Any]])
+  - (ent_id, group)
+  - (ent_id, row)
+  - (entity_ids[0], iter(states))
+  - (float(gps[0]), float(gps[1]))
+  - (host_name_by_mac, extra_attributes_by_mac)
+  - (idx, field)
+  - (integration_name, p_config)
+  - (key, val)
+  - (key, value)
+  - "(lambda_stmt(lambda : select(*\n    _QUERY_STATE_NO_ATTR_NO_LAST_CHANGED_PRE_SCHEMA_31)),\
+    \ False)"
+  - '(lambda_stmt(lambda : select(*_QUERY_STATES)), True)'
+  - '(lambda_stmt(lambda : select(*_QUERY_STATES_NO_LAST_CHANGED)), True)'
+  - "(lambda_stmt(lambda : select(*_QUERY_STATES_NO_LAST_CHANGED_PRE_SCHEMA_31)),\n\
+    \    True)"
+  - '(lambda_stmt(lambda : select(*_QUERY_STATES_PRE_SCHEMA_25)), False)'
+  - "(lambda_stmt(lambda : select(*_QUERY_STATES_PRE_SCHEMA_25_NO_LAST_CHANGED)),\n\
+    \    False)"
+  - '(lambda_stmt(lambda : select(*_QUERY_STATES_PRE_SCHEMA_31)), True)'
+  - '(lambda_stmt(lambda : select(*_QUERY_STATE_NO_ATTR)), False)'
+  - '(lambda_stmt(lambda : select(*_QUERY_STATE_NO_ATTR_NO_LAST_CHANGED)), False)'
+  - '(lambda_stmt(lambda : select(*_QUERY_STATE_NO_ATTR_PRE_SCHEMA_31)), False)'
+  - (methods, platform_type)
+  - (name, target)
+  - (p_type, p_config)
+  - (self.LEGACY_SETUP, PLATFORM_TYPE_LEGACY)
+  - (state.attributes[ATTR_LATITUDE], state.attributes[ATTR_LONGITUDE])
+  - (stmt, join_attributes)
+  - (str, ...)
+  - (str, Any)
+  - (str, Device)
+  - (str, Iterator[Row])
+  - (str, Row)
+  - (str, StateType)
+  - (str, dict[str, Any])
+  - (str, list[State | dict[str, Any]])
+  - (str, list[State])
+  - (str, str | None)
+  - None, None, None
+  - str, Any
+  - str, dict[str, Any]
+  - str, str | None

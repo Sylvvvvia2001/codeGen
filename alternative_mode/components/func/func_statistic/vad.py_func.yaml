@@ -1,0 +1,16 @@
+vad.py:
+- __bool__
+- __init__
+- __len__
+- __post_init__
+- append
+- bytes
+- chunk_samples
+- clear
+- is_speech
+- length
+- process
+- process_with_vad
+- reset
+- samples_per_chunk
+- to_seconds

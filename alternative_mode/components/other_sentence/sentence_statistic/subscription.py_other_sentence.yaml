@@ -1,0 +1,12 @@
+subscription.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Any, Any, Callable[[], None])
+  - ([], None)
+  - (key, value)
+  - (other.topic, other.qos, other.encoding)
+  - (self.topic, self.qos, self.encoding)
+  - (str, Any)
+  - (str, EntitySubscription)
+  - '[], None'

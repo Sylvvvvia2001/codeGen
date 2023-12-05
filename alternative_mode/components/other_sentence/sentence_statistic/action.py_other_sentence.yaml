@@ -1,0 +1,6 @@
+action.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, Any)
+  - (str, vol.Schema)

@@ -1,0 +1,18 @@
+trait.py:
+- __init__
+- _air_quality_description_for_aqi
+- _generate
+- _get_fan_speed
+- _google_temp_unit
+- _next_selected
+- _supported_states
+- _verify_pin_challenge
+- can_execute
+- climate_google_modes
+- might_2fa
+- query_attributes
+- query_notifications
+- register_trait
+- supported
+- sync_attributes
+- sync_options

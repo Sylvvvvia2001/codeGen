@@ -1,0 +1,13 @@
+addon_manager.py:
+- __init__
+- _async_schedule_addon_operation
+- api_error
+- async_get_addon_state
+- async_schedule_install_addon
+- async_schedule_install_setup_addon
+- async_schedule_restart_addon
+- async_schedule_setup_addon
+- async_schedule_start_addon
+- async_schedule_update_addon
+- handle_hassio_api_error
+- task_in_progress

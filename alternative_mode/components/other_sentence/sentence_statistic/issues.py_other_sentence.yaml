@@ -1,0 +1,15 @@
+issues.py:
+  schemas: []
+  sets:
+  - "{'apparmor', 'connectivity_check', 'content_trust', 'dbus', 'dns_server',\n \
+    \   'docker_configuration', 'docker_version', 'cgroup_version',\n    'job_conditions',\
+    \ 'lxc', 'network_manager', 'os', 'os_agent',\n    'restart_policy', 'software',\
+    \ 'source_mods', 'supervisor_version',\n    'systemd', 'systemd_journal', 'systemd_resolved'}"
+  - '{''docker'', ''supervisor'', ''setup'', ''privileged'', ''untrusted''}'
+  - "{'issue_mount_mount_failed', 'issue_system_multiple_data_disks',\n    'issue_system_reboot_required',\
+    \ ISSUE_KEY_SYSTEM_DOCKER_CONFIG}"
+  - '{''privileged''}'
+  tuples:
+  - (str, Any)
+  - (str, Issue)
+  - (str, str)

@@ -1,0 +1,18 @@
+http.py:
+  schemas: []
+  sets:
+  - '{TRANSFER_ENCODING, CONTENT_LENGTH, CONTENT_TYPE, CONTENT_ENCODING}'
+  tuples:
+  - "('_hass', '_request', '_wsock', '_handle_task', '_writer_task', '_closing',\n\
+    \    '_authenticated', '_logger', '_peak_checker_unsub', '_connection',\n    '_message_queue',\
+    \ '_ready_future')"
+  - ('video/', 'audio/', 'font/')
+  - (RuntimeError, ConnectionResetError)
+  - (WSMsgType.CLOSE, WSMsgType.CLOSED, WSMsgType.CLOSING)
+  - ([], None)
+  - (asyncio.TimeoutError, ClientError)
+  - (data, _)
+  - (f"[{self.extra['connid']}] {msg}", kwargs)
+  - (name, value)
+  - (str, Any)
+  - (str, str)

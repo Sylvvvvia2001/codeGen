@@ -1,0 +1,6 @@
+todo.py:
+- GoogleTaskTodoListEntity
+- LocalTodoListEntity
+- ShoppingTodoListEntity
+- TodoistTodoListEntity
+- WebDavTodoListEntity

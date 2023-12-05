@@ -1,0 +1,6 @@
+automation.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('alias', 'description', 'trigger', 'condition', 'action')
+  - (index, cur_value)

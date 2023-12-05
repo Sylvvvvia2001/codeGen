@@ -1,0 +1,15 @@
+state_attributes.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ((shared_attr, data_hash),)
+  - (attributes_id, shared_attrs)
+  - (shared_attr, data_hash)
+  - (shared_attrs, attributes_id)
+  - (shared_attrs, data_hash)
+  - (shared_attrs, db_state_attributes)
+  - (str, Any)
+  - (str, dict[str, Any])
+  - (str, int | None)
+  - (str, int)
+  - str, Any

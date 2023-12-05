@@ -1,0 +1,20 @@
+db_schema.py:
+- Base
+- EventData
+- EventTypes
+- Events
+- FAST_PYSQLITE_DATETIME
+- JSONLiteral
+- NativeLargeBinary
+- RecorderRuns
+- SchemaChanges
+- StateAttributes
+- States
+- StatesMeta
+- Statistics
+- StatisticsBase
+- StatisticsMeta
+- StatisticsRuns
+- StatisticsShortTerm
+- Unused
+- UnusedDateTime

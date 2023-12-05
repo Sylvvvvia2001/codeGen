@@ -1,0 +1,19 @@
+scanner.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ()
+  - (FileNotFoundError, BleakError)
+  - ([BluetoothServiceInfoBleak], None)
+  - ([], None)
+  - (address, rssi, parsed)
+  - (adv.data,)
+  - (host, SSDP_TARGET[1])
+  - (idx, result)
+  - (idx, source_ip)
+  - (str(source_ip), 0)
+  - (str, Any)
+  - (str, CaseInsensitiveDict)
+  - (str, list[asyncio.Event])
+  - (str, tuple[BLEDevice, AdvertisementData])
+  - BLEDevice, AdvertisementData

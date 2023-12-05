@@ -1,0 +1,31 @@
+logbook.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (KeyError, AttributeError)
+  - (None, None)
+  - ([str, str, Callable[[EventType[BTHomeBleEvent]], dict[str, str]]], None)
+  - ([str, str, Callable[[Event], dict[str, Any]]], None)
+  - ([str, str, Callable[[Event], dict[str, str | None]]], None)
+  - ([str, str, Callable[[Event], dict[str, str]]], None)
+  - ([str, str, Callable[[Event], dict]], None)
+  - (action, interface)
+  - (event_type, event_subtype)
+  - (event_type_tuple, event_dict)
+  - (int, dict[str, int])
+  - (int, str)
+  - (key, value)
+  - (str | None, str | None)
+  - (str, Any)
+  - (str, DoorBirdData)
+  - (str, str | None)
+  - (str, str)
+  - '[EventType[BTHomeBleEvent]], dict[str, str]'
+  - '[Event], dict'
+  - '[Event], dict[str, Any]'
+  - '[Event], dict[str, str | None]'
+  - '[Event], dict[str, str]'
+  - str, Any
+  - str, int
+  - str, str
+  - str, str | None

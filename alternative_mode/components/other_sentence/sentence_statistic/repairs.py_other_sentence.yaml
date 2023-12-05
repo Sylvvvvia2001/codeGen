@@ -1,0 +1,9 @@
+repairs.py:
+  schemas: []
+  sets:
+  - '{''system_execute_reboot''}'
+  tuples:
+  - (slug, info)
+  - (str, Any)
+  - (str, str | int | float | None)
+  - (str, str)

@@ -1,0 +1,6 @@
+trace.py:
+- __init__
+- as_short_dict
+- set_trigger_description
+- trace_automation
+- trace_script

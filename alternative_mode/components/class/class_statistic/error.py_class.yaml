@@ -1,0 +1,15 @@
+error.py:
+- ChallengeNeeded
+- Disconnect
+- IntentRecognitionError
+- MediaSourceError
+- PipelineError
+- PipelineNotFound
+- SmartHomeError
+- SpeechToTextError
+- TextToSpeechError
+- Unresolvable
+- WakeWordDetectionAborted
+- WakeWordDetectionError
+- WakeWordTimeoutError
+- WyomingError

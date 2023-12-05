@@ -1,0 +1,25 @@
+image.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (CONF_IMAGE_TOPIC, CONF_URL_TOPIC)
+  - (CONF_URL,)
+  - (HandlerT, ApiItemT)
+  - (UnifiImageEntityDescription, ...)
+  - "(UnifiImageEntityDescription[Wlans, Wlan](key='WLAN QR Code',\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ has_entity_name=True,\n    entity_registry_enabled_default=False, allowed_fn=lambda\
+    \ controller,\n    obj_id: True, api_handler_fn=lambda api: api.wlans, available_fn=\n\
+    \    async_wlan_available_fn, device_info_fn=async_wlan_device_info_fn,\n    event_is_on=None,\
+    \ event_to_subscribe=None, name_fn=lambda wlan:\n    'QR Code', object_fn=lambda\
+    \ api, obj_id: api.wlans[obj_id], should_poll\n    =False, supported_fn=lambda\
+    \ controller, obj_id: True, unique_id_fn=lambda\n    controller, obj_id: f'qr_code-{obj_id}',\
+    \ image_fn=\n    async_wlan_qr_code_image_fn, value_fn=lambda obj: obj.x_passphrase),)"
+  - ([ApiItemT], str | None)
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - ([UniFiController, ApiItemT], bytes)
+  - ([WifiGuestAccessGet], bytes)
+  - (binascii.Error, ValueError, AssertionError)
+  - (str, Any)
+  - (str, DataUpdateCoordinator[Any])
+  - (str, DevoloImageEntityDescription)
+  - Wlans, Wlan

@@ -1,0 +1,8 @@
+match.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (int, list[_T])
+  - (str, IntegrationMatchHistory)
+  - (str, list[BluetoothCallbackMatcherWithCallback])
+  - (str, list[_T])

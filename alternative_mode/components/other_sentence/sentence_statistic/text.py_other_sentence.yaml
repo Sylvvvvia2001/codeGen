@@ -1,0 +1,18 @@
+text.py:
+  schemas: []
+  sets:
+  - '{''_attr_native_value''}'
+  - '{(DOMAIN, unique_id)}'
+  - '{text.ATTR_MAX, text.ATTR_MIN, text.ATTR_MODE, text.ATTR_PATTERN}'
+  tuples:
+  - (DOMAIN, unique_id)
+  - (EsphomeTextMode, TextMode)
+  - "(ProtectTextEntityDescription(key='doorbell', name='Doorbell',\n    entity_category=EntityCategory.CONFIG,\
+    \ ufp_value_fn=\n    _get_doorbell_current, ufp_set_method_fn=_set_doorbell_message,\n\
+    \    ufp_required_field='feature_flags.has_lcd_screen', ufp_perm=\n    PermRequired.WRITE),)"
+  - (ProtectTextEntityDescription, ...)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (TextInfo, TextState)
+  - ([PublishPayloadType], PublishPayloadType)
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - (str, Any)

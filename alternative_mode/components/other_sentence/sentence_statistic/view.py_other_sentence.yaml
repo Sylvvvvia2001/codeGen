@@ -1,0 +1,8 @@
+view.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('get', 'post', 'delete', 'put', 'patch', 'head', 'options')
+  - ([web.Request], Awaitable[web.StreamResponse])
+  - (data, content_type)
+  - (result, status_code)

@@ -1,0 +1,11 @@
+vacuum.py:
+- DemoVacuum
+- EcovacsVacuum
+- LitterRobotCleaner
+- MiroboVacuum
+- NeatoConnectedVacuum
+- RoborockVacuum
+- SharkVacuumEntity
+- StateDemoVacuum
+- TemplateVacuum
+- TuyaVacuumEntity

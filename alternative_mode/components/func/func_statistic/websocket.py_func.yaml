@@ -1,0 +1,9 @@
+websocket.py:
+- _handle_errors
+- async_register_websocket_commands
+- async_register_websocket_handlers
+- forward_telegram
+- websocket_lovelace_dashboards
+- ws_group_monitor_info
+- ws_info
+- ws_subscribe_telegram

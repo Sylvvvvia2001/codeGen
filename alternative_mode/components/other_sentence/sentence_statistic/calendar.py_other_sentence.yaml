@@ -1,0 +1,20 @@
+calendar.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, f"calendar_{student_info[''id'']}")}'
+  tuples:
+  - (CalendarEvent | None, timedelta | None)
+  - (DOMAIN, f"calendar_{student_info['id']}")
+  - (EVENT_START, EVENT_END)
+  - (None, None)
+  - (WasteType, list[date])
+  - ([], None)
+  - (calendar_id, f'{calendar_id}-{entity_name}')
+  - "(datetime.combine(d['date'], d['time'].to) < datetime.now(), abs(datetime.\n\
+    \    combine(d['date'], d['time'].to) - datetime.now()))"
+  - (event, _)
+  - (event, offset_value)
+  - (event.summary, offset_value)
+  - (str, Any)
+  - (str, bool)
+  - (waste_type, waste_dates)

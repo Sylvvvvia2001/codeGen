@@ -1,0 +1,47 @@
+lock.py:
+  schemas: []
+  sets:
+  - "{'_attr_is_jammed', '_attr_is_locked', '_attr_is_locking', '_attr_is_unlocking'\n\
+    \    }"
+  - '{(DOMAIN, device[''uid''])}'
+  - '{(DOMAIN, self.serial_number)}'
+  - '{ActivityType.BRIDGE_OPERATION}'
+  - '{ActivityType.LOCK_OPERATION_WITHOUT_OPERATOR}'
+  - '{ActivityType.LOCK_OPERATION}'
+  - '{LockState.LOCKED, LockState.SECURED}'
+  - '{LockStatus.LOCKING_STOP, LockStatus.UNLOCKING_STOP}'
+  - '{ModelType.DOORLOCK}'
+  - '{lock.ATTR_CHANGED_BY, lock.ATTR_CODE_FORMAT}'
+  tuples:
+  - ('true', STATE_ON, STATE_LOCKED)
+  - (DOMAIN, device['uid'])
+  - (DOMAIN, self.coordinator.entry.data[CONF_GIID])
+  - (DOMAIN, self.serial_number)
+  - (EVENT_LOCK_LOCKED, EVENT_LOCK_UNLOCKED)
+  - (FINGER_KEY, PASSWORD_KEY, CARD_KEY)
+  - (LockInfo, LockEntityState)
+  - (LockState.LOCKED_IN, LockState.LOCKED_OUT, LockState.LOCKED_ALL)
+  - (LockStatus.UNKNOWN_01, LockStatus.UNKNOWN_06)
+  - "(LockStatusType.FAILED_WHILE_CLOSING, LockStatusType.FAILED_WHILE_OPENING,\n\
+    \    LockStatusType.JAMMED_WHILE_CLOSING, LockStatusType.JAMMED_WHILE_OPENING)"
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (UnlockStatus.LOCKED, UnlockStatus.SECURITY_LOCKED)
+  - ([PublishPayloadType, TemplateVarsType], PublishPayloadType)
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - (attr, attr_key)
+  - (clusters.DoorLock.Attributes.DoorState,)
+  - (clusters.DoorLock.Attributes.LockState,)
+  - (int, dict[str, int | bool])
+  - (k, v)
+  - (name, status, actions)
+  - (st_attr, ha_attr)
+  - (str, Any)
+  - (str, DeviceInfo)
+  - (str, LockEntityDescription)
+  - (str, StateType)
+  - (str, bool)
+  - (str, dict[str, Any])
+  - (str, int)
+  - (str, str)
+  - str, Any
+  - str, int | bool

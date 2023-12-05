@@ -1,0 +1,10 @@
+debug_info.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([MessageCallbackType], MessageCallbackType)
+  - (str, Any)
+  - (str, list[Any])
+  - (str, str)
+  - (topic, subscription)
+  - (trigger_key, trigger)

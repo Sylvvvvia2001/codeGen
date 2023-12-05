@@ -1,0 +1,6 @@
+tag.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([ReceivePayloadType, str], ReceivePayloadType)
+  - (str, EntitySubscription)

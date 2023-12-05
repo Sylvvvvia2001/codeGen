@@ -1,0 +1,54 @@
+manager.py:
+  schemas: []
+  sets:
+  - '{(dr.CONNECTION_NETWORK_MAC, device_info.mac_address)}'
+  - "{APPLE_IBEACON_START_BYTE, APPLE_HOMEKIT_START_BYTE,\n    APPLE_HOMEKIT_NOTIFY_START_BYTE,\
+    \ APPLE_DEVICE_ID_START_BYTE}"
+  tuples:
+  - "('hass', '_integration_matcher', '_cancel_unavailable_tracking',\n    '_cancel_logging_listener',\
+    \ '_advertisement_tracker',\n    '_fallback_intervals', '_intervals', '_unavailable_callbacks',\n\
+    \    '_connectable_unavailable_callbacks', '_callback_index',\n    '_bleak_callbacks',\
+    \ '_all_history', '_connectable_history',\n    '_non_connectable_scanners', '_connectable_scanners',\
+    \ '_adapters',\n    '_sources', '_bluetooth_adapters', 'storage', 'slot_manager',\
+    \ '_debug')"
+  - "('hass', 'host', 'password', 'entry', 'cli', 'device_id', 'domain_data',\n  \
+    \  'voice_assistant_udp_server', 'reconnect_logic', 'zeroconf_instance',\n   \
+    \ 'entry_data')"
+  - (AdvertisementDataCallback, dict[str, set[str]])
+  - (OSError, TarError, json.JSONDecodeError, KeyError)
+  - (RequiresEncryptionAPIError, InvalidEncryptionKeyAPIError, InvalidAuthAPIError)
+  - "(SERVICE_EFFECT_STOP, SERVICE_EFFECT_PULSE, SERVICE_EFFECT_MOVE,\n    SERVICE_EFFECT_COLORLOOP)"
+  - (True, False)
+  - ([BluetoothServiceInfoBleak], None)
+  - ([], None)
+  - (adapter, details)
+  - (address, service_info)
+  - (callback, filters)
+  - (config_entry.data[CONF_LATITUDE], config_entry.data[CONF_LONGITUDE])
+  - (cv.byte, cv.byte, cv.byte)
+  - (cv.small_float, cv.small_float)
+  - (domain, service_name)
+  - (dr.CONNECTION_NETWORK_MAC, device_info.mac_address)
+  - (entity_infos, services)
+  - (entry_id, coordinator)
+  - (infos, services)
+  - (key, entity_state)
+  - (key, value)
+  - (self._all_history, self._connectable_history)
+  - (str, AdapterDetails)
+  - (str, Any)
+  - (str, Backup)
+  - (str, BackupPlatformProtocol)
+  - (str, BaseHaScanner)
+  - (str, BluetoothServiceInfoBleak)
+  - (str, list[Callable[[BluetoothServiceInfoBleak], None]])
+  - (str, set[str])
+  - (str, str)
+  - (type(entity_state), key)
+  - "(vol.All(vol.Coerce(float), vol.Range(min=0, max=360)), vol.All(vol.Coerce(\n\
+    \    float), vol.Range(min=0, max=100)))"
+  - "(vol.All(vol.Coerce(float), vol.Range(min=0, max=360)), vol.All(vol.Coerce(\n\
+    \    float), vol.Range(min=0, max=100)), vol.All(vol.Coerce(float), vol.\n   \
+    \ Clamp(min=0, max=100)), vol.All(vol.Coerce(int), vol.Clamp(min=1500,\n    max=9000)))"
+  - '[BluetoothServiceInfoBleak], None'
+  - str, set[str]

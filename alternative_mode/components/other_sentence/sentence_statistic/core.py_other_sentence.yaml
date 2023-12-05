@@ -1,0 +1,20 @@
+core.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (..., T)
+  - "(MARIADB_URL_PREFIX, MARIADB_PYMYSQL_URL_PREFIX, MYSQLDB_URL_PREFIX,\n    MYSQLDB_PYMYSQL_URL_PREFIX)"
+  - (MARIADB_URL_PREFIX, MYSQLDB_URL_PREFIX)
+  - ([], Coroutine[Any, Any, None])
+  - ([], Session)
+  - ([str], bool)
+  - (exc.InternalError, exc.OperationalError)
+  - "(lambda image: image, lambda image: image, lambda image: np.fliplr(image).\n\
+    \    copy(), lambda image: np.rot90(image, 2).copy(), lambda image: np.\n    flipud(image).copy(),\
+    \ lambda image: np.flipud(np.rot90(image)).copy(), \n    lambda image: np.rot90(image).copy(),\
+    \ lambda image: np.flipud(np.rot90(\n    image, -1)).copy(), lambda image: np.rot90(image,\
+    \ -1).copy())"
+  - (part_num, part)
+  - (str, Any)
+  - (str, type[StreamOutput])
+  - Any, Any, None

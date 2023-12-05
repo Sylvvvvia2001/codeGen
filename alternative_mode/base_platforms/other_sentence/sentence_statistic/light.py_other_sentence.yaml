@@ -1,0 +1,381 @@
+light.py:
+  schemas: []
+  sets:
+  - '{''FOLLOW_AUDIO'', ''FOLLOW_COLOR'', ''Lounge light''}'
+  - '{''Jasco'', ''Quotra-Vision'', ''eWeLight'', ''eWeLink''}'
+  - '{''LB1'', ''LB2''}'
+  - '{''Philips'', ''Signify Netherlands B.V.''}'
+  - '{''hue'', ''saturation''}'
+  - '{''sengled''}'
+  - '{(ADVANTAGE_AIR_DOMAIN, self._attr_unique_id)}'
+  - '{(CONNECTION_ZIGBEE, self._unique_id)}'
+  - '{(DECONZ_DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, device[''uid''])}'
+  - '{(DOMAIN, f''{config_entry.entry_id}_light_{index}'')}'
+  - '{(DOMAIN, light.address)}'
+  - '{(DOMAIN, mac)}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._device_id)}'
+  - '{(DOMAIN, self._gateway_device_id)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(HUE_DOMAIN, self.device_id)}'
+  - '{(WEMO_DOMAIN, self._unique_id)}'
+  - '{(dr.CONNECTION_BLUETOOTH, device.address)}'
+  - '{*CONTROL4_DIMMER_VARS}'
+  - "{ATTR_BRIGHTNESS, ATTR_COLOR_TEMP_KELVIN, ATTR_EFFECT, ATTR_FLASH,\n    ATTR_HS_COLOR,\
+    \ ATTR_RGB_COLOR, ATTR_RGBW_COLOR, ATTR_RGBWW_COLOR,\n    ATTR_TRANSITION, ATTR_WHITE,\
+    \ ATTR_XY_COLOR}"
+  - "{ATTR_EFFECT, ATTR_COLOR_TEMP, ATTR_RGB_COLOR, ATTR_RGBW_COLOR,\n    ATTR_RGBWW_COLOR,\
+    \ ATTR_WHITE}"
+  - '{CLUSTER_HANDLER_COLOR, CLUSTER_HANDLER_LEVEL}'
+  - '{CONTROL4_NON_DIMMER_VAR}'
+  - '{ColorMode.BRIGHTNESS}'
+  - '{ColorMode.COLOR_TEMP, ColorMode.HS, ColorMode.RGB}'
+  - '{ColorMode.COLOR_TEMP, ColorMode.HS}'
+  - '{ColorMode.COLOR_TEMP, ColorMode.XY}'
+  - '{ColorMode.COLOR_TEMP}'
+  - '{ColorMode.HS, ColorMode.COLOR_TEMP}'
+  - '{ColorMode.HS, ColorMode.ONOFF}'
+  - '{ColorMode.HS, ColorMode.WHITE}'
+  - '{ColorMode.HS}'
+  - '{ColorMode.ONOFF, ColorMode.BRIGHTNESS}'
+  - '{ColorMode.ONOFF}'
+  - '{ColorMode.RGB, ColorMode.WHITE}'
+  - '{ColorMode.RGBWW}'
+  - '{ColorMode.RGBW}'
+  - '{ColorMode.RGB}'
+  - '{ModelType.LIGHT}'
+  - '{color_mode}'
+  - '{self._attr_color_mode}'
+  - '{self.color_mode}'
+  tuples:
+  - ('*Solid*', '*Static*', '*Dynamic*')
+  - ('FOLLOW_COLOR', 'Lounge light')
+  - ('FOLLOW_VIDEO', 'FOLLOW_AUDIO')
+  - ('None', '')
+  - ('On', None)
+  - ('bulb-tunable-white',)
+  - ('gateway', 'gateway.v3')
+  - ('restore_dimmer_state', kwargs.get(ATTR_TRANSITION, 0))
+  - ('set_dimmer_state', 0, kwargs.get(ATTR_TRANSITION, 0))
+  - ('set_dimmer_state', brightness, kwargs.get(ATTR_TRANSITION, 0))
+  - ('set_led_state', 'fast')
+  - ('set_led_state', 'off')
+  - ('set_led_state', 'on')
+  - ('set_led_state', 'slow')
+  - ('true', STATE_ON)
+  - ('walldimmer', 'bulb-dimmable')
+  - ('xy', 'hs')
+  - (*rgb, cw, ww)
+  - (*rgb, round(state.cold_white * 255), round(state.warm_white * 255))
+  - "(*rgb, round(white * cw_frac / max(cw_frac, ww_frac) * 255), round(white *\n\
+    \    ww_frac / max(cw_frac, ww_frac) * 255))"
+  - (*rgb, w)
+  - (*rgb, white)
+  - (*self.rgb_color, white)
+  - (0, 0)
+  - (0, 0, 0)
+  - (0, 0, 0, 0)
+  - (0, 0, 0, 255)
+  - (0, 1)
+  - (0, 255)
+  - (0, ISY_VALUE_UNKNOWN)
+  - (0, LightColorCapability.ON_OFF)
+  - (0.0, 0.0)
+  - (0.0, 0.0, 0.0)
+  - (0.0, 100.0)
+  - (1, 13, 0)
+  - (1, 255)
+  - (120.0, 100.0)
+  - (180.0, 100.0)
+  - (240.0, 100.0)
+  - (255, 0, 0, 255)
+  - (255, 0, 0, 255, 0)
+  - (255, 255)
+  - (255, 255, 255)
+  - (255, 255, 255, 0)
+  - (255,)
+  - (3, 5)
+  - (300.0, 100.0)
+  - (345, 75)
+  - (45, 75)
+  - (56, 86)
+  - (60.0, 100.0)
+  - (ADVANTAGE_AIR_DOMAIN, self._attr_unique_id)
+  - (ADVANTAGE_AIR_DOMAIN, self.coordinator.data['system']['rid'])
+  - (Any, Any)
+  - (AsyncDimmer, AsyncPluggableDimmer, AsyncBrandDimmer, AsyncFullFlushDimmer)
+  - (AsyncWiredDimmer3, AsyncDinRailDimmer3)
+  - (BroadlinkException, OSError)
+  - (CONNECTION_ZIGBEE, self._unique_id)
+  - (ColorComponent, int)
+  - (ColorMode.BRIGHTNESS, ColorMode.COLOR_TEMP)
+  - (CommandClass.BASIC, CommandClass.SWITCH_MULTILEVEL)
+  - (Concatenate[_DecoraLightT, _P], _R | None)
+  - (Concatenate[_DecoraLightT, _P], _R)
+  - (DECONZ_DOMAIN, self.gateway.api.config.bridge_id)
+  - (DECONZ_DOMAIN, self.unique_id)
+  - (DEVICE.CIRCUIT,)
+  - (DOMAIN, device['uid'])
+  - (DOMAIN, f'{config_entry.entry_id}_light_{index}')
+  - (DOMAIN, f'{config_entry.entry_id}_mcp')
+  - (DOMAIN, light.address)
+  - (DOMAIN, mac)
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._device_id)
+  - (DOMAIN, self._gateway_device_id)
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, unique_id)
+  - (DPCode, ...)
+  - (DPCode.BRIGHT_VALUE_V2, DPCode.BRIGHT_VALUE)
+  - (DPCode.COLOUR_DATA_V2, DPCode.COLOUR_DATA)
+  - (DPCode.TEMP_VALUE_V2, DPCode.TEMP_VALUE)
+  - (EFFECT_AUTO, EFFECT_EXPERT)
+  - (EFFECT_NONE, EFFECT_NONE.lower())
+  - "(GROUP_TYPE_ENTERTAINMENT, GROUP_TYPE_LIGHT_GROUP, GROUP_TYPE_ROOM,\n    GROUP_TYPE_LUMINAIRE,\
+    \ GROUP_TYPE_LIGHT_SOURCE, GROUP_TYPE_ZONE)"
+  - (HTTPError, PyEzvizError)
+  - (HUE, HUE)
+  - (HUE, SAT, VAL)
+  - (HUE_DOMAIN, self.bridge.api.config.bridgeid)
+  - (HUE_DOMAIN, self.device_id)
+  - "(IntellifireLightEntityDescription(key='lights', translation_key='lights',\n\
+    \    set_fn=lambda control_api, level: control_api.set_lights(level=level),\n\
+    \    value_fn=lambda data: data.light_level),)"
+  - (IntellifireLightEntityDescription, ...)
+  - (LightInfo, LightState)
+  - (MochadException, OSError)
+  - (None, 'None', '')
+  - "(ReolinkLightEntityDescription(key='floodlight', translation_key=\n    'floodlight',\
+    \ icon='mdi:spotlight-beam', supported_fn=lambda api, ch:\n    api.supported(ch,\
+    \ 'floodLight'), is_on_fn=lambda api, ch: api.\n    whiteled_state(ch), turn_on_off_fn=lambda\
+    \ api, ch, value: api.\n    set_whiteled(ch, state=value), get_brightness_fn=lambda\
+    \ api, ch: api.\n    whiteled_brightness(ch), set_brightness_fn=lambda api, ch,\
+    \ value: api.\n    set_whiteled(ch, brightness=value)), ReolinkLightEntityDescription(key=\n\
+    \    'ir_lights', translation_key='ir_lights', icon='mdi:led-off',\n    entity_category=EntityCategory.CONFIG,\
+    \ supported_fn=lambda api, ch: api\n    .supported(ch, 'ir_lights'), is_on_fn=lambda\
+    \ api, ch: api.ir_enabled(ch\n    ), turn_on_off_fn=lambda api, ch, value: api.set_ir_lights(ch,\
+    \ value)),\n    ReolinkLightEntityDescription(key='status_led', translation_key=\n\
+    \    'status_led', icon='mdi:lightning-bolt-circle', entity_category=\n    EntityCategory.CONFIG,\
+    \ supported_fn=lambda api, ch: api.supported(ch,\n    'power_led'), is_on_fn=lambda\
+    \ api, ch: api.status_led_enabled(ch),\n    turn_on_off_fn=lambda api, ch, value:\
+    \ api.set_status_led(ch, value)))"
+  - (SAT, SAT)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (SensorType, type[MySensorsChildEntity])
+  - (SwitchBeeError, SwitchBeeDeviceOfflineError)
+  - (TRANSITION, TRANSITION)
+  - "(TuyaLightEntityDescription(key=DPCode.FLOODLIGHT_SWITCH, brightness=DPCode\n\
+    \    .FLOODLIGHT_LIGHTNESS, name='Floodlight'), TuyaLightEntityDescription(\n\
+    \    key=DPCode.BASIC_INDICATOR, name='Indicator light', entity_category=\n  \
+    \  EntityCategory.CONFIG))"
+  - "(TuyaLightEntityDescription(key=DPCode.LIGHT, name=None, color_mode=DPCode.\n\
+    \    WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_temp=DPCode.TEMP_VALUE\n\
+    \    ), TuyaLightEntityDescription(key=DPCode.SWITCH_LED, translation_key=\n \
+    \   'light_2', brightness=DPCode.BRIGHT_VALUE_1))"
+  - "(TuyaLightEntityDescription(key=DPCode.LIGHT, translation_key='backlight',\n\
+    \    entity_category=EntityCategory.CONFIG),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_BACKLIGHT, translation_key=\n \
+    \   'backlight', entity_category=EntityCategory.CONFIG),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_CONTROLLER, name=None,\n    color_mode=DPCode.WORK_MODE,\
+    \ brightness=DPCode.BRIGHT_CONTROLLER,\n    color_temp=DPCode.TEMP_CONTROLLER),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=(DPCode.BRIGHT_VALUE_V2, DPCode.\n    BRIGHT_VALUE),\
+    \ color_temp=(DPCode.TEMP_VALUE_V2, DPCode.TEMP_VALUE),\n    color_data=(DPCode.COLOUR_DATA_V2,\
+    \ DPCode.COLOUR_DATA)),\n    TuyaLightEntityDescription(key=DPCode.SWITCH_1, translation_key='light',\n\
+    \    brightness=DPCode.BRIGHT_VALUE_1))"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_data=DPCode.\n   \
+    \ COLOUR_DATA),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_data=DPCode.\n   \
+    \ COLOUR_DATA_HSV),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_temp=DPCode.\n   \
+    \ TEMP_VALUE, color_data=DPCode.COLOUR_DATA), TuyaLightEntityDescription(\n  \
+    \  key=DPCode.LIGHT, name=None))"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_temp=DPCode.\n   \
+    \ TEMP_VALUE, color_data=DPCode.COLOUR_DATA), TuyaLightEntityDescription(\n  \
+    \  key=DPCode.SWITCH_NIGHT_LIGHT, translation_key='night_light'))"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_temp=DPCode.\n   \
+    \ TEMP_VALUE, color_data=DPCode.COLOUR_DATA),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, name=None, color_mode=\n \
+    \   DPCode.WORK_MODE, brightness=DPCode.BRIGHT_VALUE, color_temp=DPCode.\n   \
+    \ TEMP_VALUE, color_data=DPCode.COLOUR_DATA, default_color_type=\n    DEFAULT_COLOR_TYPE_DATA_V2),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, translation_key='light',\n\
+    \    brightness=(DPCode.BRIGHT_VALUE_V2, DPCode.BRIGHT_VALUE),\n    brightness_max=DPCode.BRIGHTNESS_MAX_1,\
+    \ brightness_min=DPCode.\n    BRIGHTNESS_MIN_1), TuyaLightEntityDescription(key=DPCode.SWITCH_LED_1,\n\
+    \    translation_key='light', brightness=DPCode.BRIGHT_VALUE_1),\n    TuyaLightEntityDescription(key=DPCode.SWITCH_LED_2,\
+    \ translation_key=\n    'light_2', brightness=DPCode.BRIGHT_VALUE_2))"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED, translation_key='light',\n\
+    \    brightness=(DPCode.BRIGHT_VALUE_V2, DPCode.BRIGHT_VALUE),\n    brightness_max=DPCode.BRIGHTNESS_MAX_1,\
+    \ brightness_min=DPCode.\n    BRIGHTNESS_MIN_1),)"
+  - "(TuyaLightEntityDescription(key=DPCode.SWITCH_LED_1, translation_key=\n    'light',\
+    \ brightness=DPCode.BRIGHT_VALUE_1, brightness_max=DPCode.\n    BRIGHTNESS_MAX_1,\
+    \ brightness_min=DPCode.BRIGHTNESS_MIN_1),\n    TuyaLightEntityDescription(key=DPCode.SWITCH_LED_2,\
+    \ translation_key=\n    'light_2', brightness=DPCode.BRIGHT_VALUE_2, brightness_max=DPCode.\n\
+    \    BRIGHTNESS_MAX_2, brightness_min=DPCode.BRIGHTNESS_MIN_2),\n    TuyaLightEntityDescription(key=DPCode.SWITCH_LED_3,\
+    \ translation_key=\n    'light_3', brightness=DPCode.BRIGHT_VALUE_3, brightness_max=DPCode.\n\
+    \    BRIGHTNESS_MAX_3, brightness_min=DPCode.BRIGHTNESS_MIN_3))"
+  - (VAL, VAL)
+  - (ValueError, TypeError, SyntaxError, MemoryError)
+  - (WEMO_DOMAIN, self._unique_id)
+  - ([Command | list[Command]], Any)
+  - ([Host, int, bool], Any)
+  - ([Host, int, int], Any)
+  - ([Host, int], bool)
+  - ([Host, int], int | None)
+  - ([IntellifireControlAsync, int], Awaitable)
+  - ([IntellifirePollData], bool)
+  - ([], None)
+  - (_, brightness)
+  - (addr, light)
+  - (address, device_config)
+  - (ain, device)
+  - (algorithm, _, expert)
+  - (area_name, device)
+  - (asyncio.TimeoutError, ClientError)
+  - (attr, *args)
+  - (brightness, transition)
+  - (capibility, value)
+  - (cast(int, red), cast(int, green), cast(int, blue))
+  - (channel, device_config)
+  - (circuit_index, circuit_data)
+  - "(clusters.ColorControl.Attributes.ColorMode, clusters.ColorControl.\n    Attributes.CurrentHue,\
+    \ clusters.ColorControl.Attributes.\n    CurrentSaturation, clusters.ColorControl.Attributes.CurrentX,\
+    \ clusters.\n    ColorControl.Attributes.CurrentY, clusters.ColorControl.Attributes.\n\
+    \    ColorTemperatureMireds)"
+  - (clusters.ColorControl.Attributes.ColorMode,)
+  - "(clusters.ColorControl.Attributes.ColorTemperatureMireds, clusters.\n    ColorControl.Attributes.ColorMode,\
+    \ clusters.ColorControl.Attributes.\n    CurrentHue, clusters.ColorControl.Attributes.CurrentSaturation)"
+  - "(clusters.ColorControl.Attributes.ColorTemperatureMireds, clusters.\n    ColorControl.Attributes.ColorMode,\
+    \ clusters.ColorControl.Attributes.\n    CurrentX, clusters.ColorControl.Attributes.CurrentY)"
+  - "(clusters.LevelControl.Attributes.CurrentLevel, clusters.ColorControl.\n    Attributes.ColorMode,\
+    \ clusters.ColorControl.Attributes.CurrentHue,\n    clusters.ColorControl.Attributes.CurrentSaturation,\
+    \ clusters.\n    ColorControl.Attributes.CurrentX, clusters.ColorControl.Attributes.\n\
+    \    CurrentY, clusters.ColorControl.Attributes.ColorTemperatureMireds)"
+  - "(clusters.OnOff.Attributes.OnOff, clusters.LevelControl.Attributes.\n    CurrentLevel,\
+    \ clusters.ColorControl.Attributes.ColorTemperatureMireds)"
+  - "(clusters.OnOff.Attributes.OnOff, clusters.LevelControl.Attributes.\n    CurrentLevel,\
+    \ clusters.ColorControl.Attributes.CurrentHue, clusters.\n    ColorControl.Attributes.CurrentSaturation)"
+  - "(clusters.OnOff.Attributes.OnOff, clusters.LevelControl.Attributes.\n    CurrentLevel,\
+    \ clusters.ColorControl.Attributes.CurrentX, clusters.\n    ColorControl.Attributes.CurrentY)"
+  - "(clusters.OnOff.Attributes.OnOff, clusters.LevelControl.Attributes.CurrentLevel\n\
+    \    )"
+  - (clusters.OnOff.Attributes.OnOff,)
+  - (color, value)
+  - (color.xy.x, color.xy.y)
+  - (color['hue'] * 360.0 / 255.0, color['saturation'] * 100.0 / 255.0)
+  - (color_h, color_s)
+  - (color_h, color_s, color_v)
+  - (color_r, color_g, color_b)
+  - (color_s, color_v)
+  - (color_x / 65535, color_y / 65535)
+  - "(convert_scale(self._device.status.hue, 100, 360), self._device.status.\n   \
+    \ saturation)"
+  - (curr_x / 65535, curr_y / 65535)
+  - (cv.byte, cv.byte, cv.byte)
+  - (cv.byte,)
+  - (decora.decoraException, AttributeError, BTLEException)
+  - (dev_name, dev_config)
+  - "(device.on, device.powerstate, device.ambilight_current_configuration,\n    device.ambilight_mode)"
+  - (device_id, config)
+  - (device_id, device_config)
+  - "(device_types.ColorTemperatureLight, device_types.DimmableLight,\n    device_types.ExtendedColorLight,\
+    \ device_types.OnOffLight)"
+  - "(device_types.Fan, device_types.GenericSwitch, device_types.OnOffPlugInUnit,\n\
+    \    device_types.HeatingCoolingUnit, device_types.Pump, device_types.\n    CastingVideoClient,\
+    \ device_types.VideoRemoteControl, device_types.Speaker)"
+  - (dr.CONNECTION_BLUETOOTH, device.address)
+  - (float, float)
+  - (h_str, s_str)
+  - (ha_mode, cap_lists)
+  - (ha_mode, caps)
+  - (hs_color[0], hs_color[1])
+  - (hsv[0], hsv[1])
+  - (hsv_h, hsv_s)
+  - (hsv_h, hsv_s, hsv_v)
+  - (hue * 360.0, sat * 100.0)
+  - (hue / 65535 * 360, sat / 255 * 100)
+  - (hue, float(saturation) * 100.0 / 255.0)
+  - (hue, sat)
+  - (hue, sat, _, _)
+  - (hue, saturation)
+  - (hue, saturation, 100)
+  - (hue, saturation, _)
+  - (idx, group)
+  - (idx, osram_group)
+  - (index, zone)
+  - (int | None, int | None)
+  - (int(color_h), int(color_s))
+  - (int(curr_hue), int(curr_saturation * 2.54))
+  - "(int(current_hue * 360 / 65535) if self._color_cluster_handler.\n    enhanced_hue_supported\
+    \ else int(current_hue * 360 / 254), int(\n    current_saturation / 2.54))"
+  - (int(hue), int(sat))
+  - (int, int)
+  - (int, int, int)
+  - (int, int, int, int)
+  - (int, int, int, int, int)
+  - (int, list[int])
+  - (k, v)
+  - (key, value)
+  - "(kwargs[ATTR_RGBW_COLOR][0], kwargs[ATTR_RGBW_COLOR][1], kwargs[\n    ATTR_RGBW_COLOR][2])"
+  - "(kwargs[ATTR_RGBW_COLOR][3], kwargs[ATTR_RGBW_COLOR][0], kwargs[\n    ATTR_RGBW_COLOR][1],\
+    \ kwargs[ATTR_RGBW_COLOR][2])"
+  - (level_control.minLevel or 1, level_control.maxLevel or 254)
+  - (light_id, light)
+  - (list, tuple)
+  - (name, device)
+  - (object_id, entity_config)
+  - (params['red'], params['green'], params['blue'])
+  - (params['red'], params['green'], params['blue'], params['white'])
+  - (random.randrange(0, 256), random.randrange(0, 256), random.randrange(0, 256))
+  - (red, green, blue)
+  - (red, green, blue, white)
+  - (rgb, _)
+  - (rgb, white)
+  - (rgb['r'], rgb['g'], rgb['b'])
+  - "(rgbw_normalized[0], rgbw_normalized[1], rgbw_normalized[2], rgbw_normalized[3]\n\
+    \    )"
+  - (round(state.red * 255), round(state.green * 255), round(state.blue * 255))
+  - "(round(state.red * state.color_brightness * 255), round(state.green * state\n\
+    \    .color_brightness * 255), round(state.blue * state.color_brightness * 255))"
+  - (self._brightness,)
+  - (self._nanoleaf.hue, self._nanoleaf.saturation)
+  - "(self.coordinator.data.state.hue or 0, self.coordinator.data.state.\n    saturation\
+    \ or 0)"
+  - "(self.service.value(CharacteristicsTypes.HUE), self.service.value(\n    CharacteristicsTypes.SATURATION))"
+  - "(self.type_data.h_type.remap_value_to(self.h_value, 0, 360), self.type_data\n\
+    \    .s_type.remap_value_to(self.s_value, 0, 100))"
+  - "(server_id, instance_num, instance_name, config_entry.options, entry_data[\n\
+    \    CONF_INSTANCE_CLIENTS][instance_num])"
+  - (state['hue'], state['saturation'])
+  - (str, Any)
+  - (str, Callable[[dict[str, Any]], None])
+  - (str, DeviceInfo)
+  - (str, bool)
+  - (str, dict[str, Any])
+  - (str, int)
+  - (str, str)
+  - (str, tuple[TuyaLightEntityDescription, ...])
+  - (str, tuple[float, float])
+  - (style, _, algorithm)
+  - (style, data)
+  - (transition, params)
+  - (unmapped_hue, unmapped_saturation)
+  - (value >> 16, value >> 8 & 255, value & 255)
+  - "(vol.All(vol.Coerce(float), vol.Range(min=0, max=359)), vol.All(vol.Coerce(\n\
+    \    float), vol.Range(min=0, max=100)))"
+  - "(wilight_to_hass_hue(int(self._status.get('hue', 0))),\n    wilight_to_hass_saturation(int(self._status.get('saturation',\
+    \ 0))))"
+  - (x_color, y_color)
+  - (xiaomi_miio_service, method)
+  - (xy_color, _)
+  - TuyaLightEntityDescription, ...
+  - '[dict[str, Any]], None'
+  - _DecoraLightT, _P
+  - float, float
+  - str, Any

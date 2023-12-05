@@ -1,0 +1,10 @@
+indieauth.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('.', '..')
+  - "('homeassistant://auth-callback',\n    'https://wear.googleapis.com/3p_auth/io.homeassistant.companion.android',\n\
+    \    'https://wear.googleapis-cn.com/3p_auth/io.homeassistant.companion.android'\n\
+    \    )"
+  - ('http', 'https')
+  - (str, str | None)

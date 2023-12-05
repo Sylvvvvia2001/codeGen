@@ -1,0 +1,18 @@
+device_condition.py:
+  schemas: []
+  sets:
+  - '{''is_cleaning'', ''is_docked''}'
+  - '{''is_home'', ''is_not_home''}'
+  - '{''is_hvac_mode'', ''is_preset_mode''}'
+  - '{''is_locked'', ''is_unlocked'', ''is_locking'', ''is_unlocking'', ''is_jammed''}'
+  - '{''is_on'', ''is_off'', ''is_buffering'', ''is_idle'', ''is_paused'', ''is_playing''}'
+  - '{''is_on'', ''is_off''}'
+  - '{''is_open'', ''is_closed'', ''is_opening'', ''is_closing''}'
+  - '{''is_position'', ''is_tilt_position''}'
+  - '{''selected_option''}'
+  - "{CONDITION_TRIGGERED, CONDITION_DISARMED, CONDITION_ARMED_HOME,\n    CONDITION_ARMED_AWAY,\
+    \ CONDITION_ARMED_NIGHT, CONDITION_ARMED_VACATION,\n    CONDITION_ARMED_CUSTOM_BYPASS}"
+  - '{NODE_STATUS_TYPE, CONFIG_PARAMETER_TYPE, VALUE_TYPE}'
+  tuples:
+  - (str, str)
+  - (str, vol.Schema)

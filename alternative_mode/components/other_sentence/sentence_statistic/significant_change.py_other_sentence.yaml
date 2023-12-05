@@ -1,0 +1,7 @@
+significant_change.py:
+  schemas: []
+  sets: []
+  tuples:
+  - "(SensorDeviceClass.AQI, SensorDeviceClass.CO, SensorDeviceClass.CO2,\n    SensorDeviceClass.PM25,\
+    \ SensorDeviceClass.PM10, SensorDeviceClass.\n    VOLATILE_ORGANIC_COMPOUNDS)"
+  - (SensorDeviceClass.BATTERY, SensorDeviceClass.HUMIDITY)

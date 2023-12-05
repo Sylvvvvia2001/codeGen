@@ -1,0 +1,15 @@
+decorators.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Concatenate[_HomeAssistantViewT, Request, _P], Coroutine[Any, Any, Response])
+  - ([_FuncType[_HomeAssistantViewT, _P]], _FuncType[_HomeAssistantViewT, _P])
+  - ([_TypeT], _TypeT)
+  - ([const.WebSocketCommandHandler], const.WebSocketCommandHandler)
+  - (_HomeAssistantViewT, _P)
+  - (int | str, _TypeT)
+  - (str, Any)
+  - (vol.Marker, Any)
+  - Any, Any, Response
+  - _HomeAssistantViewT, Request, _P
+  - _HomeAssistantViewT, _P

@@ -1,0 +1,81 @@
+websocket_api.py:
+  schemas: []
+  sets:
+  - '{''change'', ''last_reset'', ''max'', ''mean'', ''min'', ''state'', ''sum''}'
+  - '{''mean'', ''change''}'
+  - '{forecast_type}'
+  - '{msg[''statistic_id'']}'
+  tuples:
+  - ('5minute', 'day', 'hour', 'week', 'month')
+  - ('active', 'data', 'is_persistent')
+  - ('automation', 'script')
+  - ('change', 'last_reset', 'max', 'mean', 'min', 'state', 'sum')
+  - ('daily', 'hourly', 'twice_daily')
+  - ('max', 'mean', 'min', 'change')
+  - (Any, Any)
+  - (JSON_DUMP(formatter(msg_id, message)), last_time)
+  - (PipelineStage.WAKE_WORD, PipelineStage.STT)
+  - ([Event], None)
+  - "([HomeAssistant, websocket_api.ActiveConnection, 'dict[str, Any]',\n    'EnergyManager'],\
+    \ Awaitable[None])"
+  - "([HomeAssistant, websocket_api.ActiveConnection, 'dict[str, Any]',\n    'EnergyManager'],\
+    \ None)"
+  - ([], None)
+  - ([float, float], bool)
+  - ([float], tuple[float, float])
+  - ([int, Any], dict[str, Any])
+  - ([str], bool)
+  - (_breakpoint['domain'], _breakpoint['item_id'])
+  - (_same_day_ts, _day_start_end_ts)
+  - (_same_month_ts, _month_start_end_ts)
+  - (attr_id, attr)
+  - (binding_pair.source_cluster.cluster_id, operation.name, target_ieee)
+  - (bytes, None)
+  - (c_id, cluster)
+  - (chunk, state)
+  - (cmd_id, cmd)
+  - (connection, msg['id'])
+  - (connection, msg_id)
+  - (domain, item_id)
+  - (ep_id, clusters)
+  - (fake_stat,)
+  - (float, dt | None, str | None)
+  - (float, float)
+  - (handler_id, unregister_handler)
+  - (id, pipeline_run)
+  - (k, v)
+  - (key, units)
+  - (last_time_ts, None, None)
+  - "(last_time_ts, last_time_dt, _generate_websocket_response(msg_id,\n    start_time,\
+    \ last_time_dt, states))"
+  - (last_time_ts, last_time_dt, payload)
+  - (message, last_event_time)
+  - (older_message, older_query_last_event_time)
+  - (outcome, log_msg)
+  - (outcome,)
+  - (path, value)
+  - (recent_message, recent_query_last_event_time)
+  - (section, schema)
+  - (src_ieee, code)
+  - (start, _)
+  - (start, delta)
+  - (start_time, end_time)
+  - (statistics_id, stat)
+  - (str, Any)
+  - (str, GetSolarForecastType)
+  - (str, HardwareProtocol)
+  - (str, PushChannel)
+  - (str, dict[str, Any])
+  - (str, dt | None)
+  - (str, list[StatisticsRow])
+  - (str, list[dict[str, Any]])
+  - (str, models.DomainBlueprints)
+  - (str, str | None)
+  - (str, str)
+  - (success, failure)
+  - (websocket_api.ActiveConnection, int)
+  - "(zdo.request(operation, source_device.ieee, binding_pair.source_cluster.\n  \
+    \  endpoint.endpoint_id, binding_pair.source_cluster.cluster_id,\n    binding_pair.destination_address),\
+    \ op_msg, op_params)"
+  - float, float
+  - str, Any

@@ -1,0 +1,20 @@
+trigger.py:
+  schemas: []
+  sets:
+  - '{DOMAIN}'
+  - '{EVENT_START, EVENT_END}'
+  tuples:
+  - ('webhook',)
+  - (..., Coroutine[Any, Any, None])
+  - ([PublishPayloadType, TemplateVarsType], PublishPayloadType)
+  - ([ReceivePayloadType, str], ReceivePayloadType)
+  - ([Timespan], Awaitable[list[CalendarEvent]])
+  - ([Timespan], Awaitable[list[QueuedCalendarEvent]])
+  - (entity_name, entity)
+  - (exceptions.TemplateError, vol.Invalid)
+  - (str, Any)
+  - (str, Notification)
+  - (str, list[TriggerInstance])
+  - (str, vol.Schema)
+  - (trigger_time, event)
+  - Any, Any, None

@@ -1,0 +1,22 @@
+pipeline.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('stt_engine', 'stt_language')
+  - ('tts_engine', 'tts_language')
+  - (('stt_engine', 'stt_language'), ('tts_engine', 'tts_language'))
+  - (Pipeline, SerializedPipelineStorageCollection)
+  - (PipelineStage.WAKE_WORD, PipelineStage.STT)
+  - (ProcessedAudioChunk, None)
+  - ([PipelineEvent], None)
+  - (bytes, None)
+  - (bytes, int)
+  - (chunk.audio, chunk.timestamp_ms)
+  - (engine, language)
+  - (run_recording_dir, self.debug_recording_queue)
+  - (str, Any)
+  - (str, LimitedSizeDict[str, PipelineRunDebug])
+  - (str, dict[str, PipelineRun])
+  - (str, str | None)
+  - str, PipelineRun
+  - str, PipelineRunDebug

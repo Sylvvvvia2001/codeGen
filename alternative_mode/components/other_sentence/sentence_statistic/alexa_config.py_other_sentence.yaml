@@ -1,0 +1,18 @@
+alexa_config.py:
+  schemas: []
+  sets:
+  - "{'alarm_control_panel', 'alert', 'automation', 'button', 'camera',\n    'climate',\
+    \ 'cover', 'fan', 'group', 'humidifier', 'image_processing',\n    'input_boolean',\
+    \ 'input_button', 'input_number', 'light', 'lock',\n    'media_player', 'number',\
+    \ 'scene', 'script', 'switch', 'timer', 'vacuum'}"
+  - '{*self.hass.states.async_entity_ids(), *self._prefs.alexa_entity_configs}'
+  - "{BinarySensorDeviceClass.DOOR, BinarySensorDeviceClass.GARAGE_DOOR,\n    BinarySensorDeviceClass.MOTION,\
+    \ BinarySensorDeviceClass.OPENING,\n    BinarySensorDeviceClass.PRESENCE, BinarySensorDeviceClass.WINDOW}"
+  - '{SensorDeviceClass.TEMPERATURE}'
+  tuples:
+  - ('RefreshTokenNotFound', 'UnknownRegion')
+  - (PREF_ALEXA_REPORT_STATE, PREF_ENABLE_ALEXA)
+  - ([], None)
+  - (alexa_errors.NoTokenAvailable, alexa_errors.RequireRelink)
+  - (entity_id, info)
+  - (str, Any)

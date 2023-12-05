@@ -1,0 +1,35 @@
+capabilities.py:
+  schemas: []
+  sets:
+  - '{''MOVIE'', ''MUSIC'', ''NIGHT'', ''SPORT'', ''TV''}'
+  - "{'ar-SA', 'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES',\n  \
+    \  'es-MX', 'es-US', 'fr-CA', 'fr-FR', 'hi-IN', 'it-IT', 'ja-JP', 'pt-BR'}"
+  - "{'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES', 'es-MX',\n  \
+    \  'es-US', 'fr-CA', 'fr-FR', 'hi-IN', 'it-IT', 'ja-JP', 'pt-BR'}"
+  - "{'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES', 'es-MX',\n  \
+    \  'es-US', 'fr-CA', 'fr-FR', 'it-IT', 'ja-JP', 'pt-BR'}"
+  - "{'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES', 'es-MX',\n  \
+    \  'fr-CA', 'fr-FR', 'it-IT', 'ja-JP'}"
+  - "{'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES', 'es-MX',\n  \
+    \  'fr-FR', 'it-IT', 'ja-JP'}"
+  - "{'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES', 'fr-FR',\n  \
+    \  'it-IT'}"
+  - '{''en-US''}'
+  tuples:
+  - (0, 0)
+  - (STATE_LOCKING, STATE_UNLOCKED)
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN)
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN, None)
+  - (STATE_UNLOCKING, STATE_LOCKED)
+  - "(cover.STATE_OPEN, cover.STATE_OPENING, cover.STATE_CLOSED, cover.\n    STATE_CLOSING,\
+    \ STATE_UNKNOWN)"
+  - (dict[str, Any], None, None)
+  - (fan.DIRECTION_FORWARD, fan.DIRECTION_REVERSE, STATE_UNKNOWN)
+  - (float, float)
+  - (i, v)
+  - (index, speed)
+  - (operation, value)
+  - (str, Any)
+  - (str, list[dict[str, Any]])
+  - (str, str)
+  - str, Any

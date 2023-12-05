@@ -1,0 +1,45 @@
+connection.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, IDENTIFIER_LEGACY_ACCESSORY_ID, f''{self.unique_id}_{accessory.aid}'')}'
+  - '{(IDENTIFIER_ACCESSORY_ID, f''{self.unique_id}:aid:{accessory.aid}'')}'
+  tuples:
+  - "('logger', 'hass', 'send_message', 'user', 'refresh_token_id',\n    'subscriptions',\
+    \ 'last_id', 'can_coalesce', 'supported_features',\n    'handlers', 'binary_handlers')"
+  - (AccessoryDisconnectedError, EncryptionError)
+  - (DOMAIN, IDENTIFIER_LEGACY_ACCESSORY_ID, f'{self.unique_id}_{accessory.aid}')
+  - (DOMAIN, IDENTIFIER_LEGACY_ACCESSORY_ID, self.unique_id)
+  - (DOMAIN, IDENTIFIER_LEGACY_SERIAL_NUMBER, accessory.serial_number)
+  - (Hashable, Callable[[], Any])
+  - (IDENTIFIER_ACCESSORY_ID, f'{self.unique_id}:aid:1')
+  - (IDENTIFIER_ACCESSORY_ID, f'{self.unique_id}:aid:{accessory.aid}')
+  - (IDENTIFIER_SERIAL_NUMBER, accessory.serial_number)
+  - ([Accessory], bool)
+  - ([Characteristic], bool)
+  - ([HomeAssistant, 'ActiveConnection', bytes], None)
+  - ([HomeAssistant, 'ActiveConnection', dict[str, Any]], None)
+  - ([Service], bool)
+  - ([], str)
+  - ([str | dict[str, Any]], None)
+  - (accessory.aid, None, None)
+  - (accessory.aid, service.iid, char.iid)
+  - (aid, None, service.iid)
+  - (aid, iid)
+  - (handler, schema)
+  - (idx, existing)
+  - (index + 1, unsub)
+  - (int, Callable[[], None])
+  - (int, int | None, int | None)
+  - (int, int)
+  - (int, int, Any)
+  - (int, str)
+  - (str, Any)
+  - (str, float)
+  - (str, tuple[MessageHandler, vol.Schema])
+  - (tuple[int, int], dict[str, Any])
+  - (tuple[int, int], set[CALLBACK_TYPE])
+  - MessageHandler, vol.Schema
+  - '[], Any'
+  - '[], None'
+  - int, int
+  - str, Any

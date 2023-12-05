@@ -1,0 +1,19 @@
+remote.py:
+- AndroidTVRemoteEntity
+- AppleTVRemote
+- BraviaTVRemote
+- BroadlinkRemote
+- DIRECTVRemote
+- DemoRemote
+- HarmonyRemote
+- ITachIP2IRRemote
+- JvcProjectorRemote
+- KaleidescapeRemote
+- KiraRemote
+- MySensorsRemote
+- PanasonicVieraRemoteEntity
+- PhilipsTVRemote
+- RokuRemote
+- SamsungTVRemote
+- XboxRemote
+- XiaomiMiioRemote

@@ -1,0 +1,7 @@
+mailbox.py:
+- __init__
+- _build_message
+- _update_callback
+- can_delete
+- has_media
+- media_type

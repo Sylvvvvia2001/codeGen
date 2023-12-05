@@ -1,0 +1,5 @@
+entities_and_devices.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (int, ...)

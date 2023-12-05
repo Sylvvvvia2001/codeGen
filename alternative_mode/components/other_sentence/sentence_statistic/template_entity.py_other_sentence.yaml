@@ -1,0 +1,21 @@
+template_entity.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Template, list[_TemplateAttribute])
+  - ([Any], Any)
+  - ([Any], None)
+  - ([int, str], None)
+  - "([str | None, Mapping[str, Any] | None, dict[str, bool | set[str]] | None, \n\
+    \    str | None], None)"
+  - "([str | None, dict[str, Any] | None, dict[str, bool | set[str]] | None, str |\n\
+    \    None], None)"
+  - (from_key, to_key)
+  - (key, value)
+  - (state, attrs)
+  - (str, Any)
+  - (str, Template)
+  - (str, str)
+  - (template, attributes)
+  - str, Any
+  - str, bool | set[str]

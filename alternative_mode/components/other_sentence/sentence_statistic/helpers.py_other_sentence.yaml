@@ -1,0 +1,180 @@
+helpers.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, api_item.id)}'
+  - '{(DOMAIN, config_entry.entry_id)}'
+  - '{(DOMAIN, device_unique_id)}'
+  - '{(DOMAIN, entity.device_id)}'
+  - '{(DOMAIN, entry_id)}'
+  - '{(DOMAIN, f''{isy.uuid}_{node.address}'')}'
+  - '{(DOMAIN, generate_unique_id(config_entry.entry_id, address))}'
+  - '{(DOMAIN, registration[ATTR_DEVICE_ID])}'
+  - '{*child.values}'
+  - '{PROP_BUSY, PROP_COMMS_ERROR, PROP_STATUS, *ROOT_AUX_CONTROLS}'
+  - '{PROP_ON_LEVEL, PROP_RAMP_RATE}'
+  - "{Platform.ALARM_CONTROL_PANEL.value, Platform.BUTTON.value, Platform.\n    CLIMATE.value,\
+    \ Platform.COVER.value, Platform.FAN.value, Platform.\n    HUMIDIFIER.value, Platform.LIGHT.value,\
+    \ Platform.LOCK.value, Platform.\n    NUMBER.value, Platform.REMOTE.value, Platform.SELECT.value,\
+    \ Platform.\n    SWITCH.value, Platform.TEXT.value, Platform.VACUUM.value, Platform.\n\
+    \    WATER_HEATER.value}"
+  - '{domain}'
+  - '{f''homeassistant.components.{domain}''}'
+  - '{get_device_id(driver, node)}'
+  - '{value_type}'
+  tuples:
+  - ('', None)
+  - ('0', 0)
+  - ('Philips', 'Signify Netherlands B.V.')
+  - ('SML001', 'SML002', 'SML003', 'SML004')
+  - "('^([\\\\da-fA-F]{16})\\\\|([\\\\da-fA-F]{36})$',\n    \"\"\"\n        ^Z:\n\
+    \        ([0-9a-fA-F]{16})  # IEEE address\n        \\\\$I:\n        ([0-9a-fA-F]{36})\
+    \  # install code\n        $\n    \"\"\"\n    ,\n    \"\"\"\n        \\\\$A:\n\
+    \        ([0-9a-fA-F]{16})  # IEEE address\n        \\\\$I:\n        ([0-9a-fA-F]{36})\
+    \  # install code\n        $\n    \"\"\"\n    ,\n    \"\"\"\n        ^RB01SG\n\
+    \        [0-9a-fA-F]{34}\n        ([0-9a-fA-F]{16}) # IEEE address\n        DLK\n\
+    \        ([0-9a-fA-F]{36}) # install code\n        $\n    \"\"\"\n    )"
+  - ('application/vnd.apple.mpegurl',)
+  - ('binary_sensor', 'sensor')
+  - ('hass', 'config', 'state', '_traits')
+  - ('light', 'V_DIMMER')
+  - ('light', 'V_PERCENTAGE')
+  - ('light', 'V_RGB')
+  - ('light', 'V_RGBW')
+  - ('switch', 'V_IR_SEND')
+  - ('switch', 'light')
+  - ((DURATION_START, start_template), (DURATION_END, end_template))
+  - ()
+  - (*BUILT_IN_EVENTS, *external_events)
+  - (..., Any)
+  - (1, 5, 10, 15, 30, 60, 120, 180, 360, 600, 900, 1800)
+  - (1, [])
+  - (3, 12)
+  - (AddressType, str)
+  - (Concatenate[_HomeWizardEntityT, _P], Coroutine[Any, Any, Any])
+  - (Concatenate[_HomeWizardEntityT, _P], Coroutine[Any, Any, None])
+  - (Concatenate[_LaMetricEntityT, _P], Coroutine[Any, Any, Any])
+  - (Concatenate[_LaMetricEntityT, _P], Coroutine[Any, Any, None])
+  - (Concatenate[_RokuEntityT, _P], Awaitable[Any])
+  - (Concatenate[_RokuEntityT, _P], Coroutine[Any, Any, None])
+  - (Concatenate[_T, _P], _R | None)
+  - (Concatenate[_T, _P], _R)
+  - (Concatenate[_WLEDEntityT, _P], Coroutine[Any, Any, Any])
+  - (Concatenate[_WLEDEntityT, _P], Coroutine[Any, Any, None])
+  - (ConfigurationValueType.RANGE, ConfigurationValueType.MANUAL_ENTRY)
+  - (DOMAIN, api_item.id)
+  - (DOMAIN, config_entry.entry_id)
+  - (DOMAIN, device_unique_id)
+  - (DOMAIN, entity.device_id)
+  - (DOMAIN, entry_id)
+  - (DOMAIN, f'{driver.controller.home_id}-{node.node_id}')
+  - (DOMAIN, f'{isy.uuid}_{node.address}')
+  - (DOMAIN, generate_unique_id(config_entry.entry_id, address))
+  - (DOMAIN, isy.uuid)
+  - (DOMAIN, registration[ATTR_DEVICE_ID])
+  - (DURATION_END, end_template)
+  - (DURATION_START, start_template)
+  - (IndexError, ValueError)
+  - (LogPersistance.ONCE, LogPersistance.PERMANENT)
+  - (None, '')
+  - (OSError, SoCoException, SoCoUPnPException, Timeout)
+  - (Platform, list)
+  - (Platform, list[DevId])
+  - (SUBNODE_CLIMATE_COOL, SUBNODE_CLIMATE_HEAT)
+  - (TemplateError, TypeError)
+  - (UOM_DOUBLE_TEMP, UOM_ISYV4_DEGREES)
+  - (ValueError, datapoint.exceptions.APIException)
+  - ([Event], None)
+  - ([], Coroutine[Any, Any, None])
+  - ([], None)
+  - ([_FuncType[_RokuEntityT, _P]], _ReturnFuncType[_RokuEntityT, _P])
+  - ([_FuncType[_T, _P, _R]], _FuncType[_T, _P, _R])
+  - ([_FuncType[_T, _P, _R]], _ReturnFuncType[_T, _P, _R])
+  - ([bytes, bytes], bytes)
+  - ([str], bool)
+  - (_RokuEntityT, _P)
+  - (_T, _P, _R)
+  - (addr, conn_id)
+  - (address, host_name)
+  - (agent_user_id, agent_user_data)
+  - (bound, template)
+  - (cached_features, supported)
+  - (cast_info.cast_type, cast_info.manufacturer)
+  - (cast_type, manufacturer)
+  - (configparser.NoOptionError, ValueError)
+  - (confkey, domain_config)
+  - (datetime.datetime, datetime.datetime)
+  - "(domain,\n    f'{dev_id}-{node.manufacturer_id}:{node.product_type}:{node.product_id}')"
+  - (domain, dev_id)
+  - (domain, device_class)
+  - (domain, level)
+  - (domain, settings)
+  - (dtype, _, node_id)
+  - (entity_entry, device_entry, area_entry)
+  - (entity_folder.name, status, actions)
+  - (er.RegistryEntry | None, dr.DeviceEntry | None, ar.AreaEntry | None)
+  - (external_event, domain_call)
+  - (features, is_supported)
+  - (gateway_id, node_id, child.id, set_req[v_name].value)
+  - (id_[0], int(id_[1]))
+  - (ieee, install_code)
+  - (int(matcher.group('seg_id')), int(matcher.group('id')), is_group)
+  - (int, int, bool)
+  - (k, v)
+  - (key, value)
+  - (name, valid)
+  - (node, CMD_BACKLIGHT)
+  - (node, PROP_COMMS_ERROR)
+  - (node, TAG_ENABLED)
+  - (node, control)
+  - (node.manufacturer_id, node.product_type, node.product_id)
+  - (out_data, out_error)
+  - (path, node)
+  - (platform, child_type_name)
+  - (platform, v_name)
+  - (redacted_field_val, zwave_value_field_val)
+  - (result, _)
+  - (rtt_min, rtt_avg, rtt_max)
+  - (rtt_min, rtt_avg, rtt_max, rtt_mdev)
+  - (start, end)
+  - (str, ...)
+  - (str, Any)
+  - (str, CALLBACK_TYPE)
+  - (str, PlexServer)
+  - (str, PlexWebsocket)
+  - (str, SamsungTVBridge)
+  - (str, bytes)
+  - (str, datetime.datetime | None)
+  - (str, dict[str, LoggerSetting])
+  - (str, dict[str, dict[str, Any]])
+  - (str, dict[str, dict[str, str]])
+  - (str, int)
+  - (str, list[CALLBACK_TYPE])
+  - (str, set[Platform])
+  - (str, str | float | bool | None)
+  - (str, str)
+  - (str, tuple[int | None, bool])
+  - (str, tuple[str, dict])
+  - (str, vol.Schema)
+  - (try_count, errors)
+  - "(tuple[str, str], Callable[[BaseAsyncGateway, ChildSensor, ValueType], vol.\n\
+    \    Schema])"
+  - (unique_id, roller)
+  - (user_agent_id, _)
+  - (zigpy.exceptions.ZigbeeException, asyncio.TimeoutError)
+  - (zigpy.types.EUI64, bytes)
+  - Any, Any, Any
+  - Any, Any, None
+  - '[BaseAsyncGateway, ChildSensor, ValueType], vol.Schema'
+  - _HomeWizardEntityT, _P
+  - _LaMetricEntityT, _P
+  - _RokuEntityT, _P
+  - _T, _P
+  - _T, _P, _R
+  - _WLEDEntityT, _P
+  - int | None, bool
+  - str, Any
+  - str, LoggerSetting
+  - str, dict
+  - str, dict[str, Any]
+  - str, dict[str, str]
+  - str, str

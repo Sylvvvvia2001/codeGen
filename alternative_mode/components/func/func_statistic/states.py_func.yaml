@@ -1,0 +1,9 @@
+states.py:
+- __init__
+- add_pending
+- evict_purged_entity_ids
+- evict_purged_state_ids
+- pop_committed
+- pop_pending
+- post_commit_pending
+- reset

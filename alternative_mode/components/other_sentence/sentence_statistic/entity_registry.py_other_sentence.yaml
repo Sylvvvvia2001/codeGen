@@ -1,0 +1,9 @@
+entity_registry.py:
+  schemas: []
+  sets: []
+  tuples:
+  - "('area_id', 'device_class', 'disabled_by', 'hidden_by', 'icon', 'name',\n   \
+    \ 'new_entity_id')"
+  - (str, Any)
+  - (str, dict[str, Any] | None)
+  - str, Any

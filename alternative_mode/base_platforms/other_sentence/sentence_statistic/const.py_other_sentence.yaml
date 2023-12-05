@@ -1,0 +1,497 @@
+const.py:
+  schemas: []
+  sets:
+  - '{'' ''}'
+  - '{''2.2'', ''4'', ''5'', ''5B'', ''5L'', ''5S'', ''Q3D''}'
+  - '{''A1'', ''RM4MINI'', ''RM4PRO'', ''RMPRO'', ''SP2S'', ''SP3S'', ''SP4'', ''SP4B''}'
+  - "{'BG1', 'MP1', 'RM4MINI', 'RM4PRO', 'RMMINI', 'RMMINIB', 'RMPRO', 'SP1',\n  \
+    \  'SP2', 'SP2S', 'SP3', 'SP3S', 'SP4', 'SP4B'}"
+  - "{'BOWS', 'Filter', 'Heaters', 'Chlorinator', 'CSAD', 'Lights', 'Relays',\n  \
+    \  'Pumps'}"
+  - '{''CLOUDY'', ''CLOUDY_MOSTLY'', ''NIGHT_CLOUDY''}'
+  - '{''CLOUDY_PARTLY''}'
+  - '{''DRIZZLE'', ''RAIN'', ''SCATTERED_RAIN''}'
+  - '{''FOGGY''}'
+  - '{''FREEZING'', ''SCATTERED_SNOW'', ''SNOW''}'
+  - '{''HAIL'', ''RAIN_HAIL''}'
+  - '{''HLK-LD2410B''}'
+  - '{''LB1'', ''LB2''}'
+  - '{''LEDnet'', ''BLE-LED'', ''LEDBLE'', ''Triones'', ''LEDBlue''}'
+  - '{''NIGHT_CLEAR''}'
+  - '{''NL29'', ''NL42'', ''NL52''}'
+  - '{''RAIN_SNOW'', ''SCATTERED_RAIN_SNOW''}'
+  - '{''RM4MINI'', ''RM4PRO'', ''RMMINI'', ''RMMINIB'', ''RMPRO''}'
+  - '{''SUN''}'
+  - '{''THUNDERSTORM''}'
+  - '{''V_ARMED''}'
+  - '{''V_DIMMER'', ''V_PERCENTAGE'', ''V_LIGHT'', ''V_STATUS''}'
+  - '{''V_DIMMER'', ''V_PERCENTAGE''}'
+  - '{''V_DISTANCE''}'
+  - '{''V_DUST_LEVEL'', ''V_LEVEL''}'
+  - '{''V_FLOW'', ''V_VOLUME''}'
+  - '{''V_HUM''}'
+  - '{''V_HVAC_FLOW_STATE''}'
+  - '{''V_IR_RECEIVE'', ''V_IR_RECORD''}'
+  - '{''V_IR_SEND''}'
+  - '{''V_LEVEL''}'
+  - '{''V_LIGHT''}'
+  - '{''V_LIGHT_LEVEL'', ''V_LEVEL''}'
+  - '{''V_LOCK_STATUS''}'
+  - '{''V_POSITION''}'
+  - '{''V_PRESSURE'', ''V_FORECAST''}'
+  - '{''V_RAIN'', ''V_RAINRATE''}'
+  - '{''V_RGB''}'
+  - '{''V_RGBW''}'
+  - '{''V_SCENE_ON'', ''V_SCENE_OFF''}'
+  - '{''V_STATUS''}'
+  - '{''V_TEMP'', ''V_PH'', ''V_ORP'', ''V_EC''}'
+  - '{''V_TEMP''}'
+  - '{''V_TEXT''}'
+  - '{''V_TRIPPED''}'
+  - '{''V_UV''}'
+  - '{''V_VAR1'', ''V_VAR2'', ''V_VAR3'', ''V_VAR4'', ''V_VAR5'', ''V_CUSTOM''}'
+  - '{''V_VOLTAGE'', ''V_CURRENT'', ''V_IMPEDANCE''}'
+  - '{''V_WATT'', ''V_KWH'', ''V_VAR'', ''V_VA'', ''V_POWER_FACTOR''}'
+  - '{''V_WEIGHT'', ''V_IMPEDANCE''}'
+  - '{''V_WIND'', ''V_GUST'', ''V_DIRECTION''}'
+  - '{''WIND''}'
+  - '{''a'', ''ampere''}'
+  - '{''aac'', ''mp3''}'
+  - "{'air_temp', 'road_temp', 'wind_direction', 'wind_speed', 'wind_speed_max',\n\
+    \    'humidity', 'precipitation_amount'}"
+  - "{'audio/mp4', 'audio/aac', 'audio/mpeg', 'audio/flac', 'audio/ogg',\n    'audio/x-ms-wma',\
+    \ 'audio/aiff', 'audio/wav', MediaType.TRACK, MediaType\n    .PLAYLIST, MediaType.ARTIST,\
+    \ MediaType.ALBUM, MediaType.GENRE,\n    MediaType.MUSIC, MediaType.EPISODE, 'show'}"
+  - "{'btn_down', 'btn_up', 'single_push', 'double_push', 'triple_push', 'long_push'\n\
+    \    }"
+  - '{''clearsky_day'', ''clearsky''}'
+  - '{''clearsky_night''}'
+  - '{''climate'', ''device_tracker'', ''humidifier'', ''thermostat'', ''water_heater''}'
+  - '{''climate'', ''humidifier'', ''input_datetime'', ''thermostat'', ''water_heater''}'
+  - '{''cloudy_night'', ''cloudy_day'', ''cloudy''}'
+  - '{''color''}'
+  - '{''db''}'
+  - '{''dbm''}'
+  - '{''device_class''}'
+  - "{'fair', 'fair_day', 'fair_night', 'partlycloudy', 'partlycloudy_day',\n    'partlycloudy_night'}"
+  - '{''fog'', ''fog_day'', ''fog_night''}'
+  - '{''ft3''}'
+  - "{'heavyrain', 'heavyrain_day', 'heavyrain_night', 'heavyrainshowers',\n    'heavyrainshowers_day',\
+    \ 'heavyrainshowers_night'}"
+  - "{'heavyrainandthunder', 'heavyrainandthunder_day',\n    'heavyrainandthunder_night',\
+    \ 'heavyrainshowersandthunder',\n    'heavyrainshowersandthunder_day', 'heavyrainshowersandthunder_night',\n\
+    \    'heavysleetandthunder', 'heavysleetandthunder_day',\n    'heavysleetandthunder_night',\
+    \ 'heavysleetshowersandthunder',\n    'heavysleetshowersandthunder_day', 'heavysleetshowersandthunder_night',\n\
+    \    'heavysnowandthunder', 'heavysnowandthunder_day',\n    'heavysnowandthunder_night',\
+    \ 'heavysnowshowersandthunder',\n    'heavysnowshowersandthunder_day', 'heavysnowshowersandthunder_night',\n\
+    \    'lightrainandthunder', 'lightrainandthunder_day',\n    'lightrainandthunder_night',\
+    \ 'lightrainshowersandthunder',\n    'lightrainshowersandthunder_day', 'lightrainshowersandthunder_night',\n\
+    \    'lightsleetandthunder', 'lightsleetandthunder_day',\n    'lightsleetandthunder_night',\
+    \ 'lightsnowandthunder',\n    'lightsnowandthunder_day', 'lightsnowandthunder_night',\n\
+    \    'lightssleetshowersandthunder', 'lightssleetshowersandthunder_day',\n   \
+    \ 'lightssleetshowersandthunder_night', 'lightssnowshowersandthunder',\n    'lightssnowshowersandthunder_day',\
+    \ 'lightssnowshowersandthunder_night',\n    'rainandthunder', 'rainandthunder_day',\
+    \ 'rainandthunder_night',\n    'rainshowersandthunder', 'rainshowersandthunder_day',\n\
+    \    'rainshowersandthunder_night', 'sleetandthunder', 'sleetandthunder_day',\n\
+    \    'sleetandthunder_night', 'sleetshowersandthunder',\n    'sleetshowersandthunder_day',\
+    \ 'sleetshowersandthunder_night',\n    'snowshowersandthunder', 'snowshowersandthunder_day',\n\
+    \    'snowshowersandthunder_night'}"
+  - "{'heavysleet', 'heavysleet_day', 'heavysleet_night', 'heavysleetshowers',\n \
+    \   'heavysleetshowers_day', 'heavysleetshowers_night', 'lightsleet',\n    'lightsleet_day',\
+    \ 'lightsleet_night', 'lightsleetshowers',\n    'lightsleetshowers_day', 'lightsleetshowers_night',\
+    \ 'sleet',\n    'sleet_day', 'sleet_night', 'sleetshowers', 'sleetshowers_day',\n\
+    \    'sleetshowers_night'}"
+  - "{'heavysnow', 'heavysnow_day', 'heavysnow_night', 'heavysnowshowers',\n    'heavysnowshowers_day',\
+    \ 'heavysnowshowers_night', 'lightsnow',\n    'lightsnow_day', 'lightsnow_night',\
+    \ 'lightsnowshowers',\n    'lightsnowshowers_day', 'lightsnowshowers_night', 'snow',\
+    \ 'snow_day',\n    'snow_night', 'snowandthunder', 'snowandthunder_day',\n   \
+    \ 'snowandthunder_night', 'snowshowers', 'snowshowers_day',\n    'snowshowers_night'}"
+  - '{''hpa'', ''hectopascal''}'
+  - '{''inhg''}'
+  - '{''kilowatt''}'
+  - "{'kwh', 'kilowatt-hour', 'kW\xB7h'}"
+  - '{''librespot-java''}'
+  - "{'lightrain', 'lightrain_day', 'lightrain_night', 'lightrainshowers',\n    'lightrainshowers_day',\
+    \ 'lightrainshowers_night', 'rain', 'rain_day',\n    'rain_night', 'rainshowers',\
+    \ 'rainshowers_day', 'rainshowers_night'}"
+  - '{''lux''}'
+  - '{''m3''}'
+  - '{''ma'', ''milliampere''}'
+  - '{''mg/m3''}'
+  - '{''millibar''}'
+  - '{''mv'', ''millivolt''}'
+  - '{''pct'', ''percent'', ''% RH''}'
+  - '{''rate_down'', ''rate_up''}'
+  - '{''single'', ''double'', ''triple'', ''long'', ''single_long'', ''long_single''}'
+  - '{''single'', ''double'', ''triple'', ''long''}'
+  - '{''single'', ''long''}'
+  - '{''start'', ''end'', EVENT_SUMMARY, EVENT_DESCRIPTION, EVENT_LOCATION}'
+  - "{'ug/m3', '\xB5g/m3', 'ug/m\xB3'}"
+  - '{''volt''}'
+  - '{''watt''}'
+  - '{''wh'', ''watthour''}'
+  - '{''zone'', ''scene''}'
+  - "{'\xB0c', 'c', 'celsius', '\u2103'}"
+  - "{'\xB0f', 'f', 'fahrenheit'}"
+  - "{*NODE_PLATFORMS, *NODE_AUX_PROP_PLATFORMS, *PROGRAM_PLATFORMS, *\n    ROOT_NODE_PLATFORMS,\
+    \ *VARIABLE_PLATFORMS}"
+  - "{ALERT_TYPE_UNKNOWN, ALERT_TYPE_AIR, ALERT_TYPE_ARTILLERY,\n    ALERT_TYPE_URBAN_FIGHTS,\
+    \ ALERT_TYPE_CHEMICAL, ALERT_TYPE_NUCLEAR}"
+  - '{ATTR_ATTRIBUTION, ATTR_RESTORED, ATTR_SUPPORTED_FEATURES}'
+  - "{COMMAND_BEEPER_DISABLE, COMMAND_BEEPER_ENABLE, COMMAND_BEEPER_MUTE,\n    COMMAND_BEEPER_TOGGLE,\
+    \ COMMAND_BYPASS_START, COMMAND_BYPASS_STOP,\n    COMMAND_CALIBRATE_START, COMMAND_CALIBRATE_STOP,\
+    \ COMMAND_LOAD_OFF,\n    COMMAND_LOAD_ON, COMMAND_RESET_INPUT_MINMAX, COMMAND_RESET_WATCHDOG,\n\
+    \    COMMAND_SHUTDOWN_REBOOT, COMMAND_SHUTDOWN_REBOOT_GRACEFUL,\n    COMMAND_SHUTDOWN_RETURN,\
+    \ COMMAND_SHUTDOWN_STAYOFF,\n    COMMAND_SHUTDOWN_STOP, COMMAND_TEST_BATTERY_START,\n\
+    \    COMMAND_TEST_BATTERY_START_DEEP, COMMAND_TEST_BATTERY_START_QUICK,\n    COMMAND_TEST_BATTERY_STOP,\
+    \ COMMAND_TEST_FAILURE_START,\n    COMMAND_TEST_FAILURE_STOP, COMMAND_TEST_PANEL_START,\n\
+    \    COMMAND_TEST_PANEL_STOP, COMMAND_TEST_SYSTEM_START}"
+  - '{CONCENTRATION_MICROGRAMS_PER_CUBIC_METER}'
+  - '{CONCENTRATION_PARTS_PER_BILLION, CONCENTRATION_PARTS_PER_MILLION}'
+  - '{CONCENTRATION_PARTS_PER_MILLION}'
+  - "{CONF_MONDAY, CONF_TUESDAY, CONF_WEDNESDAY, CONF_THURSDAY, CONF_FRIDAY,\n   \
+    \ CONF_SATURDAY, CONF_SUNDAY}"
+  - '{CONTAINER_INFO, CONTAINER_CHANGELOG}'
+  - '{CONTAINER_INFO}'
+  - '{CONTAINER_STATS}'
+  - '{COUNTER_DOMAIN, PROXIMITY_DOMAIN}'
+  - '{ColorMode.RGB, ColorMode.RGBW, ColorMode.RGBWW}'
+  - '{ColorMode.RGBWW, ColorMode.RGBW}'
+  - '{EVENT_AUTOMATION_TRIGGERED, EVENT_SCRIPT_STARTED}'
+  - '{EVENT_LOGBOOK_ENTRY, EVENT_CALL_SERVICE}'
+  - "{EVENT_START_DATE, EVENT_END_DATE, EVENT_START_DATETIME, EVENT_END_DATETIME,\n\
+    \    EVENT_IN}"
+  - "{FUNCTION.COLOR_WHEEL, FUNCTION.DIMMER, FUNCTION.INTELLIBRITE, FUNCTION.\n  \
+    \  LIGHT, FUNCTION.MAGICSTREAM, FUNCTION.PHOTONGEN, FUNCTION.SAL_LIGHT,\n    FUNCTION.SAM_LIGHT}"
+  - "{INTEGRATION_PLATFORM_COMPILE_STATISTICS,\n    INTEGRATION_PLATFORM_VALIDATE_STATISTICS,\n\
+    \    INTEGRATION_PLATFORM_LIST_STATISTIC_IDS}"
+  - '{KEY_DEVICE_BASIC_INFORMATION}'
+  - "{KEY_DEVICE_INFORMATION, KEY_DEVICE_SIGNAL,\n    KEY_MONITORING_CHECK_NOTIFICATIONS,\
+    \ KEY_MONITORING_MONTH_STATISTICS,\n    KEY_MONITORING_STATUS, KEY_MONITORING_TRAFFIC_STATISTICS,\n\
+    \    KEY_NET_CURRENT_PLMN, KEY_NET_NET_MODE, KEY_SMS_SMS_COUNT}"
+  - '{KEY_DIALUP_MOBILE_DATASWITCH, KEY_WLAN_WIFI_GUEST_NETWORK_SWITCH}'
+  - '{KEY_LAN_HOST_INFO, KEY_WLAN_HOST_LIST}'
+  - "{KEY_MONITORING_CHECK_NOTIFICATIONS, KEY_MONITORING_STATUS,\n    KEY_WLAN_WIFI_FEATURE_SWITCH}"
+  - '{LIGHT_LUX}'
+  - "{ModelType.CAMERA, ModelType.LIGHT, ModelType.VIEWPORT, ModelType.SENSOR,\n \
+    \   ModelType.DOORLOCK, ModelType.CHIME}"
+  - '{ModelType.EVENT}'
+  - '{ModelType.NVR}'
+  - '{None}'
+  - '{PERCENTAGE, None}'
+  - '{PERCENTAGE}'
+  - '{POWER_VOLT_AMPERE_REACTIVE}'
+  - '{RESULT_AUTH_MISSING, RESULT_SUCCESS}'
+  - '{SENSOR_DOMAIN}'
+  - "{SERVICE_CLEAR_TRAFFIC_STATISTICS, SERVICE_REBOOT,\n    SERVICE_RESUME_INTEGRATION,\
+    \ SERVICE_SUSPEND_INTEGRATION}"
+  - '{SIGNAL_STRENGTH_DECIBELS, SIGNAL_STRENGTH_DECIBELS_MILLIWATT}'
+  - "{SensorDeviceClass.AQI, SensorDeviceClass.DATE, SensorDeviceClass.MONETARY,\n\
+    \    SensorDeviceClass.TIMESTAMP}"
+  - "{SensorDeviceClass.BATTERY, SensorDeviceClass.HUMIDITY, SensorDeviceClass.\n\
+    \    POWER_FACTOR}"
+  - '{SensorDeviceClass.CO, SensorDeviceClass.CO2}'
+  - '{SensorDeviceClass.CURRENT}'
+  - '{SensorDeviceClass.DATE, SensorDeviceClass.ENUM, SensorDeviceClass.TIMESTAMP}'
+  - '{SensorDeviceClass.ENERGY}'
+  - '{SensorDeviceClass.GAS}'
+  - '{SensorDeviceClass.ILLUMINANCE}'
+  - "{SensorDeviceClass.NITROGEN_DIOXIDE, SensorDeviceClass.NITROGEN_MONOXIDE,\n \
+    \   SensorDeviceClass.NITROUS_OXIDE, SensorDeviceClass.OZONE,\n    SensorDeviceClass.PM1,\
+    \ SensorDeviceClass.PM25, SensorDeviceClass.PM10,\n    SensorDeviceClass.SULPHUR_DIOXIDE,\
+    \ SensorDeviceClass.\n    VOLATILE_ORGANIC_COMPOUNDS}"
+  - '{SensorDeviceClass.POWER}'
+  - '{SensorDeviceClass.PRESSURE}'
+  - '{SensorDeviceClass.SIGNAL_STRENGTH}'
+  - '{SensorDeviceClass.TEMPERATURE}'
+  - '{SensorDeviceClass.VOLTAGE}'
+  - '{SensorStateClass.MEASUREMENT}'
+  - '{SensorStateClass.TOTAL, SensorStateClass.TOTAL_INCREASING}'
+  - '{SensorStateClass.TOTAL}'
+  - '{TYPE_ALARM, TYPE_LOCK, TYPE_THERMOSTAT}'
+  - '{UnitOfLength.KILOMETERS, UnitOfLength.MILES}'
+  - '{UnitOfPower.WATT, UnitOfPower.KILO_WATT}'
+  - '{UnitOfPrecipitationDepth.MILLIMETERS, UnitOfPrecipitationDepth.INCHES}'
+  - "{UnitOfPressure.HPA, UnitOfPressure.MBAR, UnitOfPressure.INHG,\n    UnitOfPressure.MMHG}"
+  - "{UnitOfSpeed.FEET_PER_SECOND, UnitOfSpeed.KILOMETERS_PER_HOUR, UnitOfSpeed.\n\
+    \    KNOTS, UnitOfSpeed.METERS_PER_SECOND, UnitOfSpeed.MILES_PER_HOUR}"
+  - '{UnitOfTemperature.CELSIUS, UnitOfTemperature.FAHRENHEIT}'
+  - "{UnitOfTime.DAYS, UnitOfTime.HOURS, UnitOfTime.MINUTES, UnitOfTime.SECONDS,\n\
+    \    UnitOfTime.MILLISECONDS}"
+  - "{UnitOfVolume.CENTUM_CUBIC_FEET, UnitOfVolume.CUBIC_FEET, UnitOfVolume.\n   \
+    \ CUBIC_METERS, UnitOfVolume.GALLONS, UnitOfVolume.LITERS}"
+  - "{UnitOfVolume.CENTUM_CUBIC_FEET, UnitOfVolume.CUBIC_FEET, UnitOfVolume.\n   \
+    \ CUBIC_METERS}"
+  - "{WindowCoveringPropertyKey.HORIZONTAL_SLATS_ANGLE,\n    WindowCoveringPropertyKey.HORIZONTAL_SLATS_ANGLE_NO_POSITION,\n\
+    \    WindowCoveringPropertyKey.VERTICAL_SLATS_ANGLE,\n    WindowCoveringPropertyKey.VERTICAL_SLATS_ANGLE_NO_POSITION}"
+  - "{WindowCoveringPropertyKey.INBOUND_BOTTOM, WindowCoveringPropertyKey.\n    INBOUND_BOTTOM_NO_POSITION,\
+    \ WindowCoveringPropertyKey.INBOUND_LEFT,\n    WindowCoveringPropertyKey.INBOUND_LEFT_NO_POSITION,\n\
+    \    WindowCoveringPropertyKey.INBOUND_LEFT_RIGHT, WindowCoveringPropertyKey\n\
+    \    .INBOUND_LEFT_RIGHT_NO_POSITION, WindowCoveringPropertyKey.\n    INBOUND_RIGHT,\
+    \ WindowCoveringPropertyKey.INBOUND_RIGHT_NO_POSITION,\n    WindowCoveringPropertyKey.INBOUND_TOP,\
+    \ WindowCoveringPropertyKey.\n    INBOUND_TOP_NO_POSITION, WindowCoveringPropertyKey.INBOUND_TOP_BOTTOM,\n\
+    \    WindowCoveringPropertyKey.INBOUND_TOP_BOTTOM_NO_POSITION,\n    WindowCoveringPropertyKey.OUTBOUND_BOTTOM,\
+    \ WindowCoveringPropertyKey.\n    OUTBOUND_BOTTOM_NO_POSITION, WindowCoveringPropertyKey.OUTBOUND_LEFT,\n\
+    \    WindowCoveringPropertyKey.OUTBOUND_LEFT_NO_POSITION,\n    WindowCoveringPropertyKey.OUTBOUND_RIGHT,\
+    \ WindowCoveringPropertyKey.\n    OUTBOUND_RIGHT_NO_POSITION, WindowCoveringPropertyKey.OUTBOUND_TOP,\n\
+    \    WindowCoveringPropertyKey.OUTBOUND_TOP_NO_POSITION}"
+  - '{vacuum.ATTR_BATTERY_ICON, vacuum.ATTR_BATTERY_LEVEL, vacuum.ATTR_FAN_SPEED}'
+  tuples:
+  - ('16.1.', '16.22.')
+  - ('239.255.255.250', 1982)
+  - ('A', 'B')
+  - ('AMP',)
+  - ('ARC', 'BEAM', 'PLAYBAR', 'PLAYBASE')
+  - ('CONNECT', 'CONNECT:AMP', 'PORT', 'PLAY:5')
+  - "('CreateEvent', 'ForkEvent', 'IssuesEvent', 'PullRequestEvent', 'PushEvent',\n\
+    \    'ReleaseEvent', 'WatchEvent')"
+  - "('DownloadClientCheck', 'DownloadClientStatusCheck', 'IndexerRssCheck',\n   \
+    \ 'IndexerSearchCheck')"
+  - "('Drenthe', 'Flevoland', 'Friesland', 'Gelderland', 'Groningen', 'Limburg',\n\
+    \    'Noord-Brabant', 'Noord-Holland', 'Overijssel', 'Utrecht', 'Zeeland',\n \
+    \   'Zuid-Holland')"
+  - ('EDS0066', 'EDS0068')
+  - "('EZSP = Silicon Labs EmberZNet protocol: Elelabs, HUSBZB-1, Telegesis',\n  \
+    \  bellows.zigbee.application.ControllerApplication)"
+  - ('HB_HUB', 'HB_MOISTURE_METER', 'HobbyBoards_EF')
+  - ('SHBDUO-1', 'SHCB-1', 'SHDM-1', 'SHDM-2', 'SHRGBW2', 'SHVIN-1')
+  - ('SHBLB-1', 'SHCB-1')
+  - ('SHBLB-1', 'SHCB-1', 'SHRGBW2')
+  - ('SHBLB-1', 'SHRGBW2')
+  - ('Serial', 'TCP', 'MQTT')
+  - ('Smappee1', 'Smappee2', 'Smappee50')
+  - "('XBee = Digi XBee Zigbee radios: Digi XBee Series 2, 2C, 3', zigpy_xbee.\n \
+    \   zigbee.application.ControllerApplication)"
+  - "('ZNP = Texas Instruments Z-Stack ZNP protocol: CC253x, CC26x2, CC13x2',\n  \
+    \  zigpy_znp.zigbee.application.ControllerApplication)"
+  - "('ZiGate = ZiGate Zigbee radios: PiZiGate, ZiGate USB-TTL, ZiGate WiFi',\n  \
+    \  zigpy_zigate.zigbee.application.ControllerApplication)"
+  - ('application/rss+xml', 'application/xhtml+xml', 'application/xml', 'text/xml')
+  - ('audio', 'video', 'image')
+  - "('de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-US', 'es-ES', 'es-MX',\n  \
+    \  'es-US', 'fr-CA', 'fr-FR', 'hi-IN', 'it-IT', 'ja-JP', 'pt-BR')"
+  - "('deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II',\n\
+    \    zigpy_deconz.zigbee.application.ControllerApplication)"
+  - ('en-US', 'female')
+  - ('humidity', ATTR_DHT22_HUMIDITY)
+  - ('living_room', 'kitchen', 'bedroom')
+  - ('opening', 'opened')
+  - ('source:', 'wavin:', 'spotify:')
+  - ('temperature', ATTR_DHT22_TEMPERATURE)
+  - ('up', 'down', 'right', 'left', 'enter', 'back', 'option', 'ps', 'ps_hold')
+  - "((Platform.BINARY_SENSOR, CONF_BINARY_SENSORS), (Platform.CLIMATE,\n    CONF_CLIMATES),\
+    \ (Platform.COVER, CONF_COVERS), (Platform.LIGHT,\n    CONF_LIGHTS), (Platform.FAN,\
+    \ CONF_FANS), (Platform.SENSOR, CONF_SENSORS\n    ), (Platform.SWITCH, CONF_SWITCHES))"
+  - ()
+  - (*YALE_BASE_ERRORS, AuthenticationError)
+  - (0, 'OFF')
+  - (0, 254, 255)
+  - (1, SPEED_COUNT)
+  - (10, 16)
+  - (13, 19)
+  - (20, 'HOT WATER')
+  - (30, 'CLOSED', 'SHUNT CLOSED')
+  - (30, 'HEAT')
+  - (60, 'COOLING')
+  - "(ButtonEvent.INITIAL_PRESS, ButtonEvent.REPEAT, ButtonEvent.SHORT_RELEASE,\n\
+    \    ButtonEvent.LONG_PRESS, ButtonEvent.LONG_RELEASE)"
+  - (ButtonEvent.INITIAL_PRESS,)
+  - "(ClientConnectionError, asyncio.TimeoutError, AuthenticationError, SensiboError\n\
+    \    )"
+  - (ConnectionError, TimeoutError, UnknownError)
+  - (EnvoyAuthenticationError, EnvoyAuthenticationRequired)
+  - (False, RepeatMode.ALL)
+  - (False, RepeatMode.OFF)
+  - (False, RepeatMode.ONE)
+  - "(FileNotFoundError, exceptions.SerialError, exceptions.ResponseError,\n    SerialException)"
+  - "(FritzActionError, FritzActionFailedError, FritzConnectionException,\n    FritzInternalError,\
+    \ FritzServiceError, FritzLookUpError)"
+  - (FritzAuthorizationError, FritzSecurityError)
+  - (GatewayId, int, int, int)
+  - (KeyError, json.JSONDecodeError, httpx.HTTPError)
+  - (LyricAuthenticationException, LyricException, ClientResponseError)
+  - (MediaType | str, str)
+  - (NumberDeviceClass, set[type[StrEnum] | str | None])
+  - (ONVIFError, Fault, RequestError, TransportError)
+  - "(OSError, ConnectionClosed, ConnectionClosedOK, ConnectionRefusedError,\n   \
+    \ WebOsTvCommandError, asyncio.TimeoutError, asyncio.CancelledError)"
+  - "(OSError, WizLightTimeOutError, TimeoutError, WizLightConnectionError,\n    ConnectionRefusedError)"
+  - (Platform, dict[SensorType, set[ValueType]])
+  - (Platform, dict[str, list[str]])
+  - "(Platform.ALARM_CONTROL_PANEL, Platform.BINARY_SENSOR, Platform.BUTTON,\n   \
+    \ Platform.CLIMATE, Platform.COVER, Platform.DEVICE_TRACKER, Platform.FAN,\n \
+    \   Platform.LIGHT, Platform.LOCK, Platform.NUMBER, Platform.SELECT,\n    Platform.SENSOR,\
+    \ Platform.SIREN, Platform.SWITCH)"
+  - (Platform.BINARY_SENSOR, CONF_BINARY_SENSORS)
+  - (Platform.BINARY_SENSOR, Platform.LIGHT, Platform.SENSOR, Platform.SWITCH)
+  - (Platform.CLIMATE, CONF_CLIMATES)
+  - (Platform.COVER, CONF_COVERS)
+  - (Platform.FAN, CONF_FANS)
+  - (Platform.LIGHT, CONF_LIGHTS)
+  - (Platform.SENSOR, CONF_SENSORS)
+  - (Platform.SWITCH, CONF_SWITCHES)
+  - (REPORT_CONFIG_MIN_INT, REPORT_CONFIG_MAX_INT, REPORT_CONFIG_RPT_CHANGE)
+  - (REPORT_CONFIG_MIN_INT_ASAP, REPORT_CONFIG_MAX_INT, REPORT_CONFIG_RPT_CHANGE)
+  - "(REPORT_CONFIG_MIN_INT_BATTERY_SAVE, REPORT_CONFIG_MAX_INT_BATTERY_SAVE,\n  \
+    \  REPORT_CONFIG_RPT_CHANGE)"
+  - "(REPORT_CONFIG_MIN_INT_IMMEDIATE, REPORT_CONFIG_MAX_INT,\n    REPORT_CONFIG_RPT_CHANGE)"
+  - (REPORT_CONFIG_MIN_INT_OP, REPORT_CONFIG_MAX_INT, REPORT_CONFIG_RPT_CHANGE)
+  - (RelativeRotaryAction.START, RelativeRotaryAction.REPEAT)
+  - "(RelativeRotaryDirection.CLOCK_WISE, RelativeRotaryDirection.COUNTER_CLOCK_WISE\n\
+    \    )"
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE, '')
+  - (SensorDeviceClass | str | None, type[BaseUnitConverter])
+  - (SensorDeviceClass, set[SensorStateClass])
+  - (SensorDeviceClass, set[type[StrEnum] | str | None])
+  - (SensorType, list[Platform])
+  - (SensorType, set[ValueType])
+  - "(ServerDisconnectedError, asyncio.TimeoutError, PvApiConnectionError,\n    PvApiResponseStatusError)"
+  - "(SynologyDSMAPIErrorException, SynologyDSMLoginFailedException,\n    SynologyDSMRequestException)"
+  - "(SynologyDSMLogin2SARequiredException,\n    SynologyDSMLoginDisabledAccountException,\n\
+    \    SynologyDSMLoginInvalidException, SynologyDSMLoginPermissionDeniedException\n\
+    \    )"
+  - (TemperatureUnit, str)
+  - (True, RepeatMode.ALL)
+  - (True, RepeatMode.OFF)
+  - (True, RepeatMode.ONE)
+  - (UIClass | UIWidget, Platform | None)
+  - "(UnitOfMeasurement(unit='', aliases={' '}, device_classes={\n    SensorDeviceClass.AQI,\
+    \ SensorDeviceClass.DATE, SensorDeviceClass.\n    MONETARY, SensorDeviceClass.TIMESTAMP}),\
+    \ UnitOfMeasurement(unit=\n    PERCENTAGE, aliases={'pct', 'percent', '% RH'},\
+    \ device_classes={\n    SensorDeviceClass.BATTERY, SensorDeviceClass.HUMIDITY,\n\
+    \    SensorDeviceClass.POWER_FACTOR}), UnitOfMeasurement(unit=\n    CONCENTRATION_PARTS_PER_MILLION,\
+    \ device_classes={SensorDeviceClass.CO,\n    SensorDeviceClass.CO2}), UnitOfMeasurement(unit=\n\
+    \    CONCENTRATION_PARTS_PER_BILLION, device_classes={SensorDeviceClass.CO,\n\
+    \    SensorDeviceClass.CO2}, conversion_unit=CONCENTRATION_PARTS_PER_MILLION,\n\
+    \    conversion_fn=lambda x: x / 1000), UnitOfMeasurement(unit=\n    UnitOfElectricCurrent.AMPERE,\
+    \ aliases={'a', 'ampere'}, device_classes={\n    SensorDeviceClass.CURRENT}),\
+    \ UnitOfMeasurement(unit=\n    UnitOfElectricCurrent.MILLIAMPERE, aliases={'ma',\
+    \ 'milliampere'},\n    device_classes={SensorDeviceClass.CURRENT}, conversion_unit=\n\
+    \    UnitOfElectricCurrent.AMPERE, conversion_fn=lambda x: x / 1000),\n    UnitOfMeasurement(unit=UnitOfEnergy.WATT_HOUR,\
+    \ aliases={'wh',\n    'watthour'}, device_classes={SensorDeviceClass.ENERGY}),\n\
+    \    UnitOfMeasurement(unit=UnitOfEnergy.KILO_WATT_HOUR, aliases={'kwh',\n   \
+    \ 'kilowatt-hour', 'kW\xB7h'}, device_classes={SensorDeviceClass.ENERGY}),\n \
+    \   UnitOfMeasurement(unit=UnitOfVolume.CUBIC_FEET, aliases={'ft3'},\n    device_classes={SensorDeviceClass.GAS}),\
+    \ UnitOfMeasurement(unit=\n    UnitOfVolume.CUBIC_METERS, aliases={'m3'}, device_classes={\n\
+    \    SensorDeviceClass.GAS}), UnitOfMeasurement(unit=LIGHT_LUX, aliases={\n  \
+    \  'lux'}, device_classes={SensorDeviceClass.ILLUMINANCE}),\n    UnitOfMeasurement(unit=CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,\n\
+    \    aliases={'ug/m3', '\xB5g/m3', 'ug/m\xB3'}, device_classes={SensorDeviceClass.\n\
+    \    NITROGEN_DIOXIDE, SensorDeviceClass.NITROGEN_MONOXIDE,\n    SensorDeviceClass.NITROUS_OXIDE,\
+    \ SensorDeviceClass.OZONE,\n    SensorDeviceClass.PM1, SensorDeviceClass.PM25,\
+    \ SensorDeviceClass.PM10,\n    SensorDeviceClass.SULPHUR_DIOXIDE, SensorDeviceClass.\n\
+    \    VOLATILE_ORGANIC_COMPOUNDS}), UnitOfMeasurement(unit=\n    CONCENTRATION_MILLIGRAMS_PER_CUBIC_METER,\
+    \ aliases={'mg/m3'},\n    device_classes={SensorDeviceClass.NITROGEN_DIOXIDE,\
+    \ SensorDeviceClass.\n    NITROGEN_MONOXIDE, SensorDeviceClass.NITROUS_OXIDE,\
+    \ SensorDeviceClass.\n    OZONE, SensorDeviceClass.PM1, SensorDeviceClass.PM25,\
+    \ SensorDeviceClass\n    .PM10, SensorDeviceClass.SULPHUR_DIOXIDE, SensorDeviceClass.\n\
+    \    VOLATILE_ORGANIC_COMPOUNDS}, conversion_unit=\n    CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,\
+    \ conversion_fn=lambda x: x * \n    1000), UnitOfMeasurement(unit=UnitOfPower.WATT,\
+    \ aliases={'watt'},\n    device_classes={SensorDeviceClass.POWER}), UnitOfMeasurement(unit=\n\
+    \    UnitOfPower.KILO_WATT, aliases={'kilowatt'}, device_classes={\n    SensorDeviceClass.POWER}),\
+    \ UnitOfMeasurement(unit=UnitOfPressure.BAR,\n    device_classes={SensorDeviceClass.PRESSURE}),\
+    \ UnitOfMeasurement(unit=\n    UnitOfPressure.MBAR, aliases={'millibar'}, device_classes={\n\
+    \    SensorDeviceClass.PRESSURE}), UnitOfMeasurement(unit=UnitOfPressure.HPA,\n\
+    \    aliases={'hpa', 'hectopascal'}, device_classes={SensorDeviceClass.\n    PRESSURE}),\
+    \ UnitOfMeasurement(unit=UnitOfPressure.INHG, aliases={'inhg'\n    }, device_classes={SensorDeviceClass.PRESSURE}),\
+    \ UnitOfMeasurement(unit\n    =UnitOfPressure.PSI, device_classes={SensorDeviceClass.PRESSURE}),\n\
+    \    UnitOfMeasurement(unit=UnitOfPressure.PA, device_classes={\n    SensorDeviceClass.PRESSURE}),\
+    \ UnitOfMeasurement(unit=\n    SIGNAL_STRENGTH_DECIBELS, aliases={'db'}, device_classes={\n\
+    \    SensorDeviceClass.SIGNAL_STRENGTH}), UnitOfMeasurement(unit=\n    SIGNAL_STRENGTH_DECIBELS_MILLIWATT,\
+    \ aliases={'dbm'}, device_classes={\n    SensorDeviceClass.SIGNAL_STRENGTH}),\
+    \ UnitOfMeasurement(unit=\n    UnitOfTemperature.CELSIUS, aliases={'\xB0c', 'c',\
+    \ 'celsius', '\u2103'},\n    device_classes={SensorDeviceClass.TEMPERATURE}),\
+    \ UnitOfMeasurement(unit\n    =UnitOfTemperature.FAHRENHEIT, aliases={'\xB0f',\
+    \ 'f', 'fahrenheit'},\n    device_classes={SensorDeviceClass.TEMPERATURE}), UnitOfMeasurement(unit\n\
+    \    =UnitOfElectricPotential.VOLT, aliases={'volt'}, device_classes={\n    SensorDeviceClass.VOLTAGE}),\
+    \ UnitOfMeasurement(unit=\n    UnitOfElectricPotential.MILLIVOLT, aliases={'mv',\
+    \ 'millivolt'},\n    device_classes={SensorDeviceClass.VOLTAGE}, conversion_unit=\n\
+    \    UnitOfElectricPotential.VOLT, conversion_fn=lambda x: x / 1000))"
+  - (WEBSOCKET_SSL_PORT, WEBSOCKET_NO_SSL_PORT)
+  - (WizLightNotKnownBulb, *WIZ_EXCEPTIONS)
+  - ([HomeAssistant, 'ActiveConnection', dict[str, Any]], Awaitable[None])
+  - ([HomeAssistant, 'ActiveConnection', dict[str, Any]], None)
+  - ([Telegram], Awaitable[None])
+  - ([Telegram], None)
+  - ([float], float)
+  - (a, b)
+  - "(asyncio.TimeoutError, AccessoryNotFoundError, EncryptionError,\n    AccessoryDisconnectedError)"
+  - (asyncio.TimeoutError, SenseAPITimeoutException)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (asyncio.TimeoutError, aiohttp.ClientError, ServiceFailedException)
+  - (asyncio.TimeoutError, socket.error, RuntimeError, BrokenPipeError)
+  - (binary_sensor.DOMAIN, binary_sensor.BinarySensorDeviceClass.DOOR)
+  - (binary_sensor.DOMAIN, binary_sensor.BinarySensorDeviceClass.GARAGE_DOOR)
+  - (binary_sensor.DOMAIN, binary_sensor.BinarySensorDeviceClass.LOCK)
+  - (binary_sensor.DOMAIN, binary_sensor.BinarySensorDeviceClass.OPENING)
+  - (binary_sensor.DOMAIN, binary_sensor.BinarySensorDeviceClass.WINDOW)
+  - (climate.HVACMode.AUTO, 'AUTO')
+  - (climate.HVACMode.COOL, 'COOL')
+  - (climate.HVACMode.DRY, 'CUSTOM')
+  - (climate.HVACMode.FAN_ONLY, 'CUSTOM')
+  - (climate.HVACMode.HEAT, 'HEAT')
+  - (climate.HVACMode.HEAT_COOL, 'AUTO')
+  - (climate.HVACMode.OFF, 'OFF')
+  - (cond_ha, cond_codes)
+  - (cover.DOMAIN, cover.CoverDeviceClass.AWNING)
+  - (cover.DOMAIN, cover.CoverDeviceClass.CURTAIN)
+  - (cover.DOMAIN, cover.CoverDeviceClass.DOOR)
+  - (cover.DOMAIN, cover.CoverDeviceClass.GARAGE)
+  - (cover.DOMAIN, cover.CoverDeviceClass.GATE)
+  - (cover.DOMAIN, cover.CoverDeviceClass.SHUTTER)
+  - (cover.DOMAIN, cover.CoverDeviceClass.WINDOW)
+  - (event.DOMAIN, event.EventDeviceClass.DOORBELL)
+  - (float, float)
+  - (float, float, float)
+  - (humidifier.DOMAIN, humidifier.HumidifierDeviceClass.DEHUMIDIFIER)
+  - (humidifier.DOMAIN, humidifier.HumidifierDeviceClass.HUMIDIFIER)
+  - (int, int)
+  - (k, v)
+  - (key, val)
+  - (key, value)
+  - (media_player.DOMAIN, media_player.MediaPlayerDeviceClass.RECEIVER)
+  - (media_player.DOMAIN, media_player.MediaPlayerDeviceClass.SPEAKER)
+  - (media_player.DOMAIN, media_player.MediaPlayerDeviceClass.TV)
+  - (pin, zone)
+  - (platform, platform_types)
+  - (platform, s_type_name)
+  - (s_type_name, v_type_name)
+  - (sensor.DOMAIN, sensor.SensorDeviceClass.AQI)
+  - (sensor.DOMAIN, sensor.SensorDeviceClass.HUMIDITY)
+  - (sensor.DOMAIN, sensor.SensorDeviceClass.TEMPERATURE)
+  - (socket.gaierror, SenseWebsocketException)
+  - "(socket.gaierror, asyncio.TimeoutError, SenseAPITimeoutException,\n    SenseAPIException)"
+  - (str | None, bytes | None)
+  - (str | int, ...)
+  - (str, Any)
+  - (str, Callable[[float, str, str], float])
+  - (str, Callable[[list[Torrent]], list[Torrent]])
+  - (str, Dialect)
+  - (str, KrakenResponseEntry)
+  - (str, MediaClass)
+  - (str, MediaType)
+  - (str, Platform)
+  - (str, dict[str, UnitOfMeasurement])
+  - (str, int)
+  - (str, list)
+  - (str, list[int])
+  - (str, list[str])
+  - (str, set[str])
+  - (str, str | bool)
+  - (str, str | int | float | None)
+  - (str, str)
+  - (str, timedelta)
+  - (str, type[BaseUnitConverter])
+  - (switch.DOMAIN, switch.SwitchDeviceClass.OUTLET)
+  - (switch.DOMAIN, switch.SwitchDeviceClass.SWITCH)
+  - (tuple[bool, RepeatMode], list[_PlayMode])
+  - (tuple[bool, str], list[_PlayMode])
+  - (tuple[str, SensorType], set[ValueType])
+  - SensorType, set[ValueType]
+  - '[float, str, str], float'
+  - '[list[Torrent]], list[Torrent]'
+  - bool, RepeatMode
+  - bool, str
+  - str, Any
+  - str, SensorType
+  - str, UnitOfMeasurement
+  - str, list[str]

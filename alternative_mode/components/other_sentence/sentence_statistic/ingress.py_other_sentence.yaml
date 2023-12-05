@@ -1,0 +1,15 @@
+ingress.py:
+  schemas: []
+  sets:
+  - "{hdrs.CONTENT_LENGTH, hdrs.CONTENT_ENCODING, hdrs.TRANSFER_ENCODING, hdrs.\n\
+    \    ACCEPT_ENCODING, hdrs.SEC_WEBSOCKET_EXTENSIONS, hdrs.\n    SEC_WEBSOCKET_PROTOCOL,\
+    \ hdrs.SEC_WEBSOCKET_VERSION, hdrs.SEC_WEBSOCKET_KEY}"
+  - '{hdrs.CONTENT_TYPE}'
+  - "{hdrs.TRANSFER_ENCODING, hdrs.CONTENT_LENGTH, hdrs.CONTENT_TYPE, hdrs.\n    CONTENT_ENCODING}"
+  tuples:
+  - ()
+  - (204, 304)
+  - (aiohttp.ClientError, aiohttp.ClientPayloadError, ConnectionResetError)
+  - (data, _)
+  - (name, value)
+  - (str, str)

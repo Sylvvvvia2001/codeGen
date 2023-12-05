@@ -1,0 +1,23 @@
+media_source.py:
+- CameraMediaSource
+- DmsMediaSource
+- IdentifierTimeType
+- IdentifierType
+- IncompatibleMediaSource
+- JellyfinSource
+- MediaId
+- MediaSourceOptions
+- MotionEyeMediaSource
+- NestEventMediaStore
+- NestMediaSource
+- NetatmoSource
+- ProtectMediaSource
+- RadioMediaSource
+- SimpleEventType
+- SynologyDsmMediaView
+- SynologyPhotosMediaSource
+- SynologyPhotosMediaSourceIdentifier
+- SystemBridgeSource
+- TTSMediaSource
+- XboxMediaItem
+- XboxSource

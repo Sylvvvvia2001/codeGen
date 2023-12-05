@@ -1,0 +1,15 @@
+local_source.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('image/', 'video/', 'audio/')
+  - (None, '')
+  - (child.can_play, child.title)
+  - (mime_type, _)
+  - (source_dir_id, _, location)
+  - (source_dir_id, location)
+  - (str, Any)
+  - (str, str)
+  - (websocket_api.ERR_NOT_FOUND, 'Path does not exist')
+  - (websocket_api.ERR_NOT_SUPPORTED, 'Path is not a file')
+  - (websocket_api.ERR_UNKNOWN_ERROR, str(err))

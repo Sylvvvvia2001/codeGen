@@ -1,0 +1,5 @@
+trigger_entity.py:
+- __init__
+- _handle_coordinator_update
+- _process_data
+- _set_unique_id

@@ -1,0 +1,89 @@
+fan.py:
+  schemas: []
+  sets:
+  - '{''HBUniversalCFRemote'', ''HDC52EastwindFan''}'
+  - '{''STARKVIND Air purifier'', ''STARKVIND Air purifier table''}'
+  - '{''_attr_current_direction''}'
+  - '{''_attr_is_on''}'
+  - '{''_attr_oscillating''}'
+  - '{''_attr_percentage''}'
+  - '{''_attr_preset_mode''}'
+  - '{''fs'', ''fsd'', ''fskg'', ''kj'', ''cs''}'
+  - '{(DOMAIN, data.device.address)}'
+  - '{(DOMAIN, device[''uid''])}'
+  - "{FanEntityFeature.SET_SPEED, FanEntityFeature.DIRECTION, FanEntityFeature.\n\
+    \    OSCILLATE}"
+  - "{fan.ATTR_DIRECTION, fan.ATTR_OSCILLATING, fan.ATTR_PERCENTAGE_STEP, fan.\n \
+    \   ATTR_PERCENTAGE, fan.ATTR_PRESET_MODE, fan.ATTR_PRESET_MODES}"
+  tuples:
+  - ('true', STATE_ON)
+  - (1, 10)
+  - (1, 255)
+  - (1, 3)
+  - (1, 4)
+  - (1, 6)
+  - (1, 99)
+  - (1, max_step)
+  - (1, self._device.props.get('max_speed', 3))
+  - (1, self._speed_count)
+  - (1, self._static_info.supported_speed_levels)
+  - (60, 150)
+  - (60, 300)
+  - "(CONF_STATE_TOPIC, CONF_COMMAND_TOPIC, CONF_DIRECTION_STATE_TOPIC,\n    CONF_DIRECTION_COMMAND_TOPIC,\
+    \ CONF_PERCENTAGE_STATE_TOPIC,\n    CONF_PERCENTAGE_COMMAND_TOPIC, CONF_PRESET_MODE_STATE_TOPIC,\n\
+    \    CONF_PRESET_MODE_COMMAND_TOPIC, CONF_OSCILLATION_STATE_TOPIC,\n    CONF_OSCILLATION_COMMAND_TOPIC)"
+  - (DOMAIN, data.device.address)
+  - (DOMAIN, device['uid'])
+  - (DPCode.FAN_MODE, DPCode.MODE)
+  - "(DPCode.FAN_SPEED_PERCENT, DPCode.FAN_SPEED, DPCode.SPEED, DPCode.\n    FAN_SPEED_ENUM)"
+  - (DPCode.SWITCH_FAN, DPCode.FAN_SWITCH, DPCode.SWITCH)
+  - (DPCode.SWITCH_HORIZONTAL, DPCode.SWITCH_VERTICAL)
+  - "(ExtraStateAttributeDetails(description='fan_speed_home', metric_key=\n    METRIC_KEY_PROFILE_FAN_SPEED_HOME),\
+    \ ExtraStateAttributeDetails(\n    description='fan_speed_away', metric_key=\n\
+    \    METRIC_KEY_PROFILE_FAN_SPEED_AWAY), ExtraStateAttributeDetails(\n    description='fan_speed_boost',\
+    \ metric_key=\n    METRIC_KEY_PROFILE_FAN_SPEED_BOOST))"
+  - (FAN_MODE_AUTO, FAN_MODE_SLEEP)
+  - (FanDirection, str)
+  - (FanInfo, FanState)
+  - (FanMode.Minimum, FanMode.Maximum)
+  - "(IntellifireFanEntityDescription(key='fan', translation_key='fan', set_fn=\n\
+    \    lambda control_api, speed: control_api.set_fan_speed(speed=speed),\n    value_fn=lambda\
+    \ data: data.fanspeed, speed_range=(1, 4)),)"
+  - (IntellifireFanEntityDescription, ...)
+  - (MODEL_FAN_P10, MODEL_FAN_P11)
+  - (STATE_ON, STATE_OFF)
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (ValueError, TypeError)
+  - ([Command | list[Command]], Any)
+  - ([IntellifireControlAsync, int], Awaitable)
+  - ([IntellifirePollData], bool)
+  - ([], None)
+  - (_, max_speed)
+  - (air_purifier_service, method)
+  - (config[CONF_SPEED_RANGE_MIN], config[CONF_SPEED_RANGE_MAX])
+  - (float, float)
+  - (int, float)
+  - (int, int)
+  - (int, set[str])
+  - (int, str)
+  - (k, v)
+  - (key, tpl)
+  - (key, value)
+  - (min_speed, max_speed)
+  - (name, status, actions)
+  - (object_id, entity_config)
+  - (self._min_speed, self._max_speed)
+  - (state, label)
+  - (str, Any)
+  - (str, Callable[[PublishPayloadType], PublishPayloadType])
+  - (str, Callable[[ReceivePayloadType], ReceivePayloadType])
+  - (str, DeviceInfo)
+  - (str, Template | None)
+  - (str, int | None)
+  - (str, int)
+  - (str, str | bool | int)
+  - (str, str)
+  - (zwave_value, mapped_preset_mode)
+  - '[PublishPayloadType], PublishPayloadType'
+  - '[ReceivePayloadType], ReceivePayloadType'

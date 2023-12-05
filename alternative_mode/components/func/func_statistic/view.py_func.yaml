@@ -1,0 +1,6 @@
+view.py:
+- context
+- json
+- json_message
+- register
+- request_handler_factory

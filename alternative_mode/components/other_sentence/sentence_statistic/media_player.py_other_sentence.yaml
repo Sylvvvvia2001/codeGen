@@ -1,0 +1,293 @@
+media_player.py:
+  schemas: []
+  sets:
+  - '{''HD'', ''MS'', ''MU'', ''MV'', ''NS'', ''NSE'', ''PS'', ''SI'', ''SS'', ''TF'',
+    ''ZM'', ''Z2'', ''Z3''}'
+  - '{''database''}'
+  - '{''outputs'', ''volume''}'
+  - '{''player'', ''options'', ''volume''}'
+  - '{''update'', ''config''}'
+  - '{(CAST_DOMAIN, str(cast_info.uuid).replace(''-'', ''''))}'
+  - '{(CONNECTION_NETWORK_MAC, format_mac(device.config.mac_address))}'
+  - '{(CONNECTION_NETWORK_MAC, mac)}'
+  - '{(DOMAIN, ''plex.tv-clients'')}'
+  - '{(DOMAIN, cast(str, self.unique_id))}'
+  - '{(DOMAIN, config_entry.unique_id)}'
+  - '{(DOMAIN, config_entry_id)}'
+  - '{(DOMAIN, device.config.device_id)}'
+  - '{(DOMAIN, device.uuid())}'
+  - '{(DOMAIN, device_info[ATTR_UDN])}'
+  - '{(DOMAIN, mac_address)}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._console.id)}'
+  - '{(DOMAIN, self.device_id)}'
+  - '{(DOMAIN, self.machine_identifier)}'
+  - '{(DOMAIN, self.player.player_id)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, str(self.unique_id))}'
+  - '{(DOMAIN, uid)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(DOMAIN, user_id)}'
+  - '{(DOMAIN, uuid)}'
+  - '{(HEOS_DOMAIN, player.player_id)}'
+  - '{(PS4_DOMAIN, status[''host-id''])}'
+  - '{ATTR_ENTITY_ID}'
+  - '{MediaPlayerState.OFF, MediaPlayerState.IDLE}'
+  - '{MediaPlayerState.OFF, None}'
+  - '{MediaPlayerState.OFF, STATE_UNAVAILABLE, STATE_UNKNOWN}'
+  - '{MediaPlayerState.PLAYING, MediaPlayerState.IDLE, MediaPlayerState.PAUSED}'
+  - '{MediaPlayerState.PLAYING, MediaPlayerState.PAUSED}'
+  - '{MediaPlayerState.STANDBY, MediaPlayerState.PAUSED}'
+  - '{MediaPlayerState.STANDBY, MediaPlayerState.PLAYING}'
+  - '{MediaType.ALBUM, MediaType.ARTIST}'
+  - '{MediaType.APP, MediaType.URL}'
+  - '{MediaType.MOVIE, MediaType.EPISODE, MediaType.TVSHOW}'
+  - '{MediaType.MOVIE, MediaType.MUSIC, MediaType.TVSHOW}'
+  - '{MediaType.MUSIC, MediaType.PLAYLIST}'
+  - '{MediaType.MUSIC, MediaType.TRACK}'
+  - '{MediaType.MUSIC, MediaType.URL, MediaType.VIDEO}'
+  - '{MediaType.TRACK, MediaType.ALBUM, MediaType.ARTIST}'
+  - '{MediaType.TRACK, MediaType.EPISODE, MediaType.MUSIC}'
+  - '{MediaType.URL, MediaType.MUSIC}'
+  - '{MediaType.URL, MediaType.VIDEO}'
+  - '{ModelType.CAMERA}'
+  - '{None, MediaPlayerState.OFF, MediaPlayerState.IDLE}'
+  - '{PlayMode.RANDOM, PlayMode.SHUFFLE}'
+  - '{PlayMode.REPEAT_ONE, PlayMode.REPEAT_ALL}'
+  - '{True, MediaPlayerEnqueue.ADD, MediaPlayerEnqueue.REPLACE}'
+  tuples:
+  - ('4 Tune Fairytales', 'My Little Fantasy (Radio Edit)')
+  - "('Charly Lownoise & Mental Theo',\n    'Ultimate Sex Track (Bass-D & King Matthew\
+    \ Remix)')"
+  - ('Critical Mass', 'Dancing Together')
+  - ('Diss Reaction', 'Jiiieehaaaa ')
+  - ('Dune', 'Hardcore Vibes')
+  - ('Flamman And Abraxas', 'Good To Go (Radio Mix)')
+  - ('Highlander', 'Hold Me Now (Bass-D & King Matthew Remix)')
+  - ('Juggernaut', 'Ruffneck Rules Da Artcore Scene (12" Edit)')
+  - ('Lipstick', "I'm A Raver")
+  - ('LocalMusic', 'RadioService')
+  - ('Lovechild', 'All Out Of Love (DJ Weirdo & Sim Remix)')
+  - ('Nakatomi', 'Children Of The Night')
+  - ('Netflix',)
+  - ('PAUSED_PLAYBACK', 'STOPPED')
+  - ('Party Animals', 'Have You Ever Been Mellow? (Flamman & Abraxas Radio Mix)')
+  - ('Paul Elstak', 'Luv U More')
+  - ('Playing', 'Buffering')
+  - ('Playlist', 'Spotify')
+  - ('Power Saver', 'Roku')
+  - ('Prophet', "The Big Boys Don't Cry")
+  - ('RS232', 'Telnet')
+  - ('Rob G.*', 'Ecstasy, You Got What I Need')
+  - ('Standby', 'StandbyKeep')
+  - ('Stingray & Sonic Driver', 'Cold As Ice (El Bruto Remix)')
+  - ('Technohead', 'I Wanna Be A Hippy (Flamman & Abraxas Radio Mix)')
+  - ('external_arc', 'external_speaker')
+  - ('fm', 'am', 'tuner')
+  - ('http', 'https')
+  - ('library', 'track')
+  - "('media_content_rating', 'media_library_title', 'player_source',\n    'media_summary',\
+    \ 'username')"
+  - ('on', 'warm-up')
+  - ('pause', 'stop')
+  - ('playing', 'buffering', 'photo_viewer')
+  - ('stream', 'play')
+  - ()
+  - (1, 2)
+  - (Any, Any, Any)
+  - (CAST_DOMAIN, str(cast_info.uuid).replace('-', ''))
+  - (CONF_INCLUDE, CONF_EXCLUDE)
+  - (CONNECTION_NETWORK_MAC, format_mac(device.config.mac_address))
+  - (CONNECTION_NETWORK_MAC, mac)
+  - (Concatenate[_ADBDeviceT, _P], Awaitable[_R])
+  - (Concatenate[_ADBDeviceT, _P], Coroutine[Any, Any, _R | None])
+  - (Concatenate[_DenonDeviceT, _P], Awaitable[_R])
+  - (Concatenate[_DenonDeviceT, _P], Coroutine[Any, Any, _R | None])
+  - (Concatenate[_DlnaDmrEntityT, _P], Awaitable[_R])
+  - (Concatenate[_DlnaDmrEntityT, _P], Coroutine[Any, Any, _R | None])
+  - (Concatenate[_KodiEntityT, _P], Awaitable[Any])
+  - (Concatenate[_KodiEntityT, _P], Coroutine[Any, Any, None])
+  - (Concatenate[_OpenhomeDeviceT, _P], Awaitable[_R])
+  - (Concatenate[_OpenhomeDeviceT, _P], Coroutine[Any, Any, _R | None])
+  - (Concatenate[_PlexMediaPlayerT, _P], _R | None)
+  - (Concatenate[_PlexMediaPlayerT, _P], _R)
+  - (Concatenate[_T, _P], Awaitable[None])
+  - (Concatenate[_T, _P], Coroutine[Any, Any, None])
+  - (Concatenate[_VlcDeviceT, _P], Awaitable[None])
+  - (Concatenate[_VlcDeviceT, _P], Coroutine[Any, Any, None])
+  - (ConnectionError, TimeoutError)
+  - (DOMAIN, 'plex.tv-clients')
+  - (DOMAIN, cast(str, self.unique_id))
+  - (DOMAIN, config_entry.unique_id)
+  - (DOMAIN, config_entry_id)
+  - (DOMAIN, coordinator.server_id)
+  - (DOMAIN, device.config.device_id)
+  - (DOMAIN, device.uuid())
+  - (DOMAIN, device_info[ATTR_UDN])
+  - (DOMAIN, mac_address)
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._console.id)
+  - (DOMAIN, self._server.roon_id)
+  - (DOMAIN, self.device_id)
+  - (DOMAIN, self.machine_identifier)
+  - (DOMAIN, self.player.player_id)
+  - (DOMAIN, self.plex_server.machine_identifier)
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, str(self.unique_id))
+  - (DOMAIN, uid)
+  - (DOMAIN, unique_id)
+  - (DOMAIN, user_id)
+  - (DOMAIN, uuid)
+  - (DeviceState.Idle, DeviceState.Loading)
+  - (DeviceState.Paused, DeviceState.Seeking, DeviceState.Stopped)
+  - (EspMediaPlayerState, MediaPlayerState)
+  - "(EventType.PLAYER_UPDATED, EventType.PLAYER_CONNECTED, EventType.\n    PLAYER_DISCONNECTED,\
+    \ EventType.PLAYER_NAME_RECEIVED, EventType.\n    PLAYER_CLI_EVENT)"
+  - (HEOS_DOMAIN, player.player_id)
+  - (HeosError, ValueError)
+  - (KeyError, ValueError)
+  - (LgNetCastError, RequestException)
+  - (MediaPlayerEnqueue.NEXT, MediaPlayerEnqueue.PLAY)
+  - (MediaPlayerInfo, MediaPlayerEntityState)
+  - (MediaType | str, str)
+  - (MediaType.APP, MediaType.CHANNEL)
+  - (None, '', '------')
+  - (None, 'library')
+  - (None, 'root')
+  - (None, None)
+  - (OSError, TypeError, ValueError)
+  - (PS4_DOMAIN, status['host-id'])
+  - (PlayMode.REPEAT_ALL, PlayMode.RANDOM)
+  - (PlayMode.SHUFFLE, PlayMode.RANDOM)
+  - (PlaybackState | PowerState, MediaPlayerState | None)
+  - (ProtocolError, TransportError)
+  - (RepeatMode, int)
+  - (SERVICE_VOLUME_UP, SERVICE_VOLUME_DOWN)
+  - (SONOS_STATE_PLAYING, SONOS_STATE_TRANSITIONING)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (SongpalException, asyncio.TimeoutError)
+  - (SourceCodes.DAB, SourceCodes.FM)
+  - (StopIteration, TypeError, KeyError)
+  - (TransportError, CannotConnectError)
+  - (TransportError, ProtocolError)
+  - (TransportState.PAUSED_PLAYBACK, TransportState.PAUSED_RECORDING)
+  - (TransportState.PLAYING, TransportState.PAUSED_PLAYBACK)
+  - (TransportState.PLAYING, TransportState.TRANSITIONING)
+  - (TypeError, ValueError)
+  - (UpnpConnectionError, UpnpResponseError, UpnpXmlContentError)
+  - (ValueError, OSError, AttributeError, AssertionError)
+  - ([BrowseMedia], bool)
+  - ([], None)
+  - ([_FuncType[_ADBDeviceT, _P, _R]], _ReturnFuncType[_ADBDeviceT, _P, _R])
+  - "([_FuncType[_OpenhomeDeviceT, _P, _R]], _ReturnFuncType[_OpenhomeDeviceT,\n \
+    \   _P, _R])"
+  - ([_FuncType[_P]], _ReturnFuncType[_P])
+  - ([str, Mapping[str, Any]], None)
+  - (_, event_ip)
+  - (_ADBDeviceT, _P, _R)
+  - (_OpenhomeDeviceT, _P, _R)
+  - (_P, Awaitable[Any])
+  - (_P, Coroutine[Any, Any, None])
+  - (app.name, app.app_id)
+  - (application_id, application)
+  - (artwork.bytes, artwork.mimetype)
+  - (asyncio.TimeoutError, ClientError)
+  - (asyncio.TimeoutError, ClientError, BluesoundPlayer._TimeoutException)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (asyncio.TimeoutError, aiohttp.ClientError, UpnpError)
+  - (attr, feature)
+  - (attr, param)
+  - (bytes | None, str | None)
+  - (content, None)
+  - (content, content_type)
+  - (cur_minutes, cur_seconds, total_minutes, total_seconds)
+  - (current_source_raw[0], (current_source_raw[1],))
+  - (current_source_raw[1],)
+  - (dev_id, dev)
+  - (dr.CONNECTION_NETWORK_MAC, self._sysinfo.macAddr)
+  - (dr.CONNECTION_NETWORK_MAC, self._sysinfo.wirelessMacAddr)
+  - (dr.CONNECTION_NETWORK_MAC, self.mac_address)
+  - (dr.CONNECTION_UPNP, self._device.profile_device.root_device.udn)
+  - (dr.CONNECTION_UPNP, self._device.udn)
+  - (entity_id, entry)
+  - (event_ip or '0.0.0.0', 0)
+  - (feature_name, support_flag)
+  - (float, int)
+  - (function_name, feature)
+  - (hass_key, didl_key)
+  - (i, item)
+  - (idx, state)
+  - (idx, zone_id)
+  - (image, 'image/png')
+  - (image, mime)
+  - (image_url, _, _)
+  - (index, favorite)
+  - (index, name)
+  - (index, select)
+  - (index, track)
+  - (k, source)
+  - (k, source.find('major').text)
+  - (k, v)
+  - (k, val)
+  - (key, val)
+  - (key, value)
+  - (list_id, _, channel_id)
+  - (media_data, 'image/png')
+  - (media_status, media_status_received)
+  - (mime_type, _)
+  - (mode, meaning)
+  - (mpd.ConnectionError, OSError, ValueError)
+  - (n, k)
+  - (name, channel)
+  - (pipes, playlists)
+  - (player_mode, media_type, *keys)
+  - (pretty_name, name)
+  - (protocol, _, content_format, _)
+  - (pychromecast.const.CAST_TYPE_AUDIO, pychromecast.const.CAST_TYPE_GROUP)
+  - (response, _)
+  - (self._attr_media_title, self._attr_media_artist, self._attr_media_album_name)
+  - (self._attr_volume_level, self._attr_is_volume_muted)
+  - (self._receiver.zone, ALL_ZONES)
+  - (self._time_remaining, self._attr_media_duration)
+  - (service, method)
+  - (session_id, session_data)
+  - (shuffle, repeat)
+  - (socket.timeout, OSError)
+  - (sonos_shuffle, sonos_repeat)
+  - (source, alias)
+  - (source, status)
+  - (source_id, extra)
+  - (source_id, name)
+  - (srcid, source)
+  - "(state, self._attr_app_id, running_apps, _, self._attr_is_volume_muted,\n   \
+    \ self._attr_volume_level, self._attr_extra_state_attributes[ATTR_HDMI_INPUT]\n\
+    \    )"
+  - "(state, self._attr_app_id, running_apps, self._attr_extra_state_attributes[\n\
+    \    ATTR_HDMI_INPUT])"
+  - (str, Any)
+  - (str, EmbyDevice)
+  - (str, MediaPlayerState)
+  - (str, RepeatMode)
+  - (str, datetime)
+  - (str, pychromecast.controllers.media.MediaStatus)
+  - (str, set[str])
+  - (str, str | bool)
+  - (str, str)
+  - (title_id, data)
+  - (uri, item)
+  - (volume, muted)
+  - (zone_id, extra)
+  - (zone_id, name)
+  - Any, Any, None
+  - Any, Any, _R | None
+  - _ADBDeviceT, _P
+  - _ADBDeviceT, _P, _R
+  - _DenonDeviceT, _P
+  - _DlnaDmrEntityT, _P
+  - _KodiEntityT, _P
+  - _OpenhomeDeviceT, _P
+  - _OpenhomeDeviceT, _P, _R
+  - _PlexMediaPlayerT, _P
+  - _T, _P
+  - _VlcDeviceT, _P
+  - str, Any

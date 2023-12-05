@@ -1,0 +1,6 @@
+cors.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Resource, ResourceRoute, StaticResource)
+  - (str, aiohttp_cors.ResourceOptions)

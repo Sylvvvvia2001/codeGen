@@ -1,0 +1,8 @@
+states.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (entity_id, db_states)
+  - (entity_id, state_id)
+  - (str, States)
+  - (str, int)

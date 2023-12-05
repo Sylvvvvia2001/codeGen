@@ -1,0 +1,7 @@
+usage.py:
+- install_multiple_bleak_catcher
+- install_multiple_zeroconf_catcher
+- new_zeroconf_init
+- new_zeroconf_new
+- set_cached_services
+- uninstall_multiple_bleak_catcher

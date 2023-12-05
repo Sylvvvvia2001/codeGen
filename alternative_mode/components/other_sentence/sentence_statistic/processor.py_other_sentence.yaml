@@ -1,0 +1,19 @@
+processor.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (EventAsRow, None, None)
+  - (Row | EventAsRow, LazyEventPartialState)
+  - ([Row | EventAsRow], Any)
+  - (bytes | None, Row | EventAsRow | None)
+  - (dict[str, Any], None, None)
+  - (domain, describe_event)
+  - (str, ...)
+  - (str, Any)
+  - (str, bool)
+  - (str, dict[str, Any])
+  - (str, str)
+  - (str, tuple[str, Callable[[LazyEventPartialState], dict[str, Any]]])
+  - '[LazyEventPartialState], dict[str, Any]'
+  - str, Any
+  - str, Callable[[LazyEventPartialState], dict[str, Any]]

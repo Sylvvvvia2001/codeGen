@@ -1,0 +1,11 @@
+advertisement_tracker.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('intervals', 'fallback_intervals', 'sources', '_timings')
+  - (address, tracked_source)
+  - (str, dict[str, Any])
+  - (str, float)
+  - (str, list[float])
+  - (str, str)
+  - str, Any

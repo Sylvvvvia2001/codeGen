@@ -1,0 +1,6 @@
+indieauth.py:
+- __init__
+- _parse_client_id
+- _parse_url
+- handle_starttag
+- verify_client_id

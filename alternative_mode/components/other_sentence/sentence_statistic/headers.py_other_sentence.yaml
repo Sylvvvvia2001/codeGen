@@ -1,0 +1,6 @@
+headers.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([Request], Awaitable[StreamResponse])
+  - (key, value)

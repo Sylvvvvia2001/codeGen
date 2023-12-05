@@ -1,0 +1,6 @@
+update_coordinator.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (SharkIqAuthError, SharkIqNotAuthedError, SharkIqAuthExpiringError)
+  - (str, SharkIqVacuum)

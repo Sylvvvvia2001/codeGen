@@ -1,0 +1,43 @@
+trait.py:
+  schemas: []
+  sets:
+  - '{STATE_UNKNOWN, STATE_UNAVAILABLE}'
+  tuples:
+  - ('AirQuality', 'AQI')
+  - ('CarbonDioxideLevel', 'PARTS_PER_MILLION')
+  - ('CarbonMonoxideLevel', 'PARTS_PER_MILLION')
+  - ('PM10', 'MICROGRAMS_PER_CUBIC_METER')
+  - ('PM2.5', 'MICROGRAMS_PER_CUBIC_METER')
+  - ('VolatileOrganicCompounds', 'PARTS_PER_MILLION')
+  - ('heatcool', 'heat', 'cool')
+  - "((fan.DOMAIN, fan.ATTR_PRESET_MODES, 'preset mode'), (media_player.DOMAIN,\n\
+    \    media_player.ATTR_SOUND_MODE_LIST, 'sound mode'), (input_select.DOMAIN,\n\
+    \    input_select.ATTR_OPTIONS, 'option'), (select.DOMAIN, select.\n    ATTR_OPTIONS,\
+    \ 'option'), (humidifier.DOMAIN, humidifier.\n    ATTR_AVAILABLE_MODES, 'mode'),\
+    \ (light.DOMAIN, light.ATTR_EFFECT_LIST,\n    'effect'))"
+  - (STATE_OFF, STATE_UNKNOWN)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (STATE_UNLOCKING, STATE_LOCKED)
+  - "(binary_sensor.BinarySensorDeviceClass.DOOR, binary_sensor.\n    BinarySensorDeviceClass.GARAGE_DOOR,\
+    \ binary_sensor.\n    BinarySensorDeviceClass.LOCK, binary_sensor.BinarySensorDeviceClass.\n\
+    \    OPENING, binary_sensor.BinarySensorDeviceClass.WINDOW)"
+  - (button.DOMAIN, input_button.DOMAIN, scene.DOMAIN, script.DOMAIN)
+  - (button.DOMAIN, input_button.DOMAIN, script.DOMAIN)
+  - (climate.HVACMode.AUTO, climate.HVACMode.HEAT_COOL)
+  - (command, feature)
+  - "(cover.CoverDeviceClass.DOOR, cover.CoverDeviceClass.GARAGE, cover.\n    CoverDeviceClass.GATE)"
+  - (cover.STATE_CLOSING, cover.STATE_OPENING)
+  - (domain, attr, name)
+  - (fan.DOMAIN, fan.ATTR_PRESET_MODES, 'preset mode')
+  - "(group.DOMAIN, input_boolean.DOMAIN, switch.DOMAIN, fan.DOMAIN, light.\n    DOMAIN,\
+    \ media_player.DOMAIN, humidifier.DOMAIN)"
+  - (humidifier.DOMAIN, humidifier.ATTR_AVAILABLE_MODES, 'mode')
+  - (input_select.DOMAIN, input_select.ATTR_OPTIONS, 'option')
+  - (key, value)
+  - (light.DOMAIN, light.ATTR_EFFECT_LIST, 'effect')
+  - (media_player.DOMAIN, media_player.ATTR_SOUND_MODE_LIST, 'sound mode')
+  - (select.DOMAIN, select.ATTR_OPTIONS, 'option')
+  - (state, required_feature)
+  - (str, Any)
+  - (str, list[str])
+  - (str, str)

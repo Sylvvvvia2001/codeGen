@@ -1,0 +1,14 @@
+storage.py:
+- __init__
+- _async_get_data
+- _async_schedule_save
+- _data_to_save
+- _initialize_frontend_storage
+- async_create_or_update_map
+- async_delete_map
+- async_get_advertisement_history
+- async_get_advertisement_history_as_dict
+- async_set_advertisement_history
+- get_map
+- scanners
+- with_store

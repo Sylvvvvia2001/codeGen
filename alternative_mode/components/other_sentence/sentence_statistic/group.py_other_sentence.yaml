@@ -1,0 +1,24 @@
+group.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, self.group.id)}'
+  - '{HVACMode.OFF}'
+  - "{STATE_ALARM_ARMED_AWAY, STATE_ALARM_ARMED_CUSTOM_BYPASS,\n    STATE_ALARM_ARMED_HOME,\
+    \ STATE_ALARM_ARMED_NIGHT,\n    STATE_ALARM_ARMED_VACATION, STATE_ALARM_TRIGGERED}"
+  - '{STATE_CLEANING, STATE_ON, STATE_RETURNING, STATE_ERROR}'
+  - "{STATE_ECO, STATE_ELECTRIC, STATE_PERFORMANCE, STATE_HIGH_DEMAND,\n    STATE_HEAT_PUMP,\
+    \ STATE_GAS}"
+  - '{STATE_HOME}'
+  - '{STATE_ON, STATE_PAUSED, STATE_PLAYING, STATE_IDLE}'
+  - '{STATE_ON}'
+  - '{STATE_OPEN}'
+  - '{STATE_PROBLEM}'
+  - '{STATE_UNLOCKED}'
+  tuples:
+  - (DOMAIN, self.group.id)
+  - (color.xy.x, color.xy.y)
+  - (f'0x{self._zha_group.group_id:04x}', self.endpoint_id)
+  - (member_ieee, endpoint_id)
+  - (self.name, self.group_id)
+  - (str, Any)
+  - (zigpy.exceptions.ZigbeeException, asyncio.TimeoutError)

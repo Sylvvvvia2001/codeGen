@@ -1,0 +1,187 @@
+discovery.py:
+  schemas: []
+  sets:
+  - '{''Binary Sensor''}'
+  - '{''Fan Switch''}'
+  - "{'Motor Control Class A', 'Motor Control Class B', 'Motor Control Class C',\n\
+    \    'Multiposition Motor'}"
+  - '{''Multilevel Switch''}'
+  - '{''Thermostat''}'
+  - "{'alarm_control_panel', 'binary_sensor', 'button', 'camera', 'climate',\n   \
+    \ 'cover', 'device_automation', 'device_tracker', 'event', 'fan',\n    'humidifier',\
+    \ 'image', 'lawn_mower', 'light', 'lock', 'number', 'scene',\n    'siren', 'select',\
+    \ 'sensor', 'switch', 'tag', 'text', 'update',\n    'vacuum', 'water_heater'}"
+  - '{''fibaro''}'
+  - '{''venetianBlindsTilt''}'
+  - '{(0, ''idle'')}'
+  - '{(dr.CONNECTION_NETWORK_MAC, mac)}'
+  - '{0, 1}'
+  - '{0}'
+  - '{1089}'
+  - '{122}'
+  - '{12340}'
+  - '{12593, 13111}'
+  - '{12593}'
+  - '{12600}'
+  - '{12}'
+  - '{132}'
+  - '{13}'
+  - '{14}'
+  - '{151}'
+  - '{17235}'
+  - '{18756}'
+  - '{1}'
+  - '{23089}'
+  - '{263, 264, 267, 517}'
+  - '{265}'
+  - '{271}'
+  - '{289}'
+  - '{29}'
+  - '{2}'
+  - '{3, 4, 5}'
+  - '{30}'
+  - '{32771}'
+  - '{345}'
+  - '{3}'
+  - '{4096, 4097}'
+  - '{4096}'
+  - '{411}'
+  - '{4}'
+  - '{514}'
+  - '{515}'
+  - '{564}'
+  - '{56}'
+  - '{57}'
+  - '{5905, 5911}'
+  - '{622}'
+  - '{647}'
+  - '{769, 770}'
+  - '{771}'
+  - '{785, 787, 817, 833, 835}'
+  - '{798}'
+  - '{82, 83}'
+  - '{8215}'
+  - '{9216}'
+  - '{99}'
+  - '{CURRENT_COLOR_PROPERTY}'
+  - '{CURRENT_MODE_PROPERTY}'
+  - '{CURRENT_STATE_PROPERTY}'
+  - '{CURRENT_VALUE_PROPERTY}'
+  - '{CommandClass.BARRIER_OPERATOR}'
+  - '{CommandClass.BASIC}'
+  - "{CommandClass.BATTERY, CommandClass.ENERGY_PRODUCTION, CommandClass.\n    SENSOR_ALARM,\
+    \ CommandClass.SENSOR_MULTILEVEL}"
+  - '{CommandClass.BATTERY, CommandClass.SENSOR_ALARM}'
+  - '{CommandClass.CONFIGURATION}'
+  - '{CommandClass.DOOR_LOCK}'
+  - '{CommandClass.HUMIDITY_CONTROL_MODE}'
+  - '{CommandClass.INDICATOR}'
+  - '{CommandClass.LOCK, CommandClass.DOOR_LOCK}'
+  - '{CommandClass.LOCK}'
+  - '{CommandClass.MANUFACTURER_PROPRIETARY}'
+  - '{CommandClass.METER}'
+  - '{CommandClass.NOTIFICATION}'
+  - '{CommandClass.PROTECTION}'
+  - '{CommandClass.SENSOR_ALARM}'
+  - '{CommandClass.SENSOR_BINARY}'
+  - '{CommandClass.SOUND_SWITCH}'
+  - '{CommandClass.SWITCH_BINARY}'
+  - '{CommandClass.SWITCH_COLOR}'
+  - '{CommandClass.SWITCH_MULTILEVEL}'
+  - '{CommandClass.THERMOSTAT_FAN_MODE}'
+  - '{CommandClass.THERMOSTAT_MODE}'
+  - '{CommandClass.THERMOSTAT_SETPOINT}'
+  - '{CommandClass.WINDOW_COVERING}'
+  - '{DEFAULT_TONE_ID_PROPERTY}'
+  - '{DEFAULT_VOLUME_PROPERTY}'
+  - '{DOOR_STATUS_PROPERTY}'
+  - '{HUMIDITY_CONTROL_MODE_PROPERTY}'
+  - '{LOCAL_PROPERTY, RF_PROPERTY}'
+  - '{LOCKED_PROPERTY}'
+  - '{None}'
+  - '{SIGNALING_STATE_PROPERTY}'
+  - '{TARGET_STATE_PROPERTY}'
+  - '{TARGET_VALUE_PROPERTY}'
+  - '{THERMOSTAT_FAN_MODE_PROPERTY}'
+  - '{THERMOSTAT_MODE_PROPERTY}'
+  - '{THERMOSTAT_SETPOINT_PROPERTY}'
+  - '{TONE_ID_PROPERTY}'
+  - '{VALUE_PROPERTY}'
+  - '{ValueType.ANY}'
+  - '{ValueType.BOOLEAN}'
+  - '{ValueType.NUMBER}'
+  - '{ValueType.STRING}'
+  tuples:
+  - ('already_configured', 'single_instance_allowed')
+  - (0, 'idle')
+  - (1, 24)
+  - (1, 25)
+  - (1, 32)
+  - (1, 33)
+  - (2, 33)
+  - (25, 49)
+  - (26, 50)
+  - (33, 66)
+  - (34, 66)
+  - (34, 67)
+  - (50, 74)
+  - (51, 75)
+  - (67, 99)
+  - (68, 99)
+  - (75, 99)
+  - (76, 99)
+  - (ConfigurationValueType.RANGE, ConfigurationValueType.MANUAL_ENTRY)
+  - (MatterDiscoverySchema, None, None)
+  - (MatterEntityInfo, None, None)
+  - (Platform, list[MatterDiscoverySchema])
+  - (TasmotaBaseSensorConfig, DiscoveryHashType)
+  - (ZwaveDiscoveryInfo, None, None)
+  - ([TasmotaDeviceConfig, str], Awaitable[None])
+  - ([], None)
+  - ([str, ThreadRouterDiscoveryData], None)
+  - ([str], None)
+  - (_, cfg)
+  - (bytes, bytes | None)
+  - (cluster_class, match)
+  - (cluster_id, cluster)
+  - (component, discovery_id)
+  - (component, node_id, object_id)
+  - (conf_key, discovery_key)
+  - (dr.CONNECTION_NETWORK_MAC, mac)
+  - (ent_cls, args)
+  - "(entity_class, (group.get_domain_entity_ids(domain),\n    f'{domain}_zha_group_0x{group.group_id:04x}',\
+    \ group.group_id,\n    zha_gateway.coordinator_zha_device))"
+  - (entity_class, claimed)
+  - (extended_mac_address, _)
+  - (extended_mac_address, data)
+  - "(group.get_domain_entity_ids(domain),\n    f'{domain}_zha_group_0x{group.group_id:04x}',\
+    \ group.group_id,\n    zha_gateway.coordinator_zha_device)"
+  - (idx, discovered)
+  - (int, str)
+  - (integration, topics)
+  - (key, issue)
+  - (key, unsub)
+  - (key, val)
+  - (key, value)
+  - (mac, 'automation', 'trigger', trigger_config.trigger_id)
+  - (mac, _)
+  - (matches, claimed)
+  - (node_id, object_id)
+  - (other_mac, other_config)
+  - (other_mac, tasmota_get_device_config(other_config))
+  - (own_mac, own_device_config)
+  - (platform, ent_n_handler_list)
+  - (platform_entity_class, claimed)
+  - (str | None, str)
+  - (str, Any)
+  - (str, DiscoveredBulb)
+  - (str, ElkSystem)
+  - (str, Light)
+  - (str, set[str])
+  - (str, str)
+  - (str, tuple[str, ThreadRouterDiscoveryData])
+  - (tasmota_entity_config, discovery_hash)
+  - (tasmota_sensor_config, discovery_hash)
+  - (type[ZhaEntity], tuple[str, ZHADevice, list[ClusterHandler]])
+  - str, ThreadRouterDiscoveryData
+  - str, ZHADevice, list[ClusterHandler]

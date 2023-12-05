@@ -1,0 +1,17 @@
+schema_template.py:
+  schemas: []
+  sets:
+  - "{'_attr_brightness', '_attr_color_mode', '_attr_color_temp', '_attr_effect',\n\
+    \    '_attr_hs_color', '_attr_is_on'}"
+  - '{ColorMode.ONOFF}'
+  tuples:
+  - "(CONF_BLUE_TEMPLATE, CONF_BRIGHTNESS_TEMPLATE, CONF_COLOR_TEMP_TEMPLATE,\n  \
+    \  CONF_EFFECT_TEMPLATE, CONF_GREEN_TEMPLATE, CONF_RED_TEMPLATE,\n    CONF_STATE_TEMPLATE)"
+  - (CONF_COMMAND_ON_TEMPLATE, CONF_COMMAND_OFF_TEMPLATE)
+  - (CONF_STATE_TOPIC, CONF_COMMAND_TOPIC)
+  - (str, Any)
+  - (str, Callable[[PublishPayloadType, TemplateVarsType], PublishPayloadType])
+  - (str, Callable[[ReceivePayloadType], ReceivePayloadType])
+  - (str, str | None)
+  - '[PublishPayloadType, TemplateVarsType], PublishPayloadType'
+  - '[ReceivePayloadType], ReceivePayloadType'

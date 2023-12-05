@@ -1,0 +1,24 @@
+db_schema.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('statistics', 'statistics_short_term')
+  - (EventData.shared_data.is_(None), Events.event_data)
+  - "(Index('ix_events_event_type_id_time_fired_ts', 'event_type_id',\n    'time_fired_ts'),\
+    \ Index(EVENTS_CONTEXT_ID_BIN_INDEX, 'context_id_bin',\n    mysql_length=CONTEXT_ID_BIN_MAX_LENGTH,\
+    \ mariadb_length=\n    CONTEXT_ID_BIN_MAX_LENGTH), _DEFAULT_TABLE_ARGS)"
+  - (Index('ix_recorder_runs_start_end', 'start', 'end'),)
+  - "(Index('ix_statistics_short_term_statistic_id_start_ts', 'metadata_id',\n   \
+    \ 'start_ts', unique=True),)"
+  - "(Index('ix_statistics_statistic_id_start_ts', 'metadata_id', 'start_ts',\n  \
+    \  unique=True),)"
+  - "(Index(METADATA_ID_LAST_UPDATED_INDEX_TS, 'metadata_id', 'last_updated_ts'),\n\
+    \    Index(STATES_CONTEXT_ID_BIN_INDEX, 'context_id_bin', mysql_length=\n    CONTEXT_ID_BIN_MAX_LENGTH,\
+    \ mariadb_length=CONTEXT_ID_BIN_MAX_LENGTH),\n    _DEFAULT_TABLE_ARGS)"
+  - (StateAttributes.shared_attrs.is_(None), States.attributes)
+  - ([Any], str)
+  - (_DEFAULT_TABLE_ARGS,)
+  - (idx, origin)
+  - (k, v)
+  - (str, Any)
+  - (str, EntityInfo)

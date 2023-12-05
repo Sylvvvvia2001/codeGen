@@ -1,0 +1,20 @@
+exceptions.py:
+- APIRatelimitExceeded
+- CO2Error
+- CannotConnect
+- CredentialsInvalid
+- DeviceNotFound
+- EntityNotFound
+- FitbitApiException
+- FitbitAuthException
+- GoogleTasksApiError
+- InvalidAuth
+- InvalidDeviceAutomationConfig
+- PoweredOff
+- ReolinkException
+- ReolinkSetupException
+- ReolinkWebhookException
+- RequireValidation
+- UnknownError
+- UserNotAdmin
+- UuidChanged

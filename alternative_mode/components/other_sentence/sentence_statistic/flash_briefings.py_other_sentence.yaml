@@ -1,0 +1,7 @@
+flash_briefings.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (b'', HTTPStatus.NOT_FOUND)
+  - (b'', HTTPStatus.UNAUTHORIZED)
+  - (bytes, HTTPStatus)

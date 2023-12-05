@@ -1,0 +1,8 @@
+stt.py:
+- __init__
+- supported_bit_rates
+- supported_channels
+- supported_codecs
+- supported_formats
+- supported_languages
+- supported_sample_rates

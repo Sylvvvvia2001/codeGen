@@ -1,0 +1,27 @@
+image_processing.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (0, 255, 0)
+  - (0, 255, 255)
+  - (255, 255, 0)
+  - (30, 30)
+  - (460, 460)
+  - (:, :, [2, 1, 0])
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (box, score, obj_class)
+  - (category, values)
+  - (face_name, face_file)
+  - (i_pl, i_co)
+  - (image, shapes)
+  - (img_height, img_width, 3)
+  - (img_width, img_height)
+  - (int(x), int(y), int(w), int(h))
+  - (label, values)
+  - (name, classifier)
+  - (name, face)
+  - (plate, confidence)
+  - (s_name, s_id)
+  - (str, float)
+  - (tf.newaxis, ...)
+  - (x, y, w, h)

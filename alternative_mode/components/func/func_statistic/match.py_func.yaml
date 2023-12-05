@@ -1,0 +1,17 @@
+match.py:
+- __init__
+- _compile_fnmatch
+- _local_name_to_index_key
+- _memorized_fnmatch
+- add
+- add_callback_matcher
+- async_clear_address
+- async_setup
+- ble_device_matches
+- build
+- match
+- match_callbacks
+- match_domains
+- remove
+- remove_callback_matcher
+- seen_all_fields

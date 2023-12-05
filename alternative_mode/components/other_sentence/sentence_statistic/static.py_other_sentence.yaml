@@ -1,0 +1,11 @@
+static.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (ValueError, FileNotFoundError)
+  - (filepath, content_type)
+  - (rel_url, self._directory, self._follow_symlinks)
+  - (str, str)
+  - (tuple[str, Path, bool], tuple[Path | None, str | None])
+  - Path | None, str | None
+  - str, Path, bool

@@ -1,0 +1,8 @@
+config_entry.py:
+  schemas: []
+  sets:
+  - '{(dr.CONNECTION_NETWORK_MAC, self.mac_address)}'
+  tuples:
+  - (domain, unique_id)
+  - (dr.CONNECTION_NETWORK_MAC, self.mac_address)
+  - (str, StateType)

@@ -1,0 +1,3 @@
+device_registry.py:
+- websocket_list_devices
+- websocket_update_device

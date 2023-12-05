@@ -1,0 +1,9 @@
+manager.py:
+- Backup
+- BackupManager
+- BackupPlatformProtocol
+- BluetoothManager
+- ESPHomeManager
+- GeoJsonFeedEntityManager
+- LIFXManager
+- ServiceMetadata

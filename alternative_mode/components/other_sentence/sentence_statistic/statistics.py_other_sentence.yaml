@@ -1,0 +1,90 @@
+statistics.py:
+  schemas: []
+  sets:
+  - '{''max'', ''mean'', ''min'', ''change''}'
+  - '{''max'', ''mean'', ''min''}'
+  - '{''sum''}'
+  - '{metadata[''statistic_id'']}'
+  - '{statistic_id}'
+  tuples:
+  - ('5minute', 'day', 'hour', 'week', 'month')
+  - ('change', 'last_reset', 'max', 'mean', 'min', 'state', 'sum')
+  - ('hour', 'day', 'week', 'month', 'year')
+  - ('last_reset', 'max', 'mean', 'min', 'state', 'sum')
+  - ('max', 'mean', 'min', 'change')
+  - (0, 0)
+  - (Callable[[float, float], bool], Callable[[float], tuple[float, float]])
+  - (Statistics, StatisticsShortTerm)
+  - "(Statistics.metadata_id, Statistics.start_ts, Statistics.mean, Statistics.\n\
+    \    min, Statistics.max, Statistics.last_reset_ts, Statistics.state,\n    Statistics.sum)"
+  - "(StatisticsShortTerm.metadata_id, StatisticsShortTerm.start_ts,\n    StatisticsShortTerm.last_reset_ts,\
+    \ StatisticsShortTerm.state,\n    StatisticsShortTerm.sum, func.row_number().over(partition_by=\n\
+    \    StatisticsShortTerm.metadata_id, order_by=StatisticsShortTerm.start_ts.\n\
+    \    desc()).label('rownum'))"
+  - "(StatisticsShortTerm.metadata_id, StatisticsShortTerm.start_ts,\n    StatisticsShortTerm.mean,\
+    \ StatisticsShortTerm.min, StatisticsShortTerm.\n    max, StatisticsShortTerm.last_reset_ts,\
+    \ StatisticsShortTerm.state,\n    StatisticsShortTerm.sum)"
+  - "(StatisticsShortTerm.metadata_id, func.avg(StatisticsShortTerm.mean), func.\n\
+    \    min(StatisticsShortTerm.min), func.max(StatisticsShortTerm.max))"
+  - ([Exception], bool)
+  - ([float | None], float | None)
+  - ([float, float], bool)
+  - ([float], float)
+  - ([float], tuple[float, float])
+  - (_, meta)
+  - (_, metadata_id)
+  - (_id, info)
+  - (_same_day_ts, _day_start_end_ts)
+  - (_same_day_ts, _day_start_end_ts_cached)
+  - (_same_month_ts, _month_start_end_ts)
+  - (_same_month_ts, _month_start_end_ts_cached)
+  - (_same_week_ts, _week_start_end_ts)
+  - (_same_week_ts, _week_start_end_ts_cached)
+  - (domain, _object_id)
+  - (domain, platform)
+  - (fake_entry,)
+  - (float, float)
+  - (idx, key)
+  - (int, StatisticDataTimestamp)
+  - (int, int)
+  - (int, list[Row])
+  - (key, column)
+  - (key, meta)
+  - (key, value)
+  - (meta_id, group)
+  - (meta_id, stats_list)
+  - (metadata_id, _mean, _min, _max)
+  - (metadata_id, id_)
+  - (metadata_id, start, last_reset_ts, state, _sum, _)
+  - (metadata_id, stats_metadata)
+  - (metadata_id, summary_item)
+  - (modified_statistic_id, metadata_id)
+  - (start, end)
+  - "(start_local.astimezone(dt_util.UTC).timestamp(), (start_local + timedelta(\n\
+    \    days=1)).astimezone(dt_util.UTC).timestamp())"
+  - "(start_local.astimezone(dt_util.UTC).timestamp(), (start_local + timedelta(\n\
+    \    days=7)).astimezone(dt_util.UTC).timestamp())"
+  - "(start_local.astimezone(dt_util.UTC).timestamp(), end_local.astimezone(\n   \
+    \ dt_util.UTC).timestamp())"
+  - (statistic_id, rows)
+  - (statistic_id, stat_list)
+  - (str | None, type[BaseUnitConverter])
+  - (str, Any)
+  - (str, dict[str, Any])
+  - (str, dict[str, int | float])
+  - (str, float | None)
+  - (str, float)
+  - (str, int)
+  - (str, list[StatisticsRow])
+  - (str, list[ValidationIssue])
+  - (str, str | None)
+  - (str, str)
+  - (str, tuple[int, StatisticMetaData])
+  - (table.id, table.mean, table.min, table.max, table.state, table.sum)
+  - (type[StatisticsBase], ...)
+  - '[float, float], bool'
+  - '[float], tuple[float, float]'
+  - float, float
+  - int, StatisticMetaData
+  - str, Any
+  - str, int | float

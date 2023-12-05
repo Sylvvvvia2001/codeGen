@@ -1,0 +1,5 @@
+addon_manager.py:
+- AddonError
+- AddonInfo
+- AddonManager
+- AddonState

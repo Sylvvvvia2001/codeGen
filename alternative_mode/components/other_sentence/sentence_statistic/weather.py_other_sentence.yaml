@@ -1,0 +1,73 @@
+weather.py:
+  schemas: []
+  sets:
+  - '{''temperature'', ''datetime''}'
+  - '{''temperature'', ATTR_FORECAST_TIME}'
+  - '{(DOMAIN, config_entry.entry_id)}'
+  - '{(DOMAIN, entry.entry_id)}'
+  - '{(DOMAIN, f''{latitude}, {longitude}'')}'
+  - '{(DOMAIN, self.platform.config_entry.unique_id)}'
+  - '{(DOMAIN, station_id)}'
+  - '{(DOMAIN, thermostat[''identifier''])}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(DOMAIN,)}'
+  - "{ATTR_CONDITION_CLEAR_NIGHT, ATTR_CONDITION_CLOUDY, ATTR_CONDITION_FOG,\n   \
+    \ ATTR_CONDITION_HAIL, ATTR_CONDITION_LIGHTNING,\n    ATTR_CONDITION_LIGHTNING_RAINY,\
+    \ ATTR_CONDITION_PARTLYCLOUDY,\n    ATTR_CONDITION_POURING, ATTR_CONDITION_RAINY,\
+    \ ATTR_CONDITION_SNOWY,\n    ATTR_CONDITION_SNOWY_RAINY, ATTR_CONDITION_SUNNY,\
+    \ ATTR_CONDITION_WINDY,\n    ATTR_CONDITION_WINDY_VARIANT, ATTR_CONDITION_EXCEPTIONAL}"
+  tuples:
+  - ('a',)
+  - ('apparent_temperature', 'wind_gust_speed', 'dew_point')
+  - ('b', 'j', 'o', 'r')
+  - ('c', 'p')
+  - ('d', 'n')
+  - ('daily', 'hourly')
+  - ('daily', 'hourly', 'twice_daily')
+  - ('daily',)
+  - ('f', 'h', 'k', 'm')
+  - ('g',)
+  - ('l', 'q')
+  - ('s',)
+  - ('u', 'i', 'v', 't')
+  - ('w',)
+  - ()
+  - (AsyncWeatherSensor, AsyncWeatherSensorPlus)
+  - "(CONF_APPARENT_TEMPERATURE_TEMPLATE, CONF_CLOUD_COVERAGE_TEMPLATE,\n    CONF_DEW_POINT_TEMPLATE,\
+    \ CONF_FORECAST_DAILY_TEMPLATE,\n    CONF_FORECAST_HOURLY_TEMPLATE, CONF_FORECAST_TWICE_DAILY_TEMPLATE,\n\
+    \    CONF_OZONE_TEMPLATE, CONF_PRESSURE_TEMPLATE, CONF_VISIBILITY_TEMPLATE,\n\
+    \    CONF_WIND_BEARING_TEMPLATE, CONF_WIND_GUST_SPEED_TEMPLATE,\n    CONF_WIND_SPEED_TEMPLATE)"
+  - (CONF_CONDITION_TEMPLATE, CONF_TEMPERATURE_TEMPLATE, CONF_HUMIDITY_TEMPLATE)
+  - (DOMAIN, config_entry.entry_id)
+  - (DOMAIN, entry.entry_id)
+  - (DOMAIN, f'{latitude}, {longitude}')
+  - (DOMAIN, self.platform.config_entry.unique_id)
+  - (DOMAIN, station_id)
+  - (DOMAIN, thermostat['identifier'])
+  - (DOMAIN, unique_id)
+  - (DOMAIN,)
+  - (FORECAST_MODE_DAILY, FORECAST_MODE_ONECALL_DAILY)
+  - (HOURLY, NOWCAST)
+  - (IndexError, KeyError)
+  - (KeyError, ValueError, TypeError)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - "(TimestampDataUpdateCoordinator[MetOfficeData],\n    TimestampDataUpdateCoordinator[MetOfficeData],\n\
+    \    TimestampDataUpdateCoordinator[MetOfficeData],\n    TimestampDataUpdateCoordinator[MetOfficeData])"
+  - (ValueError, IndexError, KeyError)
+  - (WeatherCode.CLEAR, WeatherCode.MOSTLY_CLEAR)
+  - (api_key, ha_key)
+  - (asyncio.TimeoutError, SmhiForecastException)
+  - (cond_ha, cond_codes)
+  - (condition, codes)
+  - (day, high, low)
+  - (forecast_type,)
+  - (index, time)
+  - (k, v)
+  - (key, value)
+  - (latitude, longitude)
+  - (mode, mode_id)
+  - (str, Any)
+  - (str, list[int])
+  - (str, list[str])
+  - (tuple[str, int | None], ...)
+  - str, int | None

@@ -1,0 +1,7 @@
+date.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, unique_id)}'
+  tuples:
+  - (DOMAIN, unique_id)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)

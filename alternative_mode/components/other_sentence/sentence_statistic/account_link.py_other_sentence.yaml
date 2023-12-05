@@ -1,0 +1,6 @@
+account_link.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (aiohttp.ClientError, asyncio.TimeoutError)
+  - (str, Any)

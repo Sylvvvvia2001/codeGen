@@ -1,0 +1,210 @@
+diagnostics.py:
+  schemas: []
+  sets:
+  - "{'HouseID', 'OfflineKeys', 'installUserID', 'invitations', 'key', 'pins',\n \
+    \   'pubsubChannel', 'recentImage', 'remoteOperateSecret', 'users', 'zWaveDSK'}"
+  - '{''SerialNumber'', ''SocSerialNumber''}'
+  - '{''access_token'', ''entity_picture''}'
+  - "{'access_token', 'refresh_token', 'restricted_access_token',\n    'restricted_refresh_token',\
+    \ 'webhook_id', 'cloudhook_url', 'lat_ne',\n    'lat_sw', 'lon_ne', 'lon_sw',\
+    \ 'coordinates', 'name', 'timetable',\n    'zones', 'pseudo', 'url'}"
+  - '{''access_token''}'
+  - "{'address', 'name', 'mac', 'device_id', 'user_id', 'id', 'mail_address',\n  \
+    \  'report_account'}"
+  - "{'anon_id', 'gateway_mac', 'geo_info', 'serial', 'x_authkey',\n    'x_fingerprint',\
+    \ 'x_iapp_key', 'x_ssh_hostkey_fingerprint', 'x_vwirekey'}"
+  - '{''bc_filter_list'', ''x_passphrase''}'
+  - '{''bridgeid'', ''mac'', ''panid''}'
+  - '{''bssid'', ''essid''}'
+  - '{''date'', ''area'', ''deviceArea'', ''name'', ''time'', ''reportTime'', ''userString''}'
+  - '{''dealer_contact_info''}'
+  - '{''description'', ''latitude'', ''longitude'', ''contractId'', ''address''}'
+  - '{''device_id'', ''ip_address'', ''mac_address''}'
+  - '{''device_id'', ''name'', ''serial_number'', ''ssid''}'
+  - '{''homeId'', ''location''}'
+  - '{''host''}'
+  - '{''hublot'', ''hash''}'
+  - "{'id', 'ical_uuid', 'summary', 'description', 'location', 'attendees',\n    'recurring_event_id'}"
+  - '{''id'', ''latitude'', ''longitude'', ''altitude''}'
+  - "{'location', 'ssid', 'id', 'macAddress', 'parentDeviceUid', 'qrId',\n    'serial',\
+    \ 'uid', 'email', 'firstName', 'lastName', 'username', 'podUid',\n    'deviceUid'}"
+  - '{''mac_addr'', ''serial_number'', ''ip_addr'', ''ipv6_addr''}'
+  - '{''manager'', ''uuid'', ''mac_id''}'
+  - '{''roomId'', ''homeId''}'
+  - '{''root.Network'', ''System.SerialNumber''}'
+  - "{'serial', 'Mac', 'ip6', 'hostname6', 'ip4', 'hostname4', 'deviceID',\n    'startUrl',\
+    \ 'currentPage', 'SSID', 'BSSID'}"
+  - '{''serial'', ''device_id''}'
+  - "{'serial_number', 'full_serial_number', 'location', 'full_serial_number',\n \
+    \   'printed_full_serial_number', 'administration_number'}"
+  - "{'serialnumber_encrypted', 'serialnumber', 'deviceid_encrypted', 'deviceid',\n\
+    \    'username', 'password', 'title', 'unique_id'}"
+  - "{'startURL', 'mqttBrokerPassword', 'mqttBrokerUsername',\n    'remoteAdminPassword',\
+    \ 'wifiKey', 'authPassword', 'authUsername',\n    'mqttBrokerUrl', 'kioskPin',\
+    \ 'wifiSSID', 'screensaverWallpaperURL',\n    'barcodeScanTargetUrl', 'launcherBgUrl',\
+    \ 'clientCaUrl', 'urlWhitelist',\n    'alarmSoundFileUrl', 'errorURL', 'actionBarIconUrl',\
+    \ 'kioskWifiPin',\n    'knoxApnConfig', 'injectJsCode', 'mdmApnConfig', 'mdmProxyConfig',\n\
+    \    'wifiEnterpriseIdentity', 'sebExamKey', 'sebConfigKey', 'kioskPinEnc',\n\
+    \    'remoteAdminPasswordEnc'}"
+  - "{'unique_id', 'alias', 'mac', 'mic_mac', 'host', 'hwId', 'oemId',\n    'deviceId',\
+    \ 'latitude', 'latitude_i', 'longitude', 'longitude_i',\n    'username'}"
+  - '{''wiFiSsidDefault'', ''wiFiSSID''}'
+  - '{(DOMAIN, device.id)}'
+  - '{(DOMAIN, entry.data[CONF_GATEWAY_ID])}'
+  - '{(DOMAIN, hass_data[PYNUT_UNIQUE_ID])}'
+  - '{(DOMAIN, str(entry.unique_id))}'
+  - "{API_ACCOUNT_AMOUNT, API_RESOURCE_PATH, CONF_API_KEY, CONF_API_TOKEN,\n    CONF_ID,\
+    \ CONF_TITLE}"
+  - '{ATTR_CONNECTIONS, ATTR_IDENTIFIERS}'
+  - "{ATTR_IEEE, CONF_UNIQUE_ID, CONF_ALARM_MASTER_CODE, 'network_key',\n    CONF_NWK_EXTENDED_PAN_ID,\
+    \ 'partner_ieee'}"
+  - '{ATTR_LATITUDE, ATTR_LONGITUDE}'
+  - "{ATTR_LATITUDE_CAP, ATTR_LONGITUDE_CAP, ATTR_REPORTING_AREA,\n    ATTR_STATE_CODE,\
+    \ CONF_API_KEY, CONF_LATITUDE, CONF_LONGITUDE,\n    CONF_TITLE, CONF_UNIQUE_ID}"
+  - "{CONF_ADDRESS, CONF_CODE, CONF_CREDIT_CARD, CONF_EXPIRES, CONF_LOCATION,\n  \
+    \  CONF_LOCATION_NAME, CONF_PAYMENT_PROFILE_ID, CONF_SERIAL, CONF_SID,\n    CONF_SYSTEM_ID,\
+    \ CONF_TITLE, CONF_TOKEN, CONF_UID, CONF_UNIQUE_ID,\n    CONF_USERNAME, CONF_WIFI_SSID}"
+  - '{CONF_ADDRESS, CONF_NAME, ''players_list''}'
+  - '{CONF_ALTITUDE, CONF_LATITUDE, CONF_LONGITUDE, CONF_UUID}'
+  - "{CONF_API_KEY, CONF_API_KEY_CAMEL, CONF_APP_KEY, CONF_APP_KEY_CAMEL,\n    CONF_DEVICE_ID_CAMEL,\
+    \ CONF_LOCATION, CONF_MAC_ADDRESS,\n    CONF_MAC_ADDRESS_CAMEL, CONF_TZ, CONF_TITLE,\
+    \ CONF_UNIQUE_ID}"
+  - "{CONF_API_KEY, CONF_CITY, CONF_COORDINATES, CONF_COUNTRY, CONF_LATITUDE,\n  \
+    \  CONF_LONGITUDE, CONF_STATE, CONF_TITLE, CONF_UNIQUE_ID}"
+  - '{CONF_API_KEY, CONF_LATITUDE, CONF_LONGITUDE, CONF_TITLE, CONF_UNIQUE_ID}'
+  - '{CONF_API_KEY, CONF_LATITUDE, CONF_LONGITUDE, CONF_UNIQUE_ID}'
+  - '{CONF_API_KEY, CONF_LATITUDE, CONF_LONGITUDE}'
+  - '{CONF_API_KEY, CONF_PROFILE_ID, CONF_UNIQUE_ID}'
+  - "{CONF_API_KEY, CONF_TAILNET, 'addresses', 'device_id', 'endpoints',\n    'hostname',\
+    \ 'machine_key', 'name', 'node_key', 'user'}"
+  - '{CONF_API_KEY, CONF_UNIQUE_ID}'
+  - '{CONF_API_KEY}'
+  - '{CONF_AREA_NAME, CONF_PLACE_ID, CONF_TITLE, CONF_UNIQUE_ID}'
+  - "{CONF_BALANCING_AUTHORITY, CONF_BALANCING_AUTHORITY_ABBREV, CONF_LATITUDE,\n\
+    \    CONF_LONGITUDE, CONF_PASSWORD, CONF_TITLE, CONF_UNIQUE_ID, CONF_USERNAME}"
+  - '{CONF_BSSID, CONF_PAIRED_UIDS, CONF_SSID, CONF_TITLE, CONF_UNIQUE_ID, CONF_UID}'
+  - "{CONF_CITY, CONF_DISPLAY_LOCATION, CONF_MARKET, CONF_STATE_CAP, CONF_TITLE,\n\
+    \    CONF_UNIQUE_ID, CONF_ZIP_CAP, CONF_ZIP_CODE}"
+  - '{CONF_CLIENT_ID, CONF_PASSWORD, CONF_USERNAME}'
+  - "{CONF_CLIENT_SECRET, CONF_UNIQUE_ID, CONF_HOST, 'device_id', 'deviceUUID',\n\
+    \    'icon', 'largeIcon'}"
+  - '{CONF_CLOUD_ID, CONF_INSTALL_CODE}'
+  - "{CONF_CLOUD_PASSWORD, CONF_CLOUD_USERNAME, CONF_MAC, CONF_TOKEN, CONF_UNIQUE_ID\n\
+    \    }"
+  - "{CONF_DEVICE_KEY, CONF_EMAIL, CONF_HARDWARE_ID,\n    CONF_LAST_BRIDGE_HARDWARE_ID,\
+    \ CONF_PASSWORD, CONF_TITLE, CONF_UNIQUE_ID,\n    CONF_USERNAME, CONF_USER_ID}"
+  - "{CONF_ELEVATION, CONF_LATITUDE, CONF_LONGITUDE, CONF_PASSWORD,\n    CONF_STATION_ID,\
+    \ CONF_STATION_NAME, CONF_STATION_SOURCE, CONF_TIMEZONE,\n    CONF_UNIQUE_ID}"
+  - '{CONF_HOST, ''n2g_id''}'
+  - '{CONF_HOST, CONF_MAC}'
+  - '{CONF_HOST, CONF_PASSWORD, CONF_USERNAME}'
+  - "{CONF_HOST, REDACT_HUB_ADDRESS, REDACT_MAC_ADDRESS, REDACT_SERIAL_NUMBER,\n \
+    \   ATTR_CONFIGURATION_URL}"
+  - '{CONF_HOST}'
+  - "{CONF_IP_ADDRESS, 'serial', 'wifi_ssid', 'unique_meter_id', 'unique_id',\n  \
+    \  'gas_unique_id'}"
+  - "{CONF_KAMEREON_ACCOUNT_ID, CONF_PASSWORD, CONF_USERNAME, 'radioCode',\n    'registrationNumber',\
+    \ 'vin', 'gpsLatitude', 'gpsLongitude'}"
+  - "{CONF_KNX_ROUTING_BACKBONE_KEY, CONF_KNX_KNXKEY_PASSWORD,\n    CONF_KNX_SECURE_USER_PASSWORD,\
+    \ CONF_KNX_SECURE_DEVICE_AUTHENTICATION}"
+  - '{CONF_LATITUDE, CONF_LONGITUDE, CONF_SENSOR_ID}'
+  - '{CONF_LATITUDE, CONF_LONGITUDE}'
+  - '{CONF_MAC, CONF_PASSWORD, CONF_UNIQUE_ID, CONF_USERNAME}'
+  - '{CONF_MAC_ADDRESS, CONF_PASSWORD, CONF_SERIAL_NUMBER}'
+  - "{CONF_NAME, CONF_PASSWORD, CONF_TITLE, CONF_UNIQUE_ID, CONF_USERNAME,\n    CONF_TOKEN}"
+  - '{CONF_NOISE_PSK, CONF_PASSWORD, CONF_MAC_ADDRESS}'
+  - '{CONF_PASSWORD, CONF_EMAIL, ''title'', ''_id''}'
+  - '{CONF_PASSWORD, CONF_TITLE, CONF_UNIQUE_ID, CONF_USERNAME}'
+  - '{CONF_PASSWORD, CONF_UNIQUE_ID, CONF_USERNAME}'
+  - '{CONF_PASSWORD, CONF_USERNAME}'
+  - '{CONF_PASSWORD}'
+  - '{CONF_TOKEN, CONF_SESSION_ID}'
+  - '{CONF_UNIQUE_ID}'
+  - '{CONF_USERNAME, CONF_PASSWORD, CONF_DEVICE_TOKEN}'
+  - '{CONF_USERNAME, CONF_PASSWORD}'
+  - '{DPCode.ALARM_MESSAGE, DPCode.MOVEMENT_DETECT_PIC}'
+  - '{InfoTrait.NAME}'
+  - '{Objects.BasicInformation.Attributes.Location}'
+  - '{PROP_ETHMAC, PROP_SERIALNO, PROP_WIFIMAC}'
+  tuples:
+  - ('Channel', 'Master')
+  - ('InstanceID', 0)
+  - "('album_name', 'artist', 'channel', 'duration', 'image_url',\n    'queue_position',\
+    \ 'playlist_name', 'source_name', 'title', 'uri')"
+  - "('available', 'battery_info', 'hardware_version', 'household_id',\n    'is_coordinator',\
+    \ 'model_name', 'model_number', 'software_version',\n    'sonos_group_entities',\
+    \ 'subscription_address', 'subscriptions_failed',\n    'version', 'zone_name',\
+    \ '_group_members_missing', '_last_activity',\n    '_last_event_cache')"
+  - ('discovered', 'discovery_known')
+  - (CONF_STREAM_SOURCE, CONF_STILL_IMAGE_URL)
+  - (CONF_TOKEN, 'title')
+  - (DOMAIN, device.id)
+  - (DOMAIN, entry.data[CONF_GATEWAY_ID])
+  - (DOMAIN, hass_data[PYNUT_UNIQUE_ID])
+  - (DOMAIN, str(entry.unique_id))
+  - (Mapping, list)
+  - (None, '')
+  - (WasteType, list[date])
+  - "(ZwaveValueMatcher(property_='userCode', command_class=CommandClass.USER_CODE),\n\
+    \    )"
+  - (_, cluster_id, attribute_id)
+  - (_, device)
+  - (aid, accessory)
+  - (ain, entity)
+  - (api_category, controller)
+  - (api_category, coordinator)
+  - (attr_id, attr_def)
+  - (attribute_path, _value)
+  - (channel, energy)
+  - (channel_id, channel_data)
+  - (client, props)
+  - (cluster_id, cluster)
+  - (coordinator_name, coordinator)
+  - (data_type, coordinator)
+  - (device, device_data)
+  - (device, module)
+  - (device_id, properties)
+  - (dict[str, dict[str, Route]], dict[str, set[str]])
+  - (dpcode, value)
+  - (entity_id, s)
+  - (ep_id, endpoint)
+  - (i, coordinator)
+  - (inst_id, inst_data)
+  - (int, Any)
+  - (int, float, str)
+  - (k, v)
+  - (key, coordinator)
+  - (key, item)
+  - (key, service)
+  - (key, value)
+  - (list, set, tuple)
+  - (module_id, settings)
+  - (repository, coordinator)
+  - (routes, reverse_routes)
+  - (routes, reverse_routes, neighbours)
+  - (session_id, session_data)
+  - (str, Any)
+  - (str, DataUpdateCoordinator[dict[str, Any]])
+  - (str, Device)
+  - (str, GitHubDataUpdateCoordinator)
+  - (str, Neighbour)
+  - (str, Network)
+  - (str, OpenUvCoordinator)
+  - (str, RitualsDataUpdateCoordinator)
+  - (str, RoborockDataUpdateCoordinator)
+  - (str, Route)
+  - (str, Router)
+  - (str, VelbusChannel)
+  - (str, dict)
+  - (str, dict[str, Any])
+  - (str, dict[str, Route])
+  - (str, set[str])
+  - (str, str)
+  - (value_id, zwave_value)
+  - (waste_type, waste_dates)
+  - (watt_datetime, watt_value)
+  - (wh_datetime, wh_value)
+  - str, Any
+  - str, Route
+  - str, dict[str, Route]
+  - str, set[str]

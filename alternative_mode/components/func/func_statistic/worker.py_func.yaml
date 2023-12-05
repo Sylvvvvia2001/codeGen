@@ -1,0 +1,24 @@
+worker.py:
+- __init__
+- __iter__
+- __next__
+- _pop_buffer
+- check_flush_part
+- close
+- create_segment
+- diagnostics
+- discontinuity
+- flush
+- get_audio_bitstream_filter
+- is_keyframe
+- is_valid
+- is_video
+- make_new_av
+- mux_packet
+- next_sequence
+- outputs
+- peek
+- reset
+- sequence
+- stream_id
+- stream_worker

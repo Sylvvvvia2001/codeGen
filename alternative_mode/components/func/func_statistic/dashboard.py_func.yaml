@@ -1,0 +1,11 @@
+dashboard.py:
+- __init__
+- _config_info
+- _config_updated
+- _get_suggested_id
+- _load_config
+- async_get
+- async_get_dashboard
+- mode
+- supports_update
+- url_path

@@ -1,0 +1,30 @@
+recorder.py:
+  schemas: []
+  sets:
+  - '{''last_reset'', ''state'', ''sum''}'
+  - '{''mean'', ''min'', ''max''}'
+  - '{''sum''}'
+  - '{old_metadata[1][''unit_of_measurement''], statistics_unit}'
+  - '{state_unit, metadata_unit}'
+  tuples:
+  - (None, [])
+  - (ValueError, TypeError)
+  - ([float], float)
+  - (convert(fstate), state)
+  - (entity_id, statistics_unit, state_class, valid_float_states)
+  - (float, State)
+  - (fstate, state)
+  - (state_unit, fstates)
+  - (statistics_unit, valid_float_states)
+  - (statistics_unit, valid_fstates)
+  - (str | None, list[tuple[float, State]])
+  - (str, StatisticMetaData)
+  - (str, int | None)
+  - (str, list[State])
+  - (str, list[statistics.ValidationIssue])
+  - (str, list[tuple[float, State]])
+  - (str, set[str])
+  - (str, str | None, str, list[tuple[float, State]])
+  - (str, tuple[int, StatisticMetaData])
+  - float, State
+  - int, StatisticMetaData

@@ -1,0 +1,11 @@
+schema_json.py:
+- _prepare_subscribe_topics
+- _scale_rgbxx
+- _set_flash_and_transition
+- _setup_from_config
+- _supports_color_mode
+- _update_color
+- color_mode
+- config_schema
+- state_received
+- valid_color_configuration

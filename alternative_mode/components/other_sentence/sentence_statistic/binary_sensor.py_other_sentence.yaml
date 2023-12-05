@@ -1,0 +1,1297 @@
+binary_sensor.py:
+  schemas: []
+  sets:
+  - '{''1'', ''alarm''}'
+  - '{''AQAB''}'
+  - '{''AudioMutation'', ''AudioIntensity''}'
+  - "{'BRAKE_FLUID', 'BRAKE_PADS_FRONT', 'BRAKE_PADS_REAR', 'EMISSION_CHECK',\n  \
+    \  'ENGINE_OIL', 'OIL', 'TIRE_WEAR_FRONT', 'TIRE_WEAR_REAR',\n    'VEHICLE_CHECK',\
+    \ 'VEHICLE_TUV'}"
+  - '{''ENGINE_OIL'', ''TIRE_PRESSURE'', ''WASHING_FLUID''}'
+  - '{''SML001'', ''SML002''}'
+  - '{''WL4200'', ''WL4200S''}'
+  - '{''_TZE200_htnnfasr''}'
+  - '{''_attr_is_on'', ''_expired''}'
+  - '{''aqara.feeder.acn001''}'
+  - '{''lumi.airrtc.agl001''}'
+  - '{''lumi.plug.mmeu01'', ''lumi.plug.maeu01''}'
+  - '{''lumi.sensor_smoke.acn03''}'
+  - '{''on'', ''state''}'
+  - '{''open'', ''opened''}'
+  - '{''smokeSensor'', ''occupancySensor'', ''motionSensor'', ''contactSensor''}'
+  - '{''state''}'
+  - '{(CASETA_DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, config_entry.entry_id)}'
+  - '{(DOMAIN, coordinator.data.license_plate)}'
+  - '{(DOMAIN, device[''uid''])}'
+  - '{(DOMAIN, enpower.serial_number)}'
+  - '{(DOMAIN, entry_id)}'
+  - '{(DOMAIN, f''{entry.entry_id}'')}'
+  - '{(DOMAIN, gw_dev.gw_id)}'
+  - '{(DOMAIN, identifier)}'
+  - "{(DOMAIN, self.config_entry.entry_id, self.config_entry.data[CONF_STATION][\n\
+    \    'id'], self.config_entry.data[CONF_STATION]['type'])}"
+  - '{(DOMAIN, self.coordinator.entry.data[CONF_GIID])}'
+  - '{(DOMAIN, self.serial_number)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, serial)}'
+  - '{(DOMAIN, serial_number)}'
+  - '{(DOMAIN, service_location.device_serial_number)}'
+  - '{(DOMAIN, system_info.mac_addr)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(DOMAIN, user_id)}'
+  - '{(HMIPC_DOMAIN, self._home.id)}'
+  - '{(KONNECTED_DOMAIN, device_id)}'
+  - '{(dr.CONNECTION_BLUETOOTH, device.address)}'
+  - '{ActivityType.BRIDGE_OPERATION}'
+  - '{ActivityType.DOORBELL_DING}'
+  - '{ActivityType.DOORBELL_IMAGE_CAPTURE}'
+  - '{ActivityType.DOORBELL_MOTION}'
+  - '{ActivityType.DOOR_OPERATION}'
+  - '{GridStatus.TRANSITION_TO_GRID, GridStatus.CONNECTED}'
+  - '{LockState.LOCKED, LockState.SECURED}'
+  - '{ModelType.CAMERA}'
+  - '{ZoneType.TEMPERATURE, ZoneType.ANALOG_ZONE}'
+  - '{_AUDIO_DETECTED_KEY, _AUDIO_DETECTED_POLLED_KEY}'
+  - '{_CROSSLINE_DETECTED_EVENT_CODE}'
+  - '{_CROSSLINE_DETECTED_KEY, _CROSSLINE_DETECTED_POLLED_KEY}'
+  - '{_MOTION_DETECTED_EVENT_CODE}'
+  - '{_MOTION_DETECTED_KEY, _MOTION_DETECTED_POLLED_KEY}'
+  - '{self.char.uuid}'
+  tuples:
+  - ('1', '2')
+  - ('1', '2', '3')
+  - ('1', '2', '3', '4')
+  - ('1', '2', '3', '4', '6', '7')
+  - ('1', '2', '5', '6')
+  - ('1',)
+  - ('10', '11', '17')
+  - ('11',)
+  - ('2', '3')
+  - ('22', '23')
+  - ('3', '4', '9')
+  - ('5', '6')
+  - ('6', '7', '8', '9')
+  - ('6',)
+  - ('7', '8')
+  - "('86sw1', 'sensor_86sw1', 'sensor_86sw1.aq1', 'remote.b186acn01',\n    'remote.b186acn02')"
+  - "('86sw2', 'sensor_86sw2', 'sensor_86sw2.aq1', 'remote.b286acn01',\n    'remote.b286acn02')"
+  - ('Hue motion sensor',)
+  - ('On', 'Off')
+  - ('Rear Left', 'Rear Right', 'Driver', 'Passenger')
+  - ('TooLow', 'TooHigh')
+  - "('alarm', 'carbon_monoxide', 'fire', 'flag', 'open', 'presence',\n    'vibration',\
+    \ 'water')"
+  - ('alarm', 'leak', 'low', 'not_missing', 'open')
+  - ('cube', 'sensor_cube', 'sensor_cube.aqgl01')
+  - ('device', 'input')
+  - ('device', 'overpower')
+  - ('device', 'overtemp')
+  - ('doorbots', 'authorized_doorbots', 'stickup_cams')
+  - ('from_time', 'to_time', 'from_uv', 'to_uv')
+  - ('in_meeting', 'muted')
+  - ('input', 'input')
+  - ('light', 'overpower')
+  - ('magnet', 'sensor_magnet', 'sensor_magnet.aq2')
+  - ('mdi:pump', 'mdi:pump-off')
+  - ('mdi:sync', 'mdi:sync-off')
+  - ('motion', 'sensor_motion', 'sensor_motion.aq2')
+  - ('natgas', 'sensor_natgas')
+  - ('open',)
+  - ('relay', 'input')
+  - ('relay', 'overpower')
+  - ('sensor', 'dwIsOpened')
+  - ('sensor', 'extInput')
+  - ('sensor', 'flood')
+  - ('sensor', 'gas')
+  - ('sensor', 'motion')
+  - ('sensor', 'smoke')
+  - ('sensor', 'vibration')
+  - ('smoke', 'sensor_smoke')
+  - "('start_time', 'end_time', 'available', 'active', 'assigned_function_ids',\n\
+    \    'skill_ids', 'type', 'assigned_function')"
+  - "('switch', 'sensor_switch', 'sensor_switch.aq2', 'sensor_switch.aq3',\n    'remote.b1acn01')"
+  - ('vibrate', 'tilt', 'free_fall', 'actively')
+  - ('vibration', 'vibration.aq1')
+  - ('x', 'y', 'z')
+  - "((EventTopic.FENCE_GUARD, self.device.api.vapix.fence_guard), (EventTopic.\n\
+    \    LOITERING_GUARD, self.device.api.vapix.loitering_guard), (EventTopic.\n \
+    \   MOTION_GUARD, self.device.api.vapix.motion_guard), (EventTopic.\n    OBJECT_ANALYTICS,\
+    \ self.device.api.vapix.object_analytics), (EventTopic.\n    MOTION_DETECTION_4,\
+    \ self.device.api.vapix.vmd4))"
+  - ()
+  - (*chem_sensor_description.data_root, chem_sensor_description.key)
+  - (*scg_sensor_description.data_root, scg_sensor_description.key)
+  - (..., bool)
+  - (0, 1)
+  - (4107,)
+  - (ATTR_NO_WATER, ATTR_WATER_TANK_DETACHED)
+  - (ATTR_POWERSUPPLY_ATTACHED,)
+  - (ATTR_PTC_STATUS,)
+  - (ATTR_WATER_TANK_DETACHED,)
+  - "(AirzoneBinarySensorEntityDescription(attributes={'errors': AZD_ERRORS,\n   \
+    \ 'warnings': AZD_WARNINGS}, device_class=BinarySensorDeviceClass.PROBLEM,\n \
+    \   entity_category=EntityCategory.DIAGNOSTIC, key=AZD_PROBLEMS),)"
+  - "(AirzoneBinarySensorEntityDescription(attributes={'errors': AZD_ERRORS},\n  \
+    \  device_class=BinarySensorDeviceClass.PROBLEM, entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ key=AZD_PROBLEMS),)"
+  - "(AirzoneBinarySensorEntityDescription(device_class=BinarySensorDeviceClass.\n\
+    \    RUNNING, key=AZD_ACTIVE), AirzoneBinarySensorEntityDescription(\n    attributes={'errors':\
+    \ AZD_ERRORS, 'warnings': AZD_WARNINGS},\n    device_class=BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC, key=AZD_PROBLEMS))"
+  - "(AirzoneBinarySensorEntityDescription(device_class=BinarySensorDeviceClass.\n\
+    \    RUNNING, key=AZD_ACTIVE), AirzoneBinarySensorEntityDescription(\n    attributes={'warnings':\
+    \ AZD_WARNINGS}, device_class=\n    BinarySensorDeviceClass.PROBLEM, entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, key=AZD_PROBLEMS))"
+  - "(AirzoneBinarySensorEntityDescription(device_class=BinarySensorDeviceClass.\n\
+    \    RUNNING, key=AZD_AIR_DEMAND, translation_key='air_demand'),\n    AirzoneBinarySensorEntityDescription(device_class=\n\
+    \    BinarySensorDeviceClass.BATTERY, key=AZD_BATTERY_LOW),\n    AirzoneBinarySensorEntityDescription(device_class=\n\
+    \    BinarySensorDeviceClass.RUNNING, key=AZD_FLOOR_DEMAND, translation_key=\n\
+    \    'floor_demand'), AirzoneBinarySensorEntityDescription(attributes={\n    'errors':\
+    \ AZD_ERRORS}, device_class=BinarySensorDeviceClass.PROBLEM,\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ key=AZD_PROBLEMS))"
+  - (AirzoneBinarySensorEntityDescription, ...)
+  - "(AmbientBinarySensorDescription(key=TYPE_BATTOUT, device_class=\n    BinarySensorDeviceClass.BATTERY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, on_state=0), AmbientBinarySensorDescription(key=TYPE_BATT1,\n\
+    \    translation_key='battery_1', device_class=BinarySensorDeviceClass.\n    BATTERY,\
+    \ entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT2,\
+    \ translation_key=\n    'battery_2', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT3,\
+    \ translation_key=\n    'battery_3', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT4,\
+    \ translation_key=\n    'battery_4', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT5,\
+    \ translation_key=\n    'battery_5', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT6,\
+    \ translation_key=\n    'battery_6', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT7,\
+    \ translation_key=\n    'battery_7', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT8,\
+    \ translation_key=\n    'battery_8', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT9,\
+    \ translation_key=\n    'battery_9', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATTIN,\
+    \ translation_key=\n    'interior_battery', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT10,\
+    \ translation_key=\n    'battery_10', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_LEAK1,\
+    \ translation_key=\n    'leak_detector_battery_1', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_BATT_LEAK2,\
+    \ translation_key=\n    'leak_detector_battery_2', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_BATT_LEAK3,\
+    \ translation_key=\n    'leak_detector_battery_3', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_BATT_LEAK4,\
+    \ translation_key=\n    'leak_detector_battery_4', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM1,\
+    \ translation_key=\n    'soil_monitor_battery_1', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM2,\
+    \ translation_key=\n    'soil_monitor_battery_2', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM3,\
+    \ translation_key=\n    'soil_monitor_battery_3', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM4,\
+    \ translation_key=\n    'soil_monitor_battery_4', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM5,\
+    \ translation_key=\n    'soil_monitor_battery_5', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM6,\
+    \ translation_key=\n    'soil_monitor_battery_6', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM7,\
+    \ translation_key=\n    'soil_monitor_battery_7', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM8,\
+    \ translation_key=\n    'soil_monitor_battery_8', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM9,\
+    \ translation_key=\n    'soil_monitor_battery_9', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_SM10,\
+    \ translation_key=\n    'soil_monitor_battery_10', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_CO2,\
+    \ translation_key=\n    'co2_battery', device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=0),\n    AmbientBinarySensorDescription(key=TYPE_BATT_LIGHTNING,\
+    \ translation_key\n    ='lightning_detector_battery', device_class=BinarySensorDeviceClass.\n\
+    \    BATTERY, entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_LEAK1,\
+    \ translation_key=\n    'leak_detector_1', device_class=BinarySensorDeviceClass.MOISTURE,\n\
+    \    on_state=1), AmbientBinarySensorDescription(key=TYPE_LEAK2,\n    translation_key='leak_detector_2',\
+    \ device_class=BinarySensorDeviceClass\n    .MOISTURE, on_state=1), AmbientBinarySensorDescription(key=TYPE_LEAK3,\n\
+    \    translation_key='leak_detector_3', device_class=BinarySensorDeviceClass\n\
+    \    .MOISTURE, on_state=1), AmbientBinarySensorDescription(key=TYPE_LEAK4,\n\
+    \    translation_key='leak_detector_4', device_class=BinarySensorDeviceClass\n\
+    \    .MOISTURE, on_state=1), AmbientBinarySensorDescription(key=\n    TYPE_PM25IN_BATT,\
+    \ translation_key='pm25_indoor_battery', device_class=\n    BinarySensorDeviceClass.BATTERY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, on_state=0), AmbientBinarySensorDescription(key=\n\
+    \    TYPE_PM25_BATT, translation_key='pm25_battery', device_class=\n    BinarySensorDeviceClass.BATTERY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, on_state=0), AmbientBinarySensorDescription(key=TYPE_RELAY1,\n\
+    \    translation_key='relay_1', device_class=BinarySensorDeviceClass.\n    CONNECTIVITY,\
+    \ entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY2,\
+    \ translation_key=\n    'relay_2', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY3,\
+    \ translation_key=\n    'relay_3', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY4,\
+    \ translation_key=\n    'relay_4', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY5,\
+    \ translation_key=\n    'relay_5', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY6,\
+    \ translation_key=\n    'relay_6', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY7,\
+    \ translation_key=\n    'relay_7', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY8,\
+    \ translation_key=\n    'relay_8', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY9,\
+    \ translation_key=\n    'relay_9', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1),\n    AmbientBinarySensorDescription(key=TYPE_RELAY10,\
+    \ translation_key=\n    'relay_10', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, on_state=1))"
+  - "(AmcrestSensorEntityDescription(key=_AUDIO_DETECTED_KEY, name=\n    _AUDIO_DETECTED_NAME,\
+    \ device_class=BinarySensorDeviceClass.SOUND,\n    event_codes=_AUDIO_DETECTED_EVENT_CODES),\n\
+    \    AmcrestSensorEntityDescription(key=_AUDIO_DETECTED_POLLED_KEY, name=\n  \
+    \  _AUDIO_DETECTED_NAME, device_class=BinarySensorDeviceClass.SOUND,\n    event_codes=_AUDIO_DETECTED_EVENT_CODES,\
+    \ should_poll=True),\n    AmcrestSensorEntityDescription(key=_CROSSLINE_DETECTED_KEY,\
+    \ name=\n    _CROSSLINE_DETECTED_NAME, device_class=BinarySensorDeviceClass.MOTION,\n\
+    \    event_codes={_CROSSLINE_DETECTED_EVENT_CODE}),\n    AmcrestSensorEntityDescription(key=_CROSSLINE_DETECTED_POLLED_KEY,\
+    \ name\n    =_CROSSLINE_DETECTED_NAME, device_class=BinarySensorDeviceClass.MOTION,\n\
+    \    event_codes={_CROSSLINE_DETECTED_EVENT_CODE}, should_poll=True),\n    AmcrestSensorEntityDescription(key=_MOTION_DETECTED_KEY,\
+    \ name=\n    _MOTION_DETECTED_NAME, device_class=BinarySensorDeviceClass.MOTION,\n\
+    \    event_codes={_MOTION_DETECTED_EVENT_CODE}),\n    AmcrestSensorEntityDescription(key=_MOTION_DETECTED_POLLED_KEY,\
+    \ name=\n    _MOTION_DETECTED_NAME, device_class=BinarySensorDeviceClass.MOTION,\n\
+    \    event_codes={_MOTION_DETECTED_EVENT_CODE}, should_poll=True),\n    AmcrestSensorEntityDescription(key=_ONLINE_KEY,\
+    \ name='Online',\n    device_class=BinarySensorDeviceClass.CONNECTIVITY, should_poll=True))"
+  - (AmcrestSensorEntityDescription, ...)
+  - "(AsekoBinarySensorEntityDescription(key='water_flow', translation_key=\n    'water_flow',\
+    \ icon='mdi:waves-arrow-right', value_fn=lambda unit: unit.\n    water_flow),\
+    \ AsekoBinarySensorEntityDescription(key='has_alarm',\n    translation_key='alarm',\
+    \ value_fn=lambda unit: unit.has_alarm,\n    device_class=BinarySensorDeviceClass.SAFETY),\n\
+    \    AsekoBinarySensorEntityDescription(key='has_error', value_fn=lambda\n   \
+    \ unit: unit.has_error, device_class=BinarySensorDeviceClass.PROBLEM))"
+  - (AsekoBinarySensorEntityDescription, ...)
+  - (AsyncContactInterface, AsyncFullFlushContactInterface)
+  - "(AsyncMotionDetectorIndoor, AsyncMotionDetectorOutdoor,\n    AsyncMotionDetectorPushButton)"
+  - (AsyncRainSensor, AsyncWeatherSensorPlus, AsyncWeatherSensorPro)
+  - (AsyncShutterContact, AsyncShutterContactMagnetic)
+  - (AsyncWeatherSensor, AsyncWeatherSensorPlus, AsyncWeatherSensorPro)
+  - "(AugustDoorbellBinarySensorEntityDescription(key='ding', device_class=\n    BinarySensorDeviceClass.OCCUPANCY,\
+    \ value_fn=_retrieve_ding_state,\n    is_time_based=True),)"
+  - "(AugustDoorbellBinarySensorEntityDescription(key='motion', device_class=\n  \
+    \  BinarySensorDeviceClass.MOTION, value_fn=_retrieve_motion_state,\n    is_time_based=True),\
+    \ AugustDoorbellBinarySensorEntityDescription(key=\n    'image capture', translation_key='image_capture',\
+    \ icon='mdi:file-image',\n    value_fn=_retrieve_image_capture_state, is_time_based=True),\n\
+    \    AugustDoorbellBinarySensorEntityDescription(key='online', device_class=\n\
+    \    BinarySensorDeviceClass.CONNECTIVITY, entity_category=EntityCategory.\n \
+    \   DIAGNOSTIC, value_fn=_retrieve_online_state, is_time_based=False))"
+  - (AugustDoorbellBinarySensorEntityDescription, ...)
+  - "(BAFBinarySensorDescription(key='occupancy', device_class=\n    BinarySensorDeviceClass.OCCUPANCY,\
+    \ value_fn=lambda device: cast(bool |\n    None, device.fan_occupancy_detected)),)"
+  - (BINARY_SENSOR_STATUS, *BINARY_SENSOR_TYPES)
+  - "(BMWBinarySensorEntityDescription(key='lids', translation_key='lids',\n    device_class=BinarySensorDeviceClass.OPENING,\
+    \ icon='mdi:car-door-lock',\n    value_fn=lambda v: not v.doors_and_windows.all_lids_closed,\
+    \ attr_fn=lambda\n    v, u: {lid.name: lid.state.value for lid in v.doors_and_windows.lids}),\n\
+    \    BMWBinarySensorEntityDescription(key='windows', translation_key=\n    'windows',\
+    \ device_class=BinarySensorDeviceClass.OPENING, icon=\n    'mdi:car-door', value_fn=lambda\
+    \ v: not v.doors_and_windows.\n    all_windows_closed, attr_fn=lambda v, u: {window.name:\
+    \ window.state.\n    value for window in v.doors_and_windows.windows}),\n    BMWBinarySensorEntityDescription(key='door_lock_state',\
+    \ translation_key\n    ='door_lock_state', device_class=BinarySensorDeviceClass.LOCK,\
+    \ icon=\n    'mdi:car-key', value_fn=lambda v: v.doors_and_windows.door_lock_state\n\
+    \     not in {LockState.LOCKED, LockState.SECURED}, attr_fn=lambda v, u: {\n \
+    \   'door_lock_state': v.doors_and_windows.door_lock_state.value}),\n    BMWBinarySensorEntityDescription(key='condition_based_services',\n\
+    \    translation_key='condition_based_services', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ icon='mdi:wrench', value_fn=lambda v:\n    v.condition_based_services.is_service_required,\
+    \ attr_fn=\n    _condition_based_services), BMWBinarySensorEntityDescription(key=\n\
+    \    'check_control_messages', translation_key='check_control_messages',\n   \
+    \ device_class=BinarySensorDeviceClass.PROBLEM, icon='mdi:car-tire-alert',\n \
+    \   value_fn=lambda v: v.check_control_messages.has_check_control_messages,\n\
+    \    attr_fn=lambda v, u: _check_control_messages(v)),\n    BMWBinarySensorEntityDescription(key='charging_status',\
+    \ translation_key\n    ='charging_status', device_class=BinarySensorDeviceClass.\n\
+    \    BATTERY_CHARGING, icon='mdi:ev-station', value_fn=lambda v: v.\n    fuel_and_battery.charging_status\
+    \ == ChargingState.CHARGING),\n    BMWBinarySensorEntityDescription(key='connection_status',\n\
+    \    translation_key='connection_status', device_class=\n    BinarySensorDeviceClass.PLUG,\
+    \ icon='mdi:car-electric', value_fn=lambda\n    v: v.fuel_and_battery.is_charger_connected),\n\
+    \    BMWBinarySensorEntityDescription(key=\n    'is_pre_entry_climatization_enabled',\
+    \ translation_key=\n    'is_pre_entry_climatization_enabled', icon='mdi:car-seat-heater',\n\
+    \    value_fn=lambda v: v.charging_profile.\n    is_pre_entry_climatization_enabled\
+    \ if v.charging_profile else False))"
+  - (BMWBinarySensorEntityDescription, ...)
+  - (BSH_DOOR_STATE_CLOSED, BSH_DOOR_STATE_LOCKED)
+  - "(BalboaBinarySensorEntityDescription(key='filter_cycle_1', name='Filter1',\n\
+    \    device_class=BinarySensorDeviceClass.RUNNING, is_on_fn=lambda spa: spa.\n\
+    \    filter_cycle_1_running, on_off_icons=FILTER_CYCLE_ICONS),\n    BalboaBinarySensorEntityDescription(key='filter_cycle_2',\
+    \ name=\n    'Filter2', device_class=BinarySensorDeviceClass.RUNNING, is_on_fn=lambda\n\
+    \    spa: spa.filter_cycle_2_running, on_off_icons=FILTER_CYCLE_ICONS))"
+  - (BinarySensorDeviceClass | None, str | None)
+  - (BinarySensorDeviceClass.LIGHT, BinarySensorDeviceClass.MOISTURE)
+  - (BinarySensorDeviceClass.OPENING, BinarySensorDeviceClass.MOISTURE)
+  - (BinarySensorEntity, None, None)
+  - "(BinarySensorEntityDescription(key='GROUND_DELAY', name='Ground Delay',\n   \
+    \ icon='mdi:airport'), BinarySensorEntityDescription(key='GROUND_STOP',\n    name='Ground\
+    \ Stop', icon='mdi:airport'), BinarySensorEntityDescription(\n    key='DEPART_DELAY',\
+    \ name='Departure Delay', icon='mdi:airplane-takeoff'\n    ), BinarySensorEntityDescription(key='ARRIVE_DELAY',\
+    \ name=\n    'Arrival Delay', icon='mdi:airplane-landing'),\n    BinarySensorEntityDescription(key='CLOSURE',\
+    \ name='Closure', icon=\n    'mdi:airplane:off'))"
+  - "(BinarySensorEntityDescription(key='NetworkConnectionEstablished',\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ device_class=\n    BinarySensorDeviceClass.CONNECTIVITY),)"
+  - "(BinarySensorEntityDescription(key='X10 Security Motion Detector',\n    device_class=BinarySensorDeviceClass.MOTION),\n\
+    \    BinarySensorEntityDescription(key='KD101 Smoke Detector', device_class=\n\
+    \    BinarySensorDeviceClass.SMOKE), BinarySensorEntityDescription(key=\n    'Visonic\
+    \ Powercode Motion Detector', device_class=\n    BinarySensorDeviceClass.MOTION),\
+    \ BinarySensorEntityDescription(key=\n    'Alecto SA30 Smoke Detector', device_class=BinarySensorDeviceClass.\n\
+    \    SMOKE), BinarySensorEntityDescription(key='RM174RF Smoke Detector',\n   \
+    \ device_class=BinarySensorDeviceClass.SMOKE))"
+  - "(BinarySensorEntityDescription(key='acfail', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, translation_key='power_loss'),\n\
+    \    BinarySensorEntityDescription(key='battery', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, translation_key='battery'),\
+    \ BinarySensorEntityDescription(\n    key='tamper', device_class=BinarySensorDeviceClass.PROBLEM,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, translation_key='tamper'),\n \
+    \   BinarySensorEntityDescription(key='jam', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, translation_key='jam'))"
+  - "(BinarySensorEntityDescription(key='backlight', translation_key='backlight',\n\
+    \    icon='mdi:clock-digital'), BinarySensorEntityDescription(key=\n    'app_online',\
+    \ translation_key='app_online', device_class=\n    BinarySensorDeviceClass.CONNECTIVITY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC), BinarySensorEntityDescription(key='isCharging',\n\
+    \    device_class=BinarySensorDeviceClass.BATTERY_CHARGING),\n    BinarySensorEntityDescription(key='inputDetected',\
+    \ translation_key=\n    'input_detected', device_class=BinarySensorDeviceClass.POWER))"
+  - "(BinarySensorEntityDescription(key='button', translation_key='button',\n    device_class=BinarySensorDeviceClass.OCCUPANCY),\n\
+    \    BinarySensorEntityDescription(key='motion', device_class=\n    BinarySensorDeviceClass.MOTION))"
+  - "(BinarySensorEntityDescription(key='contactsensor', device_class=\n    BinarySensorDeviceClass.OPENING),\
+    \ BinarySensorEntityDescription(key=\n    'motionsensor', device_class=BinarySensorDeviceClass.MOTION),\n\
+    \    BinarySensorEntityDescription(key='Connectivity', device_class=\n    BinarySensorDeviceClass.CONNECTIVITY),\
+    \ BinarySensorEntityDescription(\n    key='SMOKE_CO', device_class=BinarySensorDeviceClass.SMOKE),\n\
+    \    BinarySensorEntityDescription(key='DOG_BARK', device_class=\n    BinarySensorDeviceClass.SOUND),\
+    \ BinarySensorEntityDescription(key=\n    'GLASS_BREAK', device_class=BinarySensorDeviceClass.SOUND))"
+  - "(BinarySensorEntityDescription(key='hbrake', translation_key='hand_brake',\n\
+    \    device_class=BinarySensorDeviceClass.POWER),\n    BinarySensorEntityDescription(key='hood',\
+    \ translation_key='hood',\n    device_class=BinarySensorDeviceClass.DOOR),\n \
+    \   BinarySensorEntityDescription(key='trunk', translation_key='trunk',\n    device_class=BinarySensorDeviceClass.DOOR),\n\
+    \    BinarySensorEntityDescription(key='alarm', translation_key='alarm',\n   \
+    \ device_class=BinarySensorDeviceClass.PROBLEM),\n    BinarySensorEntityDescription(key='door',\
+    \ translation_key='doors',\n    device_class=BinarySensorDeviceClass.LOCK))"
+  - "(BinarySensorEntityDescription(key='is_moving', device_class=\n    BinarySensorDeviceClass.MOTION),\
+    \ BinarySensorEntityDescription(key=\n    'is_static', device_class=BinarySensorDeviceClass.OCCUPANCY))"
+  - "(BinarySensorEntityDescription(key='is_watering', translation_key=\n    'watering',\
+    \ device_class=BinarySensorDeviceClass.MOISTURE),)"
+  - "(BinarySensorEntityDescription(key='kioskMode', translation_key=\n    'kiosk_mode',\
+    \ entity_category=EntityCategory.DIAGNOSTIC),\n    BinarySensorEntityDescription(key='plugged',\
+    \ translation_key=\n    'plugged_in', device_class=BinarySensorDeviceClass.PLUG,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC),\n    BinarySensorEntityDescription(key='isDeviceAdmin',\
+    \ translation_key=\n    'device_admin', entity_category=EntityCategory.DIAGNOSTIC))"
+  - "(BinarySensorEntityDescription(key='moisture', device_class=\n    BinarySensorDeviceClass.MOISTURE),)"
+  - "(BinarySensorEntityDescription(key='mullvad_exit_ip', name=\n    'Mullvad Exit\
+    \ IP', device_class=BinarySensorDeviceClass.CONNECTIVITY),)"
+  - "(BinarySensorEntityDescription(key='pH Status', translation_key='ph_status',\n\
+    \    device_class=BinarySensorDeviceClass.PROBLEM),\n    BinarySensorEntityDescription(key='Chlorine\
+    \ Status', translation_key=\n    'chlorine_status', device_class=BinarySensorDeviceClass.PROBLEM))"
+  - "(BinarySensorEntityDescription(key='ph_status', translation_key='ph_status',\n\
+    \    device_class=BinarySensorDeviceClass.PROBLEM),\n    BinarySensorEntityDescription(key='chlorine_status',\
+    \ translation_key=\n    'chlorine_status', device_class=BinarySensorDeviceClass.PROBLEM))"
+  - "(BinarySensorEntityDescription(key='raid_degraded', name='degraded',\n    device_class=BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC),)"
+  - "(BinarySensorEntityDescription(key='shutoff_valve_open', name=\n    'shutoff_valve',\
+    \ device_class=BinarySensorDeviceClass.OPENING),\n    BinarySensorEntityDescription(key='running',\
+    \ name='running',\n    device_class=BinarySensorDeviceClass.POWER),\n    BinarySensorEntityDescription(key='screen_locked',\
+    \ name='screen_locked',\n    device_class=BinarySensorDeviceClass.LOCK),\n   \
+    \ BinarySensorEntityDescription(key='beep_enabled', name='beep_enabled',\n   \
+    \ device_class=BinarySensorDeviceClass.SOUND))"
+  - (BinarySensorEntityDescription(key='vehicle', translation_key='vehicle'),)
+  - "(BinarySensorEntityDescription(key=ALERT_TYPE_UNKNOWN, translation_key=\n   \
+    \ 'unknown', device_class=BinarySensorDeviceClass.SAFETY),\n    BinarySensorEntityDescription(key=ALERT_TYPE_AIR,\
+    \ translation_key='air',\n    device_class=BinarySensorDeviceClass.SAFETY, icon='mdi:cloud'),\n\
+    \    BinarySensorEntityDescription(key=ALERT_TYPE_URBAN_FIGHTS,\n    translation_key='urban_fights',\
+    \ device_class=BinarySensorDeviceClass.\n    SAFETY, icon='mdi:pistol'), BinarySensorEntityDescription(key=\n\
+    \    ALERT_TYPE_ARTILLERY, translation_key='artillery', device_class=\n    BinarySensorDeviceClass.SAFETY,\
+    \ icon='mdi:tank'),\n    BinarySensorEntityDescription(key=ALERT_TYPE_CHEMICAL,\
+    \ translation_key=\n    'chemical', device_class=BinarySensorDeviceClass.SAFETY,\
+    \ icon=\n    'mdi:chemical-weapon'), BinarySensorEntityDescription(key=\n    ALERT_TYPE_NUCLEAR,\
+    \ translation_key='nuclear', device_class=\n    BinarySensorDeviceClass.SAFETY,\
+    \ icon='mdi:nuke'))"
+  - "(BinarySensorEntityDescription(key=SENSOR_KIND_LEAK_DETECTED,\n    translation_key='leak',\
+    \ device_class=BinarySensorDeviceClass.MOISTURE),\n    BinarySensorEntityDescription(key=SENSOR_KIND_MOVED,\
+    \ translation_key=\n    'moved', device_class=BinarySensorDeviceClass.MOVING,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC))"
+  - "(BinarySensorEntityDescription(key=TYPE_BATTERY, device_class=\n    BinarySensorDeviceClass.BATTERY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC), BinarySensorEntityDescription(key=TYPE_CAMERA_ARMED,\n\
+    \    translation_key='camera_armed'), BinarySensorEntityDescription(key=\n   \
+    \ TYPE_MOTION_DETECTED, device_class=BinarySensorDeviceClass.MOTION))"
+  - (BinarySensorEntityDescription, ...)
+  - (BinarySensorInfo, BinarySensorState)
+  - (CALL_TYPE_COIL, CALL_TYPE_DISCRETE)
+  - (CASETA_DOMAIN, self._bridge_device['serial'])
+  - (CASETA_DOMAIN, self.unique_id)
+  - (CMD_ON, CMD_OFF)
+  - (CONF_AVAILABILITY, CONF_DEVICE_CLASS, CONF_ICON, CONF_PICTURE, CONF_UNIQUE_ID)
+  - (CONF_DELAY_ON, CONF_DELAY_OFF, CONF_AUTO_OFF)
+  - (CONF_STATE,)
+  - (ConnectionStatusEnum.CONNECTED, ConnectionStatusEnum.DISCONNECTING)
+  - "(ConnectionStatusEnum.CONNECT_FAILED, ConnectionStatusEnum.CONNECTED,\n    ConnectionStatusEnum.DISCONNECTED)"
+  - (DEVICE.CONTROLLER, GROUP.SENSOR)
+  - (DEVICE.INTELLICHEM, GROUP.ALARM)
+  - (DEVICE.INTELLICHEM, GROUP.ALERT)
+  - (DEVICE.INTELLICHEM, GROUP.WATER_BALANCE)
+  - (DEVICE.PUMP, pump_index)
+  - (DEVICE.PUMP,)
+  - (DEVICE.SCG, GROUP.SENSOR)
+  - (DOMAIN, config_entry.entry_id)
+  - (DOMAIN, coordinator.data.license_plate)
+  - (DOMAIN, device['uid'])
+  - (DOMAIN, enpower.serial_number)
+  - (DOMAIN, entry_id)
+  - (DOMAIN, f'{entry.entry_id}')
+  - (DOMAIN, gw_dev.gw_id)
+  - (DOMAIN, identifier)
+  - "(DOMAIN, self.config_entry.entry_id, self.config_entry.data[CONF_STATION][\n\
+    \    'id'], self.config_entry.data[CONF_STATION]['type'])"
+  - (DOMAIN, self.coordinator.entry.data[CONF_GIID])
+  - (DOMAIN, self.envoy_serial_num)
+  - (DOMAIN, self.serial_number)
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, serial)
+  - (DOMAIN, serial_number)
+  - (DOMAIN, service_location.device_serial_number)
+  - (DOMAIN, system_info.mac_addr)
+  - (DOMAIN, unique_id)
+  - (DOMAIN, user_id)
+  - (DeconzBinarySensorDescription, ...)
+  - "(DeconzBinarySensorDescription[Alarm](key='alarm', update_key='alarm',\n    value_fn=lambda\
+    \ device: device.alarm, instance_check=Alarm,\n    device_class=BinarySensorDeviceClass.SAFETY),\n\
+    \    DeconzBinarySensorDescription[CarbonMonoxide](key='carbon_monoxide',\n  \
+    \  update_key='carbonmonoxide', value_fn=lambda device: device.\n    carbon_monoxide,\
+    \ instance_check=CarbonMonoxide, device_class=\n    BinarySensorDeviceClass.CO),\
+    \ DeconzBinarySensorDescription[Fire](key=\n    'fire', update_key='fire', value_fn=lambda\
+    \ device: device.fire,\n    instance_check=Fire, device_class=BinarySensorDeviceClass.SMOKE),\n\
+    \    DeconzBinarySensorDescription[Fire](key='in_test_mode', update_key=\n   \
+    \ 'test', value_fn=lambda device: device.in_test_mode, instance_check=\n    Fire,\
+    \ name_suffix='Test Mode', old_unique_id_suffix='test mode',\n    device_class=BinarySensorDeviceClass.SMOKE,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC), DeconzBinarySensorDescription[GenericFlag](\n\
+    \    key='flag', update_key='flag', value_fn=lambda device: device.flag,\n   \
+    \ instance_check=GenericFlag), DeconzBinarySensorDescription[OpenClose](\n   \
+    \ key='open', update_key='open', value_fn=lambda device: device.open,\n    instance_check=OpenClose,\
+    \ device_class=BinarySensorDeviceClass.OPENING),\n    DeconzBinarySensorDescription[Presence](key='presence',\
+    \ update_key=\n    'presence', value_fn=lambda device: device.presence, instance_check=\n\
+    \    Presence, device_class=BinarySensorDeviceClass.MOTION),\n    DeconzBinarySensorDescription[Vibration](key='vibration',\
+    \ update_key=\n    'vibration', value_fn=lambda device: device.vibration, instance_check=\n\
+    \    Vibration, device_class=BinarySensorDeviceClass.VIBRATION),\n    DeconzBinarySensorDescription[Water](key='water',\
+    \ update_key='water',\n    value_fn=lambda device: device.water, instance_check=Water,\n\
+    \    device_class=BinarySensorDeviceClass.MOISTURE),\n    DeconzBinarySensorDescription[SensorResources](key='tampered',\n\
+    \    update_key='tampered', value_fn=lambda device: device.tampered,\n    name_suffix='Tampered',\
+    \ old_unique_id_suffix='tampered', device_class=\n    BinarySensorDeviceClass.TAMPER,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC), DeconzBinarySensorDescription[SensorResources](key=\n\
+    \    'low_battery', update_key='lowbattery', value_fn=lambda device: device.\n\
+    \    low_battery, name_suffix='Low Battery', old_unique_id_suffix=\n    'low battery',\
+    \ device_class=BinarySensorDeviceClass.BATTERY,\n    entity_category=EntityCategory.DIAGNOSTIC))"
+  - "(DormakabaDkeyBinarySensorDescription(key='door_position', device_class=\n  \
+    \  BinarySensorDeviceClass.DOOR, is_on=lambda state: state.door_position ==\n\
+    \    DoorPosition.OPEN), DormakabaDkeyBinarySensorDescription(key=\n    'security_locked',\
+    \ translation_key='deadbolt', device_class=\n    BinarySensorDeviceClass.LOCK,\
+    \ is_on=lambda state: state.unlock_status\n     not in (UnlockStatus.SECURITY_LOCKED,\
+    \ UnlockStatus.\n    UNLOCKED_SECURITY_LOCKED)))"
+  - "(Dremel3DPrinterBinarySensorEntityDescription(key='door', device_class=\n   \
+    \ BinarySensorDeviceClass.DOOR, value_fn=lambda api: api.is_door_open()),\n  \
+    \  Dremel3DPrinterBinarySensorEntityDescription(key='running',\n    device_class=BinarySensorDeviceClass.RUNNING,\
+    \ value_fn=lambda api: api.\n    is_running()))"
+  - (Dremel3DPrinterBinarySensorEntityDescription, ...)
+  - "(EntityDescription(key='grease-filter', translation_key='grease_filter',\n  \
+    \  device_class=BinarySensorDeviceClass.PROBLEM, is_on=lambda state: state\n \
+    \   .grease_filter_full), EntityDescription(key='carbon-filter',\n    translation_key='carbon_filter',\
+    \ device_class=BinarySensorDeviceClass.\n    PROBLEM, is_on=lambda state: state.carbon_filter_full))"
+  - "(EntityDomainReplacementStrategy(BINARY_SENSOR_DOMAIN,\n    f'{data.controller.mac}_freeze_protection',\n\
+    \    f'switch.{data.controller.name.lower()}_freeze_protect_enabled',\n    breaks_in_ha_version='2022.12.0',\
+    \ remove_old_entity=True),\n    EntityDomainReplacementStrategy(BINARY_SENSOR_DOMAIN,\n\
+    \    f'{data.controller.mac}_extra_water_on_hot_days',\n    f'switch.{data.controller.name.lower()}_hot_days_extra_watering',\n\
+    \    breaks_in_ha_version='2022.12.0', remove_old_entity=True))"
+  - "(EntityDomainReplacementStrategy(BINARY_SENSOR_DOMAIN, f'{uid}_ap_enabled',\n\
+    \    f'switch.guardian_valve_controller_{uid}_onboard_ap', '2022.12.0',\n    remove_old_entity=True),)"
+  - "(EnvoyEnchargeBinarySensorEntityDescription(key='communicating',\n    translation_key='communicating',\
+    \ device_class=BinarySensorDeviceClass.\n    CONNECTIVITY, entity_category=EntityCategory.DIAGNOSTIC,\
+    \ value_fn=lambda\n    encharge: encharge.communicating),\n    EnvoyEnchargeBinarySensorEntityDescription(key='dc_switch',\n\
+    \    translation_key='dc_switch', entity_category=EntityCategory.DIAGNOSTIC,\n\
+    \    value_fn=lambda encharge: not encharge.dc_switch_off))"
+  - "(EnvoyEnpowerBinarySensorEntityDescription(key='communicating',\n    translation_key='communicating',\
+    \ device_class=BinarySensorDeviceClass.\n    CONNECTIVITY, entity_category=EntityCategory.DIAGNOSTIC,\
+    \ value_fn=lambda\n    enpower: enpower.communicating),\n    EnvoyEnpowerBinarySensorEntityDescription(key='mains_oper_state',\n\
+    \    translation_key='grid_status', icon='mdi:transmission-tower', value_fn=\n\
+    \    lambda enpower: enpower.mains_oper_state == 'closed'))"
+  - "(EventTopic.DAY_NIGHT_VISION, EventTopic.FENCE_GUARD, EventTopic.\n    LOITERING_GUARD,\
+    \ EventTopic.MOTION_DETECTION, EventTopic.\n    MOTION_DETECTION_3, EventTopic.MOTION_DETECTION_4,\
+    \ EventTopic.\n    MOTION_GUARD, EventTopic.OBJECT_ANALYTICS, EventTopic.PIR,\
+    \ EventTopic.\n    PORT_INPUT, EventTopic.PORT_SUPERVISED_INPUT, EventTopic.\n\
+    \    SOUND_TRIGGER_LEVEL)"
+  - (EventTopic.FENCE_GUARD, self.device.api.vapix.fence_guard)
+  - (EventTopic.LOITERING_GUARD, self.device.api.vapix.loitering_guard)
+  - (EventTopic.MOTION_DETECTION_4, self.device.api.vapix.vmd4)
+  - (EventTopic.MOTION_GUARD, self.device.api.vapix.motion_guard)
+  - (EventTopic.OBJECT_ANALYTICS, self.device.api.vapix.object_analytics)
+  - (FILTER_CLEAN_REQUIRED_DESCRIPTION,)
+  - "(FiveMBinarySensorEntityDescription(key=NAME_STATUS, translation_key=\n    'status',\
+    \ device_class=BinarySensorDeviceClass.CONNECTIVITY),)"
+  - (FiveMBinarySensorEntityDescription, ...)
+  - "(FlumeBinarySensorEntityDescription(key='leak', translation_key='leak',\n   \
+    \ entity_category=EntityCategory.DIAGNOSTIC, event_rule=\n    NOTIFICATION_LEAK_DETECTED,\
+    \ icon='mdi:pipe-leak'),\n    FlumeBinarySensorEntityDescription(key='flow', translation_key='flow',\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, event_rule=\n    NOTIFICATION_HIGH_FLOW,\
+    \ icon='mdi:waves'),\n    FlumeBinarySensorEntityDescription(key='low_battery',\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC, device_class=BinarySensorDeviceClass.BATTERY,\n\
+    \    event_rule=NOTIFICATION_LOW_BATTERY))"
+  - (FlumeBinarySensorEntityDescription, ...)
+  - "(FritzBinarySensorEntityDescription(key='alarm', translation_key='alarm',\n \
+    \   device_class=BinarySensorDeviceClass.WINDOW, suitable=lambda device:\n   \
+    \ device.has_alarm, is_on=lambda device: device.alert_state),\n    FritzBinarySensorEntityDescription(key='lock',\
+    \ translation_key='lock',\n    device_class=BinarySensorDeviceClass.LOCK, entity_category=\n\
+    \    EntityCategory.DIAGNOSTIC, suitable=lambda device: device.lock is not\n \
+    \   None, is_on=lambda device: not device.lock),\n    FritzBinarySensorEntityDescription(key='device_lock',\
+    \ translation_key=\n    'device_lock', device_class=BinarySensorDeviceClass.LOCK,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, suitable=lambda device: \n   \
+    \ device.device_lock is not None, is_on=lambda device: not device.\n    device_lock))"
+  - "(FritzBinarySensorEntityDescription(key='is_connected', translation_key=\n  \
+    \  'is_connected', device_class=BinarySensorDeviceClass.CONNECTIVITY,\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ value_fn=lambda status, _:\n    bool(status.is_connected)), FritzBinarySensorEntityDescription(key=\n\
+    \    'is_linked', translation_key='is_linked', device_class=\n    BinarySensorDeviceClass.PLUG,\
+    \ entity_category=EntityCategory.DIAGNOSTIC,\n    value_fn=lambda status, _: bool(status.is_linked)))"
+  - (FritzBinarySensorEntityDescription, ...)
+  - "(GardenaBluetoothBinarySensorEntityDescription(key=Valve.connected_state.\n \
+    \   uuid, translation_key='valve_connected_state', device_class=\n    BinarySensorDeviceClass.CONNECTIVITY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, char=Valve.connected_state),\n\
+    \    GardenaBluetoothBinarySensorEntityDescription(key=Sensor.\n    connected_state.uuid,\
+    \ translation_key='sensor_connected_state',\n    device_class=BinarySensorDeviceClass.CONNECTIVITY,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC, char=Sensor.connected_state))"
+  - (HMIPC_DOMAIN, self._home.id)
+  - "(HassioBinarySensorEntityDescription(device_class=BinarySensorDeviceClass.\n\
+    \    RUNNING, entity_registry_enabled_default=False, key=ATTR_STATE,\n    translation_key='state',\
+    \ target=ATTR_STARTED),)"
+  - "(IntellifireBinarySensorEntityDescription(key='on_off', translation_key=\n  \
+    \  'flame', icon='mdi:fire', value_fn=lambda data: data.is_on),\n    IntellifireBinarySensorEntityDescription(key='timer_on',\n\
+    \    translation_key='timer_on', icon='mdi:camera-timer', value_fn=lambda\n  \
+    \  data: data.timer_on), IntellifireBinarySensorEntityDescription(key=\n    'pilot_light_on',\
+    \ translation_key='pilot_light_on', icon=\n    'mdi:fire-alert', value_fn=lambda\
+    \ data: data.pilot_on),\n    IntellifireBinarySensorEntityDescription(key='thermostat_on',\n\
+    \    translation_key='thermostat_on', icon='mdi:home-thermometer-outline',\n \
+    \   value_fn=lambda data: data.thermostat_on),\n    IntellifireBinarySensorEntityDescription(key='error_pilot_flame',\n\
+    \    translation_key='pilot_flame_error', entity_category=EntityCategory.\n  \
+    \  DIAGNOSTIC, value_fn=lambda data: data.error_pilot_flame, device_class=\n \
+    \   BinarySensorDeviceClass.PROBLEM),\n    IntellifireBinarySensorEntityDescription(key='error_flame',\n\
+    \    translation_key='flame_error', entity_category=EntityCategory.\n    DIAGNOSTIC,\
+    \ value_fn=lambda data: data.error_flame, device_class=\n    BinarySensorDeviceClass.PROBLEM),\n\
+    \    IntellifireBinarySensorEntityDescription(key='error_fan_delay',\n    translation_key='fan_delay_error',\
+    \ icon='mdi:fan-alert',\n    entity_category=EntityCategory.DIAGNOSTIC, value_fn=lambda\
+    \ data: data.\n    error_fan_delay, device_class=BinarySensorDeviceClass.PROBLEM),\n\
+    \    IntellifireBinarySensorEntityDescription(key='error_maintenance',\n    translation_key='maintenance_error',\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, value_fn=lambda data: data.error_maintenance,\
+    \ device_class=\n    BinarySensorDeviceClass.PROBLEM),\n    IntellifireBinarySensorEntityDescription(key='error_disabled',\n\
+    \    translation_key='disabled_error', entity_category=EntityCategory.\n    DIAGNOSTIC,\
+    \ value_fn=lambda data: data.error_disabled, device_class=\n    BinarySensorDeviceClass.PROBLEM),\n\
+    \    IntellifireBinarySensorEntityDescription(key='error_fan',\n    translation_key='fan_error',\
+    \ icon='mdi:fan-alert', entity_category=\n    EntityCategory.DIAGNOSTIC, value_fn=lambda\
+    \ data: data.error_fan,\n    device_class=BinarySensorDeviceClass.PROBLEM),\n\
+    \    IntellifireBinarySensorEntityDescription(key='error_lights',\n    translation_key='lights_error',\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, value_fn=lambda data: data.error_lights,\
+    \ device_class=\n    BinarySensorDeviceClass.PROBLEM),\n    IntellifireBinarySensorEntityDescription(key='error_accessory',\n\
+    \    translation_key='accessory_error', entity_category=EntityCategory.\n    DIAGNOSTIC,\
+    \ value_fn=lambda data: data.error_accessory, device_class=\n    BinarySensorDeviceClass.PROBLEM),\n\
+    \    IntellifireBinarySensorEntityDescription(key='error_soft_lock_out',\n   \
+    \ translation_key='soft_lock_out_error', entity_category=EntityCategory.\n   \
+    \ DIAGNOSTIC, value_fn=lambda data: data.error_soft_lock_out,\n    device_class=BinarySensorDeviceClass.PROBLEM),\n\
+    \    IntellifireBinarySensorEntityDescription(key='error_ecm_offline',\n    translation_key='ecm_offline_error',\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, value_fn=lambda data: data.error_ecm_offline,\
+    \ device_class=\n    BinarySensorDeviceClass.PROBLEM),\n    IntellifireBinarySensorEntityDescription(key='error_offline',\n\
+    \    translation_key='offline_error', entity_category=EntityCategory.\n    DIAGNOSTIC,\
+    \ value_fn=lambda data: data.error_offline, device_class=\n    BinarySensorDeviceClass.PROBLEM))"
+  - (IntellifireBinarySensorEntityDescription, ...)
+  - "(JewishCalendarBinarySensorEntityDescription(key='issur_melacha_in_effect',\n\
+    \    name='Issur Melacha in Effect', icon='mdi:power-plug-off', is_on=lambda\n\
+    \    state: bool(state.issur_melacha_in_effect)),\n    JewishCalendarBinarySensorEntityDescription(key='erev_shabbat_hag',\n\
+    \    name='Erev Shabbat/Hag', is_on=lambda state: bool(state.\n    erev_shabbat_hag)),\
+    \ JewishCalendarBinarySensorEntityDescription(key=\n    'motzei_shabbat_hag',\
+    \ name='Motzei Shabbat/Hag', is_on=lambda state:\n    bool(state.motzei_shabbat_hag)))"
+  - (JewishCalendarBinarySensorEntityDescription, ...)
+  - (KONNECTED_DOMAIN, device_id)
+  - (KeyError, TypeError)
+  - "(NextDnsBinarySensorEntityDescription[ConnectionStatus](key=\n    'this_device_nextdns_connection_status',\
+    \ entity_category=EntityCategory\n    .DIAGNOSTIC, translation_key='device_connection_status',\
+    \ device_class=\n    BinarySensorDeviceClass.CONNECTIVITY, state=lambda data,\
+    \ _: data.\n    connected), NextDnsBinarySensorEntityDescription[ConnectionStatus](key=\n\
+    \    'this_device_profile_connection_status', entity_category=EntityCategory\n\
+    \    .DIAGNOSTIC, translation_key='device_profile_connection_status',\n    device_class=BinarySensorDeviceClass.CONNECTIVITY,\
+    \ state=lambda data,\n    profile_id: profile_id == data.profile_id))"
+  - (Node, BinarySensorDeviceClass | None, str | None, DeviceInfo | None)
+  - (None, None)
+  - (None, NullValue)
+  - (None, device_type)
+  - "(NotificationZWaveJSEntityDescription(key=NOTIFICATION_SMOKE_ALARM, states=\n\
+    \    ('1', '2'), device_class=BinarySensorDeviceClass.SMOKE),\n    NotificationZWaveJSEntityDescription(key=NOTIFICATION_SMOKE_ALARM,\n\
+    \    device_class=BinarySensorDeviceClass.PROBLEM),\n    NotificationZWaveJSEntityDescription(key=NOTIFICATION_CARBON_MONOOXIDE,\n\
+    \    states=('1', '2'), device_class=BinarySensorDeviceClass.CO),\n    NotificationZWaveJSEntityDescription(key=NOTIFICATION_CARBON_MONOOXIDE,\n\
+    \    device_class=BinarySensorDeviceClass.PROBLEM),\n    NotificationZWaveJSEntityDescription(key=NOTIFICATION_CARBON_DIOXIDE,\n\
+    \    states=('1', '2'), device_class=BinarySensorDeviceClass.GAS),\n    NotificationZWaveJSEntityDescription(key=NOTIFICATION_CARBON_DIOXIDE,\n\
+    \    device_class=BinarySensorDeviceClass.PROBLEM),\n    NotificationZWaveJSEntityDescription(key=NOTIFICATION_HEAT,\
+    \ states=('1',\n    '2', '5', '6'), device_class=BinarySensorDeviceClass.HEAT),\n\
+    \    NotificationZWaveJSEntityDescription(key=NOTIFICATION_HEAT,\n    device_class=BinarySensorDeviceClass.PROBLEM),\n\
+    \    NotificationZWaveJSEntityDescription(key=NOTIFICATION_WATER, states=(\n \
+    \   '1', '2', '3', '4'), device_class=BinarySensorDeviceClass.MOISTURE),\n   \
+    \ NotificationZWaveJSEntityDescription(key=NOTIFICATION_WATER,\n    device_class=BinarySensorDeviceClass.PROBLEM),\n\
+    \    NotificationZWaveJSEntityDescription(key=NOTIFICATION_ACCESS_CONTROL,\n \
+    \   states=('1', '2', '3', '4'), device_class=BinarySensorDeviceClass.LOCK),\n\
+    \    NotificationZWaveJSEntityDescription(key=NOTIFICATION_ACCESS_CONTROL,\n \
+    \   states=('11',), device_class=BinarySensorDeviceClass.PROBLEM,\n    entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    NotificationZWaveJSEntityDescription(key=NOTIFICATION_ACCESS_CONTROL,\n \
+    \   off_state='23', states=('22', '23'), device_class=\n    BinarySensorDeviceClass.DOOR),\
+    \ NotificationZWaveJSEntityDescription(key\n    =NOTIFICATION_HOME_SECURITY, states=('1',\
+    \ '2'), device_class=\n    BinarySensorDeviceClass.SAFETY), NotificationZWaveJSEntityDescription(\n\
+    \    key=NOTIFICATION_HOME_SECURITY, states=('3', '4', '9'), device_class=\n \
+    \   BinarySensorDeviceClass.TAMPER, entity_category=EntityCategory.\n    DIAGNOSTIC),\
+    \ NotificationZWaveJSEntityDescription(key=\n    NOTIFICATION_HOME_SECURITY, states=('5',\
+    \ '6'), device_class=\n    BinarySensorDeviceClass.SAFETY), NotificationZWaveJSEntityDescription(\n\
+    \    key=NOTIFICATION_HOME_SECURITY, states=('7', '8'), device_class=\n    BinarySensorDeviceClass.MOTION),\
+    \ NotificationZWaveJSEntityDescription(\n    key=NOTIFICATION_POWER_MANAGEMENT,\
+    \ off_state='2', states=('2', '3'),\n    device_class=BinarySensorDeviceClass.PLUG,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC), NotificationZWaveJSEntityDescription(key=\n\
+    \    NOTIFICATION_POWER_MANAGEMENT, states=('6', '7', '8', '9'),\n    device_class=BinarySensorDeviceClass.SAFETY,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC), NotificationZWaveJSEntityDescription(key=\n\
+    \    NOTIFICATION_POWER_MANAGEMENT, states=('10', '11', '17'), device_class=\n\
+    \    BinarySensorDeviceClass.BATTERY, entity_category=EntityCategory.\n    DIAGNOSTIC),\
+    \ NotificationZWaveJSEntityDescription(key=\n    NOTIFICATION_SYSTEM, states=('1',\
+    \ '2', '3', '4', '6', '7'),\n    device_class=BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC), NotificationZWaveJSEntityDescription(key=\n\
+    \    NOTIFICATION_EMERGENCY, states=('1', '2', '3'), device_class=\n    BinarySensorDeviceClass.PROBLEM),\
+    \ NotificationZWaveJSEntityDescription(\n    key=NOTIFICATION_SIREN, states=('1',),\
+    \ device_class=\n    BinarySensorDeviceClass.SOUND), NotificationZWaveJSEntityDescription(\n\
+    \    key=NOTIFICATION_GAS, states=('1', '2', '3', '4'), device_class=\n    BinarySensorDeviceClass.GAS),\
+    \ NotificationZWaveJSEntityDescription(key=\n    NOTIFICATION_GAS, states=('6',),\
+    \ device_class=BinarySensorDeviceClass.\n    PROBLEM))"
+  - (NotificationZWaveJSEntityDescription, ...)
+  - "(NotionBinarySensorDescription(key=SENSOR_BATTERY, device_class=\n    BinarySensorDeviceClass.BATTERY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, listener_kind=ListenerKind.BATTERY,\
+    \ on_state='low'),\n    NotionBinarySensorDescription(key=SENSOR_DOOR, device_class=\n\
+    \    BinarySensorDeviceClass.DOOR, listener_kind=ListenerKind.DOOR, on_state\n\
+    \    ='open'), NotionBinarySensorDescription(key=SENSOR_GARAGE_DOOR,\n    device_class=BinarySensorDeviceClass.GARAGE_DOOR,\
+    \ listener_kind=\n    ListenerKind.GARAGE_DOOR, on_state='open'),\n    NotionBinarySensorDescription(key=SENSOR_LEAK,\
+    \ device_class=\n    BinarySensorDeviceClass.MOISTURE, listener_kind=ListenerKind.\n\
+    \    LEAK_STATUS, on_state='leak'), NotionBinarySensorDescription(key=\n    SENSOR_MISSING,\
+    \ device_class=BinarySensorDeviceClass.CONNECTIVITY,\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ listener_kind=ListenerKind.\n    CONNECTED, on_state='not_missing'), NotionBinarySensorDescription(key=\n\
+    \    SENSOR_SAFE, translation_key='safe', device_class=\n    BinarySensorDeviceClass.DOOR,\
+    \ listener_kind=ListenerKind.SAFE, on_state\n    ='open'), NotionBinarySensorDescription(key=SENSOR_SLIDING,\n\
+    \    translation_key='sliding_door_window', device_class=\n    BinarySensorDeviceClass.DOOR,\
+    \ listener_kind=ListenerKind.\n    SLIDING_DOOR_OR_WINDOW, on_state='open'), NotionBinarySensorDescription\n\
+    \    (key=SENSOR_SMOKE_CO, translation_key='smoke_carbon_monoxide_detector',\n\
+    \    device_class=BinarySensorDeviceClass.SMOKE, listener_kind=ListenerKind.\n\
+    \    SMOKE, on_state='alarm'), NotionBinarySensorDescription(key=\n    SENSOR_WINDOW_HINGED,\
+    \ translation_key='hinged_window', listener_kind=\n    ListenerKind.HINGED_WINDOW,\
+    \ on_state='open'))"
+  - "(PiHoleBinarySensorEntityDescription(key='status', translation_key='status',\n\
+    \    icon='mdi:pi-hole', state_value=lambda api: bool(api.data.get('status') ==\n\
+    \    'enabled')),)"
+  - (PiHoleBinarySensorEntityDescription, ...)
+  - "(PlugwiseBinarySensorEntityDescription(key='compressor_state',\n    translation_key='compressor_state',\
+    \ icon='mdi:hvac', icon_off=\n    'mdi:hvac-off', entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='cooling_enabled',\n    translation_key='cooling_enabled',\
+    \ icon='mdi:snowflake-thermometer',\n    entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='dhw_state', translation_key=\n\
+    \    'dhw_state', icon='mdi:water-pump', icon_off='mdi:water-pump-off',\n    entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='flame_state',\n    translation_key='flame_state',\
+    \ name='Flame state', icon='mdi:fire',\n    icon_off='mdi:fire-off', entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='heating_state',\n    translation_key='heating_state',\
+    \ icon='mdi:radiator', icon_off=\n    'mdi:radiator-off', entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='cooling_state',\n    translation_key='cooling_state',\
+    \ icon='mdi:snowflake', icon_off=\n    'mdi:snowflake-off', entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='slave_boiler_state',\n    translation_key='slave_boiler_state',\
+    \ icon='mdi:fire', icon_off=\n    'mdi:circle-off-outline', entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    PlugwiseBinarySensorEntityDescription(key='plugwise_notification',\n    translation_key='plugwise_notification',\
+    \ icon='mdi:mailbox-up-outline',\n    icon_off='mdi:mailbox-outline', entity_category=EntityCategory.DIAGNOSTIC))"
+  - (PlugwiseBinarySensorEntityDescription, ...)
+  - "(PowerWallRunningSensor, PowerWallGridServicesActiveSensor,\n    PowerWallGridStatusSensor,\
+    \ PowerWallConnectedSensor,\n    PowerWallChargingStatusSensor)"
+  - "(ProtectBinaryEntityDescription(key='battery_low', name='Battery low',\n    device_class=BinarySensorDeviceClass.BATTERY,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC, ufp_value='battery_status.is_low'),\n\
+    \    ProtectBinaryEntityDescription(key='status_light', name=\n    'Status Light\
+    \ On', icon='mdi:led-on', entity_category=EntityCategory.\n    DIAGNOSTIC, ufp_value='led_settings.is_enabled',\
+    \ ufp_perm=PermRequired.\n    NO_WRITE))"
+  - "(ProtectBinaryEntityDescription(key='dark', name='Is Dark', icon=\n    'mdi:brightness-6',\
+    \ ufp_value='is_dark'),\n    ProtectBinaryEntityDescription(key='motion', name='Motion\
+    \ Detected',\n    device_class=BinarySensorDeviceClass.MOTION, ufp_value=\n  \
+    \  'is_pir_motion_detected'), ProtectBinaryEntityDescription(key='light',\n  \
+    \  name='Flood Light', icon='mdi:spotlight-beam', entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ ufp_value='is_light_on', ufp_perm=\n    PermRequired.NO_WRITE), ProtectBinaryEntityDescription(key='ssh',\
+    \ name=\n    'SSH Enabled', icon='mdi:lock', entity_registry_enabled_default=False,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, ufp_value='is_ssh_enabled',\n\
+    \    ufp_perm=PermRequired.NO_WRITE), ProtectBinaryEntityDescription(key=\n  \
+    \  'status_light', name='Status Light On', icon='mdi:led-on',\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ ufp_value=\n    'light_device_settings.is_indicator_enabled', ufp_perm=PermRequired.\n\
+    \    NO_WRITE))"
+  - "(ProtectBinaryEntityDescription(key='dark', name='Is Dark', icon=\n    'mdi:brightness-6',\
+    \ ufp_value='is_dark'),\n    ProtectBinaryEntityDescription(key='ssh', name='SSH\
+    \ Enabled', icon=\n    'mdi:lock', entity_registry_enabled_default=False, entity_category=\n\
+    \    EntityCategory.DIAGNOSTIC, ufp_value='is_ssh_enabled', ufp_perm=\n    PermRequired.NO_WRITE),\
+    \ ProtectBinaryEntityDescription(key=\n    'status_light', name='Status Light\
+    \ On', icon='mdi:led-on',\n    entity_category=EntityCategory.DIAGNOSTIC, ufp_required_field=\n\
+    \    'feature_flags.has_led_status', ufp_value='led_settings.is_enabled',\n  \
+    \  ufp_perm=PermRequired.NO_WRITE), ProtectBinaryEntityDescription(key=\n    'hdr_mode',\
+    \ name='HDR Mode', icon='mdi:brightness-7', entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ ufp_required_field='feature_flags.has_hdr',\n    ufp_value='hdr_mode', ufp_perm=PermRequired.NO_WRITE),\n\
+    \    ProtectBinaryEntityDescription(key='high_fps', name='High FPS', icon=\n \
+    \   'mdi:video-high-definition', entity_category=EntityCategory.DIAGNOSTIC,\n\
+    \    ufp_required_field='feature_flags.has_highfps', ufp_value=\n    'is_high_fps_enabled',\
+    \ ufp_perm=PermRequired.NO_WRITE),\n    ProtectBinaryEntityDescription(key='system_sounds',\
+    \ name=\n    'System Sounds', icon='mdi:speaker', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, ufp_required_field='has_speaker', ufp_value=\n    'speaker_settings.are_system_sounds_enabled',\
+    \ ufp_enabled=\n    'feature_flags.has_speaker', ufp_perm=PermRequired.NO_WRITE),\n\
+    \    ProtectBinaryEntityDescription(key='osd_name', name=\n    'Overlay: Show\
+    \ Name', icon='mdi:fullscreen', entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ ufp_value='osd_settings.is_name_enabled',\n    ufp_perm=PermRequired.NO_WRITE),\
+    \ ProtectBinaryEntityDescription(key=\n    'osd_date', name='Overlay: Show Date',\
+    \ icon='mdi:fullscreen',\n    entity_category=EntityCategory.DIAGNOSTIC, ufp_value=\n\
+    \    'osd_settings.is_date_enabled', ufp_perm=PermRequired.NO_WRITE),\n    ProtectBinaryEntityDescription(key='osd_logo',\
+    \ name=\n    'Overlay: Show Logo', icon='mdi:fullscreen', entity_category=\n \
+    \   EntityCategory.DIAGNOSTIC, ufp_value='osd_settings.is_logo_enabled',\n   \
+    \ ufp_perm=PermRequired.NO_WRITE), ProtectBinaryEntityDescription(key=\n    'osd_bitrate',\
+    \ name='Overlay: Show Bitrate', icon='mdi:fullscreen',\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ ufp_value=\n    'osd_settings.is_debug_enabled', ufp_perm=PermRequired.NO_WRITE),\n\
+    \    ProtectBinaryEntityDescription(key='motion_enabled', name=\n    'Detections:\
+    \ Motion', icon='mdi:run-fast', ufp_value=\n    'recording_settings.enable_motion_detection',\
+    \ ufp_perm=PermRequired.\n    NO_WRITE), ProtectBinaryEntityDescription(key='smart_person',\
+    \ name=\n    'Detections: Person', icon='mdi:walk', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, ufp_required_field='can_detect_person', ufp_value=\n    'is_person_detection_on',\
+    \ ufp_perm=PermRequired.NO_WRITE),\n    ProtectBinaryEntityDescription(key='smart_vehicle',\
+    \ name=\n    'Detections: Vehicle', icon='mdi:car', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, ufp_required_field='can_detect_vehicle', ufp_value=\n    'is_vehicle_detection_on',\
+    \ ufp_perm=PermRequired.NO_WRITE),\n    ProtectBinaryEntityDescription(key='smart_face',\
+    \ name=\n    'Detections: Face', icon='mdi:mdi-face', entity_category=EntityCategory\n\
+    \    .DIAGNOSTIC, ufp_required_field='can_detect_face', ufp_value=\n    'is_face_detection_on',\
+    \ ufp_perm=PermRequired.NO_WRITE),\n    ProtectBinaryEntityDescription(key='smart_package',\
+    \ name=\n    'Detections: Package', icon='mdi:package-variant-closed',\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ ufp_required_field=\n    'can_detect_package', ufp_value='is_package_detection_on',\
+    \ ufp_perm=\n    PermRequired.NO_WRITE), ProtectBinaryEntityDescription(key=\n\
+    \    'smart_licenseplate', name='Detections: License Plate', icon='mdi:car',\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, ufp_required_field=\n    'can_detect_license_plate',\
+    \ ufp_value='is_license_plate_detection_on',\n    ufp_perm=PermRequired.NO_WRITE),\
+    \ ProtectBinaryEntityDescription(key=\n    'smart_smoke', name='Detections: Smoke/CO',\
+    \ icon='mdi:fire',\n    entity_category=EntityCategory.DIAGNOSTIC, ufp_required_field=\n\
+    \    'can_detect_smoke', ufp_value='is_smoke_detection_on', ufp_perm=\n    PermRequired.NO_WRITE))"
+  - "(ProtectBinaryEntityDescription(key='disk_health', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC),)"
+  - "(ProtectBinaryEntityDescription(key='ssh', name='SSH Enabled', icon=\n    'mdi:lock',\
+    \ entity_registry_enabled_default=False, entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ ufp_value='is_ssh_enabled', ufp_perm=\n    PermRequired.NO_WRITE),)"
+  - "(ProtectBinaryEntityDescription(key=_KEY_DOOR, name='Contact', device_class\n\
+    \    =BinarySensorDeviceClass.DOOR, ufp_value='is_opened', ufp_enabled=\n    'is_contact_sensor_enabled'),\
+    \ ProtectBinaryEntityDescription(key=\n    'battery_low', name='Battery low',\
+    \ device_class=BinarySensorDeviceClass\n    .BATTERY, entity_category=EntityCategory.DIAGNOSTIC,\
+    \ ufp_value=\n    'battery_status.is_low'), ProtectBinaryEntityDescription(key='motion',\n\
+    \    name='Motion Detected', device_class=BinarySensorDeviceClass.MOTION,\n  \
+    \  ufp_value='is_motion_detected', ufp_enabled='is_motion_sensor_enabled'),\n\
+    \    ProtectBinaryEntityDescription(key='tampering', name=\n    'Tampering Detected',\
+    \ device_class=BinarySensorDeviceClass.TAMPER,\n    ufp_value='is_tampering_detected'),\
+    \ ProtectBinaryEntityDescription(key=\n    'status_light', name='Status Light\
+    \ On', icon='mdi:led-on',\n    entity_category=EntityCategory.DIAGNOSTIC, ufp_value=\n\
+    \    'led_settings.is_enabled', ufp_perm=PermRequired.NO_WRITE),\n    ProtectBinaryEntityDescription(key='motion_enabled',\
+    \ name=\n    'Motion Detection', icon='mdi:walk', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, ufp_value='motion_settings.is_enabled', ufp_perm=\n    PermRequired.NO_WRITE),\
+    \ ProtectBinaryEntityDescription(key=\n    'temperature', name='Temperature Sensor',\
+    \ icon='mdi:thermometer',\n    entity_category=EntityCategory.DIAGNOSTIC, ufp_value=\n\
+    \    'temperature_settings.is_enabled', ufp_perm=PermRequired.NO_WRITE),\n   \
+    \ ProtectBinaryEntityDescription(key='humidity', name='Humidity Sensor',\n   \
+    \ icon='mdi:water-percent', entity_category=EntityCategory.DIAGNOSTIC,\n    ufp_value='humidity_settings.is_enabled',\
+    \ ufp_perm=PermRequired.\n    NO_WRITE), ProtectBinaryEntityDescription(key='light',\
+    \ name=\n    'Light Sensor', icon='mdi:brightness-5', entity_category=EntityCategory\n\
+    \    .DIAGNOSTIC, ufp_value='light_settings.is_enabled', ufp_perm=\n    PermRequired.NO_WRITE),\
+    \ ProtectBinaryEntityDescription(key='alarm',\n    name='Alarm Sound Detection',\
+    \ entity_category=EntityCategory.DIAGNOSTIC,\n    ufp_value='alarm_settings.is_enabled',\
+    \ ufp_perm=PermRequired.NO_WRITE))"
+  - (ProtectBinaryEntityDescription, ...)
+  - "(ProtectBinaryEventEntityDescription(key='doorbell', name='Doorbell',\n    device_class=BinarySensorDeviceClass.OCCUPANCY,\
+    \ icon=\n    'mdi:doorbell-video', ufp_required_field='feature_flags.is_doorbell',\n\
+    \    ufp_value='is_ringing', ufp_event_obj='last_ring_event'),\n    ProtectBinaryEventEntityDescription(key='motion',\
+    \ name='Motion',\n    device_class=BinarySensorDeviceClass.MOTION, ufp_value=\n\
+    \    'is_motion_detected', ufp_enabled='is_motion_detection_on',\n    ufp_event_obj='last_motion_event'),\
+    \ ProtectBinaryEventEntityDescription\n    (key='smart_obj_any', name='Object\
+    \ Detected', icon='mdi:eye', ufp_value\n    ='is_smart_detected', ufp_required_field=\n\
+    \    'feature_flags.has_smart_detect', ufp_event_obj=\n    'last_smart_detect_event'),\
+    \ ProtectBinaryEventEntityDescription(key=\n    'smart_obj_person', name='Person\
+    \ Detected', icon='mdi:walk', ufp_value=\n    'is_smart_detected', ufp_required_field='can_detect_person',\n\
+    \    ufp_enabled='is_person_detection_on', ufp_event_obj=\n    'last_person_detect_event'),\
+    \ ProtectBinaryEventEntityDescription(key=\n    'smart_obj_vehicle', name='Vehicle\
+    \ Detected', icon='mdi:car', ufp_value\n    ='is_smart_detected', ufp_required_field='can_detect_vehicle',\n\
+    \    ufp_enabled='is_vehicle_detection_on', ufp_event_obj=\n    'last_vehicle_detect_event'),\
+    \ ProtectBinaryEventEntityDescription(key=\n    'smart_obj_face', name='Face Detected',\
+    \ icon='mdi:mdi-face', ufp_value=\n    'is_smart_detected', ufp_required_field='can_detect_face',\
+    \ ufp_enabled=\n    'is_face_detection_on', ufp_event_obj='last_face_detect_event'),\n\
+    \    ProtectBinaryEventEntityDescription(key='smart_obj_package', name=\n    'Package\
+    \ Detected', icon='mdi:package-variant-closed', ufp_value=\n    'is_smart_detected',\
+    \ ufp_required_field='can_detect_package',\n    ufp_enabled='is_package_detection_on',\
+    \ ufp_event_obj=\n    'last_package_detect_event'), ProtectBinaryEventEntityDescription(key=\n\
+    \    'smart_audio_any', name='Audio Object Detected', icon='mdi:eye',\n    ufp_value='is_smart_detected',\
+    \ ufp_required_field=\n    'feature_flags.has_smart_detect', ufp_event_obj=\n\
+    \    'last_smart_audio_detect_event'), ProtectBinaryEventEntityDescription(\n\
+    \    key='smart_audio_smoke', name='Smoke Alarm Detected', icon='mdi:fire',\n\
+    \    ufp_value='is_smart_detected', ufp_required_field='can_detect_smoke',\n \
+    \   ufp_enabled='is_smoke_detection_on', ufp_event_obj=\n    'last_smoke_detect_event'),\
+    \ ProtectBinaryEventEntityDescription(key=\n    'smart_audio_cmonx', name='CO\
+    \ Alarm Detected', icon='mdi:fire',\n    ufp_value='is_smart_detected', ufp_required_field='can_detect_smoke',\n\
+    \    ufp_enabled='is_smoke_detection_on', ufp_event_obj=\n    'last_cmonx_detect_event'))"
+  - (ProtectBinaryEventEntityDescription, ...)
+  - "(QswBinarySensorEntityDescription(attributes={ATTR_MESSAGE: [\n    QSD_FIRMWARE_CONDITION,\
+    \ QSD_MESSAGE]}, device_class=\n    BinarySensorDeviceClass.PROBLEM, entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, key=QSD_FIRMWARE_CONDITION, subkey=QSD_ANOMALY),)"
+  - "(QswBinarySensorEntityDescription(device_class=BinarySensorDeviceClass.\n   \
+    \ CONNECTIVITY, entity_registry_enabled_default=False, key=\n    QSD_PORTS_STATUS,\
+    \ qsw_type=QswEntityType.LACP_PORT, name='Link', subkey\n    =QSD_LINK),)"
+  - "(QswBinarySensorEntityDescription(device_class=BinarySensorDeviceClass.\n   \
+    \ CONNECTIVITY, entity_registry_enabled_default=False, key=\n    QSD_PORTS_STATUS,\
+    \ qsw_type=QswEntityType.PORT, name='Link', subkey=\n    QSD_LINK),)"
+  - (QswBinarySensorEntityDescription, ...)
+  - "(RDWBinarySensorEntityDescription(key='liability_insured', translation_key=\n\
+    \    'liability_insured', icon='mdi:shield-car', is_on_fn=lambda vehicle:\n  \
+    \  vehicle.liability_insured), RDWBinarySensorEntityDescription(key=\n    'pending_recall',\
+    \ translation_key='pending_recall', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ is_on_fn=lambda vehicle: vehicle.\n    pending_recall))"
+  - (RDWBinarySensorEntityDescription, ...)
+  - "(RainMachineBinarySensorDescription(key=TYPE_FLOW_SENSOR, translation_key=\n\
+    \    TYPE_FLOW_SENSOR, icon='mdi:water-pump', api_category=\n    DATA_PROVISION_SETTINGS,\
+    \ data_key='useFlowSensor'),\n    RainMachineBinarySensorDescription(key=TYPE_FREEZE,\
+    \ translation_key=\n    TYPE_FREEZE, icon='mdi:cancel', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, api_category=DATA_RESTRICTIONS_CURRENT, data_key='freeze'),\n\
+    \    RainMachineBinarySensorDescription(key=TYPE_HOURLY, translation_key=\n  \
+    \  TYPE_HOURLY, icon='mdi:cancel', entity_category=EntityCategory.\n    DIAGNOSTIC,\
+    \ api_category=DATA_RESTRICTIONS_CURRENT, data_key='hourly'),\n    RainMachineBinarySensorDescription(key=TYPE_MONTH,\
+    \ translation_key=\n    TYPE_MONTH, icon='mdi:cancel', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, api_category=DATA_RESTRICTIONS_CURRENT, data_key='month'),\n\
+    \    RainMachineBinarySensorDescription(key=TYPE_RAINDELAY, translation_key=\n\
+    \    TYPE_RAINDELAY, icon='mdi:cancel', entity_category=EntityCategory.\n    DIAGNOSTIC,\
+    \ api_category=DATA_RESTRICTIONS_CURRENT, data_key=\n    'rainDelay'), RainMachineBinarySensorDescription(key=TYPE_RAINSENSOR,\n\
+    \    translation_key=TYPE_RAINSENSOR, icon='mdi:cancel', entity_category=\n  \
+    \  EntityCategory.DIAGNOSTIC, entity_registry_enabled_default=False,\n    api_category=DATA_RESTRICTIONS_CURRENT,\
+    \ data_key='rainSensor'),\n    RainMachineBinarySensorDescription(key=TYPE_WEEKDAY,\
+    \ translation_key=\n    TYPE_WEEKDAY, icon='mdi:cancel', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, api_category=DATA_RESTRICTIONS_CURRENT, data_key='weekDay'))"
+  - (RenaultBinarySensorEntityDescription, ...)
+  - "(RensonBinarySensorEntityDescription(translation_key=\n    'frost_protection_active',\
+    \ key='FROST_PROTECTION_FIELD', field=\n    FROST_PROTECTION_FIELD, entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    RensonBinarySensorEntityDescription(key='BREEZE_ENABLE_FIELD',\n    translation_key='breeze',\
+    \ field=BREEZE_ENABLE_FIELD, entity_category=\n    EntityCategory.DIAGNOSTIC),\
+    \ RensonBinarySensorEntityDescription(key=\n    'BREEZE_MET_FIELD', translation_key='breeze_conditions_met',\
+    \ field=\n    BREEZE_MET_FIELD), RensonBinarySensorEntityDescription(key=\n  \
+    \  'HUMIDITY_CONTROL_FIELD', translation_key='humidity_control', field=\n    HUMIDITY_CONTROL_FIELD,\
+    \ entity_category=EntityCategory.DIAGNOSTIC),\n    RensonBinarySensorEntityDescription(key='AIR_QUALITY_CONTROL_FIELD',\n\
+    \    translation_key='air_quality_control', field=AIR_QUALITY_CONTROL_FIELD,\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC),\n    RensonBinarySensorEntityDescription(key='CO2_CONTROL_FIELD',\n\
+    \    translation_key='co2_control', field=CO2_CONTROL_FIELD, entity_category\n\
+    \    =EntityCategory.DIAGNOSTIC), RensonBinarySensorEntityDescription(key=\n \
+    \   'PREHEATER_FIELD', translation_key='preheater', field=PREHEATER_FIELD,\n \
+    \   entity_category=EntityCategory.DIAGNOSTIC))"
+  - (RensonBinarySensorEntityDescription, ...)
+  - "(ReolinkBinarySensorEntityDescription(key='motion', device_class=\n    BinarySensorDeviceClass.MOTION,\
+    \ value=lambda api, ch: api.\n    motion_detected(ch)), ReolinkBinarySensorEntityDescription(key=\n\
+    \    FACE_DETECTION_TYPE, translation_key='face', icon=\n    'mdi:face-recognition',\
+    \ value=lambda api, ch: api.ai_detected(ch,\n    FACE_DETECTION_TYPE), supported=lambda\
+    \ api, ch: api.ai_supported(ch,\n    FACE_DETECTION_TYPE)), ReolinkBinarySensorEntityDescription(key=\n\
+    \    PERSON_DETECTION_TYPE, translation_key='person', value=lambda api, ch:\n\
+    \    api.ai_detected(ch, PERSON_DETECTION_TYPE), supported=lambda api, ch:\n \
+    \   api.ai_supported(ch, PERSON_DETECTION_TYPE)),\n    ReolinkBinarySensorEntityDescription(key=VEHICLE_DETECTION_TYPE,\n\
+    \    translation_key='vehicle', icon='mdi:car', icon_off='mdi:car-off',\n    value=lambda\
+    \ api, ch: api.ai_detected(ch, VEHICLE_DETECTION_TYPE),\n    supported=lambda\
+    \ api, ch: api.ai_supported(ch, VEHICLE_DETECTION_TYPE)),\n    ReolinkBinarySensorEntityDescription(key=PET_DETECTION_TYPE,\n\
+    \    translation_key='pet', icon='mdi:dog-side', icon_off='mdi:dog-side-off',\n\
+    \    value=lambda api, ch: api.ai_detected(ch, PET_DETECTION_TYPE),\n    supported=lambda\
+    \ api, ch: api.ai_supported(ch, PET_DETECTION_TYPE)),\n    ReolinkBinarySensorEntityDescription(key='visitor',\
+    \ translation_key=\n    'visitor', icon='mdi:bell-ring-outline', icon_off='mdi:doorbell',\
+    \ value\n    =lambda api, ch: api.visitor_detected(ch), supported=lambda api,\
+    \ ch:\n    api.is_doorbell(ch)))"
+  - "(RingBinarySensorEntityDescription(key='ding', translation_key='ding',\n    category=['doorbots',\
+    \ 'authorized_doorbots'], device_class=\n    BinarySensorDeviceClass.OCCUPANCY),\
+    \ RingBinarySensorEntityDescription(\n    key='motion', category=['doorbots',\
+    \ 'authorized_doorbots',\n    'stickup_cams'], device_class=BinarySensorDeviceClass.MOTION))"
+  - (RingBinarySensorEntityDescription, ...)
+  - "(RiscoLocalBinarySensor(local_data.system.id, zone_id, zone),\n    RiscoLocalAlarmedBinarySensor(local_data.system.id,\
+    \ zone_id, zone),\n    RiscoLocalArmedBinarySensor(local_data.system.id, zone_id,\
+    \ zone))"
+  - "(RitualsBinarySensorEntityDescription(key='charging', device_class=\n    BinarySensorDeviceClass.BATTERY_CHARGING,\
+    \ entity_category=\n    EntityCategory.DIAGNOSTIC, is_on_fn=lambda diffuser: diffuser.charging,\n\
+    \    has_fn=lambda diffuser: diffuser.has_battery),)"
+  - "(RobotBinarySensorEntityDescription[LitterRobot](key='sleeping',\n    translation_key='sleeping',\
+    \ icon='mdi:sleep', entity_category=\n    EntityCategory.DIAGNOSTIC, entity_registry_enabled_default=False,\n\
+    \    is_on_fn=lambda robot: robot.is_sleeping),\n    RobotBinarySensorEntityDescription[LitterRobot](key='sleep_mode',\n\
+    \    translation_key='sleep_mode', icon='mdi:sleep', entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ entity_registry_enabled_default=False,\n    is_on_fn=lambda robot: robot.sleep_mode_enabled))"
+  - "(RobotBinarySensorEntityDescription[Robot](key='power_status',\n    translation_key='power_status',\
+    \ device_class=BinarySensorDeviceClass.\n    PLUG, entity_category=EntityCategory.DIAGNOSTIC,\n\
+    \    entity_registry_enabled_default=False, is_on_fn=lambda robot: robot.\n  \
+    \  power_status == 'AC'),)"
+  - "(RokuBinarySensorEntityDescription(key='headphones_connected',\n    translation_key='headphones_connected',\
+    \ icon='mdi:headphones', value_fn\n    =lambda device: device.info.headphones_connected),\n\
+    \    RokuBinarySensorEntityDescription(key='supports_airplay',\n    translation_key='supports_airplay',\
+    \ icon='mdi:cast-variant',\n    entity_category=EntityCategory.DIAGNOSTIC, value_fn=lambda\
+    \ device:\n    device.info.supports_airplay), RokuBinarySensorEntityDescription(key=\n\
+    \    'supports_ethernet', translation_key='supports_ethernet', icon=\n    'mdi:ethernet',\
+    \ entity_category=EntityCategory.DIAGNOSTIC, value_fn=lambda\n    device: device.info.ethernet_support),\n\
+    \    RokuBinarySensorEntityDescription(key='supports_find_remote',\n    translation_key='supports_find_remote',\
+    \ icon='mdi:remote',\n    entity_category=EntityCategory.DIAGNOSTIC, value_fn=lambda\
+    \ device:\n    device.info.supports_find_remote))"
+  - (RokuBinarySensorEntityDescription, ...)
+  - "(SFRBoxBinarySensorEntityDescription[DslInfo](key='status', device_class=\n \
+    \   BinarySensorDeviceClass.CONNECTIVITY, entity_category=EntityCategory.\n  \
+    \  DIAGNOSTIC, value_fn=lambda x: x.status == 'up', translation_key=\n    'dsl_status'),)"
+  - (SFRBoxBinarySensorEntityDescription[DslInfo], ...)
+  - "(SFRBoxBinarySensorEntityDescription[FtthInfo](key='status', device_class=\n\
+    \    BinarySensorDeviceClass.CONNECTIVITY, entity_category=EntityCategory.\n \
+    \   DIAGNOSTIC, value_fn=lambda x: x.status == 'up', translation_key=\n    'ftth_status'),)"
+  - (SFRBoxBinarySensorEntityDescription[FtthInfo], ...)
+  - "(SFRBoxBinarySensorEntityDescription[WanInfo](key='status', device_class=\n \
+    \   BinarySensorDeviceClass.CONNECTIVITY, entity_category=EntityCategory.\n  \
+    \  DIAGNOSTIC, value_fn=lambda x: x.status == 'up', translation_key=\n    'wan_status'),)"
+  - (SFRBoxBinarySensorEntityDescription[WanInfo], ...)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (SUBTYPE_ONLINE, SUBTYPE_COLD_REBOOT)
+  - (SUN_EVENT_SUNRISE, SUN_EVENT_SUNSET)
+  - "(SchlageBinarySensorEntityDescription(key='keypad_disabled',\n    translation_key='keypad_disabled',\
+    \ device_class=BinarySensorDeviceClass\n    .PROBLEM, entity_category=EntityCategory.DIAGNOSTIC,\
+    \ value_fn=lambda\n    data: data.lock.keypad_disabled(data.logs)),)"
+  - "(SensiboDeviceBinarySensorEntityDescription(key='pure_ac_integration',\n    translation_key='pure_ac_integration',\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, device_class=BinarySensorDeviceClass.CONNECTIVITY,\
+    \ value_fn\n    =lambda data: data.pure_ac_integration),\n    SensiboDeviceBinarySensorEntityDescription(key='pure_geo_integration',\n\
+    \    translation_key='pure_geo_integration', entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC, device_class=BinarySensorDeviceClass.CONNECTIVITY, value_fn\n\
+    \    =lambda data: data.pure_geo_integration),\n    SensiboDeviceBinarySensorEntityDescription(key=\n\
+    \    'pure_measure_integration', translation_key='pure_measure_integration',\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, device_class=\n    BinarySensorDeviceClass.CONNECTIVITY,\
+    \ value_fn=lambda data: data.\n    pure_measure_integration), SensiboDeviceBinarySensorEntityDescription(\n\
+    \    key='pure_prime_integration', translation_key='pure_prime_integration',\n\
+    \    entity_category=EntityCategory.DIAGNOSTIC, device_class=\n    BinarySensorDeviceClass.CONNECTIVITY,\
+    \ value_fn=lambda data: data.\n    pure_prime_integration), FILTER_CLEAN_REQUIRED_DESCRIPTION)"
+  - "(SensiboDeviceBinarySensorEntityDescription(key='room_occupied',\n    translation_key='room_occupied',\
+    \ device_class=BinarySensorDeviceClass.\n    MOTION, icon='mdi:motion-sensor',\
+    \ value_fn=lambda data: data.\n    room_occupied),)"
+  - (SensiboDeviceBinarySensorEntityDescription, ...)
+  - "(SensiboMotionBinarySensorEntityDescription(key='alive', device_class=\n    BinarySensorDeviceClass.CONNECTIVITY,\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, value_fn=lambda data: data.alive),\n\
+    \    SensiboMotionBinarySensorEntityDescription(key='is_main_sensor',\n    translation_key='is_main_sensor',\
+    \ entity_category=EntityCategory.\n    DIAGNOSTIC, icon='mdi:connection', value_fn=lambda\
+    \ data: data.\n    is_main_sensor), SensiboMotionBinarySensorEntityDescription(key=\n\
+    \    'motion', device_class=BinarySensorDeviceClass.MOTION, icon=\n    'mdi:motion-sensor',\
+    \ value_fn=lambda data: data.motion))"
+  - (SensiboMotionBinarySensorEntityDescription, ...)
+  - "(SynologyDSMBinarySensorEntityDescription(api_key=SynoCoreSecurity.API_KEY,\n\
+    \    key='status', translation_key='status', device_class=\n    BinarySensorDeviceClass.SAFETY),)"
+  - "(SynologyDSMBinarySensorEntityDescription(api_key=SynoStorage.API_KEY, key=\n\
+    \    'disk_exceed_bad_sector_thr', translation_key=\n    'disk_exceed_bad_sector_thr',\
+    \ device_class=BinarySensorDeviceClass.\n    SAFETY, entity_category=EntityCategory.DIAGNOSTIC),\n\
+    \    SynologyDSMBinarySensorEntityDescription(api_key=SynoStorage.API_KEY,\n \
+    \   key='disk_below_remain_life_thr', translation_key=\n    'disk_below_remain_life_thr',\
+    \ device_class=BinarySensorDeviceClass.\n    SAFETY, entity_category=EntityCategory.DIAGNOSTIC))"
+  - (SynologyDSMBinarySensorEntityDescription, ...)
+  - "(SystemBridgeBinarySensorEntityDescription(key='battery_is_charging',\n    device_class=BinarySensorDeviceClass.BATTERY_CHARGING,\
+    \ value=lambda\n    data: data.battery.is_charging),)"
+  - "(SystemBridgeBinarySensorEntityDescription(key='version_available',\n    device_class=BinarySensorDeviceClass.UPDATE,\
+    \ value=lambda data: data.\n    system.version_newer_available),)"
+  - (SystemBridgeBinarySensorEntityDescription, ...)
+  - (TAMPER_BINARY_SENSOR,)
+  - "(TailscaleBinarySensorEntityDescription(key='update_available',\n    translation_key='client',\
+    \ device_class=BinarySensorDeviceClass.UPDATE,\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ is_on_fn=lambda device:\n    device.update_available), TailscaleBinarySensorEntityDescription(key=\n\
+    \    'client_supports_hair_pinning', translation_key=\n    'client_supports_hair_pinning',\
+    \ icon='mdi:wan', entity_category=\n    EntityCategory.DIAGNOSTIC, is_on_fn=lambda\
+    \ device: device.\n    client_connectivity.client_supports.hair_pinning),\n  \
+    \  TailscaleBinarySensorEntityDescription(key='client_supports_ipv6',\n    translation_key='client_supports_ipv6',\
+    \ icon='mdi:wan', entity_category\n    =EntityCategory.DIAGNOSTIC, is_on_fn=lambda\
+    \ device: device.\n    client_connectivity.client_supports.ipv6),\n    TailscaleBinarySensorEntityDescription(key='client_supports_pcp',\n\
+    \    translation_key='client_supports_pcp', icon='mdi:wan', entity_category=\n\
+    \    EntityCategory.DIAGNOSTIC, is_on_fn=lambda device: device.\n    client_connectivity.client_supports.pcp),\n\
+    \    TailscaleBinarySensorEntityDescription(key='client_supports_pmp',\n    translation_key='client_supports_pmp',\
+    \ icon='mdi:wan', entity_category=\n    EntityCategory.DIAGNOSTIC, is_on_fn=lambda\
+    \ device: device.\n    client_connectivity.client_supports.pmp),\n    TailscaleBinarySensorEntityDescription(key='client_supports_udp',\n\
+    \    translation_key='client_supports_udp', icon='mdi:wan', entity_category=\n\
+    \    EntityCategory.DIAGNOSTIC, is_on_fn=lambda device: device.\n    client_connectivity.client_supports.udp),\n\
+    \    TailscaleBinarySensorEntityDescription(key='client_supports_upnp',\n    translation_key='client_supports_upnp',\
+    \ icon='mdi:wan', entity_category\n    =EntityCategory.DIAGNOSTIC, is_on_fn=lambda\
+    \ device: device.\n    client_connectivity.client_supports.upnp))"
+  - (TailscaleBinarySensorEntityDescription, ...)
+  - (Template, list[Observation])
+  - "(ToonBinarySensorEntityDescription(key=\n    'thermostat_info_boiler_connected_None',\
+    \ name=\n    'Boiler Module Connection', section='thermostat', measurement=\n\
+    \    'boiler_module_connected', device_class=BinarySensorDeviceClass.\n    CONNECTIVITY,\
+    \ entity_registry_enabled_default=False, cls=\n    ToonBoilerModuleBinarySensor),\
+    \ ToonBinarySensorEntityDescription(key=\n    'thermostat_program_overridden',\
+    \ name='Thermostat Program Override',\n    section='thermostat', measurement='program_overridden',\
+    \ icon=\n    'mdi:gesture-tap', cls=ToonDisplayBinarySensor))"
+  - "(ToonBinarySensorEntityDescription(key='thermostat_info_burner_info_1',\n   \
+    \ name='Boiler Heating', section='thermostat', measurement='heating',\n    icon='mdi:fire',\
+    \ entity_registry_enabled_default=False, cls=\n    ToonBoilerBinarySensor), ToonBinarySensorEntityDescription(key=\n\
+    \    'thermostat_info_burner_info_2', name='Hot Tap Water', section=\n    'thermostat',\
+    \ measurement='hot_tapwater', icon='mdi:water-pump', cls=\n    ToonBoilerBinarySensor),\
+    \ ToonBinarySensorEntityDescription(key=\n    'thermostat_info_burner_info_3',\
+    \ name='Boiler Preheating', section=\n    'thermostat', measurement='pre_heating',\
+    \ icon='mdi:fire',\n    entity_registry_enabled_default=False, cls=ToonBoilerBinarySensor),\n\
+    \    ToonBinarySensorEntityDescription(key=\n    'thermostat_info_burner_info_None',\
+    \ name='Boiler Burner', section=\n    'thermostat', measurement='burner', icon='mdi:fire',\
+    \ cls=\n    ToonBoilerBinarySensor), ToonBinarySensorEntityDescription(key=\n\
+    \    'thermostat_info_error_found_255', name='Boiler Status', section=\n    'thermostat',\
+    \ measurement='error_found', device_class=\n    BinarySensorDeviceClass.PROBLEM,\
+    \ icon='mdi:alert', cls=\n    ToonBoilerBinarySensor), ToonBinarySensorEntityDescription(key=\n\
+    \    'thermostat_info_ot_communication_error_0', name='OpenTherm Connection',\n\
+    \    section='thermostat', measurement='opentherm_communication_error',\n    device_class=BinarySensorDeviceClass.PROBLEM,\
+    \ icon=\n    'mdi:check-network-outline', entity_registry_enabled_default=False,\
+    \ cls\n    =ToonBoilerBinarySensor))"
+  - (ToonBinarySensorEntityDescription, ...)
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.CH2O_STATE, device_class=\n   \
+    \ BinarySensorDeviceClass.SAFETY, on_value='alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.CH4_SENSOR_STATE,\n    device_class=BinarySensorDeviceClass.GAS,\
+    \ on_value='alarm'),\n    TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.CLOSED_OPENED_KIT,\n    device_class=BinarySensorDeviceClass.LOCK,\
+    \ on_value={'AQAB'}),)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.CO2_STATE, device_class=\n    BinarySensorDeviceClass.SAFETY,\
+    \ on_value='alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.CO_STATE, device_class=\n    BinarySensorDeviceClass.SAFETY,\
+    \ on_value='1'),\n    TuyaBinarySensorEntityDescription(key=DPCode.CO_STATUS,\
+    \ device_class=\n    BinarySensorDeviceClass.SAFETY, on_value='alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.DOORCONTACT_STATE,\n    device_class=BinarySensorDeviceClass.DOOR),\
+    \ TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.FEED_STATE, translation_key=\n\
+    \    'feeding', icon='mdi:information', on_value='feeding'),)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.GAS_SENSOR_STATE, icon=\n    'mdi:gas-cylinder',\
+    \ device_class=BinarySensorDeviceClass.GAS, on_value=\n    'alarm'), TuyaBinarySensorEntityDescription(key=DPCode.CH4_SENSOR_STATE,\n\
+    \    translation_key='methane', device_class=BinarySensorDeviceClass.GAS,\n  \
+    \  on_value='alarm'), TuyaBinarySensorEntityDescription(key=DPCode.\n    VOC_STATE,\
+    \ translation_key='voc', device_class=BinarySensorDeviceClass.\n    SAFETY, on_value='alarm'),\
+    \ TuyaBinarySensorEntityDescription(key=DPCode\n    .PM25_STATE, translation_key='pm25',\
+    \ device_class=\n    BinarySensorDeviceClass.SAFETY, on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.CO_STATE,\
+    \ translation_key=\n    'carbon_monoxide', icon='mdi:molecule-co', device_class=\n\
+    \    BinarySensorDeviceClass.SAFETY, on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.CO2_STATE,\
+    \ translation_key\n    ='carbon_dioxide', icon='mdi:molecule-co2', device_class=\n\
+    \    BinarySensorDeviceClass.SAFETY, on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.CH2O_STATE,\n\
+    \    translation_key='formaldehyde', device_class=BinarySensorDeviceClass.\n \
+    \   SAFETY, on_value='alarm'), TuyaBinarySensorEntityDescription(key=DPCode\n\
+    \    .DOORCONTACT_STATE, device_class=BinarySensorDeviceClass.DOOR),\n    TuyaBinarySensorEntityDescription(key=DPCode.WATERSENSOR_STATE,\n\
+    \    device_class=BinarySensorDeviceClass.MOISTURE, on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.PRESSURE_STATE,\n\
+    \    translation_key='pressure', on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.SMOKE_SENSOR_STATE,\
+    \ icon=\n    'mdi:smoke-detector', device_class=BinarySensorDeviceClass.SMOKE,\n\
+    \    on_value='alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.GAS_SENSOR_STATUS,\n    device_class=BinarySensorDeviceClass.GAS,\
+    \ on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.GAS_SENSOR_STATE,\n\
+    \    device_class=BinarySensorDeviceClass.GAS, on_value='1'),\n    TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.PIR, device_class=\n    BinarySensorDeviceClass.MOTION,\
+    \ on_value='pir'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.PM25_STATE, device_class=\n   \
+    \ BinarySensorDeviceClass.SAFETY, on_value='alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.PRESENCE_STATE, device_class=\n\
+    \    BinarySensorDeviceClass.MOTION, on_value='presence'),)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.PRESSURE_STATE, on_value=\n   \
+    \ 'alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.SMOKE_SENSOR_STATUS,\n    device_class=BinarySensorDeviceClass.SMOKE,\
+    \ on_value='alarm'),\n    TuyaBinarySensorEntityDescription(key=DPCode.SMOKE_SENSOR_STATE,\n\
+    \    device_class=BinarySensorDeviceClass.SMOKE, on_value={'1', 'alarm'}),\n \
+    \   TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.SOS_STATE, device_class=\n    BinarySensorDeviceClass.SAFETY),\
+    \ TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.STATUS, device_class=\n    BinarySensorDeviceClass.DOOR,\
+    \ on_value={'open', 'opened'}),)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.TEMPER_ALARM, device_class=\n \
+    \   BinarySensorDeviceClass.TAMPER, entity_category=EntityCategory.\n    DIAGNOSTIC),\
+    \ TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.VOC_STATE, device_class=\n    BinarySensorDeviceClass.SAFETY,\
+    \ on_value='alarm'), TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.WATERSENSOR_STATE,\n    device_class=BinarySensorDeviceClass.MOISTURE,\
+    \ on_value='alarm'),\n    TAMPER_BINARY_SENSOR)"
+  - "(TuyaBinarySensorEntityDescription(key=DPCode.WINDOW_STATE, device_class=\n \
+    \   BinarySensorDeviceClass.WINDOW, on_value='opened'),)"
+  - "(TuyaBinarySensorEntityDescription(key=f'{DPCode.SHOCK_STATE}_vibration',\n \
+    \   dpcode=DPCode.SHOCK_STATE, device_class=BinarySensorDeviceClass.\n    VIBRATION,\
+    \ on_value='vibration'), TuyaBinarySensorEntityDescription(key\n    =f'{DPCode.SHOCK_STATE}_drop',\
+    \ dpcode=DPCode.SHOCK_STATE,\n    translation_key='drop', icon='mdi:icon=package-down',\
+    \ on_value='drop'),\n    TuyaBinarySensorEntityDescription(key=f'{DPCode.SHOCK_STATE}_tilt',\n\
+    \    dpcode=DPCode.SHOCK_STATE, translation_key='tilt', icon=\n    'mdi:spirit-level',\
+    \ on_value='tilt'))"
+  - (UUID, Observation)
+  - (Unit, AsekoDataUpdateCoordinator)
+  - (UnlockStatus.SECURITY_LOCKED, UnlockStatus.UNLOCKED_SECURITY_LOCKED)
+  - "(UpnpBinarySensorEntityDescription(key=WAN_STATUS, translation_key=\n    'wan_status',\
+    \ device_class=BinarySensorDeviceClass.CONNECTIVITY,\n    entity_category=EntityCategory.DIAGNOSTIC),)"
+  - (UpnpBinarySensorEntityDescription, ...)
+  - "(ValloxBinarySensorEntityDescription(key='post_heater', translation_key=\n  \
+    \  'post_heater', icon='mdi:radiator', metric_key='A_CYC_IO_HEATER'),)"
+  - (ValloxBinarySensorEntityDescription, ...)
+  - (ValueError, IndexError, KeyError, OSError)
+  - (ValueError, TypeError)
+  - "(ValveControllerBinarySensorDescription(key=SENSOR_KIND_LEAK_DETECTED,\n    translation_key='leak',\
+    \ device_class=BinarySensorDeviceClass.MOISTURE,\n    api_category=API_SYSTEM_ONBOARD_SENSOR_STATUS),)"
+  - "(ViCareBinarySensorEntityDescription(key='burner_active', name='Burner',\n  \
+    \  icon='mdi:gas-burner', device_class=BinarySensorDeviceClass.RUNNING,\n    value_getter=lambda\
+    \ api: api.getActive()),)"
+  - "(ViCareBinarySensorEntityDescription(key='circulationpump_active', name=\n  \
+    \  'Circulation pump', icon='mdi:pump', device_class=\n    BinarySensorDeviceClass.RUNNING,\
+    \ value_getter=lambda api: api.\n    getCirculationPumpActive()), ViCareBinarySensorEntityDescription(key=\n\
+    \    'frost_protection_active', name='Frost protection', icon=\n    'mdi:snowflake',\
+    \ value_getter=lambda api: api.getFrostProtectionActive()))"
+  - "(ViCareBinarySensorEntityDescription(key='compressor_active', name=\n    'Compressor',\
+    \ device_class=BinarySensorDeviceClass.RUNNING,\n    value_getter=lambda api:\
+    \ api.getActive()),)"
+  - "(ViCareBinarySensorEntityDescription(key='solar_pump_active', name=\n    'Solar\
+    \ pump', icon='mdi:pump', device_class=BinarySensorDeviceClass.\n    RUNNING,\
+    \ value_getter=lambda api: api.getSolarPumpActive()),\n    ViCareBinarySensorEntityDescription(key='charging_active',\
+    \ name=\n    'DHW Charging', device_class=BinarySensorDeviceClass.RUNNING,\n \
+    \   value_getter=lambda api: api.getDomesticHotWaterChargingActive()),\n    ViCareBinarySensorEntityDescription(key='dhw_circulationpump_active',\n\
+    \    name='DHW Circulation Pump', icon='mdi:pump', device_class=\n    BinarySensorDeviceClass.RUNNING,\
+    \ value_getter=lambda api: api.\n    getDomesticHotWaterCirculationPumpActive()),\n\
+    \    ViCareBinarySensorEntityDescription(key='dhw_pump_active', name=\n    'DHW\
+    \ Pump', icon='mdi:pump', device_class=BinarySensorDeviceClass.\n    RUNNING,\
+    \ value_getter=lambda api: api.getDomesticHotWaterPumpActive()))"
+  - (ViCareBinarySensorEntityDescription, ...)
+  - "(XiaomiMiioBinarySensorDescription(key=ATTR_NO_WATER, name=\n    'Water tank\
+    \ empty', icon='mdi:water-off-outline', entity_category=\n    EntityCategory.DIAGNOSTIC),\
+    \ XiaomiMiioBinarySensorDescription(key=\n    ATTR_WATER_TANK_DETACHED, name='Water\
+    \ tank', icon=\n    'mdi:car-coolant-level', device_class=BinarySensorDeviceClass.\n\
+    \    CONNECTIVITY, value=lambda value: not value, entity_category=\n    EntityCategory.DIAGNOSTIC),\
+    \ XiaomiMiioBinarySensorDescription(key=\n    ATTR_PTC_STATUS, name='Auxiliary\
+    \ heat status', device_class=\n    BinarySensorDeviceClass.POWER, entity_category=EntityCategory.\n\
+    \    DIAGNOSTIC), XiaomiMiioBinarySensorDescription(key=\n    ATTR_POWERSUPPLY_ATTACHED,\
+    \ name='Power supply', device_class=\n    BinarySensorDeviceClass.PLUG, entity_category=EntityCategory.DIAGNOSTIC))"
+  - "(YoLinkBinarySensorEntityDescription(key='door_state', icon='mdi:door',\n   \
+    \ device_class=BinarySensorDeviceClass.DOOR, value=lambda value: value ==\n  \
+    \  'open' if value is not None else None, exists_fn=lambda device: device.\n \
+    \   device_type == ATTR_DEVICE_DOOR_SENSOR),\n    YoLinkBinarySensorEntityDescription(key='motion_state',\
+    \ device_class=\n    BinarySensorDeviceClass.MOTION, value=lambda value: value\
+    \ == 'alert' if\n    value is not None else None, exists_fn=lambda device: device.\n\
+    \    device_type == ATTR_DEVICE_MOTION_SENSOR),\n    YoLinkBinarySensorEntityDescription(key='leak_state',\
+    \ device_class=\n    BinarySensorDeviceClass.MOISTURE, value=lambda value: value\
+    \ == 'alert' if\n    value is not None else None, exists_fn=lambda device: device.\n\
+    \    device_type == ATTR_DEVICE_LEAK_SENSOR),\n    YoLinkBinarySensorEntityDescription(key='vibration_state',\
+    \ device_class\n    =BinarySensorDeviceClass.VIBRATION, value=lambda value: value\
+    \ ==\n    'alert' if value is not None else None, exists_fn=lambda device: device\n\
+    \    .device_type == ATTR_DEVICE_VIBRATION_SENSOR),\n    YoLinkBinarySensorEntityDescription(key='co_detected',\
+    \ device_class=\n    BinarySensorDeviceClass.CO, value=lambda state: state.get('gasAlarm'),\n\
+    \    exists_fn=lambda device: device.device_type ==\n    ATTR_DEVICE_CO_SMOKE_SENSOR),\
+    \ YoLinkBinarySensorEntityDescription(key=\n    'smoke_detected', device_class=BinarySensorDeviceClass.SMOKE,\
+    \ value=lambda\n    state: state.get('smokeAlarm'), exists_fn=lambda device: device.\n\
+    \    device_type == ATTR_DEVICE_CO_SMOKE_SENSOR))"
+  - (YoLinkBinarySensorEntityDescription, ...)
+  - ([Any], bool | None)
+  - ([Any], bool)
+  - ([Any], dict[Any, StateType])
+  - ([AugustData, DoorbellDetail], bool)
+  - ([CameraData], bool | None)
+  - ([ConnectionInfo], bool)
+  - ([CoordinatorDataT, str], bool)
+  - ([DeviceProp], bool | int | None)
+  - ([Device], bool | None)
+  - ([DevoloBinarySensorEntity], bool)
+  - ([Diffuser], bool)
+  - ([Dremel3DPrinter], bool)
+  - ([EnvoyEncharge], bool)
+  - ([EnvoyEnpower], bool)
+  - ([FritzhomeDevice], bool | None)
+  - ([Hole], bool)
+  - ([Hole], dict[str, Any] | None)
+  - ([Host, int], bool)
+  - ([IntellifirePollData], bool)
+  - ([LockData], bool)
+  - ([MotionSensor], bool | None)
+  - ([MyBMWVehicle, UnitSystem], dict[str, Any])
+  - ([MyBMWVehicle], bool)
+  - ([Notifications], bool)
+  - ([OmadaGatewayPort], bool)
+  - ([OverkizStateType], bool)
+  - ([RenaultBinarySensor], str)
+  - ([RokuDevice], bool | None)
+  - ([SensiboDevice], bool | None)
+  - ([SpaClient], bool)
+  - ([StarlinkData], bool | None)
+  - ([T], bool | None)
+  - ([TailscaleDevice], bool | None)
+  - ([Unit], bool)
+  - ([Vehicle], bool | None)
+  - ([YoLinkDevice], bool)
+  - ([], None)
+  - ([_RobotT], bool)
+  - ([_T], bool | None)
+  - ([int, dict[int, str]], bool)
+  - (_, s)
+  - (ac_key, ac_device)
+  - (aidoo_id, aidoo_data)
+  - (ain, device)
+  - (appliance_id, appliance)
+  - (area_name, device)
+  - (attr, attr_key)
+  - (binary_sensor, value)
+  - (clusters.BooleanState.Attributes.StateValue,)
+  - (clusters.OccupancySensing.Attributes.Occupancy,)
+  - (clusters.PowerSource.Attributes.BatChargeLevel,)
+  - (clusters.PowerSource.Attributes.BatPercentRemaining,)
+  - (conf, coordinator, rest)
+  - (device_class, device_type)
+  - (device_class, values)
+  - (device_id, config)
+  - (device_id, coordinator)
+  - (device_id, device)
+  - (device_id, device_config)
+  - (device_id, device_data)
+  - (device_id, device_info)
+  - (device_id, entity)
+  - (device_key, description)
+  - (device_key, sensor_values)
+  - (dr.CONNECTION_BLUETOOTH, device.address)
+  - (entity, observations)
+  - (event_topic, event_data)
+  - '(f''Received unidentified message: {data}'', HTTPStatus.UNPROCESSABLE_ENTITY)'
+  - (holiday_date, name)
+  - (host_name, zm_client)
+  - (idx, ent)
+  - (int, BinarySensorEntityDescription)
+  - (io_device_id, io_device)
+  - (k, v)
+  - (key, sensor)
+  - (key, val)
+  - (listener_id, listener)
+  - (location_id, location)
+  - (mac_address, station)
+  - (msg_type, msg)
+  - (name, device)
+  - (name, status, _)
+  - (new_state.last_updated.timestamp(), float(state))
+  - (node, device_class, device_type, device_info)
+  - (object_id, entity_cfg)
+  - (p_index, p_data)
+  - (pin_num, pin_data)
+  - (port, port_name)
+  - (port_addr, port_name)
+  - (port_id, port_values)
+  - (port_num, port_name)
+  - (rfxtrxmod.SensorEvent, rfxtrxmod.ControlEvent)
+  - (robot_type, entity_descriptions)
+  - (self._decode, _)
+  - (sensor, channel_list)
+  - (sensor, description)
+  - (sensor_id, sensor_data)
+  - (str, ...)
+  - (str, Any)
+  - (str, BinarySensorEntityDescription)
+  - (str, Callable[[Observation], bool | None])
+  - (str, DataUpdateCoordinator[Any])
+  - (str, DeviceInfo)
+  - (str, DevoloBinarySensorEntityDescription)
+  - (str, GuardianDataUpdateCoordinator)
+  - "(str, ISYInsteonBinarySensorEntity | ISYBinarySensorEntity |\n    ISYBinarySensorHeartbeat\
+    \ | ISYBinarySensorProgramEntity)"
+  - (str, MySensorsBinarySensorDescription)
+  - (str, ONVIFBinarySensor)
+  - (str, OncueDevice)
+  - (str, OpenUvCoordinator)
+  - (str, PropertyZWaveJSEntityDescription)
+  - (str, RitualsDataUpdateCoordinator)
+  - (str, RoborockDataUpdateCoordinator)
+  - (str, bool | float | int | list | None)
+  - (str, dict)
+  - (str, list[Observation])
+  - (str, list[XboxBinarySensorEntity])
+  - (str, list[str])
+  - (str, str | bool | int | float)
+  - (str, str)
+  - (str, tuple[OneWireBinarySensorEntityDescription, ...])
+  - (str, tuple[TuyaBinarySensorEntityDescription, ...])
+  - (system_id, system_data)
+  - (system_zone_id, zone_data)
+  - (t, _)
+  - (type[Robot], tuple[RobotBinarySensorEntityDescription, ...])
+  - (unit, coordinator)
+  - (var, info)
+  - (vin, datastore)
+  - (zone_id, zone)
+  - (zone_id, zone_data)
+  - (zone_key, zone)
+  - (zone_num, device_config_data)
+  - Any, StateType
+  - OneWireBinarySensorEntityDescription, ...
+  - RobotBinarySensorEntityDescription, ...
+  - TuyaBinarySensorEntityDescription, ...
+  - '[Observation], bool | None'
+  - int, str
+  - str, Any

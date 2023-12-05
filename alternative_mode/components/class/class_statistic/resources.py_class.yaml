@@ -1,0 +1,8 @@
+resources.py:
+- AlexaCapabilityResource
+- AlexaGlobalCatalog
+- AlexaModeResource
+- AlexaPresetResource
+- AlexaSemantics
+- ResourceStorageCollection
+- ResourceYAMLCollection

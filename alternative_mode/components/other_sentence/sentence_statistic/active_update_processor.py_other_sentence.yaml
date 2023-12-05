@@ -1,0 +1,9 @@
+active_update_processor.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Any, Any, None)
+  - ([BluetoothServiceInfoBleak, float | None], bool)
+  - ([BluetoothServiceInfoBleak], Coroutine[Any, Any, _T])
+  - ([BluetoothServiceInfoBleak], _T)
+  - Any, Any, _T

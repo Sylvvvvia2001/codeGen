@@ -1,0 +1,135 @@
+device_tracker.py:
+  schemas: []
+  sets:
+  - '{''AddressSource'', ''AssociatedSsid'', ''InterfaceType''}'
+  - '{''_location_name''}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._device.unique_id)}'
+  - '{(DOMAIN, self._tile.uuid)}'
+  - '{(DOMAIN, self._unique_id)}'
+  - '{(GF_DOMAIN, self._unique_id)}'
+  - '{(GPL_DOMAIN, self._unique_id)}'
+  - '{(OT_DOMAIN, self._dev_id)}'
+  - '{ATTR_LAST_TIME_REACHABLE}'
+  - '{LATITUDE, LONGITUDE, TIMESTAMP}'
+  tuples:
+  - ('DevicesSeen', 'BluetoothDevicesSeen')
+  - "('address', 'at_loc_since', 'driving', 'gps_accuracy', 'last_seen',\n    'latitude',\
+    \ 'longitude', 'place', 'speed')"
+  - ('user', self._username)
+  - ('wldev', 'dhcpd_lease')
+  - ()
+  - (-1, 1)
+  - (..., ReceivePayloadType)
+  - (3, 12)
+  - (ATTR_ALTITUDE, ATTR_COMMENT, ATTR_COURSE, ATTR_SPEED)
+  - (ATTR_ALTITUDE, ATTR_COURSE, ATTR_SPEED, ATTR_VERTICAL_ACCURACY)
+  - (AprsConnectionError, LoginError)
+  - (AssertionError, exceptions.EOF)
+  - (AttributeError, BleakError)
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._device.unique_id)
+  - (DOMAIN, self._tile.uuid)
+  - (DOMAIN, self._unique_id)
+  - (EventKey, ...)
+  - (EventKey.WIRED_CLIENT_CONNECTED,)
+  - (EventKey.WIRED_CLIENT_DISCONNECTED,)
+  - "(EventKey.WIRELESS_CLIENT_CONNECTED, EventKey.WIRELESS_CLIENT_ROAM,\n    EventKey.WIRELESS_CLIENT_ROAM_RADIO,\
+    \ EventKey.WIRELESS_GUEST_CONNECTED,\n    EventKey.WIRELESS_GUEST_ROAM, EventKey.WIRELESS_GUEST_ROAM_RADIO)"
+  - (EventKey.WIRELESS_CLIENT_DISCONNECTED, EventKey.WIRELESS_GUEST_DISCONNECTED)
+  - (GF_DOMAIN, self._unique_id)
+  - (GPL_DOMAIN, self._unique_id)
+  - (HandlerT, ApiItemT)
+  - (KEY_LAN_HOST_INFO, KEY_WLAN_HOST_LIST)
+  - (KeyError, IndexError)
+  - (None, None)
+  - (OT_DOMAIN, self._dev_id)
+  - "(RenaultDataEntityDescription(key='location', coordinator='location', icon=\n\
+    \    'mdi:car', translation_key='location'),)"
+  - (RenaultDataEntityDescription, ...)
+  - (UnifiTrackerEntityDescription, ...)
+  - "(UnifiTrackerEntityDescription[Clients, Client](key='Client device scanner',\n\
+    \    has_entity_name=True, allowed_fn=async_client_allowed_fn,\n    api_handler_fn=lambda\
+    \ api: api.clients, available_fn=lambda controller,\n    obj_id: controller.available,\
+    \ device_info_fn=lambda api, obj_id: None,\n    event_is_on=WIRED_CONNECTION +\
+    \ WIRELESS_CONNECTION, event_to_subscribe=\n    WIRED_CONNECTION + WIRED_DISCONNECTION\
+    \ + WIRELESS_CONNECTION +\n    WIRELESS_DISCONNECTION, heartbeat_timedelta_fn=lambda\
+    \ controller, _:\n    controller.option_detection_time, is_connected_fn=\n   \
+    \ async_client_is_connected_fn, name_fn=lambda client: client.name or\n    client.hostname,\
+    \ object_fn=lambda api, obj_id: api.clients[obj_id],\n    should_poll=False, supported_fn=lambda\
+    \ controller, obj_id: True,\n    unique_id_fn=lambda controller, obj_id: f'{obj_id}-{controller.site}',\n\
+    \    ip_address_fn=lambda api, obj_id: api.clients[obj_id].ip, hostname_fn=\n\
+    \    lambda api, obj_id: api.clients[obj_id].hostname),\n    UnifiTrackerEntityDescription[Devices,\
+    \ Device](key='Device scanner',\n    has_entity_name=True, allowed_fn=lambda controller,\
+    \ obj_id: controller.\n    option_track_devices, api_handler_fn=lambda api: api.devices,\n\
+    \    available_fn=async_device_available_fn, device_info_fn=lambda api,\n    obj_id:\
+    \ None, event_is_on=None, event_to_subscribe=None,\n    heartbeat_timedelta_fn=async_device_heartbeat_timedelta_fn,\n\
+    \    is_connected_fn=lambda ctrlr, obj_id: ctrlr.api.devices[obj_id].state ==\n\
+    \    1, name_fn=lambda device: device.name or device.model, object_fn=lambda\n\
+    \    api, obj_id: api.devices[obj_id], should_poll=False, supported_fn=lambda\n\
+    \    controller, obj_id: True, unique_id_fn=lambda controller, obj_id:\n    obj_id,\
+    \ ip_address_fn=lambda api, obj_id: api.devices[obj_id].ip,\n    hostname_fn=lambda\
+    \ api, obj_id: None))"
+  - (ValueError, TypeError)
+  - ([StarlinkData], float)
+  - ([UniFiController, str], bool)
+  - ([UniFiController, str], timedelta)
+  - ([aiounifi.Controller, str], str | None)
+  - (_, longitude)
+  - (_, val)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (attr.get(ATTR_LATITUDE), attr.get(ATTR_LONGITUDE))
+  - (attribute, alias)
+  - (circle_id, circle)
+  - (config[CONF_HOST], 161)
+  - (config[CONF_HOST], config[CONF_HTTP_ID])
+  - (config[CONF_SSL], config[CONF_VERIFY_SSL])
+  - (config[CONF_USERNAME], config[CONF_PASSWORD])
+  - (data[ATTR_LATITUDE], data[ATTR_LONGITUDE])
+  - (dev_id, device)
+  - (dev_id, ip)
+  - (dev_id, topic)
+  - (device.latitude, device.longitude)
+  - (devices_to_track, devices_to_not_track)
+  - (errindication, errstatus, errindex, restable)
+  - (float(latitude), float(longitude))
+  - (float, float)
+  - (gps[0], gps[1] + degrees)
+  - (hass.config.latitude + offset(), hass.config.longitude + offset())
+  - (hass.config.latitude - 2e-05, hass.config.longitude + 2e-05)
+  - (host, http_id)
+  - (idx, dev_id)
+  - (idx, host)
+  - (k, v)
+  - (key, value)
+  - (lat, lng)
+  - (lat, lon)
+  - (latitude, _)
+  - (latitude, longitude, _)
+  - (latitude, longitude, _, _, _)
+  - (mac, _device_name)
+  - (mac, device)
+  - (mac, device_info)
+  - (member_id, member)
+  - (param, value)
+  - (person.latitude, person.longitude)
+  - (place_id, place)
+  - (position['latitude'], position['longitude'])
+  - "(requests.exceptions.ConnectionError, requests.exceptions.Timeout, requests\n\
+    \    .exceptions.ConnectTimeout)"
+  - (self._devices, self._positions, self._geofences)
+  - (self._type, self._password)
+  - (self.ssl, self.verify_ssl)
+  - (self.username, self.password)
+  - (set[str], set[str])
+  - (str, Any)
+  - (str, DataUpdateCoordinator[list[ConnectedStationInfo]])
+  - (str, MikrotikDataUpdateCoordinatorTracker)
+  - (str, dict)
+  - (str, float)
+  - (str, str)
+  - (tile_uuid, tile)
+  - (username, password)
+  - (x['mac'].upper(), x['name'])
+  - Clients, Client
+  - Devices, Device

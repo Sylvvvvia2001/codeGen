@@ -1,0 +1,108 @@
+camera.py:
+  schemas: []
+  sets:
+  - '{''access_token'', ''brand'', ''model_name'', ''motion_detection''}'
+  - '{(AGENT_DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, camera.serial)}'
+  - '{(DOMAIN, config_entry.entry_id)}'
+  - '{(DOMAIN, coordinator.config_entry.entry_id)}'
+  - '{(DOMAIN, entry.entry_id)}'
+  - '{(DOMAIN, f''{self._api.information.serial}_{self.camera_data.id}'')}'
+  - '{(DOMAIN, installation.contract)}'
+  - '{(DOMAIN, self._device_id)}'
+  - '{(DOMAIN, self.serial_number)}'
+  - '{(DOMAIN, str(device.device_id))}'
+  - '{(LOGI_CIRCLE_DOMAIN, camera.id)}'
+  - '{ATTR_DESCRIPTION, ATTR_LOCATION}'
+  - '{ActivityType.DOORBELL_MOTION, ActivityType.DOORBELL_IMAGE_CAPTURE}'
+  - '{ModelType.CAMERA}'
+  tuples:
+  - ('-1', self._image_id)
+  - ('MOTION_INPROGRESS', 'MOTION_FINISHED')
+  - ('NACamera-off', 'NACamera-disconnection')
+  - ('NACamera-on', WEBHOOK_NACAMERA_CONNECTION)
+  - ('PNG', 'JPEG')
+  - ('sp',)
+  - ((ATTR_LAST_TRIP, self._last_trip), (ATTR_FILENAME, self._filename))
+  - ()
+  - (3, 2, 0)
+  - (AGENT_DOMAIN, self.unique_id)
+  - (ATTR_FILENAME, self._filename)
+  - (ATTR_LAST_TRIP, self._last_trip)
+  - (AmcrestError, AmcrestCommandFailed)
+  - (COMM_TIMEOUT, SNAPSHOT_TIMEOUT)
+  - "(CameraEntityDescription(key='activity', translation_key='activity'),\n    CameraEntityDescription(key='avatar',\
+    \ translation_key='camera'))"
+  - (CameraEntityDescription, ...)
+  - (CameraInfo, CameraState)
+  - (ConnectionRefusedError, StatusCodeError)
+  - "(DOMAIN,\n    f'{self._api.information.serial}_{SynoSurveillanceStation.INFO_API_KEY}')"
+  - (DOMAIN, camera.serial)
+  - (DOMAIN, config_entry.entry_id)
+  - (DOMAIN, coordinator.config_entry.entry_id)
+  - (DOMAIN, entry.entry_id)
+  - (DOMAIN, f'{self._api.information.serial}_{self.camera_data.id}')
+  - (DOMAIN, installation.contract)
+  - (DOMAIN, self._device_id)
+  - (DOMAIN, self.coordinator.entry.data[CONF_GIID])
+  - (DOMAIN, self.serial_number)
+  - (DOMAIN, str(device.device_id))
+  - (EVENT_TYPE_LIGHT_MODE, EVENT_TYPE_OFF, EVENT_TYPE_ON)
+  - (HTTPError, PyEzvizError)
+  - (HTTP_BASIC_AUTHENTICATION, HTTP_DIGEST_AUTHENTICATION)
+  - (LOGI_CIRCLE_DOMAIN, camera.id)
+  - "(SynologyDSMAPIErrorException, SynologyDSMRequestException,\n    ConnectionRefusedError)"
+  - ([], Coroutine[Any, Any, None])
+  - ([], None)
+  - (_, callback_name, _)
+  - (_ATTR_COLOR_BW,)
+  - (_ATTR_PRESET,)
+  - (_ATTR_PTZ_MOV, _ATTR_PTZ_TT)
+  - (_SRV_CBW_SCHEMA, 'async_set_color_bw', (_ATTR_COLOR_BW,))
+  - (_SRV_GOTO_SCHEMA, 'async_goto_preset', (_ATTR_PRESET,))
+  - (_SRV_PTZ_SCHEMA, 'async_ptz_control', (_ATTR_PTZ_MOV, _ATTR_PTZ_TT))
+  - (_SRV_SCHEMA, 'async_disable_audio', ())
+  - (_SRV_SCHEMA, 'async_disable_motion_recording', ())
+  - (_SRV_SCHEMA, 'async_disable_recording', ())
+  - (_SRV_SCHEMA, 'async_enable_audio', ())
+  - (_SRV_SCHEMA, 'async_enable_motion_recording', ())
+  - (_SRV_SCHEMA, 'async_enable_recording', ())
+  - (_SRV_SCHEMA, 'async_start_tour', ())
+  - (_SRV_SCHEMA, 'async_stop_tour', ())
+  - "(aiohttp.ClientPayloadError, aiohttp.ContentTypeError, aiohttp.\n    ServerDisconnectedError,\
+    \ aiohttp.ClientConnectorError, NetatmoApiError)"
+  - (asyncio.TimeoutError, Exception)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (asyncio.TimeoutError, aiohttp.web.HTTPException)
+  - (camera, camera.channels[0], True)
+  - (camera, channel, True)
+  - (camera, channel, is_default)
+  - (camera, value)
+  - (content, _)
+  - (httpx.RequestError, httpx.HTTPStatusError)
+  - (i, uri)
+  - (image_name, username, pw)
+  - (k, v)
+  - (location_id, location)
+  - (name, camera)
+  - (name, value)
+  - (new_width, new_height)
+  - (nodeid, node)
+  - (old_width, old_height)
+  - (opts.left, opts.top, opts.left + opts.max_width, opts.top + opts.max_height)
+  - (path, _)
+  - (path, attrs)
+  - (pid, data)
+  - (result, response)
+  - (ret, _)
+  - (ret, response)
+  - "(self._attr_is_streaming, self._is_recording, self.\n    _motion_detection_enabled,\
+    \ self._audio_enabled, self.\n    _motion_recording_enabled, self._color_bw)"
+  - (service, (_, callback_name, _))
+  - (service, method)
+  - (str, ...)
+  - (str, Any)
+  - (str, str)
+  - (tuple[UFPCamera, CameraChannel, bool], None, None)
+  - Any, Any, None
+  - UFPCamera, CameraChannel, bool

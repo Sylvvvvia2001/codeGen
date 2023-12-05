@@ -1,0 +1,20 @@
+schema_legacy.py:
+  schemas: []
+  sets:
+  - "{'_attr_battery_level', '_attr_fan_speed', '_attr_is_on', '_attr_status',\n \
+    \   '_charging'}"
+  - '{ATTR_STATUS}'
+  tuples:
+  - "(CONF_BATTERY_LEVEL_TEMPLATE, CONF_CHARGING_TEMPLATE,\n    CONF_CLEANING_TEMPLATE,\
+    \ CONF_DOCKED_TEMPLATE, CONF_ERROR_TEMPLATE,\n    CONF_FAN_SPEED_TEMPLATE)"
+  - "(CONF_BATTERY_LEVEL_TOPIC, CONF_CHARGING_TOPIC, CONF_CLEANING_TOPIC,\n    CONF_DOCKED_TOPIC,\
+    \ CONF_ERROR_TOPIC, CONF_FAN_SPEED_TOPIC)"
+  - "(CONF_PAYLOAD_TURN_ON, CONF_PAYLOAD_TURN_OFF, CONF_PAYLOAD_RETURN_TO_BASE,\n\
+    \    CONF_PAYLOAD_STOP, CONF_PAYLOAD_CLEAN_SPOT, CONF_PAYLOAD_LOCATE,\n    CONF_PAYLOAD_START_PAUSE)"
+  - (i, topic)
+  - (k, v)
+  - (str, Any)
+  - (str, Callable[[ReceivePayloadType, PayloadSentinel], ReceivePayloadType])
+  - (str, str | None)
+  - (str, str)
+  - '[ReceivePayloadType, PayloadSentinel], ReceivePayloadType'

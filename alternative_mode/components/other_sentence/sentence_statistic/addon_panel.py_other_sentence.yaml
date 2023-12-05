@@ -1,0 +1,5 @@
+addon_panel.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (addon, data)

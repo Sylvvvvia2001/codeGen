@@ -1,0 +1,1162 @@
+switch.py:
+  schemas: []
+  sets:
+  - '{'''', ''Now''}'
+  - '{''Philips'', ''Signify Netherlands B.V.''}'
+  - '{''RM4MINI'', ''RM4PRO'', ''RMMINI'', ''RMMINIB'', ''RMPRO''}'
+  - '{''SML001'', ''SML002'', ''SML003'', ''SML004''}'
+  - '{''SP2'', ''SP2S'', ''SP3'', ''SP3S'', ''SP4'', ''SP4B''}'
+  - '{''STARKVIND Air purifier'', ''STARKVIND Air purifier table''}'
+  - '{''TS011F''}'
+  - '{''_TZE200_b6wax7g0''}'
+  - '{''_attr_is_on''}'
+  - '{''aqara.feeder.acn001''}'
+  - '{''lumi.airrtc.agl001''}'
+  - '{''lumi.motion.ac02''}'
+  - '{''lumi.plug.mmeu01'', ''lumi.plug.maeu01''}'
+  - '{''lumi.sensor_smoke.acn03''}'
+  - '{''start_opening'', ''opening'', ''finish_opening'', ''opened''}'
+  - '{(CONNECTION_NETWORK_MAC, mac)}'
+  - '{(CONNECTION_NETWORK_MAC, self._mac)}'
+  - '{(CONNECTION_NETWORK_MAC, self.coordinator.mac)}'
+  - "{(DOMAIN,\n    f'{self._api.information.serial}_{SynoSurveillanceStation.INFO_API_KEY}')}"
+  - '{(DOMAIN, config_entry_id)}'
+  - '{(DOMAIN, coordinator.config_entry.entry_id)}'
+  - '{(DOMAIN, device[''uid''])}'
+  - '{(DOMAIN, f''unifi_controller_{obj_id}'')}'
+  - '{(DOMAIN, f''{entry_id}_keypad_{keypad_number}'')}'
+  - '{(DOMAIN, relay_id)}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._device_id)}'
+  - '{(DOMAIN, self._serial_number)}'
+  - '{(DOMAIN, self.coordinator.unique_id)}'
+  - '{(DOMAIN, self.plug.mac)}'
+  - '{(DOMAIN, self.power_plug.id)}'
+  - '{(DOMAIN, self.serial_number)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(DOMAIN, service_location.device_serial_number)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(KONNECTED_DOMAIN, device_id)}'
+  - '{(SONOS_DOMAIN, self.soco.uid)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self.speaker.mac_address)}'
+  - "{ChargerStatus.CHARGING, ChargerStatus.DISCHARGING, ChargerStatus.\n    WAITING_FOR_CAR,\
+    \ ChargerStatus.WAITING}"
+  - "{ChargerStatus.UNKNOWN, ChargerStatus.UPDATING, ChargerStatus.ERROR,\n    ChargerStatus.LOCKED,\
+    \ ChargerStatus.LOCKED_CAR_CONNECTED, ChargerStatus\n    .DISCONNECTED, ChargerStatus.READY}"
+  - "{ChargingState.CHARGING, ChargingState.COMPLETE, ChargingState.\n    FULLY_CHARGED,\
+    \ ChargingState.FINISHED_FULLY_CHARGED, ChargingState.\n    FINISHED_NOT_FULL,\
+    \ ChargingState.TARGET_REACHED}"
+  - '{GridStatus.TRANSITION_TO_ISLAND, GridStatus.ISLANDED}'
+  - '{POWER_OFF, 3}'
+  - '{POWER_ON, 4}'
+  - "{Valve.state.uuid, Valve.manual_watering_time.uuid, Valve.\n    remaining_open_time.uuid}"
+  - '{Valve.state.uuid, Valve.manual_watering_time.uuid}'
+  tuples:
+  - ('86plug', 'ctrl_86plug', 'ctrl_86plug.aq1')
+  - ('DAILY', 'ONCE')
+  - ('SWITCH', 'COMFORT_PLUG')
+  - ('async_set_buzzer', 'async_set_led', 'async_set_live_tracking')
+  - ('ctrl_ln1', 'ctrl_ln1.aq1', 'switch_b1nacn02', 'switch.b1nacn02')
+  - ('ctrl_ln2', 'ctrl_ln2.aq1', 'switch_b2nacn02', 'switch.b2nacn02')
+  - ('ctrl_neutral1', 'ctrl_neutral1.aq1', 'switch_b1lacn02', 'switch.b1lacn02')
+  - ('ctrl_neutral2', 'ctrl_neutral2.aq1', 'switch_b2lacn02', 'switch.b2lacn02')
+  - ('failure', 'checking')
+  - ('mdi:lightbulb-on', 'mdi:lightbulb-off')
+  - ('mdi:lock', 'mdi:lock-open')
+  - ('not_connected', 'unknown')
+  - ('program', DATA_PROGRAMS, RainMachineProgram, RainMachineProgramEnabled)
+  - ('start_program', {}, 'async_start_program')
+  - "('start_zone', {vol.Optional(CONF_DEFAULT_ZONE_RUN_TIME, default=\n    DEFAULT_ZONE_RUN):\
+    \ cv.positive_int}, 'async_start_zone')"
+  - ('stop_program', {}, 'async_stop_program')
+  - ('stop_zone', {}, 'async_stop_zone')
+  - ('switch', 'outlet')
+  - ('true', STATE_ON)
+  - "('user_name', 'assigned_skill_ids', 'responded_at', 'start_time', 'status',\n\
+    \    'reported_status', 'arrived_at_station',\n    'available_at_incident_creation',\
+    \ 'active_duty_function_ids')"
+  - ('valve', 'valve')
+  - ('zone', DATA_ZONES, RainMachineZone, RainMachineZoneEnabled)
+  - "(('program', DATA_PROGRAMS, RainMachineProgram, RainMachineProgramEnabled),\n\
+    \    ('zone', DATA_ZONES, RainMachineZone, RainMachineZoneEnabled))"
+  - "(('start_program', {}, 'async_start_program'), ('start_zone', {vol.Optional\n\
+    \    (CONF_DEFAULT_ZONE_RUN_TIME, default=DEFAULT_ZONE_RUN): cv.positive_int\n\
+    \    }, 'async_start_zone'), ('stop_program', {}, 'async_stop_program'), (\n \
+    \   'stop_zone', {}, 'async_stop_zone'))"
+  - ((coordinator, description), result)
+  - ()
+  - (*MODELS_HUMIDIFIER, *MODELS_FAN)
+  - (0, 6)
+  - (1, 3)
+  - (3, 12)
+  - (4, 'Relays')
+  - (6, 'Filter')
+  - (6, 'Pumps')
+  - (6, 'Relays')
+  - "(ATTR_TOUCH_CONTROLS, ATTR_CROSSFADE, ATTR_LOUDNESS,\n    ATTR_MUSIC_PLAYBACK_FULL_VOLUME,\
+    \ ATTR_NIGHT_SOUND,\n    ATTR_SPEECH_ENHANCEMENT, ATTR_SUB_ENABLED, ATTR_SURROUND_ENABLED,\n\
+    \    ATTR_STATUS_LIGHT)"
+  - (ATTR_TOUCH_CONTROLS, ATTR_STATUS_LIGHT)
+  - "(AdGuardHomeSwitchEntityDescription(key='protection', translation_key=\n    'protection',\
+    \ icon='mdi:shield-check', is_on_fn=lambda adguard: adguard\n    .protection_enabled,\
+    \ turn_on_fn=lambda adguard: adguard.\n    enable_protection, turn_off_fn=lambda\
+    \ adguard: adguard.\n    disable_protection), AdGuardHomeSwitchEntityDescription(key='parental',\n\
+    \    translation_key='parental', icon='mdi:shield-check', is_on_fn=lambda\n  \
+    \  adguard: adguard.parental.enabled, turn_on_fn=lambda adguard: adguard.\n  \
+    \  parental.enable, turn_off_fn=lambda adguard: adguard.parental.disable),\n \
+    \   AdGuardHomeSwitchEntityDescription(key='safesearch', translation_key=\n  \
+    \  'safe_search', icon='mdi:shield-check', is_on_fn=lambda adguard:\n    adguard.safesearch.enabled,\
+    \ turn_on_fn=lambda adguard: adguard.\n    safesearch.enable, turn_off_fn=lambda\
+    \ adguard: adguard.safesearch.\n    disable), AdGuardHomeSwitchEntityDescription(key='safebrowsing',\n\
+    \    translation_key='safe_browsing', icon='mdi:shield-check', is_on_fn=lambda\n\
+    \    adguard: adguard.safebrowsing.enabled, turn_on_fn=lambda adguard:\n    adguard.safebrowsing.enable,\
+    \ turn_off_fn=lambda adguard: adguard.\n    safebrowsing.disable), AdGuardHomeSwitchEntityDescription(key=\n\
+    \    'filtering', translation_key='filtering', icon='mdi:shield-check',\n    is_on_fn=lambda\
+    \ adguard: adguard.filtering.enabled, turn_on_fn=lambda\n    adguard: adguard.filtering.enable,\
+    \ turn_off_fn=lambda adguard: adguard.\n    filtering.disable), AdGuardHomeSwitchEntityDescription(key='querylog',\n\
+    \    translation_key='query_log', icon='mdi:shield-check', is_on_fn=lambda\n \
+    \   adguard: adguard.querylog.enabled, turn_on_fn=lambda adguard: adguard.\n \
+    \   querylog.enable, turn_off_fn=lambda adguard: adguard.querylog.disable))"
+  - (AdGuardHomeSwitchEntityDescription, ...)
+  - "(AndroidIPWebcamSwitchEntityDescription(key='exposure_lock', name=\n    'Exposure\
+    \ lock', icon='mdi:camera', entity_category=EntityCategory.\n    CONFIG, on_func=lambda\
+    \ ipcam: ipcam.change_setting('exposure_lock', \n    True), off_func=lambda ipcam:\
+    \ ipcam.change_setting('exposure_lock', \n    False)), AndroidIPWebcamSwitchEntityDescription(key='ffc',\
+    \ name=\n    'Front-facing camera', icon='mdi:camera-front-variant', entity_category\n\
+    \    =EntityCategory.CONFIG, on_func=lambda ipcam: ipcam.change_setting(\n   \
+    \ 'ffc', True), off_func=lambda ipcam: ipcam.change_setting('ffc', False)\n  \
+    \  ), AndroidIPWebcamSwitchEntityDescription(key='focus', name='Focus',\n    icon='mdi:image-filter-center-focus',\
+    \ entity_category=EntityCategory.\n    CONFIG, on_func=lambda ipcam: ipcam.focus(activate=True),\
+    \ off_func=lambda\n    ipcam: ipcam.focus(activate=False)),\n    AndroidIPWebcamSwitchEntityDescription(key='gps_active',\
+    \ name=\n    'GPS active', icon='mdi:crosshairs-gps', entity_category=EntityCategory\n\
+    \    .CONFIG, on_func=lambda ipcam: ipcam.change_setting('gps_active', True),\n\
+    \    off_func=lambda ipcam: ipcam.change_setting('gps_active', False)),\n    AndroidIPWebcamSwitchEntityDescription(key='motion_detect',\
+    \ name=\n    'Motion detection', icon='mdi:flash', entity_category=EntityCategory.\n\
+    \    CONFIG, on_func=lambda ipcam: ipcam.change_setting('motion_detect', \n  \
+    \  True), off_func=lambda ipcam: ipcam.change_setting('motion_detect', \n    False)),\
+    \ AndroidIPWebcamSwitchEntityDescription(key='night_vision',\n    name='Night\
+    \ vision', icon='mdi:weather-night', entity_category=\n    EntityCategory.CONFIG,\
+    \ on_func=lambda ipcam: ipcam.change_setting(\n    'night_vision', True), off_func=lambda\
+    \ ipcam: ipcam.change_setting(\n    'night_vision', False)), AndroidIPWebcamSwitchEntityDescription(key=\n\
+    \    'overlay', name='Overlay', icon='mdi:monitor', entity_category=\n    EntityCategory.CONFIG,\
+    \ on_func=lambda ipcam: ipcam.change_setting(\n    'overlay', True), off_func=lambda\
+    \ ipcam: ipcam.change_setting('overlay',\n    False)), AndroidIPWebcamSwitchEntityDescription(key='torch',\
+    \ name=\n    'Torch', icon='mdi:white-balance-sunny', entity_category=EntityCategory\n\
+    \    .CONFIG, on_func=lambda ipcam: ipcam.torch(activate=True), off_func=lambda\n\
+    \    ipcam: ipcam.torch(activate=False)),\n    AndroidIPWebcamSwitchEntityDescription(key='whitebalance_lock',\
+    \ name=\n    'White balance lock', icon='mdi:white-balance-auto', entity_category=\n\
+    \    EntityCategory.CONFIG, on_func=lambda ipcam: ipcam.change_setting(\n    'whitebalance_lock',\
+    \ True), off_func=lambda ipcam: ipcam.change_setting\n    ('whitebalance_lock',\
+    \ False)), AndroidIPWebcamSwitchEntityDescription(\n    key='video_recording',\
+    \ name='Video recording', icon='mdi:record-rec',\n    entity_category=EntityCategory.CONFIG,\
+    \ on_func=lambda ipcam: ipcam.\n    record(record=True), off_func=lambda ipcam:\
+    \ ipcam.record(record=False)))"
+  - (AndroidIPWebcamSwitchEntityDescription, ...)
+  - (ApiError, ClientConnectorError, asyncio.TimeoutError, ClientError)
+  - (AsyncExtendedLinkedSwitchingGroup, AsyncSwitchingGroup)
+  - "(AsyncPlugableSwitch, AsyncPrintedCircuitBoardSwitchBattery,\n    AsyncFullFlushInputSwitch)"
+  - (AsyncPlugableSwitchMeasuring, AsyncFullFlushSwitchMeasuring)
+  - (BroadlinkException, OSError)
+  - (CONF_AVAILABILITY, CONF_DEVICE_CLASS, CONF_ICON, CONF_PICTURE, CONF_UNIQUE_ID)
+  - (CONNECTION_NETWORK_MAC, mac)
+  - (CONNECTION_NETWORK_MAC, self._mac)
+  - (CONNECTION_NETWORK_MAC, self.coordinator.mac)
+  - (Concatenate[_T, _P], Awaitable[None])
+  - (Concatenate[_T, _P], Coroutine[Any, Any, None])
+  - (DEVICE.CIRCUIT,)
+  - "(DOMAIN,\n    f'{self._api.information.serial}_{SynoSurveillanceStation.INFO_API_KEY}')"
+  - (DOMAIN, avm_wrapper.unique_id)
+  - (DOMAIN, config_entry_id)
+  - (DOMAIN, coordinator.config_entry.entry_id)
+  - (DOMAIN, coordinator.unique_id)
+  - (DOMAIN, device['uid'])
+  - (DOMAIN, enpower.serial_number)
+  - (DOMAIN, f'unifi_controller_{obj_id}')
+  - (DOMAIN, f'{entry_id}_keypad_{keypad_number}')
+  - (DOMAIN, f'{entry_id}_mcp')
+  - (DOMAIN, relay_id)
+  - (DOMAIN, self._api.information.serial)
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._device_id)
+  - (DOMAIN, self._serial_number)
+  - (DOMAIN, self.coordinator.entry.data[CONF_GIID])
+  - (DOMAIN, self.coordinator.unique_id)
+  - (DOMAIN, self.envoy_serial_num)
+  - (DOMAIN, self.plug.mac)
+  - (DOMAIN, self.power_plug.id)
+  - (DOMAIN, self.serial_number)
+  - (DOMAIN, self.unique_id)
+  - (DOMAIN, service_location.device_serial_number)
+  - (DOMAIN, unique_id)
+  - "(EcoforestSwitchEntityDescription(key='status', name=None, value_fn=lambda\n\
+    \    data: data.on, switch_fn=lambda api, status: api.turn(status)),)"
+  - (EcoforestSwitchEntityDescription, ...)
+  - (EventKey.WIRED_CLIENT_BLOCKED, EventKey.WIRELESS_CLIENT_BLOCKED)
+  - (EventKey.WIRED_CLIENT_UNBLOCKED, EventKey.WIRELESS_CLIENT_UNBLOCKED)
+  - (FailedToLogin, requests.exceptions.ConnectionError)
+  - "(FullySwitchEntityDescription(key='screensaver', translation_key=\n    'screensaver',\
+    \ on_action=lambda fully: fully.startScreensaver(),\n    off_action=lambda fully:\
+    \ fully.stopScreensaver(), is_on_fn=lambda data:\n    data.get('isInScreensaver')),\
+    \ FullySwitchEntityDescription(key=\n    'maintenance', translation_key='maintenance',\
+    \ entity_category=\n    EntityCategory.CONFIG, on_action=lambda fully: fully.enableLockedMode(),\n\
+    \    off_action=lambda fully: fully.disableLockedMode(), is_on_fn=lambda\n   \
+    \ data: data.get('maintenanceMode')), FullySwitchEntityDescription(key=\n    'kiosk',\
+    \ translation_key='kiosk', entity_category=EntityCategory.CONFIG,\n    on_action=lambda\
+    \ fully: fully.lockKiosk(), off_action=lambda fully:\n    fully.unlockKiosk(),\
+    \ is_on_fn=lambda data: data.get('kioskLocked')),\n    FullySwitchEntityDescription(key='motion-detection',\
+    \ translation_key=\n    'motion_detection', entity_category=EntityCategory.CONFIG,\
+    \ on_action=lambda\n    fully: fully.enableMotionDetection(), off_action=lambda\
+    \ fully: fully.\n    disableMotionDetection(), is_on_fn=lambda data: data['settings'].get(\n\
+    \    'motionDetection')), FullySwitchEntityDescription(key='screenOn',\n    translation_key='screen_on',\
+    \ on_action=lambda fully: fully.screenOn(),\n    off_action=lambda fully: fully.screenOff(),\
+    \ is_on_fn=lambda data: data.\n    get('screenOn')))"
+  - (FullySwitchEntityDescription, ...)
+  - "(GreeSwitchEntityDescription(icon='mdi:lightbulb', name='Panel Light', key=\n\
+    \    'light', get_value_fn=lambda d: d.light, set_value_fn=_set_light),\n    GreeSwitchEntityDescription(name='Quiet',\
+    \ key='quiet', get_value_fn=lambda\n    d: d.quiet, set_value_fn=_set_quiet),\
+    \ GreeSwitchEntityDescription(name=\n    'Fresh Air', key='fresh_air', get_value_fn=lambda\
+    \ d: d.fresh_air,\n    set_value_fn=_set_fresh_air), GreeSwitchEntityDescription(name='XFan',\n\
+    \    key='xfan', get_value_fn=lambda d: d.xfan, set_value_fn=_set_xfan),\n   \
+    \ GreeSwitchEntityDescription(icon='mdi:pine-tree', name='Health mode',\n    key='anion',\
+    \ get_value_fn=lambda d: d.anion, set_value_fn=_set_anion,\n    entity_registry_enabled_default=False))"
+  - (GreeSwitchEntityDescription, ...)
+  - (HTTPError, PyEzvizError)
+  - (HandlerT, ApiItemT)
+  - (Insight, CoffeeMaker)
+  - "(IntellifireSwitchEntityDescription(key='on_off', translation_key='flame',\n\
+    \    on_fn=lambda control_api: control_api.flame_on(), off_fn=lambda\n    control_api:\
+    \ control_api.flame_off(), value_fn=lambda data: data.is_on),\n    IntellifireSwitchEntityDescription(key='pilot',\
+    \ translation_key=\n    'pilot_light', icon='mdi:fire-alert', on_fn=lambda control_api:\n\
+    \    control_api.pilot_on(), off_fn=lambda control_api: control_api.\n    pilot_off(),\
+    \ value_fn=lambda data: data.pilot_on))"
+  - (IntellifireSwitchEntityDescription, ...)
+  - (KONNECTED_DOMAIN, device_id)
+  - (LitterRobot, FeederRobot)
+  - (MochadException, OSError)
+  - "(NextDnsSwitchEntityDescription[Settings](key='block_page', translation_key\n\
+    \    ='block_page', entity_category=EntityCategory.CONFIG, icon=\n    'mdi:web-cancel',\
+    \ state=lambda data: data.block_page),\n    NextDnsSwitchEntityDescription[Settings](key='cache_boost',\n\
+    \    translation_key='cache_boost', entity_category=EntityCategory.CONFIG,\n \
+    \   icon='mdi:memory', state=lambda data: data.cache_boost),\n    NextDnsSwitchEntityDescription[Settings](key='cname_flattening',\n\
+    \    translation_key='cname_flattening', entity_category=EntityCategory.\n   \
+    \ CONFIG, icon='mdi:tournament', state=lambda data: data.cname_flattening\n  \
+    \  ), NextDnsSwitchEntityDescription[Settings](key='anonymized_ecs',\n    translation_key='anonymized_ecs',\
+    \ entity_category=EntityCategory.CONFIG,\n    icon='mdi:incognito', state=lambda\
+    \ data: data.anonymized_ecs),\n    NextDnsSwitchEntityDescription[Settings](key='logs',\
+    \ translation_key=\n    'logs', entity_category=EntityCategory.CONFIG, icon=\n\
+    \    'mdi:file-document-outline', state=lambda data: data.logs),\n    NextDnsSwitchEntityDescription[Settings](key='web3',\
+    \ translation_key=\n    'web3', entity_category=EntityCategory.CONFIG, icon='mdi:web',\
+    \ state=lambda\n    data: data.web3), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'allow_affiliate', translation_key='allow_affiliate', entity_category=\n\
+    \    EntityCategory.CONFIG, state=lambda data: data.allow_affiliate),\n    NextDnsSwitchEntityDescription[Settings](key='block_disguised_trackers',\n\
+    \    translation_key='block_disguised_trackers', entity_category=\n    EntityCategory.CONFIG,\
+    \ state=lambda data: data.block_disguised_trackers\n    ), NextDnsSwitchEntityDescription[Settings](key='ai_threat_detection',\n\
+    \    translation_key='ai_threat_detection', entity_category=EntityCategory.\n\
+    \    CONFIG, state=lambda data: data.ai_threat_detection),\n    NextDnsSwitchEntityDescription[Settings](key='block_csam',\n\
+    \    translation_key='block_csam', entity_category=EntityCategory.CONFIG,\n  \
+    \  state=lambda data: data.block_csam), NextDnsSwitchEntityDescription[\n    Settings](key='block_ddns',\
+    \ translation_key='block_ddns',\n    entity_category=EntityCategory.CONFIG, state=lambda\
+    \ data: data.\n    block_ddns), NextDnsSwitchEntityDescription[Settings](key='block_nrd',\n\
+    \    translation_key='block_nrd', entity_category=EntityCategory.CONFIG,\n   \
+    \ state=lambda data: data.block_nrd), NextDnsSwitchEntityDescription[\n    Settings](key='block_parked_domains',\
+    \ translation_key=\n    'block_parked_domains', entity_category=EntityCategory.CONFIG,\
+    \ state=lambda\n    data: data.block_parked_domains), NextDnsSwitchEntityDescription[\n\
+    \    Settings](key='cryptojacking_protection', translation_key=\n    'cryptojacking_protection',\
+    \ entity_category=EntityCategory.CONFIG,\n    state=lambda data: data.cryptojacking_protection),\n\
+    \    NextDnsSwitchEntityDescription[Settings](key='dga_protection',\n    translation_key='dga_protection',\
+    \ entity_category=EntityCategory.CONFIG,\n    state=lambda data: data.dga_protection),\
+    \ NextDnsSwitchEntityDescription\n    [Settings](key='dns_rebinding_protection',\
+    \ translation_key=\n    'dns_rebinding_protection', entity_category=EntityCategory.CONFIG,\
+    \ icon\n    ='mdi:dns', state=lambda data: data.dns_rebinding_protection),\n \
+    \   NextDnsSwitchEntityDescription[Settings](key='google_safe_browsing',\n   \
+    \ translation_key='google_safe_browsing', entity_category=EntityCategory.\n  \
+    \  CONFIG, icon='mdi:google', state=lambda data: data.google_safe_browsing\n \
+    \   ), NextDnsSwitchEntityDescription[Settings](key=\n    'idn_homograph_attacks_protection',\
+    \ translation_key=\n    'idn_homograph_attacks_protection', entity_category=EntityCategory.\n\
+    \    CONFIG, state=lambda data: data.idn_homograph_attacks_protection),\n    NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'threat_intelligence_feeds', translation_key=\n    'threat_intelligence_feeds',\
+    \ entity_category=EntityCategory.CONFIG,\n    state=lambda data: data.threat_intelligence_feeds),\n\
+    \    NextDnsSwitchEntityDescription[Settings](key='typosquatting_protection',\n\
+    \    translation_key='typosquatting_protection', entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:keyboard-outline', state=lambda data:\n    data.typosquatting_protection),\
+    \ NextDnsSwitchEntityDescription[Settings\n    ](key='block_bypass_methods', translation_key='block_bypass_methods',\n\
+    \    entity_category=EntityCategory.CONFIG, state=lambda data: data.\n    block_bypass_methods),\
+    \ NextDnsSwitchEntityDescription[Settings](key=\n    'safesearch', translation_key='safesearch',\
+    \ entity_category=\n    EntityCategory.CONFIG, icon='mdi:search-web', state=lambda\
+    \ data: data.\n    safesearch), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'youtube_restricted_mode', translation_key='youtube_restricted_mode',\n \
+    \   entity_category=EntityCategory.CONFIG, icon='mdi:youtube', state=lambda\n\
+    \    data: data.youtube_restricted_mode), NextDnsSwitchEntityDescription[\n  \
+    \  Settings](key='block_9gag', translation_key='block_9gag',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:file-gif-box', state=lambda\
+    \ data: data.block_9gag),\n    NextDnsSwitchEntityDescription[Settings](key='block_amazon',\n\
+    \    translation_key='block_amazon', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:cart-outline', state=\n\
+    \    lambda data: data.block_amazon), NextDnsSwitchEntityDescription[\n    Settings](key='block_bereal',\
+    \ translation_key='block_bereal',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:alpha-b-box', state=lambda\
+    \ data: data.block_bereal),\n    NextDnsSwitchEntityDescription[Settings](key='block_blizzard',\n\
+    \    translation_key='block_blizzard', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:sword-cross', state=lambda\n\
+    \    data: data.block_blizzard), NextDnsSwitchEntityDescription[Settings](\n \
+    \   key='block_chatgpt', translation_key='block_chatgpt', entity_category=\n \
+    \   EntityCategory.CONFIG, entity_registry_enabled_default=False, icon=\n    'mdi:chat-processing-outline',\
+    \ state=lambda data: data.block_chatgpt),\n    NextDnsSwitchEntityDescription[Settings](key='block_dailymotion',\n\
+    \    translation_key='block_dailymotion', entity_category=EntityCategory.\n  \
+    \  CONFIG, entity_registry_enabled_default=False, icon=\n    'mdi:movie-search-outline',\
+    \ state=lambda data: data.block_dailymotion),\n    NextDnsSwitchEntityDescription[Settings](key='block_discord',\n\
+    \    translation_key='block_discord', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:message-text', state=\n\
+    \    lambda data: data.block_discord), NextDnsSwitchEntityDescription[\n    Settings](key='block_disneyplus',\
+    \ translation_key='block_disneyplus',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:movie-search-outline',\
+    \ state=lambda data: data.\n    block_disneyplus), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'block_ebay', translation_key='block_ebay', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:basket-outline', state=lambda\
+    \ data: data.block_ebay),\n    NextDnsSwitchEntityDescription[Settings](key='block_facebook',\n\
+    \    translation_key='block_facebook', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:facebook', state=lambda\n\
+    \    data: data.block_facebook), NextDnsSwitchEntityDescription[Settings](\n \
+    \   key='block_fortnite', translation_key='block_fortnite', entity_category\n\
+    \    =EntityCategory.CONFIG, entity_registry_enabled_default=False, icon=\n  \
+    \  'mdi:tank', state=lambda data: data.block_fortnite),\n    NextDnsSwitchEntityDescription[Settings](key='block_google_chat',\n\
+    \    translation_key='block_google_chat', entity_category=EntityCategory.\n  \
+    \  CONFIG, entity_registry_enabled_default=False, icon='mdi:forum', state=\n \
+    \   lambda data: data.block_google_chat), NextDnsSwitchEntityDescription[\n  \
+    \  Settings](key='block_hbomax', translation_key='block_hbomax',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:movie-search-outline',\
+    \ state=lambda data: data.\n    block_hbomax), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'block_hulu', name='Block Hulu', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:hulu', state=lambda\n  \
+    \  data: data.block_hulu), NextDnsSwitchEntityDescription[Settings](key=\n   \
+    \ 'block_imgur', translation_key='block_imgur', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:camera-image', state=lambda\
+    \ data: data.block_imgur),\n    NextDnsSwitchEntityDescription[Settings](key='block_instagram',\n\
+    \    translation_key='block_instagram', entity_category=EntityCategory.\n    CONFIG,\
+    \ entity_registry_enabled_default=False, icon='mdi:instagram',\n    state=lambda\
+    \ data: data.block_instagram),\n    NextDnsSwitchEntityDescription[Settings](key='block_leagueoflegends',\n\
+    \    translation_key='block_leagueoflegends', entity_category=EntityCategory\n\
+    \    .CONFIG, entity_registry_enabled_default=False, icon='mdi:sword', state\n\
+    \    =lambda data: data.block_leagueoflegends),\n    NextDnsSwitchEntityDescription[Settings](key='block_mastodon',\n\
+    \    translation_key='block_mastodon', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:mastodon', state=lambda\n\
+    \    data: data.block_mastodon), NextDnsSwitchEntityDescription[Settings](\n \
+    \   key='block_messenger', translation_key='block_messenger',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:message-text', state=lambda\
+    \ data: data.block_messenger\n    ), NextDnsSwitchEntityDescription[Settings](key='block_minecraft',\n\
+    \    translation_key='block_minecraft', entity_category=EntityCategory.\n    CONFIG,\
+    \ entity_registry_enabled_default=False, icon='mdi:minecraft',\n    state=lambda\
+    \ data: data.block_minecraft),\n    NextDnsSwitchEntityDescription[Settings](key='block_netflix',\n\
+    \    translation_key='block_netflix', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:netflix', state=lambda\n\
+    \    data: data.block_netflix), NextDnsSwitchEntityDescription[Settings](key\n\
+    \    ='block_pinterest', translation_key='block_pinterest', entity_category=\n\
+    \    EntityCategory.CONFIG, entity_registry_enabled_default=False, icon=\n   \
+    \ 'mdi:pinterest', state=lambda data: data.block_pinterest),\n    NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'block_playstation_network', translation_key=\n    'block_playstation_network',\
+    \ entity_category=EntityCategory.CONFIG,\n    entity_registry_enabled_default=False,\
+    \ icon='mdi:sony-playstation',\n    state=lambda data: data.block_playstation_network),\n\
+    \    NextDnsSwitchEntityDescription[Settings](key='block_primevideo',\n    translation_key='block_primevideo',\
+    \ entity_category=EntityCategory.\n    CONFIG, entity_registry_enabled_default=False,\
+    \ icon='mdi:filmstrip',\n    state=lambda data: data.block_primevideo),\n    NextDnsSwitchEntityDescription[Settings](key='block_reddit',\n\
+    \    translation_key='block_reddit', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:reddit', state=lambda\n\
+    \    data: data.block_reddit), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'block_roblox', translation_key='block_roblox', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:robot', state=lambda\
+    \ data: data.block_roblox),\n    NextDnsSwitchEntityDescription[Settings](key='block_signal',\n\
+    \    translation_key='block_signal', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:chat-outline', state=\n\
+    \    lambda data: data.block_signal), NextDnsSwitchEntityDescription[\n    Settings](key='block_skype',\
+    \ translation_key='block_skype',\n    entity_category=EntityCategory.CONFIG, entity_registry_enabled_default=\n\
+    \    False, icon='mdi:skype', state=lambda data: data.block_skype),\n    NextDnsSwitchEntityDescription[Settings](key='block_snapchat',\n\
+    \    translation_key='block_snapchat', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:snapchat', state=lambda\n\
+    \    data: data.block_snapchat), NextDnsSwitchEntityDescription[Settings](\n \
+    \   key='block_spotify', translation_key='block_spotify', entity_category=\n \
+    \   EntityCategory.CONFIG, entity_registry_enabled_default=False, icon=\n    'mdi:spotify',\
+    \ state=lambda data: data.block_spotify),\n    NextDnsSwitchEntityDescription[Settings](key='block_steam',\n\
+    \    translation_key='block_steam', entity_category=EntityCategory.CONFIG,\n \
+    \   entity_registry_enabled_default=False, icon='mdi:steam', state=lambda\n  \
+    \  data: data.block_steam), NextDnsSwitchEntityDescription[Settings](key=\n  \
+    \  'block_telegram', translation_key='block_telegram', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:send-outline', state=lambda\
+    \ data: data.block_telegram),\n    NextDnsSwitchEntityDescription[Settings](key='block_tiktok',\n\
+    \    translation_key='block_tiktok', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:music-note', state=lambda\n\
+    \    data: data.block_tiktok), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'block_tinder', translation_key='block_tinder', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:fire', state=lambda data:\
+    \ data.block_tinder),\n    NextDnsSwitchEntityDescription[Settings](key='block_tumblr',\n\
+    \    translation_key='block_tumblr', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:image-outline', state=\n\
+    \    lambda data: data.block_tumblr), NextDnsSwitchEntityDescription[\n    Settings](key='block_twitch',\
+    \ translation_key='block_twitch',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:twitch', state=lambda\
+    \ data: data.block_twitch),\n    NextDnsSwitchEntityDescription[Settings](key='block_twitter',\n\
+    \    translation_key='block_twitter', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:twitter', state=lambda\n\
+    \    data: data.block_twitter), NextDnsSwitchEntityDescription[Settings](key\n\
+    \    ='block_vimeo', translation_key='block_vimeo', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:vimeo', state=lambda\
+    \ data: data.block_vimeo),\n    NextDnsSwitchEntityDescription[Settings](key='block_vk',\n\
+    \    translation_key='block_vk', entity_category=EntityCategory.CONFIG,\n    entity_registry_enabled_default=False,\
+    \ icon='mdi:power-socket-eu',\n    state=lambda data: data.block_vk), NextDnsSwitchEntityDescription[\n\
+    \    Settings](key='block_whatsapp', translation_key='block_whatsapp',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:whatsapp', state=lambda\
+    \ data: data.block_whatsapp),\n    NextDnsSwitchEntityDescription[Settings](key='block_xboxlive',\n\
+    \    translation_key='block_xboxlive', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:microsoft-xbox', state\n\
+    \    =lambda data: data.block_xboxlive), NextDnsSwitchEntityDescription[\n   \
+    \ Settings](key='block_youtube', translation_key='block_youtube',\n    entity_category=EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=\n    False, icon='mdi:youtube', state=lambda\
+    \ data: data.block_youtube),\n    NextDnsSwitchEntityDescription[Settings](key='block_zoom',\n\
+    \    translation_key='block_zoom', entity_category=EntityCategory.CONFIG,\n  \
+    \  entity_registry_enabled_default=False, icon='mdi:video', state=lambda\n   \
+    \ data: data.block_zoom), NextDnsSwitchEntityDescription[Settings](key=\n    'block_dating',\
+    \ translation_key='block_dating', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:candelabra', state=lambda\
+    \ data: data.block_dating),\n    NextDnsSwitchEntityDescription[Settings](key='block_gambling',\n\
+    \    translation_key='block_gambling', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:slot-machine', state=\n\
+    \    lambda data: data.block_gambling), NextDnsSwitchEntityDescription[\n    Settings](key='block_online_gaming',\
+    \ translation_key=\n    'block_online_gaming', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:gamepad-variant',\n    state=lambda\
+    \ data: data.block_online_gaming),\n    NextDnsSwitchEntityDescription[Settings](key='block_piracy',\n\
+    \    translation_key='block_piracy', entity_category=EntityCategory.CONFIG,\n\
+    \    entity_registry_enabled_default=False, icon='mdi:pirate', state=lambda\n\
+    \    data: data.block_piracy), NextDnsSwitchEntityDescription[Settings](key=\n\
+    \    'block_porn', translation_key='block_porn', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, icon=\n    'mdi:movie-off', state=lambda\
+    \ data: data.block_porn),\n    NextDnsSwitchEntityDescription[Settings](key='block_social_networks',\n\
+    \    translation_key='block_social_networks', entity_category=EntityCategory\n\
+    \    .CONFIG, entity_registry_enabled_default=False, icon='mdi:facebook',\n  \
+    \  state=lambda data: data.block_social_networks),\n    NextDnsSwitchEntityDescription[Settings](key='block_video_streaming',\n\
+    \    translation_key='block_video_streaming', entity_category=EntityCategory\n\
+    \    .CONFIG, entity_registry_enabled_default=False, icon=\n    'mdi:video-wireless-outline',\
+    \ state=lambda data: data.\n    block_video_streaming))"
+  - (None, None)
+  - "(ONVIFSwitchEntityDescription(key='autofocus', name='Autofocus', icon=\n    'mdi:focus-auto',\
+    \ turn_on_data={'Focus': {'AutoFocusMode': 'AUTO'}},\n    turn_off_data={'Focus':\
+    \ {'AutoFocusMode': 'MANUAL'}}, turn_on_fn=lambda\n    device: device.async_set_imaging_settings,\
+    \ turn_off_fn=lambda device:\n    device.async_set_imaging_settings, supported_fn=lambda\
+    \ device: device.\n    capabilities.imaging), ONVIFSwitchEntityDescription(key='ir_lamp',\
+    \ name\n    ='IR lamp', icon='mdi:spotlight-beam', turn_on_data={'IrCutFilter':\n\
+    \    'OFF'}, turn_off_data={'IrCutFilter': 'ON'}, turn_on_fn=lambda device:\n\
+    \    device.async_set_imaging_settings, turn_off_fn=lambda device: device.\n \
+    \   async_set_imaging_settings, supported_fn=lambda device: device.\n    capabilities.imaging),\
+    \ ONVIFSwitchEntityDescription(key='wiper', name=\n    'Wiper', icon='mdi:wiper',\
+    \ turn_on_data='tt:Wiper|On', turn_off_data=\n    'tt:Wiper|Off', turn_on_fn=lambda\
+    \ device: device.async_run_aux_command,\n    turn_off_fn=lambda device: device.async_run_aux_command,\
+    \ supported_fn=\n    lambda device: device.capabilities.ptz))"
+  - (ONVIFSwitchEntityDescription, ...)
+  - "(OneWireSwitchEntityDescription(key='IAD', entity_registry_enabled_default=\n\
+    \    False, entity_category=EntityCategory.CONFIG, read_mode=READ_MODE_BOOL,\n\
+    \    translation_key='iad'),)"
+  - "(OneWireSwitchEntityDescription(key='PIO', entity_registry_enabled_default=\n\
+    \    False, read_mode=READ_MODE_BOOL, translation_key='pio'),)"
+  - (POWER_CONSUMED, ENERGY_CONSUMED)
+  - "(PlugwiseSwitchEntityDescription(key='dhw_cm_switch', translation_key=\n    'dhw_cm_switch',\
+    \ icon='mdi:water-plus', entity_category=EntityCategory.\n    CONFIG), PlugwiseSwitchEntityDescription(key='lock',\
+    \ translation_key=\n    'lock', icon='mdi:lock', entity_category=EntityCategory.CONFIG),\n\
+    \    PlugwiseSwitchEntityDescription(key='relay', translation_key='relay',\n \
+    \   device_class=SwitchDeviceClass.SWITCH), PlugwiseSwitchEntityDescription\n\
+    \    (key='cooling_ena_switch', translation_key='cooling_ena_switch', name=\n\
+    \    'Cooling', icon='mdi:snowflake-thermometer', entity_category=\n    EntityCategory.CONFIG))"
+  - (PlugwiseSwitchEntityDescription, ...)
+  - "(ProtectSwitchEntityDescription(key='analytics_enabled', name=\n    'Analytics\
+    \ Enabled', icon='mdi:google-analytics', entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_value='is_analytics_enabled', ufp_set_method\n    ='set_anonymous_analytics'),\
+    \ ProtectSwitchEntityDescription(key=\n    'insights_enabled', name='Insights\
+    \ Enabled', icon='mdi:magnify',\n    entity_category=EntityCategory.CONFIG, ufp_value='is_insights_enabled',\n\
+    \    ufp_set_method='set_insights'))"
+  - "(ProtectSwitchEntityDescription(key='ssh', name='SSH Enabled', icon=\n    'mdi:lock',\
+    \ entity_registry_enabled_default=False, entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_value='is_ssh_enabled', ufp_set_method=\n    'set_ssh', ufp_perm=PermRequired.WRITE),\
+    \ ProtectSwitchEntityDescription\n    (key='status_light', name='Status Light\
+    \ On', icon='mdi:led-on',\n    entity_category=EntityCategory.CONFIG, ufp_required_field=\n\
+    \    'feature_flags.has_led_status', ufp_value='led_settings.is_enabled',\n  \
+    \  ufp_set_method='set_status_light', ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='hdr_mode',\
+    \ name='HDR Mode', icon=\n    'mdi:brightness-7', entity_category=EntityCategory.CONFIG,\n\
+    \    ufp_required_field='feature_flags.has_hdr', ufp_value='hdr_mode',\n    ufp_set_method='set_hdr',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription[Camera](key='high_fps',\
+    \ name='High FPS',\n    icon='mdi:video-high-definition', entity_category=EntityCategory.CONFIG,\n\
+    \    ufp_required_field='feature_flags.has_highfps', ufp_value=\n    'is_high_fps_enabled',\
+    \ ufp_set_method_fn=_set_highfps, ufp_perm=\n    PermRequired.WRITE), ProtectSwitchEntityDescription(key='system_sounds',\n\
+    \    name='System Sounds', icon='mdi:speaker', entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_required_field='has_speaker', ufp_value=\n    'speaker_settings.are_system_sounds_enabled',\
+    \ ufp_enabled=\n    'feature_flags.has_speaker', ufp_set_method='set_system_sounds',\n\
+    \    ufp_perm=PermRequired.WRITE), ProtectSwitchEntityDescription(key=\n    'osd_name',\
+    \ name='Overlay: Show Name', icon='mdi:fullscreen',\n    entity_category=EntityCategory.CONFIG,\
+    \ ufp_value=\n    'osd_settings.is_name_enabled', ufp_set_method='set_osd_name',\
+    \ ufp_perm\n    =PermRequired.WRITE), ProtectSwitchEntityDescription(key='osd_date',\n\
+    \    name='Overlay: Show Date', icon='mdi:fullscreen', entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_value='osd_settings.is_date_enabled',\n    ufp_set_method='set_osd_date',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='osd_logo',\
+    \ name=\n    'Overlay: Show Logo', icon='mdi:fullscreen', entity_category=\n \
+    \   EntityCategory.CONFIG, ufp_value='osd_settings.is_logo_enabled',\n    ufp_set_method='set_osd_logo',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='osd_bitrate',\
+    \ name=\n    'Overlay: Show Nerd Mode', icon='mdi:fullscreen', entity_category=\n\
+    \    EntityCategory.CONFIG, ufp_value='osd_settings.is_debug_enabled',\n    ufp_set_method='set_osd_bitrate',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='motion',\
+    \ name='Detections: Motion',\n    icon='mdi:run-fast', entity_category=EntityCategory.CONFIG,\
+    \ ufp_value=\n    'recording_settings.enable_motion_detection', ufp_enabled=\n\
+    \    'is_recording_enabled', ufp_set_method='set_motion_detection', ufp_perm\n\
+    \    =PermRequired.WRITE), ProtectSwitchEntityDescription(key='smart_person',\n\
+    \    name='Detections: Person', icon='mdi:walk', entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_required_field='can_detect_person',\n    ufp_value='is_person_detection_on',\
+    \ ufp_enabled='is_recording_enabled',\n    ufp_set_method='set_person_detection',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='smart_vehicle',\
+    \ name=\n    'Detections: Vehicle', icon='mdi:car', entity_category=EntityCategory.\n\
+    \    CONFIG, ufp_required_field='can_detect_vehicle', ufp_value=\n    'is_vehicle_detection_on',\
+    \ ufp_enabled='is_recording_enabled',\n    ufp_set_method='set_vehicle_detection',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='smart_face',\
+    \ name=\n    'Detections: Face', icon='mdi:human-greeting', entity_category=\n\
+    \    EntityCategory.CONFIG, ufp_required_field='can_detect_face', ufp_value=\n\
+    \    'is_face_detection_on', ufp_enabled='is_recording_enabled',\n    ufp_set_method='set_face_detection',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='smart_package',\
+    \ name=\n    'Detections: Package', icon='mdi:package-variant-closed',\n    entity_category=EntityCategory.CONFIG,\
+    \ ufp_required_field=\n    'can_detect_package', ufp_value='is_package_detection_on',\
+    \ ufp_enabled=\n    'is_recording_enabled', ufp_set_method='set_package_detection',\n\
+    \    ufp_perm=PermRequired.WRITE), ProtectSwitchEntityDescription(key=\n    'smart_licenseplate',\
+    \ name='Detections: License Plate', icon='mdi:car',\n    entity_category=EntityCategory.CONFIG,\
+    \ ufp_required_field=\n    'can_detect_license_plate', ufp_value='is_license_plate_detection_on',\n\
+    \    ufp_enabled='is_recording_enabled', ufp_set_method=\n    'set_license_plate_detection',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='smart_smoke',\
+    \ name=\n    'Detections: Smoke/CO', icon='mdi:fire', entity_category=EntityCategory\n\
+    \    .CONFIG, ufp_required_field='can_detect_smoke', ufp_value=\n    'is_smoke_detection_on',\
+    \ ufp_enabled='is_recording_enabled',\n    ufp_set_method='set_smoke_detection',\
+    \ ufp_perm=PermRequired.WRITE))"
+  - "(ProtectSwitchEntityDescription(key='ssh', name='SSH Enabled', icon=\n    'mdi:lock',\
+    \ entity_registry_enabled_default=False, entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_value='is_ssh_enabled', ufp_set_method=\n    'set_ssh', ufp_perm=PermRequired.WRITE),\
+    \ ProtectSwitchEntityDescription\n    (key='status_light', name='Status Light\
+    \ On', icon='mdi:led-on',\n    entity_category=EntityCategory.CONFIG, ufp_value=\n\
+    \    'light_device_settings.is_indicator_enabled', ufp_set_method=\n    'set_status_light',\
+    \ ufp_perm=PermRequired.WRITE))"
+  - "(ProtectSwitchEntityDescription(key='ssh', name='SSH Enabled', icon=\n    'mdi:lock',\
+    \ entity_registry_enabled_default=False, entity_category=\n    EntityCategory.CONFIG,\
+    \ ufp_value='is_ssh_enabled', ufp_set_method=\n    'set_ssh', ufp_perm=PermRequired.WRITE),)"
+  - "(ProtectSwitchEntityDescription(key='status_light', name='Status Light On',\n\
+    \    icon='mdi:led-on', entity_category=EntityCategory.CONFIG, ufp_value=\n  \
+    \  'led_settings.is_enabled', ufp_set_method='set_status_light', ufp_perm=\n \
+    \   PermRequired.WRITE), ProtectSwitchEntityDescription(key='motion', name=\n\
+    \    'Motion Detection', icon='mdi:walk', entity_category=EntityCategory.\n  \
+    \  CONFIG, ufp_value='motion_settings.is_enabled', ufp_set_method=\n    'set_motion_status',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSwitchEntityDescription(key='temperature',\
+    \ name=\n    'Temperature Sensor', icon='mdi:thermometer', entity_category=\n\
+    \    EntityCategory.CONFIG, ufp_value='temperature_settings.is_enabled',\n   \
+    \ ufp_set_method='set_temperature_status', ufp_perm=PermRequired.WRITE),\n   \
+    \ ProtectSwitchEntityDescription(key='humidity', name='Humidity Sensor',\n   \
+    \ icon='mdi:water-percent', entity_category=EntityCategory.CONFIG,\n    ufp_value='humidity_settings.is_enabled',\
+    \ ufp_set_method=\n    'set_humidity_status', ufp_perm=PermRequired.WRITE),\n\
+    \    ProtectSwitchEntityDescription(key='light', name='Light Sensor', icon=\n\
+    \    'mdi:brightness-5', entity_category=EntityCategory.CONFIG, ufp_value=\n \
+    \   'light_settings.is_enabled', ufp_set_method='set_light_status',\n    ufp_perm=PermRequired.WRITE),\
+    \ ProtectSwitchEntityDescription(key=\n    'alarm', name='Alarm Sound Detection',\
+    \ entity_category=EntityCategory.\n    CONFIG, ufp_value='alarm_settings.is_enabled',\
+    \ ufp_set_method=\n    'set_alarm_status', ufp_perm=PermRequired.WRITE))"
+  - "(ProtectSwitchEntityDescription(key='status_light', name='Status Light On',\n\
+    \    icon='mdi:led-on', entity_category=EntityCategory.CONFIG, ufp_value=\n  \
+    \  'led_settings.is_enabled', ufp_set_method='set_status_light', ufp_perm=\n \
+    \   PermRequired.WRITE),)"
+  - (ProtectSwitchEntityDescription, ...)
+  - "(RainMachineRestrictionSwitchDescription(key=\n    TYPE_RESTRICTIONS_FREEZE_PROTECT_ENABLED,\
+    \ translation_key=\n    TYPE_RESTRICTIONS_FREEZE_PROTECT_ENABLED, icon='mdi:snowflake-alert',\n\
+    \    api_category=DATA_RESTRICTIONS_UNIVERSAL, data_key=\n    'freezeProtectEnabled'),\
+    \ RainMachineRestrictionSwitchDescription(key=\n    TYPE_RESTRICTIONS_HOT_DAYS_EXTRA_WATERING,\
+    \ translation_key=\n    TYPE_RESTRICTIONS_HOT_DAYS_EXTRA_WATERING, icon='mdi:heat-wave',\n\
+    \    api_category=DATA_RESTRICTIONS_UNIVERSAL, data_key='hotDaysExtraWatering'))"
+  - "(ReolinkNVRSwitchEntityDescription(key='email', translation_key='email',\n  \
+    \  icon='mdi:email', entity_category=EntityCategory.CONFIG, supported=lambda\n\
+    \    api: api.supported(None, 'email'), value=lambda api: api.email_enabled(\n\
+    \    ), method=lambda api, value: api.set_email(None, value)),\n    ReolinkNVRSwitchEntityDescription(key='ftp_upload',\
+    \ translation_key=\n    'ftp_upload', icon='mdi:swap-horizontal', entity_category=\n\
+    \    EntityCategory.CONFIG, supported=lambda api: api.supported(None, 'ftp'),\n\
+    \    value=lambda api: api.ftp_enabled(), method=lambda api, value: api.\n   \
+    \ set_ftp(None, value)), ReolinkNVRSwitchEntityDescription(key=\n    'push_notifications',\
+    \ translation_key='push_notifications', icon=\n    'mdi:message-badge', entity_category=EntityCategory.CONFIG,\
+    \ supported=\n    lambda api: api.supported(None, 'push'), value=lambda api: api.\n\
+    \    push_enabled(), method=lambda api, value: api.set_push(None, value)),\n \
+    \   ReolinkNVRSwitchEntityDescription(key='record', translation_key=\n    'record',\
+    \ icon='mdi:record-rec', entity_category=EntityCategory.CONFIG,\n    supported=lambda\
+    \ api: api.supported(None, 'recording'), value=lambda\n    api: api.recording_enabled(),\
+    \ method=lambda api, value: api.\n    set_recording(None, value)), ReolinkNVRSwitchEntityDescription(key=\n\
+    \    'buzzer', translation_key='buzzer', icon='mdi:room-service',\n    entity_category=EntityCategory.CONFIG,\
+    \ supported=lambda api: api.\n    supported(None, 'buzzer'), value=lambda api:\
+    \ api.buzzer_enabled(),\n    method=lambda api, value: api.set_buzzer(None, value)))"
+  - "(ReolinkSwitchEntityDescription(key='record_audio', translation_key=\n    'record_audio',\
+    \ icon='mdi:microphone', entity_category=EntityCategory.\n    CONFIG, supported=lambda\
+    \ api, ch: api.supported(ch, 'audio'), value=lambda\n    api, ch: api.audio_record(ch),\
+    \ method=lambda api, ch, value: api.\n    set_audio(ch, value)), ReolinkSwitchEntityDescription(key=\n\
+    \    'siren_on_event', translation_key='siren_on_event', icon=\n    'mdi:alarm-light',\
+    \ entity_category=EntityCategory.CONFIG, supported=lambda\n    api, ch: api.supported(ch,\
+    \ 'siren'), value=lambda api, ch: api.\n    audio_alarm_enabled(ch), method=lambda\
+    \ api, ch, value: api.\n    set_audio_alarm(ch, value)), ReolinkSwitchEntityDescription(key=\n\
+    \    'auto_tracking', translation_key='auto_tracking', icon=\n    'mdi:target-account',\
+    \ entity_category=EntityCategory.CONFIG, supported=\n    lambda api, ch: api.supported(ch,\
+    \ 'auto_track'), value=lambda api, ch:\n    api.auto_track_enabled(ch), method=lambda\
+    \ api, ch, value: api.\n    set_auto_tracking(ch, value)), ReolinkSwitchEntityDescription(key=\n\
+    \    'auto_focus', translation_key='auto_focus', icon='mdi:focus-field',\n   \
+    \ entity_category=EntityCategory.CONFIG, supported=lambda api, ch: api.\n    supported(ch,\
+    \ 'auto_focus'), value=lambda api, ch: api.\n    autofocus_enabled(ch), method=lambda\
+    \ api, ch, value: api.set_autofocus(\n    ch, value)), ReolinkSwitchEntityDescription(key='gaurd_return',\n\
+    \    translation_key='gaurd_return', icon='mdi:crosshairs-gps',\n    entity_category=EntityCategory.CONFIG,\
+    \ supported=lambda api, ch: api.\n    supported(ch, 'ptz_guard'), value=lambda\
+    \ api, ch: api.ptz_guard_enabled\n    (ch), method=lambda api, ch, value: api.set_ptz_guard(ch,\
+    \ enable=value)\n    ), ReolinkSwitchEntityDescription(key='email', translation_key='email',\n\
+    \    icon='mdi:email', entity_category=EntityCategory.CONFIG, supported=lambda\n\
+    \    api, ch: api.supported(ch, 'email') and api.is_nvr, value=lambda api,\n \
+    \   ch: api.email_enabled(ch), method=lambda api, ch, value: api.set_email(\n\
+    \    ch, value)), ReolinkSwitchEntityDescription(key='ftp_upload',\n    translation_key='ftp_upload',\
+    \ icon='mdi:swap-horizontal',\n    entity_category=EntityCategory.CONFIG, supported=lambda\
+    \ api, ch: api.\n    supported(ch, 'ftp') and api.is_nvr, value=lambda api, ch:\
+    \ api.\n    ftp_enabled(ch), method=lambda api, ch, value: api.set_ftp(ch, value)),\n\
+    \    ReolinkSwitchEntityDescription(key='push_notifications',\n    translation_key='push_notifications',\
+    \ icon='mdi:message-badge',\n    entity_category=EntityCategory.CONFIG, supported=lambda\
+    \ api, ch: api.\n    supported(ch, 'push') and api.is_nvr, value=lambda api, ch:\
+    \ api.\n    push_enabled(ch), method=lambda api, ch, value: api.set_push(ch, value)\n\
+    \    ), ReolinkSwitchEntityDescription(key='record', translation_key=\n    'record',\
+    \ icon='mdi:record-rec', entity_category=EntityCategory.CONFIG,\n    supported=lambda\
+    \ api, ch: api.supported(ch, 'recording') and api.is_nvr,\n    value=lambda api,\
+    \ ch: api.recording_enabled(ch), method=lambda api, ch,\n    value: api.set_recording(ch,\
+    \ value)), ReolinkSwitchEntityDescription(\n    key='buzzer', translation_key='buzzer',\
+    \ icon='mdi:room-service',\n    entity_category=EntityCategory.CONFIG, supported=lambda\
+    \ api, ch: api.\n    supported(ch, 'buzzer') and api.is_nvr, value=lambda api,\
+    \ ch: api.\n    buzzer_enabled(ch), method=lambda api, ch, value: api.set_buzzer(ch,\n\
+    \    value)), ReolinkSwitchEntityDescription(key='doorbell_button_sound',\n  \
+    \  translation_key='doorbell_button_sound', icon='mdi:volume-high',\n    entity_category=EntityCategory.CONFIG,\
+    \ supported=lambda api, ch: api.\n    supported(ch, 'doorbell_button_sound'),\
+    \ value=lambda api, ch: api.\n    doorbell_button_sound(ch), method=lambda api,\
+    \ ch, value: api.set_volume\n    (ch, doorbell_button_sound=value)), ReolinkSwitchEntityDescription(key=\n\
+    \    'hdr', translation_key='hdr', icon='mdi:hdr', entity_category=\n    EntityCategory.CONFIG,\
+    \ entity_registry_enabled_default=False, supported\n    =lambda api, ch: api.supported(ch,\
+    \ 'HDR'), value=lambda api, ch: api.\n    HDR_on(ch) is True, method=lambda api,\
+    \ ch, value: api.set_HDR(ch, value)))"
+  - "(RitualsSwitchEntityDescription(key='is_on', name=None, icon='mdi:fan',\n   \
+    \ is_on_fn=lambda diffuser: diffuser.is_on, turn_on_fn=lambda diffuser:\n    diffuser.turn_on(),\
+    \ turn_off_fn=lambda diffuser: diffuser.turn_off()),)"
+  - (RoborockDataUpdateCoordinator, RoborockSwitchDescription)
+  - (SONOS_DOMAIN, self.soco.uid)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - "(SchlageSwitchEntityDescription(key='beeper', translation_key='beeper',\n   \
+    \ device_class=SwitchDeviceClass.SWITCH, entity_category=EntityCategory.\n   \
+    \ CONFIG, on_fn=lambda lock: lock.set_beeper(True), off_fn=lambda lock:\n    lock.set_beeper(False),\
+    \ value_fn=lambda lock: lock.beeper_enabled),\n    SchlageSwitchEntityDescription(key='lock_and_leve',\
+    \ translation_key=\n    'lock_and_leave', device_class=SwitchDeviceClass.SWITCH,\n\
+    \    entity_category=EntityCategory.CONFIG, on_fn=lambda lock: lock.\n    set_lock_and_leave(True),\
+    \ off_fn=lambda lock: lock.set_lock_and_leave(\n    False), value_fn=lambda lock:\
+    \ lock.lock_and_leave_enabled))"
+  - (SchlageSwitchEntityDescription, ...)
+  - "(SensiboDeviceSwitchEntityDescription(key='pure_boost_switch',\n    translation_key='pure_boost_switch',\
+    \ device_class=SwitchDeviceClass.\n    SWITCH, value_fn=lambda data: data.pure_boost_enabled,\
+    \ extra_fn=None,\n    command_on='async_turn_on_off_pure_boost', command_off=\n\
+    \    'async_turn_on_off_pure_boost', data_key='pure_boost_enabled'),)"
+  - "(SensiboDeviceSwitchEntityDescription(key='timer_on_switch',\n    translation_key='timer_on_switch',\
+    \ device_class=SwitchDeviceClass.\n    SWITCH, icon='mdi:timer', value_fn=lambda\
+    \ data: data.timer_on, extra_fn\n    =lambda data: {'id': data.timer_id, 'turn_on':\
+    \ data.timer_state_on},\n    command_on='async_turn_on_timer', command_off='async_turn_off_timer',\n\
+    \    data_key='timer_on'), SensiboDeviceSwitchEntityDescription(key=\n    'climate_react_switch',\
+    \ translation_key='climate_react_switch',\n    device_class=SwitchDeviceClass.SWITCH,\
+    \ icon='mdi:wizard-hat', value_fn=\n    lambda data: data.smart_on, extra_fn=lambda\
+    \ data: {'type': data.\n    smart_type}, command_on='async_turn_on_off_smart',\
+    \ command_off=\n    'async_turn_on_off_smart', data_key='smart_on'))"
+  - (SensiboDeviceSwitchEntityDescription, ...)
+  - (SensorType, type[MySensorsSwitch])
+  - "(StarlineSwitchEntityDescription(key='ign', translation_key='engine',\n    icon_on='mdi:engine-outline',\
+    \ icon_off='mdi:engine-off-outline'),\n    StarlineSwitchEntityDescription(key='webasto',\
+    \ translation_key=\n    'webasto', icon_on='mdi:radiator', icon_off='mdi:radiator-off'),\n\
+    \    StarlineSwitchEntityDescription(key='out', translation_key=\n    'additional_channel',\
+    \ icon_on='mdi:access-point-network', icon_off=\n    'mdi:access-point-network-off'),\
+    \ StarlineSwitchEntityDescription(key=\n    'poke', translation_key='horn', icon_on='mdi:bullhorn-outline',\n\
+    \    icon_off='mdi:bullhorn-outline'))"
+  - (StarlineSwitchEntityDescription, ...)
+  - (SwitchBeeError, SwitchBeeDeviceOfflineError)
+  - "(SwitchBeeTimedSwitch, SwitchBeeGroupSwitch, SwitchBeeSwitch,\n    SwitchBeeTimerSwitch)"
+  - "(SwitchEntityDescription(key='activeplug'), SwitchEntityDescription(key=\n  \
+    \  'Heating_Heat_On_Demand', entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key='auto_watering', translation_key=\n    'auto_watering',\
+    \ device_class=SwitchDeviceClass.SWITCH),\n    SwitchEntityDescription(key='manual_watering',\
+    \ translation_key=\n    'manual_watering', device_class=SwitchDeviceClass.SWITCH))"
+  - "(SwitchEntityDescription(key='clean', name='Clean'),\n    SwitchEntityDescription(key='dock',\
+    \ name='Dock'),\n    SwitchEntityDescription(key='find', name='Find'))"
+  - "(SwitchEntityDescription(key='do_not_disturb', translation_key=\n    'do_not_disturb'),\
+    \ SwitchEntityDescription(key='do_not_ring',\n    translation_key='do_not_ring'),\
+    \ SwitchEntityDescription(key=\n    'motion_sensor', translation_key='motion_sensor'))"
+  - "(SwitchEntityDescription(key='on_off', translation_key='on_off'),\n    SwitchEntityDescription(key='turtle_mode',\
+    \ translation_key='turtle_mode'))"
+  - "(SwitchEntityDescription(key='temperature', name='Arm Temperature'),\n    SwitchEntityDescription(key='humidity',\
+    \ name='Arm Humidity'),\n    SwitchEntityDescription(key='motion', name='Arm Motion'),\n\
+    \    SwitchEntityDescription(key='light', name='Arm Light'),\n    SwitchEntityDescription(key='moisture',\
+    \ name='Arm Moisture'))"
+  - "(SwitchEntityDescription(key='v12PortStatus', translation_key=\n    'v12_port_status'),\
+    \ SwitchEntityDescription(key='usbPortStatus',\n    translation_key='usb_port_status'),\
+    \ SwitchEntityDescription(key=\n    'acPortStatus', translation_key='ac_port_status'))"
+  - "(SwitchEntityDescription(key=DPCode.ANION, translation_key='anion', icon=\n \
+    \   'mdi:atom', entity_category=EntityCategory.CONFIG),\n    SwitchEntityDescription(key=DPCode.HUMIDIFIER,\
+    \ translation_key=\n    'humidification', icon='mdi:air-humidifier', entity_category=\n\
+    \    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.OXYGEN,\n    translation_key='oxygen_bar',\
+    \ icon='mdi:molecule', entity_category=\n    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.FAN_COOL,\n\
+    \    translation_key='natural_wind', icon='mdi:weather-windy',\n    entity_category=EntityCategory.CONFIG),\
+    \ SwitchEntityDescription(key=\n    DPCode.FAN_BEEP, translation_key='sound',\
+    \ icon='mdi:minus-circle',\n    entity_category=EntityCategory.CONFIG), SwitchEntityDescription(key=\n\
+    \    DPCode.CHILD_LOCK, translation_key='child_lock', icon=\n    'mdi:account-lock',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.ANION, translation_key='ionizer', icon=\n\
+    \    'mdi:minus-circle-outline', entity_category=EntityCategory.CONFIG),\n   \
+    \ SwitchEntityDescription(key=DPCode.FILTER_RESET, translation_key=\n    'filter_cartridge_reset',\
+    \ icon='mdi:filter', entity_category=\n    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.LOCK,\n\
+    \    translation_key='child_lock', icon='mdi:account-lock', entity_category=\n\
+    \    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.SWITCH,\n    translation_key='power'),\
+    \ SwitchEntityDescription(key=DPCode.WET,\n    translation_key='humidification',\
+    \ icon='mdi:water-percent',\n    entity_category=EntityCategory.CONFIG), SwitchEntityDescription(key=\n\
+    \    DPCode.UV, translation_key='uv_sterilization', icon=\n    'mdi:minus-circle-outline',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.ANION, translation_key='ionizer', icon=\n\
+    \    'mdi:minus-circle-outline', entity_category=EntityCategory.CONFIG),\n   \
+    \ SwitchEntityDescription(key=DPCode.LOCK, translation_key='child_lock',\n   \
+    \ icon='mdi:account-lock', entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.CHILD_LOCK, translation_key=\n    'child_lock',\
+    \ icon='mdi:account-lock', entity_category=EntityCategory.\n    CONFIG), SwitchEntityDescription(key=DPCode.SWITCH,\
+    \ translation_key=\n    'switch'))"
+  - "(SwitchEntityDescription(key=DPCode.CHILD_LOCK, translation_key=\n    'child_lock',\
+    \ icon='mdi:account-lock', entity_category=EntityCategory.\n    CONFIG), SwitchEntityDescription(key=DPCode.SWITCH_1,\
+    \ translation_key=\n    'socket_1', device_class=SwitchDeviceClass.OUTLET),\n\
+    \    SwitchEntityDescription(key=DPCode.SWITCH_2, translation_key='socket_2',\n\
+    \    device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n  \
+    \  DPCode.SWITCH_3, translation_key='socket_3', device_class=\n    SwitchDeviceClass.OUTLET),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH_4,\n    translation_key='socket_4',\
+    \ device_class=SwitchDeviceClass.OUTLET),\n    SwitchEntityDescription(key=DPCode.SWITCH_5,\
+    \ translation_key='socket_5',\n    device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n\
+    \    DPCode.SWITCH_6, translation_key='socket_6', device_class=\n    SwitchDeviceClass.OUTLET),\
+    \ SwitchEntityDescription(key=DPCode.\n    SWITCH_USB1, translation_key='usb_1'),\
+    \ SwitchEntityDescription(key=\n    DPCode.SWITCH_USB2, translation_key='usb_2'),\
+    \ SwitchEntityDescription(\n    key=DPCode.SWITCH_USB3, translation_key='usb_3'),\n\
+    \    SwitchEntityDescription(key=DPCode.SWITCH_USB4, translation_key='usb_4'\n\
+    \    ), SwitchEntityDescription(key=DPCode.SWITCH_USB5, translation_key=\n   \
+    \ 'usb_5'), SwitchEntityDescription(key=DPCode.SWITCH_USB6,\n    translation_key='usb_6'),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH,\n    translation_key='socket', device_class=SwitchDeviceClass.OUTLET))"
+  - "(SwitchEntityDescription(key=DPCode.CHILD_LOCK, translation_key=\n    'child_lock',\
+    \ icon='mdi:account-lock', entity_category=EntityCategory.\n    CONFIG), SwitchEntityDescription(key=DPCode.SWITCH_1,\
+    \ translation_key=\n    'switch_1', device_class=SwitchDeviceClass.OUTLET),\n\
+    \    SwitchEntityDescription(key=DPCode.SWITCH_2, translation_key='switch_2',\n\
+    \    device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n  \
+    \  DPCode.SWITCH_3, translation_key='switch_3', device_class=\n    SwitchDeviceClass.OUTLET),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH_4,\n    translation_key='switch_4',\
+    \ device_class=SwitchDeviceClass.OUTLET),\n    SwitchEntityDescription(key=DPCode.SWITCH_5,\
+    \ translation_key='switch_5',\n    device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n\
+    \    DPCode.SWITCH_6, translation_key='switch_6', device_class=\n    SwitchDeviceClass.OUTLET),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH_7,\n    translation_key='switch_7',\
+    \ device_class=SwitchDeviceClass.OUTLET),\n    SwitchEntityDescription(key=DPCode.SWITCH_8,\
+    \ translation_key='switch_8',\n    device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n\
+    \    DPCode.SWITCH_USB1, translation_key='usb_1'), SwitchEntityDescription(\n\
+    \    key=DPCode.SWITCH_USB2, translation_key='usb_2'),\n    SwitchEntityDescription(key=DPCode.SWITCH_USB3,\
+    \ translation_key='usb_3'\n    ), SwitchEntityDescription(key=DPCode.SWITCH_USB4,\
+    \ translation_key=\n    'usb_4'), SwitchEntityDescription(key=DPCode.SWITCH_USB5,\n\
+    \    translation_key='usb_5'), SwitchEntityDescription(key=DPCode.\n    SWITCH_USB6,\
+    \ translation_key='usb_6'), SwitchEntityDescription(key=\n    DPCode.SWITCH, translation_key='switch',\
+    \ device_class=SwitchDeviceClass\n    .OUTLET))"
+  - "(SwitchEntityDescription(key=DPCode.CHILD_LOCK, translation_key=\n    'child_lock',\
+    \ icon='mdi:account-lock', entity_category=EntityCategory.\n    CONFIG), SwitchEntityDescription(key=DPCode.WINDOW_CHECK,\n\
+    \    translation_key='open_window_detection', icon='mdi:window-open',\n    entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.CONTROL_BACK, translation_key='reverse',\n\
+    \    icon='mdi:swap-horizontal', entity_category=EntityCategory.CONFIG),\n   \
+    \ SwitchEntityDescription(key=DPCode.OPPOSITE, translation_key='reverse',\n  \
+    \  icon='mdi:swap-horizontal', entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.DISINFECTION, translation_key=\n    'disinfection',\
+    \ icon='mdi:bacteria'), SwitchEntityDescription(key=\n    DPCode.WATER, translation_key='water',\
+    \ icon='mdi:water'))"
+  - "(SwitchEntityDescription(key=DPCode.DO_NOT_DISTURB, translation_key=\n    'do_not_disturb',\
+    \ icon='mdi:minus-circle-outline', entity_category=\n    EntityCategory.CONFIG),)"
+  - "(SwitchEntityDescription(key=DPCode.FILTER_RESET, translation_key=\n    'filter_reset',\
+    \ icon='mdi:filter', entity_category=EntityCategory.\n    CONFIG), SwitchEntityDescription(key=DPCode.PUMP_RESET,\
+    \ translation_key\n    ='water_pump_reset', icon='mdi:pump', entity_category=EntityCategory.\n\
+    \    CONFIG), SwitchEntityDescription(key=DPCode.SWITCH, translation_key=\n  \
+    \  'power'), SwitchEntityDescription(key=DPCode.WATER_RESET,\n    translation_key='reset_of_water_usage_days',\
+    \ icon='mdi:water-sync',\n    entity_category=EntityCategory.CONFIG), SwitchEntityDescription(key=\n\
+    \    DPCode.UV, translation_key='uv_sterilization', icon='mdi:lightbulb',\n  \
+    \  entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.MUFFLING, translation_key='mute',\n    entity_category=EntityCategory.CONFIG),)"
+  - "(SwitchEntityDescription(key=DPCode.SLOW_FEED, translation_key='slow_feed',\n\
+    \    icon='mdi:speedometer-slow', entity_category=EntityCategory.CONFIG),)"
+  - "(SwitchEntityDescription(key=DPCode.START, translation_key='start', icon=\n \
+    \   'mdi:kettle-steam'), SwitchEntityDescription(key=DPCode.WARM,\n    translation_key='heat_preservation',\
+    \ entity_category=EntityCategory.CONFIG)\n    )"
+  - (SwitchEntityDescription(key=DPCode.SWITCH, name=None),)
+  - (SwitchEntityDescription(key=DPCode.SWITCH, translation_key='plug'),)
+  - "(SwitchEntityDescription(key=DPCode.SWITCH, translation_key='power'),\n    SwitchEntityDescription(key=DPCode.SWITCH_SPRAY,\
+    \ translation_key=\n    'spray', icon='mdi:spray'), SwitchEntityDescription(key=DPCode.\n\
+    \    SWITCH_VOICE, translation_key='voice', icon='mdi:account-voice',\n    entity_category=EntityCategory.CONFIG))"
+  - (SwitchEntityDescription(key=DPCode.SWITCH, translation_key='switch'),)
+  - "(SwitchEntityDescription(key=DPCode.SWITCH, translation_key='switch',\n    device_class=SwitchDeviceClass.OUTLET),)"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH, translation_key='switch', icon=\n\
+    \    'mdi:cursor-pointer'),)"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH, translation_key='switch', icon=\n\
+    \    'mdi:power', entity_category=EntityCategory.CONFIG),\n    SwitchEntityDescription(key=DPCode.START,\
+    \ translation_key='start', icon\n    ='mdi:pot-steam', entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH_1, translation_key='radio', icon\n\
+    \    ='mdi:radio'), SwitchEntityDescription(key=DPCode.SWITCH_2,\n    translation_key='alarm_1',\
+    \ icon='mdi:alarm', entity_category=\n    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.SWITCH_3,\n\
+    \    translation_key='alarm_2', icon='mdi:alarm', entity_category=\n    EntityCategory.CONFIG),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH_4,\n    translation_key='alarm_3',\
+    \ icon='mdi:alarm', entity_category=\n    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.SWITCH_5,\n\
+    \    translation_key='alarm_4', icon='mdi:alarm', entity_category=\n    EntityCategory.CONFIG),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH_6,\n    translation_key='sleep_aid',\
+    \ icon='mdi:power-sleep'))"
+  - (SwitchEntityDescription(key=DPCode.SWITCH_1, translation_key='switch'),)
+  - "(SwitchEntityDescription(key=DPCode.SWITCH_1, translation_key='switch_1',\n \
+    \   device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n   \
+    \ DPCode.SWITCH_2, translation_key='switch_2', device_class=\n    SwitchDeviceClass.OUTLET))"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH_1, translation_key='switch_1',\n \
+    \   device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n   \
+    \ DPCode.SWITCH_2, translation_key='switch_2', device_class=\n    SwitchDeviceClass.OUTLET),\
+    \ SwitchEntityDescription(key=DPCode.SWITCH_3,\n    translation_key='switch_3',\
+    \ device_class=SwitchDeviceClass.OUTLET),\n    SwitchEntityDescription(key=DPCode.SWITCH_4,\
+    \ translation_key='switch_4',\n    device_class=SwitchDeviceClass.OUTLET), SwitchEntityDescription(key=\n\
+    \    DPCode.CHILD_LOCK, translation_key='child_lock', icon=\n    'mdi:account-lock',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH_DISTURB, translation_key=\n    'do_not_disturb',\
+    \ icon='mdi:minus-circle', entity_category=\n    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.VOICE_SWITCH,\n\
+    \    translation_key='mute_voice', icon='mdi:account-voice', entity_category\n\
+    \    =EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH_SAVE_ENERGY, translation_key=\n  \
+    \  'energy_saving', icon='mdi:leaf', entity_category=EntityCategory.CONFIG),)"
+  - "(SwitchEntityDescription(key=DPCode.SWITCH_SOUND, translation_key='voice',\n\
+    \    icon='mdi:account-voice', entity_category=EntityCategory.CONFIG),\n    SwitchEntityDescription(key=DPCode.SLEEP,\
+    \ translation_key='sleep', icon\n    ='mdi:power-sleep', entity_category=EntityCategory.CONFIG),\n\
+    \    SwitchEntityDescription(key=DPCode.STERILIZATION, translation_key=\n    'sterilization',\
+    \ icon='mdi:minus-circle-outline', entity_category=\n    EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=DPCode.WIRELESS_BATTERYLOCK, translation_key=\n\
+    \    'battery_lock', icon='mdi:battery-lock', entity_category=EntityCategory\n\
+    \    .CONFIG), SwitchEntityDescription(key=DPCode.CRY_DETECTION_SWITCH,\n    translation_key='cry_detection',\
+    \ icon='mdi:emoticon-cry',\n    entity_category=EntityCategory.CONFIG), SwitchEntityDescription(key=\n\
+    \    DPCode.DECIBEL_SWITCH, translation_key='sound_detection', icon=\n    'mdi:microphone-outline',\
+    \ entity_category=EntityCategory.CONFIG),\n    SwitchEntityDescription(key=DPCode.RECORD_SWITCH,\
+    \ translation_key=\n    'video_recording', icon='mdi:record-rec', entity_category=\n\
+    \    EntityCategory.CONFIG), SwitchEntityDescription(key=DPCode.\n    MOTION_RECORD,\
+    \ translation_key='motion_recording', icon=\n    'mdi:record-rec', entity_category=EntityCategory.CONFIG),\n\
+    \    SwitchEntityDescription(key=DPCode.BASIC_PRIVATE, translation_key=\n    'privacy_mode',\
+    \ icon='mdi:eye-off', entity_category=EntityCategory.\n    CONFIG), SwitchEntityDescription(key=DPCode.BASIC_FLIP,\
+    \ translation_key\n    ='flip', icon='mdi:flip-horizontal', entity_category=EntityCategory.\n\
+    \    CONFIG), SwitchEntityDescription(key=DPCode.BASIC_OSD, translation_key=\n\
+    \    'time_watermark', icon='mdi:watermark', entity_category=EntityCategory.\n\
+    \    CONFIG), SwitchEntityDescription(key=DPCode.BASIC_WDR, translation_key=\n\
+    \    'wide_dynamic_range', icon='mdi:watermark', entity_category=\n    EntityCategory.CONFIG),\
+    \ SwitchEntityDescription(key=DPCode.\n    MOTION_TRACKING, translation_key='motion_tracking',\
+    \ icon=\n    'mdi:motion-sensor', entity_category=EntityCategory.CONFIG),\n  \
+    \  SwitchEntityDescription(key=DPCode.MOTION_SWITCH, translation_key=\n    'motion_alarm',\
+    \ icon='mdi:motion-sensor', entity_category=\n    EntityCategory.CONFIG))"
+  - "(SwitchEntityDescription(key=PRIVACY_MODE_KEY, name='Privacy Mode', icon=\n \
+    \   'mdi:eye-off'),)"
+  - (SwitchEntityDescription, ...)
+  - (SwitchInfo, SwitchState)
+  - "(SynologyDSMSwitchEntityDescription(api_key=SynoSurveillanceStation.\n    HOME_MODE_API_KEY,\
+    \ key='home_mode', translation_key='home_mode', icon=\n    'mdi:home-account'),)"
+  - (SynologyDSMSwitchEntityDescription, ...)
+  - "(ToonSwitchEntityDescription(key='thermostat_holiday_mode', name=\n    'Holiday\
+    \ Mode', section='thermostat', measurement='holiday_mode', icon=\n    'mdi:airport',\
+    \ cls=ToonHolidayModeSwitch), ToonSwitchEntityDescription(\n    key='thermostat_program',\
+    \ name='Thermostat Program', section=\n    'thermostat', measurement='program',\
+    \ icon='mdi:calendar-clock', cls=\n    ToonProgramSwitch))"
+  - (ToonSwitchEntityDescription, ...)
+  - "(TractiveSwitchEntityDescription(key=ATTR_BUZZER, translation_key=\n    'tracker_buzzer',\
+    \ icon='mdi:volume-high', method='async_set_buzzer',\n    entity_category=EntityCategory.CONFIG),\
+    \ TractiveSwitchEntityDescription\n    (key=ATTR_LED, translation_key='tracker_led',\
+    \ icon='mdi:led-on', method\n    ='async_set_led', entity_category=EntityCategory.CONFIG),\n\
+    \    TractiveSwitchEntityDescription(key=ATTR_LIVE_TRACKING, translation_key\n\
+    \    ='live_tracking', icon='mdi:map-marker-path', method=\n    'async_set_live_tracking',\
+    \ entity_category=EntityCategory.CONFIG))"
+  - (TractiveSwitchEntityDescription, ...)
+  - (True, False)
+  - (TypeError, KeyError)
+  - (TypeError, ValueError)
+  - (UnifiSwitchEntityDescription, ...)
+  - "(UnifiSwitchEntityDescription[Clients, Client](key='Block client',\n    device_class=SwitchDeviceClass.SWITCH,\
+    \ entity_category=EntityCategory.\n    CONFIG, has_entity_name=True, icon='mdi:ethernet',\
+    \ allowed_fn=\n    async_block_client_allowed_fn, api_handler_fn=lambda api: api.clients,\n\
+    \    available_fn=lambda controller, obj_id: controller.available,\n    control_fn=async_block_client_control_fn,\
+    \ device_info_fn=\n    async_client_device_info_fn, event_is_on=CLIENT_UNBLOCKED,\n\
+    \    event_to_subscribe=CLIENT_BLOCKED + CLIENT_UNBLOCKED, is_on_fn=lambda\n \
+    \   controller, client: not client.blocked, name_fn=lambda client: None,\n   \
+    \ object_fn=lambda api, obj_id: api.clients[obj_id],\n    only_event_for_state_change=True,\
+    \ should_poll=False, supported_fn=lambda\n    controller, obj_id: True, unique_id_fn=lambda\
+    \ controller, obj_id:\n    f'block-{obj_id}'), UnifiSwitchEntityDescription[DPIRestrictionGroups,\n\
+    \    DPIRestrictionGroup](key='DPI restriction', entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:network', allowed_fn=lambda controller,\n    obj_id: controller.option_dpi_restrictions,\
+    \ api_handler_fn=lambda api:\n    api.dpi_groups, available_fn=lambda controller,\
+    \ obj_id: controller.\n    available, control_fn=async_dpi_group_control_fn, custom_subscribe=lambda\n\
+    \    api: api.dpi_apps.subscribe, device_info_fn=\n    async_dpi_group_device_info_fn,\
+    \ event_is_on=None, event_to_subscribe=\n    None, is_on_fn=async_dpi_group_is_on_fn,\
+    \ name_fn=lambda group: group.\n    name, object_fn=lambda api, obj_id: api.dpi_groups[obj_id],\
+    \ should_poll\n    =False, supported_fn=lambda c, obj_id: bool(c.api.dpi_groups[obj_id].\n\
+    \    dpiapp_ids), unique_id_fn=lambda controller, obj_id: obj_id),\n    UnifiSwitchEntityDescription[Outlets,\
+    \ Outlet](key='Outlet control',\n    device_class=SwitchDeviceClass.OUTLET, has_entity_name=True,\
+    \ allowed_fn\n    =lambda controller, obj_id: True, api_handler_fn=lambda api:\
+    \ api.\n    outlets, available_fn=async_device_available_fn, control_fn=\n   \
+    \ async_outlet_control_fn, device_info_fn=async_device_device_info_fn,\n    event_is_on=None,\
+    \ event_to_subscribe=None, is_on_fn=lambda controller,\n    outlet: outlet.relay_state,\
+    \ name_fn=lambda outlet: outlet.name,\n    object_fn=lambda api, obj_id: api.outlets[obj_id],\
+    \ should_poll=False,\n    supported_fn=async_outlet_supports_switching_fn, unique_id_fn=lambda\n\
+    \    controller, obj_id:\n    f\"{obj_id.split('_', 1)[0]}-outlet-{obj_id.split('_',\
+    \ 1)[1]}\"),\n    UnifiSwitchEntityDescription[PortForwarding, PortForward](key=\n\
+    \    'Port forward control', device_class=SwitchDeviceClass.SWITCH,\n    entity_category=EntityCategory.CONFIG,\
+    \ has_entity_name=True, icon=\n    'mdi:upload-network', allowed_fn=lambda controller,\
+    \ obj_id: True,\n    api_handler_fn=lambda api: api.port_forwarding, available_fn=lambda\n\
+    \    controller, obj_id: controller.available, control_fn=\n    async_port_forward_control_fn,\
+    \ device_info_fn=\n    async_port_forward_device_info_fn, event_is_on=None, event_to_subscribe\n\
+    \    =None, is_on_fn=lambda controller, port_forward: port_forward.enabled,\n\
+    \    name_fn=lambda port_forward: f'{port_forward.name}', object_fn=lambda\n \
+    \   api, obj_id: api.port_forwarding[obj_id], should_poll=False,\n    supported_fn=lambda\
+    \ controller, obj_id: True, unique_id_fn=lambda\n    controller, obj_id: f'port_forward-{obj_id}'),\n\
+    \    UnifiSwitchEntityDescription[Ports, Port](key='PoE port control',\n    device_class=SwitchDeviceClass.OUTLET,\
+    \ entity_category=EntityCategory.\n    CONFIG, has_entity_name=True, entity_registry_enabled_default=False,\n\
+    \    icon='mdi:ethernet', allowed_fn=lambda controller, obj_id: True,\n    api_handler_fn=lambda\
+    \ api: api.ports, available_fn=\n    async_device_available_fn, control_fn=async_poe_port_control_fn,\n\
+    \    device_info_fn=async_device_device_info_fn, event_is_on=None,\n    event_to_subscribe=None,\
+    \ is_on_fn=lambda controller, port: port.\n    poe_mode != 'off', name_fn=lambda\
+    \ port: f'{port.name} PoE', object_fn=\n    lambda api, obj_id: api.ports[obj_id],\
+    \ should_poll=False, supported_fn=\n    lambda controller, obj_id: controller.api.ports[obj_id].port_poe,\n\
+    \    unique_id_fn=lambda controller, obj_id:\n    f\"{obj_id.split('_', 1)[0]}-poe-{obj_id.split('_',\
+    \ 1)[1]}\"),\n    UnifiSwitchEntityDescription[Wlans, Wlan](key='WLAN control',\n\
+    \    device_class=SwitchDeviceClass.SWITCH, entity_category=EntityCategory.\n\
+    \    CONFIG, has_entity_name=True, icon='mdi:wifi-check', allowed_fn=lambda\n\
+    \    controller, obj_id: True, api_handler_fn=lambda api: api.wlans,\n    available_fn=lambda\
+    \ controller, _: controller.available, control_fn=\n    async_wlan_control_fn,\
+    \ device_info_fn=async_wlan_device_info_fn,\n    event_is_on=None, event_to_subscribe=None,\
+    \ is_on_fn=lambda controller,\n    wlan: wlan.enabled, name_fn=lambda wlan: None,\
+    \ object_fn=lambda api,\n    obj_id: api.wlans[obj_id], should_poll=False, supported_fn=lambda\n\
+    \    controller, obj_id: True, unique_id_fn=lambda controller, obj_id:\n    f'wlan-{obj_id}'))"
+  - "(V2CSwitchEntityDescription(key='paused', translation_key='paused', icon=\n \
+    \   'mdi:pause', value_fn=lambda evse_data: evse_data.paused == PauseState.\n\
+    \    PAUSED, turn_on_fn=lambda evse: evse.pause(), turn_off_fn=lambda evse:\n\
+    \    evse.resume()),)"
+  - "(ValloxSwitchEntityDescription(key='bypass_locked', translation_key=\n    'bypass_locked',\
+    \ icon='mdi:arrow-horizontal-lock', metric_key=\n    'A_CYC_BYPASS_LOCKED'),)"
+  - (ValloxSwitchEntityDescription, ...)
+  - (ValueError, IndexError, KeyError, OSError)
+  - "(ValveControllerSwitchDescription(key=SWITCH_KIND_ONBOARD_AP,\n    translation_key='onboard_access_point',\
+    \ icon='mdi:wifi',\n    entity_category=EntityCategory.CONFIG, api_category=API_WIFI_STATUS,\n\
+    \    off_action=_async_disable_ap, on_action=_async_enable_ap),\n    ValveControllerSwitchDescription(key=SWITCH_KIND_VALVE,\
+    \ translation_key\n    ='valve_controller', icon='mdi:water', api_category=API_VALVE_STATUS,\n\
+    \    off_action=_async_close_valve, on_action=_async_open_valve))"
+  - "(XiaomiMiioSwitchDescription(key=ATTR_BUZZER, feature=FEATURE_SET_BUZZER,\n \
+    \   name='Buzzer', icon='mdi:volume-high', method_on='async_set_buzzer_on',\n\
+    \    method_off='async_set_buzzer_off', entity_category=EntityCategory.\n    CONFIG),\
+    \ XiaomiMiioSwitchDescription(key=ATTR_CHILD_LOCK, feature=\n    FEATURE_SET_CHILD_LOCK,\
+    \ name='Child lock', icon='mdi:lock', method_on=\n    'async_set_child_lock_on',\
+    \ method_off='async_set_child_lock_off',\n    entity_category=EntityCategory.CONFIG),\
+    \ XiaomiMiioSwitchDescription(key\n    =ATTR_DISPLAY, feature=FEATURE_SET_DISPLAY,\
+    \ name='Display', icon=\n    'mdi:led-outline', method_on='async_set_display_on',\
+    \ method_off=\n    'async_set_display_off', entity_category=EntityCategory.CONFIG),\n\
+    \    XiaomiMiioSwitchDescription(key=ATTR_DRY, feature=FEATURE_SET_DRY, name\n\
+    \    ='Dry mode', icon='mdi:hair-dryer', method_on='async_set_dry_on',\n    method_off='async_set_dry_off',\
+    \ entity_category=EntityCategory.CONFIG),\n    XiaomiMiioSwitchDescription(key=ATTR_CLEAN,\
+    \ feature=FEATURE_SET_CLEAN,\n    name='Clean mode', icon='mdi:shimmer', method_on='async_set_clean_on',\n\
+    \    method_off='async_set_clean_off', available_with_device_off=False,\n    entity_category=EntityCategory.CONFIG),\
+    \ XiaomiMiioSwitchDescription(key\n    =ATTR_LED, feature=FEATURE_SET_LED, name='LED',\
+    \ icon='mdi:led-outline',\n    method_on='async_set_led_on', method_off='async_set_led_off',\n\
+    \    entity_category=EntityCategory.CONFIG), XiaomiMiioSwitchDescription(key\n\
+    \    =ATTR_LEARN_MODE, feature=FEATURE_SET_LEARN_MODE, name='Learn mode',\n  \
+    \  icon='mdi:school-outline', method_on='async_set_learn_mode_on',\n    method_off='async_set_learn_mode_off',\
+    \ entity_category=EntityCategory.\n    CONFIG), XiaomiMiioSwitchDescription(key=ATTR_AUTO_DETECT,\
+    \ feature=\n    FEATURE_SET_AUTO_DETECT, name='Auto detect', method_on=\n    'async_set_auto_detect_on',\
+    \ method_off='async_set_auto_detect_off',\n    entity_category=EntityCategory.CONFIG),\
+    \ XiaomiMiioSwitchDescription(key\n    =ATTR_IONIZER, feature=FEATURE_SET_IONIZER,\
+    \ name='Ionizer', icon=\n    'mdi:shimmer', method_on='async_set_ionizer_on',\
+    \ method_off=\n    'async_set_ionizer_off', entity_category=EntityCategory.CONFIG),\n\
+    \    XiaomiMiioSwitchDescription(key=ATTR_ANION, feature=FEATURE_SET_ANION,\n\
+    \    name='Ionizer', icon='mdi:shimmer', method_on='async_set_anion_on',\n   \
+    \ method_off='async_set_anion_off', entity_category=EntityCategory.CONFIG\n  \
+    \  ), XiaomiMiioSwitchDescription(key=ATTR_PTC, feature=FEATURE_SET_PTC,\n   \
+    \ name='Auxiliary heat', icon='mdi:radiator', method_on=\n    'async_set_ptc_on',\
+    \ method_off='async_set_ptc_off', entity_category=\n    EntityCategory.CONFIG))"
+  - "(YoLinkSwitchEntityDescription(key='outlet_state', device_class=\n    SwitchDeviceClass.OUTLET,\
+    \ name=None, exists_fn=lambda device: device.\n    device_type == ATTR_DEVICE_OUTLET),\
+    \ YoLinkSwitchEntityDescription(key=\n    'manipulator_state', name=None, icon='mdi:pipe',\
+    \ exists_fn=lambda\n    device: device.device_type == ATTR_DEVICE_MANIPULATOR),\n\
+    \    YoLinkSwitchEntityDescription(key='switch_state', name=None,\n    device_class=SwitchDeviceClass.SWITCH,\
+    \ exists_fn=lambda device: device.\n    device_type == ATTR_DEVICE_SWITCH), YoLinkSwitchEntityDescription(key=\n\
+    \    'multi_outlet_usb_ports', translation_key='usb_ports', device_class=\n  \
+    \  SwitchDeviceClass.OUTLET, exists_fn=lambda device: device.device_type ==\n\
+    \    ATTR_DEVICE_MULTI_OUTLET, plug_index=0), YoLinkSwitchEntityDescription(\n\
+    \    key='multi_outlet_plug_1', translation_key='plug_1', device_class=\n    SwitchDeviceClass.OUTLET,\
+    \ exists_fn=lambda device: device.device_type ==\n    ATTR_DEVICE_MULTI_OUTLET,\
+    \ plug_index=1), YoLinkSwitchEntityDescription(\n    key='multi_outlet_plug_2',\
+    \ translation_key='plug_2', device_class=\n    SwitchDeviceClass.OUTLET, exists_fn=lambda\
+    \ device: device.device_type ==\n    ATTR_DEVICE_MULTI_OUTLET, plug_index=2),\
+    \ YoLinkSwitchEntityDescription(\n    key='multi_outlet_plug_3', translation_key='plug_3',\
+    \ device_class=\n    SwitchDeviceClass.OUTLET, exists_fn=lambda device: device.device_type\
+    \ ==\n    ATTR_DEVICE_MULTI_OUTLET, plug_index=3), YoLinkSwitchEntityDescription(\n\
+    \    key='multi_outlet_plug_4', translation_key='plug_4', device_class=\n    SwitchDeviceClass.OUTLET,\
+    \ exists_fn=lambda device: device.device_type ==\n    ATTR_DEVICE_MULTI_OUTLET,\
+    \ plug_index=4))"
+  - (YoLinkSwitchEntityDescription, ...)
+  - ([AdGuardHome], Callable[[], Coroutine[Any, Any, None]])
+  - ([AdGuardHome], Callable[[], Coroutine[Any, Any, bool]])
+  - ([AttributeCache, bool], Coroutine[Any, Any, dict])
+  - ([Callable[[str], OverkizStateType]], bool)
+  - ([Client], Awaitable)
+  - ([Command | list[Command]], Any)
+  - ([CoordinatorDataT], bool)
+  - ([Device, bool], None)
+  - ([DeviceResponseEntry], bool | None)
+  - ([DeviceResponseEntry], bool)
+  - ([Device], Awaitable[bool])
+  - ([Device], bool | None)
+  - ([Device], bool)
+  - ([Diffuser], Awaitable[None])
+  - ([Diffuser], bool)
+  - ([EcoforestApi, bool], Awaitable[Device])
+  - ([Elgato, bool], Awaitable[Any])
+  - ([ElgatoData], bool | None)
+  - ([ElgatoData], bool)
+  - ([Envoy, str], Coroutine[Any, Any, dict[str, Any]])
+  - ([EnvoyDryContactStatus], bool)
+  - ([EnvoyEnpower], bool)
+  - ([EnvoyStorageSettings], bool)
+  - ([Envoy], Awaitable[dict[str, Any]])
+  - ([Envoy], Coroutine[Any, Any, dict[str, Any]])
+  - ([FullyKiosk], Any)
+  - ([HWEnergyDeviceUpdateCoordinator], bool)
+  - ([HomeWizardEnergy, bool], Awaitable[Any])
+  - ([Host, bool], Any)
+  - ([Host, int, bool], Any)
+  - ([Host, int], bool)
+  - ([Host], bool)
+  - ([IntellifireAPILocal], Awaitable)
+  - ([IntellifirePollData], bool)
+  - ([LaMetricDevice, bool], Awaitable[Any])
+  - ([Lock], None)
+  - ([Lock], bool)
+  - ([MyBMWVehicle], Coroutine[Any, Any, Any])
+  - ([MyBMWVehicle], bool)
+  - ([MyBMWVehicle], list[str])
+  - ([NetgearRouter], bool)
+  - ([ONVIFDevice], Callable[[Profile, Any], Coroutine[Any, Any, None]])
+  - ([ONVIFDevice], bool)
+  - ([PyDroidIPCam], Coroutine[Any, Any, bool])
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - ([SensiboDevice], bool | None)
+  - ([SensiboDevice], dict[str, str | bool | None])
+  - ([StarlinkData], bool | None)
+  - ([StarlinkUpdateCoordinator], Awaitable[None])
+  - ([TrydanData], bool)
+  - ([Trydan], Coroutine[Any, Any, Any])
+  - ([UniFiController, ApiItemT], bool)
+  - ([UniFiController, str, bool], Coroutine[Any, Any, None])
+  - ([Valve, bool], Coroutine[Any, Any, None])
+  - ([Valve], Any)
+  - ([YoLinkDevice], bool)
+  - ([], [], [], [])
+  - ([_DataT], bool)
+  - ([_RobotT, bool], Coroutine[Any, Any, bool])
+  - ([aiounifi.Controller], SubscriptionT)
+  - ([dict[str, Any]], Any)
+  - (_, activity_name)
+  - (ac_key, ac_device)
+  - (actuator_id, actuator)
+  - (ain, device)
+  - (area_name, device)
+  - (area_name, keypad_name, scene, led)
+  - (async_add_entities, device)
+  - (async_add_entities_config_entry, device)
+  - (asyncio.TimeoutError, OSError, RuntimeError)
+  - (asyncio.TimeoutError, httpx.RequestError)
+  - (circuit_index, circuit_data)
+  - (clusters.OnOff.Attributes.OnOff,)
+  - (config.get(CONF_USERNAME), config.get(CONF_PASSWORD))
+  - (coordinator, description)
+  - (count, data)
+  - (dev_name, dev_config)
+  - (dev_name, properties)
+  - (device, coordinator)
+  - (device_id, config)
+  - (device_id, device)
+  - (device_id, device_config)
+  - (device_id, device_data)
+  - "(device_types.ColorTemperatureLight, device_types.DimmableLight,\n    device_types.ExtendedColorLight,\
+    \ device_types.OnOffLight, device_types.\n    DoorLock, device_types.ColorDimmerSwitch,\
+    \ device_types.DimmerSwitch,\n    device_types.OnOffLightSwitch, device_types.Thermostat)"
+  - (dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)
+  - (dr.CONNECTION_NETWORK_MAC, self.speaker.mac_address)
+  - (entry.unique_id, entry)
+  - (errindication, errstatus, errindex, restable)
+  - (funcname, func)
+  - (host, data)
+  - (host, port)
+  - (i, network)
+  - (icon_on, icon_off)
+  - (id_len, item_kind)
+  - (idx, port_id)
+  - (index, data)
+  - (int, EzvizSwitchEntityDescription)
+  - (item_id, item)
+  - (j, n)
+  - (key, attr)
+  - (key, value)
+  - (kind, api_category, switch_class, switch_enabled_class)
+  - (mac, _, index)
+  - (mac, device)
+  - (name, device)
+  - (name, status, actions)
+  - (node, control)
+  - (object_id, device_config)
+  - (object_id, entity_config)
+  - (old_unique_id, alarm_entry)
+  - (pinnum, pin)
+  - (plug_service, method)
+  - (port, name)
+  - (port, port_name)
+  - (port_addr, port_name)
+  - (service_name, schema, method)
+  - (state_key, entity_class)
+  - (states, consumptions, cumulated_consumptions, start_dates)
+  - (str, Any)
+  - (str, DataUpdateCoordinator[Any])
+  - (str, DeclarativeSwitchEntityDescription)
+  - (str, Device)
+  - (str, DevoloSwitchEntityDescription[Any])
+  - (str, RitualsDataUpdateCoordinator)
+  - (str, RoborockDataUpdateCoordinator)
+  - (str, SHCSwitchEntityDescription)
+  - (str, SwitchEntityDescription)
+  - (str, str | None)
+  - (str, str | dict[str, str])
+  - (str, str | list[str])
+  - (str, str)
+  - (str, template.Template)
+  - (str, tuple[OneWireEntityDescription, ...])
+  - (str, tuple[SwitchEntityDescription, ...])
+  - (str, type)
+  - (str, type[HomeKitSwitch] | type[HomeKitValve])
+  - (tuple[int, str], list[dict[str, Any]])
+  - (uid, activity)
+  - (user, passwd)
+  - (vin, datastore)
+  - (x_val, y_val, b_val)
+  - (zone, data)
+  - (zone_id, zone)
+  - (zone_num, device_config_data)
+  - Any, Any, Any
+  - Any, Any, None
+  - Any, Any, bool
+  - Any, Any, dict
+  - Any, Any, dict[str, Any]
+  - Clients, Client
+  - DPIRestrictionGroups, DPIRestrictionGroup
+  - OneWireEntityDescription, ...
+  - Outlets, Outlet
+  - PortForwarding, PortForward
+  - Ports, Port
+  - SwitchEntityDescription, ...
+  - Wlans, Wlan
+  - '[Profile, Any], Coroutine[Any, Any, None]'
+  - '[], Coroutine[Any, Any, None]'
+  - '[], Coroutine[Any, Any, bool]'
+  - '[str], OverkizStateType'
+  - _T, _P
+  - int, str
+  - str, Any
+  - str, str
+  - str, str | bool | None

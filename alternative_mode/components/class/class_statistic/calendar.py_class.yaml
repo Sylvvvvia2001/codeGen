@@ -1,0 +1,15 @@
+calendar.py:
+- CalendarQueryUpdateCoordinator
+- CalendarSyncUpdateCoordinator
+- DemoCalendar
+- GoogleCalendarEntity
+- LocalCalendarEntity
+- RainBirdCalendarEntity
+- ReCollectWasteCalendar
+- RidwellCalendar
+- TodoistProjectData
+- TodoistProjectEntity
+- TwenteMilieuCalendar
+- VulcanCalendarEntity
+- WebDavCalendarEntity
+- WithingsWorkoutCalendarEntity

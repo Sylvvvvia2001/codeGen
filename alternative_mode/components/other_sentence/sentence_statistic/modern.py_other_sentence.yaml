@@ -1,0 +1,20 @@
+modern.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ((metadata_id, iter(states)),)
+  - "([Row, dict[str, dict[str, Any]], float | None, str, str, float | None,\n   \
+    \ bool], State | dict[str, Any])"
+  - (entity_id, metadata_id)
+  - (int, Iterator[Row])
+  - (int, str)
+  - (k, v)
+  - (key, val)
+  - (metadata_id, group)
+  - (metadata_id, iter(states))
+  - (str, dict[str, Any])
+  - (str, int | None)
+  - (str, list[State | dict[str, Any]])
+  - (str, list[State])
+  - str, Any
+  - str, dict[str, Any]

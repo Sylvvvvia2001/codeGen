@@ -1,0 +1,89 @@
+storage.py:
+  schemas: []
+  sets: []
+  tuples:
+  - "(GrowattSensorEntityDescription(key='storage_storage_production_today',\n   \
+    \ translation_key='storage_storage_production_today', api_key=\n    'eBatDisChargeToday',\
+    \ native_unit_of_measurement=UnitOfEnergy.\n    KILO_WATT_HOUR, device_class=SensorDeviceClass.ENERGY),\n\
+    \    GrowattSensorEntityDescription(key=\n    'storage_storage_production_lifetime',\
+    \ translation_key=\n    'storage_storage_production_lifetime', api_key='eBatDisChargeTotal',\n\
+    \    native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR, device_class=\n \
+    \   SensorDeviceClass.ENERGY, state_class=SensorStateClass.TOTAL),\n    GrowattSensorEntityDescription(key='storage_grid_discharge_today',\n\
+    \    translation_key='storage_grid_discharge_today', api_key=\n    'eacDisChargeToday',\
+    \ native_unit_of_measurement=UnitOfEnergy.\n    KILO_WATT_HOUR, device_class=SensorDeviceClass.ENERGY),\n\
+    \    GrowattSensorEntityDescription(key='storage_load_consumption_today',\n  \
+    \  translation_key='storage_load_consumption_today', api_key=\n    'eopDischrToday',\
+    \ native_unit_of_measurement=UnitOfEnergy.\n    KILO_WATT_HOUR, device_class=SensorDeviceClass.ENERGY),\n\
+    \    GrowattSensorEntityDescription(key='storage_load_consumption_lifetime',\n\
+    \    translation_key='storage_load_consumption_lifetime', api_key=\n    'eopDischrTotal',\
+    \ native_unit_of_measurement=UnitOfEnergy.\n    KILO_WATT_HOUR, device_class=SensorDeviceClass.ENERGY,\
+    \ state_class=\n    SensorStateClass.TOTAL), GrowattSensorEntityDescription(key=\n\
+    \    'storage_grid_charged_today', translation_key=\n    'storage_grid_charged_today',\
+    \ api_key='eacChargeToday',\n    native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,\
+    \ device_class=\n    SensorDeviceClass.ENERGY), GrowattSensorEntityDescription(key=\n\
+    \    'storage_charge_storage_lifetime', translation_key=\n    'storage_charge_storage_lifetime',\
+    \ api_key='eChargeTotal',\n    native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,\
+    \ device_class=\n    SensorDeviceClass.ENERGY, state_class=SensorStateClass.TOTAL),\n\
+    \    GrowattSensorEntityDescription(key='storage_solar_production',\n    translation_key='storage_solar_production',\
+    \ api_key='ppv',\n    native_unit_of_measurement=UnitOfPower.WATT, device_class=\n\
+    \    SensorDeviceClass.POWER), GrowattSensorEntityDescription(key=\n    'storage_battery_percentage',\
+    \ translation_key=\n    'storage_battery_percentage', api_key='capacity',\n  \
+    \  native_unit_of_measurement=PERCENTAGE, device_class=SensorDeviceClass.\n  \
+    \  BATTERY), GrowattSensorEntityDescription(key='storage_power_flow',\n    translation_key='storage_power_flow',\
+    \ api_key='pCharge',\n    native_unit_of_measurement=UnitOfPower.WATT, device_class=\n\
+    \    SensorDeviceClass.POWER), GrowattSensorEntityDescription(key=\n    'storage_load_consumption_solar_storage',\
+    \ translation_key=\n    'storage_load_consumption_solar_storage', api_key='rateVA',\n\
+    \    native_unit_of_measurement='VA'), GrowattSensorEntityDescription(key=\n \
+    \   'storage_charge_today', translation_key='storage_charge_today', api_key\n\
+    \    ='eChargeToday', native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,\n\
+    \    device_class=SensorDeviceClass.ENERGY), GrowattSensorEntityDescription(\n\
+    \    key='storage_import_from_grid', translation_key=\n    'storage_import_from_grid',\
+    \ api_key='pAcInPut',\n    native_unit_of_measurement=UnitOfPower.WATT, device_class=\n\
+    \    SensorDeviceClass.POWER), GrowattSensorEntityDescription(key=\n    'storage_import_from_grid_today',\
+    \ translation_key=\n    'storage_import_from_grid_today', api_key='eToUserToday',\n\
+    \    native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR, device_class=\n \
+    \   SensorDeviceClass.ENERGY), GrowattSensorEntityDescription(key=\n    'storage_import_from_grid_total',\
+    \ translation_key=\n    'storage_import_from_grid_total', api_key='eToUserTotal',\n\
+    \    native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR, device_class=\n \
+    \   SensorDeviceClass.ENERGY, state_class=SensorStateClass.TOTAL),\n    GrowattSensorEntityDescription(key='storage_load_consumption',\n\
+    \    translation_key='storage_load_consumption', api_key='outPutPower',\n    native_unit_of_measurement=UnitOfPower.WATT,\
+    \ device_class=\n    SensorDeviceClass.POWER), GrowattSensorEntityDescription(key=\n\
+    \    'storage_grid_voltage', translation_key='storage_grid_voltage', api_key\n\
+    \    ='vGrid', native_unit_of_measurement=UnitOfElectricPotential.VOLT,\n    device_class=SensorDeviceClass.VOLTAGE,\
+    \ precision=2),\n    GrowattSensorEntityDescription(key='storage_pv_charging_voltage',\n\
+    \    translation_key='storage_pv_charging_voltage', api_key='vpv',\n    native_unit_of_measurement=UnitOfElectricPotential.VOLT,\
+    \ device_class=\n    SensorDeviceClass.VOLTAGE, precision=2), GrowattSensorEntityDescription\n\
+    \    (key='storage_ac_input_frequency_out', translation_key=\n    'storage_ac_input_frequency_out',\
+    \ api_key='freqOutPut',\n    native_unit_of_measurement=UnitOfFrequency.HERTZ,\
+    \ device_class=\n    SensorDeviceClass.FREQUENCY, precision=2),\n    GrowattSensorEntityDescription(key='storage_output_voltage',\n\
+    \    translation_key='storage_output_voltage', api_key='outPutVolt',\n    native_unit_of_measurement=UnitOfElectricPotential.VOLT,\
+    \ device_class=\n    SensorDeviceClass.VOLTAGE, precision=2), GrowattSensorEntityDescription\n\
+    \    (key='storage_ac_output_frequency', translation_key=\n    'storage_ac_output_frequency',\
+    \ api_key='freqGrid',\n    native_unit_of_measurement=UnitOfFrequency.HERTZ, device_class=\n\
+    \    SensorDeviceClass.FREQUENCY, precision=2),\n    GrowattSensorEntityDescription(key='storage_current_PV',\n\
+    \    translation_key='storage_current_pv', api_key='iAcCharge',\n    native_unit_of_measurement=UnitOfElectricCurrent.AMPERE,\
+    \ device_class=\n    SensorDeviceClass.CURRENT, precision=2), GrowattSensorEntityDescription\n\
+    \    (key='storage_current_1', translation_key='storage_current_1', api_key=\n\
+    \    'iChargePV1', native_unit_of_measurement=UnitOfElectricCurrent.AMPERE,\n\
+    \    device_class=SensorDeviceClass.CURRENT, precision=2),\n    GrowattSensorEntityDescription(key='storage_grid_amperage_input',\n\
+    \    translation_key='storage_grid_amperage_input', api_key='chgCurr',\n    native_unit_of_measurement=UnitOfElectricCurrent.AMPERE,\
+    \ device_class=\n    SensorDeviceClass.CURRENT, precision=2), GrowattSensorEntityDescription\n\
+    \    (key='storage_grid_out_current', translation_key=\n    'storage_grid_out_current',\
+    \ api_key='outPutCurrent',\n    native_unit_of_measurement=UnitOfElectricCurrent.AMPERE,\
+    \ device_class=\n    SensorDeviceClass.CURRENT, precision=2), GrowattSensorEntityDescription\n\
+    \    (key='storage_battery_voltage', translation_key=\n    'storage_battery_voltage',\
+    \ api_key='vBat', native_unit_of_measurement=\n    UnitOfElectricPotential.VOLT,\
+    \ device_class=SensorDeviceClass.VOLTAGE,\n    precision=2), GrowattSensorEntityDescription(key=\n\
+    \    'storage_load_percentage', translation_key='storage_load_percentage',\n \
+    \   api_key='loadPercent', native_unit_of_measurement=PERCENTAGE,\n    device_class=SensorDeviceClass.BATTERY,\
+    \ precision=2))"
+  - (GrowattSensorEntityDescription, ...)
+  - (Store, dict[str, Any])
+  - (homekit_id, homekit_id.lower())
+  - (store, data[user_id])
+  - (store, user_data)
+  - (stores, data)
+  - (str, Any)
+  - (str, Pairing)
+  - ({}, {})
+  - str, Any

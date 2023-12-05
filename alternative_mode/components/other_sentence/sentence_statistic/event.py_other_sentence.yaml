@@ -1,0 +1,41 @@
+event.py:
+  schemas: []
+  sets:
+  - '{''state''}'
+  - '{''tns1:MediaControl/VideoEncoderConfiguration''}'
+  - '{(CONNECTION_NETWORK_MAC, coordinator.mac)}'
+  - '{(DOMAIN, ''push'')}'
+  - '{(self._aid, self._char.iid)}'
+  - '{device_identifier}'
+  - '{event.ATTR_EVENT_TYPE, event.ATTR_EVENT_TYPES}'
+  tuples:
+  - (*SUBSCRIPTION_ERRORS, TypeError)
+  - (CONNECTION_NETWORK_MAC, coordinator.mac)
+  - (DOMAIN, 'push')
+  - (Fault, asyncio.TimeoutError, TransportError)
+  - (ONVIFError, Fault, RequestError, XMLParseError, ValidationError)
+  - (ONVIFError, RequestError, XMLParseError, *SUBSCRIPTION_ERRORS)
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN)
+  - (XMLParseError, *SUBSCRIPTION_ERRORS)
+  - (XMLParseError, RequestError, TimeoutError, TransportError)
+  - ([ReceivePayloadType, PayloadSentinel], ReceivePayloadType)
+  - ([], None)
+  - ([dict, Block], bool)
+  - ([dict, dict, str], bool)
+  - (api.sensors.button, api.sensors.relative_rotary)
+  - "(clusters.Switch.Attributes.CurrentPosition, clusters.Switch.Attributes.\n  \
+    \  FeatureMap)"
+  - "(clusters.Switch.Attributes.NumberOfPositions, clusters.FixedLabel.\n    Attributes.LabelList)"
+  - (device_types.GenericSwitch,)
+  - (int, str)
+  - (k, v)
+  - (key, val)
+  - (key, value)
+  - (key2, val2)
+  - (self._aid, self._char.iid)
+  - (str, Any)
+  - (str, Event)
+  - (str, dict[str, Any])
+  - (str, int | None)
+  - (str, set[str])
+  - str, Any

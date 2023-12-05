@@ -1,0 +1,21 @@
+base_scanner.py:
+  schemas: []
+  sets: []
+  tuples:
+  - "('_new_info_callback', '_discovered_device_advertisement_datas',\n    '_discovered_device_timestamps',\
+    \ '_details', '_expire_seconds', '_storage')"
+  - "('hass', 'adapter', 'connectable', 'source', 'connector', '_connecting',\n  \
+    \  'name', 'scanning', '_last_detection', '_start_time', '_cancel_watchdog')"
+  - ()
+  - (Any, Any)
+  - (None, None, None)
+  - ([BluetoothServiceInfoBleak], None)
+  - (address, timestamp)
+  - (device, advertisement_data)
+  - (int, bytes)
+  - (str, Any)
+  - (str, bytes)
+  - (str, float)
+  - (str, str | HaBluetoothConnector)
+  - (str, tuple[BLEDevice, AdvertisementData])
+  - BLEDevice, AdvertisementData

@@ -1,0 +1,81 @@
+alarm_control_panel.py:
+  schemas: []
+  sets:
+  - '{''_attr_state''}'
+  - '{(AGENT_DOMAIN, client.unique)}'
+  - '{(DOMAIN, contract)}'
+  - '{(DOMAIN, coordinator.mac)}'
+  - '{(DOMAIN, entry.unique_id)}'
+  - '{(DOMAIN, gateway_device_id)}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._device.serial_number)}'
+  - '{(DOMAIN, self.coordinator.entry.data[CONF_GIID])}'
+  - '{(DOMAIN, sync.serial)}'
+  - '{(HMIPC_DOMAIN, f''ACP {self._home.id}'')}'
+  - '{(POINT_DOMAIN, home_id)}'
+  - '{alarm.ATTR_CHANGED_BY, alarm.ATTR_CODE_ARM_REQUIRED, alarm.ATTR_CODE_FORMAT}'
+  tuples:
+  - "((ATTR_ALARM_VOLUME, self._system.alarm_volume), (ATTR_CHIME_VOLUME, self.\n\
+    \    _system.chime_volume), (ATTR_VOICE_PROMPT_VOLUME, self._system.\n    voice_prompt_volume))"
+  - (AGENT_DOMAIN, client.unique)
+  - (ATTR_ALARM_VOLUME, self._system.alarm_volume)
+  - (ATTR_CHIME_VOLUME, self._system.chime_volume)
+  - (ATTR_VOICE_PROMPT_VOLUME, self._system.voice_prompt_volume)
+  - (AlarmControlPanelEntityDescription(key=DPCode.MASTER_MODE, name='Alarm'),)
+  - (AlarmControlPanelInfo, AlarmControlPanelEntityState)
+  - (AlarmControlPanelState, str)
+  - (AlarmState.ARMED_MODE0, STATE_ALARM_ARMED_AWAY)
+  - (AlarmState.ARMED_MODE1, STATE_ALARM_ARMED_HOME)
+  - (AlarmState.ARMED_MODE2, STATE_ALARM_ARMED_HOME)
+  - (AlarmState.ARMED_MODE3, STATE_ALARM_ARMED_HOME)
+  - (AlarmState.ENTRY_TIME, STATE_ALARM_PENDING)
+  - (AlarmState.EXIT_COUNTDOWN_OVER_10, STATE_ALARM_PENDING)
+  - (AlarmState.EXIT_COUNTDOWN_UNDER_10, STATE_ALARM_PENDING)
+  - (AlarmState.TRIGGERED, STATE_ALARM_TRIGGERED)
+  - (AlarmState.TRIGGERED_FIRE, STATE_ALARM_TRIGGERED)
+  - (DOMAIN, contract)
+  - (DOMAIN, coordinator.mac)
+  - (DOMAIN, entry.unique_id)
+  - (DOMAIN, gateway_device_id)
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._device.serial_number)
+  - (DOMAIN, self.coordinator.entry.data[CONF_GIID])
+  - (DOMAIN, sync.serial)
+  - "(EVENT_ALARM_CANCELED, EVENT_ALARM_TRIGGERED, EVENT_ARMED_AWAY,\n    EVENT_ARMED_AWAY_BY_KEYPAD,\
+    \ EVENT_ARMED_AWAY_BY_REMOTE,\n    EVENT_ARMED_HOME, EVENT_AWAY_EXIT_DELAY_BY_KEYPAD,\n\
+    \    EVENT_AWAY_EXIT_DELAY_BY_REMOTE, EVENT_DISARMED_BY_MASTER_PIN,\n    EVENT_DISARMED_BY_REMOTE,\
+    \ EVENT_HOME_EXIT_DELAY)"
+  - (False, True)
+  - (HMIPC_DOMAIN, f'ACP {self._home.id}')
+  - (HMIPC_DOMAIN, self._home.id)
+  - (POINT_DOMAIN, home_id)
+  - "(STATE_ALARM_DISARMED, STATE_ALARM_ARMED_HOME, STATE_ALARM_ARMED_AWAY,\n    STATE_ALARM_ARMED_NIGHT,\
+    \ STATE_ALARM_ARMED_VACATION,\n    STATE_ALARM_ARMED_CUSTOM_BYPASS, STATE_ALARM_PENDING,\n\
+    \    STATE_ALARM_ARMING, STATE_ALARM_DISARMING, STATE_ALARM_TRIGGERED)"
+  - (STATE_ALARM_DISARMED, STATE_ALARM_TRIGGERED)
+  - (STATE_ALARM_PENDING, STATE_ALARM_ARMING)
+  - (True, True)
+  - ([Callable[[str], OverkizStateType]], str)
+  - ([], None)
+  - ([str], OverkizStateType)
+  - (group, armed)
+  - (int, Callable[[], Any])
+  - (key, volume_prop)
+  - (location_id, location)
+  - (new_state, self._attr_state)
+  - (nodeid, local_node)
+  - (object_id, entity_config)
+  - (partition_id, partition)
+  - (partition_num, device_config_data)
+  - (satel_state, ha_state)
+  - (self._attr_state, self._old_state)
+  - (status_group, codes)
+  - (str, Any)
+  - (str, str | dict[str, str])
+  - (str, str)
+  - (str, tuple[AlarmControlPanelEntityDescription, ...])
+  - (sync_name, sync_module)
+  - AlarmControlPanelEntityDescription, ...
+  - '[], Any'
+  - '[str], OverkizStateType'
+  - str, str

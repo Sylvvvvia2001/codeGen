@@ -1,0 +1,6 @@
+errors.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('COLOR', 'ASLEEP', 'NOT_PROVISIONED', 'OTHER')
+  - (str, Any)

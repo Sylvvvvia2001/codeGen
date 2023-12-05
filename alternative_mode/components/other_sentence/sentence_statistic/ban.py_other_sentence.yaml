@@ -1,0 +1,13 @@
+ban.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Concatenate[_HassViewT, Request, _P], Awaitable[Response])
+  - (Concatenate[_HassViewT, Request, _P], Coroutine[Any, Any, Response])
+  - (IPv4Address | IPv6Address, IpBan)
+  - (IPv4Address | IPv6Address, int)
+  - ([Request], Awaitable[StreamResponse])
+  - (ip_ban, ip_info)
+  - (remote_host, _, _)
+  - Any, Any, Response
+  - _HassViewT, Request, _P

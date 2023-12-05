@@ -1,0 +1,21 @@
+purge.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([str], bool)
+  - (detached_state_ids, detached_attributes_ids)
+  - (event_id, data_id)
+  - (event_id, data_id, state_id, attributes_id)
+  - (event_ids, data_ids)
+  - (event_ids, state_ids, attributes_ids, data_ids)
+  - (event_type_id, event_type)
+  - (int, ...)
+  - (metadata_id, entity_id)
+  - (run_id,)
+  - (set[int], set[int])
+  - (set[int], set[int], set[int], set[int])
+  - (state_id, attributes_id)
+  - (state_id,)
+  - (state_ids, attributes_ids)
+  - (state_ids, attributes_ids, event_ids)
+  - (statistic_id,)

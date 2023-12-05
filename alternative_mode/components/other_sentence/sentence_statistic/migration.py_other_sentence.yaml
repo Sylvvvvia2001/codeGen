@@ -1,0 +1,38 @@
+migration.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, hue_dev.id)}'
+  tuples:
+  - ('events', 'states', 'statistics_meta')
+  - ('max', 'mean', 'min', 'state', 'sum')
+  - ('states', 'events')
+  - "((find_unmigrated_statistics_rows,\n    migrate_single_statistics_row_to_timestamp,\n\
+    \    delete_duplicate_statistics_row), (\n    find_unmigrated_short_term_statistics_rows,\n\
+    \    migrate_single_short_term_statistics_row_to_timestamp,\n    delete_duplicate_short_term_statistics_row))"
+  - ()
+  - (DOMAIN, hue_dev.id)
+  - (InternalError, OperationalError)
+  - (InternalError, OperationalError, ProgrammingError)
+  - (SupportedDialect | None, _ColumnTypesForDialect)
+  - (['time_fired'], ['time_fired_ts'])
+  - ([], Session)
+  - (_, entity_id)
+  - (_, event_type)
+  - (domain, mac)
+  - (domain, serial)
+  - (domain, value)
+  - (entity_id, metadata_id)
+  - (event_id, event_type)
+  - (event_id, time_fired_ts, context_id, context_user_id, context_parent_id)
+  - (event_type, event_id)
+  - "(f'DROP INDEX {index_name}', f'DROP INDEX {table_name}.{index_name}',\n    f'DROP\
+    \ INDEX {index_name} ON {table_name}', f'DROP INDEX {index_to_drop}')"
+  - (find_func, migrate_func, delete_func)
+  - "(find_unmigrated_short_term_statistics_rows,\n    migrate_single_short_term_statistics_row_to_timestamp,\n\
+    \    delete_duplicate_short_term_statistics_row)"
+  - "(find_unmigrated_statistics_rows,\n    migrate_single_statistics_row_to_timestamp,\
+    \ delete_duplicate_statistics_row\n    )"
+  - (state_id, entity_id)
+  - (state_id, last_updated_ts, context_id, context_user_id, context_parent_id)
+  - (statistic_id, start, created, last_reset)
+  - (str, str)

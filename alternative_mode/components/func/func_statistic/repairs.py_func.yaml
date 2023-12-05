@@ -1,0 +1,8 @@
+repairs.py:
+- __init__
+- _async_form_for_suggestion
+- _async_get_placeholders
+- _async_step
+- async_manage_legacy_subscription_issue
+- description_placeholders
+- issue

@@ -1,0 +1,31 @@
+http_api.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (Concatenate[_HassViewT, web.Request, _P], Awaitable[web.Response])
+  - (Concatenate[_HassViewT, web.Request, _P], Coroutine[Any, Any, web.Response])
+  - (HTTPStatus, str)
+  - (HTTPStatus.BAD_GATEWAY, 'Unable to reach the Home Assistant cloud.')
+  - '(HTTPStatus.BAD_GATEWAY, f''Unexpected error: {exc}'')'
+  - (HTTPStatus.BAD_REQUEST, 'An account with the given email already exists.')
+  - (HTTPStatus.BAD_REQUEST, 'Email not confirmed.')
+  - (HTTPStatus.BAD_REQUEST, 'Password change required.')
+  - (HTTPStatus.BAD_REQUEST, 'User does not exist.')
+  - (HTTPStatus.INTERNAL_SERVER_ERROR, 'Error making internal request')
+  - (HTTPStatus.UNAUTHORIZED, 'Authentication failed.')
+  - "([HomeAssistant, websocket_api.ActiveConnection, dict[str, Any]], Coroutine\n\
+    \    [None, None, None])"
+  - ([HomeAssistant, websocket_api.ActiveConnection, dict[str, Any]], None)
+  - (alexa_errors.NoTokenAvailable, alexa_errors.RequireRelink)
+  - (err, value_info)
+  - (err_status, err_msg)
+  - (lang, gender)
+  - (lang, gender.value)
+  - (status, msg)
+  - (str, Any)
+  - (type[Exception], tuple[HTTPStatus, str])
+  - Any, Any, web.Response
+  - HTTPStatus, str
+  - None, None, None
+  - _HassViewT, web.Request, _P
+  - str, Any

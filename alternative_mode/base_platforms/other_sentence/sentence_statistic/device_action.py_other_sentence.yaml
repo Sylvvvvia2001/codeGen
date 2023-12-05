@@ -1,0 +1,42 @@
+device_action.py:
+  schemas: []
+  sets:
+  - '{''arm_away'', ''arm_home'', ''arm_night'', ''arm_vacation'', ''disarm'', ''trigger''}'
+  - '{''clean'', ''dock''}'
+  - '{''lock'', ''unlock'', ''open''}'
+  - '{''open'', ''close'', ''stop'', ''open_tilt'', ''close_tilt''}'
+  - '{''press''}'
+  - '{''set_hvac_mode'', ''set_preset_mode''}'
+  - '{''set_position'', ''set_tilt_position''}'
+  - '{''turn_on'', ''turn_off''}'
+  - '{ACTION_SQUAWK, ACTION_WARN}'
+  - '{ACTION_TYPE_COMMAND, ACTION_TYPE_STATUS}'
+  - "{SERVICE_CLEAR_LOCK_USERCODE, SERVICE_PING, SERVICE_REFRESH_VALUE,\n    SERVICE_RESET_METER,\
+    \ SERVICE_SET_CONFIG_PARAMETER,\n    SERVICE_SET_LOCK_USERCODE, SERVICE_SET_VALUE}"
+  - '{SERVICE_SELECT_NEXT, SERVICE_SELECT_PREVIOUS}'
+  tuples:
+  - (ATTR_DOMAIN, CONF_TYPE, CONF_SUBTYPE)
+  - (KeyError, AttributeError)
+  - (None, '')
+  - "(SERVICE_REFRESH_VALUE, SERVICE_SET_LOCK_USERCODE,\n    SERVICE_CLEAR_LOCK_USERCODE,\
+    \ SERVICE_RESET_METER)"
+  - "(SERVICE_SELECT_FIRST, SERVICE_SELECT_LAST, SERVICE_SELECT_NEXT,\n    SERVICE_SELECT_OPTION,\
+    \ SERVICE_SELECT_PREVIOUS)"
+  - (cluster_handler, cluster_handler_actions)
+  - (commands, _)
+  - (commands, send_fun)
+  - (dict[str, str], Callable[..., None])
+  - (endpoint, endpoint_data)
+  - (int, dict[str, Any])
+  - (int, str)
+  - (k, v)
+  - (key, value)
+  - (notify.ATTR_MESSAGE, notify.ATTR_TITLE, notify.ATTR_DATA)
+  - (str, Any)
+  - (str, str)
+  - (str, vol.Schema)
+  - "({**base_action, CONF_TYPE: TYPE_BRIGHTNESS_INCREASE}, {**base_action,\n    CONF_TYPE:\
+    \ TYPE_BRIGHTNESS_DECREASE})"
+  - '..., None'
+  - str, Any
+  - str, str

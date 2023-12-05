@@ -1,0 +1,8 @@
+intent.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (intent_speech, alexa_speech)
+  - (key, value)
+  - (str, Any)
+  - (str, str)

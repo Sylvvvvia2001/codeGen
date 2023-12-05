@@ -1,0 +1,28 @@
+exposed_entities.py:
+  schemas: []
+  sets:
+  - "{'climate', 'cover', 'fan', 'humidifier', 'light', 'lock', 'scene',\n    'script',\
+    \ 'switch', 'vacuum', 'water_heater'}"
+  - "{BinarySensorDeviceClass.DOOR, BinarySensorDeviceClass.GARAGE_DOOR,\n    BinarySensorDeviceClass.LOCK,\
+    \ BinarySensorDeviceClass.MOTION,\n    BinarySensorDeviceClass.OPENING, BinarySensorDeviceClass.PRESENCE,\n\
+    \    BinarySensorDeviceClass.WINDOW}"
+  - "{SensorDeviceClass.AQI, SensorDeviceClass.CO, SensorDeviceClass.CO2,\n    SensorDeviceClass.HUMIDITY,\
+    \ SensorDeviceClass.PM10, SensorDeviceClass.\n    PM25, SensorDeviceClass.TEMPERATURE,\
+    \ SensorDeviceClass.\n    VOLATILE_ORGANIC_COMPOUNDS}"
+  tuples:
+  - ('cloud.alexa', 'cloud.google_assistant', 'conversation')
+  - ([], None)
+  - (assistant, settings)
+  - (domain, preferences)
+  - (entity_id, entity)
+  - (entity_id, entry)
+  - (entity_id, exposed_entity)
+  - (entity_id, preferences)
+  - (str, Any)
+  - (str, AssistantPreferences)
+  - (str, ExposedEntity)
+  - (str, Mapping[str, Any])
+  - (str, dict[str, Any])
+  - (str, list[Callable[[], None]])
+  - '[], None'
+  - str, Any

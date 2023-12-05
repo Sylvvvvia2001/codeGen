@@ -1,0 +1,6 @@
+device_registry.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (ImportError, loader.IntegrationNotFound)
+  - (str, Any)

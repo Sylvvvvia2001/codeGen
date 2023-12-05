@@ -1,0 +1,4 @@
+agent.py:
+- AbstractConversationAgent
+- ConversationInput
+- ConversationResult

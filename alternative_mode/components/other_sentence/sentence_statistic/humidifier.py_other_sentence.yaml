@@ -1,0 +1,37 @@
+humidifier.py:
+  schemas: []
+  sets:
+  - '{''_attr_action''}'
+  - '{''_attr_current_humidity''}'
+  - '{''_attr_is_on''}'
+  - '{''_attr_mode''}'
+  - '{''_attr_target_humidity''}'
+  - '{(DOMAIN, self.thermostat[''identifier''])}'
+  - "{humidifier.ATTR_HUMIDITY, humidifier.ATTR_MAX_HUMIDITY, humidifier.\n    ATTR_MIN_HUMIDITY,\
+    \ humidifier.ATTR_MODE, humidifier.ATTR_AVAILABLE_MODES}"
+  tuples:
+  - (1, self._humidity_steps)
+  - "(CONF_ACTION_TOPIC, CONF_STATE_TOPIC, CONF_COMMAND_TOPIC,\n    CONF_CURRENT_HUMIDITY_TOPIC,\
+    \ CONF_TARGET_HUMIDITY_STATE_TOPIC,\n    CONF_TARGET_HUMIDITY_COMMAND_TOPIC, CONF_MODE_STATE_TOPIC,\n\
+    \    CONF_MODE_COMMAND_TOPIC)"
+  - (DOMAIN, self.thermostat['identifier'])
+  - (DPCode, ...)
+  - (DPCode.SWITCH, DPCode.SWITCH_SPRAY)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - ([ReceiveMessage], None)
+  - (k, v)
+  - (key, tpl)
+  - (key, value)
+  - (self._cur_humidity, self._target_humidity)
+  - (self._saved_target_humidity, self._target_humidity)
+  - (self._target_humidity, self._saved_target_humidity)
+  - (str, Any)
+  - (str, Callable[[PublishPayloadType], PublishPayloadType])
+  - (str, Callable[[ReceivePayloadType], ReceivePayloadType])
+  - (str, Template | None)
+  - (str, TuyaHumidifierEntityDescription)
+  - (str, dict[str, Any])
+  - (str, str)
+  - '[PublishPayloadType], PublishPayloadType'
+  - '[ReceivePayloadType], ReceivePayloadType'
+  - str, Any

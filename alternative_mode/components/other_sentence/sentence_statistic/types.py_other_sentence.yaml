@@ -1,0 +1,6 @@
+types.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ([HomeAssistant, str], Awaitable['SolarForecastType | None'])
+  - (str, float | int)

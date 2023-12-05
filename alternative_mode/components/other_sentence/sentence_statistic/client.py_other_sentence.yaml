@@ -1,0 +1,38 @@
+client.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ((topic, qos),)
+  - (..., Any)
+  - (3, 12)
+  - (Any, Any)
+  - (AssertionError, ValueError)
+  - (AttributeError, LookupError, UnicodeEncodeError)
+  - (AttributeError, UnicodeDecodeError)
+  - (KeyError, ValueError)
+  - (Subscription, set[str])
+  - ([ReceiveMessage], Coroutine[Any, Any, None] | None)
+  - ([], Coroutine[Any, None, None])
+  - ([], None)
+  - (_, notify_abort)
+  - (alexa_errors.NoTokenAvailable, alexa_errors.RequireRelink)
+  - (int, ...)
+  - (int, asyncio.Event)
+  - (int, tuple[Callable[[], Coroutine[Any, Any, None]], Callable[[], None]])
+  - (issue_key, items)
+  - (notify_stop, _)
+  - (result, mid)
+  - (str, Any)
+  - (str, dict[str, str | bool])
+  - (str, int)
+  - (str, list[Subscription])
+  - (str, str)
+  - (topic, max(subscription.qos for subscription in subs))
+  - (topic, qos)
+  - (topic, subs)
+  - Any, Any, None
+  - Any, None, None
+  - Callable[[], Coroutine[Any, Any, None]], Callable[[], None]
+  - '[], Coroutine[Any, Any, None]'
+  - '[], None'
+  - str, str | bool

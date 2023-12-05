@@ -1,0 +1,36 @@
+prefs.py:
+  schemas: []
+  sets: []
+  tuples:
+  - "((PREF_ENABLE_GOOGLE, google_enabled), (PREF_ENABLE_ALEXA, alexa_enabled),\n\
+    \    (PREF_ENABLE_REMOTE, remote_enabled), (PREF_GOOGLE_SECURE_DEVICES_PIN,\n\
+    \    google_secure_devices_pin), (PREF_CLOUDHOOKS, cloudhooks), (\n    PREF_CLOUD_USER,\
+    \ cloud_user), (PREF_ALEXA_REPORT_STATE,\n    alexa_report_state), (PREF_GOOGLE_REPORT_STATE,\
+    \ google_report_state), (\n    PREF_ALEXA_SETTINGS_VERSION, alexa_settings_version),\
+    \ (\n    PREF_GOOGLE_SETTINGS_VERSION, google_settings_version), (\n    PREF_TTS_DEFAULT_VOICE,\
+    \ tts_default_voice), (PREF_REMOTE_DOMAIN,\n    remote_domain))"
+  - (PREF_ALEXA_REPORT_STATE, alexa_report_state)
+  - (PREF_ALEXA_SETTINGS_VERSION, alexa_settings_version)
+  - (PREF_CLOUDHOOKS, cloudhooks)
+  - (PREF_CLOUD_USER, cloud_user)
+  - (PREF_ENABLE_ALEXA, alexa_enabled)
+  - (PREF_ENABLE_GOOGLE, google_enabled)
+  - (PREF_ENABLE_REMOTE, remote_enabled)
+  - (PREF_GOOGLE_REPORT_STATE, google_report_state)
+  - (PREF_GOOGLE_SECURE_DEVICES_PIN, google_secure_devices_pin)
+  - (PREF_GOOGLE_SETTINGS_VERSION, google_settings_version)
+  - (PREF_REMOTE_DOMAIN, remote_domain)
+  - (PREF_TTS_DEFAULT_VOICE, tts_default_voice)
+  - ([CloudPreferences], Coroutine[Any, Any, None])
+  - (key, value)
+  - (str, Any)
+  - (str, DynamicStreamSettings)
+  - (str, bool | Orientation)
+  - (str, dict[str, Any])
+  - (str, dict[str, bool | Orientation])
+  - (str, dict[str, str | bool])
+  - (str, str)
+  - Any, Any, None
+  - str, Any
+  - str, bool | Orientation
+  - str, str | bool

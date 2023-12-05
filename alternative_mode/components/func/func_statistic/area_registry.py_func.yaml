@@ -1,0 +1,6 @@
+area_registry.py:
+- _entry_dict
+- websocket_create_area
+- websocket_delete_area
+- websocket_list_areas
+- websocket_update_area

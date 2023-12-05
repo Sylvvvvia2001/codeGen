@@ -1,0 +1,21 @@
+capabilities.py:
+- __init__
+- camera_stream_configurations
+- capability_proactively_reported
+- capability_resources
+- configuration
+- configurations
+- get_property
+- get_resource_by_unit_of_measurement
+- get_valid_inputs
+- inputs
+- name
+- properties_non_controllable
+- properties_proactively_reported
+- properties_retrievable
+- properties_supported
+- semantics
+- serialize_discovery
+- serialize_properties
+- supported_operations
+- supports_deactivation

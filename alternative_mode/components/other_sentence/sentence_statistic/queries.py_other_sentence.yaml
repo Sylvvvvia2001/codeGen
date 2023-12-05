@@ -1,0 +1,5 @@
+queries.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, ...)

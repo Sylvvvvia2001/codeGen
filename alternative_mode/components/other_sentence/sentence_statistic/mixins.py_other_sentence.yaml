@@ -1,0 +1,32 @@
+mixins.py:
+  schemas: []
+  sets:
+  - '{''_attr_extra_state_attributes''}'
+  - "{'assumed_state', 'available', 'context_recent_time', 'device_class',\n    'device_info',\
+    \ 'entity_category', 'entity_picture',\n    'entity_registry_enabled_default',\
+    \ 'extra_state_attributes',\n    'force_update', 'icon', 'name', 'should_poll',\
+    \ 'state',\n    'supported_features', 'unique_id', 'unit_of_measurement'}"
+  - '{''available''}'
+  - '{(CONNECTION_NETWORK_MAC, tasmota_entity.mac)}'
+  tuples:
+  - ('remove', 'update')
+  - (Any, Any, None)
+  - (CONNECTION_NETWORK_MAC, tasmota_entity.mac)
+  - (DOMAIN, id_)
+  - (DOMAIN, specifications[CONF_VIA_DEVICE])
+  - ([ConfigType], ConfigType)
+  - ([MQTTDiscoveryPayload], Coroutine[Any, Any, None])
+  - ([MessageCallbackType], MessageCallbackType)
+  - ([], None)
+  - (attribute, last_value)
+  - (config_domain, configs)
+  - (conn_[0], conn_[1])
+  - (k, v)
+  - (str, Any)
+  - (str, EntitySubscription)
+  - (str, dict[str, Any])
+  - (str, str | bool)
+  - (str, str)
+  - (str, type[MqttEntity])
+  - Any, Any, None
+  - str, Any

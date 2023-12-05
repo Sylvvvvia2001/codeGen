@@ -1,0 +1,41 @@
+passive_update_processor.py:
+  schemas: []
+  sets:
+  - '{(CONNECTION_BLUETOOTH, address)}'
+  - '{(DOMAIN, address)}'
+  - '{(DOMAIN, f''{address}-{device_id}'')}'
+  tuples:
+  - "((new_data.entity_descriptions, self.entity_descriptions), (new_data.\n    entity_names,\
+    \ self.entity_names), (new_data.entity_data, self.entity_data))"
+  - (CONNECTION_BLUETOOTH, address)
+  - (DOMAIN, address)
+  - (DOMAIN, f'{address}-{device_id}')
+  - (PassiveBluetoothEntityKey, EntityDescription)
+  - (PassiveBluetoothEntityKey, _T)
+  - "(PassiveBluetoothEntityKey, list[Callable[[PassiveBluetoothDataUpdate[_T] |\n\
+    \    None], None]])"
+  - (PassiveBluetoothEntityKey, str | None)
+  - ([BluetoothServiceInfoBleak], _T)
+  - ([PassiveBluetoothDataUpdate[_T] | None], None)
+  - ([], None)
+  - ([_T], PassiveBluetoothDataUpdate[_T])
+  - (entity_key, description)
+  - (incoming, current)
+  - (key, data)
+  - (key, description)
+  - (key, device_id)
+  - (key, device_info)
+  - (key, name)
+  - (new_data.entity_data, self.entity_data)
+  - (new_data.entity_descriptions, self.entity_descriptions)
+  - (new_data.entity_names, self.entity_names)
+  - (str | None, DeviceInfo)
+  - (str, Any)
+  - (str, DeviceInfo)
+  - (str, RestoredPassiveBluetoothDataUpdate)
+  - (str, dict[str, Any])
+  - (str, dict[str, RestoredPassiveBluetoothDataUpdate])
+  - (str, str | None)
+  - '[PassiveBluetoothDataUpdate[_T] | None], None'
+  - str, Any
+  - str, RestoredPassiveBluetoothDataUpdate

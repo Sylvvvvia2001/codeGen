@@ -1,0 +1,28 @@
+tts.py:
+  schemas: []
+  sets: []
+  tuples:
+  - ('mp3', data)
+  - ('mp3', mp3_data.getvalue())
+  - ('wav', data)
+  - "(CONTENT_TYPE_EXTENSIONS[resp.get('ContentType')], resp.get('AudioStream').\n\
+    \    read())"
+  - (CONTENT_TYPE_EXTENSIONS[self.output_format], response.content)
+  - (None, None)
+  - (OSError, WyomingError)
+  - (_encoding, response.audio_content)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (audiotype, data)
+  - (chk_lang, chk_gender)
+  - (key, value)
+  - (lang, gender)
+  - (self._codec, data)
+  - (self._codec, result)
+  - (self._extension, data)
+  - (self._language, self._gender)
+  - (str(options[ATTR_AUDIO_OUTPUT].value), data)
+  - (str, Any)
+  - (str, dict[str, str])
+  - (str, list[tts.Voice])
+  - (str, str)
+  - str, str

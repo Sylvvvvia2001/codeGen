@@ -1,0 +1,8 @@
+http_api.py:
+- _handle_cloud_errors
+- _process_cloud_exception
+- _require_cloud_login
+- _ws_handle_cloud_errors
+- cloud_assist_pipeline
+- tts_info
+- with_cloud_auth

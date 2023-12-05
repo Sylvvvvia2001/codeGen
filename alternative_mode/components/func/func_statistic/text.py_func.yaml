@@ -1,0 +1,14 @@
+text.py:
+- __init__
+- _async_update_device_from_protect
+- _create_notification
+- _get_doorbell_current
+- _on_static_info_update
+- _prepare_subscribe_topics
+- _setup_from_config
+- add_subscription
+- async_discover
+- config_schema
+- handle_state_message_received
+- native_value
+- valid_text_size_configuration

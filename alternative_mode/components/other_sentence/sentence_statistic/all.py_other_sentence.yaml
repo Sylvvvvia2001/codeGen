@@ -1,0 +1,5 @@
+all.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (int, ...)

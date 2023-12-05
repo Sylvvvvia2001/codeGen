@@ -1,0 +1,8 @@
+http_api.py:
+- CloudForgotPasswordView
+- CloudLoginView
+- CloudLogoutView
+- CloudRegisterView
+- CloudResendConfirmView
+- GoogleActionsSyncView
+- RegistrationsView

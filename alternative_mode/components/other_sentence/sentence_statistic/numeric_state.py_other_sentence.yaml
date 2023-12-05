@@ -1,0 +1,5 @@
+numeric_state.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (exceptions.TemplateError, vol.Invalid)

@@ -1,0 +1,17 @@
+humidifier.py:
+- DemoHumidifier
+- EcobeeHumidifier
+- GenericHygrostat
+- HomeKitDehumidifier
+- HomeKitHumidifier
+- MqttHumidifier
+- SwitchBotHumidifier
+- TuyaHumidifierEntity
+- TuyaHumidifierEntityDescription
+- XiaomiAirHumidifier
+- XiaomiAirHumidifierMiot
+- XiaomiAirHumidifierMjjsq
+- XiaomiGenericHumidifier
+- ZWaveHumidifier
+- ZwaveHumidifierEntityDescription
+- ZwaveHumidifierEntityDescriptionRequiredKeys

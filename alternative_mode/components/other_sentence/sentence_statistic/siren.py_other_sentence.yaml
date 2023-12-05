@@ -1,0 +1,33 @@
+siren.py:
+  schemas: []
+  sets:
+  - '{''_attr_is_on'', ''_extra_attributes''}'
+  - '{*self._extra_attributes.items(), *extra_attributes.items()}'
+  - '{ATTR_AVAILABLE_TONES, ATTR_DURATION, ATTR_TONE, ATTR_VOLUME_LEVEL}'
+  - '{SECURITY_PANIC_ON, SECURITY_PANIC_OFF}'
+  tuples:
+  - (HTTPError, PyEzvizError)
+  - "(ReolinkSirenEntityDescription(key='siren', translation_key='siren', icon=\n\
+    \    'mdi:alarm-light', supported=lambda api, ch: api.supported(ch,\n    'siren_play')),)"
+  - (SirenEntityDescription(key=DPCode.ALARM_SWITCH),)
+  - (SirenEntityDescription(key=DPCode.SIREN_SWITCH),)
+  - "(YoLinkSirenEntityDescription(key='state', value=lambda value: value ==\n   \
+    \ 'alert' if value is not None else None, exists_fn=lambda device: device\n  \
+    \  .device_type in [ATTR_DEVICE_SIREN]),)"
+  - (YoLinkSirenEntityDescription, ...)
+  - ([Any], bool | None)
+  - ([Host, int], bool)
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - ([YoLinkDevice], bool)
+  - ([], None)
+  - (attribute, support)
+  - (capability, value)
+  - (id, val)
+  - (int, str)
+  - (key, value)
+  - (str, Any)
+  - "(str, Callable[[PublishPayloadType, TemplateVarsType], PublishPayloadType] |\n\
+    \    None)"
+  - (str, tuple[SirenEntityDescription, ...])
+  - SirenEntityDescription, ...
+  - '[PublishPayloadType, TemplateVarsType], PublishPayloadType'

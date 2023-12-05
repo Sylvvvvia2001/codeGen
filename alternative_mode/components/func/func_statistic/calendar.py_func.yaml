@@ -1,0 +1,24 @@
+calendar.py:
+- __init__
+- _async_add_calendar_entity
+- _event_filter
+- _event_with_offset
+- _get_calendar_event
+- _handle_coordinator_update
+- _parse_event
+- append_calendars_to_config
+- async_get_calendar_event_from_pickup_event
+- async_register_services
+- calendar_data_current
+- calendar_data_future
+- calendar_event
+- create_todoist_task
+- event
+- extra_state_attributes
+- get_event_name
+- get_start
+- name
+- offset_reached
+- select_best_task
+- upcoming
+- update

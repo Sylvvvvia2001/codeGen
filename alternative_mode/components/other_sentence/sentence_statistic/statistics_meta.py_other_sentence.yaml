@@ -1,0 +1,19 @@
+statistics_meta.py:
+  schemas: []
+  sets:
+  - '{statistic_id}'
+  tuples:
+  - (None, metadata_id)
+  - "(StatisticsMeta.id, StatisticsMeta.statistic_id, StatisticsMeta.source,\n   \
+    \ StatisticsMeta.unit_of_measurement, StatisticsMeta.has_mean,\n    StatisticsMeta.has_sum,\
+    \ StatisticsMeta.name)"
+  - (int, StatisticMetaData)
+  - "(meta.id, {'has_mean': meta.has_mean, 'has_sum': meta.has_sum, 'name': meta\n\
+    \    .name, 'source': meta.source, 'statistic_id': meta.statistic_id,\n    'unit_of_measurement':\
+    \ meta.unit_of_measurement})"
+  - (metadata_id, old_metadata)
+  - (statistic_id, metadata_id)
+  - (statistic_id, self._add_metadata(session, statistic_id, new_metadata))
+  - (str | None, int)
+  - (str, tuple[int, StatisticMetaData])
+  - int, StatisticMetaData

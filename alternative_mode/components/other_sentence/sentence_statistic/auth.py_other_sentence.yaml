@@ -1,0 +1,12 @@
+auth.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (SIGN_QUERY_PARAM, encoded)
+  - ([Request], Awaitable[StreamResponse])
+  - ([str | dict[str, Any]], None)
+  - (asyncio.TimeoutError, aiohttp.ClientError)
+  - (auth_type, auth_val)
+  - (str, Any)
+  - (str, str)
+  - str, Any

@@ -1,0 +1,337 @@
+select.py:
+  schemas: []
+  sets:
+  - '{''Philips'', ''Signify Netherlands B.V.''}'
+  - '{''SML001''}'
+  - '{''SML002'', ''SML003'', ''SML004''}'
+  - '{''TS011F'', ''TS0121'', ''TS0001'', ''TS0002'', ''TS0003'', ''TS0004''}'
+  - "{'_TZE200_7tdtqgwv', '_TZE200_amp6tsvy', '_TZE200_oisqyl4o',\n    '_TZE200_vhy3iakz',\
+    \ '_TZ3000_uim07oem', '_TZE200_wfxuhoea',\n    '_TZE200_tviaymwx', '_TZE200_g1ib5ldv',\
+    \ '_TZE200_wunufsil',\n    '_TZE200_7deq70b8', '_TZE200_tz32mtza', '_TZE200_2hf7x9n3',\n\
+    \    '_TZE200_aqnazj70', '_TZE200_1ozguk6x', '_TZE200_k6jhsr0q',\n    '_TZE200_9mahtqtg'}"
+  - '{''_attr_current_option''}'
+  - '{''aqara.feeder.acn001''}'
+  - '{''lumi.airrtc.agl001''}'
+  - '{''lumi.curtain.agl001''}'
+  - '{''lumi.motion.ac01'', ''lumi.motion.ac02'', ''lumi.motion.agl04''}'
+  - '{''lumi.motion.ac01''}'
+  - '{(DOMAIN, relay_id)}'
+  - '{(DOMAIN, self._serial_number)}'
+  - '{(DOMAIN, unique_id)}'
+  - '{select.ATTR_OPTIONS}'
+  tuples:
+  - (..., Awaitable[None])
+  - (ATTR_OPTIONS,)
+  - "(AirzoneSelectDescription(api_param=API_COLD_ANGLE, entity_category=\n    EntityCategory.CONFIG,\
+    \ key=AZD_COLD_ANGLE, options=list(\n    GRILLE_ANGLE_DICT), options_dict=GRILLE_ANGLE_DICT,\
+    \ translation_key=\n    'grille_angles'), AirzoneSelectDescription(api_param=API_HEAT_ANGLE,\n\
+    \    entity_category=EntityCategory.CONFIG, key=AZD_HEAT_ANGLE, options=list\n\
+    \    (GRILLE_ANGLE_DICT), options_dict=GRILLE_ANGLE_DICT, translation_key=\n \
+    \   'heat_angles'), AirzoneSelectDescription(api_param=API_SLEEP,\n    entity_category=EntityCategory.CONFIG,\
+    \ key=AZD_SLEEP, options=list(\n    SLEEP_DICT), options_dict=SLEEP_DICT, translation_key='sleep_times'))"
+  - (AirzoneSelectDescription, ...)
+  - (BrightnessLevel | None, str)
+  - (CONF_STATE,)
+  - (DOMAIN, relay_id)
+  - (DOMAIN, self._serial_number)
+  - (DOMAIN, self.envoy_serial_num)
+  - (DOMAIN, serial_number)
+  - (DOMAIN, unique_id)
+  - "(EnvoyRelaySelectEntityDescription(key='mode', translation_key='relay_mode',\n\
+    \    options=MODE_OPTIONS, value_fn=lambda relay: RELAY_MODE_MAP[relay.mode],\n\
+    \    update_fn=lambda envoy, relay, value: envoy.update_dry_contact({'id':\n \
+    \   relay.id, 'mode': REVERSE_RELAY_MODE_MAP[value]})),\n    EnvoyRelaySelectEntityDescription(key='grid_action',\
+    \ translation_key=\n    'relay_grid_action', options=ACTION_OPTIONS, value_fn=lambda\
+    \ relay:\n    RELAY_ACTION_MAP[relay.grid_action], update_fn=lambda envoy, relay,\n\
+    \    value: envoy.update_dry_contact({'id': relay.id, 'grid_action':\n    REVERSE_RELAY_ACTION_MAP[value]})),\
+    \ EnvoyRelaySelectEntityDescription(\n    key='microgrid_action', translation_key='relay_microgrid_action',\n\
+    \    options=ACTION_OPTIONS, value_fn=lambda relay: RELAY_ACTION_MAP[relay.\n\
+    \    micro_grid_action], update_fn=lambda envoy, relay, value: envoy.\n    update_dry_contact({'id':\
+    \ relay.id, 'micro_grid_action':\n    REVERSE_RELAY_ACTION_MAP[value]})), EnvoyRelaySelectEntityDescription(\n\
+    \    key='generator_action', translation_key='relay_generator_action',\n    options=ACTION_OPTIONS,\
+    \ value_fn=lambda relay: RELAY_ACTION_MAP[relay.\n    generator_action], update_fn=lambda\
+    \ envoy, relay, value: envoy.\n    update_dry_contact({'id': relay.id, 'generator_action':\n\
+    \    REVERSE_RELAY_ACTION_MAP[value]})))"
+  - (FeederRobot, float)
+  - "(FreezeProtectionSelectDescription(key=TYPE_FREEZE_PROTECTION_TEMPERATURE,\n\
+    \    translation_key=TYPE_FREEZE_PROTECTION_TEMPERATURE, icon=\n    'mdi:thermometer',\
+    \ entity_category=EntityCategory.CONFIG, api_category=\n    DATA_RESTRICTIONS_UNIVERSAL,\
+    \ data_key='freezeProtectTemp',\n    extended_options=[FreezeProtectionSelectOption(api_value=0.0,\n\
+    \    imperial_label='32\xB0F', metric_label='0\xB0C'),\n    FreezeProtectionSelectOption(api_value=2.0,\
+    \ imperial_label='35.6\xB0F',\n    metric_label='2\xB0C'), FreezeProtectionSelectOption(api_value=5.0,\n\
+    \    imperial_label='41\xB0F', metric_label='5\xB0C'),\n    FreezeProtectionSelectOption(api_value=10.0,\
+    \ imperial_label='50\xB0F',\n    metric_label='10\xB0C')]),)"
+  - (HTTPError, PyEzvizError)
+  - (InverterError, ValueError)
+  - (LightModeType.MANUAL.value, None)
+  - (LightModeType.MOTION.value, LightModeEnableType.ALWAYS.value)
+  - (LightModeType.MOTION.value, LightModeEnableType.DARK.value)
+  - (LightModeType.WHEN_DARK.value, LightModeEnableType.DARK.value)
+  - (LitterRobot, int)
+  - (LitterRobot4, str)
+  - (OperationMode, str)
+  - "(PlugwiseSelectEntityDescription(key='select_schedule', translation_key=\n  \
+    \  'select_schedule', icon='mdi:calendar-clock', command=lambda api, loc,\n  \
+    \  opt: api.set_schedule_state(loc, STATE_ON, opt), options_key=\n    'available_schedules'),\
+    \ PlugwiseSelectEntityDescription(key=\n    'select_regulation_mode', translation_key='regulation_mode',\
+    \ icon=\n    'mdi:hvac', entity_category=EntityCategory.CONFIG, command=lambda\
+    \ api,\n    loc, opt: api.set_regulation_mode(opt), options_key='regulation_modes'),\n\
+    \    PlugwiseSelectEntityDescription(key='select_dhw_mode', translation_key=\n\
+    \    'dhw_mode', icon='mdi:shower', entity_category=EntityCategory.CONFIG,\n \
+    \   command=lambda api, loc, opt: api.set_dhw_mode(opt), options_key=\n    'dhw_modes'))"
+  - "(ProtectSelectEntityDescription(key='mount_type', name='Mount Type', icon=\n\
+    \    'mdi:screwdriver', entity_category=EntityCategory.CONFIG, ufp_options=\n\
+    \    MOUNT_TYPES, ufp_enum_type=MountType, ufp_value='mount_type',\n    ufp_set_method='set_mount_type',\
+    \ ufp_perm=PermRequired.WRITE),\n    ProtectSelectEntityDescription[Sensor](key='paired_camera',\
+    \ name=\n    'Paired Camera', icon='mdi:cctv', entity_category=EntityCategory.CONFIG,\n\
+    \    ufp_value='camera_id', ufp_options_fn=_get_paired_camera_options,\n    ufp_set_method_fn=_set_paired_camera,\
+    \ ufp_perm=PermRequired.WRITE))"
+  - "(ProtectSelectEntityDescription(key='recording_mode', name='Recording Mode',\n\
+    \    icon='mdi:video-outline', entity_category=EntityCategory.CONFIG,\n    ufp_options=DEVICE_RECORDING_MODES,\
+    \ ufp_enum_type=RecordingMode,\n    ufp_value='recording_settings.mode', ufp_set_method=\n\
+    \    'set_recording_mode', ufp_perm=PermRequired.WRITE),\n    ProtectSelectEntityDescription(key='infrared',\
+    \ name='Infrared Mode',\n    icon='mdi:circle-opacity', entity_category=EntityCategory.CONFIG,\n\
+    \    ufp_required_field='feature_flags.has_led_ir', ufp_options=\n    INFRARED_MODES,\
+    \ ufp_enum_type=IRLEDMode, ufp_value=\n    'isp_settings.ir_led_mode', ufp_set_method='set_ir_led_model',\
+    \ ufp_perm\n    =PermRequired.WRITE), ProtectSelectEntityDescription[Camera](key=\n\
+    \    'doorbell_text', name='Doorbell Text', icon='mdi:card-text',\n    entity_category=EntityCategory.CONFIG,\
+    \ device_class=\n    DEVICE_CLASS_LCD_MESSAGE, ufp_required_field=\n    'feature_flags.has_lcd_screen',\
+    \ ufp_value_fn=_get_doorbell_current,\n    ufp_options_fn=_get_doorbell_options,\
+    \ ufp_set_method_fn=\n    _set_doorbell_message, ufp_perm=PermRequired.WRITE),\n\
+    \    ProtectSelectEntityDescription(key='chime_type', name='Chime Type',\n   \
+    \ icon='mdi:bell', entity_category=EntityCategory.CONFIG,\n    ufp_required_field='feature_flags.has_chime',\
+    \ ufp_options=CHIME_TYPES,\n    ufp_enum_type=ChimeType, ufp_value='chime_type',\
+    \ ufp_set_method=\n    'set_chime_type', ufp_perm=PermRequired.WRITE))"
+  - (ProtectSelectEntityDescription, ...)
+  - "(ProtectSelectEntityDescription[Doorlock](key='paired_camera', name=\n    'Paired\
+    \ Camera', icon='mdi:cctv', entity_category=EntityCategory.CONFIG,\n    ufp_value='camera_id',\
+    \ ufp_options_fn=_get_paired_camera_options,\n    ufp_set_method_fn=_set_paired_camera,\
+    \ ufp_perm=PermRequired.WRITE),)"
+  - "(ProtectSelectEntityDescription[Light](key=_KEY_LIGHT_MOTION, name=\n    'Light\
+    \ Mode', icon='mdi:spotlight', entity_category=EntityCategory.\n    CONFIG, ufp_options=MOTION_MODE_TO_LIGHT_MODE,\
+    \ ufp_value_fn=\n    async_get_light_motion_current, ufp_set_method_fn=_set_light_mode,\n\
+    \    ufp_perm=PermRequired.WRITE), ProtectSelectEntityDescription[Light](key\n\
+    \    ='paired_camera', name='Paired Camera', icon='mdi:cctv',\n    entity_category=EntityCategory.CONFIG,\
+    \ ufp_value='camera_id',\n    ufp_options_fn=_get_paired_camera_options, ufp_set_method_fn=\n\
+    \    _set_paired_camera, ufp_perm=PermRequired.WRITE))"
+  - "(ProtectSelectEntityDescription[Viewer](key='viewer', name='Liveview', icon\n\
+    \    ='mdi:view-dashboard', entity_category=None, ufp_options_fn=\n    _get_viewer_options,\
+    \ ufp_value_fn=_get_viewer_current,\n    ufp_set_method_fn=_set_liveview, ufp_perm=PermRequired.WRITE),)"
+  - "(RenaultSelectEntityDescription(key='charge_mode', coordinator=\n    'charge_mode',\
+    \ data_key='chargeMode', translation_key='charge_mode',\n    icon_lambda=_get_charge_mode_icon,\
+    \ options=['always', 'always_charging',\n    'schedule_mode']),)"
+  - (RenaultSelectEntityDescription, ...)
+  - "(ReolinkSelectEntityDescription(key='floodlight_mode', translation_key=\n   \
+    \ 'floodlight_mode', icon='mdi:spotlight-beam', entity_category=\n    EntityCategory.CONFIG,\
+    \ get_options=lambda api, ch: api.\n    whiteled_mode_list(ch), supported=lambda\
+    \ api, ch: api.supported(ch,\n    'floodLight'), value=lambda api, ch: SpotlightModeEnum(api.\n\
+    \    whiteled_mode(ch)).name, method=lambda api, ch, name: api.set_whiteled(\n\
+    \    ch, mode=name)), ReolinkSelectEntityDescription(key='day_night_mode',\n \
+    \   translation_key='day_night_mode', icon='mdi:theme-light-dark',\n    entity_category=EntityCategory.CONFIG,\
+    \ get_options=[mode.name for mode in\n    DayNightEnum], supported=lambda api,\
+    \ ch: api.supported(ch, 'dayNight'),\n    value=lambda api, ch: DayNightEnum(api.daynight_state(ch)).name,\
+    \ method\n    =lambda api, ch, name: api.set_daynight(ch, DayNightEnum[name].value)),\n\
+    \    ReolinkSelectEntityDescription(key='ptz_preset', translation_key=\n    'ptz_preset',\
+    \ icon='mdi:pan', get_options=lambda api, ch: list(api.\n    ptz_presets(ch)),\
+    \ supported=lambda api, ch: api.supported(ch,\n    'ptz_presets'), method=lambda\
+    \ api, ch, name: api.set_ptz_command(ch,\n    preset=name)), ReolinkSelectEntityDescription(key=\n\
+    \    'auto_quick_reply_message', translation_key='auto_quick_reply_message',\n\
+    \    icon='mdi:message-reply-text-outline', entity_category=EntityCategory.\n\
+    \    CONFIG, get_options=lambda api, ch: list(api.quick_reply_dict(ch).\n    values()),\
+    \ supported=lambda api, ch: api.supported(ch, 'quick_reply'),\n    value=lambda\
+    \ api, ch: api.quick_reply_dict(ch)[api.quick_reply_file(ch)\n    ], method=lambda\
+    \ api, ch, mess: api.set_quick_reply(ch, file_id=[k for \n    k, v in api.quick_reply_dict(ch).items()\
+    \ if v == mess][0])),\n    ReolinkSelectEntityDescription(key='auto_track_method',\
+    \ translation_key\n    ='auto_track_method', icon='mdi:target-account', entity_category=\n\
+    \    EntityCategory.CONFIG, get_options=[method.name for method in\n    TrackMethodEnum],\
+    \ supported=lambda api, ch: api.supported(ch,\n    'auto_track_method'), value=lambda\
+    \ api, ch: TrackMethodEnum(api.\n    auto_track_method(ch)).name, method=lambda\
+    \ api, ch, name: api.\n    set_auto_tracking(ch, method=name)), ReolinkSelectEntityDescription(key\n\
+    \    ='status_led', translation_key='status_led', icon=\n    'mdi:lightning-bolt-circle',\
+    \ entity_category=EntityCategory.CONFIG,\n    get_options=[state.name for state\
+    \ in StatusLedEnum], supported=lambda\n    api, ch: api.supported(ch, 'doorbell_led'),\
+    \ value=lambda api, ch:\n    StatusLedEnum(api.doorbell_led(ch)).name, method=lambda\
+    \ api, ch, name:\n    api.set_status_led(ch, StatusLedEnum[name].value)))"
+  - "(RitualsSelectEntityDescription(key='room_size_square_meter',\n    translation_key='room_size_square_meter',\
+    \ icon='mdi:ruler-square',\n    unit_of_measurement=AREA_SQUARE_METERS, entity_category=EntityCategory.\n\
+    \    CONFIG, options=['15', '30', '60', '100'], current_fn=lambda diffuser:\n\
+    \    str(diffuser.room_size_square_meter), select_fn=lambda diffuser, value:\n\
+    \    diffuser.set_room_size_square_meter(int(value))),)"
+  - "(RokuSelectEntityDescription(key='application', translation_key=\n    'application',\
+    \ icon='mdi:application', set_fn=_launch_application,\n    value_fn=_get_application_name,\
+    \ options_fn=_get_applications,\n    entity_registry_enabled_default=False),)"
+  - (RokuSelectEntityDescription, ...)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - "(SelectEntityDescription(key=DPCode.ALARM_VOLUME, translation_key='volume',\n\
+    \    entity_category=EntityCategory.CONFIG), SelectEntityDescription(key=\n  \
+    \  DPCode.BRIGHT_STATE, translation_key='brightness', entity_category=\n    EntityCategory.CONFIG))"
+  - "(SelectEntityDescription(key=DPCode.ALARM_VOLUME, translation_key='volume',\n\
+    \    entity_category=EntityCategory.CONFIG),)"
+  - "(SelectEntityDescription(key=DPCode.CISTERN, entity_category=EntityCategory\n\
+    \    .CONFIG, icon='mdi:water-opacity', translation_key='vacuum_cistern'),\n \
+    \   SelectEntityDescription(key=DPCode.COLLECTION_MODE, entity_category=\n   \
+    \ EntityCategory.CONFIG, icon='mdi:air-filter', translation_key=\n    'vacuum_collection'),\
+    \ SelectEntityDescription(key=DPCode.MODE,\n    entity_category=EntityCategory.CONFIG,\
+    \ icon='mdi:layers-outline',\n    translation_key='vacuum_mode'))"
+  - "(SelectEntityDescription(key=DPCode.CONTROL_BACK_MODE, entity_category=\n   \
+    \ EntityCategory.CONFIG, icon='mdi:swap-horizontal', translation_key=\n    'curtain_motor_mode'),\
+    \ SelectEntityDescription(key=DPCode.MODE,\n    entity_category=EntityCategory.CONFIG,\
+    \ translation_key='curtain_mode'))"
+  - "(SelectEntityDescription(key=DPCode.COUNTDOWN, entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:timer-cog-outline', translation_key=\n    'countdown'), SelectEntityDescription(key=DPCode.COUNTDOWN_SET,\n\
+    \    entity_category=EntityCategory.CONFIG, icon='mdi:timer-cog-outline',\n  \
+    \  translation_key='countdown'))"
+  - "(SelectEntityDescription(key=DPCode.COUNTDOWN_SET, entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:timer-cog-outline', translation_key=\n    'countdown'), SelectEntityDescription(key=DPCode.DEHUMIDITY_SET_ENUM,\n\
+    \    translation_key='target_humidity', entity_category=EntityCategory.\n    CONFIG,\
+    \ icon='mdi:water-percent'))"
+  - "(SelectEntityDescription(key=DPCode.CUP_NUMBER, translation_key='cups',\n   \
+    \ icon='mdi:numeric'), SelectEntityDescription(key=DPCode.\n    CONCENTRATION_SET,\
+    \ translation_key='concentration', icon=\n    'mdi:altimeter', entity_category=EntityCategory.CONFIG),\n\
+    \    SelectEntityDescription(key=DPCode.MATERIAL, translation_key='material',\n\
+    \    entity_category=EntityCategory.CONFIG), SelectEntityDescription(key=\n  \
+    \  DPCode.MODE, translation_key='mode', icon='mdi:coffee'))"
+  - "(SelectEntityDescription(key=DPCode.FAN_VERTICAL, entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:format-vertical-align-center',\n    translation_key='vertical_fan_angle'),\
+    \ SelectEntityDescription(key=\n    DPCode.FAN_HORIZONTAL, entity_category=EntityCategory.CONFIG,\
+    \ icon=\n    'mdi:format-horizontal-align-center', translation_key=\n    'horizontal_fan_angle'),\
+    \ SelectEntityDescription(key=DPCode.COUNTDOWN,\n    entity_category=EntityCategory.CONFIG,\
+    \ icon='mdi:timer-cog-outline',\n    translation_key='countdown'), SelectEntityDescription(key=DPCode.\n\
+    \    COUNTDOWN_SET, entity_category=EntityCategory.CONFIG, icon=\n    'mdi:timer-cog-outline',\
+    \ translation_key='countdown'))"
+  - "(SelectEntityDescription(key=DPCode.IPC_WORK_MODE, entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='ipc_work_mode'),\n    SelectEntityDescription(key=DPCode.DECIBEL_SENSITIVITY,\
+    \ icon=\n    'mdi:volume-vibrate', entity_category=EntityCategory.CONFIG,\n  \
+    \  translation_key='decibel_sensitivity'), SelectEntityDescription(key=\n    DPCode.RECORD_MODE,\
+    \ icon='mdi:record-rec', entity_category=\n    EntityCategory.CONFIG, translation_key='record_mode'),\n\
+    \    SelectEntityDescription(key=DPCode.BASIC_NIGHTVISION, icon=\n    'mdi:theme-light-dark',\
+    \ entity_category=EntityCategory.CONFIG,\n    translation_key='basic_nightvision'),\
+    \ SelectEntityDescription(key=\n    DPCode.BASIC_ANTI_FLICKER, icon='mdi:image-outline',\
+    \ entity_category=\n    EntityCategory.CONFIG, translation_key='basic_anti_flicker'),\n\
+    \    SelectEntityDescription(key=DPCode.MOTION_SENSITIVITY, icon=\n    'mdi:motion-sensor',\
+    \ entity_category=EntityCategory.CONFIG,\n    translation_key='motion_sensitivity'))"
+  - "(SelectEntityDescription(key=DPCode.LED_TYPE_1, entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='led_type'),\n    SelectEntityDescription(key=DPCode.LED_TYPE_2,\
+    \ entity_category=\n    EntityCategory.CONFIG, translation_key='led_type_2'))"
+  - "(SelectEntityDescription(key=DPCode.LEVEL, translation_key=\n    'temperature_level',\
+    \ icon='mdi:thermometer-lines'),)"
+  - "(SelectEntityDescription(key=DPCode.MODE, entity_category=EntityCategory.\n \
+    \   CONFIG, translation_key='fingerbot_mode'),)"
+  - "(SelectEntityDescription(key=DPCode.RELAY_STATUS, entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='relay_status'),\n    SelectEntityDescription(key=DPCode.LIGHT_MODE,\
+    \ entity_category=\n    EntityCategory.CONFIG, translation_key='light_mode'))"
+  - "(SelectEntityDescription(key=DPCode.RELAY_STATUS, entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='relay_status'),\n    SelectEntityDescription(key=DPCode.LIGHT_MODE,\
+    \ entity_category=\n    EntityCategory.CONFIG, translation_key='light_mode'),\n\
+    \    SelectEntityDescription(key=DPCode.LED_TYPE_1, entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='led_type'),\n    SelectEntityDescription(key=DPCode.LED_TYPE_2,\
+    \ entity_category=\n    EntityCategory.CONFIG, translation_key='led_type_2'),\n\
+    \    SelectEntityDescription(key=DPCode.LED_TYPE_3, entity_category=\n    EntityCategory.CONFIG,\
+    \ translation_key='led_type_3'))"
+  - "(SelectEntityDescription(key=DPCode.SPRAY_MODE, entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:spray', translation_key=\n    'humidifier_spray_mode'), SelectEntityDescription(key=DPCode.LEVEL,\n\
+    \    entity_category=EntityCategory.CONFIG, icon='mdi:spray',\n    translation_key='humidifier_level'),\
+    \ SelectEntityDescription(key=DPCode\n    .MOODLIGHTING, entity_category=EntityCategory.CONFIG,\
+    \ icon=\n    'mdi:lightbulb-multiple', translation_key='humidifier_moodlighting'),\n\
+    \    SelectEntityDescription(key=DPCode.COUNTDOWN, entity_category=\n    EntityCategory.CONFIG,\
+    \ icon='mdi:timer-cog-outline', translation_key=\n    'countdown'), SelectEntityDescription(key=DPCode.COUNTDOWN_SET,\n\
+    \    entity_category=EntityCategory.CONFIG, icon='mdi:timer-cog-outline',\n  \
+    \  translation_key='countdown'))"
+  - (SelectInfo, SelectState)
+  - "(SensiboSelectEntityDescription(key='horizontalSwing', data_key=\n    'horizontal_swing_mode',\
+    \ icon='mdi:air-conditioner', value_fn=lambda\n    data: data.horizontal_swing_mode,\
+    \ options_fn=lambda data: data.\n    horizontal_swing_modes, translation_key='horizontalswing',\n\
+    \    transformation=lambda data: data.horizontal_swing_modes_translated),\n  \
+    \  SensiboSelectEntityDescription(key='light', data_key='light_mode', icon\n \
+    \   ='mdi:flashlight', value_fn=lambda data: data.light_mode, options_fn=lambda\n\
+    \    data: data.light_modes, translation_key='light', transformation=lambda\n\
+    \    data: data.light_modes_translated))"
+  - (ToneID.DEFAULT, ToneID.OFF)
+  - "(XiaomiMiioSelectDescription(key=ATTR_DISPLAY_ORIENTATION, attr_name=\n    ATTR_DISPLAY_ORIENTATION,\
+    \ name='Display Orientation', options_map={\n    'Portrait': 'Forward', 'LandscapeLeft':\
+    \ 'Left', 'LandscapeRight':\n    'Right'}, set_method='set_display_orientation',\n\
+    \    set_method_error_message='Setting the display orientation failed.',\n   \
+    \ icon='mdi:tablet', translation_key='display_orientation', options=[\n    'forward',\
+    \ 'left', 'right'], entity_category=EntityCategory.CONFIG),\n    XiaomiMiioSelectDescription(key=ATTR_MODE,\
+    \ attr_name=ATTR_MODE, name=\n    'Mode', set_method='set_mode', set_method_error_message=\n\
+    \    'Setting the mode of the fan failed.', icon='mdi:fan', translation_key=\n\
+    \    'airpurifier_mode', options=['silent', 'auto', 'favorite'],\n    entity_category=EntityCategory.CONFIG),\
+    \ XiaomiMiioSelectDescription(key\n    =ATTR_LED_BRIGHTNESS, attr_name=ATTR_LED_BRIGHTNESS,\
+    \ name=\n    'Led Brightness', set_method='set_led_brightness',\n    set_method_error_message='Setting\
+    \ the led brightness failed.', icon=\n    'mdi:brightness-6', translation_key='led_brightness',\
+    \ options=['bright',\n    'dim', 'off'], entity_category=EntityCategory.CONFIG),\n\
+    \    XiaomiMiioSelectDescription(key=ATTR_PTC_LEVEL, attr_name=\n    ATTR_PTC_LEVEL,\
+    \ name='Auxiliary Heat Level', set_method='set_ptc_level',\n    set_method_error_message='Setting\
+    \ the ptc level failed.', icon=\n    'mdi:fire-circle', translation_key='ptc_level',\
+    \ options=['low',\n    'medium', 'high'], entity_category=EntityCategory.CONFIG))"
+  - ([BaseShade, str], Coroutine[Any, Any, bool])
+  - ([BaseShade], Any)
+  - ([Device], str)
+  - ([Diffuser, str], Awaitable[None])
+  - ([Diffuser], str)
+  - ([Envoy, EnvoyDryContactSettings, str], Coroutine[Any, Any, dict[str, Any]])
+  - ([Envoy, str], Awaitable[dict[str, Any]])
+  - ([EnvoyDryContactSettings], str)
+  - ([EnvoyStorageSettings], str)
+  - ([Host, int, str], Any)
+  - ([Host, int], bool)
+  - ([Host, int], list[str])
+  - ([Host, int], str)
+  - ([LaMetricDevice, str], Awaitable[Any])
+  - ([MyBMWVehicle, str], Coroutine[Any, Any, Any])
+  - ([MyBMWVehicle], bool)
+  - ([MyBMWVehicle], list[str])
+  - ([MyBMWVehicle], str)
+  - ([ProtectApiClient], list[dict[str, Any]])
+  - ([PublishPayloadType], PublishPayloadType)
+  - ([ReceivePayloadType], ReceivePayloadType)
+  - ([RenaultSelectEntity], str)
+  - ([RokuDevice, Roku, str], Awaitable[None])
+  - ([RokuDevice], list[str])
+  - ([RokuDevice], str | None)
+  - ([SensiboDevice], dict | None)
+  - ([SensiboDevice], list[str] | None)
+  - ([SensiboDevice], str | None)
+  - ([Smile, str, str], Awaitable[None])
+  - ([Status], list[str] | None)
+  - ([Status], str | None)
+  - ([_RobotT, str], Coroutine[Any, Any, bool])
+  - ([_RobotT], _CastTypeT | None)
+  - ([_RobotT], list[_CastTypeT])
+  - ([_RobotT], str)
+  - ([str, Callable[..., Awaitable[None]]], Awaitable[None])
+  - ([str, Status], list[int])
+  - (_, activity_name)
+  - (_RobotT, _CastTypeT)
+  - (device_id, coordinator)
+  - (device_id, device)
+  - (device_id, device_data)
+  - (int, str)
+  - (k, v)
+  - (key, val)
+  - (key, value)
+  - (lightmode, timing)
+  - (node, control)
+  - (robot_type, description)
+  - (sid, schedule)
+  - (str, Any)
+  - (str, BMWSelectEntityDescription)
+  - (str, HomeKitSelectEntityDescription)
+  - (str, IntEnum)
+  - (str, OperationMode)
+  - (str, RitualsDataUpdateCoordinator)
+  - (str, RoborockDataUpdateCoordinator)
+  - (str, int)
+  - (str, list)
+  - (str, str)
+  - (str, tuple[SelectEntityDescription, ...])
+  - (system_zone_id, zone_data)
+  - (type[Robot], RobotSelectEntityDescription)
+  - (zone, data)
+  - '..., Awaitable[None]'
+  - Any, Any, Any
+  - Any, Any, bool
+  - Any, Any, dict[str, Any]
+  - SelectEntityDescription, ...
+  - k, v
+  - str, Any

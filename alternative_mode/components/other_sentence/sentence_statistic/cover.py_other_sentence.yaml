@@ -1,0 +1,127 @@
+cover.py:
+  schemas: []
+  sets:
+  - "{'_attr_current_cover_position', '_attr_current_cover_tilt_position',\n    '_attr_is_closed',\
+    \ '_attr_is_closing', '_attr_is_opening'}"
+  - '{''_attr_current_cover_tilt_position''}'
+  - '{''_attr_is_closed'', ''_attr_is_closing'', ''_attr_is_opening''}'
+  - '{''windowCovering'', ''gate'', ''garageDoor'', ''door'', ''window''}'
+  - '{(DOMAIN, device[''uid''])}'
+  - '{(DOMAIN, f''{self._device_id}-{self._number}'')}'
+  - '{(DOMAIN, self._attr_unique_id)}'
+  - '{(DOMAIN, self._target_id)}'
+  - '{(DOMAIN, self.unique_id)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)}'
+  - '{CLUSTER_HANDLER_LEVEL, CLUSTER_HANDLER_ON_OFF, CLUSTER_HANDLER_SHADE}'
+  - '{CLUSTER_HANDLER_LEVEL, CLUSTER_HANDLER_ON_OFF}'
+  - '{SUPLA_GATE, SUPLA_GARAGE_DOOR}'
+  - '{cover.ATTR_CURRENT_POSITION, cover.ATTR_CURRENT_TILT_POSITION}'
+  tuples:
+  - ('IPGarage',)
+  - ('curtain', 'curtain.aq2', 'curtain.hagl04')
+  - ('particle', 'particle')
+  - ('true', STATE_OPEN)
+  - "((self._set_position_values, pos_value, CoverEntityFeature.SET_POSITION), (\n\
+    \    self._set_tilt_values, tilt_value, CoverEntityFeature.SET_TILT_POSITION))"
+  - (0, None)
+  - (0, self._node.status, 100)
+  - (100, 0, self._set_position)
+  - (100, 0, self._set_tilt_position)
+  - (100, None)
+  - (7, 10)
+  - (AsyncHoermannDrivesModule, AsyncGarageDoorModuleTormatic)
+  - (CONST_VENETIAN_BLIND_MODE_US, CONST_VENETIAN_BLIND_MODE_EU)
+  - (CoverInfo, CoverState)
+  - (DOMAIN, device['uid'])
+  - (DOMAIN, f'{self._device_id}-{self._number}')
+  - (DOMAIN, self._attr_unique_id)
+  - (DOMAIN, self._entry_id)
+  - (DOMAIN, self._target_id)
+  - (DOMAIN, self.unique_id)
+  - (DPCode, ...)
+  - (DPCode.ANGLE_HORIZONTAL, DPCode.ANGLE_VERTICAL)
+  - (DPCode.PERCENT_CONTROL, DPCode.PERCENT_STATE)
+  - (PowerViewShade,)
+  - "(PowerViewShadeDualOverlappedCombined, PowerViewShadeDualOverlappedFront,\n \
+    \   PowerViewShadeDualOverlappedRear)"
+  - "(PowerViewShadeDualOverlappedCombinedTilt,\n    PowerViewShadeDualOverlappedFront,\
+    \ PowerViewShadeDualOverlappedRear)"
+  - (PowerViewShadeTDBUTop, PowerViewShadeTDBUBottom)
+  - (PowerViewShadeTiltOnly,)
+  - (PowerViewShadeTopDown,)
+  - (PowerViewShadeWithTiltAnywhere,)
+  - (PowerViewShadeWithTiltOnClosed,)
+  - (STATE_OPEN, STATE_CLOSED)
+  - (STATE_UNKNOWN, STATE_UNAVAILABLE)
+  - (SwitchBeeError, SwitchBeeTokenError)
+  - (True, 'fully_close')
+  - "(TuyaCoverEntityDescription(key=DPCode.CONTROL, translation_key='curtain',\n\
+    \    current_position=DPCode.PERCENT_CONTROL, set_position=DPCode.\n    PERCENT_CONTROL,\
+    \ device_class=CoverDeviceClass.CURTAIN),\n    TuyaCoverEntityDescription(key=DPCode.CONTROL_2,\
+    \ translation_key=\n    'curtain_2', current_position=DPCode.PERCENT_CONTROL_2,\
+    \ set_position=\n    DPCode.PERCENT_CONTROL_2, device_class=CoverDeviceClass.CURTAIN))"
+  - "(TuyaCoverEntityDescription(key=DPCode.CONTROL, translation_key='curtain',\n\
+    \    current_position=DPCode.PERCENT_STATE, set_position=DPCode.\n    PERCENT_CONTROL,\
+    \ device_class=CoverDeviceClass.CURTAIN),)"
+  - "(TuyaCoverEntityDescription(key=DPCode.CONTROL, translation_key='curtain',\n\
+    \    current_state=DPCode.SITUATION_SET, current_position=(DPCode.\n    PERCENT_CONTROL,\
+    \ DPCode.PERCENT_STATE), set_position=DPCode.\n    PERCENT_CONTROL, device_class=CoverDeviceClass.CURTAIN),\n\
+    \    TuyaCoverEntityDescription(key=DPCode.CONTROL_2, translation_key=\n    'curtain_2',\
+    \ current_position=DPCode.PERCENT_STATE_2, set_position=\n    DPCode.PERCENT_CONTROL_2,\
+    \ device_class=CoverDeviceClass.CURTAIN),\n    TuyaCoverEntityDescription(key=DPCode.CONTROL_3,\
+    \ translation_key=\n    'curtain_3', current_position=DPCode.PERCENT_STATE_3,\
+    \ set_position=\n    DPCode.PERCENT_CONTROL_3, device_class=CoverDeviceClass.CURTAIN),\n\
+    \    TuyaCoverEntityDescription(key=DPCode.MACH_OPERATE, translation_key=\n  \
+    \  'curtain', current_position=DPCode.POSITION, set_position=DPCode.\n    POSITION,\
+    \ device_class=CoverDeviceClass.CURTAIN, open_instruction_value\n    ='FZ', close_instruction_value='ZZ',\
+    \ stop_instruction_value='STOP'),\n    TuyaCoverEntityDescription(key=DPCode.SWITCH_1,\
+    \ translation_key='blind',\n    current_position=DPCode.PERCENT_CONTROL, set_position=DPCode.\n\
+    \    PERCENT_CONTROL, device_class=CoverDeviceClass.BLIND))"
+  - "(TuyaCoverEntityDescription(key=DPCode.SWITCH_1, translation_key='door',\n  \
+    \  current_state=DPCode.DOORCONTACT_STATE, current_state_inverse=True,\n    device_class=CoverDeviceClass.GARAGE),\
+    \ TuyaCoverEntityDescription(key=\n    DPCode.SWITCH_2, translation_key='door_2',\
+    \ current_state=DPCode.\n    DOORCONTACT_STATE_2, current_state_inverse=True,\
+    \ device_class=\n    CoverDeviceClass.GARAGE), TuyaCoverEntityDescription(key=DPCode.\n\
+    \    SWITCH_3, translation_key='door_3', current_state=DPCode.\n    DOORCONTACT_STATE_3,\
+    \ current_state_inverse=True, device_class=\n    CoverDeviceClass.GARAGE))"
+  - ([Command | list[Command]], Any)
+  - ([], None)
+  - (ac_key, ac_device)
+  - (ain, device)
+  - (area_name, device)
+  - (asyncio.TimeoutError, OSError, RuntimeError)
+  - "(clusters.WindowCovering.Attributes.CurrentPositionLiftPercent100ths,\n    clusters.WindowCovering.Attributes.CurrentPositionTiltPercent100ths)"
+  - (clusters.WindowCovering.Attributes.CurrentPositionLiftPercent100ths,)
+  - (clusters.WindowCovering.Attributes.CurrentPositionTiltPercent100ths,)
+  - "(clusters.WindowCovering.Attributes.OperationalStatus, clusters.\n    WindowCovering.Attributes.Type)"
+  - "(clusters.WindowCovering.Attributes.OperationalStatus, clusters.\n    WindowCovering.Attributes.Type,\
+    \ clusters.WindowCovering.Attributes.\n    CurrentPositionLiftPercent100ths)"
+  - "(clusters.WindowCovering.Attributes.OperationalStatus, clusters.\n    WindowCovering.Attributes.Type,\
+    \ clusters.WindowCovering.Attributes.\n    CurrentPositionLiftPercent100ths, clusters.WindowCovering.Attributes.\n\
+    \    CurrentPositionTiltPercent100ths)"
+  - "(clusters.WindowCovering.Attributes.OperationalStatus, clusters.\n    WindowCovering.Attributes.Type,\
+    \ clusters.WindowCovering.Attributes.\n    CurrentPositionTiltPercent100ths)"
+  - (device_id, config)
+  - (device_id, device_config)
+  - (device_name, device_config)
+  - (dr.CONNECTION_NETWORK_MAC, coordinator.mac_address)
+  - (kind, position)
+  - (name, status, actions)
+  - (object_id, entity_config)
+  - (self._current_position_value, self._current_tilt_value)
+  - (self._set_position_values, pos_value, CoverEntityFeature.SET_POSITION)
+  - (self._set_tilt_values, tilt_value, CoverEntityFeature.SET_TILT_POSITION)
+  - (self._username, self._password)
+  - (serial, thing)
+  - (session_manager.ConnectionError, session_manager.InvalidPasswordError)
+  - (set_values_func, value, set_position_feature)
+  - (str | None, Thing)
+  - (str | int, Any)
+  - (str, Any)
+  - (str, DeviceInfo)
+  - (str, set[str])
+  - (str, str | int)
+  - (str, str)
+  - (str, tuple[TuyaCoverEntityDescription, ...])
+  - (zone_key, zone)
+  - TuyaCoverEntityDescription, ...

@@ -1,0 +1,71 @@
+update.py:
+  schemas: []
+  sets:
+  - "{'_attr_installed_version', '_attr_latest_version', '_attr_title',\n    '_attr_release_summary',\
+    \ '_attr_release_url', '_entity_picture'}"
+  - '{''_attr_latest_version''}'
+  - '{(ADVANTAGE_AIR_DOMAIN, self.coordinator.data[''system''][''rid''])}'
+  - '{(DOMAIN, device.uuid())}'
+  - '{(DOMAIN, unique_id)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, entry_data.device_info.mac_address)}'
+  tuples:
+  - ((NodeStatus.ASLEEP, 'wake up'), (NodeStatus.DEAD, 'alive'))
+  - (ADVANTAGE_AIR_DOMAIN, self.coordinator.data['system']['rid'])
+  - (DOMAIN, device.uuid())
+  - (DOMAIN, unique_id)
+  - (HTTPError, PyEzvizError)
+  - (NodeStatus.ASLEEP, 'wake up')
+  - (NodeStatus.DEAD, 'alive')
+  - (OTA_ERROR, OTA_SUCCESS)
+  - "(PiHoleUpdateEntityDescription(key='core_update_available', translation_key\n\
+    \    ='core_update_available', title='Pi-hole Core', entity_category=\n    EntityCategory.DIAGNOSTIC,\
+    \ installed_version=lambda versions: versions.\n    get('core_current'), latest_version=lambda\
+    \ versions: versions.get(\n    'core_latest'), release_base_url=\n    'https://github.com/pi-hole/pi-hole/releases/tag'),\n\
+    \    PiHoleUpdateEntityDescription(key='web_update_available',\n    translation_key='web_update_available',\
+    \ title='Pi-hole Web interface',\n    entity_category=EntityCategory.DIAGNOSTIC,\
+    \ installed_version=lambda\n    versions: versions.get('web_current'), latest_version=lambda\
+    \ versions:\n    versions.get('web_latest'), release_base_url=\n    'https://github.com/pi-hole/AdminLTE/releases/tag'),\n\
+    \    PiHoleUpdateEntityDescription(key='ftl_update_available',\n    translation_key='ftl_update_available',\
+    \ title='Pi-hole FTL DNS',\n    entity_category=EntityCategory.DIAGNOSTIC, installed_version=lambda\n\
+    \    versions: versions.get('FTL_current'), latest_version=lambda versions:\n\
+    \    versions.get('FTL_latest'), release_base_url=\n    'https://github.com/pi-hole/FTL/releases/tag'))"
+  - (PiHoleUpdateEntityDescription, ...)
+  - "(SensiboDeviceUpdateEntityDescription(key='fw_ver_available', device_class=\n\
+    \    UpdateDeviceClass.FIRMWARE, entity_category=EntityCategory.DIAGNOSTIC,\n\
+    \    icon='mdi:rocket-launch', value_version=lambda data: data.fw_ver,\n    value_available=lambda\
+    \ data: data.fw_ver_available),)"
+  - (SensiboDeviceUpdateEntityDescription, ...)
+  - (UnifiUpdateEntityDescription, ...)
+  - "(UnifiUpdateEntityDescription[Devices, Device](key='Upgrade device',\n    device_class=UpdateDeviceClass.FIRMWARE,\
+    \ has_entity_name=True,\n    allowed_fn=lambda controller, obj_id: True, api_handler_fn=lambda\
+    \ api:\n    api.devices, available_fn=async_device_available_fn, control_fn=\n\
+    \    async_device_control_fn, device_info_fn=async_device_device_info_fn,\n  \
+    \  event_is_on=None, event_to_subscribe=None, name_fn=lambda device: None,\n \
+    \   object_fn=lambda api, obj_id: api.devices[obj_id], should_poll=False,\n  \
+    \  state_fn=lambda api, device: device.state == 4, supported_fn=lambda\n    controller,\
+    \ obj_id: True, unique_id_fn=lambda controller, obj_id:\n    f'device_update-{obj_id}'),)"
+  - "(UpdateEntityDescription(device_class=UpdateDeviceClass.FIRMWARE,\n    entity_category=EntityCategory.CONFIG,\
+    \ key=QSW_UPDATE),)"
+  - (UpdateEntityDescription, ...)
+  - (UpdateStates.DOWNLOADING, UpdateStates.UPGRADING, UpdateStates.REBOOT)
+  - ([Device], Awaitable[bool])
+  - ([SensiboDevice], str | None)
+  - ([UpdateFirmwareCheck], str)
+  - ([], None)
+  - ([aiounifi.Controller, _DataT], bool)
+  - ([aiounifi.Controller, str], Coroutine[Any, Any, None])
+  - ([dict], Any)
+  - ([dict], str | None)
+  - (_HandlerT, _DataT)
+  - (asyncio.TimeoutError, aiohttp.ClientError, UpnpError)
+  - (device_id, device_data)
+  - (dr.CONNECTION_NETWORK_MAC, entry_data.device_info.mac_address)
+  - (requests.exceptions.RequestException, PlexApiException)
+  - (sensor, value)
+  - (status, event_name)
+  - (str, Any)
+  - (str, DataUpdateCoordinator[Any])
+  - (str, DevoloUpdateEntityDescription)
+  - (str, FirmwareUpdateStatus)
+  - Any, Any, None
+  - Devices, Device

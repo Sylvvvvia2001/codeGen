@@ -1,0 +1,40 @@
+data.py:
+  schemas: []
+  sets:
+  - '{(domain, self.unique_id)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, device.mac)}'
+  - "{EventType.SMART_DETECT, EventType.SMART_AUDIO_DETECT, EventType.\n    SMART_DETECT_LINE}"
+  - '{ModelType.CAMERA}'
+  tuples:
+  - ('energy_sources', 'device_consumption')
+  - (3, 12)
+  - (ConnectError, HTTPError, Timeout)
+  - (EventListenAddr, AiohttpNotifyServer)
+  - (EventListenAddr, int)
+  - (KeyError, aiohttp.ClientError)
+  - (MIN_TIME_UTC, MIN_TIME_UTC)
+  - (None, None)
+  - (ProtectAdoptableDeviceModel, NVR)
+  - (ProtectAdoptableDeviceModel, None, None)
+  - (TYPE_EAGLE_100, None)
+  - (TYPE_EAGLE_200, hardware_address)
+  - (ValueError, AttributeError)
+  - ([ProtectDeviceType], None)
+  - ([], Awaitable)
+  - ([list[dict]], list[dict])
+  - (_, current_activity_name)
+  - (asyncio.TimeoutError, OSError, WyomingError)
+  - (asyncio.TimeoutError, aioexc.TimeOut)
+  - (current_period_start, current_period_end)
+  - (datetime.datetime, datetime.datetime)
+  - (domain, self.unique_id)
+  - (dr.CONNECTION_NETWORK_MAC, device.mac)
+  - (float, int)
+  - (listen_addr.host or '0.0.0.0', listen_addr.port)
+  - (previous_period_start, previous_period_end)
+  - (seconds_matched, match_count)
+  - (str, Any)
+  - (str, list[Callable[[ProtectDeviceType], None]])
+  - (str, str)
+  - (value, count)
+  - '[ProtectDeviceType], None'

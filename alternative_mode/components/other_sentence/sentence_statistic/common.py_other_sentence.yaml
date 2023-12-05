@@ -1,0 +1,70 @@
+common.py:
+  schemas: []
+  sets:
+  - '{(DOMAIN, panel.hash)}'
+  - '{(DOMAIN, self._avm_wrapper.unique_id)}'
+  - '{(DOMAIN, self._msp_system_id)}'
+  - '{(DOMAIN, self.base_unique_id)}'
+  - '{(DOMAIN, self.coordinator.unique_id)}'
+  - '{(DOMAIN, str(self._config_entry.unique_id))}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self.coordinator.mac)}'
+  - '{(dr.CONNECTION_NETWORK_MAC, self.mac_address)}'
+  tuples:
+  - ()
+  - (*ALWAYS_CONTINUOUS_ENTITY_ID_LIKE, *CONDITIONALLY_CONTINUOUS_ENTITY_ID_LIKE)
+  - (*EVENT_COLUMNS, *EMPTY_STATE_COLUMNS)
+  - (DOMAIN, panel.hash)
+  - (DOMAIN, self._avm_wrapper.unique_id)
+  - (DOMAIN, self._msp_system_id)
+  - (DOMAIN, self.base_unique_id)
+  - (DOMAIN, self.coordinator.unique_id)
+  - (DOMAIN, str(self._config_entry.unique_id))
+  - "(Events.event_id.label('row_id'), EventTypes.event_type.label('event_type'),\n\
+    \    SHARED_DATA_OR_LEGACY_EVENT_DATA, Events.time_fired_ts.label(\n    'time_fired_ts'),\
+    \ Events.context_id_bin.label('context_id_bin'), Events\n    .context_user_id_bin.label('context_user_id_bin'),\
+    \ Events.\n    context_parent_id_bin.label('context_parent_id_bin'))"
+  - (FritzServiceError, FritzActionError)
+  - (Platform, list[pv.VeraDevice])
+  - "(SHARED_ATTRS_JSON['icon'].is_(None), OLD_FORMAT_ATTRS_JSON['icon'].as_string()\n\
+    \    )"
+  - "(States.state.label('state'), StatesMeta.entity_id.label('entity_id'),\n    ICON_OR_OLD_FORMAT_ICON_JSON)"
+  - "(States.state.label('state'), StatesMeta.entity_id.label('entity_id'),\n    literal(value=None,\
+    \ type_=sqlalchemy.String).label('icon'))"
+  - "(States.state_id.label('row_id'), literal(value=PSEUDO_EVENT_STATE_CHANGED,\n\
+    \    type_=sqlalchemy.String).label('event_type'), literal(value=None, type_\n\
+    \    =sqlalchemy.Text).label('event_data'), States.last_updated_ts.label(\n  \
+    \  'time_fired_ts'), States.context_id_bin.label('context_id_bin'), States\n \
+    \   .context_user_id_bin.label('context_user_id_bin'), States.\n    context_parent_id_bin.label('context_parent_id_bin'))"
+  - (SynologyDSMAPIErrorException, SynologyDSMRequestException)
+  - ([FritzStatus, Any], Any)
+  - ([FritzStatus, StateType], Any)
+  - ([], Awaitable[GogoGate2InfoResponse | ISmartGateInfoResponse])
+  - ([], None)
+  - (bool(version), version, release_url)
+  - (bool, str | None, str | None)
+  - (dr.CONNECTION_NETWORK_MAC, self.coordinator.mac)
+  - (dr.CONNECTION_NETWORK_MAC, self.mac_address)
+  - (guard_key, guard_value)
+  - (int, ...)
+  - (int, dict)
+  - (int, dict[str, Any])
+  - (item_kind, system_id)
+  - (key, update_fn)
+  - "(literal(value=None, type_=sqlalchemy.String).label('state'), literal(value\n\
+    \    =None, type_=sqlalchemy.String).label('entity_id'), literal(value=None,\n\
+    \    type_=sqlalchemy.String).label('icon'))"
+  - (mac, device)
+  - (mac, info)
+  - (readable, _, _)
+  - (self._config[CONF_HOST], self._config[CONF_PORT])
+  - (self._update_available, self._latest_firmware, self._release_url)
+  - (str, Any)
+  - (str, Callable[[FritzStatus, StateType], Any])
+  - (str, Device)
+  - (str, FritzDevice)
+  - (str, StateType | bool)
+  - (str, set[str])
+  - (tuple, dict[str, Any])
+  - (vol.Marker, Any)
+  - '[FritzStatus, StateType], Any'
+  - str, Any

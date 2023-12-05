@@ -1,0 +1,22 @@
+validate.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (STATE_UNAVAILABLE, STATE_UNKNOWN)
+  - "(UnitOfEnergy.GIGA_JOULE, UnitOfEnergy.KILO_WATT_HOUR, UnitOfEnergy.\n    MEGA_JOULE,\
+    \ UnitOfEnergy.MEGA_WATT_HOUR, UnitOfEnergy.WATT_HOUR)"
+  - "(UnitOfVolume.CENTUM_CUBIC_FEET, UnitOfVolume.CUBIC_FEET, UnitOfVolume.\n   \
+    \ CUBIC_METERS)"
+  - "(UnitOfVolume.CENTUM_CUBIC_FEET, UnitOfVolume.CUBIC_FEET, UnitOfVolume.\n   \
+    \ CUBIC_METERS, UnitOfVolume.GALLONS, UnitOfVolume.LITERS)"
+  - (affected_entity, detail)
+  - (sensor.SensorDeviceClass.ENERGY, sensor.SensorDeviceClass.GAS)
+  - (sensor.SensorDeviceClass.ENERGY,)
+  - (sensor.SensorDeviceClass.WATER,)
+  - (str, ...)
+  - (str, Sequence[str])
+  - (str, ValidationIssue)
+  - (str, float | str | None)
+  - (str, str)
+  - (str, tuple[int, recorder.models.StatisticMetaData])
+  - int, recorder.models.StatisticMetaData

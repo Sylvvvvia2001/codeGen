@@ -1,0 +1,19 @@
+discovery.py:
+- CastListener
+- DataclassMustHaveAtLeastOne
+- DiscoveryService
+- DiscoveryServiceListener
+- DuplicatedTopicIssueData
+- FirmwareVersionRange
+- GroupProbe
+- HassIODiscovery
+- HassioServiceInfo
+- MQTTDiscoveryPayload
+- ProbeEndpoint
+- ThreadRouterDiscovery
+- ThreadRouterDiscoveryData
+- ThreadServiceListener
+- ValueType
+- ZWaveDiscoverySchema
+- ZWaveValueDiscoverySchema
+- ZwaveDiscoveryInfo

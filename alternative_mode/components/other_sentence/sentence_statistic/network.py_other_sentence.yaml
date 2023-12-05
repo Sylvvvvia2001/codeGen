@@ -1,0 +1,6 @@
+network.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, Any)
+  - (str, list[str])

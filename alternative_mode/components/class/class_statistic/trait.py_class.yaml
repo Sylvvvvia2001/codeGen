@@ -1,0 +1,26 @@
+trait.py:
+- ArmDisArmTrait
+- BrightnessTrait
+- CameraStreamTrait
+- ChannelTrait
+- ColorSettingTrait
+- DockTrait
+- EnergyStorageTrait
+- FanSpeedTrait
+- HumiditySettingTrait
+- InputSelectorTrait
+- LocatorTrait
+- LockUnlockTrait
+- MediaStateTrait
+- ModesTrait
+- ObjectDetection
+- OnOffTrait
+- OpenCloseTrait
+- SceneTrait
+- SensorStateTrait
+- StartStopTrait
+- TemperatureControlTrait
+- TemperatureSettingTrait
+- TransportControlTrait
+- VolumeTrait
+- _Trait

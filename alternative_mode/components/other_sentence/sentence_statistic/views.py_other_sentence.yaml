@@ -1,0 +1,6 @@
+views.py:
+  schemas: []
+  sets:
+  - '{DOMAIN}'
+  tuples:
+  - (entry_id, data)

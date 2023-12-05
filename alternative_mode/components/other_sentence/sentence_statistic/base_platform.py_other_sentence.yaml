@@ -1,0 +1,18 @@
+base_platform.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (CALL_TYPE_COIL, CALL_TYPE_DISCRETE)
+  - (CALL_TYPE_COIL, CALL_TYPE_WRITE_COIL)
+  - (CALL_TYPE_COIL, CALL_TYPE_WRITE_COILS)
+  - (CALL_TYPE_DISCRETE, None)
+  - (CALL_TYPE_REGISTER_HOLDING, CALL_TYPE_WRITE_REGISTER)
+  - (CALL_TYPE_REGISTER_HOLDING, CALL_TYPE_WRITE_REGISTERS)
+  - (CALL_TYPE_REGISTER_INPUT, None)
+  - (CONF_SWAP_BYTE, CONF_SWAP_WORD_BYTE)
+  - (CONF_SWAP_WORD, CONF_SWAP_WORD_BYTE)
+  - ([], None)
+  - (float, int)
+  - (i, register)
+  - (self._nan_value, -self._nan_value)
+  - (str, Any)

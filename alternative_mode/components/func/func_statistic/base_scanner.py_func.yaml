@@ -1,0 +1,14 @@
+base_scanner.py:
+- __init__
+- _async_expire_devices
+- _async_on_advertisement
+- _async_save_history
+- _async_scanner_watchdog
+- _async_setup_scanner_watchdog
+- _async_stop_scanner_watchdog
+- _async_watchdog_triggered
+- _cancel
+- async_setup
+- connecting
+- discovered_devices
+- discovered_devices_and_advertisement_data

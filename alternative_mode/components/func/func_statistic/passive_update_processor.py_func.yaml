@@ -1,0 +1,26 @@
+passive_update_processor.py:
+- __init__
+- _async_add_or_update_entities
+- _async_handle_bluetooth_event
+- _async_handle_unavailable
+- _handle_processor_update
+- _unregister_coordinator_for_restore
+- async_add_entities_listener
+- async_add_entity_key_listener
+- async_add_listener
+- async_get_restore_data
+- async_handle_unavailable
+- async_handle_update
+- async_register_coordinator
+- async_register_coordinator_for_restore
+- async_register_processor
+- async_set_restore_data
+- async_update_listeners
+- available
+- deserialize_entity_description
+- from_string
+- remove_listener
+- remove_processor
+- serialize_entity_description
+- to_string
+- update

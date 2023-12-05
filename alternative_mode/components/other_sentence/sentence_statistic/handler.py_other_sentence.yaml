@@ -1,0 +1,11 @@
+handler.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (HTTPStatus.OK, HTTPStatus.BAD_REQUEST)
+  - (Platform, list[DevId])
+  - (platform, dev_ids)
+  - (str, Any)
+  - (str, Callable[[HomeAssistant, GatewayId, Message], None])
+  - (str, bool)
+  - '[HomeAssistant, GatewayId, Message], None'

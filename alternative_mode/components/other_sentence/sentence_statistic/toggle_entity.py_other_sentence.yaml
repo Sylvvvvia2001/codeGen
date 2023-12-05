@@ -1,0 +1,6 @@
+toggle_entity.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (str, str)
+  - (str, vol.Schema)

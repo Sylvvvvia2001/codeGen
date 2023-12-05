@@ -1,0 +1,15 @@
+google_config.py:
+  schemas: []
+  sets:
+  - "{'alarm_control_panel', 'button', 'camera', 'climate', 'cover', 'fan',\n    'group',\
+    \ 'humidifier', 'input_boolean', 'input_button', 'input_select',\n    'light',\
+    \ 'lock', 'media_player', 'scene', 'script', 'select', 'switch',\n    'vacuum'}"
+  - '{*self.hass.states.async_entity_ids(), *self._prefs.google_entity_configs}'
+  - "{BinarySensorDeviceClass.DOOR, BinarySensorDeviceClass.GARAGE_DOOR,\n    BinarySensorDeviceClass.LOCK,\
+    \ BinarySensorDeviceClass.MOTION,\n    BinarySensorDeviceClass.OPENING, BinarySensorDeviceClass.PRESENCE,\n\
+    \    BinarySensorDeviceClass.WINDOW}"
+  - "{SensorDeviceClass.AQI, SensorDeviceClass.CO, SensorDeviceClass.CO2,\n    SensorDeviceClass.HUMIDITY,\
+    \ SensorDeviceClass.PM10, SensorDeviceClass.\n    PM25, SensorDeviceClass.TEMPERATURE,\
+    \ SensorDeviceClass.\n    VOLATILE_ORGANIC_COMPOUNDS}"
+  tuples:
+  - (str, Any)

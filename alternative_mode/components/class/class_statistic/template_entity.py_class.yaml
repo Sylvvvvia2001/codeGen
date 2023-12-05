@@ -1,0 +1,4 @@
+template_entity.py:
+- DummyState
+- TemplateEntity
+- _TemplateAttribute

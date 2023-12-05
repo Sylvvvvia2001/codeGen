@@ -1,0 +1,9 @@
+states_meta.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (entity_id, db_states_meta)
+  - (entity_id,)
+  - (int, str)
+  - (metadata_id, entity_id)
+  - (str, int | None)

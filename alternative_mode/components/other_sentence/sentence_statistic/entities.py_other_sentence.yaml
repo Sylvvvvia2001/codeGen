@@ -1,0 +1,17 @@
+entities.py:
+  schemas: []
+  sets:
+  - '{UnitOfTemperature.FAHRENHEIT, UnitOfTemperature.CELSIUS}'
+  tuples:
+  - (AlexaCapability, None, None)
+  - "(binary_sensor.BinarySensorDeviceClass.DOOR, binary_sensor.\n    BinarySensorDeviceClass.GARAGE_DOOR,\
+    \ binary_sensor.\n    BinarySensorDeviceClass.OPENING, binary_sensor.BinarySensorDeviceClass.\n\
+    \    WINDOW)"
+  - "(cover.CoverDeviceClass.BLIND, cover.CoverDeviceClass.SHADE, cover.\n    CoverDeviceClass.CURTAIN)"
+  - (cover.CoverDeviceClass.GARAGE, cover.CoverDeviceClass.GATE)
+  - "(cover.CoverDeviceClass.WINDOW, cover.CoverDeviceClass.AWNING, cover.\n    CoverDeviceClass.SHUTTER)"
+  - (dict[str, Any], None, None)
+  - (int, ...)
+  - (str, Any)
+  - (str, type[AlexaEntity])
+  - str, Any

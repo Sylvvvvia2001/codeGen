@@ -1,0 +1,52 @@
+notify.py:
+  schemas: []
+  sets:
+  - '{''succeeded'', ''failed''}'
+  tuples:
+  - ('Anuncia {0}', 'Anuncia en {1} {0}')
+  - ('Diffuse {0}', 'Diffuse dans {1} {0}')
+  - ('Nachricht an alle {0}', 'Nachricht an alle an {1} {0}')
+  - ('Transmitir {0}', 'Transmitir {0} para {1}')
+  - ('Trasmetti {0}', 'Trasmetti in {1} {0}')
+  - "('actions', 'badge', 'body', 'dir', 'icon', 'image', 'lang', 'renotify',\n  \
+    \  'requireInteraction', 'tag', 'timestamp', 'vibrate')"
+  - ('broadcast {0}', 'broadcast to {1} {0}')
+  - ('http://', 'https://')
+  - "('{0} \uB77C\uACE0 \uBC29\uC1A1\uD574 \uC918', '{0} \uB77C\uACE0 {1}\uC5D0 \uBC29\
+    \uC1A1\uD574 \uC918')"
+  - "('{0}\u3068\u30D6\u30ED\u30FC\u30C9\u30AD\u30E3\u30B9\u30C8\u3057\u3066', '{0}\u3068\
+    {1}\u306B\u30D6\u30ED\u30FC\u30C9\u30AD\u30E3\u30B9\u30C8\u3057\u3066')"
+  - (3, 12)
+  - (ATTR_IMAGE_AUTH_DIGEST, ATTR_ICON_AUTH_DIGEST)
+  - (BytesIO(file), filename)
+  - (FileNotFoundError, PermissionError, IsADirectoryError, TimeoutError)
+  - (HTTPStatus.OK, HTTPStatus.ACCEPTED)
+  - (HTTPStatus.OK, HTTPStatus.CREATED)
+  - (HTTPStatus.OK, HTTPStatus.CREATED, HTTPStatus.ACCEPTED)
+  - (IqError, IqTimeout, XMPPError)
+  - (ServiceBusConnectionError, MessagingEntityNotFoundError)
+  - (SlackApiError, ClientError)
+  - (_, self._tts_service)
+  - (atch_num, atch_name)
+  - (byte_chunk, _)
+  - (config.get(CONF_USERNAME), config.get(CONF_API_KEY))
+  - (config[CONF_USERNAME], config[CONF_API_KEY])
+  - (image, filename)
+  - (k, v)
+  - (key, item)
+  - (key, registration)
+  - (key, val)
+  - (media_category, media_type)
+  - (media_type, _)
+  - (nextcord.HTTPException, nextcord.NotFound)
+  - (self._host, self._port)
+  - (self.username, self.api_key)
+  - (smtplib.socket.gaierror, ConnectionRefusedError)
+  - (str, Any)
+  - (str, MyBMWVehicle)
+  - (str, dict[str, Device | Channel])
+  - (str, str)
+  - (target, result)
+  - (ttype, tname)
+  - (webhook_id, entry)
+  - str, Device | Channel

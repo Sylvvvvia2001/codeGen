@@ -1,0 +1,10 @@
+wrappers.py:
+  schemas: []
+  sets:
+  - '{''bluetooth''}'
+  tuples:
+  - (BaseHaScanner, int)
+  - ([BleakClient], None)
+  - ([], None)
+  - (_, adv)
+  - (str, set[str])

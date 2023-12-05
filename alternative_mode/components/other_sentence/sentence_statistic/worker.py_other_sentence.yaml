@@ -1,0 +1,16 @@
+worker.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (KeyError, IndexError)
+  - ([], Mapping[str, StreamOutput])
+  - (av.Packet, None, None)
+  - "(av.container.OutputContainer, av.video.VideoStream, av.audio.stream.\n    AudioStream\
+    \ | None)"
+  - (av.stream.Stream, int | float)
+  - (container, output_vstream, output_astream)
+  - (count, packet)
+  - (self._av_output, self._output_video_stream, self._output_audio_stream)
+  - (str, str)
+  - (video_stream, audio_stream)
+  - str, StreamOutput

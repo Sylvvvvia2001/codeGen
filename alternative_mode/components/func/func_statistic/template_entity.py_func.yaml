@@ -1,0 +1,18 @@
+template_entity.py:
+- __init__
+- _add_attribute_template
+- _async_setup_templates
+- _async_template_startup
+- _default_update
+- _handle_results
+- _update_attribute
+- _update_available
+- _update_state
+- add_template_attribute
+- async_setup
+- async_start_preview
+- handle_result
+- log_template_error
+- make_template_entity_common_schema
+- name
+- rewrite_common_legacy_to_modern_conf

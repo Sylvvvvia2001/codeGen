@@ -1,0 +1,106 @@
+models.py:
+  schemas: []
+  sets:
+  - '{(CONNECTION_NETWORK_MAC, self.coordinator.data.info.mac_address)}'
+  - '{(DOMAIN, agreement.agreement_id)}'
+  - '{(DOMAIN, agreement_id, ''boiler'')}'
+  - '{(DOMAIN, agreement_id, ''boiler_module'')}'
+  - '{(DOMAIN, agreement_id, ''electricity'')}'
+  - '{(DOMAIN, agreement_id, ''gas'')}'
+  - '{(DOMAIN, agreement_id, ''solar'')}'
+  - '{(DOMAIN, agreement_id, ''water'')}'
+  - '{(DOMAIN, f''{self._device.mac}-zone{self._valve.id}'')}'
+  - '{(DOMAIN, self._device.mac)}'
+  - '{(DOMAIN, self.coordinator.data.info.mac_address)}'
+  - '{(Platform.BUTTON, f''{self.uuid}_query'')}'
+  tuples:
+  - (CONNECTION_NETWORK_MAC, self.coordinator.data.info.mac_address)
+  - (DOMAIN, agreement.agreement_id)
+  - (DOMAIN, agreement_id)
+  - (DOMAIN, agreement_id, 'boiler')
+  - (DOMAIN, agreement_id, 'boiler_module')
+  - (DOMAIN, agreement_id, 'electricity')
+  - (DOMAIN, agreement_id, 'gas')
+  - (DOMAIN, agreement_id, 'meter_adapter')
+  - (DOMAIN, agreement_id, 'solar')
+  - (DOMAIN, agreement_id, 'water')
+  - (DOMAIN, f'{self._device.mac}-zone{self._valve.id}')
+  - (DOMAIN, self._device.mac)
+  - (DOMAIN, self.coordinator.data.info.mac_address)
+  - (Platform, list[Node | Group])
+  - (Platform, list[Node])
+  - (Platform, list[Variable])
+  - (Platform, list[tuple[Node, str]])
+  - (Platform, list[tuple[str, Program, Program]])
+  - (Platform, str)
+  - (Platform.BUTTON, f'{self.uuid}_query')
+  - (Platform.BUTTON, self.uid_base(node))
+  - (ValueError, TypeError, SyntaxError, MemoryError)
+  - ([BluetoothServiceInfoBleak, BluetoothChange], None)
+  - ([BluetoothServiceInfoBleak], bool)
+  - ([HomeAssistant, str], bool)
+  - ([ReceiveMessage], Coroutine[Any, Any, None])
+  - ([ReceiveMessage], None)
+  - ([T, Any], Coroutine[Any, Any, None])
+  - ([T], Any)
+  - ([Valve, T], CoordinatorEntity[MelnorDataUpdateCoordinator])
+  - ([], bool)
+  - ([str], bool)
+  - (_, entity)
+  - (_, node, _)
+  - (bytes, int)
+  - (domain, item_id)
+  - (int, ...)
+  - (int, LutronButton)
+  - (int, LutronKeypad)
+  - (int, dict[str, int])
+  - (int, str)
+  - (int, vol.Schema)
+  - (key, trace_list)
+  - (node, control)
+  - (platform, f'{self.uid_base(node)}_beep')
+  - (platform, f'{self.uid_base(node)}_init')
+  - (platform, f'{self.uid_base(node)}_query')
+  - (platform, f'{self.uid_base(node)}_{control}')
+  - (platform, self.uid_base(node))
+  - (self.key, self.run_id)
+  - (str, 'DeviceCoordinator')
+  - (str, ...)
+  - (str, Any)
+  - (str, Blueprint | BlueprintException | None)
+  - (str, Blueprint | None)
+  - (str, CALLBACK_TYPE)
+  - (str, DeviceInfo)
+  - (str, Entity)
+  - (str, EntityDebugInfo)
+  - (str, JellyfinDataUpdateCoordinator)
+  - (str, LookinDataUpdateCoordinator[Remote])
+  - (str, LutronKeypad)
+  - (str, SubscriptionDebugInfo)
+  - (str, Trigger)
+  - (str, deque[TraceElement])
+  - (str, dict[str, Any])
+  - (str, dict[str, MQTTTagScanner])
+  - (str, dict[str, deque[TimestampedPublishMessage]])
+  - (str, int)
+  - (str, scoped_session)
+  - (str, set[str])
+  - (str, str | int | float | None)
+  - (str, str)
+  - (str, tuple[str, Callable[[LazyEventPartialState], dict[str, Any]]])
+  - (str, vol.Schema)
+  - (tuple[str, str], CALLBACK_TYPE)
+  - (tuple[str, str], PendingDiscovered)
+  - (tuple[str, str], TriggerDebugInfo)
+  - (type[ClusterAttributeDescriptor], ...)
+  - (type[DeviceType] | DeviceType, ...)
+  - Any, Any, None
+  - Node, str
+  - '[LazyEventPartialState], dict[str, Any]'
+  - str, Any
+  - str, Callable[[LazyEventPartialState], dict[str, Any]]
+  - str, MQTTTagScanner
+  - str, Program, Program
+  - str, deque[TimestampedPublishMessage]
+  - str, int
+  - str, str

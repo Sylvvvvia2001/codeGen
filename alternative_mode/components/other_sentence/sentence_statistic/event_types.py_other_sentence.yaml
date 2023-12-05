@@ -1,0 +1,8 @@
+event_types.py:
+  schemas: []
+  sets: []
+  tuples:
+  - (event_type, db_event_types)
+  - (event_type,)
+  - (event_type_id, event_type)
+  - (str, int | None)

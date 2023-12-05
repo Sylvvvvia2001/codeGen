@@ -1,0 +1,47 @@
+browse_media.py:
+  schemas: []
+  sets:
+  - "{MediaType.ALBUM, MediaType.ARTIST, MediaType.PLAYLIST, MediaType.GENRE,\n  \
+    \  MEDIA_TYPE_DIRECTORY}"
+  - '{MediaType.ALBUM, MediaType.ARTIST, MediaType.TRACK}'
+  tuples:
+  - ('/api/tts_proxy/',)
+  - ('http', 'https')
+  - ('song', 'cuesong')
+  - ('webradio', 'mywebradio')
+  - (MediaClass.ALBUM, MediaType.ALBUM, '')
+  - (MediaClass.ARTIST, MediaType.ARTIST, '')
+  - (MediaClass.DIRECTORY, MEDIA_TYPE_DIRECTORY, '')
+  - (MediaClass.GENRE, MediaType.GENRE, MediaType.ALBUM)
+  - (MediaClass.GENRE, MediaType.GENRE, MediaType.ARTIST)
+  - (MediaClass.GENRE, MediaType.GENRE, MediaType.TRACK)
+  - (MediaClass.PLAYLIST, MediaType.PLAYLIST, '')
+  - (MediaType.TVSHOW, MediaType.MOVIE)
+  - (MissingMediaInformation, UnknownMediaType)
+  - (None, 'library')
+  - (None, None, None)
+  - (None, f'{MEDIA_PLAYER_PREFIX}library')
+  - (SQUEEZEBOX_ID_BY_TYPE[media_type], media_id)
+  - (SQUEEZEBOX_ID_BY_TYPE[search_type], search_id)
+  - ([str, str, 'str | None'], str)
+  - (_, title, media)
+  - (_schema, self.title, _library, self.type, self.id_or_path, self.subtype)
+  - (app_name, app_id)
+  - (k, v)
+  - (key, item)
+  - (media_class, media_type, media_subtype)
+  - (name, (media_class, media_type, media_subtype))
+  - (player_mode, browse_type, *parent_keys)
+  - (str | None, list[dict[str, Any]] | None, str | None)
+  - (str, Any)
+  - (str, int | str)
+  - (str, list[Image])
+  - (str, str | None)
+  - (str, str)
+  - (t, n)
+  - (thumbnail, title, media)
+  - (title, media, thumbnail)
+  - (top_level_media_content_id, name)
+  - (tv_show_id, season_id)
+  - (type_, name)
+  - str, Any
