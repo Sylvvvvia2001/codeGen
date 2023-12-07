@@ -1,0 +1,4 @@
+brand: "xiaomi"               # Brand of the device (e.g. "xiaomi", "philips", "ikea")
+name: "xiaomi light"          # Name of the device (e.g. "living room light", "bedroom light")
+type: "light"                 # Type of the device (e.g. "light", "switch", "sensor")
+model: "9290020051"           # Model of the device (usually a number)

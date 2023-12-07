@@ -2,14 +2,11 @@ import requests
 import os
 import yaml
 
-# 设置当前工作目录为脚本所在目录
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-def get_gitee_token(file_path='gitee_token.txt'):
+def get_gitee_token(file_path='retrieval/open_lib_retrieval/gitee_token.txt'):
     with open(file_path, 'r') as file:
         return file.read().strip()
 
-def get_device_keywords(file_path='../device_information.yaml'):
+def get_device_keywords(file_path='retrieval/device_information.yaml'):
     with open(file_path, 'r') as file:
         data = yaml.safe_load(file)
         return [data[key] for key in ['brand', 'name', 'type', 'model']]
@@ -75,7 +72,7 @@ def download_files_from_repo(repo_full_name, keywords, token, target_folder):
 def main():
     token = get_gitee_token()
     keywords = get_device_keywords()
-    target_folder = 'gitee_result'
+    target_folder = 'retrieval/open_lib_retrieval/gitee_result'
     os.makedirs(target_folder, exist_ok=True)
 
     for repo_full_name in search_repositories_with_keywords(keywords, token):

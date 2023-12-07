@@ -2,15 +2,12 @@ import requests
 import os
 import yaml
 
-# 设置当前工作目录为脚本所在目录
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
 # 读取GitHub Token和设备关键字
-def get_github_token(file_path='github_token.txt'):
+def get_github_token(file_path='retrieval/open_lib_retrieval/github_token.txt'):
     with open(file_path, 'r') as file:
         return file.read().strip()
 
-def get_device_keywords(file_path='../device_information.yaml'):
+def get_device_keywords(file_path='retrieval/device_information.yaml'):
     with open(file_path, 'r') as file:
         data = yaml.safe_load(file)
         return [data['brand'], data['name'], data['type'], data['model']]
@@ -52,7 +49,7 @@ def main():
     for keyword in keywords:
         search_results = github_search(keyword, token)
         if search_results['total_count'] > 0:
-            download_files_from_search_results(search_results, "github_result")
+            download_files_from_search_results(search_results, "retrieval/open_lib_retrieval/github_result")
 
 if __name__ == '__main__':
     main()
