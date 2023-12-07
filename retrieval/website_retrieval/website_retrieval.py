@@ -43,6 +43,7 @@ def retrieve():
 
     # 发送请求
     response = requests.post(url, headers=headers, data=json.dumps(data))
+    print(response.json())
 
     # 检查响应状态码
     if response.status_code != 200:
@@ -67,3 +68,6 @@ def retrieve():
 
 def main():
     retrieve()
+
+if __name__ == "__main__":
+    main()

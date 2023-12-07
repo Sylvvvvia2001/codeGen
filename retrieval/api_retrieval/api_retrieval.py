@@ -64,3 +64,6 @@ def retrieve():
 
 def main():
     retrieve()
+    
+if __name__ == "__main__":
+    main()
