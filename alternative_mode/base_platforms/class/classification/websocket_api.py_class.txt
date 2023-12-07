@@ -1,8 +1,14 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Classifying the given phrases:
+
+Binding and Connectivity:
+ClusterBinding
+
+Streaming and Recording:
+HistoryLiveStream, LogbookLiveStream
+
+User Interface and Views:
+RepairsFlowIndexView, RepairsFlowResourceView
+
+System and Device Status:
+SystemStatus
+

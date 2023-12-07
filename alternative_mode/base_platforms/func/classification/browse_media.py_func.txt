@@ -1,0 +1,15 @@
+Initialization and Representation:
+__init__, __repr__
+
+Media Handling:
+_find_media_image, _item_payload, _item_preset_payload, _item_to_children_media_class, _item_to_media_class, _list_payload, _raw_item_payload, async_process_play_media_url, item_payload, fetch_item, fetch_items, get_thumbnail_url_full
+
+Data Conversion and Storage:
+as_dict, build_item_response, convert_to_owntone_uri, create_browse_media_response, create_media_content_id, create_owntone_uri, library_payload, media_source_content_filter
+
+Library Management:
+base_owntone_library, build_app_list, library
+
+Utility and Validation:
+calculate_children_class, is_owntone_media_content_id
+

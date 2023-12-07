@@ -1,8 +1,15 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Diagnostics:
+Diagnostics
+
+Neighbour:
+Neighbour
+
+Network:
+Network
+
+Route:
+Route
+
+Router:
+Router
+

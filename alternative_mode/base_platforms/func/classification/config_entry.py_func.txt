@@ -1,0 +1,9 @@
+Device Registration and Connection:
+_async_connected_device_registered, _async_register_mac, add_to_platform_start, find_device_entry
+
+Device Information:
+battery_level, device_info, entity_registry_enabled_default, hostname, ip_address, latitude, location_accuracy, location_name, longitude, mac_address, source_type, unique_id
+
+Device State and Attributes:
+force_update, handle_device_event, is_connected, should_poll, state, state_attributes
+

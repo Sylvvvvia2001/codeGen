@@ -1,8 +1,114 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Action and Trace:
+ActionTrace, BaseTrace, RestoredTrace
+
+Adapter:
+Adapter
+
+Data:
+AdvantageAirData, AnovaData, BAFData, CO2SignalData, CO2SignalResponse, CO2SignalUnit, BondData, DoorBirdData, DormakabaDkeyData, ELKM1Data, EntityDebugInfo, EufyLifeData, GeocachingOAuthApiUrls, IsyData, JellyfinData, LD2410BLEData, LEDBLEData, LookinData, LutronCasetaData, LutronKeypadData, MatterDiscoverySchema, MatterEntityInfo, MelnorBluetoothEntity, MelnorDataUpdateCoordinator, MelnorZoneEntity, MqttData, MyStromData, PowerwallBaseInfo, PowerwallData, PowerwallRuntimeData, RoombaData, RuuviGatewayRuntimeData, SQLData, SnoozConfigurationData, SpeechMetadata, SpeechResult, SynologyDSMData, ToonBoilerDeviceEntity, ToonBoilerModuleDeviceEntity, ToonDisplayDeviceEntity, ToonElectricityMeterDeviceEntity, ToonEntity, ToonGasMeterDeviceEntity, ToonSolarDeviceEntity, ToonWaterMeterDeviceEntity, WemoConfigEntryData, WemoData, WizData, Ws66iData, YaleXSBLEData
+
+Discovery:
+BAFDiscovery
+
+Blueprint:
+Blueprint, BlueprintInputs, DomainBlueprints
+
+Bluetooth:
+BluetoothScanningMode
+
+Board and Info:
+BoardInfo
+
+Media Source:
+BrowseMediaSource, MediaSource, MediaSourceItem
+
+Detection:
+DetectionResult
+
+Device Info:
+DeviceInfo
+
+Domain Data:
+DomainData
+
+HomeKit:
+HomeKitEntryData
+
+IP Address:
+IPv4ConfiguredAddress, IPv6ConfiguredAddress
+
+Event:
+Event, EventAsRow
+
+Home Assistant:
+HaAsyncServiceBrowser, HaAsyncZeroconf, HaBluetoothConnector, HaZeroconf
+
+Hardware:
+HardwareInfo, HardwareProtocol
+
+Lutron:
+LutronButton, LutronKeypad
+
+PTZ:
+PTZ
+
+Payload:
+PayloadSentinel
+
+Pending:
+PendingDiscovered
+
+Permission:
+PermRequired
+
+Play Media:
+PlayMedia
+
+Plex:
+PlexMediaSearchResult, PlexSession
+
+Profile:
+Profile
+
+Protect:
+ProtectEventMixin, ProtectRequiredKeysMixin, ProtectSetableKeysMixin
+
+Publish and Receive:
+PublishMessage, ReceiveMessage
+
+Repairs:
+RepairsFlow, RepairsProtocol
+
+Resolution:
+Resolution
+
+Roborock:
+RoborockHassDeviceInfo
+
+Source:
+SourceRep
+
+Subscription:
+SubscriptionDebugInfo
+
+Trigger:
+TriggerDebugInfo
+
+USB:
+USBDevice, USBInfo
+
+Video:
+Video
+
+Voice:
+Voice
+
+LED:
+WLEDEntity
+
+Wake Word:
+WakeWord
+
+WebHook:
+WebHookManagerState
+

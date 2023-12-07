@@ -1,8 +1,93 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Alexa Errors: 
+AlexaAlreadyInOperationError, AlexaBridgeUnreachableError, AlexaError, AlexaInteralError, AlexaInvalidDirectiveError, AlexaInvalidEndpointError, AlexaInvalidValueError, AlexaNotSupportedInCurrentMode, AlexaSecurityPanelAuthorizationRequired, AlexaSecurityPanelUnauthorizedError, AlexaTempRangeError, AlexaUnsupportedThermostatModeError, AlexaUnsupportedThermostatTargetStateError, AlexaVideoActionNotPermittedForContentError
+
+Configuration Errors:
+AlreadyConfigured
+
+Authentication Errors:
+AuthenticationError, AuthenticationRequired
+
+Axis Errors:
+AxisException
+
+Blueprint Errors:
+BlueprintException, BlueprintInUse, BlueprintWithNameException
+
+Browsing Errors:
+BrowseError
+
+Connection Errors:
+CannotConnect, ConnectionRefused, ConnectionTimeout
+
+Deconz Error:
+DeconzException
+
+File Errors:
+FailedToLoad, FileAlreadyExists
+
+Hmipc Errors:
+HmipcConnectionError, HmipcConnectionWait, HmipcException, HmipcPressButton, HmipcRegistrationFailed
+
+Hue Error:
+HueException
+
+Invalid Errors:
+InvalidAuth, InvalidBlueprint, InvalidBlueprintInputs, InvalidFolder
+
+Konnected Error:
+KonnectedException
+
+Login Errors:
+LoginError, LoginRequired
+
+Media Errors:
+MediaNotFound, MediaPlayerException
+
+Missing Input Error:
+MissingInput
+
+Netgear Error:
+NetgearException
+
+Server Errors:
+NoServersFound, ServerNotSpecified
+
+Token Error:
+NoTokenAvailable
+
+Plex Error:
+PlexException
+
+Pulse Error:
+PulseException
+
+Relink Error:
+RequireRelink
+
+Resolution Error:
+ResolveFailed
+
+SW16 Error:
+SW16Exception
+
+Config Entry Error:
+ShouldUpdateConfigEntry
+
+Temporary Failure Error:
+TemporaryFailure
+
+Unifi Error:
+UnifiException
+
+Unknown Error:
+UnknownError
+
+Unsupported Property Error:
+UnsupportedProperty
+
+User Level Error:
+UserLevel
+
+Validation Failure Error:
+ValidationFailure
+

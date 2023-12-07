@@ -1,0 +1,9 @@
+Data Representation and Storage:
+__init__, format_dispatch_call, list
+
+Device Configuration and Control:
+controller, description, get_by_description, scope
+
+URL Handling:
+url_slug
+

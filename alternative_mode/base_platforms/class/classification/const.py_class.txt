@@ -1,8 +1,60 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Audio and Video:
+AudioBitRates, AudioChannels, AudioCodecs, AudioFormats, AudioSampleRates
+
+Authentication:
+AuthException
+
+Bluetooth:
+BLEScannerMode, BTHomeBleEvent
+
+Calendar and Events:
+CalendarEntityFeature, CID, Cause
+
+Charger:
+ChargerStatus
+
+Climate Control:
+ClimateEntityFeature, ColorTempModes, HVACAction, HVACMode, HeatingType, HumidifierAction, HumidifierEntityFeature
+
+Code and Format:
+CodeFormat, DPCode, DPType
+
+Configuration:
+ConfigNotFound
+
+Country:
+Country
+
+Data and Communication:
+DataType, DeviceResponseEntry, DiagnosticsSubType, DiagnosticsType, Dialect, DiscoveryInfo, FeatureAccess
+
+Fitness and Health:
+FitbitScope, FitbitUnitSystem
+
+Home Automation:
+FreeboxHomeCategory, FritzState, FroniusConfigEntryData, FroniusDeviceInfo, KNXConfigEntryData, MeshRoles, NodeDiscoveryInfo, SensorDeviceClass, SensorStateClass, SetupException, SirenEntityFeature, SourceType, StreamType, Strobe, SupervisorEntityModel, SupervisorIssueContext, SupportedDialect, SupportedModels, TaskStatus, TodoItemStatus, TodoListEntityFeature, UpdateEntityFeature, WorkMode, ZWaveMePlatform
+
+Media and Entertainment:
+MediaClass, MediaPlayerEntityFeature, MediaPlayerState, MediaType
+
+Miscellaneous:
+SpeechResultState, StookwijzerState
+
+Number and Mathematics:
+NumberDeviceClass, NumberMode
+
+Radio:
+RadioType
+
+Repeat:
+RepeatMode
+
+Unit of Measurement:
+UnitOfMeasurement
+
+Weather:
+WeatherEntityFeature
+
+Xiaomi:
+XiaomiBleEvent
+

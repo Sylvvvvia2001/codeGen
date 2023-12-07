@@ -1,0 +1,15 @@
+Device Initialization and Configuration:
+__init__
+
+String Representation:
+__str__
+
+Event Handling and Listener Management:
+_clear_event_listener, _dispatch_events, _listen_next_calendar_event, async_detach, async_remove, event_fetcher, mqtt_automation_listener, persistent_notification_listener, queued_event_fetcher, state_change_listener, template_listener, unregister, zone_automation_listener
+
+Data Manipulation and Retrieval:
+__contains__, _get_trigger_platform, call_action, get_trigger_time, has_no_punctuation, has_one_non_empty_item, next_upcoming, pressed, pressed_more_than_satisfied, released, source_match, with_offset
+
+Data Storage and Retrieval:
+from_dict, as_dict, extra_restore_state_data
+

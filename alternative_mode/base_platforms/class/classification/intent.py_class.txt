@@ -1,8 +1,15 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Intent and Request Handling:
+AddItemIntent, ListTopItemsIntent, SetIntentHandler, UnknownRequest
+
+Alexa Integration:
+AlexaIntentResponse, AlexaIntentsView
+
+User Interface:
+AlexaIntentsView, CardType
+
+Device Control:
+HumidityHandler, SetModeHandler
+
+Speech and Language:
+SpeechType
+

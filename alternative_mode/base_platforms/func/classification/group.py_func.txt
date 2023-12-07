@@ -1,0 +1,26 @@
+Initialization and Configuration:
+__init__
+
+Data Manipulation and Update:
+_update_values, extra_state_attributes
+
+Device and Endpoint Management:
+device, endpoint, endpoint_id
+
+Entity and Group Management:
+associated_entities, get_domain_entity_ids, group, group_id, group_info, member_entity_ids, member_info, members, name
+
+State and Status:
+is_on
+
+Logging and Debugging:
+log
+
+Event Handling and Callbacks:
+on_update
+
+Device State and Basic Attributes:
+async_describe_on_off_states
+
+Note: The above classification is just a suggestion based on the given method names and the context of connecting and controlling smart home devices. The actual classification may vary depending on the specific requirements and context of the code.
+

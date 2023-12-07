@@ -1,8 +1,6 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Date and Time Management:
+CalendarEventListener, QueuedCalendarEvent, Timespan
+
+Device Automation:
+DeviceAutomationTriggerProtocol, TriggerInstance
+

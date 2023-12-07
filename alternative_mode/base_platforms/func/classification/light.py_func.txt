@@ -1,0 +1,57 @@
+Initialization and String Representation:
+__init__, __str__
+
+Brightness Adjustment:
+_adjust_brightness, _async_brightness
+
+State and Event Handling:
+_apply_event, _apply_state, _assume_group_state, _async_extract_brightness_transition, _async_has_action_or_raise, _async_pilot_builder, _async_schedule_state_check, _async_unsub_transition_listener, _async_update, _async_update_attrs, _async_update_device_from_protect, _async_update_dimmer, _async_update_light, _async_update_rgb_or_w, _async_update_rooms, _on_connected_changed, _on_load_changed, _on_static_info_update, _send_member_assume_state_event, _update_from_coordinator, _update_from_device, _update_from_status, _update_full_state, _update_state, _update_supports_transition
+
+Effect and Color Calculation:
+_async_build_base_effect, _calculate_brightness_value, _calculate_color_values, _calculate_effect, _calculate_effect_list, _color_mode_to_ha, _effect_to_light_mode, _filter_color_modes, _get_effect_list, _light_mode_to_effect, _parse_custom_effects, _update_effect, _update_effect_list
+
+Data Manipulation and Storage:
+_as_dict, _from_dict, _data, _get_cache_keys, _parse_ha_data, _parse_tellcore_data, _properties
+
+Device and Entity Creation:
+_create_api_object, _create_camera_light_entity, _create_entity, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light, _create_light
+
+Miscellaneous:
+_average_pixels, _brightness_property, _bulb, _cancel_postponed_update, _color_mode, _compute_unique_id, _constructor, _convert_color, _determine_color_modes, _determine_features, _device_unique_id, _element_changed, _func_channel, _get_brightness, _get_color_data, _get_color_mode, _get_color_temperature, _get_device_status, _get_hs_color, _get_option, _get_priority_entry_that_dictates_state, _get_property, _get_settings, _get_supported_color_modes, _get_supported_features, _get_unique_id, _get_xy_color, _handle_coordinator_update, _handle_event, _hass_brightness_to_switchbee, _hass_to_smarttub_brightness, _init_data_struct, _lights_setup_helper, _mired_to_kelvin, _name_validator, _power_property, _predefined_effects, _refresh, _send_device_command, _set_brightness, _set_internal_state, _set_light, _set_rgb, _set_white, _setup_entities, _setup_from_entity, _setup_rooms_listener, _smarttub_to_hass_brightness, _switchbee_brightness_to_hass, _transitions_config_parser, _turn_off, _turn_on, _turn_on_dimmer, _turn_on_light, _turn_on_power_mode, _turn_on_rgb, _turn_on_rgbw, _update, _update_adjustment, _update_attrs_from_coordinator, _update_brightness, _update_callback, _update_client, _update_color, _update_components, _update_from_status, _update_max_mireds, _update_min_mireds, _update_model, _update_priorities, _update_temperature
+
+Device Management and Integration:
+add_new_device, assumed_state, async_add_group, async_add_insteon_light_entities, async_add_light
+
+Device Setup and Configuration:
+async_add_service, async_create_entity, async_create_preview_light, async_discover, async_discover_device, async_setup_block_entry, async_setup_bridge, async_setup_rpc_entry, async_update_callback, async_update_group_state, async_update_items, async_update_lights, async_update_segments, devices_from_config, entity_class_for_type, entity_type_for_device_id, setup_bridge, setup_entities, setup_platform
+
+Device State and Attributes:
+async_on_update, async_restore_last_state, async_set_state, async_state_changed, async_state_changed_listener, available, brightness, color_mode, color_temp, color_temp_active, custom_effects, custom_effects_names, extra_state_attributes, get_state, max_color_temp_kelvin, max_mireds, min_color_temp_kelvin, min_mireds, state, state_updated, supported, supported_color_modes, supported_features, supports_brightness, supports_color, supports_color_temperature, unique_id
+
+Data Conversion and Processing:
+byte_to_zwave_brightness, changed, clamp, color_int_to_rgb, color_rgb_to_int, convert_scale, hass_to_crownstone_state, hass_to_hue_brightness, hass_to_unifi_brightness, hass_to_wilight_hue, hass_to_wilight_saturation, hue_brightness_to_hass, limitlessled_brightness, limitlessled_color, limitlessled_temperature, rewrite_legacy, scale_brightness, scaleto255, scaleto99, to_futurenow_level, to_hass_level, to_lutron_level, unifi_brightness_to_hass
+
+Device Control and Interaction:
+delayed_turn_off_timestamp, dimmerchange, effect, effect_list, handle_event, input_received, logout, play_effect, process_event, retry, transition_off, transition_on, turn_off, turn_on
+
+Device Information and Management:
+device, device_id, device_info, get_capabilities, get_characteristic_types, get_entities, get_unit_status, icon, name
+
+Lighting Specific:
+create_lcn_light_entity, create_light, crownstone_state_to_hass, entities_from_discovered_wilight, greenwave, hs_color, individual_color_addresses, initialize_state, light, light_type, rgb_color, rgbw_color, rgbww_color, update_dynamic_attributes, update_entity_state
+
+Data Update:
+update_groups, update_lights, update_luminary, update_static_attributes
+
+Event Handling:
+value_changed
+
+Color Control:
+white_value, wilight_to_hass_hue, wilight_to_hass_saturation, xy_color
+
+Error Handling:
+wrapper, wrapper_retry
+
+Device Command:
+x10_command
+

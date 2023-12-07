@@ -1,8 +1,9 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+AWS Services:
+AWSEventBridge, AWSLambda, AWSNotify, AWSSNS, AWSSQS
+
+Notification Services:
+AppriseNotificationService, BMWNotificationService, BroadcastNotificationService, CircuitNotificationService, CiscoWebexTeamsNotificationService, ClickatellNotificationService, ClicksendNotificationService, CommandLineNotificationService, DemoNotificationService, DiscordNotificationService, DovadoSMSNotificationService, EcobeeNotificationService, FacebookNotificationService, FileNotificationService, FlockNotificationService, FreeSMSNotificationService, GMailNotificationService, HomematicNotificationService, HuaweiLteSmsNotificationService, JoinNotificationService, KNXNotificationService, KebaNotificationService, KodiNotificationService, LaMetricNotificationService, LannouncerNotificationService, LgWebOSNotificationService, MSTeamsNotificationService, MailNotificationService, MailgunNotificationService, MastodonNotificationService, MatrixNotificationService, MessageBirdNotificationService, MobileAppNotificationService, MycroftNotificationService, NFAndroidTVNotificationService, NetgearNotifyService, NotifyEventsNotificationService, ProwlNotificationService, PushBulletNotificationService, PushoverNotificationService, PushsaferNotificationService, RestNotificationService, RocketChatNotificationService, SMSNotificationService, SendNotificationBot, SendgridNotificationService, ServiceBusNotificationService, SignalNotificationService, SimplePushNotificationService, SinchNotificationService, SlackNotificationService, SynologyChatNotificationService, SyslogNotificationService, SystemBridgeNotificationService, TTSNotificationService, TelegramNotificationService, TibberNotificationService, TplinkNotifyService, TwilioCallNotificationService, TwilioSMSNotificationService, TwitterNotificationService, XmppNotificationService, iOSNotificationService
+
+Other:
+AuthDictT, GroupNotifyPlatform, FormDataT, HTML5NotificationService, HTML5PushCallbackView, HTML5PushRegistrationView, MessageT
+

@@ -1,0 +1,6 @@
+Initialization and Object Creation:
+__init__, instance
+
+Image Scaling and Processing:
+find_supported_scaling_factor, scale_jpeg_camera_image
+

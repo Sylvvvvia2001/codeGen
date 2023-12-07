@@ -1,0 +1,60 @@
+Initialization and Setup:
+__init__, __post_init__
+
+String Representation:
+__repr__
+
+Internal Functions:
+_add_backlight_if_supported, _async_config_entries_for_ids, _async_data_to_save, _async_get_logger_logs, _blueprint_in_use, _categorize_nodes, _categorize_programs, _chattiest_log_level, _check_for_insteon_type, _check_for_node_def, _check_for_states_in_uom, _check_for_uom_id, _check_for_zwave_cat, _check_type_schema, _convert_legacy_encryption_key, _decrypt_payload_helper, _find_target_identifier, _forward_events_filtered_by_device_entity_ids, _forward_events_filtered_by_entities_filter, _forward_state_events_filtered, _generate_device_info, _get_registry_entries, _is_entity_id_filtered, _is_sensor_a_binary_sensor, _is_state_filtered, _is_url, _set_log_level, _zwave_js_config_entry
+
+User-related Functions:
+add_agent_user_id, added_to_multizone, agent_user_ids
+
+Asynchronous Functions:
+async_add_acmeda_entities, async_calculate_period, async_cluster_exists, async_determine_event_types, async_disable_local_sdk, async_disable_report_state, async_enable_local_sdk, async_enable_report_state, async_filter_entities, async_get_blueprints, async_get_client_by_device_entry, async_get_coordinator_by_device_id, async_get_device_entry_by_device_id, async_get_device_id_from_entity_id, async_get_device_object, async_get_domain_config, async_get_entities, async_get_google_entity_if_supported, async_get_google_entity_if_supported_cached, async_get_node_from_device_id, async_get_node_from_entity_id, async_get_node_status_sensor_entity_id, async_get_nodes_from_area_id, async_get_nodes_from_targets, async_get_turn_on_trigger, async_get_zha_config_value, async_get_zha_device, async_is_bindable_target, async_parse_date_datetime, async_remove_from_mem, async_save, async_schedule_google_sync, async_schedule_google_sync_all, async_subscribe_events, async_update
+
+Schema-related Functions:
+check_type_schema_map, cluster_command_schema_to_vol_schema
+
+Conversion Functions:
+convert_install_code, convert_isy_value_to_hass, convert_to_zcl_values
+
+Utility Functions:
+copy_available_params, create_api, data_packet, debug, decorator, decrypt, decrypt_payload, decrypt_payload_legacy, deep_update, default_language_code, default_schema, destination_address, device_info, discover_mysensors_node, discover_mysensors_platform, empty_okay_response, enabled, encrypt, entities_may_have_state_changes_after, entity_config, entity_id, error, error_response, event_forwarder_filtered, extract_attr, fetch_data, fetch_site, fill_out_missing_chromecast_info, find_state_attributes, floored_timestamp, format_channel_name, format_mac, friendly_name, generate_unique_id, generate_url, get_agent_user_id, get_child_schema, get_device_connection, get_device_id, get_device_id_ext, get_device_info, get_device_model, get_enable_ime, get_google_type, get_home_and_node_id_from_device_entry, get_local_agent_user_id, get_local_webhook_id, get_matter, get_maybe_authenticated_session, get_network_identifier_for_notification, get_operational_instance_id, get_plex_data, get_plex_server, get_port, get_resource, get_spa_name
+
+Device Identification and Retrieval:
+get_state_key_from_unique_id, get_unique_id, get_value_id_from_unique_id, get_valueless_base_unique_id, get_zone_id
+
+Device Communication and Data Retrieval:
+get_value_of_zwave_value, get_zha_data, get_zha_gateway, get_zwave_value_from_config, get_zeroconf
+
+Error Handling:
+handle_errors, homewizard_exception_handler, lametric_exception_handler, roku_exception_handler, toon_exception_handler, wled_exception_handler
+
+Host and Network Related:
+has_unique_host_names, hostname_to_uid, is_address, mac_address
+
+Device Import and Configuration:
+import_device, import_lcn_config, register_lcn_address_devices, register_lcn_host_device, retrieve, validate_config_entry, validate_node
+
+Device Information and Logging:
+info, log, log_update_error, name, pretty_ratio, pretty_title, warning
+
+Data Validation and Manipulation:
+invalid_msg, invalidate, is_error_response, is_reporting_state, is_sensor_continuous, is_states_string, is_supported, normalize_hue_brightness, normalize_hue_colortemp, normalize_hue_transition, reduce_attribute, remove_keys_with_empty_values, validate_child, validate_set_msg, value_matches_matcher
+
+Media and Multimedia:
+load_media_failed, sync_get_visible_zones
+
+Device State and Control:
+is_audio_group, is_hue_motion_sensor, is_local_connected, is_local_request, is_local_sdk_active, is_mirror, is_supported, new_cast_status, new_connection_status, new_media_status, normalize_hue_brightness, normalize_hue_colortemp, normalize_hue_transition, removed_from_multizone, set_zeroconf, supported_traits_for_state, switch_ir_send_schema, sync_serialize
+
+Device Registration and Configuration:
+on_unload, purge_device_registry, purge_entity_registry, reset_persistence, safe_registration, savable_state, secure_devices_pin, set_default_log_level, set_log_levels, setup_client, setup_decrypt, setup_encrypt, should_2fa, should_expose, should_expose_local, should_report_state, store_and_get_identifier, supports_encryption
+
+Device Control and Interaction:
+notifications_serialize, pop_agent_user_id, query_serialize, reachable_device_serialize, service_signal, template, to_dict, traits
+
+Miscellaneous:
+map_from_to, mean_int, mean_tuple, might_2fa, might_2fa_traits, multizone_new_cast_status, multizone_new_media_status, parse_id, qr_to_install_code, schema_type_to_vol, uuid
+

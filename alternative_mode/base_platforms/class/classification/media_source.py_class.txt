@@ -1,8 +1,12 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Media and Entertainment:
+CameraMediaSource, DmsMediaSource, JellyfinSource, MediaId, MediaSourceOptions, MotionEyeMediaSource, RadioMediaSource, SynologyDsmMediaView, SynologyPhotosMediaSource, SynologyPhotosMediaSourceIdentifier, TTSMediaSource, XboxMediaItem, XboxSource
+
+Identifier and Type:
+IdentifierTimeType, IdentifierType
+
+Compatibility and Integration:
+IncompatibleMediaSource, NestEventMediaStore, NestMediaSource, NetatmoSource, ProtectMediaSource, SystemBridgeSource
+
+Event and Type:
+SimpleEventType
+

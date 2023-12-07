@@ -1,8 +1,9 @@
-{
-    "error": {
-        "message": "Invalid parameter format",
-        "type": "one_api_error",
-        "param": "",
-        "code": "ai_param"
-    }
-}
+Camera and Video Settings:
+CameraPreferences
+
+Cloud Settings:
+CloudPreferences, CloudPreferencesStore
+
+Streaming Settings:
+DynamicStreamSettings
+
