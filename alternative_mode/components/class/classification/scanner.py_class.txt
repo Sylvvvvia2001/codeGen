@@ -1,0 +1,6 @@
+Scanner:
+ESPHomeScanner, HaScanner, ShellyBLEScanner, YeelightScanner
+
+Scanner Error:
+ScannerStartError
+

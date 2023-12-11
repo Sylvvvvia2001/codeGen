@@ -1,0 +1,18 @@
+Backup and Data Management:
+Backup, BackupManager
+
+Communication and Connectivity:
+BluetoothManager
+
+IoT Device Management:
+ESPHomeManager
+
+Data Integration and Management:
+GeoJsonFeedEntityManager
+
+Lighting Control:
+LIFXManager
+
+Service Management:
+BackupPlatformProtocol, ServiceMetadata
+

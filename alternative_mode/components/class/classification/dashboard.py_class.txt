@@ -1,0 +1,3 @@
+Dashboards and Configuration:
+DashboardsCollection, ESPHomeDashboard, ESPHomeDashboardManager, LovelaceConfig, LovelaceStorage, LovelaceYAML
+

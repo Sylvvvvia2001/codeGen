@@ -1,0 +1,6 @@
+Smart Home Devices:
+CrownstoneBaseEntity
+
+Communication Devices:
+VoIPDevice, VoIPDevices
+

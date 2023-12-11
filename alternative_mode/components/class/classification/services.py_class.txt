@@ -1,0 +1,12 @@
+Device Control and Communication:
+LcnServiceCall, LockKeys, LockRegulator, OutputAbs, OutputRel, OutputToggle, Pck, Relays, SendKeys, VarAbs, VarRel, VarReset, ZWaveServices
+
+User Interface:
+DynText
+
+Error Handling:
+PicnicServiceException
+
+Lighting Control:
+Led
+

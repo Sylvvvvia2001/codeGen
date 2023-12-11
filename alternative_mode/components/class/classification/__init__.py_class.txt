@@ -1,0 +1,221 @@
+APCUPSdData, APIComponentsView, APIConfigView, APICoreStateView, APIDomainServicesView, APIEndpointSettings, APIEntityStateView, APIErrorLog, APIEventListenersView, APIEventStream, APIEventView, APIMethods, APIServicesView, APISpaceApiView, APIStatesView, APIStatusView, APITemplateView: API-related classes
+
+AbodeAutomation, AbodeDevice, AbodeEntity, AbodeSystem: Abode-related classes
+
+AccuWeatherDataUpdateCoordinator: AccuWeather-related class
+
+AdsEntity, AdsHub: Ads-related classes
+
+AgentInfo, AgentManager: Agent-related classes
+
+AirQualityEntity, AirVisualEntity, AirVisualProData, AirVisualProEntity: Air quality-related classes
+
+AlarmControlPanelEntity, AlarmControlPanelEntityDescription: Alarm control panel-related classes
+
+Alert, AlertUpdateCoordinator: Alert-related classes
+
+Alpha2BaseCoordinator: Alpha2-related class
+
+AmbientStation: Ambient station-related class
+
+AmcrestChecker, AmcrestDevice: Amcrest-related classes
+
+ApiConfig: API configuration-related class
+
+AppleTVEntity, AppleTVManager: Apple TV-related classes
+
+ApplicationCredentialsProtocol, ApplicationCredentialsStorageCollection: Application credentials-related classes
+
+AquaLogicProcessor, AqualinkEntity: AquaLogic-related classes
+
+AsteriskData: Asterisk-related class
+
+AtagEntity: Atag-related class
+
+AttrReportConfig: Attribute report configuration-related class
+
+AugustData: August-related class
+
+AuthImplementation, AuthorizationServer: Authentication-related classes
+
+AutomationEntity, AutomationEntityConfig: Automation-related classes
+
+AzureDevOpsDeviceEntity, AzureDevOpsEntity, AzureDevOpsEntityDescription: Azure DevOps-related classes
+
+AzureEventHub: Azure Event Hub-related class
+
+BMWBaseEntity: BMW-related class
+
+BaseAutomationEntity, BaseEditConfigView, BaseLRUTableManager, BaseScriptEntity, BaseTableManager, BaseTelegramBotEntity: Base-related classes
+
+BinarySensorDeviceClass, BinarySensorEntity, BinarySensorEntityDescription: Binary sensor-related classes
+
+BleBoxEntity: BleBox-related class
+
+BloomSky: BloomSky-related class
+
+BroadlinkData: Broadlink-related class
+
+BrotherDataUpdateCoordinator: Brother-related class
+
+ButtonDeviceClass, ButtonEntity, ButtonEntityDescription: Button-related classes
+
+CalendarEntity, CalendarEvent, CalendarEventView, CalendarListView: Calendar-related classes
+
+CallRateDelayThrottle: Call rate delay throttle-related class
+
+Camera, CameraEntityDescription, CameraEntityFeature, CameraImageView, CameraMjpegStream, CameraView: Camera-related classes
+
+CannotConnect: Cannot connect-related class
+
+CastProtocol: Cast-related class
+
+CecEntity: Cec-related class
+
+ClearCompletedItemsView: Clear completed items-related class
+
+ClientClusterHandler, ClientCredential: Client-related classes
+
+ClimateEntity, ClimateEntityDescription: Climate-related classes
+
+CloudConnectionState, CloudNotAvailable, CloudNotConnected: Cloud connection-related classes
+
+ClusterHandler, ClusterHandlerStatus: Cluster-related classes
+
+CoinbaseData: Coinbase-related class
+
+ColorMode: Color mode-related class
+
+ComfoConnectBridge: ComfoConnect-related class
+
+ConfData: Conf-related class
+
+ConfigCommand: Configuration command-related class
+
+Configurator: Configurator-related class
+
+ConsoleData: Console-related class
+
+Control4Entity: Control4-related class
+
+ControllerEvents: Controller events-related class
+
+ControllerManager: Controller manager-related class
+
+ConversationProcessView: Conversation process-related class
+
+CoordinatorWeatherEntity: Coordinator weather-related class
+
+Counter, CounterStorageCollection: Counter-related classes
+
+CoverDeviceClass, CoverEntity, CoverEntityDescription, CoverEntityFeature: Cover-related classes
+
+CreateShoppingListItemView: Create shopping list item-related class
+
+DHCPWatcher: DHCP watcher-related class
+
+DaikinApi: Daikin-related class
+
+DailyHistory: Daily history-related class
+
+DanfossAir: Danfoss Air-related class
+
+DateEntity, DateEntityDescription: Date-related classes
+
+DateTimeEntity, DateTimeEntityDescription, DateTimeJSONEncoder, DateTimeStorageCollection: DateTime-related classes
+
+DebouncedEntryReloader: Debounced entry reloader-related class
+
+DedupStore: Dedup store-related class
+
+DelugeEntity: Deluge-related class
+
+DeskData, DeviceAutomationDetails, DeviceAutomationType, DeviceBroker, DeviceDataUpdater, DeviceHandler, DeviceListener, DeviceTrackerRegisteredWatcher, DeviceTrackerWatcher, DeviceTuple, DhcpServiceInfo, DiagnosticsData, DiagnosticsPlatformData, DiagnosticsProtocol, DialogFlowError, DialogflowResponse, DigitalOcean, DiscovergyData, DomainData, Dominos, DominosOrder, DominosProductListView, DovadoData, DownloadDiagnosticsView, DriverEvents, ECDataUpdateCoordinator, EbusdData, EcoNetEntity, EcobeeData, EditIdBasedConfigView, EditKeyBasedConfigView, EfergyEntity, ElecPricesDataUpdateCoordinator, ElkAttachedEntity, ElkEntity, EntryState, EnvisalinkDevice, EventDeviceClass, EventEntity, EventEntityDescription, EventExtraStoredData, EventHandler, EvilGeniusEntity, EvilGeniusUpdateCoordinator, EvoBroker, EvoChild, EvoDevice, FFmpegBase, FFmpegManager, FaceInformation, FanEntity, FanEntityDescription, FanEntityFeature, FeedManager, FibaroAuthFailed, FibaroConnectFailed, FibaroController, FibaroDevice, FileUploadData, FileUploadView, FireServiceRotaClient, FireServiceRotaOauth, FireServiceRotaWebSocket, Forecast, FoursquarePushReceiver, FritzBoxDeviceEntity, FritzBoxEntity, FroniusSolarNet, GC100Device, GdacsFeedEntityManager, GeniusBroker, GeniusDevice, GeniusEntity, GeniusHeatingZone, GeniusZone, GeolocationEvent, GeonetnzQuakesFeedEntityManager, GeonetnzVolcanoFeedEntityManager, GetStateIntentHandler, GiosDataUpdateCoordinator, GlobalDataUpdater, GoogleAssistantConversationAgent, GoogleGenerativeAIAgent, GraphiteFeeder, Group, GroupEntity, GroupIntegrationRegistry, GroupManager, GroupProtocol, GuardianData, GuardianEntity, HAHabitipyAsync, HassFlickAuth, HassLogger, HassUpnpServiceDevice, HassioDataUpdateCoordinator, HistoryPeriodView, HiveEntity, HomeAssistantAccessLogger, HomeAssistantApplication, HomeAssistantBSBLANData, HomeAssistantHTTP, HomeAssistantOverkizData, HomeAssistantRequest, HomeAssistantSpotifyData, HomeAssistantTuyaData, HomeKit, HomeKitPairingQRView, HomeworksDevice, HomeworksKeypadEvent, HoneywellData, HuaweiLteBaseEntity, HuaweiLteBaseEntityWithDevice, HuaweiLteData, HumidifierDeviceClass, HumidifierEntity, HumidifierEntityDescription, IAlarmDataUpdateCoordinator, IQVIAEntity, IdasenDeskCoordinator, IdteckReader, IfAction, Image, ImageContentTypeError, ImageEntity, ImageEntityDescription, ImageProcessingDeviceClass, ImageProcessingEntity, ImageProcessingEntityDescription, ImageProcessingFaceEntity
+
+Image and Media:
+ImageServeView, ImageStorageCollection, ImageUploadView, ImageView, MediaPlayerDeviceClass, MediaPlayerEnqueue, MediaPlayerEntity, MediaPlayerEntityDescription, MediaPlayerImageView, Manifest, ManifestJSONView, MediaExtractor, MelCloudDevice, MusicCastCapabilityEntity, MusicCastDataUpdateCoordinator, MusicCastDeviceEntity, MusicCastEntity, NestEventMediaThumbnailView, NestEventMediaView, NestEventViewBase
+
+Device Control and Management:
+IncomfortChild, IncomfortEntity, IndexView, InfluxClient, InfluxThread, InfluxData, JobUpdateCoordinator, KNXModule, KafkaManager, KaleidescapeDeviceInfo, KebaHandler, KeyboardRemote, KonnectedView, KrakenData, LawnMowerEntity, LawnMowerEntityEntityDescription, LcnEntity, LeafDataStore, LeafEntity, LidarrEntity, LightEntity, LightEntityDescription, LightEntityFeature, LinkUserView, Linode, LircInterface, LocalData, LockEntity, LockEntityDescription, LockEntityFeature, LogEntry, LogErrorHandler, LookinUDPManager, LupusecDevice, LupusecSystem, LutronButton, LutronCasetaDevice, LutronCasetaDeviceUpdatableEntity, LutronDevice, LyricDeviceEntity, LyricEntity, Mailbox, MailboxDeleteView, MailboxEntity, MailboxMediaView, MailboxMessageView, MailboxPlatformsView, MailboxView, MatrixBot, MaxCubeHandle, MinutPointClient, MinutPointEntity, MochadCtrl, ModemData, ModernFormsDataUpdateCoordinator, ModernFormsDeviceEntity, MotionEyeEntity, NukiCoordinator, NukiEntity, NukiEntryData
+
+Data and Integration:
+IntegData, IntegrationAlert, IntegrationMatchers, IntentHandleView, Iperf3Data, IssData, MatrixBot, MetEireannWeatherData, MicrosoftFace, MicrosoftFaceGroupEntity, MillDataUpdateCoordinator, MinioListener, NUTDeviceInfo, NWSData, NZBGetEntity, NanoleafEntryData, NodeEvents, NotionData, NotionEntity, NmapDevice, NmapDeviceScanner, NmapTrackedDevices
+
+System and Configuration:
+Notification, NextDnsConnectionUpdateCoordinator, NextDnsDnssecUpdateCoordinator, NextDnsEncryptionUpdateCoordinator, NextDnsIpVersionsUpdateCoordinator, NextDnsProtocolsUpdateCoordinator, NextDnsSettingsUpdateCoordinator, NextDnsStatusUpdateCoordinator, NextDnsUpdateCoordinator, NoMatchingShoppingListItem, NevermindIntentHandler, NetworkWatcher
+
+API:
+NumatoAPI
+
+Data and Storage:
+NumberExtraStoredData, NumberStorageCollection, NwsDataUpdateCoordinator, P1MonitorData, P1MonitorDataUpdateCoordinator, PECOCoordinatorData, PhilipsTVDataUpdateCoordinator, PiHoleEntity, PingDomainData, PlaatoCoordinator, PowerwallDataManager, PresenceData, PrinterAPI, PrinterUpdateCoordinator, PrometheusMetrics, PrometheusView, PureEnergieData, PureEnergieDataUpdateCoordinator, PyNUTData, RiscoDataUpdateCoordinator, RiscoEventsDataUpdateCoordinator, SabnzbdApiData, SenseDevicesData, SignalUpdateCallback, SmartMeterTexasData, SonosData, SoundTouchData, SpeedtestData, StationPriceData, StiebelEltronData, StoredData
+
+Device and Entity:
+NumberEntity, NumberEntityDescription, OVOEnergyDeviceEntity, OVOEnergyEntity, OwnTracksContext, PairedSensorEntity, PairedSensorManager, Panel, PanelRespons, Person, PersonStorageCollection, PersonStore, PiHoleEntity, PlaatoCoordinator, Plant, PostInitMeta, PrusaLinkEntity, PrusaLinkUpdateCoordinator, PurpleAirEntity, QSEntity, QSToggleEntity, RadarrEntity, RainCloudEntity, RainMachineData, RainMachineEntity, Remote, RemoteEntity, RemoteEntityDescription, RemoteEntityFeature, RensonData, ReolinkData, RepetierSensorEntityDescription, RflinkCommand, RflinkDevice, RfxtrxCommandEntity, RfxtrxEntity, Router, SCSGate, SW16Device, Scanner, Scene, ScriptEntity, ScriptEntityConfig, SirenEntity, SirenEntityDescription, SirenTurnOnServiceParameters, SlackEntity, SmartThingsEntity, SomaEntity, SonosDiscoveryManager, SourceManager, SpeechToTextEntity, SpeechToTextView, StateVacuumEntity, StateVacuumEntityDescription, StubPrinter
+
+Intent and Interaction:
+OnOffIntentHandler
+
+Service and Configuration:
+OnboadingStorage, RememberTheMilk, RememberTheMilkConfiguration, RevokeTokenView
+
+Agent and AI:
+OpenAIAgent
+
+Hub and Gateway:
+OpenGarageDataUpdateCoordinator, OpenThermGatewayDevice, RainCloudHub
+
+Location and Context:
+Proximity, ProxmoxClient
+
+User and Interaction:
+Profile, Profiles, Searcher, ServiceMethodDetails
+
+UI and Visualization:
+RssView
+
+Other:
+QueueListener, ScriptError, ScriptIntentHandler
+
+Date and Time Management:
+TimeEntityDescription, TimeEntity, TimeWrapper, Timer, TimerStorageCollection
+
+Device Connection and Control:
+SwitchDeviceClass, SwitchEntity, SwitchEntityDescription, SwitchableRflinkDevice, SwitchbotCloudData, SwitchbotDevices, SwitcherDataUpdateCoordinator
+
+Text and Speech Processing:
+TTSCache, TextEntity, TextEntityDescription, TextExtraStoredData, TextMode, TextToSpeechEntity, TextToSpeechUrlView, TextToSpeechView
+
+System Monitoring and Management:
+SystemHealthRegistration
+
+Internet of Things (IoT) Data Coordination:
+SurePetcareDataCoordinator, TadoConnector, ToloSaunaCoordinatorEntity, ToloSaunaData, ToloSaunaUpdateCoordinator, TomorrowioDataUpdateCoordinator, TotalConnectDataUpdateCoordinator, UkraineAlarmDataUpdateCoordinator, UpCloudDataUpdateCoordinator, ValloxDataUpdateCoordinator, VenstarDataUpdateCoordinator, VolvoUpdateCoordinator, VizioAppsDataUpdateCoordinator
+
+Notification Services:
+TelegramNotificationService
+
+Home Automation and Control:
+TelldusLiveClient, TellstickDevice, TautulliEntity, TractiveClient, UnifiWirelessClients, UpbAttachedEntity, UpbEntity, ValloxEntity, ValveControllerEntity, ValveControllerEntityDescription, VeluxEntity, VenstarEntity, VeraDevice, VilfoRouterData, VolvoEntity, Vultr, WallConnectorData, WallConnectorEntity, WaterHeaterEntity, WaterHeaterEntityEntityDescription, WaterHeaterEntityFeature, WeatherEntity, WeatherEntityDescription, WemoDiscovery, WemoDispatcher, WhirlpoolData, WiLightDevice, WiffiEntity, WiffiIntegrationApi, WirelessTagBaseSensor, WirelessTagPlatform, WithingsData, XS1DeviceEntity, XboxData, XiaomiDevice, YoLinkHomeMessageListener, YoLinkHomeStore, ZDOClusterHandler, ZWaveMeController, ZWaveMeEntity
+
+Data Storage and Management:
+TagIDExistsError, TagIDManager, TagStorageCollection, TileData, TimerStorageCollection, TodoItem, TodoListEntity, UpdateShoppingListItemView, UrlManager, UsbServiceInfo, VacuumCoordinatorData, VacuumCoordinatorDataAttributes, VacuumEntity, VacuumEntityDescription, VacuumEntityFeature, ValloxServiceHandler, ValloxState, VeluxModule, Watcher, WatcherBase, WaterFurnaceData, WatsonIOTThread, WebhookView, WatcherBase, Watcher
+
+Unsupported or Error Handling:
+UnsupportedError
+
+Miscellaneous:
+SyncthingClient, TokenView, Trackables, USBCallbackMatcher, USBDiscovery, UnjoinData, UnavailableAutomationEntity, UnavailableScriptEntity, UpdateDeviceClass, UpdateEntity, UpdateEntityDescription, UpdateType, UpCloudHassData, UpCloudServerEntity, UnsupportedError, UpdateDeviceClass, UpdateEntity, UpdateEntityDescription, UpdateType, UpCloudHassData, UpCloudServerEntity, USBDiscovery, UrlManager, UsbServiceInfo, ValloxServiceHandler, ValloxState, VacuumCoordinatorDataAttributes, ValveControllerEntityDescriptionMixin, VeraDevice, ViCareRequiredKeysMixin, ViCareRequiredKeysMixinWithSet, VilfoRouterData, VizioAppsDataUpdateCoordinator, VolvoData, Vulcan, WakeWordDetectionEntity, WallConnectorLambdaValueGetterMixin, WaterFurnaceData, WaterHeaterEntityEntityDescription, WaterHeaterEntityFeature, Watcher, WatcherBase, WeatherEntity, WeatherEntityDescription, WebhookView, WemoDiscovery, WemoDispatcher, WhirlpoolData, WiLightDevice, WiffiEntity, WiffiIntegrationApi, WirelessTagBaseSensor, WirelessTagPlatform, WithingsData, XS1DeviceEntity, XboxData, XboxUpdateCoordinator, XiaomiDevice, YoLinkHomeMessageListener, YoLinkHomeStore, ZDOClusterHandler, ZWaveMeController, ZWaveMeEntity, ZabbixThread, ZeroconfDiscovery, ZeroconfServiceInfo, Zone, ZoneStorageCollection
+
+Uncategorized:
+Sun, _BaseVacuum, _CacheImage
+
+Image and Data Management:
+_ImageCache
+
+Intent Data:
+_IntentCardData, _IntentSpeechRepromptData
+
+iOS Configuration:
+iOSConfigView, iOSIdentifyDeviceView, iOSPushConfigView
+

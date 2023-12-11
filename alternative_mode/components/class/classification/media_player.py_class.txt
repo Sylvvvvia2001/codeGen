@@ -1,0 +1,12 @@
+Media and Entertainment:
+AbstractDemoPlayer, AppleTvMediaPlayer, AnthemAVR, BluesoundPlayer, BraviaTVMediaPlayer, CastDevice, CastMediaPlayerEntity, ChannelsPlayer, ClementineDevice, CmusDevice, CmusRemote, DIRECTVMediaPlayer, DemoMusicPlayer, DemoTVShowPlayer, DemoYoutubePlayer, DuneHDPlayerEntity, EmbyDevice, EpsonProjectorMediaPlayer, EsphomeMediaPlayer, FireTVDevice, ForkedDaapdMaster, ForkedDaapdUpdater, ForkedDaapdZone, FullyMediaPlayer, GstreamerDevice, HeosMediaPlayer, Itunes, ItunesDevice, JellyfinMediaPlayer, KaleidescapeMediaPlayer, KefMediaPlayer, KodiEntity, LookinMedia, MediaPlayerGroup, MediaroomDevice, MonopriceZone, MpdDevice, MusicCastMediaPlayer, PandoraMediaPlayer, PhilipsTVMediaPlayer, PlexMediaPlayer, ProtectMediaPlayer, RokuMediaPlayer, RoonDevice, RussoundRNETDevice, RussoundZoneDevice, SisyphusPlayer, SlimProtoPlayer, SnapcastClientDevice, SnapcastGroupDevice, SongpalEntity, SonosMediaPlayerEntity, SoundTouchMediaPlayer, SpotifyMediaPlayer, SqueezeBoxEntity, SystemBridgeMediaPlayer, UniversalMediaPlayer, VizioDevice, VlcDevice, Volumio, XiaomiTV, YamahaDevice
+
+Home Automation and Control:
+ADBDevice, AFSAPIDevice, AndroidTVDevice, AndroidTVRemoteMediaPlayerEntity, BlackbirdZone, HomeKitTelevision, HorizonDevice, LGDevice, LgTVDevice, LgWebOSMediaPlayerEntity, OpenhomeDevice, PanasonicVieraTVEntity, SamsungTVDevice, SharpAquosTVDevice, XiaomiTV, YamahaConfigInfo, ZiggoMediaboxXLDevice
+
+Audio and Video Devices:
+AirPlayDevice, ArcamFmj, DenonDevice, LGDevice, NAD, NADtcp, OnkyoDevice, OnkyoDeviceZone, PioneerDevice, PS4Device, PjLinkDevice, RussoundRNETDevice, RussoundZoneDevice, SamsungTVDevice, SharpAquosTVDevice, UERadioDevice, VizioDevice, XboxMediaPlayer, YamahaDevice, ZiggoMediaboxXLDevice
+
+Other:
+_TimeoutException
+

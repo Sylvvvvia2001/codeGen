@@ -1,0 +1,15 @@
+Error and Exception Handling:
+APIRatelimitExceeded, CO2Error, CredentialsInvalid, FitbitApiException, FitbitAuthException, GoogleTasksApiError, InvalidAuth, InvalidDeviceAutomationConfig, ReolinkException, ReolinkSetupException, ReolinkWebhookException, UnknownError
+
+Connection and Device Management:
+CannotConnect, DeviceNotFound
+
+Entity Management:
+EntityNotFound
+
+User and Authentication Management:
+RequireValidation, UserNotAdmin
+
+Status and Configuration:
+PoweredOff, UuidChanged
+

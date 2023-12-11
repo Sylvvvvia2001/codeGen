@@ -1,0 +1,12 @@
+Date and Time Management:
+DueDate
+
+Project Management:
+CustomProject, ProjectData
+
+Energy Management:
+EnergyPlatform, SolarForecastType
+
+Calendar and Task Management:
+CalData, TodoistEvent
+

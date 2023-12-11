@@ -1,0 +1,3 @@
+Task Management:
+AddRecorderPlatformTask, AdjustLRUSizeTask, AdjustStatisticsTask, ChangeStatisticsUnitTask, ClearStatisticsTask, CommitTask, CompileMissingStatisticsTask, DatabaseLockTask, EntityIDMigrationTask, EntityIDPostMigrationTask, EventIdMigrationTask, EventTask, EventTypeIDMigrationTask, EventsContextIDMigrationTask, ImportStatisticsTask, KeepAliveTask, PerodicCleanupTask, PostSchemaMigrationTask, PurgeEntitiesTask, PurgeTask, RecorderTask, RefreshEventTypesTask, StatesContextIDMigrationTask, StatisticsTask, StatisticsTimestampMigrationCleanupTask, StopTask, SynchronizeTask, UpdateStatesMetadataTask, UpdateStatisticsMetadataTask, WaitTask
+

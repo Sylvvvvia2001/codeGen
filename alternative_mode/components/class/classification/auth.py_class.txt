@@ -1,0 +1,3 @@
+Authentication:
+Auth, AuthPhase, HassIOAuth, HassIOBaseAuth, HassIOPasswordReset
+

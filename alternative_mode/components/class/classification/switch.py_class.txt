@@ -1,0 +1,311 @@
+AbodeAutomationSwitch, AbodeSwitch, AcerSwitch, AdGuardHomeSwitch, AdsSwitch, ArestSwitchBase, ArestSwitchFunction, ArestSwitchPin, AtenSwitch, AxisSwitch, BAFSwitch, BaseRingSwitch, BleBoxSwitchEntity, BlockRelaySwitch, BlockSwitchDescription, BlockValveSwitch, BondSwitch, BroadlinkBG1Slot, BroadlinkMP1Slot, BroadlinkRMSwitch, BroadlinkSP1Switch, BroadlinkSP2Switch, BroadlinkSwitch, CecSwitchEntity, ChuangMiPlugSwitch, ComelitSwitchEntity, CommandSwitch, DeconzPowerPlug, DelugeSwitch, DemoSwitch, Device, DevoloSwitch, DevoloSwitchEntity, DevoloSwitchRequiredKeysMixin, DigitalOceanSwitch, DisableLed, DuotecnoSwitch, DynaliteSwitch, EcoalSwitch, ElmaxSwitch, EnOceanSwitch, EnvisalinkSwitch, EsphomeSwitch, EufyHomeSwitch, EzvizSwitch, FibaroSwitch, FirmataSwitch, FloSwitch, FluxMusicSwitch, FluxRemoteAccessSwitch, FluxSwitch, FreeboxSwitch, FritzBoxBaseCoordinatorSwitch, FritzBoxBaseSwitch, FritzBoxDeflectionSwitch, FritzBoxPortSwitch, FritzBoxProfileSwitch, FritzBoxWifiSwitch, FritzboxSwitch, FullySwitchEntity, GC100Switch, GardenaBluetoothValveSwitch, GeniusSwitch, GreeSwitch, HMSwitch, HarmonyActivitySwitch, HassAqualinkSwitch, HikvisionMotionSwitch, HiveSwitch, HomeConnectPowerSwitch, HomeConnectProgramSwitch, HomeControlSwitchEntity, HomeKitSwitch, HomeKitValve
+
+AdGuardHomeSwitchEntityDescription, AdGuardHomeSwitchEntityDescriptionMixin, AdvantageAirFreshAir, AdvantageAirRelay, AmcrestSwitch, AndroidIPWebcamSwitchEntityDescription, AndroidIPWebcamSwitchEntityDescriptionMixin, AqaraBuzzerManualAlarm, AqaraBuzzerManualMute, AqaraHeartbeatIndicator, AqaraLinkageAlarm, AqaraPetFeederChildLock, AqaraPetFeederLEDIndicator, AqaraThermostatChildLock, AqaraThermostatValveDetection, AqaraThermostatWindowDetection, AquaLogicSwitch, BAFSwitchDescription, BAFSwitchDescriptionMixin, BMWRequiredKeysMixin, BMWSwitch, BMWSwitchEntityDescription, CecSwitchEntity, ChildLock, ChuangMiPlugSwitch, ComelitSwitchEntity, DaikinStreamerSwitch, DaikinZoneSwitch, DanfossAir, DeclarativeCharacteristicSwitch, DeclarativeSwitchEntityDescription, DevoloSwitchEntity, DevoloSwitchEntityDescription, EcoforestSwitchEntity, EcoforestSwitchEntityDescription, EcoforestSwitchRequiredKeysMixin, ElgatoEntityDescriptionMixin, ElgatoSwitchEntity, ElgatoSwitchEntityDescription, ElkOutput, EnvoyDryContactRequiredKeysMixin, EnvoyDryContactSwitchEntity, EnvoyDryContactSwitchEntityDescription, EnvoyEnpowerRequiredKeysMixin, EnvoyEnpowerSwitchEntity, EnvoyEnpowerSwitchEntityDescription, EnvoyStorageSettingsRequiredKeysMixin, EnvoyStorageSettingsSwitchEntity, EnvoyStorageSettingsSwitchEntityDescription, EzvizSwitchEntityDescription, EzvizSwitchEntityDescriptionMixin, FullySwitchEntityDescription, FullySwitchEntityDescriptionMixin, GardenaBluetoothValveSwitch, GreeRequiredKeysMixin, GreeSwitchEntityDescription, HomeWizardEntityDescriptionMixin, HomeWizardSwitchEntity, HomeWizardSwitchEntityDescription
+
+Homematicip:
+HomematicipGroupSwitch, HomematicipMultiSwitch, HomematicipSwitch, HomematicipSwitchMeasuring
+
+HuaweiLte:
+HuaweiLteBaseSwitch, HuaweiLteMobileDataSwitch, HuaweiLteWifiGuestNetworkSwitch
+
+Hue:
+HueBehaviorInstanceEnabledEntity, HueLightSensorEnabledEntity, HueMotionSensorEnabledEntity, HueMotionTriggerIndicatorSwitch, HueResourceEnabledEntity
+
+HydrawiseSwitch, HyperionComponentSwitch, IHCSwitch, IPWebcamSettingSwitch, ISYEnableSwitchEntity, ISYSwitchEntity, ISYSwitchEntityDescription, ISYSwitchProgramEntity
+
+Inovelli:
+InovelliAuxSwitchScenes, InovelliBindingOffToOnSyncLevel, InovelliDisableDoubleTapClearNotificationsMode, InovelliDoubleTapDownEnabled, InovelliDoubleTapUpEnabled, InovelliFirmwareProgressLED, InovelliInvertSwitch, InovelliLocalProtection, InovelliOnOffLEDMode, InovelliRelayClickInOnOffMode, InovelliSmartBulbMode
+
+InsteonSwitchEntity, IntellifireSwitch, IntellifireSwitchEntityDescription, IntellifireSwitchRequiredKeysMixin
+
+JuiceNetChargeNowSwitch, KMtronicSwitch, KNXSwitch, KankunSwitch, KonnectedSwitch
+
+LWRFSwitch, LaMetricEntityDescriptionMixin, LaMetricSwitchEntity, LaMetricSwitchEntityDescription, LcnOutputSwitch, LcnRelaySwitch, LeafClimateSwitch, LinodeSwitch, LiteJetSwitch, LivisiSwitch, LupusecSwitch, LutronCasetaLight, LutronLed, LutronSwitch
+
+MatterSwitch, MelnorSwitchEntityDescription, MelnorSwitchEntityDescriptionMixin, MelnorZoneSwitch, MfiSwitch, MicroBotBinarySwitch, MochadSwitch, ModbusSwitch, ModernFormsAdaptiveLearningSwitch, ModernFormsAwaySwitch, ModernFormsSwitch, MotionEyeSwitch, MqttSwitch, MySensorsSwitch, MyStromSwitch, NZBGetDownloadSwitch, NeatoConnectedSwitch, NetatmoSwitch, NetgearAllowBlock, NetgearRouterSwitchEntity, NetgearSwitchEntityDescription, NetgearSwitchEntityDescriptionRequired, NetioApiView, NetioSwitch, NexiaHoldSwitch, NextDnsSwitch, NextDnsSwitchEntityDescription, NextDnsSwitchRequiredKeysMixin, NumatoGpioSwitch, ONVIFSwitch, ONVIFSwitchEntityDescription, ONVIFSwitchEntityDescriptionMixin
+
+OmadaNetworkSwitchPortPoEControl, OmniLogicPumpControl, OmniLogicRelayControl, OmniLogicSwitch, OnOffWindowDetectionFunctionConfigurationEntity, OneWireSwitch, OneWireSwitchEntityDescription, OverkizSwitch, OverkizSwitchDescription, OverkizSwitchDescriptionMixin
+
+P1MotionTriggerIndicatorSwitch, PALoopbackSwitch, PencomRelay, PhilipsTVAmbilightHueSwitch, PhilipsTVScreenSwitch, PiHoleSwitch, PilightSwitch, PlenticoreDataSwitch, PlenticoreRequiredKeysMixin, PlenticoreSwitchEntityDescription, PlugwiseSwitchEntity, PlugwiseSwitchEntityDescription, PowerwallOffGridEnabledEntity, ProgettihwswSwitch, ProtectNVRSwitch, ProtectPrivacyModeSwitch, ProtectSwitch, ProtectSwitchEntityDescription, PwrCtrlDevice, PwrCtrlSwitch, QSSwitch
+
+RachioRainDelay, RachioSchedule, RachioStandbySwitch, RachioSwitch, RachioZone, RadioThermHoldSwitch, RainBirdSwitch, RainCloudSwitch, RainMachineActivitySwitch, RainMachineActivitySwitchDescription, RainMachineBaseSwitch, RainMachineEnabledSwitch, RainMachineProgram
+
+RainMachine:
+RainMachineProgramEnabled, RainMachineRestrictionSwitch, RainMachineRestrictionSwitchDescription, RainMachineSwitchDescription, RainMachineZone, RainMachineZoneEnabled
+
+RaspyRFM:
+RaspyRFMSwitch
+
+RecSwitch:
+RecSwitchSwitch
+
+RemoteRPiGPIO:
+RemoteRPiGPIOSwitch
+
+ReolinkNVR:
+ReolinkNVRSwitchEntity, ReolinkNVRSwitchEntityDescription, ReolinkNVRSwitchEntityDescriptionMixin
+
+Reolink:
+ReolinkSwitchEntity, ReolinkSwitchEntityDescription, ReolinkSwitchEntityDescriptionMixin
+
+RequiredKeysMixin:
+RequiredKeysMixin
+
+ResponseSwitch:
+ResponseSwitch
+
+RestSwitch:
+RestSwitch
+
+Rflink:
+RflinkSwitch
+
+Rfxtrx:
+RfxtrxSwitch
+
+Ridwell:
+RidwellSwitch
+
+RiscoCloud:
+RiscoCloudSwitch
+
+RiscoLocal:
+RiscoLocalSwitch
+
+Rituals:
+RitualsEntityDescriptionMixin, RitualsSwitchEntity, RitualsSwitchEntityDescription
+
+Roborock:
+RoborockSwitch, RoborockSwitchDescription, RoborockSwitchDescriptionMixin
+
+Robot:
+RobotSwitchEntity, RobotSwitchEntityDescription
+
+RpcRelay:
+RpcRelaySwitch
+
+S20:
+S20Switch
+
+SCSGate:
+SCSGateScenarioSwitch, SCSGateSwitch
+
+SHC:
+SHCRoutingSwitch, SHCSwitch, SHCSwitchEntityDescription, SHCSwitchRequiredKeysMixin
+
+SW16:
+SW16Switch
+
+SatelIntegra:
+SatelIntegraSwitch
+
+Schlage:
+SchlageSwitch, SchlageSwitchEntityDescription, SchlageSwitchEntityDescriptionMixin
+
+ScreenLogic:
+ScreenLogicSwitch, ScreenLogicSwitchDescription
+
+SensiboDevice:
+SensiboDeviceSwitch, SensiboDeviceSwitchEntityDescription
+
+Siren:
+SirenSwitch
+
+Skybell:
+SkybellSwitch
+
+SleepNumberPrivate:
+SleepNumberPrivateSwitch
+
+Smappee:
+SmappeeActuator
+
+SmartPlugLed:
+SmartPlugLedSwitch
+
+SmartPlug:
+SmartPlugSwitch, SmartPlugSwitchChild
+
+SmartThings:
+SmartThingsSwitch
+
+SmartTub:
+SmartTubPump
+
+Snmp:
+SnmpSwitch
+
+Sonos:
+SonosAlarmEntity, SonosSwitchEntity
+
+Sony:
+SonyProjector
+
+SpiderPower:
+SpiderPowerPlug
+
+Starline:
+StarlineRequiredKeysMixin, StarlineSwitch, StarlineSwitchEntityDescription
+
+Starlink:
+StarlinkSwitchEntity, StarlinkSwitchEntityDescription, StarlinkSwitchEntityDescriptionMixin
+
+Steamist:
+SteamistSwitchEntity
+
+Supla:
+SuplaSwitchEntity
+
+Switch:
+Switch
+
+SwitchBee:
+SwitchBeeSwitchEntity
+
+SwitchBotCloudPlug:
+SwitchBotCloudPlugSwitch
+
+SwitchBotCloudRemote:
+SwitchBotCloudRemoteSwitch
+
+SwitchBotCloud:
+SwitchBotCloudSwitch
+
+SwitchBot:
+SwitchBotSwitch
+
+SwitchCapability:
+SwitchCapability
+
+SwitchDescriptionMixin:
+SwitchDescriptionMixin
+
+SwitchGroup:
+SwitchGroup
+
+SwitchTemplate:
+SwitchTemplate
+
+SwitcherBase:
+SwitcherBaseSwitchEntity
+
+SwitcherPowerPlug:
+SwitcherPowerPlugSwitchEntity
+
+SwitcherWaterHeater:
+SwitcherWaterHeaterSwitchEntity
+
+Switchmate:
+SwitchmateEntity
+
+SynoDSM:
+SynoDSMSurveillanceHomeModeToggle
+
+SynologyDSM:
+SynologyDSMSwitchEntityDescription
+
+Tasmota:
+TasmotaSwitch
+
+TelldusLive:
+TelldusLiveSwitch
+
+Tellstick:
+TellstickSwitch
+
+Telnet:
+TelnetSwitch
+
+ThinkingCleaner:
+ThinkingCleanerSwitch
+
+ToonHolidayMode:
+ToonHolidayModeSwitch
+
+ToonProgram:
+ToonProgramSwitch
+
+Toon:
+ToonSwitch, ToonSwitchEntityDescription, ToonSwitchRequiredKeysMixin
+
+Tractive:
+TractiveRequiredKeysMixin, TractiveSwitch, TractiveSwitchEntityDescription
+
+Tradfri:
+TradfriSwitch
+
+Transmission:
+TransmissionSwitch
+
+TuyaChildLock:
+TuyaChildLockSwitch
+
+Tuya:
+TuyaSwitchEntity
+
+Unifi:
+UnifiSwitchEntity, UnifiSwitchEntityDescription, UnifiSwitchEntityDescriptionMixin
+
+UpCloud:
+UpCloudSwitch
+
+UptimeRobot:
+UptimeRobotSwitch
+
+V2C:
+V2CRequiredKeysMixin, V2CSwitchEntity, V2CSwitchEntityDescription
+
+VActuator:
+VActuator
+
+ValloxMetricKey:
+ValloxMetricKeyMixin
+
+Vallox:
+ValloxSwitchEntity, ValloxSwitchEntityDescription
+
+ValveController:
+ValveControllerSwitch, ValveControllerSwitchDescription
+
+VeSyncBase:
+VeSyncBaseSwitch
+
+VeSyncLight:
+VeSyncLightSwitch
+
+VeSyncSwitchHA:
+VeSyncSwitchHA
+
+Velbus:
+VelbusSwitch
+
+Vera:
+VeraSwitch
+
+VerisureSmartplug:
+VerisureSmartplug
+
+VoIPCallAllowed:
+VoIPCallAllowedSwitch
+
+Volvo:
+VolvoSwitch
+
+Vultr:
+VultrSwitch
+
+WLEDNightlight:
+WLEDNightlightSwitch
+
+WLEDReverse:
+WLEDReverseSwitch
+
+WLEDSyncReceive:
+WLEDSyncReceiveSwitch
+
+WLEDSyncSend:
+WLEDSyncSendSwitch
+
+Smart Home Devices:
+WallboxSwitch, WemoSwitch, WiLightValvePauseSwitch, WiLightValveSwitch, WirelessTagSwitch, WizSocketEntity, WolSwitch, XS1SwitchEntity, XiaomiAirConditioningCompanionSwitch, XiaomiGatewaySwitch, XiaomiGenericCoordinatedSwitch, XiaomiGenericSwitch, XiaomiMiioSwitchDescription, XiaomiMiioSwitchRequiredKeyMixin, XiaomiPlugGenericSwitch, XiaomiPlugPowerOutageMemorySwitch, XiaomiPowerStripSwitch, YardianSwitch, YoLinkSwitchEntity, YoLinkSwitchEntityDescription, ZHASwitchConfigurationEntity, ZMSwitchMonitors, ZWaveBarrierEventSignalingSwitch, ZWaveConfigParameterSwitch, ZWaveIndicatorSwitch, ZWaveMeSwitch, ZWaveSwitch
+

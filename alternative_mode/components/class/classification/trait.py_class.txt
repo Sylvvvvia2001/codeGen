@@ -1,0 +1,18 @@
+Smart Home Control:
+ArmDisArmTrait, BrightnessTrait, ChannelTrait, ColorSettingTrait, DockTrait, FanSpeedTrait, HumiditySettingTrait, InputSelectorTrait, LockUnlockTrait, ModesTrait, OnOffTrait, OpenCloseTrait, SceneTrait, StartStopTrait, TemperatureControlTrait, TemperatureSettingTrait, TransportControlTrait, VolumeTrait
+
+Media and Entertainment:
+CameraStreamTrait, MediaStateTrait
+
+Energy Management:
+EnergyStorageTrait
+
+Location and Navigation:
+LocatorTrait
+
+Object Detection:
+ObjectDetection
+
+Sensor and Monitoring:
+SensorStateTrait
+

@@ -1,0 +1,14 @@
+Device and Connection Management:
+Device, ConnectionInfo, HostInfo, Interface
+
+Controller and Data Management:
+ControllerData, DeviceDataUpdateCoordinator, ElmaxCoordinator, ElmaxEntity, FritzBoxBaseCoordinatorEntity, FritzBoxBaseEntity, FritzData, FritzDevice, FritzDeviceBase, FritzEntityDescription, FritzRequireKeysMixin, GoGoGate2Entity, OmniLogicEntity, OmniLogicUpdateCoordinator, StateData, SubscriptionRegistry, SwitchInfo, SynoApi, TcpEntity, UpdateCoordinatorDataType, VeSyncBaseEntity, VeSyncDevice
+
+Setup and Configuration:
+ClassSetupMissing
+
+Integration and Wrappers:
+AvmWrapper
+
+注意：上面的分类只是根据短语的字面意思进行的判断，可能存在一定的误差。
+

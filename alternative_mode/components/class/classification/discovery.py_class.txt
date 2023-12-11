@@ -1,0 +1,18 @@
+Media and Entertainment:
+CastListener
+
+Data Management:
+DataclassMustHaveAtLeastOne, DuplicatedTopicIssueData
+
+Device and Service Discovery:
+DiscoveryService, DiscoveryServiceListener, GroupProbe, HassIODiscovery, HassioServiceInfo, MQTTDiscoveryPayload, ProbeEndpoint, ThreadRouterDiscovery, ThreadRouterDiscoveryData, ThreadServiceListener, ZWaveDiscoverySchema, ZWaveValueDiscoverySchema, ZwaveDiscoveryInfo
+
+Firmware Management:
+FirmwareVersionRange
+
+ValueType:
+ValueType
+
+Date and Time Management:
+N/A
+

@@ -1,0 +1,12 @@
+Device Control:
+AlexaBrightnessController, AlexaCameraStreamController, AlexaChannelController, AlexaColorController, AlexaColorTemperatureController, AlexaInputController, AlexaLockController, AlexaModeController, AlexaPlaybackController, AlexaPowerController, AlexaPowerLevelController, AlexaRangeController, AlexaSceneController, AlexaSeekController, AlexaSpeaker, AlexaStepSpeaker, AlexaThermostatController, AlexaTimeHoldController, AlexaToggleController
+
+Device Status:
+AlexaCapability, AlexaEndpointHealth, AlexaPlaybackStateReporter
+
+Sensors:
+AlexaContactSensor, AlexaDoorbellEventSource, AlexaEventDetectionSensor, AlexaMotionSensor, AlexaTemperatureSensor
+
+Others:
+Alexa, AlexaEqualizerController, AlexaSecurityPanelController
+

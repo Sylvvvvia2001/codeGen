@@ -1,0 +1,63 @@
+Alarm Control Panel:
+AlarmControlPanelCapabilities
+
+Voice Assistant:
+AlexaEntity
+
+Sensor:
+BinarySensorCapabilities, EventCapabilities, SensorCapabilities
+
+Button:
+ButtonCapabilities
+
+Camera:
+CameraCapabilities
+
+Climate:
+ClimateCapabilities
+
+Cover:
+CoverCapabilities
+
+Device Category:
+DisplayCategory
+
+Fan:
+FanCapabilities
+
+Generic:
+GenericCapabilities
+
+Humidifier:
+HumidifierCapabilities
+
+Image Processing:
+ImageProcessingCapabilities
+
+Input Number:
+InputNumberCapabilities
+
+Light:
+LightCapabilities
+
+Lock:
+LockCapabilities
+
+Media Player:
+MediaPlayerCapabilities
+
+Scene:
+SceneCapabilities
+
+Script:
+ScriptCapabilities
+
+Switch:
+SwitchCapabilities
+
+Timer:
+TimerCapabilities
+
+Vacuum:
+VacuumCapabilities
+

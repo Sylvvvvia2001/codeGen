@@ -1,0 +1,9 @@
+Humidifier Devices:
+DemoHumidifier, EcobeeHumidifier, HomeKitDehumidifier, HomeKitHumidifier, MqttHumidifier, SwitchBotHumidifier, TuyaHumidifierEntity, XiaomiAirHumidifier, XiaomiAirHumidifierMiot, XiaomiAirHumidifierMjjsq, XiaomiGenericHumidifier, ZWaveHumidifier
+
+Humidifier Types:
+GenericHygrostat
+
+Humidifier Descriptions:
+TuyaHumidifierEntityDescription, ZwaveHumidifierEntityDescription, ZwaveHumidifierEntityDescriptionRequiredKeys
+

@@ -1,0 +1,6 @@
+AlarmControlPanelEntityFeature, CalendarEntityFeature, ClimateEntityFeature, HumidifierEntityFeature, LawnMowerEntityFeature, MediaPlayerEntityFeature, SensorDeviceClass, SensorStateClass, SirenEntityFeature, TodoListEntityFeature, UpdateEntityFeature, WeatherEntityFeature
+
+AudioBitRates, AudioChannels, AudioCodecs, AudioFormats, AudioSampleRates
+
+AuthException, BLEScannerMode, BTHomeBleEvent, CID, ConfigNotFound, Country, DPCode, DPType, DataType, DeviceResponseEntry, DiagnosticsSubType, DiagnosticsType, Dialect, DiscoveryInfo, FeatureAccess, FitbitScope, FitbitUnitSystem, FreeboxHomeCategory, FritzState, FroniusConfigEntryData, FroniusDeviceInfo, HVACAction, HVACMode, HeatingType, HumidifierAction, Inputs, KNXConfigEntryData, KrakenResponseEntry, LawnMowerActivity, MediaType, MeshRoles, NodeDiscoveryInfo, NumberDeviceClass, NumberMode, RadioType, RepeatMode, SetupException, SourceType, SpeechResultState, StookwijzerState, StreamType, Strobe, SupervisorEntityModel, SupervisorIssueContext, SupportedDialect, SupportedModels, TaskStatus, TodoItemStatus, UnitOfMeasurement, WorkMode, ZWaveMePlatform
+

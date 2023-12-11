@@ -1,0 +1,9 @@
+Calendar Management:
+DemoCalendar, GoogleCalendarEntity, LocalCalendarEntity, RainBirdCalendarEntity, ReCollectWasteCalendar, RidwellCalendar, TwenteMilieuCalendar, VulcanCalendarEntity, WebDavCalendarEntity, WithingsWorkoutCalendarEntity
+
+Calendar Update Coordination:
+CalendarQueryUpdateCoordinator, CalendarSyncUpdateCoordinator
+
+Todoist Integration:
+TodoistProjectData, TodoistProjectEntity
+

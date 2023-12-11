@@ -1,0 +1,6 @@
+Error and Exception Handling:
+IntentRecognitionError, MediaSourceError, PipelineError, PipelineNotFound, SmartHomeError, SpeechToTextError, TextToSpeechError, Unresolvable, WakeWordDetectionAborted, WakeWordDetectionError, WakeWordTimeoutError, WyomingError
+
+Device and Connection:
+ChallengeNeeded, Disconnect
+

@@ -1,0 +1,6 @@
+Media and Entertainment:
+LocalMediaView, UploadMediaView
+
+Device and Connectivity:
+LocalSource
+

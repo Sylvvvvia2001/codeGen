@@ -1,0 +1,9 @@
+Scene Management:
+DeconzScene, EditSceneConfigView, FibaroScene, HomeAssistantScene, HueSceneEntity, HueSceneEntityBase, HueSmartSceneEntity, KNXScene, LcnScene, LifxCloudScene, LiteJetScene, LutronCasetaScene, LutronScene, MqttScene, NexiaAutomationScene, OverkizScene, PowerViewScene, SceneConfig, SmartThingsScene, TuyaSceneEntity, VeluxScene, VeraScene
+
+Task Management:
+ElkTask
+
+Device Connectivity:
+UpbLink
+

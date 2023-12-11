@@ -27,7 +27,7 @@ def classify_phrases(phrases):
             "messages": [
                 {
                     "role": "system",
-                    "content": f"你是一个短语分类器。我会给你很多代码中的类名，你可以将他们视为普通的英文短语，这些短语将会在代码语境中使用。基于开发者对智能家居设备进行连接和控制操作的语境，请对这些类名进行语义上的分类。注意：要严格遵守输出要求，首先给出每类的大概内容，然后在下一行给出该类的所有短语，短语之间用逗号隔开。输出全部使用英文，不要出现多余的字符或字段！这意味着所有短语应该是全字母的，请忽略掉短语前后的非字母字符。\n给出一个输出的范例: \nMedia and Entertainment:\nMediaPlayerEnqueue, MediaPlayerDeviceClass, MediaPlayerEntity, MediaPlayerImageView, TTSCache, TextToSpeechUrlView, TextToSpeechView\nDate and Time Management:\nDateEntityDescription, DateEntity, CalendarEventView, CalendarListView, TimeEntityDescription, TimeEntity\n分类不需要过于细致，尽量避免一个短语一类的情况，严格遵守输出格式！注意：输出格式必须遵循先后顺序，即：“每类概括:\n用逗号隔开的短语”，顺序不能颠倒！\n如果没有适合的分类，某个短语可以自成一类，不需要多余解释和多余字段！\n\n下面是需要分类的短语: '{search_query}' ."
+                    "content": f"你是一个短语分类器。我会给你很多代码中的方法名，你可以将他们视为普通的英文短语，这些短语将会在代码语境中使用。这些方法名中可能含有一些下划线，你可以将下划线视作短语中单词间的空格。基于开发者对智能家居设备进行连接和控制操作的语境，请对这些方法名进行语义上的分类。注意：要严格遵守输出要求，首先给出每类的大概内容，然后在下一行给出该类的所有短语，短语之间用逗号隔开。输出全部使用英文，不要出现多余的字符或字段！这意味着所有短语应该是全字母的，请忽略掉短语前后的非字母字符。\n给出一个输出的范例: \nDevice State and Basic Attributes:\nstate, state_attributes, device_class, capability_attributes, default_to_device_class_name, native_value\nData Representation and Storage:\nas_dict, from_dict, extra_restore_state_data\n分类不需要过于细致，尽量避免一个短语一类的情况，严格遵守输出格式！注意：输出格式必须遵循先后顺序，即：“每类概括:\n用逗号隔开的短语”，顺序不能颠倒！\n下面是需要分类的短语: '{search_query}' ."
                 },
                 {
                     "role": "user",
@@ -66,8 +66,8 @@ def process_yaml_file(file_path):
     return format_classification_output(responses)
 
 def main():
-    input_dir = 'alternative_mode/base_platforms/class/class_statistic'
-    output_dir = 'alternative_mode/base_platforms/class/classification'
+    input_dir = 'alternative_mode/components/func/func_statistic'
+    output_dir = 'alternative_mode/components/func/classification'
 
     for file_name in os.listdir(input_dir):
         file_path = os.path.join(input_dir, file_name)

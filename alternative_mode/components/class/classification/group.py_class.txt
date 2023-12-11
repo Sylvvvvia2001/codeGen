@@ -1,0 +1,6 @@
+Group Entity and Membership:
+GroupEntityReference, GroupMember
+
+Grouped Devices:
+GroupedHueLight, ZHAGroup, ZHAGroupMember
+

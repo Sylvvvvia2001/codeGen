@@ -1,0 +1,18 @@
+Alexa Capability and Mode:
+AlexaCapabilityResource, AlexaModeResource
+
+Alexa Global Catalog:
+AlexaGlobalCatalog
+
+Alexa Preset:
+AlexaPresetResource
+
+Alexa Semantics:
+AlexaSemantics
+
+Resource Storage:
+ResourceStorageCollection
+
+Resource YAML:
+ResourceYAMLCollection
+

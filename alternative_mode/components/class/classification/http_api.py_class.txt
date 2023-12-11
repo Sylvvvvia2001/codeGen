@@ -1,0 +1,6 @@
+Cloud Account Management:
+CloudForgotPasswordView, CloudLoginView, CloudLogoutView, CloudRegisterView, CloudResendConfirmView, RegistrationsView
+
+Google Actions Integration:
+GoogleActionsSyncView
+

@@ -1,0 +1,21 @@
+Camera:
+AbodeCamera, AgentCamera, AmcrestCam, AugustCamera, AxisCamera, BlinkCamera, BloomSkyCamera, BuienradarCam, CanaryCamera, DemoCamera, DoorBirdCamera, Dremel3D45Camera, ECCamera, EsphomeCamera, EzvizCamera, FFmpegCamera, FamilyHubCamera, FreeboxCamera, GenericCamera, HassFoscamCamera, HomeKitCamera, HyperionCamera, IPWebcamCamera, LogiCam, MjpegCamera, MotionEyeMjpegCamera, MqttCamera, NestCamera, NetatmoCamera, ONVIFCameraEntity, OctoprintCamera, ProsegurCamera, ProtectCamera, ProxyCamera, PushCamera, QVRProCamera, RaspberryCamera, ReolinkCamera, RingCam, SkybellActivityCamera, SkybellCamera, SynoDSMCamera, TuyaCameraEntity, UnifiVideoCamera, VerisureSmartcam, VivotekCam, XeomaCamera, XiaomiCamera, YiCamera, ZoneMinderCamera
+
+Error:
+AmcrestCommandFailed, CannotSnapshot
+
+File:
+LocalFile
+
+Image:
+ImageOpts
+
+Map:
+NeatoCleaningMap
+
+Entity Description:
+DateEntityDescription, SynologyDSMCameraEntityDescription
+
+Other:
+PrusaLinkJobPreviewEntity, TVCamera
+

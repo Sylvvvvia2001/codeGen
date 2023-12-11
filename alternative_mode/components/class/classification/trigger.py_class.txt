@@ -1,0 +1,9 @@
+Calendar and Event Management:
+CalendarEventListener, QueuedCalendarEvent
+
+Automation and Trigger:
+DeviceAutomationTriggerProtocol, TriggerInstance
+
+Time Management:
+Timespan
+

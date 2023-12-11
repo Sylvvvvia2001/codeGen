@@ -1,0 +1,8 @@
+Alarm and Security:
+AbodeAlarm, AgentBaseStation, AlarmControlPanelTemplate, AlarmDecoderAlarmPanel, BlinkSyncModuleHA, CanaryAlarm, Concord232Alarm, DeconzAlarmControlPanel, EgardiaAlarm, EnvisalinkAlarm, FreeboxAlarm, HiveAlarmControlPanelEntity, HomeKitAlarmControlPanelEntity, HomematicipAlarmControlPanelEntity, IAlarmPanel, IFTTTAlarmPanel, LupusecAlarm, ManualAlarm, ManualMQTTAlarm, MinutPointAlarmControl, NX584Alarm, NessAlarmPanel, OverkizAlarmControlPanel, OverkizAlarmDescription, OverkizAlarmDescriptionMixin, ProsegurAlarm, RiscoAlarm, RiscoCloudAlarm, RiscoLocalAlarm, SIAAlarmControlPanel, SIAAlarmControlPanelEntityDescription, SatelIntegraAlarmPanel, SimpliSafeAlarm, SpcAlarm, TotalConnectAlarm, TuyaAlarmEntity, VerisureAlarm, YaleAlarmDevice, ZHAAlarmControlPanel
+
+Home Automation and Control:
+ElkArea, ElmaxArea, EspHomeACPFeatures, EsphomeAlarmControlPanel, EzvizAlarm, EzvizAlarmControlPanelEntityDescription, EzvizAlarmControlPanelEntityDescriptionMixin, Mode, MqttAlarm, TemplateCodeFormat
+
+Please note that the classification is based on the provided class names and may not accurately reflect their actual functionalities.
+

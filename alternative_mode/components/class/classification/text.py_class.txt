@@ -1,0 +1,9 @@
+Text Processing:
+DemoText, EsphomeText, MqttTextEntity
+
+Home Automation:
+KNXText, MySensorsText
+
+Security:
+ProtectDeviceText, ProtectTextEntityDescription
+

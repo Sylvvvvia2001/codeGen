@@ -1,0 +1,3 @@
+Water Heater:
+AirzoneWaterHeater, AtagWaterHeater, AtwWaterHeater, DemoWaterHeater, EcoNetWaterHeater, EvoDHW, GeniusWaterHeater, HiveWaterHeater, IncomfortWaterHeater, MqttWaterHeater, TadoWaterHeater, ViCareWater, WaterHeater
+

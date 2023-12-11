@@ -1,0 +1,20 @@
+Classify based on the given phrases: 
+
+Base: Base
+
+Event Management: EventData, EventTypes, Events
+
+Date and Time Management: FAST_PYSQLITE_DATETIME, UnusedDateTime
+
+Data Representation: JSONLiteral, NativeLargeBinary
+
+Recorder Management: RecorderRuns
+
+Schema Management: SchemaChanges
+
+State Management: StateAttributes, States, StatesMeta
+
+Statistics Management: Statistics, StatisticsBase, StatisticsMeta, StatisticsRuns, StatisticsShortTerm
+
+Unused: Unused
+

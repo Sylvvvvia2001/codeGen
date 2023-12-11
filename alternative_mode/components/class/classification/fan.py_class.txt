@@ -1,0 +1,15 @@
+Fans:
+AsyncDemoPercentageFan, BAFFan, BaseDemoFan, BaseFan, BaseHomeKitFan, BondFan, ComfoConnectFan, DeconzFan, DemoPercentageFan, EsphomeFan, FreedomproFan, HomeKitFanV1, HomeKitFanV2, IkeaFan, IntellifireFan, KNXFan, KofFan, LutronCasetaFan, ModbusFan, ModernFormsFanEntity, MqttFan, RensonFan, SmartThingsFan, SmartyFan, SnoozFan, TasmotaFan, TemplateFan, ToloFan, TradfriAirPurifierFan, TuyaFanEntity, ValloxFanEntity, ValueMappingZwaveFan, VeSyncFanHA, WiLightFan, XiaomiAirFresh, XiaomiAirFreshA1, XiaomiAirFreshT2017, XiaomiAirPurifier, XiaomiAirPurifierMB4, XiaomiAirPurifierMiot, XiaomiFan, XiaomiFan1C, XiaomiFanMiot, XiaomiFanP5, XiaomiFanZA5, XiaomiGenericAirPurifier, XiaomiGenericDevice, XiaomiGenericFan, ZWaveMeFan, ZhaFan, ZwaveFan, ZwaveThermostatFan
+
+Entity Descriptions:
+ExtraStateAttributeDetails, IntellifireFanEntityDescription
+
+Entity Programs:
+ISYFanEntity, ISYFanProgramEntity
+
+Humidifiers:
+WemoHumidifier
+
+Others:
+Fan, FanGroup, FanSwitch, UnsupportedPreset
+

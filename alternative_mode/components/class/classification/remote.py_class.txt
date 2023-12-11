@@ -1,0 +1,15 @@
+TV Remote:
+AndroidTVRemoteEntity, AppleTVRemote, BraviaTVRemote, PanasonicVieraRemoteEntity, PhilipsTVRemote, SamsungTVRemote
+
+Universal Remote:
+BroadlinkRemote, DemoRemote, HarmonyRemote, ITachIP2IRRemote, MySensorsRemote, RokuRemote, XiaomiMiioRemote
+
+Projector Remote:
+JvcProjectorRemote
+
+Satellite/Cable Remote:
+DIRECTVRemote
+
+Other Remotes:
+KaleidescapeRemote, KiraRemote, XboxRemote
+

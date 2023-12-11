@@ -1,0 +1,15 @@
+Image Processing:
+DemoImageProcessingFace, ImageProcessingAlprEntity, ImageProcessingSsocr, OpenCVImageProcessor, TensorFlowImageProcessor
+
+Face Detection and Recognition:
+DlibFaceDetectEntity, DlibFaceIdentifyEntity, MicrosoftFaceDetectEntity, MicrosoftFaceIdentifyEntity
+
+Object Detection:
+Doods, SighthoundEntity
+
+License Plate Recognition:
+ImageProcessingAlprEntity, OpenAlprCloudEntity
+
+QR Code:
+QrEntity
+

@@ -1,0 +1,8 @@
+Siren Devices:
+DeconzSiren, DemoSiren, DevoloSirenDeviceEntity, EzvizSirenEntity, OverkizSiren, ReolinkSirenEntity, TuyaSirenEntity, YoLinkSirenEntity, ZHASiren, ZWaveMeSiren, ZwaveSirenEntity
+
+Siren Related Features:
+ReolinkSirenEntityDescription, RfxtrxChime, RfxtrxOffDelayMixin, RfxtrxSecurityPanic, RingChimeSiren, SirenSwitch
+
+Please note that the classification is based on the given information and may not be exhaustive or completely accurate.
+

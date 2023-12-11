@@ -1,0 +1,6 @@
+BaseHaRemoteScanner, BaseHaScanner:
+BaseHaRemoteScanner, BaseHaScanner
+
+BluetoothScannerDevice:
+BluetoothScannerDevice
+

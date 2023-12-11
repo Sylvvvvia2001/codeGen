@@ -1,0 +1,18 @@
+Intent and Request Handling:
+AddItemIntent, AlexaIntentResponse, ListTopItemsIntent, SetIntentHandler, UnknownRequest
+
+Alexa Skills View:
+AlexaIntentsView
+
+User Interface:
+AlexaIntentsView, CardType
+
+Device Control:
+SetModeHandler
+
+Data Handling:
+HumidityHandler
+
+Speech Processing:
+SpeechType
+

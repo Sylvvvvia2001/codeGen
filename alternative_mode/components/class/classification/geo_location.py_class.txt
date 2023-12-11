@@ -1,0 +1,12 @@
+Geolocation and Event Management: 
+DemoGeolocationEvent, GeoJsonLocationEvent, GeonetnzQuakesEvent, IgnSismologiaLocationEvent, NswRuralFireServiceLocationEvent, QldBushfireLocationEvent
+
+Feed Entity Management: 
+IgnSismologiaFeedEntityManager, NswRuralFireServiceFeedEntityManager, QldBushfireFeedEntityManager, UsgsEarthquakesFeedEntityManager
+
+Event Management: 
+GdacsEvent, UsgsEarthquakesEvent
+
+System Management: 
+DemoManager
+

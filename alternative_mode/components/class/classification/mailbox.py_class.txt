@@ -1,0 +1,6 @@
+AsteriskCDR and AsteriskMailbox: 
+These phrases are related to the Asterisk telephony software and likely have to do with call detail records (CDR) and mailboxes used in the system.
+
+DemoMailbox: 
+This phrase likely refers to a demo or demonstration mailbox used for testing or showcasing purposes.
+

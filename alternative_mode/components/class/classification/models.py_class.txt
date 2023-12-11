@@ -1,0 +1,17 @@
+Event and Data Management:
+ActionTrace, AdvantageAirData, AnovaData, BAFData, BAFDiscovery, BaseTrace, BondData, CO2SignalData, CO2SignalResponse, CO2SignalUnit, DeviceInfo, DomainBlueprints, DomainData, DoorBirdData, DormakabaDkeyData, ELKM1Data, EntityDebugInfo, EntityTopicState, EufyLifeData, Event, EventAsRow, GeocachingOAuthApiUrls, HaAsyncServiceBrowser, HaAsyncZeroconf, HaBluetoothConnector, HaZeroconf, IsyData, JellyfinData, LD2410BLEData, LEDBLEData, LazyEventPartialState, LogbookConfig, LookinData, MatterDiscoverySchema, MatterEntityInfo, MelnorBluetoothEntity, MelnorDataUpdateCoordinator, MelnorZoneEntity, MqttCommandTemplate, MqttData, MqttOriginInfo, MqttValueTemplate, MyStromData, PayloadSentinel, PendingDiscovered, Profile, PublishMessage, PullPointManagerState, ReceiveMessage, RepairsFlow, RepairsProtocol, RestoredTrace, RoborockHassDeviceInfo, RoombaData, RuuviGatewayRuntimeData, SQLData, SnoozConfigurationData, SourceRep, SpeechMetadata, SpeechResult, SubscriptionDebugInfo, SynologyDSMData, ToonBoilerDeviceEntity, ToonBoilerModuleDeviceEntity, ToonDisplayDeviceEntity, ToonElectricityMeterDeviceEntity, ToonEntity, ToonGasMeterDeviceEntity, ToonRequiredKeysMixin, ToonSolarDeviceEntity, ToonWaterMeterDeviceEntity, TriggerDebugInfo, WemoConfigEntryData, WemoData, WizData, Ws66iData, YaleXSBLEData
+
+Device and Connection Management:
+Adapter, BoardInfo, BluetoothScanningMode, Capabilities, HardwareInfo, HardwareProtocol, HomeKitEntryData, IPv4ConfiguredAddress, IPv6ConfiguredAddress, LutronButton, LutronCasetaData, LutronKeypad, LutronKeypadData, MediaSource, MediaSourceItem, PTZ, PowerwallBaseInfo, PowerwallData, PowerwallRuntimeData, USBDevice, USBInfo, WLEDEntity
+
+Media and Entertainment:
+BrowseMediaSource, PlayMedia, PlexMediaSearchResult, PlexSession, Video
+
+Voice and Speech Recognition:
+WakeWord, Voice
+
+Web and Network Management:
+WebHookManagerState
+
+Note: The classification is based on the given context of connecting and controlling smart home devices.
+

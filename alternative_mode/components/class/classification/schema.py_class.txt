@@ -1,0 +1,3 @@
+Schema:
+BinarySensorSchema, ButtonSchema, ClimateSchema, CoverSchema, DateSchema, DateTimeSchema, EventSchema, ExposeSchema, FanSchema, KNXPlatformSchema, LightSchema, NotifySchema, NumberSchema, SceneSchema, SelectSchema, SensorSchema, SwitchSchema, TextSchema, TimeSchema, WeatherSchema
+

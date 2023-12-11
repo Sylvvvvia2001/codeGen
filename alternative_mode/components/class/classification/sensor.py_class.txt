@@ -1,0 +1,639 @@
+Sensor:
+APCUPSdSensor, AbodeSensor, AccSensorEntityDescription, AccountSensor, AccuWeatherSensor, AcmedaBattery, AdGuardHomeSensor, AdsSensor, AdvantageAirTimeTo, AdvantageAirZoneSignal, AdvantageAirZoneTemp, AdvantageAirZoneVent, AemetForecastSensor, AemetSensor, AfterShipSensor, AirNowSensor, AirQSensor, AirQualitySensor, AirSensor, AirVisualGeographySensor, AirVisualProSensor, AirlySensor, AirthingsHeaterEnergySensor, AirthingsSensor, AirzoneAidooSensor, AirzoneHotWaterSensor, AirzoneSensor, AirzoneWebServerSensor, AirzoneZoneSensor, AladdinConnectSensor, AlarmDecoderSensor, Alpha2HeatControlValveOpeningSensor, AlphaVantageSensor, AmberForecastSensor, AmberGridSensor, AmberPriceSensor, AmberSensor, AmbientWeatherSensor, AmcrestSensor, AnalogInput, AnovaSensor, AqaraFeedingSource, AqaraPetFeederLastFeedingSize, AqaraPetFeederLastFeedingSource, AqaraPetFeederPortionsDispensed, AqaraPetFeederWeightDispensed, AqaraSmokeDensityDbm, AquaLogicSensor, Aranet4BluetoothSensorEntity, AranetSensorEntityDescription, ArestSensor, ArwnSensor, AsusWrtSensor, AtagSensor, AtomeSensor, AttributeSensor, AtwZoneSensor, AugustBatterySensor, AugustOperatorSensor, AugustSensorEntityDescription, AuroraSensor, AussieBroadandSensorEntity, AwairSensor, AzureDevOpsSensor, BAFSensor, BAFSensorDescription, BMWSensor, BTHomeBluetoothSensorEntity, BanSensor, BaseEntityDescription, BaseTomorrowioSensorEntity, Battery, BboxSensor, BboxUptimeSensor, BeewiSmartclimSensor, BitcoinSensor, BizkaibusSensor, BleBoxSensorEntity, BlinkSensor, BlockSensor, BlockSensorDescription, BlockSleepingSensor, BlockchainSensor, BloomSkySensor, BrSensor, BroadlinkSensor, BrotherPrinterSensor
+
+Sensor Description:
+AbodeSensorDescription, AccSensorEntityDescription, AccuWeatherSensorDescription, AdGuardHomeEntityDescription, AirNowEntityDescription, AirQEntityDescription, AirlySensorEntityDescription, AndroidIPWebcamSensorEntityDescription, AnovaSensorEntityDescription, AsusWrtSensorEntityDescription, AtomeData, AttributeSensorDescription, AugustSensorEntityDescription, AzureDevOpsSensorEntityDescription, BAFSensorDescription, BMWSensorEntityDescription, BaseEntityDescription, BlueMaestroBluetoothSensorEntity, BrotherSensorEntityDescription
+
+Mixin:
+AbodeSensorDescriptionMixin, AccSensorEntityDescriptionMixin, AdGuardHomeEntityDescriptionMixin, AirNowEntityDescriptionMixin, AirQEntityDescriptionMixin, AirVisualProMeasurementKeyMixin, AndroidIPWebcamSensorEntityDescriptionMixin, AnovaSensorEntityDescriptionMixin, AugustRequiredKeysMixin, AwairRequiredKeysMixin, AzureDevOpsSensorEntityDescriptionMixin, BAFSensorDescriptionMixin, BaseEntityDescriptionMixin
+
+API:
+APICount, APIData
+
+Other:
+APCUPSdSensor, APIData, AtomeData, BanLogParser
+
+Device:
+BrotherSensorRequiredKeysMixin, Device, DeviceBaseEntityDescriptionMixin, DeviceSensor, DeviceTemperature
+
+Sensor:
+BrottsplatskartanSensor, CO2Sensor, CO2SensorEntityDescription, CPUSpeedSensor, CanarySensor, CarbonDioxideConcentration, CarbonMonoxideConcentration, ComelitSensorEntity, ComfoConnectSensor, ComfoconnectRequiredKeysMixin, ComfoconnectSensorEntityDescription, CommandSensor, CommandSensorData, CommunicationQualitySensor, CompensationSensor, CoolmasterCleanFilter, CoreSensor, CupsData, CupsSensor, CurrencylayerData, CurrencylayerSensor, CurrentEnergyUsageSensor, CurrentPowerSensor, CurrentSensor, DSMREntity, DSMRSensor, DSMRSensorEntityDescription, DSMRSensorEntityDescriptionMixin, DaikinRequiredKeysMixin, DaikinSensor, DaikinSensorEntityDescription, DanfossAir, DeconzBatteryTracker, DeconzSensor, DeconzSensorDescription, DeconzSensorDescriptionMixin, DeliveryMeterSensor, DelugeSensor, DelugeSensorEntityDescription, DemoSensor, DemoSumSensor, DerivativeSensor, DestinationSensor, DevoloSensorEntity, DevoloSensorEntityDescription, DevoloSensorRequiredKeysMixin, DexcomGlucoseTrendSensor, DexcomGlucoseValueSensor, DexcomSensorEntity, DiscogsSensor, DiscovergyMixin, DiscovergySensor, DiscovergySensorEntityDescription, DoorSensorBattery, DoorSensorEntity, DoorSensorTemperature, DormakabaDkeySensor, DovadoRequiredKeysMixin, DovadoSensor, DovadoSensorEntityDescription, Dremel3DPrinterSensor, Dremel3DPrinterSensorEntityDescription, Dremel3DPrinterSensorEntityMixin, DteEnergyBridgeSensor, DublinPublicTransportSensor, DwdWeatherWarningsSensor, DweetData, DweetSensor, EBoxData, EBoxSensor, ECAlertSensor, ECBaseSensor, ECSensor, ECSensorEntityDescription, ECSensorEntityDescriptionMixin, EDL21, EDL21Entity, EagleSensor, EasyEnergySensorEntity, EasyEnergySensorEntityDescription, EasyEnergySensorEntityDescriptionMixin, EbusdSensor, EcoNetSensor, EcoalTempSensor, EcobeeSensor, EcobeeSensorEntityDescription, EcobeeSensorEntityDescriptionMixin, EcoforestRequiredKeysMixin, EcoforestSensor, EcoforestSensorEntityDescription, EcowittSensorEntity, EddystoneTemp, EfergySensor, ElecPriceSensor, ElectricKiwiHOPEntity, ElectricKiwiHOPRequiredKeysMixin, ElectricKiwiHOPSensorEntityDescription, ElectricalMeasurement, ElectricalMeasurementApparentPower, ElectricalMeasurementFrequency, ElectricalMeasurementPowerFactor, ElectricalMeasurementRMSCurrent, ElectricalMeasurementRMSVoltage, ElgatoEntityDescriptionMixin, ElgatoSensorEntity, ElgatoSensorEntityDescription, EliqSensor, ElkCounter, ElkKeypad, ElkPanel, ElkSensor, ElkSetting
+
+CityBikes:
+CityBikesNetwork, CityBikesNetworks, CityBikesRequestError, CityBikesStation
+
+CertExpiry:
+CertExpiryEntity
+
+PublicTransport:
+DeLijnPublicTransportSensor, DublinPublicTransportSensor
+
+Weather:
+DwdWeatherWarningsSensor
+
+Music:
+DiscogsSensor
+
+Energy:
+CurrentEnergyUsageSensor, CurrentPowerSensor, ElectricalMeasurement, ElectricalMeasurementApparentPower, ElectricalMeasurementFrequency, ElectricalMeasurementPowerFactor, ElectricalMeasurementRMSCurrent, ElectricalMeasurementRMSVoltage, EasyEnergySensorEntity, EasyEnergySensorEntityDescription, EasyEnergySensorEntityDescriptionMixin, EfergySensor
+
+Date and Time:
+DSMREntity, DSMRSensor, DSMRSensorEntityDescription, DSMRSensorEntityDescriptionMixin, ECAlertSensor, ECBaseSensor, ECSensor, ECSensorEntityDescription, ECSensorEntityDescriptionMixin, EDL21, EDL21Entity
+
+Home Security:
+CanarySensor, DoorSensorBattery, DoorSensorEntity, DoorSensorTemperature, DormakabaDkeySensor, ElkCounter, ElkKeypad, ElkPanel, ElkSensor, ElkSetting
+
+Printer:
+Dremel3DPrinterSensor, Dremel3DPrinterSensorEntityDescription, Dremel3DPrinterSensorEntityMixin
+
+Meter:
+DeliveryMeterSensor
+
+Lighting:
+DeconzBatteryTracker, DeconzSensor, DeconzSensorDescription, DeconzSensorDescriptionMixin
+
+Communication:
+CommandSensor, CommandSensorData, CommunicationQualitySensor
+
+Temperature and Climate:
+ComelitSensorEntity, ComfoConnectSensor, ComfoconnectRequiredKeysMixin, ComfoconnectSensorEntityDescription, CoolmasterCleanFilter, CoreSensor, CPUSpeedSensor, DaikinRequiredKeysMixin, DaikinSensor, DaikinSensorEntityDescription, DanfossAir, DevoloSensorEntity, DevoloSensorEntityDescription, DevoloSensorRequiredKeysMixin, EagleSensor, EcoNetSensor, EcoalTempSensor, EcobeeSensor, EcobeeSensorEntityDescription, EcobeeSensorEntityDescriptionMixin, EcoforestRequiredKeysMixin, EcoforestSensor, EcoforestSensorEntityDescription, EcowittSensorEntity, EddystoneTemp
+
+Music and Entertainment:
+DiscogsSensor
+
+Transportation:
+DiscoverYandexTransport, DiscovergyMixin, DiscovergySensor, DiscovergySensorEntityDescription
+
+Miscellaneous:
+DemoSensor, DemoSumSensor, DerivativeSensor, DestinationSensor, DeviceBaseEntityDescriptionMixin, DevoloBatteryEntity, DevoloConsumptionEntity, DevoloGenericMultiLevelDeviceEntity, DevoloMultiLevelDeviceEntity, DexcomGlucoseTrendSensor, DexcomGlucoseValueSensor, DexcomSensorEntity, DweetData, DweetSensor, EBoxData, EBoxSensor, EasyEnergySensorEntity, EasyEnergySensorEntityDescription, EasyEnergySensorEntityDescriptionMixin, EbusdSensor, EliqSensor, ElgatoEntityDescriptionMixin, ElgatoSensorEntity, ElgatoSensorEntityDescription
+
+Energy and Power Management:
+EmonitorPowerSensor, EnOceanPowerSensor, EnergyCostSensor, EnergyMeterSensor, EnergySensor, EnergyZeroSensorEntity, EnergyZeroSensorEntityDescription, EnergyZeroSensorEntityDescriptionMixin, EnvoyConsumptionEntity, EnvoyConsumptionRequiredKeysMixin, EnvoyConsumptionSensorEntityDescription, EnvoyEnchargeAggregateEntity, EnvoyEnchargeAggregateRequiredKeysMixin, EnvoyEnchargeAggregateSensorEntityDescription, EnvoyEnchargeEntity, EnvoyEnchargeInventoryEntity, EnvoyEnchargePowerEntity, EnvoyEnchargePowerRequiredKeysMixin, EnvoyEnchargePowerSensorEntityDescription, EnvoyEnchargeRequiredKeysMixin, EnvoyEnchargeSensorEntityDescription, EnvoyEnpowerEntity, EnvoyEnpowerRequiredKeysMixin, EnvoyEnpowerSensorEntityDescription, EnvoyInverterEntity, EnvoyInverterRequiredKeysMixin, EnvoyInverterSensorEntityDescription, EnvoyProductionEntity, EnvoyProductionRequiredKeysMixin, EnvoyProductionSensorEntityDescription, EnvoySensorBaseEntity, EnvoySystemSensorEntity
+
+Environment Monitoring:
+EnOceanHumiditySensor, EnOceanTemperatureSensor
+
+Home Security:
+ElkZone, EnOceanWindowHandle, EnvisalinkSensor
+
+Transportation:
+EnturProxy, EnturPublicTransportSensor, FerrySensor
+
+Printer and Office Equipment:
+EpsonPrinterCartridge
+
+Home Automation:
+EsphomeSensor, EsphomeTextSensor, FibaroAdditionalSensor, FibaroSensor, Folder, FolderSensor, FullySensor, FullySensorEntityDescription, GenericSensor, FluxPairedRemotes, GardenaBluetoothRemainSensor, GardenaBluetoothSensor, GardenaBluetoothSensorEntityDescription
+
+Data and File Management:
+EmonCmsData, EmonCmsSensor, ExchangeData, FileSensor, FilesizeEntity
+
+Financial and Banking:
+FinTsAccount, FinTsClient, FinTsHoldingsAccount
+
+Fitness and Health:
+FitbitBatteryLevelSensor, FitbitBatterySensor, FitbitSensor, FitbitSensorEntityDescription, EufyLifeHeartRateSensorEntity, EufyLifeRealTimeWeightSensorEntity, EufyLifeSensorEntity, EufyLifeWeightSensorEntity, FloBatterySensor, FloCurrentFlowRateSensor, FloDailyUsageSensor, FloHumiditySensor, FloPressureSensor, FloSystemModeSensor, FloTemperatureSensor
+
+Network and Connectivity:
+EnOceanSensor, EnOceanSensorEntityDescription, EnOceanSensorEntityDescriptionMixin, EnOceanSensorEntityDescriptionMixin, EnvoySensorBaseEntity, EnvoySystemSensorEntity, EsphomeSensor, EsphomeTextSensor, EtherscanSensor, EzvizSensor, FreeboxBatterySensor, FreeboxCallSensor, FreeboxDiskSensor, FreeboxSensor, FritzBoxCallMonitor, FritzBoxCallSensor, FritzBoxSensor, FritzEntityDescriptionMixinSensor, FritzSensorEntityDescription, FullySensor, FullySensorEntityDescription
+
+Climate and Environment:
+Felaqua, Filter, FilterDaysLeftSensor, FilterState, FlumeSensor, ForecastSensor, ForecastSolarSensorEntity, ForecastSolarSensorEntityDescription, FormaldehydeConcentration, GasSensor
+
+Public Services and Information:
+GTFSDepartureSensor, GaragesAmsterdamSensor, GdacsSensor, GeoRssServiceSensor, GeocachingRequiredKeysMixin, GeocachingSensor, GeocachingSensorEntityDescription, GeonetnzQuakesSensor, GeonetnzVolcanoSensor
+
+Miscellaneous:
+GeniusBattery, GeniusIssue, GEMSensor, GenericHueGaugeSensorEntity
+
+GiosSensor, GiosSensorEntityDescription, GiosSensorRequiredKeysMixin:
+GiosSensor, GiosSensorEntityDescription, GiosSensorRequiredKeysMixin
+
+GitHubSensorEntity, GitHubSensorEntityDescription:
+GitHubSensorEntity, GitHubSensorEntityDescription
+
+GitLabData, GitLabSensor:
+GitLabData, GitLabSensor
+
+GitterSensor:
+GitterSensor
+
+GlancesSensor, GlancesSensorEntityDescription, GlancesSensorEntityDescriptionMixin:
+GlancesSensor, GlancesSensorEntityDescription, GlancesSensorEntityDescriptionMixin
+
+GoalZeroSensor:
+GoalZeroSensor
+
+GoodweSensorEntityDescription:
+GoodweSensorEntityDescription
+
+GoogleMailSensor:
+GoogleMailSensor
+
+GoogleTravelTimeSensor:
+GoogleTravelTimeSensor
+
+GoogleWifiAPI, GoogleWifiRequiredKeysMixin, GoogleWifiSensor, GoogleWifiSensorEntityDescription:
+GoogleWifiAPI, GoogleWifiRequiredKeysMixin, GoogleWifiSensor, GoogleWifiSensorEntityDescription
+
+GoveeBluetoothSensorEntity:
+GoveeBluetoothSensorEntity
+
+GpsdSensor:
+GpsdSensor
+
+GrowattData, GrowattInverter:
+GrowattData, GrowattInverter
+
+HERETravelTimeSensor:
+HERETravelTimeSensor
+
+HMSensor:
+HMSensor
+
+HVVDepartureSensor:
+HVVDepartureSensor
+
+HabitipyData, HabitipySensor, HabitipyTaskSensor:
+HabitipyData, HabitipySensor, HabitipyTaskSensor
+
+HassAqualinkSensor, HassioAddonSensor, HassioOSSensor:
+HassAqualinkSensor, HassioAddonSensor, HassioOSSensor
+
+HaveIBeenPwnedData, HaveIBeenPwnedSensor:
+HaveIBeenPwnedData, HaveIBeenPwnedSensor
+
+HddTempData, HddTempSensor:
+HddTempData, HddTempSensor
+
+HealthDataRingSensor:
+HealthDataRingSensor
+
+HeatMeterSensor, HeatMeterSensorEntityDescription, HeatMeterSensorEntityDescriptionMixin:
+HeatMeterSensor, HeatMeterSensorEntityDescription, HeatMeterSensorEntityDescriptionMixin
+
+HistoryRingSensor, HistoryStatsSensor, HistoryStatsSensorBase:
+HistoryRingSensor, HistoryStatsSensor, HistoryStatsSensorBase
+
+HiveSensorEntity:
+HiveSensorEntity
+
+HomeConnectSensor:
+HomeConnectSensor
+
+HomeKitBatterySensor, HomeKitCarbonDioxideSensor, HomeKitHumiditySensor, HomeKitLightSensor, HomeKitSensor, HomeKitSensorEntityDescription, HomeKitTemperatureSensor:
+HomeKitBatterySensor, HomeKitCarbonDioxideSensor, HomeKitHumiditySensor, HomeKitLightSensor, HomeKitSensor, HomeKitSensorEntityDescription, HomeKitTemperatureSensor
+
+HomeWizardEntityDescriptionMixin, HomeWizardSensorEntity, HomeWizardSensorEntityDescription:
+HomeWizardEntityDescriptionMixin, HomeWizardSensorEntity, HomeWizardSensorEntityDescription
+
+HomematicipAccesspointDutyCycle, HomematicipEnergySensor, HomematicipHeatingThermostat, HomematicipHumiditySensor, HomematicipIlluminanceSensor, HomematicipPassageDetectorDeltaCounter, HomematicipPowerSensor, HomematicipTemperatureSensor, HomematicipTodayRainSensor, HomematicipWindspeedSensor, HomematicpTemperatureExternalSensorCh1, HomematicpTemperatureExternalSensorCh2, HomematicpTemperatureExternalSensorDelta:
+HomematicipAccesspointDutyCycle, HomematicipEnergySensor, HomematicipHeatingThermostat, HomematicipHumiditySensor, HomematicipIlluminanceSensor, HomematicipPassageDetectorDeltaCounter, HomematicipPowerSensor, HomematicipTemperatureSensor, HomematicipTodayRainSensor, HomematicipWindspeedSensor, HomematicpTemperatureExternalSensorCh1, HomematicpTemperatureExternalSensorCh2, HomematicpTemperatureExternalSensorDelta
+
+HoneywellSensor, HoneywellSensorEntityDescription, HoneywellSensorEntityDescriptionMixin:
+HoneywellSensor, HoneywellSensorEntityDescription, HoneywellSensorEntityDescriptionMixin
+
+HostSensor:
+HostSensor
+
+HpIloData, HpIloSensor:
+HpIloData, HpIloSensor
+
+HuaweiLteSensor, HuaweiSensorEntityDescription, HuaweiSensorGroup:
+HuaweiLteSensor, HuaweiSensorEntityDescription, HuaweiSensorGroup
+
+HueBattery, HueBatterySensor, HueLightLevel, HueLightLevelSensor, HueSensorBase, HueTemperature, HueTemperatureSensor, HueZigbeeConnectivitySensor:
+HueBattery, HueBatterySensor, HueLightLevel, HueLightLevelSensor, HueSensorBase, HueTemperature, HueTemperatureSensor, HueZigbeeConnectivitySensor
+
+HuisbaasjeSensor, HuisbaasjeSensorEntityDescription:
+HuisbaasjeSensor, HuisbaasjeSensorEntityDescription
+
+Humidity, HumidityRatingSensor, HumiditySensor:
+Humidity, HumidityRatingSensor, HumiditySensor
+
+HydrawiseSensor:
+HydrawiseSensor
+
+HydrologicalData:
+HydrologicalData
+
+IBeaconRequiredKeysMixin, IBeaconSensorEntity, IBeaconSensorEntityDescription:
+IBeaconRequiredKeysMixin, IBeaconSensorEntity, IBeaconSensorEntityDescription
+
+IHCSensor:
+IHCSensor
+
+INKBIRDBluetoothSensorEntity:
+INKBIRDBluetoothSensorEntity
+
+IOSSensor:
+IOSSensor
+
+IPMARequiredKeysMixin, IPMASensor, IPMASensorEntityDescription:
+IPMARequiredKeysMixin, IPMASensor, IPMASensorEntityDescription
+
+IPPSensor, IPPSensorEntityDescription, IPPSensorEntityDescriptionMixin:
+IPPSensor, IPPSensorEntityDescription, IPPSensorEntityDescriptionMixin
+
+IPSensor:
+IPSensor
+
+IPWebcamSensor:
+IPWebcamSensor
+
+ISYAuxSensorEntity, ISYSensorEntity:
+ISYAuxSensorEntity, ISYSensorEntity
+
+IamMeter:
+IamMeter
+
+IcloudDeviceBatterySensor:
+IcloudDeviceBatterySensor
+
+IkeaDeviceRunTime, IkeaFilterRunTime:
+IkeaDeviceRunTime, IkeaFilterRunTime
+
+Illuminance:
+Illuminance
+
+ImapSensor:
+ImapSensor
+
+IncidentsSensor:
+IncidentsSensor
+
+IncomfortSensor, IncomfortSensorEntityDescription:
+IncomfortSensor, IncomfortSensorEntityDescription
+
+IndexSensor:
+IndexSensor
+
+InfluxFluxSensorData, InfluxQLSensorData, InfluxSensor:
+InfluxFluxSensorData, InfluxQLSensorData, InfluxSensor
+
+IntegrationSensor, IntegrationSensorExtraStoredData:
+IntegrationSensor, IntegrationSensorExtraStoredData
+
+IntellifireSensor, IntellifireSensorEntityDescription, IntellifireSensorRequiredKeysMixin:
+IntellifireSensor, IntellifireSensorEntityDescription, IntellifireSensorRequiredKeysMixin
+
+Inverter, InverterSensor:
+Inverter, InverterSensor
+
+IotaWattSensor, IotaWattSensorEntityDescription:
+IotaWattSensor, IotaWattSensorEntityDescription
+
+Sensor:
+Iperf3Sensor, IrishRailTransportSensor, IslamicPrayerTimeSensor, IssSensor, JellyfinSensor, JewishCalendarSensor, JuiceNetSensorDevice, JustNimbusSensor, KNXSensor, KWBSensor, KaiterraSensor, KaleidescapeSensor, KebaSensor, KegtronBluetoothSensorEntity, LidarrSensor, LD2410BLESensor, LIFXRssiSensor, LQISensor, LTESensor, LaCrosseBattery, LaCrosseHumidity, LaCrosseSensor, LaCrosseTemperature, LaCrosseViewSensor, LastFmSensor, LaunchLibrarySensor, LcnLedLogicSensor, LcnVariableSensor, LeafBatterySensor, LeafRangeSensor, LeafWetness, LidarrSensor, LightwaveBattery, LinuxBatterySensor, LitterRobotSensorEntity, LocalMillSensor, LoggerSensor, LogiSensor, LondonTubeSensor, LookinSensorEntity, LoqedSensor, LyricSensor, MQTTRoomSensor, MVGLiveSensor, MarkerSensor, MatterSensor, Measurement, MeaterProbeTemperature, MedcomSensor, MelDeviceSensor, MelnorSensorEntity, MelnorZoneSensorEntity, MetOfficeCurrentSensor, MeteoFranceAlertSensor, MeteoFranceRainSensor, MeteoFranceSensor, MeteoFranceSensorEntityDescription, MeteoclimaticSensor, MeterSensor, MfiSensor, MillSensor, MinecraftServerSensorEntity, MinutPointSensor, MoatBluetoothSensorEntity, MobileAppSensor, ModbusRegisterSensor, ModemCalleridSensor, ModernFormsFanTimerRemainingTimeSensor, ModernFormsLightTimerRemainingTimeSensor, ModernFormsSensor, MoldIndicator, Monitor, MoonSensorEntity, MopekaBluetoothSensorEntity, MotionBatterySensor, MotionEyeActionSensor, MotionSignalStrengthSensor, MotionTDBUBatterySensor, MqttSensor, MyBatterySensor, MySensorsSensor, MyStromSwitchSensor, NAMSensor
+
+Sensor Entity Description:
+JellyfinSensorEntityDescription, JellyfinSensorEntityDescriptionMixin, JewishCalendarTimeSensor, JustNimbusEntityDescription, JustNimbusEntityDescriptionMixin, KaiterraSensorEntityDescription, KaiterraSensorRequiredKeysMixin, KaleidescapeSensorEntityDescription, KrakenRequiredKeysMixin, KrakenSensorEntityDescription, LaCrosseSensorEntityDescription, LaCrosseSensorEntityDescriptionMixin, LaMetricEntityDescriptionMixin, LaMetricSensorEntityDescription, LastFmSensor, LaunchLibrarySensorEntityDescription, LaunchLibrarySensorEntityDescriptionMixin, LidarrSensorEntityDescription, LidarrSensorEntityDescriptionMixIn, LyricSensorEntityDescription, LyricSensorEntityDescriptionMixin, MelcloudRequiredKeysMixin, MelcloudSensorEntityDescription, MelnorSensorEntityDescription, MelnorSensorEntityDescriptionMixin, MelnorZoneSensorEntityDescription, MelnorZoneSensorEntityDescriptionMixin, MinecraftServerEntityDescriptionMixin, MinecraftServerSensorEntityDescription, MinutPointRequiredKeysMixin, MinutPointSensorEntityDescription, MeteoFranceRequiredKeysMixin, MeteoFranceSensorEntityDescription, MotionBaseEntityDescriptionMixin, MyStromSwitchSensorEntityDescription, NAMSensorEntityDescription, NAMSensorRequiredKeysMixin
+
+Transportation:
+NMBSLiveBoard, NSDepartureSensor, NextBusDepartureSensor
+
+Weather:
+NOAATidesAndCurrentsSensor, NOAATidesData, NWSSensor, NetatmoWeatherSensor, OpenSkySensor, OpenWeatherMapForecastSensor, OpenWeatherMapSensor
+
+Home Automation:
+NUTSensor, NeatoSensor, NetatmoClimateBatterySensor, NetatmoPublicSensor, NetatmoRoomSensor, NetatmoSensor, NetatmoSensorEntityDescription, NightscoutSensor, NoboTemperatureSensor, NotionSensor, NotionSensorDescription, NukiBatterySensor, OmnilogicSensor, OndiloICO, OpenGarageSensor, OpenHardwareMonitorData, OpenHardwareMonitorDevice, OpenUvSensor, OpenUvSensorEntityDescription, OpenUvSensorEntityDescriptionMixin, OpenexchangeratesSensor, OpowerSensor, OralBBluetoothSensorEntity, OriginSensor, OutdoorAirTemperatureSensor, OverkizHomeKitSetupCodeSensor, OverkizSensorDescription, OverkizStateSensor, PecoSensor, PECOSensorEntityDescription, PECOSensorEntityDescriptionMixin, PiHoleSensor, PicnicSensor, PicnicSensorEntityDescription, PilightSensor, PlaatoSensor, PlenticoreDataSensor, PlenticoreRequiredKeysMixin, PlenticoreSensorEntityDescription, PlexLibrarySectionSensor, PlexSensor, PlugwiseSensorEntity, PlugwiseSensorEntityDescription, PocketCastsSensor, PoolSenseSensor
+
+Energy Monitoring:
+NeurioData, NeurioEnergy, NetdataAlarms, NetdataData, NetdataSensor, NetgearRouterSensorEntity, NetgearSensorEntity, NetgearSensorEntityDescription, OASATelematicsData, OASATelematicsSensor, OhmconnectSensor, OhmpilotSensor, OmbiSensor, OncueSensorEntity, OpowerEntityDescription, OpowerEntityDescriptionMixin, OriginSensor, OutlierFilter, P1MonitorSensorEntity, PhaseCurrentSensor, PhasePowerSensor, PhaseVoltageSensor, PolledElectricalMeasurement, PolledSmartEnergySummation, PowerFlowSensor, PowerSensor, PowerViewSensor, PowerWallBackupReserveSensor, PowerWallChargeSensor, PowerWallEnergyDirectionSensor, PowerWallEnergySensor
+
+Home Security:
+ONVIFSensor
+
+Smart Home Integration:
+NextcloudSensor, NextcloudSensorEntityDescription, OctoPrintEstimatedFinishTimeSensor, OctoPrintJobPercentageSensor, OctoPrintSensorBase, OctoPrintStartTimeSensor, OctoPrintStatusSensor, OctoPrintTemperatureSensor
+
+Sensor Data:
+NMBSSensor, NetatmoRequiredKeysMixin, NextDnsSensor, NextDnsSensorEntityDescription, NextDnsSensorRequiredKeysMixin, NumatoGpioAdc, NumberEntity, OctoPrintSensorBase, PegelOnlineRequiredKeysMixin, PegelOnlineSensor, PegelOnlineSensorEntityDescription, PhaseCurrentSensor, PhasePowerSensor, PhaseVoltageSensor, PocketCastsSensor, PolledElectricalMeasurement, PolledSmartEnergySummation, PowerFlowSensor, PowerSensor, PowerViewSensor, PowerWallBackupReserveSensor, PowerWallChargeSensor, PowerWallEnergyDirectionSensor, PowerWallEnergySensor
+
+Powerwall Sensor:
+PowerWallExportSensor, PowerWallImportSensor, PowerwallSensorEntityDescription, PowerwallRequiredKeysMixin
+
+Powerview Sensor:
+PowerviewSensorDescription, PowerviewSensorDescriptionMixin
+
+Pressure Sensor:
+Pressure
+
+Private Device Sensor:
+PrivateBLEDeviceSensor, PrivateDeviceSensorEntityDescription, PrivateDeviceSensorEntityDescriptionRequired
+
+Program Time Remaining Sensor:
+ProgramTimeRemainingSensor
+
+Protect Sensor:
+ProtectDeviceSensor, ProtectEventSensor, ProtectNVRSensor, ProtectSensorEntityDescription, ProtectSensorEventEntityDescription
+
+Provision Settings Sensor:
+ProvisionSettingsSensor
+
+PrusaLink Sensor:
+PrusaLinkSensorEntity, PrusaLinkSensorEntityDescription, PrusaLinkSensorEntityDescriptionMixin
+
+Public Transport Sensor:
+PublicTransportData
+
+Pulse Counter Sensor:
+PulseCounter
+
+PureEnergie Sensor:
+PureEnergieSensorEntity, PureEnergieSensorEntityDescription, PureEnergieSensorEntityDescriptionMixin
+
+Purity Sensor:
+PurityRatingSensor, PuritySensor
+
+PurpleAir Sensor:
+PurpleAirSensorEntity, PurpleAirSensorEntityDescription, PurpleAirSensorEntityDescriptionMixin
+
+PushBullet Notification Sensor:
+PushBulletNotificationSensor
+
+PyLoad Sensor:
+PyLoadAPI, PyLoadSensor
+
+QBittorrent Sensor:
+QBittorrentMixin, QBittorrentSensor, QBittorrentSensorEntityDescription
+
+QNAP Sensor:
+QNAPCPUSensor, QNAPDriveSensor, QNAPMemorySensor, QNAPNetworkSensor, QNAPSensor, QNAPSystemSensor, QNAPVolumeSensor
+
+QS Sensor:
+QSSensor
+
+Qingping Bluetooth Sensor:
+QingpingBluetoothSensorEntity
+
+Qsw Sensor:
+QswSensor, QswSensorEntityDescription
+
+RAPTPill Bluetooth Sensor:
+RAPTPillBluetoothSensorEntity
+
+RDW Sensor:
+RDWSensorEntity, RDWSensorEntityDescription, RDWSensorEntityDescriptionMixin
+
+RMV Departure Sensor:
+RMVDepartureData, RMVDepartureSensor
+
+RSSI Sensor:
+RSSISensor
+
+RTorrent Sensor:
+RTorrentSensor
+
+Radarr Sensor:
+RadarrSensor, RadarrSensorEntityDescription, RadarrSensorEntityDescriptionMixIn
+
+RainBird Sensor:
+RainBirdSensor
+
+RainCloud Sensor:
+RainCloudSensor
+
+RainMachine Sensor:
+RainMachineSensorCompletionTimerDescription, RainMachineSensorDataDescription
+
+Random Sensor:
+RandomSensor
+
+Range Filter:
+RangeFilter
+
+Rating Sensor:
+Rating
+
+ReCollect Waste Sensor:
+ReCollectWasteSensor
+
+Real Time Data Endpoint:
+RealTimeDataEndpoint
+
+Realtime Emissions Sensor:
+RealtimeEmissionsSensor
+
+Reddit Sensor:
+RedditSensor
+
+Rejseplanen Transport Sensor:
+RejseplanenTransportSensor
+
+Renault Sensor:
+RenaultSensor, RenaultSensorEntityDescription, RenaultSensorRequiredKeysMixin
+
+Renson Sensor:
+RensonSensor, RensonSensorEntityDescription, RensonSensorEntityDescriptionMixin
+
+Reolink Host Sensor:
+ReolinkHostSensorEntity, ReolinkHostSensorEntityDescription, ReolinkHostSensorEntityDescriptionMixin
+
+Reolink Sensor:
+ReolinkSensorEntity, ReolinkSensorEntityDescription, ReolinkSensorEntityDescriptionMixin
+
+Repetier Job Sensor:
+RepetierJobEndSensor, RepetierJobSensor, RepetierJobStartSensor
+
+Repetier Sensor:
+RepetierSensor, RepetierTempSensor
+
+Rest Sensor:
+RestSensor, RestSensorDescription
+
+Rflink Sensor:
+RflinkSensor
+
+Rfxtrx Sensor:
+RfxtrxSensor, RfxtrxSensorEntityDescription
+
+Ridwell Sensor:
+RidwellSensor
+
+Ring Sensor:
+RingSensor, RingSensorEntityDescription
+
+Ripple Sensor:
+RippleSensor
+
+Risco Sensor:
+RiscoSensor
+
+Rituals Sensor:
+RitualsEntityDescriptionMixin, RitualsSensorEntity, RitualsSensorEntityDescription
+
+Roborock Sensor:
+RoborockSensorDescription, RoborockSensorDescriptionMixin, RoborockSensorEntity
+
+Robot Sensor:
+RobotSensorEntityDescription
+
+Roku Sensor:
+RokuSensorEntity, RokuSensorEntityDescription, RokuSensorEntityDescriptionMixin
+
+Roomba Sensor:
+RoombaSensor, RoombaSensorEntityDescription, RoombaSensorEntityDescriptionMixin
+
+Rova Sensor:
+RovaData, RovaSensor
+
+Rpc Sensor:
+RpcSensor, RpcSensorDescription, RpcSleepingSensor
+
+Rssi Sensor:
+RssiSensor
+
+Ruuvitag Bluetooth Sensor:
+RuuvitagBluetoothSensorEntity
+
+RymPro Sensor:
+RymProSensor
+
+SAJ Sensor:
+SAJsensor
+
+SFRBox Sensor:
+SFRBoxSensor, SFRBoxSensorEntityDescription, SFRBoxSensorMixin
+
+SMA Sensor:
+SMAsensor
+
+SMS Sensor:
+SMSTotalSensor, SMSUnreadSensor
+
+SQL Sensor:
+SQLSensor
+
+SSL Certificate Timestamp Sensor:
+SSLCertificateTimestamp
+
+Sabnzbd Sensor:
+SabnzbdRequiredKeysMixin, SabnzbdSensor
+
+Sensor:
+SabnzbdSensorEntityDescription, SchlageBatterySensor, ScrapeSensor, ScreenLogicPumpSensor, ScreenLogicPushSensor, ScreenLogicPushSensorDescription, ScreenLogicSensor, ScreenLogicSensorDescription, ScreenLogicSensorMixin, SeasonSensorEntity, SenseActiveSensor, SenseEnergyDevice, SenseTrendsSensor, SenseVoltageSensor, SensiboDeviceSensor, SensiboDeviceSensorEntityDescription, SensiboMotionSensor, SensiboMotionSensorEntityDescription, SensirionBluetoothSensorEntity, Sensor, SensorBase, SensorCommunitySensor, SensorConfig, SensorData, SensorFilter, SensorGroup, SensorManager, SensorProBluetoothSensorEntity, SensorPushBluetoothSensorEntity, SensorTemplate, SensorValueEntityDescription, SerialSensor, SeventeenTrackData, SeventeenTrackPackageSensor, SeventeenTrackSummarySensor, ShodanData, ShodanSensor, SigfoxAPI, SigfoxDevice, SimpleSensor, SimplisafeFreezeSensor, SimulatedSensor, SinopeHVACAction, SkybeaconHumid, SkybeaconTemp, SkybellSensor, SkybellSensorEntityDescription, SkybellSensorEntityDescriptionMixIn, SlackSensorEntity, SlaveSensor, SleepIQSensorEntity, SmappeePollingSensorEntityDescription, SmappeeRequiredKeysMixin, SmappeeSensor, SmappeeSensorEntityDescription, SmappeeVoltageSensorEntityDescription, SmartEnergyMetering, SmartEnergySummation, SmartMeterTexasSensor, SmartPlugSensor, SmartThingsPowerConsumptionSensor, SmartThingsSensor, SmartThingsThreeAxisSensor, SmartTubPrimaryFiltrationCycle, SmartTubSecondaryFiltrationCycle, SmartTubSensor, SmartySensor, SnmpData, SnmpSensor, SoilMoisture, SolarEdgeData, SolarEdgeDetailsSensor, SolarEdgeEnergyDetailsSensor, SolarEdgeInventorySensor, SolarEdgeLocalSensorEntityDescription, SolarEdgeOverviewSensor, SolarEdgePowerFlowSensor, SolarEdgeSensor, SolarEdgeSensorEntity, SolarEdgeSensorEntityDescription, SolarEdgeSensorEntityRequiredKeyMixin, SolarEdgeSensorFactory, SolarEdgeStorageLevelSensor, SolarLogSensorEntityDescription, SolarlogSensor, SomaSensor, SonarrSensor, SonarrSensorEntityDescription, SonarrSensorEntityDescriptionMixIn, SonosAudioInputFormatSensorEntity, SonosBatteryEntity, SonosFavoritesEntity, SourceAdapter, SpeedtestSensor, SpeedtestSensorEntityDescription, SpiderPowerPlugEnergy, SpiderPowerPlugPower, SrpEntity, StarlineSensor, StarlingBalanceSensor, StarlinkSensorEntity, StarlinkSensorEntityDescription, StarlinkSensorEntityDescriptionMixin, StartcaData, StartcaSensor, StationPriceSensor, StatisticsSensor, StatusValue, SteamSensor, SteamistSensorEntity, SteamistSensorEntityDescription, SteamistSensorEntityDescriptionMixin, StookwijzerSensor, StorageSensor, StreamLabsDailyUsage, StreamLabsMonthlyUsage, StreamLabsYearlyUsage, StreamlabsUsageData, StringEntity, SubaruSensor, SuezSensor, SunEntityDescriptionMixin, SunSensor, SunSensorEntityDescription, SupervisorProcessSensor, SupervisorSensor, SupplyAirTemperatureSensor, SupplyFanSpeedSensor, SureBattery, SwissHydrologicalDataSensor
+
+SwissPublicTransportSensor, SyncThruActiveAlertSensor, SyncThruDrumSensor, SyncThruInputTraySensor, SyncThruMainSensor, SyncThruOutputTraySensor, SyncThruSensor, SyncThruTonerSensor, SynoDSMInfoSensor, SynoDSMSensor, SynoDSMStorageSensor, SynoDSMUtilSensor, SynologyDSMSensorEntityDescription, SysMonitorSensorEntityDescription, SystemBridgeSensor, SystemBridgeSensorEntityDescription, SystemMonitorSensor, TMBSensor, TOTPSensor, TPLinkSensorEntityDescription, TVCameraSensorEntityDescription, TadoSensorEntityDescription, TadoSensorEntityDescriptionMixin, TailscaleSensorEntity, TailscaleSensorEntityDescription, TailscaleSensorEntityDescriptionMixin, Tami4EdgeSensorEntity, TankUtilitySensor, TasmotaSensor, TautulliSensor, TautulliSensorEntityDescription, TautulliSensorEntityMixin, TautulliSessionSensor, TautulliSessionSensorEntityDescription, TautulliSessionSensorEntityMixin, TcpSensor, Ted5000Gateway, Ted5000Sensor, TelldusLiveSensor, TellstickSensor, TemperSensor, Temperature, TemperatureRatingSensor, TemperatureSensor, ThermoBeaconBluetoothSensorEntity, ThermoProBluetoothSensorEntity, ThinkingCleanerSensor, ThrottleFilter, TibberDataCoordinator, TibberDataSensor, TibberRtDataCoordinator, TibberSensor, TibberSensorElPrice, TibberSensorRT, Tier1SmartEnergySummation, Tier2SmartEnergySummation, Tier3SmartEnergySummation, Tier4SmartEnergySummation, Tier5SmartEnergySummation, Tier6SmartEnergySummation, TiltBluetoothSensorEntity, TimeDateSensor, TimeLeft, TimeRemainingSensor, TimeSMAFilter, TimeThrottleFilter, ToloSensorEntity, ToloSensorEntityDescription, ToloSensorEntityDescriptionBase, TomorrowioSensorEntity, TomorrowioSensorEntityDescription, ToonBoilerDeviceSensor, ToonDisplayDeviceSensor, ToonElectricityMeterDeviceSensor, ToonGasMeterDeviceSensor, ToonSensor, ToonSensorEntityDescription, ToonSensorRequiredKeysMixin, ToonSolarDeviceSensor, ToonWaterMeterDeviceSensor, TorqueReceiveDataView, TorqueSensor, TractiveRequiredKeysMixin, TractiveSensor, TractiveSensorEntityDescription, TradfriSensor, TradfriSensorEntityDescription, TradfriSensorEntityDescriptionMixin, TrafikverketCameraSensor, TrafikverketRequiredKeysMixin, TrafikverketSensorEntityDescription, TrafikverketWeatherStation, TrainSensor, TransmissionSensor, TransmissionSpeedSensor, TransmissionStatusSensor, TransmissionTorrentsSensor, TransportNSWSensor, TravisCISensor, TriggerSensorEntity, TtnDataSensor, TtnDataStorage, TuyaSensorEntity, TuyaSensorEntityDescription, TwenteMilieuSensor, TwenteMilieuSensorDescription, TwenteMilieuSensorDescriptionMixin, TwitchSensor, UkTransportLiveBusTimeSensor, UkTransportLiveTrainTimeSensor, UkTransportSensor, UnifiSensorEntity, UnifiSensorEntityDescription, UnifiSensorEntityDescriptionMixin, UpnpSensor, UpnpSensorEntityDescription, UptimeRobotSensor, UptimeSensor, UsageSensor, UtilityMeterSensor, UtilitySensorExtraStoredData, UvLabel, V2CRequiredKeysMixin
+
+SwissPublicTransportSensor, TPLinkSensorEntityDescription, TVCameraSensorEntityDescription, TadoHomeSensor, TadoSensorEntityDescription, TadoSensorEntityDescriptionMixin, TadoZoneSensor, TuyaSensorEntity, TuyaSensorEntityDescription, TwenteMilieuSensor, TwenteMilieuSensorDescription, TwenteMilieuSensorDescriptionMixin, UkTransportLiveBusTimeSensor, UkTransportLiveTrainTimeSensor, UkTransportSensor
+
+SwitchBotSensor, SwitchbotRSSISensor, SwitcherSensorEntity
+
+SyncThruActiveAlertSensor, SyncThruDrumSensor, SyncThruInputTraySensor, SyncThruMainSensor, SyncThruOutputTraySensor, SyncThruSensor, SyncThruTonerSensor
+
+SynoDSMInfoSensor, SynoDSMSensor, SynoDSMStorageSensor, SynoDSMUtilSensor, SynologyDSMSensorEntityDescription
+
+SysMonitorSensorEntityDescription, SystemBridgeSensor, SystemBridgeSensorEntityDescription, SystemMonitorSensor
+
+TMBSensor, TOTPSensor
+
+TcpSensor
+
+Ted5000Gateway, Ted5000Sensor
+
+TelldusLiveSensor, TellstickSensor
+
+TemperSensor, Temperature, TemperatureRatingSensor, TemperatureSensor
+
+ThermoBeaconBluetoothSensorEntity, ThermoProBluetoothSensorEntity
+
+ThinkingCleanerSensor
+
+ThrottleFilter
+
+TibberDataCoordinator, TibberDataSensor, TibberRtDataCoordinator, TibberSensor, TibberSensorElPrice, TibberSensorRT
+
+Tier1SmartEnergySummation, Tier2SmartEnergySummation, Tier3SmartEnergySummation, Tier4SmartEnergySummation, Tier5SmartEnergySummation, Tier6SmartEnergySummation
+
+TiltBluetoothSensorEntity
+
+TimeDateSensor, TimeLeft, TimeRemainingSensor, TimeSMAFilter, TimeThrottleFilter
+
+ToloSensorEntity, ToloSensorEntityDescription, ToloSensorEntityDescriptionBase
+
+TomorrowioSensorEntity, TomorrowioSensorEntityDescription
+
+ToonBoilerDeviceSensor, ToonDisplayDeviceSensor, ToonElectricityMeterDeviceSensor, ToonGasMeterDeviceSensor, ToonSensor, ToonSensorEntityDescription, ToonSensorRequiredKeysMixin, ToonSolarDeviceSensor, ToonWaterMeterDeviceSensor
+
+TorqueReceiveDataView, TorqueSensor
+
+TractiveRequiredKeysMixin, TractiveSensor, TractiveSensorEntityDescription
+
+TradfriSensor, TradfriSensorEntityDescription, TradfriSensorEntityDescriptionMixin
+
+TrafikverketCameraSensor, TrafikverketRequiredKeysMixin, TrafikverketSensorEntityDescription, TrafikverketWeatherStation
+
+TrainSensor
+
+TransmissionSensor, TransmissionSpeedSensor, TransmissionStatusSensor, TransmissionTorrentsSensor
+
+TransportNSWSensor
+
+TravisCISensor
+
+TriggerSensorEntity
+
+TtnDataSensor, TtnDataStorage
+
+UkTransportSensor
+
+UnifiSensorEntity, UnifiSensorEntityDescription, UnifiSensorEntityDescriptionMixin
+
+UpnpSensor, UpnpSensorEntityDescription
+
+UptimeRobotSensor, UptimeSensor
+
+UsageSensor
+
+UtilityMeterSensor, UtilitySensorExtraStoredData
+
+UvLabel
+
+V2CRequiredKeysMixin
+
+Sensor Base Entity:
+V2CSensorBaseEntity
+
+Sensor Entity Description:
+V2CSensorEntityDescription, ValloxSensorEntityDescription, ValveControllerSensorDescription, VenstarSensorEntityDescription, ViCareSensorEntityDescription, VilfoSensorEntityDescription, VodafoneStationBaseEntityDescription, VodafoneStationEntityDescription, WallConnectorSensorDescription, WallboxSensorEntityDescription, WaqiSensorEntityDescription, WLEDSensorEntityDescription, WhirlpoolSensorEntityDescription, WhoisSensorEntityDescription, WithingsActivitySensorEntityDescription, WithingsGoalsSensorEntityDescription, WithingsMeasurementSensorEntityDescription, WithingsSleepSensorEntityDescription, WithingsWorkoutSensorEntityDescription, XiaomiMiioSensorDescription, YaleXSBLESensorEntityDescription, YoLinkSensorEntityDescription, YouTubeSensorEntityDescription
+
+Sensor:
+VOCLevel, VSensor, ValloxSensorEntity, ValveControllerSensor, ValveTappetSensor, VariableSensorEntity, VasttrafikDepartureSensor, VeSyncSensorEntity, VelbusSensor, VenstarSensor, VeraSensor, VerisureHygrometer, VerisureThermometer, VersionSensorEntity, ViCareSensor, ViaggiaTrenoSensor, VilfoRouterSensor, VodafoneStationSensorEntity, VolkszaehlerData, VolkszaehlerSensor, VoltageSensor, VolvoSensor, VultrSensor, WAQISensorEntityDescription, WLEDSensorEntity, WallConnectorSensorEntity, WallboxSensor, WanIpSensor, WaqiSensor, WasherDryerClass, WasherDryerTimeClass, WashingtonStateTransportSensor, WashingtonStateTravelTimeSensor, WaterFurnaceSensor, WazeTravelTime, WazeTravelTimeData, WeatherFlowSensorEntity, WeatherKitSensor, WhirlpoolSensorEntityDescriptionMixin, WhoisSensorEntity, WirelessTagSensor, WithingsSensor, WithingsSleepSensor, WithingsWorkoutSensor, WizPowerSensor, WizSensor, WolfLinkHours, WolfLinkPercentage, WolfLinkPressure, WolfLinkSensor, WolfLinkState, WolfLinkTemperature, WorldClockSensor, WorldTidesInfoSensor, WorxLandroidSensor, XS1Sensor, XboxSensorEntity, XiaomiAirQualityMonitor, XiaomiBatterySensor, XiaomiBluetoothSensorEntity, XiaomiGatewayIlluminanceSensor, XiaomiGatewaySensor, XiaomiGenericSensor, XiaomiSensor, YaleXSBLERequiredKeysMixin, YaleXSBLESensor, YoLinkSensorEntity, YouTubeSensor, YoulessBaseSensor, ZMSensorEvents, ZMSensorMonitors, ZMSensorRunState, ZWaveConfigParameterSensor, ZWaveControllerStatusSensor, ZWaveListSensor, ZWaveMeSensor, ZWaveMeterSensor, ZWaveNodeStatusSensor, ZWaveNumericSensor, ZWaveStatisticsSensor, ZabbixMultipleHostTriggerCountSensor, ZabbixSingleHostTriggerCountSensor, ZabbixTriggerCountSensor.
+
+Sensor Entity Description Mixin:
+VeSyncSensorEntityDescriptionMixin, WLEDSensorEntityDescriptionMixin, WhirlpoolSensorEntityDescriptionMixin, WhoisSensorEntityDescriptionMixin, WithingsActivitySensorEntityDescriptionMixin, WithingsGoalsSensorEntityDescriptionMixin, WithingsMeasurementSensorEntityDescriptionMixin, WithingsSleepSensorEntityDescriptionMixin, WithingsWorkoutSensorEntityDescriptionMixin, YoLinkSensorEntityDescriptionMixin, YouTubeMixin.
+
+Zamg Required Keys:
+ZamgRequiredKeysMixin
+
+Zamg Sensor:
+ZamgSensor
+
+Zamg Sensor Entity Description:
+ZamgSensorEntityDescription
+
+Zestimate Data Sensor:
+ZestimateDataSensor
+
+Zeversolar Entity Description:
+ZeversolarEntityDescription, ZeversolarEntityDescriptionMixin
+
+Zeversolar Sensor:
+ZeversolarSensor
+
+Zodiac Sensor:
+ZodiacSensor
+
+Zone Time Remaining Sensor:
+ZoneTimeRemainingSensor
+
+Zwave Sensor:
+ZwaveSensor
+
+Fronius Sensor Entity:
+_FroniusSensorEntity
+
+State:
+_State
+

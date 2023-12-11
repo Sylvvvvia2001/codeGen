@@ -1,0 +1,3 @@
+Vacuum Cleaners:
+DemoVacuum, EcovacsVacuum, LitterRobotCleaner, MiroboVacuum, NeatoConnectedVacuum, RoborockVacuum, SharkVacuumEntity, StateDemoVacuum, TemplateVacuum, TuyaVacuumEntity
+

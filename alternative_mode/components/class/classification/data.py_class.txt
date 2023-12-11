@@ -1,0 +1,9 @@
+Energy and Power Management:
+BatterySourceType, DeviceConsumption, EnergyManager, EnergyPreferences, EnergyPreferencesUpdate, FlowFromGridSourceType, FlowToGridSourceType, GasSourceType, GridSourceType, SolarSourceType, WaterSourceType
+
+Connectivity and Communication:
+CannotConnect, DlnaDmrData, EagleDataCoordinator, EventListenAddr, HarmonyData, InvalidAuth, MetOfficeData, ProtectData, RadioThermInitData, RadioThermUpdate, RainforestError, RestData, SmartPlugData, WyomingService
+
+Data and Statistics:
+HistoryState, HistoryStats, HistoryStatsState
+

@@ -1,0 +1,9 @@
+Camera and Image Settings:
+CameraPreferences
+
+Cloud and Data Storage Settings:
+CloudPreferences, CloudPreferencesStore
+
+Streaming and Video Settings:
+DynamicStreamSettings
+

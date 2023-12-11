@@ -1,0 +1,57 @@
+AdvantageAirMyZone, AirzoneBaseSelect, AirzoneSelectDescription, AirzoneSelectDescriptionMixin, AirzoneZoneSelect: HVAC Control
+AqaraApproachDistance, AqaraApproachDistances, AqaraCurtainMode, AqaraE1ReverseDirection, AqaraFeedingMode, AqaraMonitoringMode, AqaraMonitoringModess, AqaraMotionSensitivities, AqaraMotionSensitivity, AqaraPetFeederMode, AqaraThermostatPreset, AqaraThermostatPresetMode: Home Automation
+AssistPipelineSelect, AttributeEnumMapping: Development Utilities
+BMWRequiredKeysMixin, BMWSelect, BMWSelectEntityDescription: Vehicle Control
+BaseHomeKitSelect, HomeKitSelect, HomeKitSelectEntityDescription, HomeKitSelectEntityDescriptionRequired: HomeKit Integration
+DeconzPresenceDeviceModeSelect, DeconzPresenceSensitivitySelect, DeconzPresenceTriggerDistanceSelect: Presence Detection
+DemoSelect: Testing Utilities
+EcobeeModeSelect: HVAC Control
+ElectricKiwiSelectHOPEntity: Energy Management
+EnvoyRelayRequiredKeysMixin, EnvoyRelaySelectEntity, EnvoyRelaySelectEntityDescription: Energy Management
+EnvoyStorageSettingsRequiredKeysMixin, EnvoyStorageSettingsSelectEntity, EnvoyStorageSettingsSelectEntityDescription: Energy Management
+EsphomeAssistPipelineSelect, EsphomeSelect, EsphomeVadSensitivitySelect: Home Automation
+EzvizSelect, EzvizSelectEntityDescription, EzvizSelectEntityDescriptionMixin: Video Surveillance
+FluxConfigAtStartSelect, FluxConfigSelect, FluxICTypeSelect, FluxOperatingModesSelect, FluxPowerStateSelect, FluxRemoteConfigSelect, FluxWhiteChannelSelect, FluxWiringsSelect: Lighting Control
+FreezeProtectionSelectDescription, FreezeProtectionSelectOption, FreezeProtectionTemperatureMixin, FreezeProtectionTemperatureSelect: HVAC Control
+HarmonyActivitySelect: Media and Entertainment Control
+HueV1MotionSensitivities, HueV1MotionSensitivity, HueV2MotionSensitivities, HueV2MotionSensitivity: Lighting Control
+ISYAuxControlIndexSelectEntity, ISYBacklightSelectEntity, ISYRampRateSelectEntity: Home Automation
+InovelliLedScalingMode, InovelliLedScalingModeEntity, InovelliNonNeutralOutput, InovelliNonNeutralOutputEntity, InovelliOutputMode, InovelliOutputModeEntity, InovelliSwitchType, InovelliSwitchTypeEntity: Lighting Control
+InverterOperationModeEntity: Energy Management
+KNXSelect: Home Automation
+LIFXInfraredBrightnessSelectEntity, LIFXThemeSelectEntity: Lighting Control
+LaMetricEntityDescriptionMixin, LaMetricSelectEntity, LaMetricSelectEntityDescription: Media and Entertainment Control
+LitterRobotSelectEntity: Pet Care
+MoesBacklightMode, MoesBacklightModeSelectEntity: Lighting Control
+MqttSelect: Communication Protocols
+NetatmoScheduleSelect: Home Automation
+OverkizSelect, OverkizSelectDescription, OverkizSelectDescriptionMixin: Home Automation
+PlenticoreDataSelect, PlenticoreRequiredKeysMixin, PlenticoreSelectEntityDescription: Energy Management
+PlugwiseSelectDescriptionMixin, PlugwiseSelectEntity, PlugwiseSelectEntityDescription: Home Automation
+PowerViewSelect, PowerviewSelectDescription, PowerviewSelectDescriptionMixin: Window Covering Control
+ProtectSelectEntityDescription, ProtectSelects: Home Security
+RainMachineSelectDescription: Irrigation Control
+RenaultSelectEntity, RenaultSelectEntityDescription, RenaultSelectRequiredKeysMixin: Vehicle Control
+ReolinkSelectEntity, ReolinkSelectEntityDescription, ReolinkSelectEntityDescriptionMixin: Video Surveillance
+RequiredKeysMixin: Development Utilities
+RitualsEntityDescriptionMixin, RitualsSelectEntity, RitualsSelectEntityDescription: Home Automation
+RoborockSelectDescription, RoborockSelectDescriptionMixin, RoborockSelectEntity, RobotSelectEntityDescription: Home Automation
+RokuSelectEntity, RokuSelectEntityDescription, RokuSelectEntityDescriptionMixin: Media and Entertainment Control
+Select, SelectableCapability: General
+SensiboSelect, SensiboSelectDescriptionMixin, SensiboSelectEntityDescription: HVAC Control
+SleepIQSelectEntity: Bedding Control
+TariffSelect: Energy Management
+TemplateSelect: Development Utilities
+ToloLampModeSelect: Lighting Control
+TriggerSelectEntity: Home Automation
+TuyaBacklightMode, TuyaBacklightModeSelectEntity, TuyaPowerOnState, TuyaPowerOnStateSelectEntity: Home Automation
+
+Device Selection:
+TuyaSelectEntity, VelbusSelect, XiaomiGenericSelector, XiaomiMiioSelectDescription, XiaomiSelector, ZCLEnumSelectEntity, ZHADefaultSirenLevelSelectEntity, ZHADefaultStrobeLevelSelectEntity, ZHADefaultStrobeSelectEntity, ZHADefaultToneSelectEntity, ZHAEnumSelectEntity, ZHANonZCLSelectEntity, ZHAStartupOnOffSelectEntity, ZWaveConfigParameterSelectEntity, ZwaveDefaultToneSelectEntity, ZwaveMultilevelSwitchSelectEntity, ZwaveSelectEntity
+
+Voice Control:
+VadSensitivitySelect, VoipPipelineSelect, VoipVadSensitivitySelect
+
+Lighting Control:
+WLEDLiveOverrideSelect, WLEDPaletteSelect, WLEDPlaylistSelect, WLEDPresetSelect
+

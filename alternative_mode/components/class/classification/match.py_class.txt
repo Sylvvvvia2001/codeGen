@@ -1,0 +1,11 @@
+Bluetooth Callback Matcher:
+BluetoothCallbackMatcher, BluetoothCallbackMatcherIndex, BluetoothCallbackMatcherOptional, BluetoothCallbackMatcherWithCallback
+
+Bluetooth Matcher Index:
+BluetoothMatcherIndex, BluetoothMatcherIndexBase
+
+Integration Matcher:
+IntegrationMatchHistory, IntegrationMatcher
+
+Note: _BluetoothCallbackMatcherWithCallback does not fit into any specific category.
+

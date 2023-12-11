@@ -1,0 +1,3 @@
+Todo List Entities:
+GoogleTaskTodoListEntity, LocalTodoListEntity, ShoppingTodoListEntity, TodoistTodoListEntity, WebDavTodoListEntity
+

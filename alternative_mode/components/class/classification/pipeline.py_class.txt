@@ -1,0 +1,3 @@
+Audio and Pipeline Management:
+AudioSettings, InvalidPipelineStagesError, Pipeline, PipelineData, PipelineEvent, PipelineEventType, PipelineInput, PipelinePreferred, PipelineRun, PipelineRunDebug, PipelineRunValidationError, PipelineRuns, PipelineStage, PipelineStorageCollection, PipelineStorageCollectionWebsocket, PipelineStore, ProcessedAudioChunk, SerializedPipelineStorageCollection, WakeWordSettings
+

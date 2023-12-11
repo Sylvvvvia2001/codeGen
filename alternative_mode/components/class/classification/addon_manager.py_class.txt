@@ -1,0 +1,3 @@
+Addon Management:
+AddonError, AddonInfo, AddonManager, AddonState
+

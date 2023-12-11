@@ -1,0 +1,10 @@
+Smart Locks: AbodeLock, AugustLock, BMWLock, DeconzLock, DemoLock, DormakabaDkeyLock, EsphomeLock, FibaroLock, HMLock, HomeKitLock, HomematicipDoorLockDrive, ISYLockEntity, ISYLockProgramEntity, InsteonLockEntity, KebaLock, KiwiLock, LoqedLock, MatterLock, NukiDeviceEntity, NukiLockEntity, NukiOpenerEntity, OverkizLock, ProtectLock, SchlageLockEntity, SimpliSafeLock, StarlineLock, SubaruLock, SurePetcareLock, SwitchBotLock, TemplateLock, VeraLock, VerisureDoorlock, VolvoLock, WallboxLock, XiaomiAqaraLock, YaleDoorlock, YaleXSBLELock, YoLinkLockEntity, ZWaveLock, ZWaveMeLock, ZhaDoorLock
+
+Device Management: Device
+
+Lock Groups: LockGroup
+
+Lock Controls: LockSwitch
+
+Sesame Locks: SesameDevice
+

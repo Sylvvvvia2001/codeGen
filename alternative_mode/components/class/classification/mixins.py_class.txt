@@ -1,0 +1,9 @@
+Mqtt Communication:
+MqttAttributes, MqttAvailability, MqttDiscoveryDeviceUpdate, MqttDiscoveryUpdate, MqttEntity, MqttEntityDeviceInfo
+
+Device Setup:
+SetupEntity
+
+Tasmota Device:
+TasmotaAvailability, TasmotaDiscoveryUpdate, TasmotaEntity, TasmotaOnOffEntity
+
