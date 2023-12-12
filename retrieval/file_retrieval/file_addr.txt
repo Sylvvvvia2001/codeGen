@@ -1,20 +1,10 @@
-https://www.mi.com/global/service/support/mi-bedside-lamp-2-manual/
-https://www.mi.com/global/service/support/mi-led-desk-lamp-pro-manual/
-https://www.mi.com/global/service/support/mi-led-desk-lamp-1s-manual/
-https://www.mi.com/global/service/support/mi-led-smart-bulb-manual/
-https://www.mi.com/global/service/support/mi-led-desk-lamp-manual/
-https://www.mi.com/global/service/support/mi-led-ceiling-light-manual/
-https://www.mi.com/global/service/support/mi-smart-led-bulb-essential-manual/
-https://www.mi.com/global/service/support/mi-led-ceiling-light-pro-manual/
-https://www.mi.com/global/service/support/mi-motion-activated-night-light-2-manual/
-https://www.yeelight.com/en_US/support/user-manuals/xiaomi-yeelight-led-ceiling-light
-https://www.gearbest.com/blog/download/xiaomi-mi-desk-lamp-user-manual-2901
-https://www.gearbest.com/blog/download/xiaomi-mi-led-desk-lamp-1s-user-manual-2900
-https://www.gearbest.com/blog/download/xiaomi-mijia-bedside-lamp-user-manual-2899
-https://www.gearbest.com/blog/download/xiaomi-yeelight-smart-led-bulb-user-manual-2898
-https://www.gearbest.com/blog/download/xiaomi-yeelight-smart-light-strip-user-manual-2897
-https://www.gearbest.com/blog/download/xiaomi-yeelight-jiayou-650-surrounding-ambient-lighting-user-manual-2896
-https://www.gearbest.com/blog/download/xiaomi-yeelight-ylxd01yl-smart-led-ceiling-light-user-manual-2895
-https://www.gearbest.com/blog/download/xiaomi-yeelight-yldp05yl-smart-led-bulb-user-manual-2894
-https://www.gearbest.com/blog/download/xiaomi-yeelight-yltd04yl-led-table-light-user-manual-2893
-https://www.gearbest.com/blog/download/xiaomi-yeelight-yldd04yl-smart-led-strip-light-user-manual-2892
+Based on the information gathered, here's a summary of the connection and control methods for Xiaomi Lite Light devices:
+
+Connection Methods:
+
+The Xiaomi Smart Speaker Lite, which might be similar in connectivity to the Xiaomi Lite Light, supports Bluetooth 5.1 and Wi-Fi (2.4GHz/5GHz) as its connection methods. Source: https://www.mi.com/global/product/xiaomi-smart-speaker-lite/overview
+Control Methods:
+
+The xiaomi_miio platform allows control of various Xiaomi lighting products, which may include similar models to the Xiaomi Lite Light. Source: https://www.home-assistant.io/integrations/xiaomi_miio/#xiaomi-philips-light
+For controlling Xiaomi smart LED bulbs, the miiocli library can be used, which is installed via pip (pip install python-miio). This library facilitates the extraction of cloud data and control of the device. Source: Integrate MI Smart LED Bulb - Home Assistant Community
+The use of MQTT for control was demonstrated for a Xiaomi LGYCDD01LM device, which might offer insight into controlling similar Xiaomi smart lighting products. This involves publishing MQTT messages with specific payloads to control different aspects like state, brightness, color temperature, and color. Source: https://www.zigbee2mqtt.io/devices/LGYCDD01LM.html

@@ -1,21 +1,21 @@
-# 使用GPT-4 插件，MixerBox WebSearch
-# 搜索 "name" manual
-
 import requests
 import json
 import os
 import yaml
-import re
+# 不再需要正则表达式库，因为我们不提取 URL
 
 def retrieve():
-
     # 读取 YAML 文件
     with open("retrieval/device_information.yaml", 'r') as file:
         device_info = yaml.safe_load(file)
-    device_name = device_info['name']
+    name = device_info['name']
 
     # 构造搜索查询
-    search_query = f"{device_name} manual"
+    search_query = f"{name}"
+
+    # 读取 example.txt 文件
+    with open("retrieval/api_retrieval/example.txt", 'r') as file:
+        example_content = file.read()
 
     # API URL 和 Headers
     url = "https://gpt-api.hkust-gz.edu.cn/v1/chat/completions"
@@ -27,18 +27,28 @@ def retrieve():
 
     # 构造请求数据
     data = {
-        "model": "gpt-3.5-turbo",
+        "model": "gpt-4",
         "messages": [
             {
                 "role": "system",
-                "content": f"You are a browser tool. Search for '{search_query}' and return the top 20 results."
+                "content": "You are GPT-4, a large language model trained by OpenAI."
             },
             {
                 "role": "user",
-                "content": f"search {search_query}"
+                "content": example_content  # 添加 example.txt 的内容作为上下文
+            },
+            {
+                "role": "system",
+                "content": f"Based on the specified thinking model, to implement the control code for {search_query}, search for the official manual document of {search_query} to find some useful technical detail. "
+                f"Tell me which way can be used to connect the device(like BlueTooth or ZigBee), which way can be used to control the device(like http or MQTT) and provide detailed usage or precise URLs of these manuals. "
+                f"The types of technical method in manuals include, but are not limited to, connect protocol, how to get cloud information, among others."
+            },
+            {
+                "role": "user",
+                "content": f"search api for {search_query}, and return the api detail"
             }
         ],
-        "temperature": 0.7
+        "temperature": 0.5
     }
 
     # 发送请求
@@ -54,19 +64,19 @@ def retrieve():
 
     # 确保 response_data['choices'] 是一个列表并且其中包含至少一个元素
     if 'choices' in response_data and len(response_data['choices']) > 0:
-        # 直接获取 message 字段
-        message_content = response_data['choices'][0]['message']['content']
-        
-        # 使用正则表达式提取 URL (支持 http 和 https)
-        urls = re.findall(r"http[s]?://\S+", message_content)
+        # 获取完整的回答内容
+        full_response = response_data['choices'][0]['message']['content']
 
-        # 保存 URLs 到文件
+        # 保存完整回答到文件
         with open("retrieval/file_retrieval/file_addr.txt", 'w') as file:
-            for url in urls:
-                file.write(url + "\n")
+            file.write(full_response)
 
 def main():
     retrieve()
-
+    
 if __name__ == "__main__":
     main()
+
+
+
+

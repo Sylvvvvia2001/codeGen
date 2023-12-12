@@ -1,20 +1,11 @@
-https://www.mi.com/global/mi-led-smart-bulb/
-https://c.mi.com/thread-2072022-1-0.html
-https://www.reddit.com/r/Xiaomi/comments/9e8m9u/how_to_connect_yeelight_or_mi_led_smart_bulb_to/
-https://www.youtube.com/watch?v=2rRdM3CFiMw
-https://www.xiaomitoday.com/connect-yeelight-mi-led-smart-bulb-mi-home-app/
-https://www.gearbest.com/blog/how-to/how-to-connect-xiaomi-mi-led-smart-bulb-8098
-https://www.androidauthority.com/connect-xiaomi-yeelight-bulbs-874528/
-https://www.techradar.com/reviews/xiaomi-yeelight-smart-led-bulb
-https://www.gizchina.com/2016/06/07/xiaomi-yeelight-smart-led-bulb-review/
-https://www.mi-store.co.uk/mi-led-smart-bulb.html
-https://www.tomsguide.com/best-picks/best-smart-light-bulbs
-https://www.cnet.com/news/best-smart-bulbs-for-2021/
-https://www.techhive.com/article/3228404/best-smart-led-light-bulbs.html
-https://xiaomifirmware.com/tutorials-and-guides/how-to-connect-mi-led-smart-bulb-to-the-mi-home-app/
-https://www.amazon.com/Xiaomi-MJDP02YL-Bluetooth-connection-Adjustable/dp/B07FJW74LZ
-https://www.aliexpress.com/item/33039638764.html
-https://www.theverge.com/circuitbreaker/2017/1/6/14173620/xiaomi-yeelight-smart-led-bulb-review
-https://www.techradar.com/news/best-smart-light-bulbs
-https://homekitnews.com/2017/11/04/review-xiaomi-yeelight-smart-led-bulb/
-https://www.mi-store.co.uk/xiaomi-yeelight-smart-led-bulb.html
+Based on my research, here's the information regarding the Xiaomi Lite Light's connectivity and control methods:
+
+Connectivity Methods: The Xiaomi Smart Home Hub 2, which is likely compatible with the Xiaomi Lite Light, supports a variety of connection protocols. It can connect with Wi-Fi, Zigbee, Bluetooth, and Matter devices​​. This variety allows for flexibility in setting up and integrating the Xiaomi Lite Light into various smart home systems.
+
+Control Methods - MQTT Protocol: The Xiaomi devices, including the Lite Light, can be controlled using the MQTT protocol. A specific service, lumimqtt, allows controlling gateway LEDs, buttons, and illuminance sensors over MQTT​​. The control actions include reading the light state, switching the light on or off, setting the light color, setting brightness, and reading illuminance​​.https://github.com/openlumi/lumimqtt The configuration file for the MQTT service includes parameters such as MQTT host, port, user, password, and topic root​​.
+
+Control Methods - miIO and MIoT Protocols: Xiaomi's miIO and MIoT protocols are used for controlling their smart devices, including the Lite Light. The python-miio library and its accompanying CLI tool, miiocli, are used for this purpose​​. To control devices through this method, you first need to acquire tokens using the miiocli cloud command, which fetches them from your cloud account​​. Once you have the token, you can start controlling the device using commands like info to get generic information​​. Modern MIoT devices are automatically supported by the genericmiot integration, which uses "miot spec" files to find out about supported features such as sensors, settings, and actions​​.
+
+The common commands available for controlling devices include status to show the device state, set to change settings, actions to list available actions, and call to execute actions​​. For instance, executing status will display the current device state and accepted values for settings​​. To change a setting, you need to provide the name of the setting, like light:brightness​​. Most devices also offer actions like toggling the light, adjusting brightness, which can be executed using the call command​​.
+
+These methods provide comprehensive control over the Xiaomi Lite Light, catering to various user preferences and integration requirements in smart home setups.
